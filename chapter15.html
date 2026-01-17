@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang=sa>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>भगवद्गीता — पञ्चदशोऽध्यायः (पुरुषोत्तमयोगः)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+    /* New styles for navigation (Home Button, Back Button) */
+    .shlok-sanskrit {
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.8;
+        padding: 10px 0;
+    }
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        padding: 12px 25px;
+        background-color: #d4af37; 
+        color: #1a0f00; 
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        margin: 20px auto;
+    }
+    .home-btn-fixed {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffcc66;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #1a0f00;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        .home-btn-fixed {
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 1.2em;
+        }
+    }
+    .back-link-container {
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body class="temple-bg">
+
+<a href="index.html" class="home-btn-fixed" title=সূচিপত্র>
+    🏠
+</a>
+
+<header class="chapter-header">
+    <h1>॥ भगवद्गीता — पञ्चदशोऽध्यायः ॥</h1>
+    <h2>पुरुषोत्तमयोगः</h2>
+</header>
+
+<div class="chapter-container">
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.1 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रीभगवानुवाच ।<br>
+        ऊर्ध्वमूलम् अधःशाखम् अश्वत्थं प्राहूर् अव्ययम् ।<br>
+        छन्दांसि यस्य पर्णानि यस् तं वेद स वेदवित् ॥
+    </p>
+    <a class="bekkha-btn" href="15-1.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.2 ॥</div>
+    <p class="shlok-sanskrit">
+        अधश् चो‌र्ध्वं प्रसृतास् तस्य शाखा<br>
+        गुणप्रवृद्धा विषयप्रवालाः ।<br>
+        अधश् च मूलान्य् अनुसन्ततानि<br>
+        कर्मानुबन्धीनि मनुष्यलोके ॥
+    </p>
+    <a class="bekkha-btn" href="15-2.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.3 ॥</div>
+    <p class="shlok-sanskrit">
+        न रूपम् अस्येह तथोपलभ्यते<br>
+        नान्तो न चा‌दिर् न च सम्प्रतिष्ठा ।<br>
+        अश्वत्थम् एनं सुविरूढमूलम्<br>
+        असङ्गशस्त्रेण दृढेन छित्त्वा ॥
+    </p>
+    <a class="bekkha-btn" href="15-3.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.4 ॥</div>
+    <p class="shlok-sanskrit">
+        ततः पदं तत् परिमार्गितव्यं<br>
+        यस्मिन् गता न निवर्तन्ति भूयः ।<br>
+        तम् एव चा‌द्यं पुरुषं प्रपद्ये<br>
+        यतः प्रवृत्तिः प्रसृता पुराणी ॥
+    </p>
+    <a class="bekkha-btn" href="15-4.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.5 ॥</div>
+    <p class="shlok-sanskrit">
+        निर्मानमोहा जितसङ्गदोषा<br>
+        अध्यात्मनित्या विनिवृत्तकामाः ।<br>
+        द्वन्द्वैर् विमुक्ताः सुखदुःखसंज्ञैर्<br>
+        गच्छन्त्य् अमूढाः पदम् अव्ययं तत् ॥
+    </p>
+    <a class="bekkha-btn" href="15-5.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.6 ॥</div>
+    <p class="shlok-sanskrit">
+        न तद् भासयते सूर्यो न शशाङ्को न पावकः ।<br>
+        यद् गत्वा न निवर्तन्ते तद् धाम परमं मम ॥
+    </p>
+    <a class="bekkha-btn" href="15-6.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.7 ॥</div>
+    <p class="shlok-sanskrit">
+        ममैवांशो जीवलोके जीवभूतः सनातनः ।<br>
+        मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥
+    </p>
+    <a class="bekkha-btn" href="15-7.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.8 ॥</div>
+    <p class="shlok-sanskrit">
+        शरीरं यद् अवाप्नोति यच् चाप्य् उत्क्रामतीश्वरः ।<br>
+        गृहीत्वैतानि संयाति वायुर् गन्धान् इवा‌शयात् ॥
+    </p>
+    <a class="bekkha-btn" href="15-8.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.9 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणम् एव च ।<br>
+        अधिष्ठाय मनश् चायं विषयान् उपसेवते ॥
+    </p>
+    <a class="bekkha-btn" href="15-9.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.10 ॥</div>
+    <p class="shlok-sanskrit">
+        उत्क्रामन्तं स्थितं वा‌पि भुञ्जानं वा गुणान्वितम् ।<br>
+        विमूढा ना‌नुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः ॥
+    </p>
+    <a class="bekkha-btn" href="15-10.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.11 ॥</div>
+    <p class="shlok-sanskrit">
+        यतन्तो योगिनश् चैनं पश्यन्त्य् आत्मन्य् अवस्थितम् ।<br>
+        यतन्तोऽप्य् अकृतात्मानो नैनं पश्यन्त्य् अचेतसः ॥
+    </p>
+    <a class="bekkha-btn" href="15-11.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.12 ॥</div>
+    <p class="shlok-sanskrit">
+        यद् आदित्यगतं तेजो जगद् भासयतेऽखिलम् ।<br>
+        यच् चन्द्रमसि यच् चाग्नौ तत् तेजो विद्धि मामकम् ॥
+    </p>
+    <a class="bekkha-btn" href="15-12.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.13 ॥</div>
+    <p class="shlok-sanskrit">
+        गाम् आविश्य च भूतानि धारयाम्य् अहम् ओजसा ।<br>
+        पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः ॥
+    </p>
+    <a class="bekkha-btn" href="15-13.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.14 ॥</div>
+    <p class="shlok-sanskrit">
+        अहं वैश्वानरो भूत्वा प्राणिनां देहम् आश्रितः ।<br>
+        प्राणापानसमायुक्तः पचाम्य् अन्नं चतुर्विधम् ॥
+    </p>
+    <a class="bekkha-btn" href="15-14.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.15 ॥</div>
+    <p class="shlok-sanskrit">
+        सर्वस्य चा‌हं हृदि सन्निविष्टो<br>
+        मत्तः स्मृतिर् ज्ञानम् अपोहनं च ।<br>
+        वेदैश् च सर्वैर् अहम् एव वेद्यो<br>
+        वेदान्तकृद् वेदविद् एव चा‌हम् ॥
+    </p>
+    <a class="bekkha-btn" href="15-15.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.16 ॥</div>
+    <p class="shlok-sanskrit">
+        द्वाव् इमौ पुरुषौ लोके क्षरश् चा‌क्षर एव च ।<br>
+        क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते ॥
+    </p>
+    <a class="bekkha-btn" href="15-16.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.17 ॥</div>
+    <p class="shlok-sanskrit">
+        उत्तमः पुरुषस् त्व् अन्यः परमात्मेत्य् उदाहृतः ।<br>
+        यो लोकत्रयम् आविश्य बिभर्त्य् अव्यय ईश्वरः ॥
+    </p>
+    <a class="bekkha-btn" href="15-17.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.18 ॥</div>
+    <p class="shlok-sanskrit">
+        यस्मात् क्षरम् अतीतोऽहम् अक्षराद् अपि चोत्तमः ।<br>
+        अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥
+    </p>
+    <a class="bekkha-btn" href="15-18.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.19 ॥</div>
+    <p class="shlok-sanskrit">
+        यो माम् एवम् असम्मूढो जानाति पुरुषोत्तमम् ।<br>
+        स सर्वविद् भजति मां सर्वभावेन भारत ॥
+    </p>
+    <a class="bekkha-btn" href="15-19.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 15.20 ॥</div>
+    <p class="shlok-sanskrit">
+        इति गुह्यतमं शास्त्रम् इदम् उक्तं मया‌नघ ।<br>
+        एतद् बुद्ध्वा बुद्धिमान् स्यात् कृतकृत्यश् च भारत ॥
+    </p>
+    <a class="bekkha-btn" href="15-20.html">व्याख्या</a>
+</div>
+
+</div> <div class="back-link-container">
+    <a href="gita-sanskrit.html" class="nav-btn">
+       <back to index>Back</back>
+    </a>
+    <a href="chapter16.html" class="nav-btn">Chapter 16</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang=sa>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>भगवद्गीता — षोडशोऽध्यायः (दैवासुरसम्पद्विभागयोगः)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+    /* New styles for navigation (Home Button, Back Button) */
+    .shlok-sanskrit {
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.8;
+        padding: 10px 0;
+    }
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        padding: 12px 25px;
+        background-color: #d4af37; 
+        color: #1a0f00; 
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        margin: 20px auto;
+    }
+    .home-btn-fixed {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffcc66;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #1a0f00;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        .home-btn-fixed {
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 1.2em;
+        }
+    }
+    .back-link-container {
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body class="temple-bg">
+
+<a href="index.html" class="home-btn-fixed" title=সূচিপত্র>
+    🏠
+</a>
+
+<header class="chapter-header">
+    <h1>॥ भगवद्गीता — षोडशोऽध्यायः ॥</h1>
+    <h2>दैवासुरसम्पद्विभागयोगः</h2>
+</header>
+
+<div class="chapter-container">
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.1-3 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रीभगवानुवाच ।<br>
+        अभयं सत्त्वसंशुद्धिर् ज्ञानयोगव्यवस्थितिः ।<br>
+        दानं दमश् च यज्ञश् च स्वाध्यायस् तप आर्जवम् ॥<br>
+        अहिंसा सत्यम् अक्रोधस् त्यागः शान्तिर् अपैशुनम् ।<br>
+        दया भूतेष्व् अलोलुप्त्वं मार्दवं ह्रीर् अचपलम् ॥<br>
+        तेजः क्षमा धृतिः शौचम् अद्रोहो ना‌तिमानिता ।<br>
+        भवन्ति सम्पदां दैवीम् अभिजातस्य भारत ॥
+    </p>
+    <a class="bekkha-btn" href="16-1-3.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.4 ॥</div>
+    <p class="shlok-sanskrit">
+        दम्भो दर्पोऽभिमानश् च क्रोधः पारुष्यम् एव च ।<br>
+        अज्ञानं चा‌भिजातस्य पार्थ सम्पद् आसुरीम् ॥
+    </p>
+    <a class="bekkha-btn" href="16-4.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.5 ॥</div>
+    <p class="shlok-sanskrit">
+        दैवी सम्पद् विमोक्षाय निबन्धाया‌सुरी मता ।<br>
+        मा शुचः सम्पदां दैवीम् अभिजातोऽसि पाण्डव ॥
+    </p>
+    <a class="bekkha-btn" href="16-5.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.6 ॥</div>
+    <p class="shlok-sanskrit">
+        द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च ।<br>
+        दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु ॥
+    </p>
+    <a class="bekkha-btn" href="16-6.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.7 ॥</div>
+    <p class="shlok-sanskrit">
+        प्रवृत्तिं च निवृत्तिं च जना न विदुर् आसुराः ।<br>
+        न शौचं ना‌पि चा‌चारो न सत्यं तेषु विद्यते ॥
+    </p>
+    <a class="bekkha-btn" href="16-7.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.8 ॥</div>
+    <p class="shlok-sanskrit">
+        असत्यम् अप्रतिष्ठं ते जगद् आहूर् अनीश्वरम् ।<br>
+        अपरस्परसम्भूतं किम् अन्यत् कामहैतुकम् ॥
+    </p>
+    <a class="bekkha-btn" href="16-8.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.9 ॥</div>
+    <p class="shlok-sanskrit">
+        एतां दृष्टिम् अवष्टभ्य नष्टात्मानोऽल्पबुद्धयः ।<br>
+        प्रभवन्त्य् उग्रकर्माणः क्षयाय जगतोऽहिताः ॥
+    </p>
+    <a class="bekkha-btn" href="16-9.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.10 ॥</div>
+    <p class="shlok-sanskrit">
+        कामम् आश्रित्य दुष्पूरं दम्भमानमदान्विताः ।<br>
+        मोहाद् गृहीत्वा‌सद्ग्राहान् प्रवर्तन्तेऽशुचिव्रताः ॥
+    </p>
+    <a class="bekkha-btn" href="16-10.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.11-12 ॥</div>
+    <p class="shlok-sanskrit">
+        चिन्ताम् अपरिमेयां च प्रलयान्ताम् उपाश्रिताः ।<br>
+        कामोपभोगपरमा एतावद् इति निश्चिताः ॥<br>
+        आशापाशशतैर् बद्धाः कामक्रोधपरायणाः ।<br>
+        ईहन्ते कामभोगार्थम् अन्यायेनार्थसञ्चयान् ॥
+    </p>
+    <a class="bekkha-btn" href="16-11-12.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.13-15 ॥</div>
+    <p class="shlok-sanskrit">
+        इदम् अद्य मया लब्धम् इमं प्राप्स्ये मनोरथम् ।<br>
+        इदम् अस्तीदम् अपि मे भविष्यति पुनर् धनम् ॥<br>
+        असौ मया हतः शत्रुः हनिष्ये चा‌परान् अपि ।<br>
+        ईश्वरोऽहम् अहं भोगी सिद्धोऽहं बलवान् सुखी ॥<br>
+        आढ्योऽभिजनवान् अस्मि कोऽन्योऽस्ति सदृशो मया ।<br>
+        यक्ष्ये दास्यामि मोदिष्य इत्य् अज्ञानविमोहिताः ॥
+    </p>
+    <a class="bekkha-btn" href="16-13-15.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.16 ॥</div>
+    <p class="shlok-sanskrit">
+        अनेकचित्तविभ्रान्ता मोहजालसमावृताः ।<br>
+        प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ॥
+    </p>
+    <a class="bekkha-btn" href="16-16.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.17 ॥</div>
+    <p class="shlok-sanskrit">
+        आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः ।<br>
+        यजन्ते नामयज्ञैस् ते दम्भेना‌विधिपूर्वकम् ॥
+    </p>
+    <a class="bekkha-btn" href="16-17.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.18 ॥</div>
+    <p class="shlok-sanskrit">
+        अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः ।<br>
+        माम् आत्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः ॥
+    </p>
+    <a class="bekkha-btn" href="16-18.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.19 ॥</div>
+    <p class="shlok-sanskrit">
+        तान् अहं द्विषतः क्रूरान् संसारेषु नराधमान् ।<br>
+        क्षिपाम्य् अजस्रम् अशुभान् आसुरीष्व् एव योनिषु ॥
+    </p>
+    <a class="bekkha-btn" href="16-19.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.20 ॥</div>
+    <p class="shlok-sanskrit">
+        आसुरीं योनिम् आपन्ना मूढा जन्मनि जन्मनि ।<br>
+        माम् अप्राप्यैव कौन्तेय ततो यान्त्य् अधमां गतिम् ॥
+    </p>
+    <a class="bekkha-btn" href="16-20.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.21 ॥</div>
+    <p class="shlok-sanskrit">
+        त्रिविधं नरकस्येदं द्वारं नाशनम् आत्मनः ।<br>
+        कामः क्रोधस् तथा लोभस् तस्माद् एतत् त्रयं त्यजेत् ॥
+    </p>
+    <a class="bekkha-btn" href="16-21.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.22 ॥</div>
+    <p class="shlok-sanskrit">
+        एतैर् विमुक्तः कौन्तेय तमोद्वारैस् त्रिभिर् नरः ।<br>
+        आचरत्य् आत्मनः श्रेयस् ततो याति परां गतिम् ॥
+    </p>
+    <a class="bekkha-btn" href="16-22.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.23 ॥</div>
+    <p class="shlok-sanskrit">
+        यः शास्त्रविधिम् उत्सृज्य वर्तते कामकारतः ।<br>
+        न स सिद्धीम् अवाप्नोति न सुखं न परां गतिम् ॥
+    </p>
+    <a class="bekkha-btn" href="16-23.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 16.24 ॥</div>
+    <p class="shlok-sanskrit">
+        तस्माच् छास्त्रं प्रमाणं ते कार्या‌कार्यव्यवस्थितौ ।<br>
+        ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुम् इहा‌र्हसि ॥
+    </p>
+    <a class="bekkha-btn" href="16-24.html">व्याখ্যা</a>
+</div>
+
+</div> <div class="back-link-container">
+    <a href="gita-sanskrit.html" class="nav-btn">
+        <back to index>Back</back>
+    </a>
+    <a href="chapter17.html" class="nav-btn">Chapter 17</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang=sa>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>भगवद्गीता — चतुर्दशोऽध्यायः (गुणत्रयविभागयोगः)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+    /* New styles for navigation (Home Button, Back Button) */
+    .shlok-sanskrit {
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.8;
+        padding: 10px 0;
+    }
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        padding: 12px 25px;
+        background-color: #d4af37; 
+        color: #1a0f00; 
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        margin: 20px auto;
+    }
+    .home-btn-fixed {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffcc66;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #1a0f00;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        .home-btn-fixed {
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 1.2em;
+        }
+    }
+    .back-link-container {
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body class="temple-bg">
+
+<a href="index.html" class="home-btn-fixed" title=সূচিপত্র>
+    🏠
+</a>
+
+<header class="chapter-header">
+    <h1>॥ भगवद्गीता — चतुर्दशोऽध्यायः ॥</h1>
+    <h2>गुणत्रयविभागयोगः</h2>
+</header>
+
+<div class="chapter-container">
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.1 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रीभगवानुवाच ।<br>
+        परं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानम् उत्तमम् ।<br>
+        यज् ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः ॥
+    </p>
+    <a class="bekkha-btn" href="14-1.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.2 ॥</div>
+    <p class="shlok-sanskrit">
+        इदं ज्ञानम् उपाश्रित्य मम साधर्म्यम् आगताः ।<br>
+        सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च ॥
+    </p>
+    <a class="bekkha-btn" href="14-2.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.3 ॥</div>
+    <p class="shlok-sanskrit">
+        मम योनिर् महद् ब्रह्म तस्मिन् गर्भं दधाम्य् अहम् ।<br>
+        सम्भवः सर्वभूतानां ततो भवति भारत ॥
+    </p>
+    <a class="bekkha-btn" href="14-3.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.4 ॥</div>
+    <p class="shlok-sanskrit">
+        सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः ।<br>
+        तासां ब्रह्म महद् योनिर् अहं बीजप्रदः पिता ॥
+    </p>
+    <a class="bekkha-btn" href="14-4.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.5 ॥</div>
+    <p class="shlok-sanskrit">
+        सत्त्वं रजस् तम् इति गुणाः प्रकृतिसम्भवाः ।<br>
+        निबध्नन्ति महाबाहो देहे देहिनम् अव्ययम् ॥
+    </p>
+    <a class="bekkha-btn" href="14-5.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.6 ॥</div>
+    <p class="shlok-sanskrit">
+        तत्र सत्त्वं निर्मलत्वात् प्रकाशकम् अनामयम् ।<br>
+        सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥
+    </p>
+    <a class="bekkha-btn" href="14-6.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.7 ॥</div>
+    <p class="shlok-sanskrit">
+        रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् ।<br>
+        तन् निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥
+    </p>
+    <a class="bekkha-btn" href="14-7.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.8 ॥</div>
+    <p class="shlok-sanskrit">
+        तमस् त्व् अज्ञानजं विद्धि मोहनं सर्वदेहिनाम् ।<br>
+        प्रमादालस्यनिद्राभिस् तन् निबध्नाति भारत ॥
+    </p>
+    <a class="bekkha-btn" href="14-8.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.9 ॥</div>
+    <p class="shlok-sanskrit">
+        सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत ।<br>
+        ज्ञानम् आवृृत्य तु तमः प्रमादे सञ्जयत्य् उत ॥
+    </p>
+    <a class="bekkha-btn" href="14-9.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.10 ॥</div>
+    <p class="shlok-sanskrit">
+        रजस् तमश् चा‌भिभूय सत्त्वं भवति भारत ।<br>
+        रजः सत्त्वं तमश् चैव तमः सत्त्वं रजस् तथा ॥
+    </p>
+    <a class="bekkha-btn" href="14-10.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.11 ॥</div>
+    <p class="shlok-sanskrit">
+        सर्वद्वारेषु देहेऽस्मिन् प्रकाश उपजायते ।<br>
+        ज्ञानं यदा तदा विद्याद् विवृद्धं सत्त्वम् इत्य् उत ॥
+    </p>
+    <a class="bekkha-btn" href="14-11.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.12 ॥</div>
+    <p class="shlok-sanskrit">
+        लोभः प्रवृत्तिर् आरम्भः कर्मणाम् अशमः स्पृहा ।<br>
+        रजस्य् एतानि जायन्ते विवृद्धे भरतर्षभ ॥
+    </p>
+    <a class="bekkha-btn" href="14-12.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.13 ॥</div>
+    <p class="shlok-sanskrit">
+        अप्रकाशोऽप्रवृत्तिश् च प्रमादो मोह एव च ।<br>
+        तमस्य् एतानि जायन्ते विवृद्धे कुरुनन्दन ॥
+    </p>
+    <a class="bekkha-btn" href="14-13.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.14 ॥</div>
+    <p class="shlok-sanskrit">
+        यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् ।<br>
+        तदोत्तमविदां लोकान् अमलान् प्रतिपद्यते ॥
+    </p>
+    <a class="bekkha-btn" href="14-14.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.15 ॥</div>
+    <p class="shlok-sanskrit">
+        रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते ।<br>
+        तथा प्रलीनस् तमसि मूढयोनिषु जायते ॥
+    </p>
+    <a class="bekkha-btn" href="14-15.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.16 ॥</div>
+    <p class="shlok-sanskrit">
+        कर्मणः सुकृतस्या‌हुः सात्त्विकं निर्मलं फलम् ।<br>
+        रजसस् तु फलं दुःखम् अज्ञानं तमसः फलम् ॥
+    </p>
+    <a class="bekkha-btn" href="14-16.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.17 ॥</div>
+    <p class="shlok-sanskrit">
+        सत्त्वात् सञ्जायते ज्ञानं रजसो लोभ एव च ।<br>
+        प्रमादमोहौ तमसः भवतः अज्ञानम् एव च ॥
+    </p>
+    <a class="bekkha-btn" href="14-17.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.18 ॥</div>
+    <p class="shlok-sanskrit">
+        ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः ।<br>
+        जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः ॥
+    </p>
+    <a class="bekkha-btn" href="14-18.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.19 ॥</div>
+    <p class="shlok-sanskrit">
+        नान्यं गुणेभ्यः कर्तारं यदा द्रष्टा‌नुपश्यति ।<br>
+        गुणेभ्यश् च परं वेत्ति मद्भावं सोऽधिगच्छति ॥
+    </p>
+    <a class="bekkha-btn" href="14-19.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.20 ॥</div>
+    <p class="shlok-sanskrit">
+        गुणान् एतान् अतीत्य त्रीन् देही देहसमुद्भवान् ।<br>
+        जन्ममृत्युजरादुःखैर् विमुक्तोऽमृतम् अश्नुते ॥
+    </p>
+    <a class="bekkha-btn" href="14-20.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.21 ॥</div>
+    <p class="shlok-sanskrit">
+        अर्जुन उवाच ।<br>
+        कैर् लिङ्गैस् त्रीन् गुणान् एतान् अतीतो भवति प्रभो ।<br>
+        किम् आचारः कथं चैतांस् त्रीन् गुणान् अतिवर्तते ॥
+    </p>
+    <a class="bekkha-btn" href="14-21.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.22 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रीभगवानुवाच ।<br>
+        प्रकाशं च प्रवृत्तिं च मोहम् एव च पाण्डव ।<br>
+        न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥
+    </p>
+    <a class="bekkha-btn" href="14-22.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.23 ॥</div>
+    <p class="shlok-sanskrit">
+        उदासीनवद् आसीनो गुणैर् यो न विचाल्यते ।<br>
+        गुणा वर्तन्त इत्य् एव योऽवतिष्ठति नेङ्गते ॥
+    </p>
+    <a class="bekkha-btn" href="14-23.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.24 ॥</div>
+    <p class="shlok-sanskrit">
+        समदुःखसुखः स्वस्थः समलोष्टा‌श्मकाञ्चनः ।<br>
+        तुल्यप्रियाप्रियो धीरस् तुल्यनिन्दा‌त्मसंस्तुतिः ॥
+    </p>
+    <a class="bekkha-btn" href="14-24.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.25 ॥</div>
+    <p class="shlok-sanskrit">
+        मानापमानयोस् तुल्यस् तुल्यो मित्रारिपक्षयोः ।<br>
+        सर्वारम्भपरित्यागी गुणातीतः स उच्यते ॥
+    </p>
+    <a class="bekkha-btn" href="14-25.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.26 ॥</div>
+    <p class="shlok-sanskrit">
+        मां च योऽव्यभिचारेण भक्तियोगेन सेवते ।<br>
+        स गुणान् समतीत्यैतान् ब्रह्मभूयाय कल्पते ॥
+    </p>
+    <a class="bekkha-btn" href="14-26.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 14.27 ॥</div>
+    <p class="shlok-sanskrit">
+        ब्रह्मणो हि प्रतिष्ठाहम् अमृतस्या‌व्ययस्य च ।<br>
+        शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च ॥
+    </p>
+    <a class="bekkha-btn" href="14-27.html">व्याখ্যা</a>
+</div>
+
+</div> <div class="back-link-container">
+    <a href="gita-sanskrit.html" class="nav-btn">
+       <back to index>Back</back>
+    </a>
+    <a href="chapter15.html" class="nav-btn">Chapter 15</a>
+</div>
+
+</body>
+</html>

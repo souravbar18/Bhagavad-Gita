@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang=sa>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>भगवद्गीता — द्वादशोऽध्यायः (भक्तियोगः)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+    /* New styles for navigation (Home Button, Back Button) - same as previous */
+    .shlok-sanskrit {
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.8;
+        padding: 10px 0;
+    }
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        padding: 12px 25px;
+        background-color: #d4af37; 
+        color: #1a0f00; 
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        margin: 20px auto;
+    }
+    .home-btn-fixed {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffcc66;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #1a0f00;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        .home-btn-fixed {
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 1.2em;
+        }
+    }
+    .back-link-container {
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body class="temple-bg">
+
+<a href="index.html" class="home-btn-fixed" title=সূচিপত্র>
+    🏠
+</a>
+
+<header class="chapter-header">
+    <h1>॥ भगवद्गीता — द्वादशोऽध्यायः ॥</h1>
+    <h2>भक्तियोगः</h2>
+</header>
+
+<div class="chapter-container">
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.1 ॥</div>
+    <p class="shlok-sanskrit">
+        अर्जुन उवाच ।<br>
+        एवं सततयुक्ता ये भक्तास्त्वां पर्युपासते ।<br>
+        ये चाप्यक्षरम् अव्यक्तं तेषां के योगवित्तमाः ॥
+    </p>
+    <a class="bekkha-btn" href="12-1.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.2 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रीभगवानुवाच ।<br>
+        मय्य् आवेश्य मनो ये मां नित्ययुक्ता उपासते ।<br>
+        श्रद्धया परयोपेतास् ते मे युक्ततमा मताः ॥
+    </p>
+    <a class="bekkha-btn" href="12-2.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.3 ॥</div>
+    <p class="shlok-sanskrit">
+        ये त्व् अक्षरम् अनिर्देश्यम् अव्यक्तं पर्युपासते ।<br>
+        सर्वत्रगम् अचिन्त्यं च कूटस्थम् अचलं ध्रुवम् ॥
+    </p>
+    <a class="bekkha-btn" href="12-3.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.4 ॥</div>
+    <p class="shlok-sanskrit">
+        सन्नियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः ।<br>
+        ते प्राप्नुवन्ति माम् एव सर्वभूतहिते रताः ॥
+    </p>
+    <a class="bekkha-btn" href="12-4.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.5 ॥</div>
+    <p class="shlok-sanskrit">
+        क्लेशोऽधिकतरस् तेषाम् अव्यक्तासक्तचेतसाम् ।<br>
+        अव्यक्ता हि गतिर् दुःखं देहवद्भिर् अवाप्यते ॥
+    </p>
+    <a class="bekkha-btn" href="12-5.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.6 ॥</div>
+    <p class="shlok-sanskrit">
+        ये तु सर्वाणि कर्माणि मयि सन्न्यस्य मत्पराः ।<br>
+        अनन्येनैव योगेन मां ध्यायन्त उपासते ॥
+    </p>
+    <a class="bekkha-btn" href="12-6.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.7 ॥</div>
+    <p class="shlok-sanskrit">
+        तेषाम् अहं समुद्धर्ता मृत्युसंसारसागरात् ।<br>
+        भवामि न चिरात् पार्थ मय्य् आवेशितचेतसाम् ॥
+    </p>
+    <a class="bekkha-btn" href="12-7.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.8 ॥</div>
+    <p class="shlok-sanskrit">
+        मय्य् एव मन आधत्स्व मयि बुद्धिं निवेशय ।<br>
+        निवसिष्यसि मय्य् एव अत ऊर्ध्वं न संशयः ॥
+    </p>
+    <a class="bekkha-btn" href="12-8.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.9 ॥</div>
+    <p class="shlok-sanskrit">
+        अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम् ।<br>
+        अभ्यासयोगेन ततो माम् इच्छ।आप्तुं धनञ्जय ॥
+    </p>
+    <a class="bekkha-btn" href="12-9.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.10 ॥</div>
+    <p class="shlok-sanskrit">
+        अभ्यासेऽप्य् असमर्थोऽसि मत्कर्मपरमो भव ।<br>
+        मदर्थम् अपि कर्माणि कुर्वन् सिद्धिम् अवाप्स्यसि ॥
+    </p>
+    <a class="bekkha-btn" href="12-10.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.11 ॥</div>
+    <p class="shlok-sanskrit">
+        अथैतद् अप्य् अशक्तोऽसि कर्तुं मद्योगम् आश्रितः ।<br>
+        सर्वकर्मफलत्यागं ततः कुरु यतात्मवान् ॥
+    </p>
+    <a class="bekkha-btn" href="12-11.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.12 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रेयो हि ज्ञानम् अभ्यासाज्<br>
+        ज्ञानाद् ध्यानं विशिष्यते ।<br>
+        ध्यानात् कर्मफलत्यागस्<br>
+        त्यागाच् छान्तिर् अनन्तरम् ॥
+    </p>
+    <a class="bekkha-btn" href="12-12.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.13 ॥</div>
+    <p class="shlok-sanskrit">
+        अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च ।<br>
+        निर्ममो निरहङ्कारः समदुःखसुखः क्षमी ॥
+    </p>
+    <a class="bekkha-btn" href="12-13.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.14 ॥</div>
+    <p class="shlok-sanskrit">
+        सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः ।<br>
+        मय्य् अर्पितमनोबुद्धिर् यो मद्भक्तः स मे प्रियः ॥
+    </p>
+    <a class="bekkha-btn" href="12-14.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.15 ॥</div>
+    <p class="shlok-sanskrit">
+        यस्मान् नोद्विजते लोको<br>
+        लोकान् नोद्विजते च यः ।<br>
+        हर्षामर्षभयोद्वेगैर्<br>
+        मुक्तो यः स च मे प्रियः ॥
+    </p>
+    <a class="bekkha-btn" href="12-15.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.16 ॥</div>
+    <p class="shlok-sanskrit">
+        अनपेक्षः शुचिर् दक्ष<br>
+        उदासीनो गतव्यथः ।<br>
+        सर्वारम्भपरित्यागी<br>
+        यो मद्भक्तः स मे प्रियः ॥
+    </p>
+    <a class="bekkha-btn" href="12-16.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.17 ॥</div>
+    <p class="shlok-sanskrit">
+        यो न हृष्यति न द्वेष्टि<br>
+        न शोचति न काङ्क्षति ।<br>
+        शुभाशुभपरित्यागी<br>
+        भक्तिमान् यः स मे प्रियः ॥
+    </p>
+    <a class="bekkha-btn" href="12-17.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.18 ॥</div>
+    <p class="shlok-sanskrit">
+        समः शत्रौ च मित्रे च<br>
+        तथा मानापमानयोः ।<br>
+        शीतोष्णसुखदुःखेषु<br>
+        समः सङ्गविवर्जितः ॥
+    </p>
+    <a class="bekkha-btn" href="12-18.html">व्याখ্যা</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.19 ॥</div>
+    <p class="shlok-sanskrit">
+        तुल्यनिन्दास्तुतिर् मौनी<br>
+        सन्तुष्टो येन केनचित् ।<br>
+        अनिकेतः स्थिरमतिर्<br>
+        भक्तिमान् मे प्रियो नरः ॥
+    </p>
+    <a class="bekkha-btn" href="12-19.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 12.20 ॥</div>
+    <p class="shlok-sanskrit">
+        ये तु धर्म्यामृतम् इदं यथोक्तं पर्युपासते ।<br>
+        श्रद्दधाना मत्परमा भक्तास् तेऽतीव मे प्रियाः ॥
+    </p>
+    <a class="bekkha-btn" href="12-20.html">व्याख्या</a>
+</div>
+
+</div> <div class="back-link-container">
+    <a href="gita-sanskrit.html" class="nav-btn">
+       <back to index>Back</back>
+    </a>
+    <a href="chapter13.html" class="nav-btn">Chapter 13</a>
+</div>
+
+</body>
+</html>
