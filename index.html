@@ -173,19 +173,28 @@ body{
     .chapter-header h1{ font-size: 22px; }
     .chapter-header h2{ font-size: 16px; }
 }
-    /* ১. গুগলের ডিফল্ট হাইলাইট বা হলুদ রঙ পুরোপুরি রিমুভ করার জন্য */
-  .gs-title b, .gs-snippet b, .gsc-completion-container b {
-    color: black !important; /* সাজেশনের বাকি লেখা কালো */
-    background-color: transparent !important; /* হলুদ ব্যাকগ্রাউন্ড থাকলে মুছে যাবে */
-  }
-
-  /* ২. তুমি যতটুকু টাইপ করছো (যেমন: hello), সেটাকে লাল করার জন্য */
-  .gsc-completion-container .gsc-completion-title {
-    color: #FF0000 !important; /* লাল রঙ */
+    /* ১. গুগলের যেকোনো অটো-হাইলাইট বা হলুদ রঙ পুরোপুরি মুছে ফেলার জন্য */
+  .gsc-completion-container b, 
+  .gsc-completion-container span,
+  .gs-title b, 
+  .gs-snippet b {
+    color: black !important;
     background-color: transparent !important;
+    background: none !important;
   }
 
-  /* ৩. সাজেশনের পুরো বক্সটাকে সাদা রাখার জন্য */
+  /* ২. তুমি যতটুকু টাইপ করছো সেটাকে লাল (Red) করার জন্য */
+  /* গুগল এটাকে অনেক সময় 'gsc-completion-title' বা 'gs-highlighter' হিসেবে রাখে */
+  .gsc-completion-title, 
+  .gsc-completion-container .gsc-completion-title,
+  .gs-highlighter {
+    color: #FF0000 !important;
+    background-color: transparent !important;
+    background: none !important;
+    font-weight: bold !important;
+  }
+
+  /* ৩. সাজেশনের পুরো বক্সটাকে সাদা রাখা */
   .gsc-completion-container {
     background-color: #ffffff !important;
     border: 1px solid #ccc !important;
