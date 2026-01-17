@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabharata part 3</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        
+        .quote-box:hover {
+        /* transform: translateY(-3px); <- এটি মুছে দিন বা কমেন্ট করুন */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        border-color: #3498db; /* ঐচ্ছিক: বর্ডারের রঙ বদলালে কাঁপে না */
+       }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        
+        .nav-button:hover {
+    background-color: #2980b9;
+    /* transform: scale(1.05); <- এটি মুছে দিন */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6); /* স্কেলের বদলে গ্লো (Glow) দিন */
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>3. Principles and Practical Knowledge of Mahabharata - Collection 3 (201-300)</h1>
+            <p>State administration, politics (governance) and war policy</p>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 201</span>
+            <div class="lang-bangla">শাসনকর্তার প্রধান কর্তব্য হলো প্রজাদের রক্ষা করা।</div>
+            <div class="lang-hindi">शासक का मुख्य कर्तव्य प्रजा की रक्षा करना है।</div>
+            <div class="lang-english">The chief duty of a ruler is to protect the subjects.</div>
+            <span class="reference">(Shanti Parva 57.3)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 202</span>
+            <div class="lang-bangla">গুপ্তচর হলো রাজার তৃতীয় চোখ।</div>
+            <div class="lang-hindi">जासूस राजा की तीसरी आँख होते हैं।</div>
+            <div class="lang-english">Spies are the third eye of the king.</div>
+            <span class="reference">(Shanti Parva 69.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 203</span>
+            <div class="lang-bangla">রাজা যদি দুর্বল হন, তবে তার সকল নীতি ব্যর্থ হয়।</div>
+            <div class="lang-hindi">यदि राजा कमजोर है, तो उसकी सभी नीतियां विफल हो जाती हैं।</div>
+            <div class="lang-english">If the king is weak, all his policies fail.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 204</span>
+            <div class="lang-bangla">যুদ্ধ হলো সর্বশেষ উপায়, প্রথম বিকল্প নয়।</div>
+            <div class="lang-hindi">युद्ध अंतिम उपाय है, पहला विकल्प नहीं।</div>
+            <div class="lang-english">War is the last resort, not the first option.</div>
+            <span class="reference">(Udyoga Parva 72.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 205</span>
+            <div class="lang-bangla">ন্যায় ও শাস্তির সঠিক ব্যবহারেই রাষ্ট্র শক্তিশালী হয়।</div>
+            <div class="lang-hindi">न्याय और दंड के सही उपयोग से ही राष्ट्र मजबूत होता है।</div>
+            <div class="lang-english">The state becomes strong only through the proper use of justice and punishment.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 206</span>
+            <div class="lang-bangla">রাজার উচিত প্রজাদের সাথে মৃদু কথা বলা, কিন্তু সিদ্ধান্ত নেওয়া কঠোরভাবে।</div>
+            <div class="lang-hindi">राजा को प्रजा से मीठा बोलना चाहिए, लेकिन निर्णय कठोरता से लेना चाहिए।</div>
+            <div class="lang-english">The king should speak softly to the subjects, but make decisions strictly.</div>
+            <span class="reference">(Shanti Parva 57.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 207</span>
+            <div class="lang-bangla">শক্তিশালী শত্রুকেও বিনয়ের সাথে মোকাবিলা করা উচিত, যতক্ষণ না যুদ্ধ অনিবার্য।</div>
+            <div class="lang-hindi">शक्तिशाली शत्रु का भी विनम्रता से सामना करना चाहिए, जब तक युद्ध अपरिहार्य न हो।</div>
+            <div class="lang-english">A powerful enemy should also be dealt with humbly, until war is inevitable.</div>
+            <span class="reference">(Udyoga Parva 33.43)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 208</span>
+            <div class="lang-bangla">শাসন ব্যবস্থায় গোপনীয়তা রক্ষা করা অত্যন্ত জরুরি।</div>
+            <div class="lang-hindi">शासन व्यवस्था में गोपनीयता बनाए रखना अत्यंत आवश्यक है।</div>
+            <div class="lang-english">Maintaining secrecy in governance is extremely essential.</div>
+            <span class="reference">(Shanti Parva 83.33)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 209</span>
+            <div class="lang-bangla">যে শাসক কেবল নিজের সুখের কথা ভাবে, তার পতন নিশ্চিত।</div>
+            <div class="lang-hindi">जो शासक केवल अपने सुख के बारे में सोचता है, उसका पतन निश्चित है।</div>
+            <div class="lang-english">The downfall of a ruler who only thinks of his own happiness is certain.</div>
+            <span class="reference">(Shanti Parva 56.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 210</span>
+            <div class="lang-bangla">যুদ্ধ শুরুর আগে শান্তি স্থাপনের জন্য সর্বোচ্চ চেষ্টা করা উচিত।</div>
+            <div class="lang-hindi">युद्ध शुरू करने से पहले शांति स्थापित करने के लिए अधिकतम प्रयास करना चाहिए।</div>
+            <div class="lang-english">The utmost effort should be made to establish peace before starting a war.</div>
+            <span class="reference">(Udyoga Parva 72.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 211</span>
+            <div class="lang-bangla">মন্ত্রীরা হলেন রাষ্ট্রের মূল ভিত্তি।</div>
+            <div class="lang-hindi">मंत्री राज्य की मुख्य नींव होते हैं।</div>
+            <div class="lang-english">Ministers are the main foundation of the state.</div>
+            <span class="reference">(Shanti Parva 69.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 212</span>
+            <div class="lang-bangla">দুর্বল রাজার চেয়ে যোগ্য মন্ত্রীর বুদ্ধি বেশি মূল্যবান।</div>
+            <div class="lang-hindi">एक कमजोर राजा से एक योग्य मंत्री की बुद्धि अधिक मूल्यवान है।</div>
+            <div class="lang-english">The wisdom of a capable minister is more valuable than a weak king.</div>
+            <span class="reference">(Vidura Niti - Udyoga Parva 33.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 213</span>
+            <div class="lang-bangla">সঠিক সময়ে কঠোর সিদ্ধান্ত নেওয়াই হলো শ্রেষ্ঠ রাজনীতি।</div>
+            <div class="lang-hindi">सही समय पर कठोर निर्णय लेना ही सर्वश्रेष्ठ राजनीति है।</div>
+            <div class="lang-english">Taking harsh decisions at the right time is the best statecraft.</div>
+            <span class="reference">(Shanti Parva 59.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 214</span>
+            <div class="lang-bangla">সেনাবাহিনী হলো রাষ্ট্রের হাত।</div>
+            <div class="lang-hindi">सेना राज्य के हाथ हैं।</div>
+            <div class="lang-english">The army is the hands of the state.</div>
+            <span class="reference">(Shanti Parva 69.18)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 215</span>
+            <div class="lang-bangla">শান্তি বজায় রাখার জন্য মাঝে মাঝে ছোট ত্যাগ স্বীকার করা উচিত।</div>
+            <div class="lang-hindi">शांति बनाए रखने के लिए कभी-कभी छोटे बलिदान देने चाहिए।</div>
+            <div class="lang-english">Small sacrifices should sometimes be made to maintain peace.</div>
+            <span class="reference">(Udyoga Parva 33.43)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 216</span>
+            <div class="lang-bangla">অতিরিক্ত কর আরোপ করা প্রজাদের ওপর অত্যাচার করার সমান।</div>
+            <div class="lang-hindi">अत्यधिक कर लगाना प्रजा पर अत्याचार करने के समान है।</div>
+            <div class="lang-english">Imposing excessive taxes is equivalent to persecuting the subjects.</div>
+            <span class="reference">(Shanti Parva 87.16)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 217</span>
+            <div class="lang-bangla">যে রাজা দুর্বলদের রক্ষা করেন, তিনিই প্রকৃত ধর্ম পালন করেন।</div>
+            <div class="lang-hindi">जो राजा कमजोरों की रक्षा करता है, वही सच्चा धर्म निभाता है।</div>
+            <div class="lang-english">The king who protects the weak truly practices Dharma.</div>
+            <span class="reference">(Shanti Parva 57.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 218</span>
+            <div class="lang-bangla">যুদ্ধের মাঠে আবেগের কোনো স্থান নেই, কেবল কর্তব্যই শেষ কথা।</div>
+            <div class="lang-hindi">युद्ध के मैदान में भावनाओं का कोई स्थान नहीं है, केवल कर्तव्य ही अंतिम शब्द है।</div>
+            <div class="lang-english">There is no place for emotion on the battlefield, only duty is the final word.</div>
+            <span class="reference">(Bhishma Parva 26.3, Bhagavad Gita)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 219</span>
+            <div class="lang-bangla">সময়মতো সঠিক পদক্ষেপ নেওয়া রাজনীতির মূলনীতি।</div>
+            <div class="lang-hindi">समय पर सही कदम उठाना राजनीति का मूल सिद्धांत है।</div>
+            <div class="lang-english">Taking the right step at the right time is the fundamental principle of politics.</div>
+            <span class="reference">(Shanti Parva 69.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 220</span>
+            <div class="lang-bangla">বিশ্বাসঘাতকতা একটি রাষ্ট্রকে ভিতর থেকে দুর্বল করে দেয়।</div>
+            <div class="lang-hindi">विश्वासघात एक राष्ट्र को अंदर से कमजोर कर देता है।</div>
+            <div class="lang-english">Treachery weakens a state from within.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 221</span>
+            <div class="lang-bangla">বিপদে পড়লে শত্রুর কাছেও সাহায্য চাইতে দ্বিধা করো না, যদি তা রাষ্ট্রের কল্যাণে হয়।</div>
+            <div class="lang-hindi">संकट में पड़ने पर शत्रु से भी सहायता मांगने में संकोच न करें, यदि यह राष्ट्र के कल्याण के लिए हो।</div>
+            <div class="lang-english">Do not hesitate to ask even an enemy for help in a crisis, if it is for the welfare of the state.</div>
+            <span class="reference">(Shanti Parva 140.40 - Kautilya's influence)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 222</span>
+            <div class="lang-bangla">রাজস্ব আদায় করা উচিত মৌমাছির মতো, যা ফুলকে ক্ষতিগ্রস্ত না করেই মধু নেয়।</div>
+            <div class="lang-hindi">राजस्व मधुमक्खी की तरह वसूल करना चाहिए, जो फूल को नुकसान पहुंचाए बिना शहद लेती है।</div>
+            <div class="lang-english">Revenue should be collected like a bee, which takes honey without harming the flower.</div>
+            <span class="reference">(Shanti Parva 88.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 223</span>
+            <div class="lang-bangla">ক্ষমতা হলো বিষ, যা আত্ম-নিয়ন্ত্রণহীন ব্যক্তিকে ধ্বংস করে।</div>
+            <div class="lang-hindi">शक्ति विष है, जो आत्म-नियंत्रणहीन व्यक्ति को नष्ट कर देती है।</div>
+            <div class="lang-english">Power is poison, which destroys the person without self-control.</div>
+            <span class="reference">(Udyoga Parva 33.72)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 224</span>
+            <div class="lang-bangla">জ্ঞানী শাসক তার শত্রুদেরও সম্মান করে।</div>
+            <div class="lang-hindi">बुद्धिमान शासक अपने शत्रुओं का भी सम्मान करता है।</div>
+            <div class="lang-english">The wise ruler respects even his enemies.</div>
+            <span class="reference">(Shanti Parva 69.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 225</span>
+            <div class="lang-bangla">শত্রুদের দুর্বলতা হলো তাদের অহংকার।</div>
+            <div class="lang-hindi">शत्रुओं की कमजोरी उनका अहंकार है।</div>
+            <div class="lang-english">The weakness of enemies is their arrogance.</div>
+            <span class="reference">(Udyoga Parva 34.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 226</span>
+            <div class="lang-bangla">রাজার উচিত সর্বদা প্রজাদের সুখ-দুঃখের প্রতি মনোযোগী হওয়া।</div>
+            <div class="lang-hindi">राजा को हमेशा प्रजा के सुख-दुख पर ध्यान देना चाहिए।</div>
+            <div class="lang-english">The king should always pay attention to the happiness and sorrow of the subjects.</div>
+            <span class="reference">(Shanti Parva 56.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 227</span>
+            <div class="lang-bangla">নীতি ছাড়া শক্তি অন্ধ।</div>
+            <div class="lang-hindi">नीति के बिना शक्ति अंधा है।</div>
+            <div class="lang-english">Power without policy is blind.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 228</span>
+            <div class="lang-bangla">যুদ্ধ জয়ের জন্য কেবল সাহসই যথেষ্ট নয়, কৌশলের প্রয়োজন।</div>
+            <div class="lang-hindi">युद्ध जीतने के लिए केवल साहस ही पर्याप्त नहीं है, रणनीति की आवश्यकता है।</div>
+            <div class="lang-english">Courage alone is not enough to win a war, strategy is needed.</div>
+            <span class="reference">(Karna Parva 79.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 229</span>
+            <div class="lang-bangla">শান্তি তখনই সম্ভব, যখন উভয় পক্ষই ন্যায় স্বীকার করে নেয়।</div>
+            <div class="lang-hindi">शांति तभी संभव है जब दोनों पक्ष न्याय स्वीकार कर लें।</div>
+            <div class="lang-english">Peace is possible only when both sides accept justice.</div>
+            <span class="reference">(Udyoga Parva 72.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 230</span>
+            <div class="lang-bangla">যে রাজা তার প্রজাদের রক্ষা করে, প্রজারাও তাকে রক্ষা করে।</div>
+            <div class="lang-hindi">जो राजा अपनी प्रजा की रक्षा करता है, प्रजा भी उसकी रक्षा करती है।</div>
+            <div class="lang-english">The king who protects his subjects is also protected by them.</div>
+            <span class="reference">(Shanti Parva 57.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 231</span>
+            <div class="lang-bangla">আগে নিজে শক্তিশালী হও, তারপর শত্রুর সাথে মোকাবিলা করো।</div>
+            <div class="lang-hindi">पहले खुद मजबूत बनो, फिर शत्रु का सामना करो।</div>
+            <div class="lang-english">First become strong yourself, then confront the enemy.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 232</span>
+            <div class="lang-bangla">একজন ভালো শাসকের সবচেয়ে বড় গুণ হলো দূরদর্শিতা।</div>
+            <div class="lang-hindi">एक अच्छे शासक का सबसे बड़ा गुण दूरदर्शिता है।</div>
+            <div class="lang-english">The greatest virtue of a good ruler is foresight.</div>
+            <span class="reference">(Shanti Parva 69.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 233</span>
+            <div class="lang-bangla">রাজনীতিতে আবেগ নয়, বাস্তবতাই গুরুত্বপূর্ণ।</div>
+            <div class="lang-hindi">राजनीति में भावना नहीं, वास्तविकता महत्वपूर्ण है।</div>
+            <div class="lang-english">In politics, reality is important, not emotion.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 234</span>
+            <div class="lang-bangla">শান্তিপূর্ণ চুক্তি যুদ্ধ জেতার চেয়েও মূল্যবান।</div>
+            <div class="lang-hindi">एक शांतिपूर्ण समझौता युद्ध जीतने से भी अधिक मूल्यवान है।</div>
+            <div class="lang-english">A peaceful agreement is more valuable than winning a war.</div>
+            <span class="reference">(Udyoga Parva 33.43)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 235</span>
+            <div class="lang-bangla">যে রাজা তার মন্ত্রীর কথা শোনেন না, তার সর্বনাশ হয়।</div>
+            <div class="lang-hindi">जो राजा अपने मंत्री की बात नहीं सुनता, उसका विनाश होता है।</div>
+            <div class="lang-english">The king who does not listen to his minister is ruined.</div>
+            <span class="reference">(Shanti Parva 69.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 236</span>
+            <div class="lang-bangla">শাসনকর্তার চরিত্রই তার রাষ্ট্রের চরিত্র।</div>
+            <div class="lang-hindi">शासक का चरित्र ही उसके राष्ट्र का चरित्र है।</div>
+            <div class="lang-english">The character of the ruler is the character of his state.</div>
+            <span class="reference">(Shanti Parva 57.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 237</span>
+            <div class="lang-bangla">অসৎ পথে অর্জন করা জয় দীর্ঘস্থায়ী হয় না।</div>
+            <div class="lang-hindi">अनैतिक तरीके से हासिल की गई जीत लंबे समय तक नहीं रहती।</div>
+            <div class="lang-english">Victory achieved through immoral means does not last long.</div>
+            <span class="reference">(Shanti Parva 120.30)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 238</span>
+            <div class="lang-bangla">গুপ্তচরদের মাধ্যমে শত্রুর দুর্বলতা জানা সম্ভব।</div>
+            <div class="lang-hindi">जासूसों के माध्यम से शत्रु की कमजोरी जानना संभव है।</div>
+            <div class="lang-english">It is possible to know the weakness of the enemy through spies.</div>
+            <span class="reference">(Shanti Parva 69.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 239</span>
+            <div class="lang-bangla">রাজার কর্তব্য হলো সকলের জন্য সমান ন্যায়বিচার নিশ্চিত করা।</div>
+            <div class="lang-hindi">राजा का कर्तव्य है कि वह सभी के लिए समान न्याय सुनिश्चित करे।</div>
+            <div class="lang-english">The king's duty is to ensure equal justice for all.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 240</span>
+            <div class="lang-bangla">যুদ্ধ একটি বিষাক্ত বীজ, যা কেবল ধ্বংসই আনে।</div>
+            <div class="lang-hindi">युद्ध एक जहरीला बीज है, जो केवल विनाश लाता है।</div>
+            <div class="lang-english">War is a poisonous seed that only brings destruction.</div>
+            <span class="reference">(Udyoga Parva 72.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 241</span>
+            <div class="lang-bangla">রাজার সম্পদ হলো তার প্রজাদের সুখ।</div>
+            <div class="lang-hindi">राजा का धन उसकी प्रजा का सुख है।</div>
+            <div class="lang-english">The wealth of the king is the happiness of his subjects.</div>
+            <span class="reference">(Shanti Parva 87.16)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 242</span>
+            <div class="lang-bangla">দুর্বল রাষ্ট্রকে রক্ষা করতে হলে সবসময় সতর্ক থাকতে হয়।</div>
+            <div class="lang-hindi">एक कमजोर राष्ट्र की रक्षा के लिए हमेशा सतर्क रहना पड़ता है।</div>
+            <div class="lang-english">One must always be vigilant to protect a weak state.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 243</span>
+            <div class="lang-bangla">গুপ্ত আলোচনা কখনোই প্রকাশ্যে আনা উচিত নয়।</div>
+            <div class="lang-hindi">गुप्त चर्चा को कभी भी सार्वजनिक नहीं करना चाहिए।</div>
+            <div class="lang-english">Secret discussions should never be made public.</div>
+            <span class="reference">(Shanti Parva 83.33)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 244</span>
+            <div class="lang-bangla">ক্ষমতার সাথে অহংকার যুক্ত হলে পতন অনিবার্য।</div>
+            <div class="lang-hindi">जब शक्ति के साथ अहंकार जुड़ जाता है, तो पतन अनिवार्य है।</div>
+            <div class="lang-english">When arrogance is coupled with power, downfall is inevitable.</div>
+            <span class="reference">(Udyoga Parva 34.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 245</span>
+            <div class="lang-bangla">সাহস হলো রাজার সেই গুণ, যা তার সৈন্যদের অনুপ্রাণিত করে।</div>
+            <div class="lang-hindi">साहस राजा का वह गुण है, जो उसके सैनिकों को प्रेरित करता है।</div>
+            <div class="lang-english">Courage is the quality of the king that inspires his soldiers.</div>
+            <span class="reference">(Karna Parva 79.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 246</span>
+            <div class="lang-bangla">সৎ মন্ত্রীরা হলেন রাজার শুভাকাঙ্ক্ষী।</div>
+            <div class="lang-hindi">सच्चे मंत्री राजा के शुभचिंतक होते हैं।</div>
+            <div class="lang-english">Honest ministers are the well-wishers of the king.</div>
+            <span class="reference">(Shanti Parva 69.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 247</span>
+            <div class="lang-bangla">শাসনকর্তার উচিত জ্ঞানী ও অভিজ্ঞ ব্যক্তিদের পরামর্শ নেওয়া।</div>
+            <div class="lang-hindi">शासक को बुद्धिमान और अनुभवी व्यक्तियों से सलाह लेनी चाहिए।</div>
+            <div class="lang-english">The ruler should take advice from wise and experienced people.</div>
+            <span class="reference">(Shanti Parva 56.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 248</span>
+            <div class="lang-bangla">ক্ষমাশীলতা এবং কঠোরতা — উভয়ই রাজনীতির অপরিহার্য অংশ।</div>
+            <div class="lang-hindi">क्षमाशीलता और कठोरता - दोनों ही राजनीति के अनिवार्य अंग हैं।</div>
+            <div class="lang-english">Forgiveness and harshness - both are essential parts of statecraft.</div>
+            <span class="reference">(Udyoga Parva 33.48)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 249</span>
+            <div class="lang-bangla">যে শাসক তার প্রতিশ্রুতি রক্ষা করেন না, তার ওপর কেউ বিশ্বাস করে না।</div>
+            <div class="lang-hindi">जो शासक अपना वादा नहीं निभाता, उस पर कोई विश्वास नहीं करता।</div>
+            <div class="lang-english">No one trusts the ruler who does not keep his promise.</div>
+            <span class="reference">(Vana Parva 208.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 250</span>
+            <div class="lang-bangla">কর্মের সঠিক সময় এবং স্থান নির্বাচন করা বিজয়ের জন্য গুরুত্বপূর্ণ।</div>
+            <div class="lang-hindi">कार्य के लिए सही समय और स्थान चुनना विजय के लिए महत्वपूर्ण है।</div>
+            <div class="lang-english">Choosing the right time and place for action is crucial for victory.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 251</span>
+            <div class="lang-bangla">যে রাজা তার শত্রুকে ছোটো মনে করে, সে নিজেই ছোট হয়ে যায়।</div>
+            <div class="lang-hindi">जो राजा अपने शत्रु को छोटा समझता है, वह स्वयं छोटा हो जाता है।</div>
+            <div class="lang-english">The king who considers his enemy small becomes small himself.</div>
+            <span class="reference">(Udyoga Parva 33.43)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 252</span>
+            <div class="lang-bangla">শান্তি হলো রাষ্ট্রের সবচেয়ে মূল্যবান সম্পদ।</div>
+            <div class="lang-hindi">शांति राज्य की सबसे मूल्यवान संपत्ति है।</div>
+            <div class="lang-english">Peace is the most valuable asset of the state.</div>
+            <span class="reference">(Shanti Parva 109.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 253</span>
+            <div class="lang-bangla">শাসকের উচিত জনগণের মধ্যে বিভেদ সৃষ্টি না করা।</div>
+            <div class="lang-hindi">शासक को जनता के बीच मतभेद पैदा नहीं करना चाहिए।</div>
+            <div class="lang-english">The ruler should not create division among the people.</div>
+            <span class="reference">(Shanti Parva 57.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 254</span>
+            <div class="lang-bangla">যুদ্ধ নীতির অনুসরণ করা উচিত, এমনকি শত্রুর সাথেও।</div>
+            <div class="lang-hindi">युद्ध नीतियों का पालन करना चाहिए, यहां तक कि शत्रु के साथ भी।</div>
+            <div class="lang-english">War ethics should be followed, even with the enemy.</div>
+            <span class="reference">(Bhishma Parva 1.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 255</span>
+            <div class="lang-bangla">গুপ্তচরদের মধ্যে বিশ্বাসী ও সৎ হওয়া জরুরি।</div>
+            <div class="lang-hindi">जासूसों का विश्वसनीय और ईमानदार होना आवश्यक है।</div>
+            <div class="lang-english">It is necessary for spies to be trustworthy and honest.</div>
+            <span class="reference">(Shanti Parva 69.10)</span>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 256</span>
+            <div class="lang-bangla">যে রাজা ন্যায়বিচারের পথে থাকেন, তিনি সর্বদা সুরক্ষিত।</div>
+            <div class="lang-hindi">जो राजा न्याय के मार्ग पर चलता है, वह हमेशा सुरक्षित रहता है।</div>
+            <div class="lang-english">The king who walks on the path of justice is always secure.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 257</span>
+            <div class="lang-bangla">অতিরিক্ত রাগ শাসককে তার লক্ষ্য থেকে দূরে সরিয়ে দেয়।</div>
+            <div class="lang-hindi">अत्यधिक गुस्सा शासक को उसके लक्ष्य से दूर कर देता है।</div>
+            <div class="lang-english">Excessive anger distances the ruler from his goal.</div>
+            <span class="reference">(Udyoga Parva 33.72)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 258</span>
+            <div class="lang-bangla">রাজস্ব আদায়ের নীতি হওয়া উচিত সুষম ও ন্যায্য।</div>
+            <div class="lang-hindi">राजस्व वसूलने की नीति संतुलित और उचित होनी चाहिए।</div>
+            <div class="lang-english">The policy of collecting revenue should be balanced and fair.</div>
+            <span class="reference">(Shanti Parva 88.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 259</span>
+            <div class="lang-bangla">যুদ্ধ জয়ের পর শত্রুকে সম্পূর্ণভাবে ধ্বংস না করে ক্ষমা করা বুদ্ধিমানের কাজ।</div>
+            <div class="lang-hindi">युद्ध जीतने के बाद शत्रु को पूरी तरह नष्ट न करके क्षमा करना बुद्धिमानी है।</div>
+            <div class="lang-english">It is wise to forgive the enemy after winning the war rather than completely destroying them.</div>
+            <span class="reference">(Udyoga Parva 33.51)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 260</span>
+            <div class="lang-bangla">মন্ত্রীরা হলেন রাজার বাহু।</div>
+            <div class="lang-hindi">मंत्री राजा की भुजाएं होते हैं।</div>
+            <div class="lang-english">Ministers are the arms of the king.</div>
+            <span class="reference">(Shanti Parva 69.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 261</span>
+            <div class="lang-bangla">শাসকের উচিত তার গোপন শত্রুদের সম্পর্কে সর্বদা সচেতন থাকা।</div>
+            <div class="lang-hindi">शासक को अपने गुप्त शत्रुओं के बारे में हमेशा जागरूक रहना चाहिए।</div>
+            <div class="lang-english">The ruler should always be aware of his secret enemies.</div>
+            <span class="reference">(Shanti Parva 83.33)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 262</span>
+            <div class="lang-bangla">অহংকার শাসককে ভুল পথে চালিত করে।</div>
+            <div class="lang-hindi">अहंकार शासक को गलत रास्ते पर ले जाता है।</div>
+            <div class="lang-english">Arrogance misleads the ruler.</div>
+            <span class="reference">(Udyoga Parva 34.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 263</span>
+            <div class="lang-bangla">যুদ্ধ জেতার জন্য প্রথমে মনোবল জয় করা প্রয়োজন।</div>
+            <div class="lang-hindi">युद्ध जीतने के लिए सबसे पहले मनोबल जीतना आवश्यक है।</div>
+            <div class="lang-english">To win a war, it is necessary to first conquer morale.</div>
+            <span class="reference">(Karna Parva 79.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 264</span>
+            <div class="lang-bangla">রাজনীতিতে কখনওই স্থায়ী বন্ধু বা স্থায়ী শত্রু হয় না।</div>
+            <div class="lang-hindi">राजनीति में कभी भी स्थायी दोस्त या स्थायी दुश्मन नहीं होते।</div>
+            <div class="lang-english">In politics, there are never permanent friends or permanent enemies.</div>
+            <span class="reference">(Vidura Niti - Udyoga Parva 34.18)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 265</span>
+            <div class="lang-bangla">জ্ঞানী শাসক তার প্রজাদের সাথে বন্ধুর মতো ব্যবহার করেন।</div>
+            <div class="lang-hindi">बुद्धिमान शासक अपनी प्रजा के साथ दोस्त जैसा व्यवहार करता है।</div>
+            <div class="lang-english">The wise ruler behaves like a friend to his subjects.</div>
+            <span class="reference">(Shanti Parva 57.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 266</span>
+            <div class="lang-bangla">সময় হলো রাজনীতির প্রধান অস্ত্র।</div>
+            <div class="lang-hindi">समय राजनीति का मुख्य हथियार है।</div>
+            <div class="lang-english">Time is the main weapon of statecraft.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 267</span>
+            <div class="lang-bangla">অতিরিক্ত ক্রোধ নিয়ন্ত্রণ না করলে তা নিজের রাষ্ট্রকেই ধ্বংস করে।</div>
+            <div class="lang-hindi">यदि अत्यधिक क्रोध को नियंत्रित न किया जाए, तो वह अपने ही राष्ट्र को नष्ट कर देता है।</div>
+            <div class="lang-english">If excessive anger is not controlled, it destroys one's own state.</div>
+            <span class="reference">(Udyoga Parva 33.72)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 268</span>
+            <div class="lang-bangla">যে শাসক কেবল নিজের স্বার্থ দেখে, সে শীঘ্রই ক্ষমতা হারায়।</div>
+            <div class="lang-hindi">जो शासक केवल अपना हित देखता है, वह जल्द ही सत्ता खो देता है।</div>
+            <div class="lang-english">The ruler who only looks after his own interest soon loses power.</div>
+            <span class="reference">(Shanti Parva 56.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 269</span>
+            <div class="lang-bangla">যুদ্ধক্ষেত্রে সিদ্ধান্ত নিতে কোনো দ্বিধা থাকা উচিত নয়।</div>
+            <div class="lang-hindi">युद्ध के मैदान में निर्णय लेने में कोई संकोच नहीं होना चाहिए।</div>
+            <div class="lang-english">There should be no hesitation in making decisions on the battlefield.</div>
+            <span class="reference">(Bhishma Parva 26.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 270</span>
+            <div class="lang-bangla">নীতির কাছে শক্তিও মাথা নত করে।</div>
+            <div class="lang-hindi">नीति के सामने शक्ति भी झुक जाती है।</div>
+            <div class="lang-english">Even power bows before policy.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 271</span>
+            <div class="lang-bangla">শান্তি হলো যুদ্ধের একমাত্র প্রকৃত বিজয়।</div>
+            <div class="lang-hindi">शांति ही युद्ध की एकमात्र वास्तविक विजय है।</div>
+            <div class="lang-english">Peace is the only true victory of war.</div>
+            <span class="reference">(Udyoga Parva 72.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 272</span>
+            <div class="lang-bangla">রাজস্বের অর্থ প্রজাদের কল্যাণে ব্যয় করা উচিত।</div>
+            <div class="lang-hindi">राजस्व का पैसा प्रजा के कल्याण पर खर्च किया जाना चाहिए।</div>
+            <div class="lang-english">Revenue money should be spent on the welfare of the subjects.</div>
+            <span class="reference">(Shanti Parva 87.16)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 273</span>
+            <div class="lang-bangla">ক্ষমতা ধরে রাখার জন্য ন্যায়সঙ্গত হওয়া প্রয়োজন।</div>
+            <div class="lang-hindi">सत्ता बनाए रखने के लिए न्यायसंगत होना आवश्यक है।</div>
+            <div class="lang-english">It is necessary to be just to maintain power.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 274</span>
+            <div class="lang-bangla">গুপ্তচরদের মাধ্যমে শত্রুর গোপন পরিকল্পনা জানা সম্ভব।</div>
+            <div class="lang-hindi">जासूसों के माध्यम से शत्रु की गुप्त योजनाओं को जानना संभव है।</div>
+            <div class="lang-english">It is possible to know the secret plans of the enemy through spies.</div>
+            <span class="reference">(Shanti Parva 69.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 275</span>
+            <div class="lang-bangla">ক্ষমাশীল রাজা শত্রুকেও বন্ধুতে পরিণত করতে পারেন।</div>
+            <div class="lang-hindi">क्षमाशील राजा शत्रु को भी दोस्त में बदल सकता है।</div>
+            <div class="lang-english">A forgiving king can turn even an enemy into a friend.</div>
+            <span class="reference">(Udyoga Parva 33.51)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 276</span>
+            <div class="lang-bangla">নিজের প্রতিজ্ঞা ভঙ্গ করা রাজনীতির দুর্বলতা।</div>
+            <div class="lang-hindi">अपनी प्रतिज्ञा तोड़ना राजनीति की कमजोरी है।</div>
+            <div class="lang-english">Breaking one's own promise is a weakness in statecraft.</div>
+            <span class="reference">(Vana Parva 208.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 277</span>
+            <div class="lang-bangla">শাসনকর্তার উচিত সময়ের সাথে সাথে পরিবর্তন গ্রহণ করা।</div>
+            <div class="lang-hindi">शासक को समय के साथ बदलाव को स्वीकार करना चाहिए।</div>
+            <div class="lang-english">The ruler should accept change with time.</div>
+            <span class="reference">(Shanti Parva 139.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 278</span>
+            <div class="lang-bangla">দুর্জনের সাথেও প্রয়োজনে সন্ধি করা যায়।</div>
+            <div class="lang-hindi">दुष्ट के साथ भी जरूरत पड़ने पर संधि की जा सकती है।</div>
+            <div class="lang-english">A truce can be made with a wicked person when necessary.</div>
+            <span class="reference">(Shanti Parva 140.40)</span>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 279</span>
+            <div class="lang-bangla">অহংকার রাজাকে তার মন্ত্রীদের কাছ থেকে দূরে সরিয়ে দেয়।</div>
+            <div class="lang-hindi">अहंकार राजा को उसके मंत्रियों से दूर कर देता है।</div>
+            <div class="lang-english">Arrogance distances the king from his ministers.</div>
+            <span class="reference">(Udyoga Parva 34.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 280</span>
+            <div class="lang-bangla">সৎ পরামর্শ ছাড়া কোনো শাসনই দীর্ঘস্থায়ী হয় না।</div>
+            <div class="lang-hindi">सच्ची सलाह के बिना कोई भी शासन लंबे समय तक नहीं चलता।</div>
+            <div class="lang-english">No rule lasts long without honest advice.</div>
+            <span class="reference">(Shanti Parva 69.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 281</span>
+            <div class="lang-bangla">যুদ্ধ হলো সেই প্রক্রিয়া, যা সভ্যতাকে ধ্বংস করে।</div>
+            <div class="lang-hindi">युद्ध वह प्रक्रिया है, जो सभ्यता को नष्ट करती है।</div>
+            <div class="lang-english">War is the process that destroys civilization.</div>
+            <span class="reference">(Udyoga Parva 72.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 282</span>
+            <div class="lang-bangla">রাজার উচিত নিজের প্রতিজ্ঞা রক্ষা করা, তা যতই কঠিন হোক।</div>
+            <div class="lang-hindi">राजा को अपना वादा निभाना चाहिए, चाहे वह कितना भी कठिन क्यों न हो।</div>
+            <div class="lang-english">The king should keep his promise, no matter how difficult it is.</div>
+            <span class="reference">(Vana Parva 208.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 283</span>
+            <div class="lang-bangla">সেনাবাহিনীর মনোবলই বিজয়ের প্রধান কারণ।</div>
+            <div class="lang-hindi">सेना का मनोबल ही विजय का मुख्य कारण है।</div>
+            <div class="lang-english">The morale of the army is the main reason for victory.</div>
+            <span class="reference">(Karna Parva 79.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 284</span>
+            <div class="lang-bangla">শান্তি অর্জনের জন্য অহংকার ত্যাগ করতে হয়।</div>
+            <div class="lang-hindi">शांति प्राप्त करने के लिए अहंकार छोड़ना पड़ता है।</div>
+            <div class="lang-english">Arrogance must be abandoned to attain peace.</div>
+            <span class="reference">(Shanti Parva 109.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 285</span>
+            <div class="lang-bangla">যে রাজা ন্যায় প্রতিষ্ঠা করেন, তার প্রজারা তাকে দেবতা মনে করে।</div>
+            <div class="lang-hindi">जो राजा न्याय स्थापित करता है, उसकी प्रजा उसे देवता मानती है।</div>
+            <div class="lang-english">The king who establishes justice is considered a deity by his subjects.</div>
+            <span class="reference">(Shanti Parva 57.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 286</span>
+            <div class="lang-bangla">রাজনীতিতে ছয়টি গুণ অনুসরণ করা উচিত: শান্তি, যুদ্ধ, গমন, অবস্থান, দ্বৈধ এবং আশ্রয়।</div>
+            <div class="lang-hindi">राजनीति में छह गुणों का पालन करना चाहिए: शांति, युद्ध, यात्रा, ठहरना, दोहरा व्यवहार और आश्रय।</div>
+            <div class="lang-english">Six qualities should be followed in statecraft: peace, war, marching, halting, double-dealing, and seeking shelter.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 287</span>
+            <div class="lang-bangla">ক্রোধে নেওয়া কোনো সিদ্ধান্তই রাষ্ট্রের জন্য শুভ হয় না।</div>
+            <div class="lang-hindi">क्रोध में लिया गया कोई भी निर्णय राष्ट्र के लिए शुभ नहीं होता।</div>
+            <div class="lang-english">No decision taken in anger is auspicious for the state.</div>
+            <span class="reference">(Udyoga Parva 33.72)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 288</span>
+            <div class="lang-bangla">শাসকের উচিত তার প্রজাদের জন্য জলের মতো নমনীয় হওয়া।</div>
+            <div class="lang-hindi">शासक को अपनी प्रजा के लिए पानी की तरह लचीला होना चाहिए।</div>
+            <div class="lang-english">The ruler should be flexible like water for his subjects.</div>
+            <span class="reference">(Shanti Parva 57.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 289</span>
+            <div class="lang-bangla">রাজস্ব আদায়ের সময় প্রজাদের সক্ষমতা বিবেচনা করা উচিত।</div>
+            <div class="lang-hindi">राजस्व वसूलते समय प्रजा की क्षमता पर विचार करना चाहिए।</div>
+            <div class="lang-english">The capacity of the subjects should be considered when collecting revenue.</div>
+            <span class="reference">(Shanti Parva 88.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 290</span>
+            <div class="lang-bangla">নিজের গোপন তথ্য শত্রুকে জানতে দিও না।</div>
+            <div class="lang-hindi">अपनी गुप्त जानकारी शत्रु को मत जानने दो।</div>
+            <div class="lang-english">Do not let the enemy know your secret information.</div>
+            <span class="reference">(Shanti Parva 83.33)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 291</span>
+            <div class="lang-bangla">বিপদেও নীতি ও ধর্মের পথ ত্যাগ করা উচিত নয়।</div>
+            <div class="lang-hindi">संकट में भी नीति और धर्म का मार्ग नहीं छोड़ना चाहिए।</div>
+            <div class="lang-english">One should not abandon the path of policy and Dharma even in crisis.</div>
+            <span class="reference">(Adi Parva 1.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 292</span>
+            <div class="lang-bangla">অতিরিক্ত লোভ শাসককে তার প্রজাদের থেকে বিচ্ছিন্ন করে।</div>
+            <div class="lang-hindi">अत्यधिक लालच शासक को उसकी प्रजा से अलग कर देता है।</div>
+            <div class="lang-english">Excessive greed separates the ruler from his subjects.</div>
+            <span class="reference">(Udyoga Parva 33.74)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 293</span>
+            <div class="lang-bangla">ক্ষমাশীলতা একটি দীর্ঘমেয়াদী রাজনৈতিক বিনিয়োগ।</div>
+            <div class="lang-hindi">क्षमाशीलता एक दीर्घकालिक राजनीतिक निवेश है।</div>
+            <div class="lang-english">Forgiveness is a long-term political investment.</div>
+            <span class="reference">(Udyoga Parva 33.51)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 294</span>
+            <div class="lang-bangla">যোগ্য ও সাহসী সেনাপতি ছাড়া যুদ্ধ জেতা যায় না।</div>
+            <div class="lang-hindi">योग्य और साहसी सेनापति के बिना युद्ध जीता नहीं जा सकता।</div>
+            <div class="lang-english">War cannot be won without a capable and brave commander.</div>
+            <span class="reference">(Karna Parva 79.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 295</span>
+            <div class="lang-bangla">যে শাসক তার প্রজাদের প্রতি যত্নশীল, সে ইতিহাসে স্মরণীয় হয়।</div>
+            <div class="lang-hindi">जो शासक अपनी प्रजा की परवाह करता है, वह इतिहास में याद किया जाता है।</div>
+            <div class="lang-english">The ruler who cares for his subjects is remembered in history.</div>
+            <span class="reference">(Shanti Parva 56.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 296</span>
+            <div class="lang-bangla">রাজার উচিত নিজের দেশের অর্থনীতিকে শক্তিশালী করা।</div>
+            <div class="lang-hindi">राजा को अपने देश की अर्थव्यवस्था को मजबूत करना चाहिए।</div>
+            <div class="lang-english">The king should strengthen the economy of his country.</div>
+            <span class="reference">(Shanti Parva 87.16)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 297</span>
+            <div class="lang-bangla">অহংকার জ্ঞানার্জনের পথের শত্রু।</div>
+            <div class="lang-hindi">अहंकार ज्ञान प्राप्त करने के मार्ग का शत्रु है।</div>
+            <div class="lang-english">Arrogance is the enemy on the path of gaining knowledge.</div>
+            <span class="reference">(Udyoga Parva 34.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 298</span>
+            <div class="lang-bangla">সময়মতো করা সামান্য ত্যাগও ভবিষ্যতে বড় বিপদ থেকে রক্ষা করে।</div>
+            <div class="lang-hindi">समय पर किया गया छोटा बलिदान भी भविष्य में बड़े संकट से बचाता है।</div>
+            <div class="lang-english">A small sacrifice made on time saves one from a big crisis in the future.</div>
+            <span class="reference">(Udyoga Parva 33.43)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 299</span>
+            <div class="lang-bangla">শাসনকর্তার উচিত নিজের দেশের প্রতিরক্ষা নীতিকে সর্বদা গোপন রাখা।</div>
+            <div class="lang-hindi">शासक को अपने देश की रक्षा नीति को हमेशा गुप्त रखना चाहिए।</div>
+            <div class="lang-english">The ruler should always keep his country's defense policy secret</div>
+            <span class="reference">Chanayka Niti</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 300</span>
+            <div class="lang-bangla">শ্রেষ্ঠ রাজা সেই, যিনি দণ্ড ও ন্যায়কে সমন্বিত করে শাসন করেন।</div>
+            <div class="lang-hindi">सर्वश्रेष्ठ राजा वह है, जो दंड और न्याय को मिलाकर शासन करता है।</div>
+            <div class="lang-english">The best king is one who rules by integrating punishment and justice.</div>
+            <span class="reference">(Shanti Parva 59.98)</span>
+        </div>
+
+
+    </div>
+
+    <div class="fixed-nav">
+        <a href="mahabharata_wisdom_set_2.html" class="nav-button">Collection 2 (Previous)</a>
+        <a href="gita-quotes.html" class="nav-button">Back to Index ( Quotes)</a>
+        <a href="mahabharata_wisdom_set_4.html" class="nav-button">Collection 4 (Next) →</a>
+    </div>
+</body>
+</html>

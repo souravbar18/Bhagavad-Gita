@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitopadesha and Panchatantra</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hitopadesha and Panchatantra</h1>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 1</span>
+            <div class="lang-sanskrit">अक्रोधेन जयेत क्रोधम्, असाथुं साधुना जयेत।</div>
+            <div class="lang-bangla">অক্রোধের দ্বারা ক্রোধকে জয় করা উচিত, এবং সাধুতা দ্বারা অসাধুকে জয় করা উচিত।</div>
+            <div class="lang-english">One should conquer anger with non-anger, and the wicked with goodness.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 2</span>
+            <div class="lang-sanskrit">न विश्वसेत कुत्रापि, न च विश्वसेत सत्सु।</div>
+            <div class="lang-bangla">কোথাও (কারও উপর) বিশ্বাস করবে না, এবং সত্ ব্যক্তিদের উপরও যেন অন্ধ বিশ্বাস না হয়।</div>
+            <div class="lang-english">Do not trust anyone absolutely, and do not put blind faith even in the virtuous.</div>
+            <span class="reference">Source: Panchatantra (3.119)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 3</span>
+            <div class="lang-sanskrit">आपदि मित्र-परीक्षा।</div>
+            <div class="lang-bangla">বিপদে পড়লে বন্ধুর পরীক্ষা হয়।</div>
+            <div class="lang-english">A friend is tested in adversity.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 4</span>
+            <div class="lang-sanskrit">लोभः पापस्य कारणम्।</div>
+            <div class="lang-bangla">লোভই পাপের কারণ।</div>
+            <div class="lang-english">Greed is the cause of sin.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 5</span>
+            <div class="lang-sanskrit">विद्या ददाति विनयम्।</div>
+            <div class="lang-bangla">বিদ্যা বিনয় দান করে।</div>
+            <div class="lang-english">Knowledge imparts humility.</div>
+            <span class="reference">Source: Hitopadesha (Prologue 6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 6</span>
+            <div class="lang-sanskrit">यथा बीजं तथा फलम्।</div>
+            <div class="lang-bangla">যেমন বীজ, তেমনই ফল।</div>
+            <div class="lang-english">As the seed, so is the fruit.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 7</span>
+            <div class="lang-sanskrit">दूरत्वेऽपि न भेदः।</div>
+            <div class="lang-bangla">দূরে থাকলেও (মনের দিক থেকে) কোনো ভেদ হয় না।</div>
+            <div class="lang-english">Even at a distance, there is no separation (in heart).</div>
+            <span class="reference">Source: Hitopadesha (2.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 8</span>
+            <div class="lang-sanskrit">मूर्खस्य न पश्यन्ति दोषान्।</div>
+            <div class="lang-bangla">মূর্খেরা নিজেদের দোষ দেখতে পায় না।</div>
+            <div class="lang-english">Fools do not see their own faults.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 9</span>
+            <div class="lang-sanskrit">सुखस्य मूलं धर्मः।</div>
+            <div class="lang-bangla">সুখের মূল ধর্ম।</div>
+            <div class="lang-english">The root of happiness is Dharma (righteous conduct).</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 10</span>
+            <div class="lang-sanskrit">धनें धर्मः, धर्मेन ज्ञानम्।</div>
+            <div class="lang-bangla">ধন দ্বারা ধর্ম, এবং ধর্ম দ্বারা জ্ঞান লাভ হয়।</div>
+            <div class="lang-english">Through wealth (one can practice) Dharma, and through Dharma (one gains) knowledge.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 11</span>
+            <div class="lang-sanskrit">प्रयत्नं विनापि न किञ्चिदपि सिध्यति।</div>
+            <div class="lang-bangla">চেষ্টা ছাড়া কোনো কিছুই সফল হয় না।</div>
+            <div class="lang-english">Nothing is achieved without effort.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 12</span>
+            <div class="lang-sanskrit">यो न ददाति स न भुङ्क्ते।</div>
+            <div class="lang-bangla">যে দান করে না, সে ভোগও করতে পারে না।</div>
+            <div class="lang-english">He who does not give, does not enjoy.</div>
+            <span class="reference">Source: Panchatantra (4.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 13</span>
+            <div class="lang-sanskrit">कालस्य गतिर् दुरतिक्रमा।</div>
+            <div class="lang-bangla">কালের গতি অতিক্রম করা কঠিন।</div>
+            <div class="lang-english">The movement of time is difficult to overcome.</div>
+            <span class="reference">Source: Hitopadesha (2.16)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 14</span>
+            <div class="lang-sanskrit">असूयां न करोति।</div>
+            <div class="lang-bangla">অন্যের প্রতি বিদ্বেষ করবে না।</div>
+            <div class="lang-english">Do not be jealous of others.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 15</span>
+            <div class="lang-sanskrit">धैर्येंन सर्वं वशम्।</div>
+            <div class="lang-bangla">ধৈর্য দ্বারা সবকিছু বশ করা যায়।</div>
+            <div class="lang-english">Everything can be conquered through patience.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 16</span>
+            <div class="lang-sanskrit">अन्नदानं परं दानम्।</div>
+            <div class="lang-bangla">অন্নদানই শ্রেষ্ঠ দান।</div>
+            <div class="lang-english">Giving food is the highest form of charity.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 17</span>
+            <div class="lang-sanskrit">सत्सङ्गे स्वर्गवासः।</div>
+            <div class="lang-bangla">সৎসঙ্গে স্বর্গবাস হয়।</div>
+            <div class="lang-english">Living in good company is like dwelling in heaven.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 18</span>
+            <div class="lang-sanskrit">न वैरिणां शान्तिर्लभते।</div>
+            <div class="lang-bangla">শত্রুদের মধ্যে শান্তি লাভ হয় না।</div>
+            <div class="lang-english">Peace is not found among enemies.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 19</span>
+            <div class="lang-sanskrit">ज्ञानं सर्वार्थ-साधकम्।</div>
+            <div class="lang-bangla">জ্ঞান সকল প্রকার অর্থ সাধনের সহায়ক।</div>
+            <div class="lang-english">Knowledge is the means to achieve all goals.</div>
+            <span class="reference">Source: Hitopadesha (1.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 20</span>
+            <div class="lang-sanskrit">लोकाचारश्च धर्मो भवति।</div>
+            <div class="lang-bangla">লোকাচার বা সমাজের ঐতিহ্যও ধর্ম হয়।</div>
+            <div class="lang-english">Local custom and tradition is also considered Dharma.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 21</span>
+            <div class="lang-sanskrit">अहंकारः पतनस्य कारणम्।</div>
+            <div class="lang-bangla">অহংকার পতনের কারণ।</div>
+            <div class="lang-english">Arrogance (Ego) is the cause of downfall.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 22</span>
+            <div class="lang-sanskrit">मृतं शरीरं किमहू करोति?</div>
+            <div class="lang-bangla">মৃত শরীর কী আর করতে পারে?</div>
+            <div class="lang-english">What can a dead body accomplish?</div>
+            <span class="reference">Source: Panchatantra (Niti Context)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 23</span>
+            <div class="lang-sanskrit">अतीतस्य चिन्तां न कुर्यात्।</div>
+            <div class="lang-bangla">অতীতের জন্য দুঃখ করা উচিত নয়।</div>
+            <div class="lang-english">One should not grieve over the past.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 24</span>
+            <div class="lang-sanskrit">परस्य दुःखं न करोति बुद्धिमान्।</div>
+            <div class="lang-bangla">বুদ্ধিমান ব্যক্তি অন্যের দুঃখ উৎপাদন করে না।</div>
+            <div class="lang-english">An intelligent person does not cause distress to others.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 25</span>
+            <div class="lang-sanskrit">अर्थसञ्चये যত্নवान्।</div>
+            <div class="lang-bangla">অর্থ সঞ্চয়ে যত্নবান হওয়া উচিত।</div>
+            <div class="lang-english">One should be careful in saving wealth.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 26</span>
+            <div class="lang-sanskrit">नदीनां सागरो गतिः।</div>
+            <div class="lang-bangla">নদীর গতি সমুদ্রের দিকে।</div>
+            <div class="lang-english">The destination of rivers is the ocean (ultimate goal).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 27</span>
+            <div class="lang-sanskrit">मूर्खस्य विनाशः शीघः।</div>
+            <div class="lang-bangla">মূর্খের বিনাশ দ্রুত হয়।</div>
+            <div class="lang-english">The destruction of a fool is swift.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 28</span>
+            <div class="lang-sanskrit">यस्मिन् देशे न सम्मानः, न वृत्तिः।</div>
+            <div class="lang-bangla">যেখানে সম্মান নেই, সেখানে জীবিকাও নেই (সেখানে থাকা উচিত নয়)।</div>
+            <div class="lang-english">The place where there is no respect, there is no livelihood (one should not stay).</div>
+            <span class="reference">Source: Panchatantra (1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 29</span>
+            <div class="lang-sanskrit">विपर्यये ज्ञानमपि हीयते।</div>
+            <div class="lang-bangla">বিপর্যয়ের সময় জ্ঞানও কমে যায়।</div>
+            <div class="lang-english">Even wisdom is diminished during a calamity.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 30</span>
+            <div class="lang-sanskrit">न विश्वसेत कवृद्धेषु।</div>
+            <div class="lang-bangla">মন্দ (কুবুদ্ধি) বৃদ্ধদের বিশ্বাস করবে না।</div>
+            <div class="lang-english">Do not trust the wicked old ones.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 31</span>
+            <div class="lang-sanskrit">न चेष्टारहितस्य कार्यं सिध्यति।</div>
+            <div class="lang-bangla">চেষ্টা ছাড়া কোনো কাজ সফল হয় না।</div>
+            <div class="lang-english">Work is not accomplished for one who lacks effort.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 32</span>
+            <div class="lang-sanskrit">नालस्यं परमं धनम्।</div>
+            <div class="lang-bangla">আলস্যের চেয়ে বড় শত্রু নেই।</div>
+            <div class="lang-english">There is no greater enemy than laziness.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 33</span>
+            <div class="lang-sanskrit">सुखं हि दुःखेरपरे।</div>
+            <div class="lang-bangla">সুখ দুঃখের পরেই আসে।</div>
+            <div class="lang-english">Happiness surely comes after sorrow.</div>
+            <span class="reference">Source: Hitopadesha (1.35)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 34</span>
+            <div class="lang-sanskrit">सत्सङ्गः श्रेयः ददाति।</div>
+            <div class="lang-bangla">সৎসঙ্গ কল্যাণ দান করে।</div>
+            <div class="lang-english">Good company gives welfare.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 35</span>
+            <div class="lang-sanskrit">कृपणस्य धनम् निष्फलम्।</div>
+            <div class="lang-bangla">কৃপণের ধন নিষ্ফল।</div>
+            <div class="lang-english">The wealth of a miser is useless.</div>
+            <span class="reference">Source: Hitopadesha (2.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 36</span>
+            <div class="lang-sanskrit">क्रोधः सर्वानर्थानम् आस्पदम।</div>
+            <div class="lang-bangla">ক্রোধ সমস্ত অনর্থের কারণ।</div>
+            <div class="lang-english">Anger is the foundation of all calamities.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 37</span>
+            <div class="lang-sanskrit">अयं निजः परो वेति गणना लघुचेतसाम्।</div>
+            <div class="lang-bangla">ইহা আমার, ইহা অন্যের - এই চিন্তা সংকীর্ণ মনের মানুষরাই করে।</div>
+            <div class="lang-english">This is mine, that is another's—this calculation belongs to the narrow-minded.</div>
+            <span class="reference">Source: Hitopadesha (Prologue 3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 38</span>
+            <div class="lang-sanskrit">हितं मनोहारि च दुर्लभं वचः।</div>
+            <div class="lang-bangla">হিতকর ও মনোহর বাক্য দুর্লভ।</div>
+            <div class="lang-english">Words that are beneficial and pleasant are rare.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 39</span>
+            <div class="lang-sanskrit">परोपकाराय फलन्ति वृक्षाः।</div>
+            <div class="lang-bangla">বৃক্ষেরা পরোপকারের জন্যই ফল ধারণ করে।</div>
+            <div class="lang-english">Trees bear fruit for the benefit of others.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 40</span>
+            <div class="lang-sanskrit">न मूर्खं बन्धुं लभेत।</div>
+            <div class="lang-bangla">মূর্খ বন্ধুকে লাভ করবে না।</div>
+            <div class="lang-english">One should not acquire a foolish friend.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 41</span>
+            <div class="lang-sanskrit">असत्-सङ्गां न करोति।</div>
+            <div class="lang-bangla">খারাপ লোকের সঙ্গ করবে না।</div>
+            <div class="lang-english">One should not keep company with the wicked.</div>
+            <span class="reference">Source: Hitopadesha (1.35)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 42</span>
+            <div class="lang-sanskrit">गुरुवाक्यं न लङ्घयेत।</div>
+            <div class="lang-bangla">গুরুর কথা কখনও লঙ্ঘন করা উচিত নয়।</div>
+            <div class="lang-english">One should never disobey the words of the Guru (teacher).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 43</span>
+            <div class="lang-sanskrit">स्वास्थ्यस्य मूलं धनम्।</div>
+            <div class="lang-bangla">স্বাস্থ্যই ধনের মূল।</div>
+            <div class="lang-english">Health is the root of wealth.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 44</span>
+            <div class="lang-sanskrit">अविश्वासः परमं बलम्।</div>
+            <div class="lang-bangla">অবিশ্বাসই পরম বল। (সাবধানতা ও সন্দেহ জীবনের শ্রেষ্ঠ রক্ষাকবচ)</div>
+            <div class="lang-english">Suspicion/Caution is the supreme strength.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 45</span>
+            <div class="lang-sanskrit">सत्सङ्गेन बुद्धिः लभते।</div>
+            <div class="lang-bangla">সৎসঙ্গের দ্বারা বুদ্ধি লাভ হয়।</div>
+            <div class="lang-english">Wisdom is gained through good company.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 46</span>
+            <div class="lang-sanskrit">अयं देशः त्यक्तव्यः।</div>
+            <div class="lang-bangla">এই স্থান ত্যাগ করা উচিত।</div>
+            <div class="lang-english">This place should be abandoned (if it is unfavorable).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 47</span>
+            <div class="lang-sanskrit">न मूर्ख-जनाः सहिताः।</div>
+            <div class="lang-bangla">মূর্খেরা একত্রিত (সহায়কারী) হয় না।</div>
+            <div class="lang-english">Fools do not become allies.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 48</span>
+            <div class="lang-sanskrit">विनयः सर्वस्य अलङ्कारः।</div>
+            <div class="lang-bangla">বিনয় সকলের অলঙ্কার।</div>
+            <div class="lang-english">Humility is the ornament of all.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 49</span>
+            <div class="lang-sanskrit">दानें वैरं प्रशाम्यति।</div>
+            <div class="lang-bangla">দান দ্বারা শত্রুতা শান্ত হয়।</div>
+            <div class="lang-english">Enmity is calmed by charity.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 50</span>
+            <div class="lang-sanskrit">अतीतं न चिन्तयेत।</div>
+            <div class="lang-bangla">অতীত নিয়ে চিন্তা করা উচিত নয়।</div>
+            <div class="lang-english">One should not worry about the past.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 51</span>
+            <div class="lang-sanskrit">कृतज्ञता सर्वेभ्यः।</div>
+            <div class="lang-bangla">সকলের প্রতি কৃতজ্ঞতা প্রকাশ করো।</div>
+            <div class="lang-english">Be grateful to everyone.</div>
+            <span class="reference">Source: Hitopadesha (1.35)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 52</span>
+            <div class="lang-sanskrit">न विश्वसेत कवाक्येषु।</div>
+            <div class="lang-bangla">খারাপ কথায় বিশ্বাস করবে না।</div>
+            <div class="lang-english">Do not believe in bad words (gossip).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 53</span>
+            <div class="lang-sanskrit">न कालमतिवर्तन्ते।</div>
+            <div class="lang-bangla">কালকে অতিক্রম করা যায় না।</div>
+            <div class="lang-english">Time cannot be overcome.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 54</span>
+            <div class="lang-sanskrit">सत्यं ब्रूयात् प्रियं ब्रूयात्।</div>
+            <div class="lang-bangla">সত্য কথা বলবে এবং প্রিয় কথা বলবে।</div>
+            <div class="lang-english">Speak the truth, speak pleasantly.</div>
+            <span class="reference">Source: Panchatantra (Niti Context)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 55</span>
+            <div class="lang-sanskrit">दैवेनैवम् गतिरेषा।</div>
+            <div class="lang-bangla">এই গতি বিধাতার (ভাগ্যের) দ্বারা নির্ধারিত।</div>
+            <div class="lang-english">This course (of life) is determined by destiny.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 56</span>
+            <div class="lang-sanskrit">अतिक्रुद्धस्य न किञ्चित् शुभम्।</div>
+            <div class="lang-bangla">অতি রাগান্বিত ব্যক্তির কোনো শুভ হয় না।</div>
+            <div class="lang-english">Nothing good happens to a very angry person.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 57</span>
+            <div class="lang-sanskrit">सर्वदा शुभं चिन्तयेत्।</div>
+            <div class="lang-bangla">সর্বদা শুভ চিন্তা করো।</div>
+            <div class="lang-english">Always think good (auspicious) thoughts.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 58</span>
+            <div class="lang-sanskrit">अल्पमेव दद्यात्।</div>
+            <div class="lang-bangla">অল্প হলেও দান করবে।</div>
+            <div class="lang-english">Give even a little.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 59</span>
+            <div class="lang-sanskrit">मूर्खस्य विनाशे कालक्षेपः न।</div>
+            <div class="lang-bangla">মূর্খের বিনাশে দেরি হয় না।</div>
+            <div class="lang-english">There is no delay in the destruction of a fool.</div>
+            <span class="reference">Source: Hitopadesha (1.35)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 60</span>
+            <div class="lang-sanskrit">कार्यं सिध्यति चेष्टया।</div>
+            <div class="lang-bangla">চেষ্টা দ্বারা কাজ সফল হয়।</div>
+            <div class="lang-english">Work is accomplished by effort.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 61</span>
+            <div class="lang-sanskrit">तर्कः कुफलप्रदः।</div>
+            <div class="lang-bangla">তর্ক খারাপ ফল দেয়।</div>
+            <div class="lang-english">Argumentation gives bad results.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 62</span>
+            <div class="lang-sanskrit">परहितं साधयेत।</div>
+            <div class="lang-bangla">অন্যের উপকার সাধন করো।</div>
+            <div class="lang-english">Achieve the welfare of others.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 63</span>
+            <div class="lang-sanskrit">धैर्यं बलं सर्वेभ्यः।</div>
+            <div class="lang-bangla">ধৈর্য সকলের জন্য বলস্বরূপ।</div>
+            <div class="lang-english">Patience is strength for everyone.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 64</span>
+            <div class="lang-sanskrit">अविश्वासः सर्वस्य मूर्खताम्।</div>
+            <div class="lang-bangla">অবিশ্বাস সকলের মূর্খতা। (অন্ধভাবে অবিশ্বাস করাও ভুল)</div>
+            <div class="lang-english">Blind distrust is the foolishness of all.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 65</span>
+            <div class="lang-sanskrit">न मिथ्यासाख्यं वदेत।</div>
+            <div class="lang-bangla">মিথ্যা সাক্ষ্য দেওয়া উচিত নয়।</div>
+            <div class="lang-english">One should not give false testimony.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 66</span>
+            <div class="lang-sanskrit">अहंभावं त्यजेत।</div>
+            <div class="lang-bangla">অহংকার ত্যাগ করো।</div>
+            <div class="lang-english">Renounce ego.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 67</span>
+            <div class="lang-sanskrit">विनयेन शोभते ज्ञानम्।</div>
+            <div class="lang-bangla">বিনয় দ্বারা জ্ঞান শোভা পায়।</div>
+            <div class="lang-english">Knowledge is adorned by humility.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 68</span>
+            <div class="lang-sanskrit">स्वधर्मं पालयेत सदा।</div>
+            <div class="lang-bangla">নিজের কর্তব্য সর্বদা পালন করা উচিত।</div>
+            <div class="lang-english">One should always practice their own duty (Svadharma).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 69</span>
+            <div class="lang-sanskrit">अल्पविद्या भयङ्करि।</div>
+            <div class="lang-bangla">অল্প বিদ্যা ভয়ংকর।</div>
+            <div class="lang-english">Little knowledge is dangerous.</div>
+            <span class="reference">Source: Hitopadesha (1.30)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 70</span>
+            <div class="lang-sanskrit">नदीनां च सागरो गतिः।</div>
+            <div class="lang-bangla">নদীগুলো সমুদ্রের দিকেই ধাবিত হয়।</div>
+            <div class="lang-english">The rivers always proceed towards the ocean.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 71</span>
+            <div class="lang-sanskrit">सत्यं भूषयति वाचम्।</div>
+            <div class="lang-bangla">সত্য বাক্যের অলঙ্কার।</div>
+            <div class="lang-english">Truth adorns speech.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 72</span>
+            <div class="lang-sanskrit">सत्कर्म कुरु फलं न काङ्क्ष।</div>
+            <div class="lang-bangla">সৎকর্ম করো, ফল কামনা করো না।</div>
+            <div class="lang-english">Perform good deeds, do not desire the results.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 73</span>
+            <div class="lang-sanskrit">क्रोधं त्यजेत।</div>
+            <div class="lang-bangla">ক্রোধ ত্যাগ করো।</div>
+            <div class="lang-english">Renounce anger.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 74</span>
+            <div class="lang-sanskrit">यौवनात् कुरु धर्मम्।</div>
+            <div class="lang-bangla">যৌবনকাল থেকেই ধর্ম পালন করো।</div>
+            <div class="lang-english">Practice Dharma from your youth.</div>
+            <span class="reference">Source: Niti Saying (Context)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 75</span>
+            <div class="lang-sanskrit">सुखं हि दुःखेरपरे।</div>
+            <div class="lang-bangla">সুখ দুঃখের পরেই আসে।</div>
+            <div class="lang-english">Happiness surely comes after sorrow.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 76</span>
+            <div class="lang-sanskrit">अहंकारं विनाशयेत।</div>
+            <div class="lang-bangla">অহংকারকে বিনাশ করা উচিত।</div>
+            <div class="lang-english">One should destroy ego.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 77</span>
+            <div class="lang-sanskrit">कार्यं सर्वेषु श्रेष्ठम्।</div>
+            <div class="lang-bangla">কর্মই সকলের মধ্যে শ্রেষ্ঠ।</div>
+            <div class="lang-english">Action (work) is supreme among all.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 78</span>
+            <div class="lang-sanskrit">क्षमा वशीकृती लोके।</div>
+            <div class="lang-bangla">ক্ষমা এই জগতে বশীকরণের উপায়।</div>
+            <div class="lang-english">Forgiveness is the means of controlling the world.</div>
+            <span class="reference">Source: Panchatantra (Vidura Niti context)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 79</span>
+            <div class="lang-sanskrit">न विश्वसेत कवाक्येषु।</div>
+            <div class="lang-bangla">খারাপ কথায় বিশ্বাস করবে না।</div>
+            <div class="lang-english">Do not believe in bad words (gossip).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 80</span>
+            <div class="lang-sanskrit">दरिद्रो न भृत्यः भवति।</div>
+            <div class="lang-bangla">দরিদ্র মানুষ ভৃত্য (অন্যের দাস) হয় না। (স্বয়ংসম্পূর্ণ থাকে)</div>
+            <div class="lang-english">A poor man does not become a servant (he remains independent).</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 81</span>
+            <div class="lang-sanskrit">असत्सङ्गेन सद्गुणो नाशम्।</div>
+            <div class="lang-bangla">খারাপ সঙ্গের কারণে ভালো গুণ নষ্ট হয়।</div>
+            <div class="lang-english">Good qualities are destroyed by bad company.</div>
+            <span class="reference">Source: Panchatantra (Niti Context)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 82</span>
+            <div class="lang-sanskrit">न कालं चिन्तयेत।</div>
+            <div class="lang-bangla">সময় নিয়ে চিন্তা করা উচিত নয় (সময় নষ্ট করা উচিত নয়)।</div>
+            <div class="lang-english">One should not worry about time (or waste time).</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 83</span>
+            <div class="lang-sanskrit">ज्ञानं परमं ध्येयम्।</div>
+            <div class="lang-bangla">জ্ঞানই মানুষের পরম লক্ষ্য।</div>
+            <div class="lang-english">Knowledge is the supreme goal (of life).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 84</span>
+            <div class="lang-sanskrit">अर्थः सर्वस्य मूलम्।</div>
+            <div class="lang-bangla">অর্থই সবকিছুর মূল।</div>
+            <div class="lang-english">Wealth is the root of everything.</div>
+            <span class="reference">Source: Hitopadesha (Contextually used)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 85</span>
+            <div class="lang-sanskrit">तर्कं विद्याहीनस्य बलम्।</div>
+            <div class="lang-bangla">তর্ক বিদ্যাবিহীন মানুষের শক্তি।</div>
+            <div class="lang-english">Argumentation is the strength of the ignorant.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 86</span>
+            <div class="lang-sanskrit">सत्येन भूषिते वाग्।</div>
+            <div class="lang-bangla">সত্য দ্বারা বাক্য ভূষিত হয়।</div>
+            <div class="lang-english">Speech is adorned by truth.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 87</span>
+            <div class="lang-sanskrit">दातुं कुतूहलं कुर्यात्।</div>
+            <div class="lang-bangla">দানের জন্য আগ্রহী হওয়া উচিত।</div>
+            <div class="lang-english">One should be eager to give (charity).</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 88</span>
+            <div class="lang-sanskrit">अहिंसा परम धर्म।</div>
+            <div class="lang-bangla">অহিংসাই পরম ধর্ম।</div>
+            <div class="lang-english">Non-violence is the supreme duty (Dharma).</div>
+            <span class="reference">Source: Hitopadesha (Contextually Used)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 89</span>
+            <div class="lang-sanskrit">मनुष्याः कर्मफलस्य भुज्यते।</div>
+            <div class="lang-bangla">মানুষ তার কর্মের ফল ভোগ করে।</div>
+            <div class="lang-english">Humans enjoy the fruits of their actions.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 90</span>
+            <div class="lang-sanskrit">तपः कर्म च परं धनम्।</div>
+            <div class="lang-bangla">তপস্যা এবং কর্মই মানুষের পরম ধন।</div>
+            <div class="lang-english">Austerity and action are the supreme wealth.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 91</span>
+            <div class="lang-sanskrit">आत्मानं सततं रक्षेत्।</div>
+            <div class="lang-bangla">নিজেকে সর্বদা রক্ষা করা উচিত।</div>
+            <div class="lang-english">One should always protect oneself.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 92</span>
+            <div class="lang-sanskrit">मूर्खता सर्वदोषस्य कारणम्।</div>
+            <div class="lang-bangla">মূর্খতা সব দোষের কারণ।</div>
+            <div class="lang-english">Foolishness is the cause of all faults.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 93</span>
+            <div class="lang-sanskrit">धैर्यं ज्ञानं साधुत्वम्।</div>
+            <div class="lang-bangla">ধৈর্য, জ্ঞান ও সাধুত্ব (সৎগুণ)।</div>
+            <div class="lang-english">Patience, knowledge, and virtuousness.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 94</span>
+            <div class="lang-sanskrit">दानें मित्रं न विवादयेत।</div>
+            <div class="lang-bangla">দান দ্বারা বন্ধুর সঙ্গে বিবাদ করবে না।</div>
+            <div class="lang-english">One should not quarrel with a friend over charity.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 95</span>
+            <div class="lang-sanskrit">असत्सङ्गं न कुर्यात्।</div>
+            <div class="lang-bangla">খারাপ সঙ্গ করবে না।</div>
+            <div class="lang-english">One should not keep bad company.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 96</span>
+            <div class="lang-sanskrit">अहंकारो बुद्धि-घातकः।</div>
+            <div class="lang-bangla">অহংকার বুদ্ধিকে নষ্ট করে।</div>
+            <div class="lang-english">Ego is the killer of intelligence.</div>
+            <span class="reference">Source: Hitopadesha (1.35)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 97</span>
+            <div class="lang-sanskrit">धैर्यं न त्यजेत।</div>
+            <div class="lang-bangla">ধৈর্য ত্যাগ করবে না।</div>
+            <div class="lang-english">One should not renounce patience.</div>
+            <span class="reference">Source: Panchatantra (Niti Saying)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 98</span>
+            <div class="lang-sanskrit">विनयः सर्वस्य शोभा।</div>
+            <div class="lang-bangla">বিনয় সকলের শোভা।</div>
+            <div class="lang-english">Humility is the grace of all.</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 99</span>
+            <div class="lang-sanskrit">मृत्युः सर्वस्य निश्चितम्।</div>
+            <div class="lang-bangla">মৃত্যু সকলের জন্য নিশ্চিত।</div>
+            <div class="lang-english">Death is certain for everyone.</div>
+            <span class="reference">Source: Panchatantra</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 100</span>
+            <div class="lang-sanskrit">शुद्धिः कारणं मोक्षस्य।</div>
+            <div class="lang-bangla">শুদ্ধতা (পবিত্রতা) মোক্ষ লাভের কারণ।</div>
+            <div class="lang-english">Purity is the cause of liberation (Moksha).</div>
+            <span class="reference">Source: Hitopadesha</span>
+        </div>
+        
+        </div>
+
+    <div class="fixed-nav">
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+    </div>
+
+</body>
+</html>

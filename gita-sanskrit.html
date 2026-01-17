@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>श्रीमद्भगवद्गीता - अध्याय सूची</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+    /* সমস্ত স্টাইল শীট একত্র করে, নতুন ডিজাইনের জন্য অপটিমাইজ করা হলো */
+    body {
+        font-family: 'Noto Sans Devanagari', serif;
+        background: #f7efe3; 
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    /* Thematic Elements - Keep existing positions and styles */
+    .petal { position: absolute; font-size: 2em; } 
+    /* ... p1, p2, p3, p4 styles (assuming these are defined in style.css or elsewhere) ... */
+
+    .temple-header {
+        background-color: #5a3300; 
+        color: #fff;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        border-bottom: 5px solid #d4af37; 
+    }
+
+    .main-title {
+        font-size: 38px;
+        font-weight: 700;
+        margin: 0;
+        color: #ffcc66; 
+    }
+
+    .om, .maha-mantra {
+        font-family: 'Noto Sans Devanagari', serif;
+        color: #8c5b00;
+    }
+
+    /* নতুন নেভিগেশন কন্টেইনার */
+    .nav-buttons-sanskrit {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; /* বাটনের মধ্যে দূরত্ব */
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 0 10px;
+        flex-wrap: wrap; /* ছোট স্ক্রিনের জন্য */
+    }
+
+    /* নেভিগেশন বাটনের স্টাইল */
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        padding: 12px 25px;
+        background-color: #d4af37; 
+        color: #1a0f00; 
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s;
+        margin: 5px 0; /* ছোট স্ক্রিনের জন্য */
+    }
+    .nav-btn:hover {
+        background-color: #8c5b00;
+        color: white;
+    }
+
+    /* অধ্যায় তালিকা কন্টেইনার */
+    .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        max-width: 600px; 
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    /* অধ্যায় কার্ডের স্টাইল */
+    .options .option-card {
+        text-align: center; 
+        display: block; 
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 15px 20px;
+        background: #ffffff; 
+        border-left: 5px solid #d4af37; 
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: #8c5b00; 
+        font-size: 1.3em;
+        font-weight: 600;
+        transition: transform 0.2s, background-color 0.2s;
+        font-family: 'Noto Sans Devanagari', serif;
+    }
+    .options .option-card:hover {
+        transform: scale(1.01);
+        background-color: #fffae6;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="petal" p1>🌸</div>
+<div class="petal" p2>🏵️</div>
+<div class="petal" p3>🌼</div>
+<div class="petal" p4>🌺</div>
+
+<header class="temple-header">
+    <div class="chakra"></div>
+    <h1 class="main-title">॥ श्रीमद्भगवद्गीता ॥</h1>
+    <p class="sub-title">Hare Krishna</p>
+</header>
+
+<div class="divine-top">
+    <div class="halo"></div>
+    <div class="om">ॐ</div>
+    <p class="maha-mantra">
+        ॥ श्रीकृष्णाय वासुदेवाय हरये परमात्मने ।<br>
+        प्रणतः क्लेशनाशाय गोविन्दाय नमो नमः ॥
+    </p>
+</div>
+
+<div class="nav-buttons-sanskrit">
+    <a class="nav-btn" href="gita-bangla.html">« बांग्ला-सूची</a> 
+    <a class="nav-btn" href="gita-english.html">« English-Index</a>
+    <a class="nav-btn" href="index.html">🏡 गृहम्</a>
+</div>
+
+
+<h2 style="color: #e4762a; margin: 30px 0; font-size: 30px; font-weight: bold; font-family: 'Noto Sans Devanagari', serif;">
+    📖 अध्याय सूची
+</h2>
+
+<div class="options">
+
+    <a class="option-card" href="chapter1.html">अध्याय १: अर्जुनविषादयोग</a>
+    <a class="option-card" href="chapter2.html">अध्याय २: साङ्ख्ययोग</a>
+    <a class="option-card" href="chapter3.html">अध्याय ३: कर्मयोग</a>
+    <a class="option-card" href="chapter4.html">अध्याय ४: ज्ञानकर्मसंन्यासयोग</a>
+    <a class="option-card" href="chapter5.html">अध्याय ५: कर्मसंन्यासयोग</a>
+    <a class="option-card" href="chapter6.html">अध्याय ६: ध्यानयोग</a>
+    <a class="option-card" href="chapter7.html">अध्याय ७: ज्ञानविज्ञानयोग</a>
+    <a class="option-card" href="chapter8.html">अध्याय ८: अक्षरब्रह्मयोग</a>
+    <a class="option-card" href="chapter9.html">अध्याय ९: राजविद्याराजगुह्ययोग</a>
+    <a class="option-card" href="chapter10.html">अध्याय १०: विभूति योग</a>
+    <a class="option-card" href="chapter11.html">अध्याय ११: विश्वरूपदर्शनयोग</a>
+    <a class="option-card" href="chapter12.html">अध्याय १२: भक्तियोग</a>
+    <a class="option-card" href="chapter13.html">अध्याय १३: क्षेत्रक्षेत्रज्ञविभागयोग</a>
+    <a class="option-card" href="chapter14.html">अध्याय १४: गुणत्रयविभागयोग</a>
+    <a class="option-card" href="chapter15.html">अध्याय १५: पुरुषोत्तमयोग</a> 
+    <a class="option-card" href="chapter16.html">अध्याय १६: दैवासुरसम्पद्विभागयोग</a>
+    <a class="option-card" href="chapter17.html">अध्याय १७: श्रद्धात्रयविभागयोग</a>
+    <a class="option-card" href="chapter18.html">अध्याय १८: मोक्षसंन्यासयोग</a>
+
+</div>
+
+<footer class="footer">
+    <div class="diyas">
+        <span class="diya">🪔</span>
+        <span class="diya">🪔</span>
+        <span class="diya">🪔</span>
+    </div>
+    <p class="footer-text">सर्वे सुखिनः सन्तु</p>
+</footer>
+
+</body>
+</html>

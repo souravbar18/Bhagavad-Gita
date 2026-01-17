@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramayana - part 13</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>13. Ramayana Teachings on Ideal Living - Collection 13 (1201-1300)</h1>
+            <p>Continuing the Wisdom of Sundara Kanda: Action, Resolve, and Courage</p>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1201</span>
+            <span class="lang-bangla">বিপদেও নিজের ধর্ম থেকে বিচ্যুত হয়ো না, এটিই জীবনের মূল ভিত্তি।</span>
+            <span class="lang-hindi">विपत्ति में भी अपने धर्म से विचलित मत हो, यही जीवन का मूल आधार है।</span>
+            <span class="lang-english">Even in calamity, do not deviate from your Dharma, this is the fundamental basis of life.</span>
+            <span class="reference">(Sundara Kanda 31.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1202</span>
+            <span class="lang-bangla">নারীর পবিত্রতা সকল সম্পদের চেয়ে মূল্যবান।</span>
+            <span class="lang-hindi">स्त्री की पवित्रता सभी धन से अधिक मूल्यवान है।</span>
+            <span class="lang-english">The purity of a woman is more valuable than all wealth.</span>
+            <span class="reference">(Sundara Kanda 31.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1203</span>
+            <span class="lang-bangla">অসৎ শাসকের পতন অনিবার্য।</span>
+            <span class="lang-hindi">दुष्ट शासक का पतन अनिवार्य है।</span>
+            <span class="lang-english">The downfall of a wicked ruler is inevitable.</span>
+            <span class="reference">(Sundara Kanda 31.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1204</span>
+            <span class="lang-bangla">সত্যের শক্তি সময়ের সাথে সাথে বৃদ্ধি পায়, মিথ্যা ক্ষণস্থায়ী।</span>
+            <span class="lang-hindi">सत्य की शक्ति समय के साथ बढ़ती है, झूठ क्षणिक होता है।</span>
+            <span class="lang-english">The power of truth increases with time, falsehood is momentary.</span>
+            <span class="reference">(Sundara Kanda 31.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1205</span>
+            <span class="lang-bangla">আশাই সকল দুঃখ দূর করার একমাত্র পথ।</span>
+            <span class="lang-hindi">आशा ही सभी दुखों को दूर करने का एकमात्र मार्ग है।</span>
+            <span class="lang-english">Hope is the only way to overcome all sorrows.</span>
+            <span class="reference">(Sundara Kanda 31.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1206</span>
+            <span class="lang-bangla">ধৈর্য এবং বিনয় মানুষকে সম্মান এনে দেয়।</span>
+            <span class="lang-hindi">धैर्य और विनम्रता मनुष्य को सम्मान दिलाते हैं।</span>
+            <span class="lang-english">Patience and humility bring respect to man.</span>
+            <span class="reference">(Sundara Kanda 31.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1207</span>
+            <span class="lang-bangla">নিজের প্রতিজ্ঞা রক্ষাই শ্রেষ্ঠ তপস্যা।</span>
+            <span class="lang-hindi">अपनी प्रतिज्ञा की रक्षा करना ही सर्वश्रेष्ठ तपस्या है।</span>
+            <span class="lang-english">Protecting one's promise is the best austerity.</span>
+            <span class="reference">(Sundara Kanda 31.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1208</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন নিশ্চিত করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन निश्चित करता है।</span>
+            <span class="lang-english">Arrogance ensures the downfall of man.</span>
+            <span class="reference">(Sundara Kanda 31.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1209</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে বিষাক্ত করে।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को विषैला बनाता है।</span>
+            <span class="lang-english">Greed poisons the human heart.</span>
+            <span class="reference">(Sundara Kanda 31.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1210</span>
+            <span class="lang-bangla">সময়কে সদ্ব্যবহার করাই জ্ঞানের লক্ষণ।</span>
+            <span class="lang-hindi">समय का सदुपयोग करना ही ज्ञान का लक्षण है।</span>
+            <span class="lang-english">Utilizing time well is a sign of knowledge.</span>
+            <span class="reference">(Sundara Kanda 31.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1211</span>
+            <span class="lang-bangla">সংকটকালে স্থির থাকা এবং সঠিক সিদ্ধান্ত নেওয়া বীরত্বের পরিচয়।</span>
+            <span class="lang-hindi">संकट के समय स्थिर रहना और सही निर्णय लेना ही वीरता का परिचय है।</span>
+            <span class="lang-english">Remaining steady and making the right decision in a crisis is a sign of bravery.</span>
+            <span class="reference">(Sundara Kanda 32.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1212</span>
+            <span class="lang-bangla">জ্ঞানী ব্যক্তি কখনও নিজের শক্তি প্রকাশ করেন না।</span>
+            <span class="lang-hindi">ज्ञानी व्यक्ति कभी अपनी शक्ति का प्रदर्शन नहीं करते।</span>
+            <span class="lang-english">A knowledgeable person never displays their strength.</span>
+            <span class="reference">(Sundara Kanda 32.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1213</span>
+            <span class="lang-bangla">অন্যের কষ্টকে নিজের কষ্ট বলে মনে করা শ্রেষ্ঠ মানবিকতা।</span>
+            <span class="lang-hindi">दूसरे के दुख को अपना दुख मानना ही सर्वश्रेष्ठ मानवता है।</span>
+            <span class="lang-english">Considering the sorrow of others as one's own is supreme humanity.</span>
+            <span class="reference">(Sundara Kanda 32.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1214</span>
+            <span class="lang-bangla">কর্তব্যের পথে চললে সফলতা অনিবার্য।</span>
+            <span class="lang-hindi">कर्तव्य के मार्ग पर चलने से सफलता अनिवार्य है।</span>
+            <span class="lang-english">Success is inevitable when walking the path of duty.</span>
+            <span class="reference">(Sundara Kanda 32.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1215</span>
+            <span class="lang-bangla">অবিচার কখনও স্থায়ী হয় না।</span>
+            <span class="lang-hindi">अन्याय कभी स्थायी नहीं होता।</span>
+            <span class="lang-english">Injustice is never permanent.</span>
+            <span class="reference">(Sundara Kanda 32.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1216</span>
+            <span class="lang-bangla">ক্ষমা হলো মানুষের সবচেয়ে বড় অস্ত্র।</span>
+            <span class="lang-hindi">क्षमा मनुष्य का सबसे बड़ा हथियार है।</span>
+            <span class="lang-english">Forgiveness is the greatest weapon of man.</span>
+            <span class="reference">(Sundara Kanda 32.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1217</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে অমর করে, তার কর্ম চিরকাল থাকে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को अमर करता है, उसका कर्म हमेशा रहता है।</span>
+            <span class="lang-english">Renunciation makes man immortal, his actions remain forever.</span>
+            <span class="reference">(Sundara Kanda 32.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1218</span>
+            <span class="lang-bangla">মিথ্যা কেবল ধ্বংসের পথ দেখায়।</span>
+            <span class="lang-hindi">झूठ केवल विनाश का मार्ग दिखाता है।</span>
+            <span class="lang-english">Falsehood only shows the path to destruction.</span>
+            <span class="reference">(Sundara Kanda 32.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1219</span>
+            <span class="lang-bangla">পিতার আজ্ঞা পালনই শ্রেষ্ঠ ধার্মিকতা।</span>
+            <span class="lang-hindi">पिता की आज्ञा का पालन करना ही सर्वश्रेष्ठ धार्मिकता है।</span>
+            <span class="lang-english">Obeying the father's command is the greatest righteousness.</span>
+            <span class="reference">(Sundara Kanda 32.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1220</span>
+            <span class="lang-bangla">বিনয়ী ব্যক্তির কাছে সকল কাজ সহজ মনে হয়।</span>
+            <span class="lang-hindi">विनम्र व्यक्ति के लिए सभी कार्य आसान लगते हैं।</span>
+            <span class="lang-english">All tasks seem easy to a humble person.</span>
+            <span class="reference">(Sundara Kanda 32.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1221</span>
+            <span class="lang-bangla">নিজের প্রতি বিশ্বাসই প্রথম পদক্ষেপ, যা পর্বতকেও পার করতে পারে।</span>
+            <span class="lang-hindi">खुद पर विश्वास ही पहला कदम है, जो पहाड़ को भी पार कर सकता है।</span>
+            <span class="lang-english">Faith in oneself is the first step, which can cross even mountains.</span>
+            <span class="reference">(Sundara Kanda 33.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1222</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে দুর্বল করে, তাকে জয় করো।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को कमजोर करता है, उसे जीतो।</span>
+            <span class="lang-english">Greed weakens the human heart, conquer it.</span>
+            <span class="reference">(Sundara Kanda 33.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1223</span>
+            <span class="lang-bangla">ক্রোধের চেয়ে শান্তি শ্রেয়।</span>
+            <span class="lang-hindi">क्रोध से शांति बेहतर है।</span>
+            <span class="lang-english">Peace is better than anger.</span>
+            <span class="reference">(Sundara Kanda 33.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1224</span>
+            <span class="lang-bangla">ধৈর্য হলো বিজয়ের প্রথম শর্ত।</span>
+            <span class="lang-hindi">धैर्य ही विजय की पहली शर्त है।</span>
+            <span class="lang-english">Patience is the first condition for victory.</span>
+            <span class="reference">(Sundara Kanda 33.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1225</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge.</span>
+            <span class="reference">(Sundara Kanda 33.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1226</span>
+            <span class="lang-bangla">সময়কে নষ্ট করা মানে জীবনকে নষ্ট করা।</span>
+            <span class="lang-hindi">समय को बर्बाद करना मतलब जीवन को बर्बाद करना।</span>
+            <span class="lang-english">Wasting time means wasting life.</span>
+            <span class="reference">(Sundara Kanda 33.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1227</span>
+            <span class="lang-bangla">পরিবারের প্রতি দায়িত্ব পালন শ্রেষ্ঠ ধর্ম।</span>
+            <span class="lang-hindi">परिवार के प्रति जिम्मेदारी निभाना सर्वश्रेष्ठ धर्म है।</span>
+            <span class="lang-english">Fulfilling responsibility towards family is the best Dharma.</span>
+            <span class="reference">(Sundara Kanda 33.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1228</span>
+            <span class="lang-bangla">সত্যের পথে চলাই জীবনের শ্রেষ্ঠ পথ।</span>
+            <span class="lang-hindi">सत्य के मार्ग पर चलना ही जीवन का सर्वश्रेष्ठ मार्ग है।</span>
+            <span class="lang-english">Walking the path of truth is the best way of life.</span>
+            <span class="reference">(Sundara Kanda 33.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1229</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তি সর্বদা সুখী হয়।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति हमेशा सुखी रहता है।</span>
+            <span class="lang-english">A forgiving person is always happy.</span>
+            <span class="reference">(Sundara Kanda 33.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1230</span>
+            <span class="lang-bangla">অসৎ সঙ্গ কখনও মঙ্গলজনক নয়।</span>
+            <span class="lang-hindi">बुरी संगत कभी मंगलकारी नहीं होती।</span>
+            <span class="lang-english">Bad company is never auspicious.</span>
+            <span class="reference">(Sundara Kanda 33.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1231</span>
+            <span class="lang-bangla">জ্ঞানী ব্যক্তি কখনও অলস হন না।</span>
+            <span class="lang-hindi">ज्ञानी व्यक्ति कभी आलसी नहीं होते।</span>
+            <span class="lang-english">A knowledgeable person is never lazy.</span>
+            <span class="reference">(Sundara Kanda 34.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1232</span>
+            <span class="lang-bangla">কর্তব্য পালনেই জীবনের শ্রেষ্ঠ সফলতা।</span>
+            <span class="lang-hindi">अपने कर्तव्य निभाने में ही जीवन की सर्वश्रेष्ठ सफलता है।</span>
+            <span class="lang-english">The best success in life is in fulfilling duty.</span>
+            <span class="reference">(Sundara Kanda 34.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1233</span>
+            <span class="lang-bangla">ত্যাগ মানুষের মনকে পবিত্র করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य के मन को पवित्र करता है।</span>
+            <span class="lang-english">Renunciation purifies the mind of man.</span>
+            <span class="reference">(Sundara Kanda 34.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1234</span>
+            <span class="lang-bangla">বিনয় সকল গুণের উৎস।</span>
+            <span class="lang-hindi">विनम्रता ही सभी गुणों का स्रोत है।</span>
+            <span class="lang-english">Humility is the source of all virtues.</span>
+            <span class="reference">(Sundara Kanda 34.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1235</span>
+            <span class="lang-bangla">পিতার প্রতিজ্ঞা রক্ষা করাই সন্তানের ধর্ম।</span>
+            <span class="lang-hindi">पिता की प्रतिज्ञा पूरी करना ही संतान का धर्म है।</span>
+            <span class="lang-english">Fulfilling the father's promise is the Dharma of the child.</span>
+            <span class="reference">(Sundara Kanda 34.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1236</span>
+            <span class="lang-bangla">ক্রোধ জীবনের সবচেয়ে বড় শত্রু।</span>
+            <span class="lang-hindi">क्रोध जीवन का सबसे बड़ा शत्रु है।</span>
+            <span class="lang-english">Anger is the greatest enemy of life.</span>
+            <span class="reference">(Sundara Kanda 34.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1237</span>
+            <span class="lang-bangla">লোভ মানুষের পতনের কারণ।</span>
+            <span class="lang-hindi">लालच मनुष्य के पतन का कारण है।</span>
+            <span class="lang-english">Greed is the cause of man's downfall.</span>
+            <span class="reference">(Sundara Kanda 34.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1238</span>
+            <span class="lang-bangla">অহংকার মানুষের ক্ষুদ্রতা প্রকাশ করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य की क्षुद्रता प्रकट करता है।</span>
+            <span class="lang-english">Arrogance reveals the smallness of man.</span>
+            <span class="reference">(Sundara Kanda 34.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1239</span>
+            <span class="lang-bangla">ধার্মিক ব্যক্তি কখনও অন্যায় করে না।</span>
+            <span class="lang-hindi">धार्मिक व्यक्ति कभी अन्याय नहीं करता।</span>
+            <span class="lang-english">A righteous person never commits injustice.</span>
+            <span class="reference">(Sundara Kanda 34.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1240</span>
+            <span class="lang-bangla">অন্যের উপকার করাই শ্রেষ্ঠ ধর্ম।</span>
+            <span class="lang-hindi">दूसरों का भला करना ही सर्वश्रेष्ठ धर्म है।</span>
+            <span class="lang-english">Doing good to others is the supreme Dharma.</span>
+            <span class="reference">(Sundara Kanda 34.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1241</span>
+            <span class="lang-bangla">সত্যের জয় অনিবার্য।</span>
+            <span class="lang-hindi">सत्य की जीत अनिवार्य है।</span>
+            <span class="lang-english">The victory of truth is inevitable.</span>
+            <span class="reference">(Sundara Kanda 35.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1242</span>
+            <span class="lang-bangla">ধৈর্য সাফল্যের প্রথম ধাপ।</span>
+            <span class="lang-hindi">धैर्य सफलता का पहला कदम है।</span>
+            <span class="lang-english">Patience is the first step to success.</span>
+            <span class="reference">(Sundara Kanda 35.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1243</span>
+            <span class="lang-bangla">অসৎ সঙ্গ ত্যাগ করাই বুদ্ধিমানের কাজ।</span>
+            <span class="lang-hindi">बुरे लोगों का साथ छोड़ना बुद्धिमानी है।</span>
+            <span class="lang-english">Abandoning bad company is wisdom.</span>
+            <span class="reference">(Sundara Kanda 35.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1244</span>
+            <span class="lang-bangla">পরিবারের প্রতি দায়িত্ব পালনই শ্রেষ্ঠ সেবা।</span>
+            <span class="lang-hindi">परिवार के प्रति जिम्मेदारी निभाना ही सर्वश्रेष्ठ सेवा है।</span>
+            <span class="lang-english">Fulfilling responsibility towards family is the best service.</span>
+            <span class="reference">(Sundara Kanda 35.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1245</span>
+            <span class="lang-bangla">শাসকের কর্তব্য হলো প্রজার প্রতি ন্যায়পরায়ণ হওয়া।</span>
+            <span class="lang-hindi">शासक का कर्तव्य प्रजा के प्रति न्यायपूर्ण होना है।</span>
+            <span class="lang-english">The ruler's duty is to be just towards the subjects.</span>
+            <span class="reference">(Sundara Kanda 35.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1246</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে দুর্বল করে।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को कमजोर करता है।</span>
+            <span class="lang-english">Greed weakens the human heart.</span>
+            <span class="reference">(Sundara Kanda 35.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1247</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge.</span>
+            <span class="reference">(Sundara Kanda 35.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1248</span>
+            <span class="lang-bangla">ক্রোধের চেয়ে শান্তি শ্রেয়।</span>
+            <span class="lang-hindi">क्रोध से शांति बेहतर है।</span>
+            <span class="lang-english">Peace is better than anger.</span>
+            <span class="reference">(Sundara Kanda 35.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1249</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে দেবত্ব দান করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को देवत्व प्रदान करता है।</span>
+            <span class="lang-english">Renunciation bestows divinity upon man.</span>
+            <span class="reference">(Sundara Kanda 35.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1250</span>
+            <span class="lang-bangla">নিজের বুদ্ধির উপর বিশ্বাস রাখো।</span>
+            <span class="lang-hindi">अपनी बुद्धि पर विश्वास रखो।</span>
+            <span class="lang-english">Trust your own intellect.</span>
+            <span class="reference">(Sundara Kanda 35.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1251</span>
+            <span class="lang-bangla">পিতার আজ্ঞা পালনই শ্রেষ্ঠ ধার্মিকতা।</span>
+            <span class="lang-hindi">पिता की आज्ञा का पालन करना ही सर्वश्रेष्ठ धार्मिकता है।</span>
+            <span class="lang-english">Obeying the father's command is the greatest righteousness.</span>
+            <span class="reference">(Sundara Kanda 36.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1252</span>
+            <span class="lang-bangla">ক্ষমা দুর্বলতা নয়, এটি আত্মিক শক্তির চূড়ান্ত প্রকাশ।</span>
+            <span class="lang-hindi">क्षमा कमजोरी नहीं, यह आत्मिक शक्ति का अंतिम प्रकटीकरण है।</span>
+            <span class="lang-english">Forgiveness is not weakness, it is the ultimate expression of spiritual strength.</span>
+            <span class="reference">(Sundara Kanda 36.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1253</span>
+            <span class="lang-bangla">সময় নষ্ট করলে সুযোগ নষ্ট হয়।</span>
+            <span class="lang-hindi">समय बर्बाद करने से अवसर बर्बाद होता है।</span>
+            <span class="lang-english">Wasting time means wasting opportunity.</span>
+            <span class="reference">(Sundara Kanda 36.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1254</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছেঁড়া উচিত নয়।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी नहीं तोड़ना चाहिए।</span>
+            <span class="lang-english">The bond of family should never be broken.</span>
+            <span class="reference">(Sundara Kanda 36.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1255</span>
+            <span class="lang-bangla">ধৈর্যই সকল কষ্টের ওষুধ।</span>
+            <span class="lang-hindi">धैर्य ही सभी कष्टों की दवा है।</span>
+            <span class="lang-english">Patience is the cure for all suffering.</span>
+            <span class="reference">(Sundara Kanda 36.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1256</span>
+            <span class="lang-bangla">লোভ সকল শুভ কর্ম নষ্ট করে।</span>
+            <span class="lang-hindi">लालच सभी शुभ कर्मों को नष्ट कर देता है।</span>
+            <span class="lang-english">Greed destroys all good deeds.</span>
+            <span class="reference">(Sundara Kanda 36.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1257</span>
+            <span class="lang-bangla">বিনয়ই সকল সম্পর্কের ভিত্তি।</span>
+            <span class="lang-hindi">विनम्रता ही सभी संबंधों का आधार है।</span>
+            <span class="lang-english">Humility is the foundation of all relationships.</span>
+            <span class="reference">(Sundara Kanda 36.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1258</span>
+            <span class="lang-bangla">নিজের কর্মফল থেকে কেউ বাঁচতে পারে না।</span>
+            <span class="lang-hindi">अपने कर्मों के फल से कोई बच नहीं सकता।</span>
+            <span class="lang-english">No one can escape the consequences of their actions.</span>
+            <span class="reference">(Sundara Kanda 36.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1259</span>
+            <span class="lang-bangla">অহংকার মানুষের ধ্বংসের পথ।</span>
+            <span class="lang-hindi">अहंकार मनुष्य के विनाश का मार्ग है।</span>
+            <span class="lang-english">Arrogance is the path to human destruction.</span>
+            <span class="reference">(Sundara Kanda 36.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1260</span>
+            <span class="lang-bangla">সময়কে সঠিক কাজে লাগানোই জ্ঞানের পরিচয়।</span>
+            <span class="lang-hindi">समय को सही काम में लगाना ही ज्ञान का परिचय है।</span>
+            <span class="lang-english">Utilizing time for the right work is a sign of knowledge.</span>
+            <span class="reference">(Sundara Kanda 36.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1261</span>
+            <span class="lang-bangla">ত্যাগই মানুষের সর্বোচ্চ ধর্ম।</span>
+            <span class="lang-hindi">त्याग ही मनुष्य का सर्वोच्च धर्म है।</span>
+            <span class="lang-english">Renunciation is the supreme Dharma of man.</span>
+            <span class="reference">(Sundara Kanda 37.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1262</span>
+            <span class="lang-bangla">ক্রোধের আগুন সবকিছু পুড়িয়ে দেয়।</span>
+            <span class="lang-hindi">क्रोध की आग सब कुछ जला देती है।</span>
+            <span class="lang-english">The fire of anger burns everything.</span>
+            <span class="reference">(Sundara Kanda 37.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1263</span>
+            <span class="lang-bangla">সৎ লোকের সঙ্গ সর্বদা মঙ্গলজনক।</span>
+            <span class="lang-hindi">सज्जन लोगों का साथ हमेशा मंगलकारी होता है।</span>
+            <span class="lang-english">The company of noble people is always auspicious.</span>
+            <span class="reference">(Sundara Kanda 37.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1264</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তিই সমাজে শান্তি আনে।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति ही समाज में शांति लाता है।</span>
+            <span class="lang-english">A forgiving person brings peace to society.</span>
+            <span class="reference">(Sundara Kanda 37.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1265</span>
+            <span class="lang-bangla">ধৈর্য হলো মনের স্থিরতা।</span>
+            <span class="lang-hindi">धैर्य मन की स्थिरता है।</span>
+            <span class="lang-english">Patience is the stability of the mind.</span>
+            <span class="reference">(Sundara Kanda 37.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1266</span>
+            <span class="lang-bangla">নিজের কর্তব্য পালনে কখনও পিছপা হয়ো না।</span>
+            <span class="lang-hindi">अपने कर्तव्य निभाने में कभी पीछे मत हटो।</span>
+            <span class="lang-english">Never back down from fulfilling your duty.</span>
+            <span class="reference">(Sundara Kanda 37.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1267</span>
+            <span class="lang-bangla">যে কর্তব্য ভুলে যায়, সে কখনও শান্তি পায় না।</span>
+            <span class="lang-hindi">जो कर्तव्य भूल जाता है, उसे कभी शांति नहीं मिलती।</span>
+            <span class="lang-english">He who forgets duty never finds peace.</span>
+            <span class="reference">(Sundara Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1268</span>
+            <span class="lang-bangla">পিতার প্রতিজ্ঞা রক্ষা করাই সন্তানের প্রধান ধর্ম।</span>
+            <span class="lang-hindi">पिता की प्रतिज्ञा पूरी करना ही संतान का मुख्य धर्म है।</span>
+            <span class="lang-english">Fulfilling the father's promise is the principal Dharma of the child.</span>
+            <span class="reference">(Sundara Kanda 37.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1269</span>
+            <span class="lang-bangla">সত্যের পথে চলাই জীবনের শ্রেষ্ঠ পথ।</span>
+            <span class="lang-hindi">सत्य के मार्ग पर चलना ही जीवन का सर्वश्रेष्ठ मार्ग है।</span>
+            <span class="lang-english">Walking the path of truth is the best way of life.</span>
+            <span class="reference">(Sundara Kanda 37.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1270</span>
+            <span class="lang-bangla">শাসকের উচিত সর্বদা প্রজার মতামতকে গুরুত্ব দেওয়া।</span>
+            <span class="lang-hindi">शासक को हमेशा प्रजा की राय को महत्व देना चाहिए।</span>
+            <span class="lang-english">The ruler should always give importance to the opinion of the subjects.</span>
+            <span class="reference">(Sundara Kanda 37.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1271</span>
+            <span class="lang-bangla">লোভী ব্যক্তি কখনই সুখী হতে পারে না।</span>
+            <span class="lang-hindi">लालची व्यक्ति कभी सुखी नहीं हो सकता।</span>
+            <span class="lang-english">A greedy person can never be happy.</span>
+            <span class="reference">(Sundara Kanda 38.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1272</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছেঁড়া উচিত নয়।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी नहीं तोड़ना चाहिए।</span>
+            <span class="lang-english">The bond of family should never be broken.</span>
+            <span class="reference">(Sundara Kanda 38.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1273</span>
+            <span class="lang-bangla">ক্রোধ মানুষের সকল শুভ কর্ম নষ্ট করে।</span>
+            <span class="lang-hindi">क्रोध मनुष्य के सभी शुभ कर्मों को नष्ट कर देता है।</span>
+            <span class="lang-english">Anger destroys all the good deeds of man.</span>
+            <span class="reference">(Sundara Kanda 38.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1274</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন নিশ্চিত করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन निश्चित करता है।</span>
+            <span class="lang-english">Arrogance ensures the downfall of man.</span>
+            <span class="reference">(Sundara Kanda 38.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1275</span>
+            <span class="lang-bangla">ধৈর্য ছাড়া কোনো মহৎ কাজ সফল হয় না।</span>
+            <span class="lang-hindi">धैर्य के बिना कोई महान कार्य सफल नहीं होता।</span>
+            <span class="lang-english">No great work succeeds without patience.</span>
+            <span class="reference">(Sundara Kanda 38.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1276</span>
+            <span class="lang-bangla">ক্ষমা হলো মানুষের শ্রেষ্ঠ গুণ।</span>
+            <span class="lang-hindi">क्षमा मनुष्य का सर्वश्रेष्ठ गुण है।</span>
+            <span class="lang-english">Forgiveness is the best virtue of man.</span>
+            <span class="reference">(Sundara Kanda 38.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1277</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে অমর করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को अमर करता है।</span>
+            <span class="lang-english">Renunciation makes man immortal.</span>
+            <span class="reference">(Sundara Kanda 38.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1278</span>
+            <span class="lang-bangla">সময়কে নষ্ট করা মানে জীবনকে নষ্ট করা।</span>
+            <span class="lang-hindi">समय को बर्बाद करना मतलब जीवन को बर्बाद करना।</span>
+            <span class="lang-english">Wasting time means wasting life.</span>
+            <span class="reference">(Sundara Kanda 38.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1279</span>
+            <span class="lang-bangla">নিজের কর্তব্য পালনেই জীবনের শ্রেষ্ঠ সফলতা।</span>
+            <span class="lang-hindi">अपने कर्तव्य निभाने में ही जीवन की सर्वश्रेष्ठ सफलता है।</span>
+            <span class="lang-english">The best success in life is in fulfilling duty.</span>
+            <span class="reference">(Sundara Kanda 38.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1280</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর সকল অর্জনের সাথী।</span>
+            <span class="lang-hindi">पत्नी पति के सभी लाभों की साथी होती है।</span>
+            <span class="lang-english">A wife is a companion in all the achievements of her husband.</span>
+            <span class="reference">(Sundara Kanda 38.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1281</span>
+            <span class="lang-bangla">বিনয়ী ব্যক্তির কাছে স্বয়ং ঈশ্বরও নত হন।</span>
+            <span class="lang-hindi">विनम्र व्यक्ति के सामने स्वयं ईश्वर भी झुकते हैं।</span>
+            <span class="lang-english">Even God bows down before a humble person.</span>
+            <span class="reference">(Sundara Kanda 39.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1282</span>
+            <span class="lang-bangla">অসৎ সঙ্গ কখনও মঙ্গলজনক নয়।</span>
+            <span class="lang-hindi">बुरी संगत कभी मंगलकारी नहीं होती।</span>
+            <span class="lang-english">Bad company is never auspicious.</span>
+            <span class="reference">(Sundara Kanda 39.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1283</span>
+            <span class="lang-bangla">পাপের ফল অনিবার্য।</span>
+            <span class="lang-hindi">पाप का फल अनिवार्य है।</span>
+            <span class="lang-english">The result of sin is inevitable.</span>
+            <span class="reference">(Sundara Kanda 39.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1284</span>
+            <span class="lang-bangla">লোভ মানুষের বুদ্ধি নষ্ট করে।</span>
+            <span class="lang-hindi">लालच मनुष्य की बुद्धि नष्ट करता है।</span>
+            <span class="lang-english">Greed destroys human intelligence.</span>
+            <span class="reference">(Sundara Kanda 39.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1285</span>
+            <span class="lang-bangla">ধৈর্য হলো মানুষের ভিতরের শক্তি।</span>
+            <span class="lang-hindi">धैर्य मनुष्य के अंदर की शक्ति है।</span>
+            <span class="lang-english">Patience is the inner strength of man.</span>
+            <span class="reference">(Sundara Kanda 39.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1286</span>
+            <span class="lang-bangla">ক্ষমা করা দুর্বলতা নয়, এটি আত্মিক শক্তি।</span>
+            <span class="lang-hindi">क्षमा करना कमजोरी नहीं, यह आत्मिक शक्ति है।</span>
+            <span class="lang-english">Forgiveness is not weakness, it is spiritual strength.</span>
+            <span class="reference">(Sundara Kanda 39.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1287</span>
+            <span class="lang-bangla">অহংকার মানুষের ক্ষুদ্রতা প্রকাশ করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य की क्षुद्रता प्रकट करता है।</span>
+            <span class="lang-english">Arrogance reveals the smallness of man.</span>
+            <span class="reference">(Sundara Kanda 39.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1288</span>
+            <span class="lang-bangla">ক্রোধ জীবনের সবচেয়ে বড় শত্রু।</span>
+            <span class="lang-hindi">क्रोध जीवन का सबसे बड़ा शत्रु है।</span>
+            <span class="lang-english">Anger is the greatest enemy of life.</span>
+            <span class="reference">(Sundara Kanda 39.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1289</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে অমর করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को अमर करता है।</span>
+            <span class="lang-english">Renunciation makes man immortal.</span>
+            <span class="reference">(Sundara Kanda 39.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1290</span>
+            <span class="lang-bangla">সময়কে পূজা করা মানে জীবনকে পূজা করা।</span>
+            <span class="lang-hindi">समय की पूजा करना मतलब जीवन की पूजा करना।</span>
+            <span class="lang-english">Worshiping time means worshiping life.</span>
+            <span class="reference">(Sundara Kanda 39.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1291</span>
+            <span class="lang-bangla">পিতার আজ্ঞা পালনই শ্রেষ্ঠ ধর্ম।</span>
+            <span class="lang-hindi">पिता की आज्ञा का पालन करना ही सर्वश्रेष्ठ धर्म है।</span>
+            <span class="lang-english">Obeying the father's command is the best Dharma.</span>
+            <span class="reference">(Sundara Kanda 40.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1292</span>
+            <span class="lang-bangla">সত্যের জয় অনিবার্য।</span>
+            <span class="lang-hindi">सत्य की जीत अनिवार्य है।</span>
+            <span class="lang-english">The victory of truth is inevitable.</span>
+            <span class="reference">(Sundara Kanda 40.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1293</span>
+            <span class="lang-bangla">শাসকের ধর্ম হলো ন্যায় বিচার করা।</span>
+            <span class="lang-hindi">शासक का धर्म न्याय करना है।</span>
+            <span class="lang-english">The Dharma of a ruler is to administer justice.</span>
+            <span class="reference">(Sundara Kanda 40.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1294</span>
+            <span class="lang-bangla">পরিবারের সদস্যরা একে অপরের অবলম্বন।</span>
+            <span class="lang-hindi">परिवार के सदस्य एक-दूसरे का सहारा हैं।</span>
+            <span class="lang-english">Family members are each other's support.</span>
+            <span class="reference">(Sundara Kanda 40.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1295</span>
+            <span class="lang-bangla">লোভ সকল নষ্টের কারণ।</span>
+            <span class="lang-hindi">लालच सभी विनाश का कारण है।</span>
+            <span class="lang-english">Greed is the cause of all destruction.</span>
+            <span class="reference">(Sundara Kanda 40.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1296</span>
+            <span class="lang-bangla">ধৈর্য এবং অধ্যবসায় সাফল্যের চাবিকাঠি।</span>
+            <span class="lang-hindi">धैर्य और दृढ़ता सफलता की कुंजी है।</span>
+            <span class="lang-english">Patience and perseverance are the keys to success.</span>
+            <span class="reference">(Sundara Kanda 40.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1297</span>
+            <span class="lang-bangla">বিনয় সকল গুণের উৎস।</span>
+            <span class="lang-hindi">विनम्रता ही सभी गुणों का स्रोत है।</span>
+            <span class="lang-english">Humility is the source of all virtues.</span>
+            <span class="reference">(Sundara Kanda 40.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1298</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তি সর্বদা সুখী হয়।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति हमेशा सुखी रहता है।</span>
+            <span class="lang-english">A forgiving person is always happy.</span>
+            <span class="reference">(Sundara Kanda 40.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1299</span>
+            <span class="lang-bangla">কর্তব্যই জীবনের আসল রথ।</span>
+            <span class="lang-hindi">कर्तव्य ही जीवन का असली रथ है।</span>
+            <span class="lang-english">Duty is the real chariot of life.</span>
+            <span class="reference">(Sundara Kanda 40.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1300</span>
+            <span class="lang-bangla">অসৎ সঙ্গ ত্যাগ করাই জ্ঞানের লক্ষণ।</span>
+            <span class="lang-hindi">बुरे लोगों का साथ छोड़ना ही ज्ञान का लक्षण है।</span>
+            <span class="lang-english">Abandoning bad company is a sign of knowledge.</span>
+            <span class="reference">(Sundara Kanda 40.10)</span>
+        </div>
+
+    </div>
+
+    <div class="fixed-nav">
+        <a href="ramayana_set_12.html" class="nav-button">Collection 12 (Previous)</a>
+        <a href="ramayana_set_13.html" class="nav-button" active>Collection 13</a>
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+        <a href="ramayana_set_14.html" class="nav-button">Collection 14 (Next) →</a>
+    </div>
+</body>
+</html>

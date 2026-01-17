@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedas - Part 5</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vedas : The Knowledge</h1>
+            <p>Final Part 5</p>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 401</span>
+            <span class="lang-bangla">একই সত্য, জ্ঞানী ব্যক্তিরা তাকে ভিন্ন ভিন্ন নামে বর্ণনা করেন।</span>
+            <span class="lang-hindi">सत्य एक ही है, विद्वान लोग उसे भिन्न-भिन्न नामों से बताते हैं।</span>
+            <span class="lang-english">The Truth is One, though the sages call it by various names.</span>
+            <span class="reference">(Rig Veda 1.164.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 402</span>
+            <span class="lang-bangla">আমরা যেন পূর্ণতা থেকে পূর্ণতার দিকে এগিয়ে যাই।</span>
+            <span class="lang-hindi">हम पूर्णता से पूर्णता की ओर अग्रसर हों।</span>
+            <span class="lang-english">May we move forward from fullness to fullness.</span>
+            <span class="reference">(Yajur Veda 40.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 403</span>
+            <span class="lang-bangla">সকল সঙ্গীতের শেষ কথা হলো আত্মার সাথে পরমাত্মার মিলন।</span>
+            <span class="lang-hindi">सभी संगीत का अंतिम सार आत्मा का परमात्मा से मिलन है।</span>
+            <span class="lang-english">The ultimate essence of all music is the union of the soul with the Supreme Self.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 404</span>
+            <span class="lang-bangla">সকল সামাজিক কাঠামো যেন ধর্মের নীতির উপর ভিত্তি করে তৈরি হয়।</span>
+            <span class="lang-hindi">सभी सामाजिक संरचनाएँ धर्म के सिद्धांतों पर आधारित हों।</span>
+            <span class="lang-english">May all social structures be based on the principles of Dharma (righteousness).</span>
+            <span class="reference">(Atharva Veda 3.30.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 405</span>
+            <span class="lang-bangla">যিনি নিজেকে নিয়ন্ত্রণ করতে পারেন, তিনি জগৎকেও নিয়ন্ত্রণ করতে পারেন।</span>
+            <span class="lang-hindi">जो स्वयं को नियंत्रित कर सकता है, वह जगत को भी नियंत्रित कर सकता है।</span>
+            <span class="lang-english">He who can control himself can also control the world.</span>
+            <span class="reference">(Rig Veda 5.83.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 406</span>
+            <span class="lang-bangla">তুমি কর্মের ফল ত্যাগ করে, কেবল কর্তব্য করো।</span>
+            <span class="lang-hindi">तुम कर्म के फल का त्याग करके, केवल कर्तव्य करो।</span>
+            <span class="lang-english">Renounce the fruit of action, and simply perform your duty.</span>
+            <span class="reference">(Yajur Veda 40.1 - based on Isa Upanishad)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 407</span>
+            <span class="lang-bangla">সূর্য, চন্দ্র, বাতাস ও জল যেন সুরেলাভাবে কাজ করে।</span>
+            <span class="lang-hindi">सूर्य, चंद्रमा, वायु और जल सामंजस्यपूर्ण ढंग से कार्य करें।</span>
+            <span class="lang-english">May the Sun, Moon, wind, and water work harmoniously.</span>
+            <span class="reference">(Sama Veda 1.1.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 408</span>
+            <span class="lang-bangla">আমাদের বাক্য যেন সর্বদা মধুর ও প্রেমপূর্ণ হয়।</span>
+            <span class="lang-hindi">हमारी वाणी हमेशा मधुर और प्रेमपूर्ण हो।</span>
+            <span class="lang-english">May our speech always be sweet and loving.</span>
+            <span class="reference">(Atharva Veda 3.30.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 409</span>
+            <span class="lang-bangla">সৃষ্টি অবিরাম চলছে, এক চক্রাকার প্রবাহে।</span>
+            <span class="lang-hindi">सृष्टि अविराम चल रही है, एक चक्रीय प्रवाह में।</span>
+            <span class="lang-english">Creation is constantly moving, in a cyclical flow.</span>
+            <span class="reference">(Rig Veda 10.190.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 410</span>
+            <span class="lang-bangla">আকাশ ও মহাকাশে শান্তি বিরাজ করুক।</span>
+            <span class="lang-hindi">आकाश और अंतरिक्ष में शांति बनी रहे।</span>
+            <span class="lang-english">May peace prevail in the sky and the atmosphere.</span>
+            <span class="reference">(Yajur Veda 36.17 - Shanti Mantra)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 411</span>
+            <span class="lang-bangla">তোমাদের সকল প্রার্থনা এক হোক, তোমাদের সকল চিন্তা এক উদ্দেশ্য নিয়ে মিলিত হোক।</span>
+            <span class="lang-hindi">आपकी सभी प्रार्थनाएँ एक हों, आपके सभी विचार एक उद्देश्य के साथ मिलें।</span>
+            <span class="lang-english">Let all your prayers be one, let all your thoughts unite with one purpose.</span>
+            <span class="reference">(Rig Veda 10.191.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 412</span>
+            <span class="lang-bangla">গৃহ হলো পবিত্র স্থান, যেখানে সুখ ও সমৃদ্ধি বাস করে।</span>
+            <span class="lang-hindi">घर एक पवित्र स्थान है, जहाँ सुख और समृद्धि निवास करते हैं।</span>
+            <span class="lang-english">The home is a sacred place, where happiness and prosperity dwell.</span>
+            <span class="reference">(Atharva Veda 3.12.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 413</span>
+            <span class="lang-bangla">আত্মা হলো চিরন্তন, জন্ম-মৃত্যুর ঊর্ধ্বে।</span>
+            <span class="lang-hindi">आत्मा शाश्वत है, जन्म और मृत्यु से परे है।</span>
+            <span class="lang-english">The Soul is eternal, beyond birth and death.</span>
+            <span class="reference">(Yajur Veda 40.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 414</span>
+            <span class="lang-bangla">গভীর নীরবতার মধ্যেই পরম সত্য প্রকাশিত হয়।</span>
+            <span class="lang-hindi">गहरी चुप्पी में ही परम सत्य प्रकट होता है।</span>
+            <span class="lang-english">The Supreme Truth is revealed in the deepest silence.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 415</span>
+            <span class="lang-bangla">আমরা যেন সর্বদা শ্রেষ্ঠত্বের দিকেই এগিয়ে যাই।</span>
+            <span class="lang-hindi">हम हमेशा श्रेष्ठता की ओर ही अग्रसर हों।</span>
+            <span class="lang-english">May we always proceed towards excellence.</span>
+            <span class="reference">(Rig Veda 7.100.1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 416</span>
+            <span class="lang-bangla">বয়োজ্যেষ্ঠদের সম্মান করো, কারণ তারা জ্ঞানের ভান্ডার।</span>
+            <span class="lang-hindi">बड़ों का सम्मान करें, क्योंकि वे ज्ञान का भंडार हैं।</span>
+            <span class="lang-english">Respect the elders, for they are the repository of knowledge.</span>
+            <span class="reference">(Atharva Veda 4.39.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 417</span>
+            <span class="lang-bangla">ঈশ্বরীয় জ্যোতি যেন আমাদের জীবনকে আলোকিত করে।</span>
+            <span class="lang-hindi">ईश्वरीय ज्योति हमारे जीवन को प्रकाशित करे।</span>
+            <span class="lang-english">May the divine light illuminate our lives.</span>
+            <span class="reference">(Yajur Veda 36.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 418</span>
+            <span class="lang-bangla">মহাবিশ্বের প্রতিটি আন্দোলন এক সুনির্দিষ্ট ছন্দে আবদ্ধ।</span>
+            <span class="lang-hindi">ब्रह्मांड की हर गति एक निश्चित लय में बंधी है।</span>
+            <span class="lang-english">Every movement in the universe is bound by a specific rhythm.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 419</span>
+            <span class="lang-bangla">দানশীল হও, কারণ দানেই জীবন সার্থক।</span>
+            <span class="lang-hindi">उदार बनो, क्योंकि दान में ही जीवन सार्थक है।</span>
+            <span class="lang-english">Be generous, because life is meaningful in giving.</span>
+            <span class="reference">(Rig Veda 10.117.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 420</span>
+            <span class="lang-bangla">সকল হৃদয় যেন এক হয় এবং সকলে যেন শান্তিতে কথা বলে।</span>
+            <span class="lang-hindi">सभी हृदय एक हों और सभी शांति से बात करें।</span>
+            <span class="lang-english">May all hearts be one, and may all speak in peace.</span>
+            <span class="reference">(Atharva Veda 3.30.1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 421</span>
+            <span class="lang-bangla">অন্নই ব্রহ্ম; অন্নকে কখনই অবহেলা করবে না।</span>
+            <span class="lang-hindi">अन्न ही ब्रह्म है; अन्न का कभी अनादर न करें।</span>
+            <span class="lang-english">Food is Brahman; never disrespect food.</span>
+            <span class="reference">(Yajur Veda, Taittiriya Upanishad segment)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 422</span>
+            <span class="lang-bangla">যারা সত্যের সন্ধানে কঠোর পরিশ্রম করে, তারা অবশ্যই তা খুঁজে পায়।</span>
+            <span class="lang-hindi">जो सत्य की तलाश में कठोर परिश्रम करते हैं, उन्हें वह अवश्य मिलता है।</span>
+            <span class="lang-english">Those who strive hard in search of Truth certainly find it.</span>
+            <span class="reference">(Rig Veda 10.129.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 423</span>
+            <span class="lang-bangla">সাহসীরাই জীবন যুদ্ধে জয়লাভ করে।</span>
+            <span class="lang-hindi">साहसी ही जीवन की लड़ाई में जीतते हैं।</span>
+            <span class="lang-english">The courageous win the battle of life.</span>
+            <span class="reference">(Atharva Veda 4.30.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 424</span>
+            <span class="lang-bangla">জ্ঞানই আমাদের সকল ভয় থেকে মুক্ত করে।</span>
+            <span class="lang-hindi">ज्ञान ही हमें सभी भयों से मुक्त करता है।</span>
+            <span class="lang-english">Knowledge alone liberates us from all fears.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 425</span>
+            <span class="lang-bangla">সকলের হৃদয়ের গভীরে এক নীরব সাক্ষী বিরাজমান।</span>
+            <span class="lang-hindi">सभी के हृदय की गहराई में एक मूक साक्षी विद्यमान है।</span>
+            <span class="lang-english">A silent witness dwells in the depth of everyone's heart.</span>
+            <span class="reference">(Rig Veda 1.164.20 - Two Birds concept)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 426</span>
+            <span class="lang-bangla">ত্যাগের মাধ্যমে শান্তি অর্জন করো।</span>
+            <span class="lang-hindi">त्याग के माध्यम से शांति प्राप्त करो।</span>
+            <span class="lang-english">Attain peace through renunciation.</span>
+            <span class="reference">(Yajur Veda 40.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 427</span>
+            <span class="lang-bangla">আমাদের যেন সব দিক থেকে ভালো ভাগ্য আসে।</span>
+            <span class="lang-hindi">हमारे लिए सभी दिशाओं से अच्छा भाग्य आए।</span>
+            <span class="lang-english">May good fortune come to us from all directions.</span>
+            <span class="reference">(Atharva Veda 6.108.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 428</span>
+            <span class="lang-bangla">আমাদের সকল প্রচেষ্টা যেন সত্যের প্রতি নিবেদিত হয়।</span>
+            <span class="lang-hindi">हमारे सभी प्रयास सत्य के प्रति समर्पित हों।</span>
+            <span class="lang-english">May all our efforts be dedicated to the Truth.</span>
+            <span class="reference">(Sama Veda 2.1.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 429</span>
+            <span class="lang-bangla">ন্যায়ের পথ সর্বদা সরল ও সুস্পষ্ট।</span>
+            <span class="lang-hindi">न्याय का मार्ग हमेशा सीधा और स्पष्ट होता है।</span>
+            <span class="lang-english">The path of justice is always straight and clear.</span>
+            <span class="reference">(Rig Veda 6.51.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 430</span>
+            <span class="lang-bangla">আমি যেন সকল জীবকে বন্ধু হিসেবে দেখি।</span>
+            <span class="lang-hindi">मैं सभी जीवों को मित्र के रूप में देखूँ।</span>
+            <span class="lang-english">May I look upon all beings as friends.</span>
+            <span class="reference">(Yajur Veda 36.18)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 431</span>
+            <span class="lang-bangla">একতাই শক্তি; বিচ্ছিন্নতা ধ্বংস ডেকে আনে।</span>
+            <span class="lang-hindi">एकता ही शक्ति है; अलगाव विनाश लाता है।</span>
+            <span class="lang-english">Unity is strength; separation brings destruction.</span>
+            <span class="reference">(Atharva Veda 3.30.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 432</span>
+            <span class="lang-bangla">জ্ঞানের আলোক সেই একই উত্স থেকে আসে যা সূর্যকে আলো দেয়।</span>
+            <span class="lang-hindi">ज्ञान का प्रकाश उसी स्रोत से आता है जो सूर्य को प्रकाश देता है।</span>
+            <span class="lang-english">The light of knowledge comes from the same source that gives light to the Sun.</span>
+            <span class="reference">(Rig Veda 1.115.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 433</span>
+            <span class="lang-bangla">আমাদের ভেতরের শব্দই হলো মহাবিশ্বের গভীরতম প্রতিধ্বনি।</span>
+            <span class="lang-hindi">हमारी आंतरिक ध्वनि ही ब्रह्मांड की सबसे गहरी प्रतिध्वनि है।</span>
+            <span class="lang-english">Our inner sound is the deepest resonance of the universe.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 434</span>
+            <span class="lang-bangla">কালচক্র অবিরাম ঘুরছে, পরিবর্তনের ইঙ্গিত দিচ্ছে।</span>
+            <span class="lang-hindi">कालचक्र लगातार घूम रहा है, परिवर्तन का संकेत दे रहा है।</span>
+            <span class="lang-english">The wheel of time revolves incessantly, indicating change.</span>
+            <span class="reference">(Yajur Veda 30.18)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 435</span>
+            <span class="lang-bangla">মিথ্যা এবং প্রতারণা যেন আমাদের থেকে দূরে থাকে।</span>
+            <span class="lang-hindi">झूठ और छल हमसे दूर रहें।</span>
+            <span class="lang-english">May falsehood and deception be far from us.</span>
+            <span class="reference">(Atharva Veda 6.45.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 436</span>
+            <span class="lang-bangla">প্রকৃতি আমাদের সব দেয়, আমাদেরও উচিত কৃতজ্ঞ থাকা।</span>
+            <span class="lang-hindi">प्रकृति हमें सब कुछ देती है, हमें भी कृतज्ञ होना चाहिए।</span>
+            <span class="lang-english">Nature gives us everything, we too should be grateful.</span>
+            <span class="reference">(Rig Veda 4.58.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 437</span>
+            <span class="lang-bangla">সুখ বাইরের বস্তুতে নয়, তা আমাদের অন্তরেই লুকিয়ে আছে।</span>
+            <span class="lang-hindi">खुशी बाहरी चीजों में नहीं है, वह हमारे भीतर छिपी है।</span>
+            <span class="lang-english">Happiness is not in external objects, it is hidden within us.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 438</span>
+            <span class="lang-bangla">ধর্ম (আইন ও নৈতিকতা) সকলের ঊর্ধ্বে।</span>
+            <span class="lang-hindi">धर्म (कानून और नैतिकता) सभी से ऊपर है।</span>
+            <span class="lang-english">Dharma (Law and morality) is above all.</span>
+            <span class="reference">(Yajur Veda 34.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 439</span>
+            <span class="lang-bangla">শ্রদ্ধা (বিশ্বাস) দ্বারাই আমরা অসম্ভবকে জয় করি।</span>
+            <span class="lang-hindi">श्रद्धा (विश्वास) से ही हम असंभव को जीतते हैं।</span>
+            <span class="lang-english">It is through faith (Shraddha) that we conquer the impossible.</span>
+            <span class="reference">(Atharva Veda 19.42.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 440</span>
+            <span class="lang-bangla">সকল সৃষ্টি এবং ধ্বংস এক মহাজাগতিক নৃত্যের অংশ।</span>
+            <span class="lang-hindi">सभी सृजन और विनाश एक ब्रह्मांडीय नृत्य का हिस्सा हैं।</span>
+            <span class="lang-english">All creation and destruction are part of a cosmic dance.</span>
+            <span class="reference">(Rig Veda 10.136.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 441</span>
+            <span class="lang-bangla">জ্ঞান এবং ত্যাগই মুক্তি লাভের একমাত্র পথ।</span>
+            <span class="lang-hindi">ज्ञान और त्याग ही मोक्ष प्राप्त करने का एकमात्र मार्ग है।</span>
+            <span class="lang-english">Knowledge and renunciation are the only path to liberation (Moksha).</span>
+            <span class="reference">(Yajur Veda 40.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 442</span>
+            <span class="lang-bangla">আমাদের প্রতিটি নিঃশ্বাস মহাবিশ্বের গানের অংশ।</span>
+            <span class="lang-hindi">हमारी हर सांस ब्रह्मांड के गीत का हिस्सा है।</span>
+            <span class="lang-english">Every breath of ours is part of the universe's song.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 443</span>
+            <span class="lang-bangla">ভূমি আমাদের খাদ্য দেয়; আমরা যেন তাকে শ্রদ্ধা করি।</span>
+            <span class="lang-hindi">भूमि हमें भोजन देती है; हमें उसका सम्मान करना चाहिए।</span>
+            <span class="lang-english">The land gives us food; we should respect it.</span>
+            <span class="reference">(Atharva Veda 3.10.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 444</span>
+            <span class="lang-bangla">জ্ঞানই আমাদের অন্ধকারে পথ দেখায়।</span>
+            <span class="lang-hindi">ज्ञान ही हमें अंधेरे में रास्ता दिखाता है।</span>
+            <span class="lang-english">Wisdom guides us in the darkness.</span>
+            <span class="reference">(Rig Veda 4.40.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 445</span>
+            <span class="lang-bangla">তপস্যা (কঠোর পরিশ্রম ও সংযম) দ্বারা জ্ঞান লাভ করা যায়।</span>
+            <span class="lang-hindi">तपस्या (कठिन परिश्रम और संयम) द्वारा ज्ञान प्राप्त किया जाता है।</span>
+            <span class="lang-english">Knowledge is attained through Austerity (hard work and self-restraint).</span>
+            <span class="reference">(Yajur Veda 39.1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 446</span>
+            <span class="lang-bangla">ওঁ (AUM) হলো সকল শব্দের মূল, যা মহাবিশ্বের প্রতীক।</span>
+            <span class="lang-hindi">ॐ (AUM) सभी ध्वनियों का मूल है, जो ब्रह्मांड का प्रतीक है।</span>
+            <span class="lang-english">AUM (Om) is the root of all sounds, the symbol of the universe.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 447</span>
+            <span class="lang-bangla">জলই জীবন; জলকে রক্ষা করা সকলের দায়িত্ব।</span>
+            <span class="lang-hindi">जल ही जीवन है; जल की रक्षा करना सबकी जिम्मेदारी है।</span>
+            <span class="lang-english">Water is life; protecting water is everyone's responsibility.</span>
+            <span class="reference">(Atharva Veda 1.4.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 448</span>
+            <span class="lang-bangla">স্রষ্টা এই বিশ্বকে একটি নিখুঁত কাঠামোতে তৈরি করেছেন।</span>
+            <span class="lang-hindi">सृष्टिकर्ता ने इस विश्व को एक उत्तम संरचना में बनाया है।</span>
+            <span class="lang-english">The Creator has fashioned this world into a perfect structure.</span>
+            <span class="reference">(Rig Veda 1.107.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 449</span>
+            <span class="lang-bangla">আমি যেন সর্বদা সত্যের দ্বারা চালিত হই।</span>
+            <span class="lang-hindi">मैं हमेशा सत्य द्वारा संचालित रहूँ।</span>
+            <span class="lang-english">May I always be driven by truth.</span>
+            <span class="reference">(Yajur Veda 3.33)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 450</span>
+            <span class="lang-bangla">ভালো কাজের ফল সর্বদা ভালো হয়; খারাপ কাজের ফল খারাপ।</span>
+            <span class="lang-hindi">अच्छे कर्मों का फल हमेशा अच्छा होता है; बुरे कर्मों का फल बुरा।</span>
+            <span class="lang-english">The fruit of good deeds is always good; the fruit of bad deeds is bad.</span>
+            <span class="reference">(Atharva Veda 6.120.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 451</span>
+            <span class="lang-bangla">প্রতিটি নতুন দিন নতুন আশা নিয়ে আসে; অতীতের ভার ত্যাগ করো।</span>
+            <span class="lang-hindi">हर नया दिन नई उम्मीदें लाता है; अतीत का बोझ छोड़ दो।</span>
+            <span class="lang-english">Every new day brings new hopes; renounce the burden of the past.</span>
+            <span class="reference">(Rig Veda 1.113.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 452</span>
+            <span class="lang-bangla">নিজেকে জানো; এতেই জগতের সকল রহস্য লুকিয়ে আছে।</span>
+            <span class="lang-hindi">स्वयं को जानो; इसी में जगत के सभी रहस्य छिपे हैं।</span>
+            <span class="lang-english">Know thyself; in this lies all the secrets of the world.</span>
+            <span class="reference">(Yajur Veda, Brihadaranyaka segment - Know the Atman)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 453</span>
+            <span class="lang-bangla">আমাদের জীবন যেন এক সুন্দর সুরে বাঁধা হয়।</span>
+            <span class="lang-hindi">हमारा जीवन एक सुंदर धुन में बंधा हो।</span>
+            <span class="lang-english">May our life be bound by a beautiful melody.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 454</span>
+            <span class="lang-bangla">পরিশ্রম, সততা এবং জ্ঞানই উন্নতির পথ।</span>
+            <span class="lang-hindi">कड़ी मेहनत, ईमानदारी और ज्ञान ही उन्नति का मार्ग है।</span>
+            <span class="lang-english">Hard work, honesty, and knowledge are the path to prosperity.</span>
+            <span class="reference">(Atharva Veda 3.24.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 455</span>
+            <span class="lang-bangla">এই মহাবিশ্ব এক একক সত্তা দ্বারা নির্মিত।</span>
+            <span class="lang-hindi">यह ब्रह्मांड एक ही सत्ता द्वारा निर्मित है।</span>
+            <span class="lang-english">This universe is built by a single entity.</span>
+            <span class="reference">(Rig Veda 10.81.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 456</span>
+            <span class="lang-bangla">যিনি নিজের মনকে জয় করেছেন, তিনি ভয়হীন।</span>
+            <span class="lang-hindi">जिसने अपने मन को जीत लिया है, वह भयहीन है।</span>
+            <span class="lang-english">He who has conquered his own mind is fearless.</span>
+            <span class="reference">(Yajur Veda 36.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 457</span>
+            <span class="lang-bangla">জীবন হলো এক শিল্প, যা প্রতিটি মুহূর্তের মাধ্যমে প্রকাশিত হয়।</span>
+            <span class="lang-hindi">जीवन एक कला है, जो हर पल के माध्यम से प्रकट होती है।</span>
+            <span class="lang-english">Life is an art, which is expressed through every moment.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 458</span>
+            <span class="lang-bangla">কোনো প্রাণীকে আঘাত করো না; সকল জীবন মূল্যবান।</span>
+            <span class="lang-hindi">किसी भी प्राणी को चोट न पहुँचाओ; सभी जीवन मूल्यवान हैं।</span>
+            <span class="lang-english">Harm no creature; all life is valuable.</span>
+            <span class="reference">(Atharva Veda 10.1.29)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 459</span>
+            <span class="lang-bangla">ভালো কথা বলো, যা হৃদয়ে শান্তি আনে।</span>
+            <span class="lang-hindi">अच्छी बातें बोलो, जो हृदय में शांति लाएँ।</span>
+            <span class="lang-english">Speak good words that bring peace to the heart.</span>
+            <span class="reference">(Rig Veda 10.125.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 460</span>
+            <span class="lang-bangla">আমাদের কাজ যেন পৃথিবীর জন্য আলো নিয়ে আসে।</span>
+            <span class="lang-hindi">हमारे कर्म पृथ्वी के लिए प्रकाश लाएँ।</span>
+            <span class="lang-english">May our actions bring light to the Earth.</span>
+            <span class="reference">(Yajur Veda 19.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 461</span>
+            <span class="lang-bangla">আমরা যেন মৃত্যুর পর অমরত্ব লাভ করি।</span>
+            <span class="lang-hindi">हम मृत्यु के बाद अमरता प्राप्त करें।</span>
+            <span class="lang-english">May we attain immortality after death.</span>
+            <span class="reference">(Atharva Veda 18.4.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 462</span>
+            <span class="lang-bangla">আন্তরিক ইচ্ছা কখনও ব্যর্থ হয় না।</span>
+            <span class="lang-hindi">আন্তರಿಕ ইচ্ছা कभी असफल नहीं होती।</span>
+            <span class="lang-english">Sincere intention never fails.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 463</span>
+            <span class="lang-bangla">ঈশ্বরের করুণা সর্বদা আমাদের সাথে আছে।</span>
+            <span class="lang-hindi">ईश्वर की करुणा हमेशा हमारे साथ है।</span>
+            <span class="lang-english">God's compassion is always with us.</span>
+            <span class="reference">(Rig Veda 7.86.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 464</span>
+            <span class="lang-bangla">আমরা যেন জ্ঞানের পথে অবিরাম চলতে থাকি।</span>
+            <span class="lang-hindi">हम ज्ञान के मार्ग पर लगातार चलते रहें।</span>
+            <span class="lang-english">May we continue on the path of knowledge incessantly.</span>
+            <span class="reference">(Yajur Veda 2.30)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 465</span>
+            <span class="lang-bangla">সুস্থ শরীর এবং সুস্থ মন—এই দুটিই একসাথে প্রয়োজন।</span>
+            <span class="lang-hindi">स्वस्थ शरीर और स्वस्थ मन—ये दोनों एक साथ ज़रूरी हैं।</span>
+            <span class="lang-english">A healthy body and a healthy mind—both are needed together.</span>
+            <span class="reference">(Atharva Veda 19.60.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 466</span>
+            <span class="lang-bangla">সত্যের প্রতি কর্তব্য করাই পরম ধর্ম।</span>
+            <span class="lang-hindi">सत्य के प्रति कर्तव्य निभाना ही परम धर्म है।</span>
+            <span class="lang-english">Duty towards truth is the supreme righteousness.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 467</span>
+            <span class="lang-bangla">সকলের হৃদয়ে একই আত্মা বাস করে।</span>
+            <span class="lang-hindi">सभी के हृदय में एक ही आत्मा निवास करती है।</span>
+            <span class="lang-english">The same soul dwells in the hearts of all.</span>
+            <span class="reference">(Rig Veda 1.164.20)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 468</span>
+            <span class="lang-bangla">মন্ত্রের শক্তি আমাদের মনকে শান্ত করে।</span>
+            <span class="lang-hindi">मंत्र की शक्ति हमारे मन को शांत करती है।</span>
+            <span class="lang-english">The power of Mantra calms our mind.</span>
+            <span class="reference">(Yajur Veda 3.35)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 469</span>
+            <span class="lang-bangla">আমরা যেন পূর্ণ শক্তি ও উদ্যম নিয়ে শত বছর জীবন যাপন করি।</span>
+            <span class="lang-hindi">हम पूरी शक्ति और उत्साह के साथ सौ वर्ष तक जीवन जिएँ।</span>
+            <span class="lang-english">May we live for a hundred years with full strength and vitality.</span>
+            <span class="reference">(Atharva Veda 19.67.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 470</span>
+            <span class="lang-bangla">সৃষ্টির প্রতিটি অংশই আনন্দের বহিঃপ্রকাশ।</span>
+            <span class="lang-hindi">सृष्टि का हर हिस्सा आनंद की अभिव्यक्ति है।</span>
+            <span class="lang-english">Every part of creation is an expression of joy.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 471</span>
+            <span class="lang-bangla">পরম লক্ষ্য হলো জীবনের মায়া থেকে মুক্তি।</span>
+            <span class="lang-hindi">परम लक्ष्य जीवन के भ्रम से मुक्ति है।</span>
+            <span class="lang-english">The supreme goal is liberation from the illusion of life.</span>
+            <span class="reference">(Rig Veda 10.13.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 472</span>
+            <span class="lang-bangla">সময়কে নষ্ট করবে না; সময় হলো জীবনের সারাংশ।</span>
+            <span class="lang-hindi">समय बर्बाद मत करो; समय जीवन का सार है।</span>
+            <span class="lang-english">Do not waste time; time is the essence of life.</span>
+            <span class="reference">(Yajur Veda 34.50)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 473</span>
+            <span class="lang-bangla">আমাদের বন্ধুত্বের বন্ধন যেন কখনও ছিন্ন না হয়।</span>
+            <span class="lang-hindi">हमारी मित्रता का बंधन कभी न टूटे।</span>
+            <span class="lang-english">May the bond of our friendship never be broken.</span>
+            <span class="reference">(Atharva Veda 3.30.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 474</span>
+            <span class="lang-bangla">ঈশ্বরীয় অনুপ্রেরণা আমাদের কাজকে শ্রেষ্ঠ করে তোলে।</span>
+            <span class="lang-hindi">ईश्वरीय प्रेरणा हमारे काम को श्रेष्ठ बनाती है।</span>
+            <span class="lang-english">Divine inspiration makes our work excellent.</span>
+            <span class="reference">(Sama Veda 2.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 475</span>
+            <span class="lang-bangla">সৎ কর্ম ও সত্যের মাধ্যমে আমরা অমরত্ব লাভ করি।</span>
+            <span class="lang-hindi">अच्छे कर्म और सत्य के माध्यम से हम अमरता प्राप्त करते हैं।</span>
+            <span class="lang-english">Through good deeds and truth, we attain immortality.</span>
+            <span class="reference">(Rig Veda 9.113.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 476</span>
+            <span class="lang-bangla">সকল সৃষ্টি এক ও অভিন্ন; কোনো পার্থক্য নেই।</span>
+            <span class="lang-hindi">सभी सृष्टि एक और अभिन्न है; कोई अंतर नहीं है।</span>
+            <span class="lang-english">All creation is one and indivisible; there is no difference.</span>
+            <span class="reference">(Yajur Veda 40.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 477</span>
+            <span class="lang-bangla">মনকে শুদ্ধ রাখো, তবেই সঠিক জ্ঞান আসবে।</span>
+            <span class="lang-hindi">मन को शुद्ध रखो, तभी सही ज्ञान आएगा।</span>
+            <span class="lang-english">Keep the mind pure, only then will right knowledge come.</span>
+            <span class="reference">(Atharva Veda 4.14.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 478</span>
+            <span class="lang-bangla">আমাদের যাত্রা পরম সত্যের দিকে।</span>
+            <span class="lang-hindi">हमारी यात्रा परम सत्य की ओर है।</span>
+            <span class="lang-english">Our journey is towards the ultimate Truth.</span>
+            <span class="reference">(Sama Veda, Concluding Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 479</span>
+            <span class="lang-bangla">আমাদের কাজ আমাদের পরিচয়।</span>
+            <span class="lang-hindi">हमारे कर्म ही हमारी पहचान हैं।</span>
+            <span class="lang-english">Our deeds are our identity.</span>
+            <span class="reference">(Rig Veda 10.135.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 480</span>
+            <span class="lang-bangla">ভূমি, আকাশ এবং বাতাসের প্রতি শ্রদ্ধা জানাই।</span>
+            <span class="lang-hindi">भूमि, आकाश और वायु के प्रति सम्मान करते हैं।</span>
+            <span class="lang-english">We pay respect to the earth, sky, and air.</span>
+            <span class="reference">(Yajur Veda 36.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 481</span>
+            <span class="lang-bangla">চিরন্তন আইন কখনও বাতিল হয় না।</span>
+            <span class="lang-hindi">शाश्वत कानून कभी रद्द नहीं होता।</span>
+            <span class="lang-english">The eternal law is never revoked.</span>
+            <span class="reference">(Atharva Veda 12.1.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 482</span>
+            <span class="lang-bangla">নীরবতার গভীরে এক স্বর্গীয় সঙ্গীত রয়েছে।</span>
+            <span class="lang-hindi">चुप्पी की गहराई में एक दिव्य संगीत है।</span>
+            <span class="lang-english">In the depth of silence, there is a divine melody.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 483</span>
+            <span class="lang-bangla">আনন্দ আত্মার স্বাভাবিক অবস্থা।</span>
+            <span class="lang-hindi">आनंद आत्मा की स्वाभाविक अवस्था है।</span>
+            <span class="lang-english">Joy is the natural state of the soul.</span>
+            <span class="reference">(Rig Veda 9.113.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 484</span>
+            <span class="lang-bangla">আমরা যেন শত বছর চোখ দিয়ে ভালোভাবে দেখি, কান দিয়ে ভালোভাবে শুনি।</span>
+            <span class="lang-hindi">हम सौ साल तक आँखों से अच्छी तरह देखें, कानों से अच्छी तरह सुनें।</span>
+            <span class="lang-english">May we see well with our eyes, hear well with our ears, for a hundred years.</span>
+            <span class="reference">(Yajur Veda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 485</span>
+            <span class="lang-bangla">আমাদের গ্রাম এবং শহরগুলিতে শান্তি বিরাজ করুক।</span>
+            <span class="lang-hindi">हमारे गाँवों और शहरों में शांति बनी रहे।</span>
+            <span class="lang-english">May peace prevail in our villages and cities.</span>
+            <span class="reference">(Atharva Veda 3.30.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 486</span>
+            <span class="lang-bangla">আমাদের ভেতরের অগ্নি (তপস্যা) যেন সদা প্রজ্জ্বলিত থাকে।</span>
+            <span class="lang-hindi">हमारी आंतरिक अग्नि (तपस्या) हमेशा प्रज्वलित रहे।</span>
+            <span class="lang-english">May our inner fire (austerity) always remain lit.</span>
+            <span class="reference">(Sama Veda 1.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 487</span>
+            <span class="lang-bangla">ঋত (নিয়ম) অনুসরণ করো; এটিই সুখী জীবনের চাবিকাঠি।</span>
+            <span class="lang-hindi">ऋत (नियम) का पालन करो; यही सुखी जीवन की कुंजी है।</span>
+            <span class="lang-english">Follow Rita (the Cosmic Order); this is the key to a happy life.</span>
+            <span class="reference">(Rig Veda 4.23.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 488</span>
+            <span class="lang-bangla">মন যখন স্থির, শরীর তখন শক্তিশালী।</span>
+            <span class="lang-hindi">जब मन स्थिर होता है, तब शरीर शक्तिशाली होता है।</span>
+            <span class="lang-english">When the mind is steady, the body is strong.</span>
+            <span class="reference">(Yajur Veda 34.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 489</span>
+            <span class="lang-bangla">সকল বিপদ থেকে আমাদের রক্ষা করুন, হে ঈশ্বর।</span>
+            <span class="lang-hindi">सभी विपत्तियों से हमारी रक्षा करें, हे ईश्वर।</span>
+            <span class="lang-english">Protect us from all dangers, O God.</span>
+            <span class="reference">(Atharva Veda 6.13.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 490</span>
+            <span class="lang-bangla">তোমার ভেতরের শিক্ষককে শোনো।</span>
+            <span class="lang-hindi">अपने आंतरिक गुरु को सुनो।</span>
+            <span class="lang-english">Listen to your inner teacher.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 491</span>
+            <span class="lang-bangla">সৎ সংকল্প নিয়ে শুরু করলে, সাফল্য অনিবার্য।</span>
+            <span class="lang-hindi">सच्चे संकल्प से शुरू करने पर, सफलता अवश्यंभावी है।</span>
+            <span class="lang-english">When you start with a true resolve, success is inevitable.</span>
+            <span class="reference">(Rig Veda 10.137.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 492</span>
+            <span class="lang-bangla">আমি যেন সকল অশুভ চিন্তা থেকে মুক্ত হই।</span>
+            <span class="lang-hindi">मैं सभी अशुभ विचारों से मुक्त होऊँ।</span>
+            <span class="lang-english">May I be free from all inauspicious thoughts.</span>
+            <span class="reference">(Yajur Veda 34.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 493</span>
+            <span class="lang-bangla">সততাই শ্রেষ্ঠ নীতি।</span>
+            <span class="lang-hindi">ईमानदारी ही सबसे अच्छी नीति है।</span>
+            <span class="lang-english">Honesty is the best policy.</span>
+            <span class="reference">(Atharva Veda 3.30.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 494</span>
+            <span class="lang-bangla">সকল জ্ঞান ও সঙ্গীত এক চূড়ান্ত লক্ষ্যে পৌঁছায়: সেই এক ব্রহ্ম।</span>
+            <span class="lang-hindi">सभी ज्ञान और संगीत एक अंतिम लक्ष्य पर पहुँचते हैं: वह एक ब्रह्म।</span>
+            <span class="lang-english">All knowledge and music arrive at one ultimate goal: that one Brahman.</span>
+            <span class="reference">(Sama Veda, Final Verse)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 495</span>
+            <span class="lang-bangla">অগ্নি (শক্তি) সবকিছুর মধ্যে বিদ্যমান, অভ্যন্তরীণ ও বাহ্যিক রূপে।</span>
+            <span class="lang-hindi">अग्नि (ऊर्जा) हर चीज़ में मौजूद है, आंतरिक और बाहरी रूप में।</span>
+            <span class="lang-english">Agni (Energy) is present in everything, in inner and outer forms.</span>
+            <span class="reference">(Rig Veda 1.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 496</span>
+            <span class="lang-bangla">আলো থেকে আলোকের দিকে যাও; মৃত্যু থেকে অমরত্বের দিকে।</span>
+            <span class="lang-hindi">प्रकाश से प्रकाश की ओर जाओ; मृत्यु से अमरता की ओर।</span>
+            <span class="lang-english">Go from light to light; from death to immortality.</span>
+            <span class="reference">(Yajur Veda 40.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 497</span>
+            <span class="lang-bangla">সকল মানুষ যেন এক হয়ে যায়, তাদের উদ্দেশ্য যেন এক হয়।</span>
+            <span class="lang-hindi">सभी लोग एक हो जाएँ, उनका उद्देश्य एक हो।</span>
+            <span class="lang-english">May all people become one, may their purpose be one.</span>
+            <span class="reference">(Atharva Veda 3.30.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 498</span>
+            <span class="lang-bangla">আনন্দই চূড়ান্ত শব্দ।</span>
+            <span class="lang-hindi">आनंद ही अंतिम ध्वनि है।</span>
+            <span class="lang-english">Joy is the ultimate sound.</span>
+            <span class="reference">(Sama Veda, General Teaching)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 499</span>
+            <span class="lang-bangla">যিনি এই মহাবিশ্ব সৃষ্টি করেছেন, তিনিই এর সকল রহস্য জানেন।</span>
+            <span class="lang-hindi">जिसने इस ब्रह्मांड की रचना की है, वही इसके सभी रहस्य जानता है।</span>
+            <span class="lang-english">He who created this universe knows all its secrets.</span>
+            <span class="reference">(Rig Veda 10.129.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 500 (FINAL)</span>
+            <span class="lang-bangla">ওঁ শান্তিঃ শান্তিঃ শান্তিঃ। সকল স্থানে শান্তি বিরাজ করুক।</span>
+            <span class="lang-hindi">ॐ शांतिः शांतिः शांतिः। सभी स्थानों पर शांति बनी रहे।</span>
+            <span class="lang-english">Om Peace, Peace, Peace. May peace prevail everywhere.</span>
+            <span class="reference">(Yajur Veda 36.17 - Shanti Mantra)</span>
+        </div>
+        
+    </div>
+
+    <div class="fixed-nav">
+        <a href="vedas-4.html" class="nav-button"> Part 4</a>
+
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+        
+        <a href="vedas-5.html" class="nav-button" active>Part 5 (Final)</a>
+        
+        <a href=#conclusion class="nav-button" style="background-color: #e74c3c;">Vedas Collection Complete!</a>
+    </div>
+</body>
+</html>

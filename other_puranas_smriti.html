@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puranas and Smritis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Purans and Smritis</h1>
+        
+        <div class="quote-box">
+        <span class="quote-number">Quote 1</span>
+        <div class="lang-sanskrit">धर्मो रक्षति रक्षितः।</div>
+        <div class="lang-bangla">ধর্মকে রক্ষা করলে, ধর্মই মানুষকে রক্ষা করে।</div>
+        <div class="lang-english">Dharma (righteousness), when protected, protects.</div>
+        <span class="reference">Source: Manusmriti (8.15)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 2</span>
+        <div class="lang-sanskrit">सत्यमेव जयते नानृतम्।</div>
+        <div class="lang-bangla">সত্যেরই জয় হয়, মিথ্যার নয়।</div>
+        <div class="lang-english">Truth alone triumphs, not falsehood.</div>
+        <span class="reference">Source: Mundaka Upanishad (often quoted in Smritis)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 3</span>
+        <div class="lang-sanskrit">न विना दानं सुखम्।</div>
+        <div class="lang-bangla">দান ছাড়া সুখ হয় না।</div>
+        <div class="lang-english">There is no happiness without charity or giving.</div>
+        <span class="reference">Source: Hitopadesha</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 4</span>
+        <div class="lang-sanskrit">यथा बीजं तथा फलम्।</div>
+        <div class="lang-bangla">যেমন বীজ, তেমনই ফল।</div>
+        <div class="lang-english">As the seed, so is the fruit. (The Law of Karma).</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 5</span>
+        <div class="lang-sanskrit">सन्तोषः परमं सुखम्।</div>
+        <div class="lang-bangla">সন্তুষ্টিই পরম সুখ।</div>
+        <div class="lang-english">Contentment is the highest form of happiness.</div>
+        <span class="reference">Source: Yoga Vasishtha</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 6</span>
+        <div class="lang-sanskrit">विद्या ददाति विनयम्।</div>
+        <div class="lang-bangla">বিদ্যা বিনয় দান করে।</div>
+        <div class="lang-english">Knowledge imparts humility.</div>
+        <span class="reference">Source: Hitopadesha (Prologue 6)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 7</span>
+        <div class="lang-sanskrit">अहिंसा परमो धर्मः।</div>
+        <div class="lang-bangla">অহিংসাই পরম ধর্ম।</div>
+        <div class="lang-english">Non-violence is the ultimate duty (Dharma).</div>
+        <span class="reference">Source: Mahabharata (Anushasana Parva 115.26)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 8</span>
+        <div class="lang-sanskrit">नारीणां तु यत्र पूजा, तत्र रमन्ते देवताः।</div>
+        <div class="lang-bangla">যেখানে নারীদের সম্মান করা হয়, সেখানে দেবতারা বাস করেন।</div>
+        <div class="lang-english">Where women are honored, there the deities rejoice.</div>
+        <span class="reference">Source: Manusmriti (3.56)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 9</span>
+        <div class="lang-sanskrit">सर्वे भवन्तु सुखिनः।</div>
+        <div class="lang-bangla">সকলেই সুখী হোক।</div>
+        <div class="lang-english">May all beings be happy.</div>
+        <span class="reference">Source: Puranic Prayer</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 10</span>
+        <div class="lang-sanskrit">यतो धर्मस्ततो जयः।</div>
+        <div class="lang-bangla">যেখানে ধর্ম, সেখানেই জয়।</div>
+        <div class="lang-english">Where there is Dharma (righteousness), there is victory.</div>
+        <span class="reference">Source: Mahabharata (Bhishma Parva)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 11</span>
+        <div class="lang-sanskrit">मातृदेवो भव।</div>
+        <div class="lang-bangla">মাতাকে দেবতার মতো শ্রদ্ধা করো।</div>
+        <div class="lang-english">Be one for whom the Mother is God.</div>
+        <span class="reference">Source: Taittiriya Upanishad (1.11.2)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 12</span>
+        <div class="lang-sanskrit">अक्रोधेन जयेत् क्रोधं, असाधुं साधुना जयेत्।</div>
+        <div class="lang-bangla">অক্রোধের দ্বারা ক্রোধকে জয় করো এবং সাধুতা দ্বারা অসাধুকে জয় করো।</div>
+        <div class="lang-english">Conquer anger with non-anger; conquer the wicked with goodness.</div>
+        <span class="reference">Source: Mahabharata (Udyoga Parva 39.57)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 13</span>
+        <div class="lang-sanskrit">सत्यं ब्रूयात् प्रियं ब्रूयात् न ब्रूयात् सत्यम् अप्रियम्।</div>
+        <div class="lang-bangla">সত্য কথা বলবে, প্রিয় কথা বলবে, কিন্তু অপ্রিয় সত্য বলবে না।</div>
+        <div class="lang-english">Speak the truth, speak pleasantly, but do not speak an unpleasant truth.</div>
+        <span class="reference">Source: Manusmriti (4.138)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 14</span>
+        <div class="lang-sanskrit">अन्नदानं परं दानं।</div>
+        <div class="lang-bangla">অন্নদানই শ্রেষ্ঠ দান।</div>
+        <div class="lang-english">Giving food is the highest form of charity.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 15</span>
+        <div class="lang-sanskrit">सर्वतीर्थमयी माता।</div>
+        <div class="lang-bangla">মা হলেন সমস্ত তীর্থের সমষ্টি।</div>
+        <div class="lang-english">The Mother (mother) is equal to all holy pilgrimage sites combined.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 16</span>
+        <div class="lang-sanskrit">क्षमा बलम् अशक्तानां, शक्तानां भूषणं क्षमा।</div>
+        <div class="lang-bangla">ক্ষমা দুর্বলদের শক্তি এবং শক্তিশালী মানুষের অলঙ্কার।</div>
+        <div class="lang-english">Forgiveness is the strength of the weak and the ornament of the strong.</div>
+        <span class="reference">Source: Vidura Niti (Mahabharata)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 17</span>
+        <div class="lang-sanskrit">लोभः पापस्य कारणम्।</div>
+        <div class="lang-bangla">লোভই পাপের কারণ।</div>
+        <div class="lang-english">Greed is the cause of sin.</div>
+        <span class="reference">Source: Hitopadesha</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 18</span>
+        <div class="lang-sanskrit">आयुः कर्म च वित्तं च विद्या निधनमेव च।</div>
+        <div class="lang-bangla">মানুষের আয়ু, কর্ম, ধন, বিদ্যা ও মৃত্যু—এই পাঁচটি পূর্বনির্ধারিত।</div>
+        <div class="lang-english">Life, action, wealth, knowledge, and death—these five are determined beforehand.</div>
+        <span class="reference">Source: Puranas</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 19</span>
+        <div class="lang-sanskrit">नदीनां सागरो गतिः।</div>
+        <div class="lang-bangla">নদীর গতি সমুদ্রের দিকে।</div>
+        <div class="lang-english">The destination of rivers is the ocean. (Used to describe the ultimate goal)</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 20</span>
+        <div class="lang-sanskrit">अहंकारः पतनस्य कारणम्।</div>
+        <div class="lang-bangla">অহংকার পতনের কারণ।</div>
+        <div class="lang-english">Arrogance (Ego) is the cause of downfall.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 21</span>
+        <div class="lang-sanskrit">तमेव शरणं गच्छ सर्वभावें भारत।</div>
+        <div class="lang-bangla">হে ভারত, সর্বতোভাবে তাহারই শরণাপন্ন হও।</div>
+        <div class="lang-english">Surrender unto Him completely, O Bhārata. (Source: Common Puranic theme/BG 18.62)</div>
+        <span class="reference">Source: Puranic Theme (Based on Bhagavad Gita)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 22</span>
+        <div class="lang-sanskrit">असतो मा सद्गमय।</div>
+        <div class="lang-bangla">অসৎ থেকে আমাকে সৎ-এর দিকে নিয়ে যাও।</div>
+        <div class="lang-english">From the unreal lead me to the real.</div>
+        <span class="reference">Source: Brihadaranyaka Upanishad (1.3.28)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 23</span>
+        <div class="lang-sanskrit">आत्मनः सततं रक्षेत्।</div>
+        <div class="lang-bangla">নিজেকে সর্বদা রক্ষা করা উচিত।</div>
+        <div class="lang-english">One should always protect oneself.</div>
+        <span class="reference">Source: Manusmriti (7.149)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 24</span>
+        <div class="lang-sanskrit">गुरुवाक्यं न লঙ্ঘयेत्।</div>
+        <div class="lang-bangla">গুরুর কথা কখনও লঙ্ঘন করা উচিত নয়।</div>
+        <div class="lang-english">One should never disobey the words of the Guru (teacher).</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 25</span>
+        <div class="lang-sanskrit">शुद्धिः कारणं मोक्षस्य।</div>
+        <div class="lang-bangla">শুদ্ধতা (পবিত্রতা) মোক্ষ লাভের কারণ।</div>
+        <div class="lang-english">Purity is the cause of liberation (Moksha).</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 26</span>
+        <div class="lang-sanskrit">सत्यं धर्मो नित्यम्।</div>
+        <div class="lang-bangla">সত্যই নিত্য ধর্ম।</div>
+        <div class="lang-english">Truth is the eternal Dharma.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 27</span>
+        <div class="lang-sanskrit">यो न ददाति स न भुङ्क्ते।</div>
+        <div class="lang-bangla">যে দান করে না, সে ভোগও করতে পারে না।</div>
+        <div class="lang-english">He who does not give, does not enjoy.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 28</span>
+        <div class="lang-sanskrit">सर्वेशु भूतेषु आत्मानं पश्यात्।</div>
+        <div class="lang-bangla">সকল প্রাণীর মধ্যে নিজেকে দর্শন করো।</div>
+        <div class="lang-english">One should see the Self in all beings.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 29</span>
+        <div class="lang-sanskrit">धनेन धर्मः, धर्मेन ज्ञानम्।</div>
+        <div class="lang-bangla">ধন দ্বারা ধর্ম, এবং ধর্ম দ্বারা জ্ঞান লাভ হয়।</div>
+        <div class="lang-english">Through wealth (one can practice) Dharma, and through Dharma (one gains) knowledge.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 30</span>
+        <div class="lang-sanskrit">सर्वभूतेषु यो देवि नराणां पापनाशिनि।</div>
+        <div class="lang-bangla">দেবী, সকল প্রাণীর পাপনাশিনী শক্তি সকল মানুষের মধ্যে বিরাজমান।</div>
+        <div class="lang-english">O Goddess, the destroyer of sins of men resides in all beings.</div>
+        <span class="reference">Source: Devi Mahatmyam (Chandi)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 31</span>
+        <div class="lang-sanskrit">मिथ्यासाक्ष्यं न वदेत।</div>
+        <div class="lang-bangla">মিথ্যা সাক্ষ্য দেওয়া উচিত নয়।</div>
+        <div class="lang-english">One should not give false testimony.</div>
+        <span class="reference">Source: Manusmriti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 32</span>
+        <div class="lang-sanskrit">नदीनां च सागरो गतिः।</div>
+        <div class="lang-bangla">নদীগুলো সমুদ্রের দিকেই ধাবিত হয়।</div>
+        <div class="lang-english">The rivers always proceed towards the ocean.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 33</span>
+        <div class="lang-sanskrit">अतिक्रुद्धस्य न किञ्चित् शुभम्।</div>
+        <div class="lang-bangla">অতি রাগান্বিত ব্যক্তির কোনো শুভ হয় না।</div>
+        <div class="lang-english">Nothing good happens to a very angry person.</div>
+        <span class="reference">Source: Mahabharata (Udyoga Parva)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 34</span>
+        <div class="lang-sanskrit">सर्वेषामेव शौचानाम् अर्थशौचं परम्।</div>
+        <div class="lang-bangla">সকল প্রকার পবিত্রতার মধ্যে অর্থের পবিত্রতা (সৎ উপার্জিত ধন) শ্রেষ্ঠ।</div>
+        <div class="lang-english">Of all kinds of purity, purity of wealth (honest earning) is supreme.</div>
+        <span class="reference">Source: Manusmriti (5.106)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 35</span>
+        <div class="lang-sanskrit">दैवम् अनपेक्ष्य कर्मं कुर्यात्।</div>
+        <div class="lang-bangla">ভাগ্যের ওপর নির্ভর না করে কর্ম করা উচিত।</div>
+        <div class="lang-english">One should perform action without relying on destiny.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 36</span>
+        <div class="lang-sanskrit">विना चेष्टया कार्यं सिद्धं न भवति।</div>
+        <div class="lang-bangla">চেষ্টা ছাড়া কোনো কাজ সফল হয় না।</div>
+        <div class="lang-english">Success is not achieved without effort.</div>
+        <span class="reference">Source: Hitopadesha</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 37</span>
+        <div class="lang-sanskrit">गुरुणाम् अहंकारो दोषः।</div>
+        <div class="lang-bangla">গুরুজনদের অহংকার দোষের কারণ।</div>
+        <div class="lang-english">Arrogance (Ego) in elders/teachers is a fault.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 38</span>
+        <div class="lang-sanskrit">दानेन च मिताचारैः परानपि जयेत् सदा।</div>
+        <div class="lang-bangla">দান এবং মিতাচার (সংযম)-এর মাধ্যমে সর্বদা অন্যদের জয় করা উচিত।</div>
+        <div class="lang-english">One should always conquer others through charity and moderation.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 39</span>
+        <div class="lang-sanskrit">अतीतस्य चिन्तां न कुर्यात्।</div>
+        <div class="lang-bangla">অতীতের জন্য দুঃখ করা উচিত নয়।</div>
+        <div class="lang-english">One should not grieve over the past.</div>
+        <span class="reference">Source: Puranic Niti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 40</span>
+        <div class="lang-sanskrit">परस्य दुःखं न करोति बुद्धिमान्।</div>
+        <div class="lang-bangla">বুদ্ধিমান ব্যক্তি অন্যের দুঃখ উৎপাদন করে না।</div>
+        <div class="lang-english">An intelligent person does not cause distress to others.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 41</span>
+        <div class="lang-sanskrit">पुत्रो मित्रं धनम् एषु न विश्वसेत।</div>
+        <div class="lang-bangla">পুত্র, বন্ধু বা ধন—এদের ওপর পুরোপুরি বিশ্বাস করা উচিত নয়।</div>
+        <div class="lang-english">One should not completely trust a son, a friend, or wealth.</div>
+        <span class="reference">Source: Chanakya Niti (10.15)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 42</span>
+        <div class="lang-sanskrit">क्षमा वशीकृती लोके।</div>
+        <div class="lang-bangla">ক্ষমা এই জগতে বশীকরণের উপায়।</div>
+        <div class="lang-english">Forgiveness is the means of controlling the world.</div>
+        <span class="reference">Source: Vidura Niti (Mahabharata)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 43</span>
+        <div class="lang-sanskrit">सुखस्य मूलं धर्मः।</div>
+        <div class="lang-bangla">সুখের মূল ধর্ম।</div>
+        <div class="lang-english">The root of happiness is Dharma (righteousness).</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 44</span>
+        <div class="lang-sanskrit">अन्नं ब्रह्मेति व्यजानत्।</div>
+        <div class="lang-bangla">অন্নকে (খাদ্য) ব্রহ্ম বলে জানবে।</div>
+        <div class="lang-english">Know food to be Brahman (God).</div>
+        <span class="reference">Source: Taittiriya Upanishad (3.2.1)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 45</span>
+        <div class="lang-sanskrit">अनृतम् असहनीयम्।</div>
+        <div class="lang-bangla">মিথ্যা অসহনীয়।</div>
+        <div class="lang-english">Falsehood is intolerable.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 46</span>
+        <div class="lang-sanskrit">कृषाणाञ्च परं धनम्।</div>
+        <div class="lang-bangla">কৃষকদের পরম ধন হলো ভূমি।</div>
+        <div class="lang-english">The supreme wealth of farmers is the land.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 47</span>
+        <div class="lang-sanskrit">स्वधर्मं पालयेत सदा।</div>
+        <div class="lang-bangla">নিজের কর্তব্য সর্বদা পালন করা উচিত।</div>
+        <div class="lang-english">One should always practice their own duty (Svadharma).</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 48</span>
+        <div class="lang-sanskrit">यद्यद् आचरति श्रेष्ठस्, तत्तदेवेतरौ जनः।</div>
+        <div class="lang-bangla">শ্রেষ্ঠ ব্যক্তি যা কিছু করেন, সাধারণ মানুষও তাই অনুসরণ করে।</div>
+        <div class="lang-english">Whatever a great man does, common men follow. (Source: BG 3.21/Smriti context)</div>
+        <span class="reference">Source: Smriti Saying (Based on Bhagavad Gita)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 49</span>
+        <div class="lang-sanskrit">न कालमतिवर्तन्ते देवा नर्षयः।</div>
+        <div class="lang-bangla">দেবতা বা ঋষিরাও কালের প্রভাবকে অতিক্রম করতে পারেন না।</div>
+        <div class="lang-english">Neither the gods nor the great sages can transcend the power of Time.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 50</span>
+        <div class="lang-sanskrit">सर्वदा सत्यवादी भव।</div>
+        <div class="lang-bangla">সর্বদা সত্যবাদী হওয়া উচিত।</div>
+        <div class="lang-english">One should always be truthful.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 51</span>
+        <div class="lang-sanskrit">धैर्येण सर्वं वशम्।</div>
+        <div class="lang-bangla">ধৈর্য দ্বারা সবকিছু বশ করা যায়।</div>
+        <div class="lang-english">Everything can be conquered through patience.</div>
+        <span class="reference">Source: Chanakya Niti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 52</span>
+        <div class="lang-sanskrit">मैत्री करुणा मुदिता उपेक्षेत।</div>
+        <div class="lang-bangla">বন্ধুত্ব, করুণা, আনন্দ এবং উপেক্ষা - এই চারটি ভাব থাকা উচিত।</div>
+        <div class="lang-english">One should cultivate friendliness, compassion, joy, and indifference (towards evil).</div>
+        <span class="reference">Source: Yoga Sutras (often quoted in Smritis)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 53</span>
+        <div class="lang-sanskrit">लोकाचारश्च धर्मो भवति।</div>
+        <div class="lang-bangla">লোকাচার বা সমাজের ঐতিহ্যও ধর্ম হয়।</div>
+        <div class="lang-english">Local custom and tradition is also considered Dharma.</div>
+        <span class="reference">Source: Smriti texts</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 54</span>
+        <div class="lang-sanskrit">क्षमायां भूमिः इव।</div>
+        <div class="lang-bangla">ক্ষমাশীলতায় পৃথিবীর (মাটির) মতো হও।</div>
+        <div class="lang-english">Be like the earth in your capacity for forgiveness.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 55</span>
+        <div class="lang-sanskrit">अयथा वचनं न वदेत्।</div>
+        <div class="lang-bangla">অপ্রয়োজনীয় কথা বলা উচিত নয়।</div>
+        <div class="lang-english">One should not utter unnecessary words.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 56</span>
+        <div class="lang-sanskrit">ज्ञानं परमं ध्येयम्।</div>
+        <div class="lang-bangla">জ্ঞানই মানুষের পরম লক্ষ্য।</div>
+        <div class="lang-english">Knowledge is the supreme goal (of life).</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 57</span>
+        <div class="lang-sanskrit">सत्सङ्गे वासः सर्वोत्तमं तीर्थम्।</div>
+        <div class="lang-bangla">সৎসঙ্গে বাস করাই সর্বোত্তম তীর্থযাত্রা।</div>
+        <div class="lang-english">Staying in the company of the virtuous is the best pilgrimage.</div>
+        <span class="reference">Source: Skanda Purana</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 58</span>
+        <div class="lang-sanskrit">दानं, भोगः, नाशः च— त्रिविधा गतिः वित्तस्य।</div>
+        <div class="lang-bangla">দান, ভোগ ও নাশ—এই তিন প্রকার গতিই অর্থের হয়।</div>
+        <div class="lang-english">Charity, enjoyment, and destruction—these are the three outcomes of wealth.</div>
+        <span class="reference">Source: Kurma Purana</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 59</span>
+        <div class="lang-sanskrit">विना प्रमाणं सत्यं न भवति।</div>
+        <div class="lang-bangla">প্রমাণ ছাড়া কোনো সত্য হয় না।</div>
+        <div class="lang-english">There is no truth without evidence.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 60</span>
+        <div class="lang-sanskrit">आत्मानं मोक्षयेत्।</div>
+        <div class="lang-bangla">নিজেকে মুক্ত করো।</div>
+        <div class="lang-english">Liberate the Self.</div>
+        <span class="reference">Source: Puranic Teaching</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 61</span>
+        <div class="lang-sanskrit">गुरुर्ब्रह्मा गुरुर्विष्णुर्गुरुर्देवो महेश्वरः।</div>
+        <div class="lang-bangla">গুরুই ব্রহ্মা, গুরুই বিষ্ণু, গুরুই মহেশ্বর।</div>
+        <div class="lang-english">Guru is Brahmā, Guru is Vishnu, Guru is the great God Shiva.</div>
+        <span class="reference">Source: Guru Stotram (Quoted in Smritis)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 62</span>
+        <div class="lang-sanskrit">दैवेनैवं गतिरेषा।</div>
+        <div class="lang-bangla">এই গতি বিধাতার (ভাগ্যের) দ্বারা নির্ধারিত।</div>
+        <div class="lang-english">This course (of life) is determined by destiny.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 63</span>
+        <div class="lang-sanskrit">प्रयत्नेन स्वधर्मं पालयेत।</div>
+        <div class="lang-bangla">যত্ন সহকারে নিজের কর্তব্য পালন করা উচিত।</div>
+        <div class="lang-english">One should perform their own duties with effort.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 64</span>
+        <div class="lang-sanskrit">कर्मणां फलम् अभुक्त्वा न मोक्षः।</div>
+        <div class="lang-bangla">কর্মের ফল ভোগ না করে মুক্তি নেই।</div>
+        <div class="lang-english">There is no liberation without experiencing the fruits of action.</div>
+        <span class="reference">Source: Garuda Purana</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 65</span>
+        <div class="lang-sanskrit">ज्ञानं सर्वार्थ-साधकम्।</div>
+        <div class="lang-bangla">জ্ঞান সকল প্রকার অর্থ সাধনের সহায়ক।</div>
+        <div class="lang-english">Knowledge is the means to achieve all goals.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 66</span>
+        <div class="lang-sanskrit">असत्सङ्गं न करोति।</div>
+        <div class="lang-bangla">খারাপ লোকের সঙ্গে সঙ্গ করবে না।</div>
+        <div class="lang-english">One should not keep company with the wicked.</div>
+        <span class="reference">Source: Chanakya Niti (1.17)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 67</span>
+        <div class="lang-sanskrit">पुण्यं च पापं च मनुष्यस्यैव कर्म।</div>
+        <div class="lang-bangla">পুণ্য এবং পাপ উভয়ই মানুষের কর্ম।</div>
+        <div class="lang-english">Merit (Punya) and sin (Papa) are both products of human action.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 68</span>
+        <div class="lang-sanskrit">समयस्य दुरुपयोगं न कुर्यात्।</div>
+        <div class="lang-bangla">সময় নষ্ট করা উচিত নয়।</div>
+        <div class="lang-english">Time should not be wasted.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 69</span>
+        <div class="lang-sanskrit">शुद्ध आचारेण देवत्वं लभते।</div>
+        <div class="lang-bangla">শুদ্ধ আচরণের দ্বারা দেবত্ব লাভ হয়।</div>
+        <div class="lang-english">Divinity is achieved through pure conduct.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 70</span>
+        <div class="lang-sanskrit">यौवनात् कुरु धर्मम्।</div>
+        <div class="lang-bangla">যৌবনকাল থেকেই ধর্ম পালন করো।</div>
+        <div class="lang-english">Practice Dharma from your youth.</div>
+        <span class="reference">Source: Puranic Advice</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 71</span>
+        <div class="lang-sanskrit">सत्यं भूषयति वाचम्।</div>
+        <div class="lang-bangla">সত্য বাক্যের অলঙ্কার।</div>
+        <div class="lang-english">Truth adorns speech.</div>
+        <span class="reference">Source: Subhashita Ratna Bhandagara</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 72</span>
+        <div class="lang-sanskrit">अति सर्वमत्र वर्जयेत्।</div>
+        <div class="lang-bangla">সর্বত্র অতিকে বর্জন করবে (কোনো কিছুই অতিরিক্ত ভালো নয়)।</div>
+        <div class="lang-english">Avoid excess everywhere (nothing in excess is good).</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 73</span>
+        <div class="lang-sanskrit">महामुनयो यद् वदन्ति तद् धर्मम्।</div>
+        <div class="lang-bangla">মহামুনিগণ যা বলেন, তাই ধর্ম।</div>
+        <div class="lang-english">What the great sages declare is Dharma.</div>
+        <span class="reference">Source: Manusmriti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 74</span>
+        <div class="lang-sanskrit">दाता भोगी नराः सद्गतिम्।</div>
+        <div class="lang-bangla">দাতা এবং ভোগী ব্যক্তিরাই সদ্গতি লাভ করেন।</div>
+        <div class="lang-english">Givers and enjoyers attain a good destination.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 75</span>
+        <div class="lang-sanskrit">सत् सङ्गे स्वर्गवासः।</div>
+        <div class="lang-bangla">সৎসঙ্গে স্বর্গবাস হয়।</div>
+        <div class="lang-english">Living in good company is like dwelling in heaven.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 76</span>
+        <div class="lang-sanskrit">तपः कर्म च परं धनं।</div>
+        <div class="lang-bangla">তপস্যা এবং কর্মই মানুষের পরম ধন।</div>
+        <div class="lang-english">Austerity and action are the supreme wealth.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 77</span>
+        <div class="lang-sanskrit">न वैरिणां शान्तिर्लभ्यते।</div>
+        <div class="lang-bangla">শত্রুদের মধ্যে শান্তি লাভ হয় না।</div>
+        <div class="lang-english">Peace is not found among enemies.</div>
+        <span class="reference">Source: Chanakya Niti (2.12)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 78</span>
+        <div class="lang-sanskrit">सर्वदा ईश्वरस्य नाम जपेत्।</div>
+        <div class="lang-bangla">সর্বদা ঈশ্বরের নাম জপ করো।</div>
+        <div class="lang-english">Always chant the name of God.</div>
+        <span class="reference">Source: Padma Purana (Bhakti theme)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 79</span>
+        <div class="lang-sanskrit">ज्ञानं विमल-आचारः।</div>
+        <div class="lang-bangla">জ্ঞানই নির্মল আচরণ।</div>
+        <div class="lang-english">Knowledge is pure conduct.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 80</span>
+        <div class="lang-sanskrit">धैर्येण साधुतां विन्देत्।</div>
+        <div class="lang-bangla">ধৈর্য দ্বারা সাধুত্ব লাভ করা যায়।</div>
+        <div class="lang-english">One achieves virtuousness through patience.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 81</span>
+        <div class="lang-sanskrit">सत्कर्मं कुरु, फलं न कांक्ष।</div>
+        <div class="lang-bangla">সৎকর্ম করো, ফল কামনা করো না।</div>
+        <div class="lang-english">Perform good deeds, do not desire the results. (Source: Niti/BG Theme)</div>
+        <span class="reference">Source: Puranic Niti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 82</span>
+        <div class="lang-sanskrit">अविद्यां दूरं कुरु।</div>
+        <div class="lang-bangla">অবিদ্যা (অজ্ঞানতা) দূর করো।</div>
+        <div class="lang-english">Remove ignorance (Avidyā).</div>
+        <span class="reference">Source: Puranic Teaching</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 83</span>
+        <div class="lang-sanskrit">असूयां न करोति।</div>
+        <div class="lang-bangla">অন্যের প্রতি বিদ্বেষ করবে না।</div>
+        <div class="lang-english">Do not be jealous of others.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 84</span>
+        <div class="lang-sanskrit">गुरुः ज्ञानस्य मूलम्।</div>
+        <div class="lang-bangla">গুরুই জ্ঞানের মূল।</div>
+        <div class="lang-english">The Guru (teacher) is the root of all knowledge.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 85</span>
+        <div class="lang-sanskrit">मिथ्यावादस्य पापं घोरतरम्।</div>
+        <div class="lang-bangla">মিথ্যা কথা বলার পাপ ঘোরতর।</div>
+        <div class="lang-english">The sin of speaking falsehood is severe.</div>
+        <span class="reference">Source: Garuda Purana</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 86</span>
+        <div class="lang-sanskrit">स्वास्थ्यं धनस्य मूलम्।</div>
+        <div class="lang-bangla">স্বাস্থ্যই ধনের মূল।</div>
+        <div class="lang-english">Health is the root of wealth.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 87</span>
+        <div class="lang-sanskrit">पुण्यं विना सुखं न भवति।</div>
+        <div class="lang-bangla">পুণ্য ছাড়া সুখ হয় না।</div>
+        <div class="lang-english">There is no happiness without merit (Punya).</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 88</span>
+        <div class="lang-sanskrit">कृतज्ञता सर्वेभ्यः।</div>
+        <div class="lang-bangla">সকলের প্রতি কৃতজ্ঞতা প্রকাশ করো।</div>
+        <div class="lang-english">Be grateful to everyone.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 89</span>
+        <div class="lang-sanskrit">क्रोधं त्यजेत्।</div>
+        <div class="lang-bangla">ক্রোধ ত্যাগ করো।</div>
+        <div class="lang-english">Renounce anger.</div>
+        <span class="reference">Source: Niti Saying (Based on BG 16.21)</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 90</span>
+        <div class="lang-sanskrit">सर्वदा शुभं चिन्तयेत्।</div>
+        <div class="lang-bangla">সর্বদা শুভ চিন্তা করো।</div>
+        <div class="lang-english">Always think good (auspicious) thoughts.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 91</span>
+        <div class="lang-sanskrit">अहंभावं त्यजेत्।</div>
+        <div class="lang-bangla">অহংকার ত্যাগ করো।</div>
+        <div class="lang-english">Renounce ego.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 92</span>
+        <div class="lang-sanskrit">परहितं साधयेत्।</div>
+        <div class="lang-bangla">অন্যের উপকার সাধন করো।</div>
+        <div class="lang-english">Achieve the welfare of others.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 93</span>
+        <div class="lang-sanskrit">कर्मं कुरु फलं लभते।</div>
+        <div class="lang-bangla">কর্ম করো, ফল লাভ হবে।</div>
+        <div class="lang-english">Perform actions, and you will attain the results.</div>
+        <span class="reference">Source: Puranic Niti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 94</span>
+        <div class="lang-sanskrit">विनयी भव।</div>
+        <div class="lang-bangla">বিনয়ী হও।</div>
+        <div class="lang-english">Be humble.</div>
+        <span class="reference">Source: Smriti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 95</span>
+        <div class="lang-sanskrit">असत्यं न वदेत्।</div>
+        <div class="lang-bangla">মিথ্যা কথা বলবে না।</div>
+        <div class="lang-english">Do not speak untruth.</div>
+        <span class="reference">Source: Manusmriti</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 96</span>
+        <div class="lang-sanskrit">ज्ञानं सर्वोपकारकम्।</div>
+        <div class="lang-bangla">জ্ঞান সকলের উপকারে আসে।</div>
+        <div class="lang-english">Knowledge is beneficial to all.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 97</span>
+        <div class="lang-sanskrit">धैर्यं धर्मो नित्यम्।</div>
+        <div class="lang-bangla">ধৈর্যই নিত্য ধর্ম।</div>
+        <div class="lang-english">Patience is the eternal Dharma.</div>
+        <span class="reference">Source: Niti Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 98</span>
+        <div class="lang-sanskrit">साधूनां संगतिः श्रेयसी।</div>
+        <div class="lang-bangla">সাধুদের সঙ্গতি কল্যাণকর।</div>
+        <div class="lang-english">The company of the virtuous is beneficial.</div>
+        <span class="reference">Source: Puranic Saying</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 99</span>
+        <div class="lang-sanskrit">मनुष्यः कर्मस्य फलम्।</div>
+        <div class="lang-bangla">মানুষ তার কর্মের ফল।</div>
+        <div class="lang-english">Man is the fruit of his actions.</div>
+        <span class="reference">Source: Garuda Purana</span>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 100</span>
+        <div class="lang-sanskrit">शान्तिः सर्वेषु सर्वत्र।</div>
+        <div class="lang-bangla">শান্তি সব কিছুর মধ্যে এবং সব জায়গায় বিরাজমান।</div>
+        <div class="lang-english">Peace resides in everything and everywhere.</div>
+        <span class="reference">Source: Puranic Teaching (Shanti Path)</span>
+    </div>
+        
+        </div>
+
+    <div class="fixed-nav">
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+    </div>
+
+</body>
+</html>

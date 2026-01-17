@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - English Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* English Index-er jonno core styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* English/Latin font */
+            background: #f7efe3; /* Consistent background */
+            color: #333;
+            text-align: center;
+        }
+
+        .header-section {
+            background-color: #5a3300; /* Dark brown header background */
+            color: #fff;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762; /* Gold border */
+        }
+        
+        .header-section h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin: 0;
+            color: #ffcc66; /* Light gold color */
+        }
+
+        /* NAVIGATION BUTTONS */
+        .nav-buttons-english {
+            display: flex;
+            justify-content: center; 
+            gap: 20px; 
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap; 
+        }
+
+        /* Nav Button Style (Consistent) */
+        .nav-btn {
+            padding: 12px 25px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1em;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s;
+            margin: 5px 0; 
+        }
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        .options-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+        }
+
+        /* Chapter Card Style (Consistent) */
+        .chapter-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px; 
+            min-height: 120px; /* Uniform height for better look */
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none; 
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .chapter-card a {
+            text-decoration: none;
+            color: #8c5b00; 
+            font-size: 1.2em;
+            font-weight: 600;
+            display: block;
+        }
+        
+        .chapter-card .chapter-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #d4a762; 
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-section">
+    <h1>The Bhagavad Gita (English)</h1>
+</div>
+<div class="header-section">
+    <h4>For easy and clear understanding.</h4>
+</div>
+
+<div class="nav-buttons-english">
+    <a class="nav-btn" href="gita-bangla.html">« Bangla Index</a> 
+    <a class="nav-btn" href="gita-sanskrit.html">« Sanskrit Index</a> 
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+</div>
+
+<div class="options-container">
+    
+    <div class="chapter-card">
+        <a href="english-chapter1.html">
+            <div class="chapter-number">1</div>
+            Chapter 1: Arjuna Visada Yoga 
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter2.html">
+            <div class="chapter-number">2</div>
+            Chapter 2: Sankhya Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter3.html">
+            <div class="chapter-number">3</div>
+            Chapter 3: Karma Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter4.html">
+            <div class="chapter-number">4</div>
+            Chapter 4: Jnana Karma Sanyasa Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter5.html">
+            <div class="chapter-number">5</div>
+            Chapter 5: Karma Sanyasa Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter6.html">
+            <div class="chapter-number">6</div>
+            Chapter 6: Dhyana Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter7.html">
+            <div class="chapter-number">7</div>
+            Chapter 7: Jnana Vijnana Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter8.html">
+            <div class="chapter-number">8</div>
+            Chapter 8: Aksara Brahma Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter9.html">
+            <div class="chapter-number">9</div>
+            Chapter 9: Raja Vidya Raja Guhya Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter10.html">
+            <div class="chapter-number">10</div>
+            Chapter 10: Vibhuti Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter11.html">
+            <div class="chapter-number">11</div>
+            Chapter 11: Visvarupa Darsana Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter12.html">
+            <div class="chapter-number">12</div>
+            Chapter 12: Bhakti Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter13.html">
+            <div class="chapter-number">13</div>
+            Chapter 13: Ksetra Ksetrajna Vibhaga Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter14.html">
+            <div class="chapter-number">14</div>
+            Chapter 14: Guna Traya Vibhaga Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter15.html">
+            <div class="chapter-number">15</div>
+            Chapter 15: Purusottama Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter16.html">
+            <div class="chapter-number">16</div>
+            Chapter 16: Daivasura Sampad Vibhaga Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter17.html">
+            <div class="chapter-number">17</div>
+            Chapter 17: Sraddha Traya Vibhaga Yoga
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="english-chapter18.html">
+            <div class="chapter-number">18</div>
+            Chapter 18: Moksa Sanyasa Yoga
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

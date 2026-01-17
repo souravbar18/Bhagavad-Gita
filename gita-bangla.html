@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>শ্রীমদ্ভগবদ্গীতা - বাংলা সূচিপত্র</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* বাংলা সূচিপত্রের জন্য বিশেষ স্টাইল */
+        body {
+            margin: 0;
+            font-family: 'Noto Sans Bengali', sans-serif; 
+            background: #f7efe3; 
+            color: #333;
+            text-align: center;
+        }
+
+        .header-section {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762; 
+        }
+        
+        .header-section h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin: 0;
+            color: #ffcc66; 
+        }
+
+        /* NAVIGATION BUTTONS: EIKHANE EDIT KORA HOYECHE */
+        .nav-buttons {
+            display: flex;
+            justify-content: center; /* Center buttons */
+            gap: 20px; /* Space between buttons */
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap; /* Small screen adjustment */
+        }
+
+        /* Home, Back, English বাটনের স্টাইল */
+        .nav-btn {
+            padding: 12px 25px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1em;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s;
+            margin: 5px 0; /* Small screen adjustment */
+        }
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        .options-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+        }
+
+        /* অধ্যায় কার্ডের স্টাইল */
+        .chapter-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px; 
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none; 
+            color: inherit;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .chapter-card a {
+            text-decoration: none;
+            color: #8c5b00; 
+            font-size: 1.2em;
+            font-weight: 600;
+            display: block;
+        }
+        
+        .chapter-card .chapter-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #d4a762; 
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-section">
+    <h1>শ্রীমদ্ভগবদ্গীতা (বাংলা)</h1>
+</div>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-sanskrit.html">« সংস্কৃত সূচিপত্র</a> 
+    <a class="nav-btn" href="gita-english.html">« English Index</a> <a class="nav-btn" href="index.html">🏡 হোম</a>
+</div>
+
+<div class="options-container">
+    
+    <div class="chapter-card">
+        <a href="bangla-chapter1.html">
+            <div class="chapter-number">১</div>
+            অধ্যায় ১: অর্জুন বিষাদ যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter2.html">
+            <div class="chapter-number">২</div>
+            অধ্যায় ২: সাংখ্য যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter3.html">
+            <div class="chapter-number">৩</div>
+            অধ্যায় ৩: কর্ম যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter4.html">
+            <div class="chapter-number">৪</div>
+            অধ্যায় ৪: জ্ঞান কর্ম সন্ন্যাস যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter5.html">
+            <div class="chapter-number">৫</div>
+            অধ্যায় ৫: কর্ম সন্ন্যাস যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter6.html">
+            <div class="chapter-number">৬</div>
+            অধ্যায় ৬: ধ্যান যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter7.html">
+            <div class="chapter-number">৭</div>
+            অধ্যায় ৭: জ্ঞান বিজ্ঞান যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter8.html">
+            <div class="chapter-number">৮</div>
+            অধ্যায় ৮: অক্ষর ব্রহ্ম যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter9.html">
+            <div class="chapter-number">৯</div>
+            অধ্যায় ৯: রাজবিদ্যা রাজগুহ্য যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter10.html">
+            <div class="chapter-number">১০</div>
+            অধ্যায় ১০: বিভূতি যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter11.html">
+            <div class="chapter-number">১১</div>
+            অধ্যায় ১১: বিশ্বরূপ দর্শন যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter12.html">
+            <div class="chapter-number">১২</div>
+            অধ্যায় ১২: ভক্তি যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter13.html">
+            <div class="chapter-number">১৩</div>
+            অধ্যায় ১৩: ক্ষেত্র ক্ষেত্রজ্ঞ বিভাগ যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter14.html">
+            <div class="chapter-number">১৪</div>
+            অধ্যায় ১৪: গুণত্রয় বিভাগ যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter15.html">
+            <div class="chapter-number">১৫</div>
+            অধ্যায় ১৫: পুরুষোত্তম যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter16.html">
+            <div class="chapter-number">১৬</div>
+            অধ্যায় ১৬: দৈবাসুর সম্পদ বিভাগ যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter17.html">
+            <div class="chapter-number">১৭</div>
+            অধ্যায় ১৭: শ্রদ্ধা ত্রয় বিভাগ যোগ
+        </a>
+    </div>
+
+    <div class="chapter-card">
+        <a href="bangla-chapter18.html">
+            <div class="chapter-number">১৮</div>
+            অধ্যায় ১৮: মোক্ষ সন্ন্যাস যোগ
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

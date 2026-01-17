@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabharata part 6</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>6. Mahabharata Teachings on Ideal Living - Collection 6 (501-600)</h1>
+            <p>Wisdom on Duty, Righteousness, and the Nature of Conflict (Udyoga Parva, etc.)</p>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 501</span>
+            <span class="lang-bangla">অধর্মের পথ আপাতদৃষ্টিতে সহজ মনে হলেও, শেষ পরিণতি ভয়াবহ হয়।</span>
+            <span class="lang-hindi">अधर्म का मार्ग दिखने में सरल हो सकता है, लेकिन अंतिम परिणाम भयानक होता है।</span>
+            <span class="lang-english">The path of unrighteousness may seem easy, but the final outcome is dreadful.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 502</span>
+            <span class="lang-bangla">সত্যের পক্ষ নিলেই জীবনের প্রকৃত শান্তি লাভ করা যায়।</span>
+            <span class="lang-hindi">सत्य का पक्ष लेने से ही जीवन में वास्तविक शांति प्राप्त होती है।</span>
+            <span class="lang-english">True peace in life is attained only by taking the side of truth.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 503</span>
+            <span class="lang-bangla">শ্রেষ্ঠ বীর তিনিই, যিনি ক্রোধকে জয় করতে পারেন।</span>
+            <span class="lang-hindi">सर्वश्रेष्ठ वीर वही है, जो क्रोध को जीत सकता है।</span>
+            <span class="lang-english">The best hero is he who can conquer anger.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 504</span>
+            <span class="lang-bangla">লোভ মানুষের পতনের কারণ।</span>
+            <span class="lang-hindi">लालच मनुष्य के पतन का कारण है।</span>
+            <span class="lang-english">Greed is the cause of man's downfall.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 505</span>
+            <span class="lang-bangla">সময়কে পূজা করা মানে জীবনকে পূজা করা।</span>
+            <span class="lang-hindi">समय की पूजा करना मतलब जीवन की पूजा करना।</span>
+            <span class="lang-english">Worshiping time means worshiping life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 506</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 507</span>
+            <span class="lang-bangla">ক্ষমা দুর্বলতা নয়, এটি মনের সর্বোচ্চ শক্তি।</span>
+            <span class="lang-hindi">क्षमा कमजोरी नहीं, यह मन की सर्वोच्च शक्ति है।</span>
+            <span class="lang-english">Forgiveness is not weakness, it is the supreme power of the mind.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 508</span>
+            <span class="lang-bangla">নিজের কর্তব্য পালনে আলস্য করো না।</span>
+            <span class="lang-hindi">अपने कर्तव्य निभाने में आलस्य मत करो।</span>
+            <span class="lang-english">Do not be lazy in fulfilling your duty.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 509</span>
+            <span class="lang-bangla">সংকটকালে স্থির থাকা বীরত্বের পরিচয়।</span>
+            <span class="lang-hindi">संकट के समय स्थिर रहना ही वीरता का परिचय है।</span>
+            <span class="lang-english">Remaining steady in a crisis is a sign of bravery.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 510</span>
+            <span class="lang-bangla">ন্যায়সঙ্গত পথে চলার জন্য সাহস প্রয়োজন।</span>
+            <span class="lang-hindi">न्यायसंगत मार्ग पर चलने के लिए साहस आवश्यक है।</span>
+            <span class="lang-english">Courage is necessary to walk the righteous path.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 72.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 511</span>
+            <span class="lang-bangla">জ্ঞান হলো জীবনের আলোকবর্তিকা।</span>
+            <span class="lang-hindi">ज्ञान जीवन का प्रकाश स्तम्भ है।</span>
+            <span class="lang-english">Knowledge is the lighthouse of life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 512</span>
+            <span class="lang-bangla">অতিরিক্ত ভোগ মানুষকে ধ্বংসের দিকে নিয়ে যায়।</span>
+            <span class="lang-hindi">अत्यधिक भोग मनुष्य को विनाश की ओर ले जाता है।</span>
+            <span class="lang-english">Excessive indulgence leads man towards destruction.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 513</span>
+            <span class="lang-bangla">ধৈর্য হলো মনের স্থিরতা।</span>
+            <span class="lang-hindi">धैर्य मन की स्थिरता है।</span>
+            <span class="lang-english">Patience is the stability of the mind.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 514</span>
+            <span class="lang-bangla">ত্যাগ মহত্ত্বের জন্ম দেয়।</span>
+            <span class="lang-hindi">त्याग महानता को जन्म देता है।</span>
+            <span class="lang-english">Renunciation gives birth to greatness.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 515</span>
+            <span class="lang-bangla">অন্যের প্রতি সহানুভূতি দেখানোই শ্রেষ্ঠ মানবিকতা।</span>
+            <span class="lang-hindi">दूसरों के प्रति सहानुभूति दिखाना ही सर्वश्रेष्ठ मानवता है।</span>
+            <span class="lang-english">Showing compassion to others is supreme humanity.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 516</span>
+            <span class="lang-bangla">বিনয় সকল গুণের উৎস।</span>
+            <span class="lang-hindi">विनम्रता ही सभी गुणों का स्रोत है।</span>
+            <span class="lang-english">Humility is the source of all virtues.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 517</span>
+            <span class="lang-bangla">মিথ্যা কেবল ধ্বংসের পথ দেখায়।</span>
+            <span class="lang-hindi">झूठ केवल विनाश का मार्ग दिखाता है।</span>
+            <span class="lang-english">Falsehood only shows the path to destruction.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 518</span>
+            <span class="lang-bangla">নিজের প্রতি বিশ্বাসই প্রথম পদক্ষেপ।</span>
+            <span class="lang-hindi">खुद पर विश्वास ही पहला कदम है।</span>
+            <span class="lang-english">Faith in oneself is the first step.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 519</span>
+            <span class="lang-bangla">অসৎ সঙ্গ সর্বদা বিপদ ডেকে আনে।</span>
+            <span class="lang-hindi">बुरी संगत हमेशा विपत्ति लाती है।</span>
+            <span class="lang-english">Bad company always brings calamity.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 520</span>
+            <span class="lang-bangla">কর্তব্য পালনে আলস্য করো না।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में आलस्य मत करो।</span>
+            <span class="lang-english">Do not be lazy in fulfilling your duty.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 73.10)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 521</span>
+            <span class="lang-bangla">যে সর্বদা ন্যায় পথে চলে, তাকে কেউ পরাজিত করতে পারে না।</span>
+            <span class="lang-hindi">जो हमेशा न्याय के मार्ग पर चलता है, उसे कोई पराजित नहीं कर सकता।</span>
+            <span class="lang-english">He who always walks the path of justice cannot be defeated by anyone.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 522</span>
+            <span class="lang-bangla">রাগ মানুষের বিবেককে নষ্ট করে দেয়।</span>
+            <span class="lang-hindi">क्रोध मनुष्य के विवेक को नष्ट कर देता है।</span>
+            <span class="lang-english">Anger destroys human conscience.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 523</span>
+            <span class="lang-bangla">ধৈর্য হলো বিজয়ের পথ, তা কখনও ছেড়ো না।</span>
+            <span class="lang-hindi">धैर्य ही विजय का मार्ग है, उसे कभी मत छोड़ो।</span>
+            <span class="lang-english">Patience is the path to victory, never abandon it.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 524</span>
+            <span class="lang-bangla">লোভ সকল শুভ কর্ম নষ্ট করে।</span>
+            <span class="lang-hindi">लालच सभी शुभ कर्मों को नष्ट कर देता है।</span>
+            <span class="lang-english">Greed destroys all good deeds.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 525</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তি সমাজে সম্মান পান।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति को समाज में सम्मान मिलता है।</span>
+            <span class="lang-english">A forgiving person receives respect in society.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 526</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন নিশ্চিত করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन निश्चित करता है।</span>
+            <span class="lang-english">Arrogance ensures the downfall of man.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 527</span>
+            <span class="lang-bangla">বিনয়ই সকল সম্পর্কের ভিত্তি।</span>
+            <span class="lang-hindi">विनम्रता ही सभी संबंधों का आधार है।</span>
+            <span class="lang-english">Humility is the foundation of all relationships.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 528</span>
+            <span class="lang-bangla">সময় নষ্ট করলে সুযোগ নষ্ট হয়।</span>
+            <span class="lang-hindi">समय बर्बाद करने से अवसर बर्बाद होता है।</span>
+            <span class="lang-english">Wasting time means wasting opportunity.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 529</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে মুক্তি দেয়।</span>
+            <span class="lang-hindi">त्याग मनुष्य को मुक्ति देता है।</span>
+            <span class="lang-english">Renunciation gives freedom to man.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 530</span>
+            <span class="lang-bangla">জ্ঞান হলো জীবনের আলোকবর্তিকা।</span>
+            <span class="lang-hindi">ज्ञान जीवन का प्रकाश स्तम्भ है।</span>
+            <span class="lang-english">Knowledge is the lighthouse of life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 74.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 531</span>
+            <span class="lang-bangla">যে সর্বদা ধৈর্যশীল, সে সহজেই সকল বাধা অতিক্রম করে।</span>
+            <span class="lang-hindi">जो हमेशा धैर्यवान होता है, वह आसानी से सभी बाधाओं को पार करता है।</span>
+            <span class="lang-english">He who is always patient easily overcomes all obstacles.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 532</span>
+            <span class="lang-bangla">সৎ লোকের সঙ্গ সর্বদা মঙ্গলজনক।</span>
+            <span class="lang-hindi">सज्जन लोगों का साथ हमेशा मंगलकारी होता है।</span>
+            <span class="lang-english">The company of noble people is always auspicious.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 533</span>
+            <span class="lang-bangla">নিজের প্রতি বিশ্বাসই প্রথম পদক্ষেপ, যা পর্বতকেও পার করতে পারে।</span>
+            <span class="lang-hindi">खुद पर विश्वास ही पहला कदम है, जो पहाड़ को भी पार कर सकता है।</span>
+            <span class="lang-english">Faith in oneself is the first step, which can cross even mountains.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 534</span>
+            <span class="lang-bangla">অজ্ঞানতা জীবনের সবচেয়ে বড় অন্ধকার।</span>
+            <span class="lang-hindi">अज्ञानता जीवन का सबसे बड़ा अंधकार है।</span>
+            <span class="lang-english">Ignorance is the greatest darkness of life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 535</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে দুর্বল করে।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को कमजोर करता है।</span>
+            <span class="lang-english">Greed weakens the human heart.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 536</span>
+            <span class="lang-bangla">ক্রোধ মানুষের বিবেককে নষ্ট করে।</span>
+            <span class="lang-hindi">क्रोध मनुष्य के विवेक को नष्ट करता है।</span>
+            <span class="lang-english">Anger destroys human conscience.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 537</span>
+            <span class="lang-bangla">ক্ষমা হলো মানুষের শ্রেষ্ঠ অলংকার।</span>
+            <span class="lang-hindi">क्षमा मनुष्य का सर्वश्रेष्ठ आभूषण है।</span>
+            <span class="lang-english">Forgiveness is the best ornament of man.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 538</span>
+            <span class="lang-bangla">সময়কে সদ্ব্যবহার করাই জ্ঞানের লক্ষণ।</span>
+            <span class="lang-hindi">समय का सदुपयोग करना ही ज्ञान का लक्षण है।</span>
+            <span class="lang-english">Utilizing time well is a sign of knowledge.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 539</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 540</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে অমর করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को अमर करता है।</span>
+            <span class="lang-english">Renunciation makes man immortal.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 75.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 541</span>
+            <span class="lang-bangla">শত্রুকে দুর্বল ভেবো না, তার শক্তিকে সঠিকভাবে বিশ্লেষণ করো।</span>
+            <span class="lang-hindi">शत्रु को कमजोर मत समझो, उसकी शक्ति का सही विश्लेषण करो।</span>
+            <span class="lang-english">Do not underestimate the enemy, analyze their strength correctly.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 542</span>
+            <span class="lang-bangla">নেতার কাজ হলো সৈন্যদের মনোবল বজায় রাখা।</span>
+            <span class="lang-hindi">नेता का काम सैनिकों का मनोबल बनाए रखना है।</span>
+            <span class="lang-english">The leader's job is to maintain the morale of the soldiers.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 543</span>
+            <span class="lang-bangla">যুদ্ধে জয়ী হতে হলে মনের স্থিরতা প্রয়োজন।</span>
+            <span class="lang-hindi">युद्ध में जीतने के लिए मन की स्थिरता आवश्यक है।</span>
+            <span class="lang-english">Stability of mind is necessary to win the war.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 544</span>
+            <span class="lang-bangla">ন্যায়সঙ্গত যুদ্ধই শ্রেষ্ঠ যুদ্ধ।</span>
+            <span class="lang-hindi">न्यायसंगत युद्ध ही सर्वश्रेष्ठ युद्ध है।</span>
+            <span class="lang-english">A just war is the best war.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 545</span>
+            <span class="lang-bangla">সৎ উদ্দেশ্য ছাড়া কোনো কাজই সফল হয় না।</span>
+            <span class="lang-hindi">सच्चा उद्देश्य के बिना कोई कार्य सफल नहीं होता।</span>
+            <span class="lang-english">No work succeeds without a noble intention.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 546</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছেঁড়া উচিত নয়।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी नहीं तोड़ना चाहिए।</span>
+            <span class="lang-english">The bond of family should never be broken.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 547</span>
+            <span class="lang-bangla">মিথ্যা কেবল ধ্বংসের পথ দেখায়।</span>
+            <span class="lang-hindi">झूठ केवल विनाश का मार्ग दिखाता है।</span>
+            <span class="lang-english">Falsehood only shows the path to destruction.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 548</span>
+            <span class="lang-bangla">বিনয়ী ব্যক্তির কাছে সকল কাজ সহজ মনে হয়।</span>
+            <span class="lang-hindi">विनम्र व्यक्ति के लिए सभी कार्य आसान लगते हैं।</span>
+            <span class="lang-english">All tasks seem easy to a humble person.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 549</span>
+            <span class="lang-bangla">সময়কে নষ্ট করা মানে জীবনকে নষ্ট করা।</span>
+            <span class="lang-hindi">समय को बर्बाद करना मतलब जीवन को बर्बाद करना।</span>
+            <span class="lang-english">Wasting time means wasting life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 550</span>
+            <span class="lang-bangla">কর্তব্য পালনে আলস্য করো না।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में आलस्य मत करो।</span>
+            <span class="lang-english">Do not be lazy in fulfilling your duty.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 76.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 551</span>
+            <span class="lang-bangla">যে শাসক প্রজার দুঃখ বোঝে, সেই প্রকৃত রাজা।</span>
+            <span class="lang-hindi">जो शासक प्रजा के दुख को समझता है, वही सच्चा राजा है।</span>
+            <span class="lang-english">The ruler who understands the sorrow of his subjects is the true king.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 552</span>
+            <span class="lang-bangla">নিজের কর্মফল থেকে কেউ বাঁচতে পারে না।</span>
+            <span class="lang-hindi">अपने कर्मों के फल से कोई बच नहीं सकता।</span>
+            <span class="lang-english">No one can escape the consequences of their actions.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 553</span>
+            <span class="lang-bangla">আশা সকল দুঃখ দূর করার একমাত্র পথ।</span>
+            <span class="lang-hindi">आशा सभी दुखों को दूर करने का एकमात्र मार्ग है।</span>
+            <span class="lang-english">Hope is the only way to overcome all sorrows.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 554</span>
+            <span class="lang-bangla">পরিকল্পনা ছাড়া শুরু করা কাজ ব্যর্থ হয়।</span>
+            <span class="lang-hindi">बिना योजना के शुरू किया गया कार्य विफल होता है।</span>
+            <span class="lang-english">Work started without a plan fails.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 555</span>
+            <span class="lang-bangla">সত্য কথা বলা সকল গুণের মূল।</span>
+            <span class="lang-hindi">सत्य बोलना सभी गुणों का मूल है।</span>
+            <span class="lang-english">Speaking the truth is the root of all virtues.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 556</span>
+            <span class="lang-bangla">বিনয়ী ব্যক্তির কাছে স্বয়ং ঈশ্বরও নত হন।</span>
+            <span class="lang-hindi">विनम्र व्यक्ति के सामने स्वयं ईश्वर भी झुकते हैं।</span>
+            <span class="lang-english">Even God bows down before a humble person.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 557</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে বিষাক্ত করে।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को विषैला बनाता है।</span>
+            <span class="lang-english">Greed poisons the human heart.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 558</span>
+            <span class="lang-bangla">ক্রোধের চেয়ে শান্তি শ্রেয়।</span>
+            <span class="lang-hindi">क्रोध से शांति बेहतर है।</span>
+            <span class="lang-english">Peace is better than anger.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 559</span>
+            <span class="lang-bangla">ধৈর্য হলো বিজয়ের পথ।</span>
+            <span class="lang-hindi">धैर्य ही विजय का मार्ग है।</span>
+            <span class="lang-english">Patience is the path to victory.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 560</span>
+            <span class="lang-bangla">কর্তব্য পালনে আলস্য করো না।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में आलस्य मत करो।</span>
+            <span class="lang-english">Do not be lazy in fulfilling your duty.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 77.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 561</span>
+            <span class="lang-bangla">বিপদেও নিজের ধর্ম থেকে বিচ্যুত হয়ো না।</span>
+            <span class="lang-hindi">विपत्ति में भी अपने धर्म से विचलित मत हो।</span>
+            <span class="lang-english">Even in calamity, do not deviate from your Dharma.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 562</span>
+            <span class="lang-bangla">অন্যায়ের বিরুদ্ধে রুখে দাঁড়ানোই বীরত্ব।</span>
+            <span class="lang-hindi">अन्याय के खिलाफ खड़े होना ही वीरता है।</span>
+            <span class="lang-english">Standing up against injustice is bravery.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 563</span>
+            <span class="lang-bangla">পরিকল্পনা ছাড়া কোনো কাজই সফল হয় না।</span>
+            <span class="lang-hindi">योजना के बिना कोई कार्य सफल नहीं होता।</span>
+            <span class="lang-english">No work succeeds without a plan.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 564</span>
+            <span class="lang-bangla">ধৈর্য এবং অধ্যবসায় সাফল্যের চাবিকাঠি।</span>
+            <span class="lang-hindi">धैर्य और दृढ़ता सफलता की कुंजी है।</span>
+            <span class="lang-english">Patience and perseverance are the keys to success.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 565</span>
+            <span class="lang-bangla">নিজের কর্তব্য পালনেই জীবনের শ্রেষ্ঠ সফলতা।</span>
+            <span class="lang-hindi">अपने कर्तव्य निभाने में ही जीवन की सर्वश्रेष्ठ सफलता है।</span>
+            <span class="lang-english">The best success in life is in fulfilling duty.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 566</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তি সর্বদা সুখী হয়।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति हमेशा सुखी रहता है।</span>
+            <span class="lang-english">A forgiving person is always happy.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 567</span>
+            <span class="lang-bangla">লোভ মানুষের পতনের কারণ।</span>
+            <span class="lang-hindi">लालच मनुष्य के पतन का कारण है।</span>
+            <span class="lang-english">Greed is the cause of man's downfall.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 568</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 569</span>
+            <span class="lang-bangla">সময়কে নষ্ট করা মানে জীবনকে নষ্ট করা।</span>
+            <span class="lang-hindi">समय को बर्बाद करना मतलब जीवन को बर्बाद करना।</span>
+            <span class="lang-english">Wasting time means wasting life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 570</span>
+            <span class="lang-bangla">বিনয় সকল গুণের উৎস।</span>
+            <span class="lang-hindi">विनम्रता ही सभी गुणों का स्रोत है।</span>
+            <span class="lang-english">Humility is the source of all virtues.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 78.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 571</span>
+            <span class="lang-bangla">বুদ্ধিমানের কাজ হলো শত্রুতার মূল কারণকে দূর করা।</span>
+            <span class="lang-hindi">बुद्धिमान का कार्य शत्रुता के मूल कारण को दूर करना है।</span>
+            <span class="lang-english">The job of the wise is to remove the root cause of enmity.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 572</span>
+            <span class="lang-bangla">সংকটকালে স্থির থাকা এবং সঠিক সিদ্ধান্ত নেওয়া বীরত্বের পরিচয়।</span>
+            <span class="lang-hindi">संकट के समय स्थिर रहना और सही निर्णय लेना ही वीरता का परिचय है।</span>
+            <span class="lang-english">Remaining steady and making the right decision in a crisis is a sign of bravery.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 573</span>
+            <span class="lang-bangla">নেতার উচিত সর্বদা দূরদর্শিতার সাথে কাজ করা।</span>
+            <span class="lang-hindi">नेता को हमेशा दूरदर्शिता के साथ कार्य करना चाहिए।</span>
+            <span class="lang-english">A leader should always act with foresight.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 574</span>
+            <span class="lang-bangla">অহংকার মানুষের ধ্বংসের পথ।</span>
+            <span class="lang-hindi">अहंकार मनुष्य के विनाश का मार्ग है।</span>
+            <span class="lang-english">Arrogance is the path to human destruction.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 575</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে দুর্বল করে।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को कमजोर करता है।</span>
+            <span class="lang-english">Greed weakens the human heart.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 576</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে অমর করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को अमर करता है।</span>
+            <span class="lang-english">Renunciation makes man immortal.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 577</span>
+            <span class="lang-bangla">সত্যের জয় সর্বদা নিশ্চিত।</span>
+            <span class="lang-hindi">सत्य की जीत हमेशा निश्चित है।</span>
+            <span class="lang-english">The victory of truth is always certain.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 578</span>
+            <span class="lang-bangla">ক্ষমা করা দুর্বলতা নয়, এটি আত্মিক শক্তি।</span>
+            <span class="lang-hindi">क्षमा करना कमजोरी नहीं, यह आत्मिक शक्ति है।</span>
+            <span class="lang-english">Forgiveness is not weakness, it is spiritual strength.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 579</span>
+            <span class="lang-bangla">নিজের প্রতিজ্ঞা রক্ষাই শ্রেষ্ঠ তপস্যা।</span>
+            <span class="lang-hindi">अपनी प्रतिज्ञा की रक्षा करना ही सर्वश्रेष्ठ तपस्या है।</span>
+            <span class="lang-english">Protecting one's promise is the best austerity.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 580</span>
+            <span class="lang-bangla">সময়কে সঠিক কাজে লাগানোই জ্ঞানের পরিচয়।</span>
+            <span class="lang-hindi">समय को सही काम में लगाना ही ज्ञान का परिचय है।</span>
+            <span class="lang-english">Utilizing time for the right work is a sign of knowledge.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 79.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 581</span>
+            <span class="lang-bangla">যে শাসক কেবল নিজের সুখ চায়, তার পতন অনিবার্য।</span>
+            <span class="lang-hindi">जो शासक केवल अपना सुख चाहता है, उसका पतन निश्चित है।</span>
+            <span class="lang-english">The ruler who only seeks his own happiness, his downfall is inevitable.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 582</span>
+            <span class="lang-bangla">বন্ধুত্বে সততা ও বিশ্বাসই প্রধান গুণ।</span>
+            <span class="lang-hindi">मित्रता में ईमानदारी और विश्वास ही मुख्य गुण हैं।</span>
+            <span class="lang-english">Honesty and trust are the main virtues in friendship.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 583</span>
+            <span class="lang-bangla">ন্যায়সঙ্গত যুদ্ধই শ্রেষ্ঠ যুদ্ধ, যদিও তা কষ্টকর হয়।</span>
+            <span class="lang-hindi">न्यायसंगत युद्ध ही सर्वश्रेष्ठ युद्ध है, भले ही वह कठिन हो।</span>
+            <span class="lang-english">A just war is the best war, even if it is difficult.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 584</span>
+            <span class="lang-bangla">ধৈর্য এবং অধ্যবসায় সাফল্যের চাবিকাঠি।</span>
+            <span class="lang-hindi">धैर्य और दृढ़ता सफलता की कुंजी है।</span>
+            <span class="lang-english">Patience and perseverance are the keys to success.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 585</span>
+            <span class="lang-bangla">নিজের বুদ্ধির উপর বিশ্বাস রাখো।</span>
+            <span class="lang-hindi">अपनी बुद्धि पर विश्वास रखो।</span>
+            <span class="lang-english">Trust your own intellect.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 586</span>
+            <span class="lang-bangla">অসৎ পথে অর্জন করা সম্পদ ক্ষণস্থায়ী।</span>
+            <span class="lang-hindi">अनैतिक तरीके से अर्जित धन क्षणभंगुर होता है।</span>
+            <span class="lang-english">Wealth earned by unrighteous means is fleeting.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 587</span>
+            <span class="lang-bangla">নেতার কাজ হলো সৈন্যদের মনোবল বজায় রাখা।</span>
+            <span class="lang-hindi">नेता का काम सैनिकों का मनोबल बनाए रखना है।</span>
+            <span class="lang-english">The leader's job is to maintain the morale of the soldiers.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 588</span>
+            <span class="lang-bangla">যে সর্বদা সত্যের পথে চলে, সে অমরত্ব লাভ করে।</span>
+            <span class="lang-hindi">जो हमेशा सत्य के मार्ग पर चलता है, वह अमरता प्राप्त करता है।</span>
+            <span class="lang-english">He who always walks the path of truth attains immortality.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 589</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তিই সমাজে শান্তি আনে।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति ही समाज में शांति लाता है।</span>
+            <span class="lang-english">A forgiving person brings peace to society.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 590</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন নিশ্চিত করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन निश्चित करता है।</span>
+            <span class="lang-english">Arrogance ensures the downfall of man.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 80.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 591</span>
+            <span class="lang-bangla">অসৎ পথে অর্জন করা সম্পদ ক্ষণস্থায়ী।</span>
+            <span class="lang-hindi">अनैतिक तरीके से अर्जित धन क्षणभंगुर होता है।</span>
+            <span class="lang-english">Wealth earned by unrighteous means is fleeting.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 592</span>
+            <span class="lang-bangla">নেতার কাজ হলো সৈন্যদের মনোবল বজায় রাখা।</span>
+            <span class="lang-hindi">नेता का काम सैनिकों का मनोबल बनाए रखना है।</span>
+            <span class="lang-english">The leader's job is to maintain the morale of the soldiers.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 593</span>
+            <span class="lang-bangla">যে সর্বদা সত্যের পথে চলে, সে অমরত্ব লাভ করে।</span>
+            <span class="lang-hindi">जो हमेशा सत्य के मार्ग पर चलता है, वह अमरता प्राप्त करता है।</span>
+            <span class="lang-english">He who always walks the path of truth attains immortality.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 594</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তিই সমাজে শান্তি আনে।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति ही समाज में शांति लाता है।</span>
+            <span class="lang-english">A forgiving person brings peace to society.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 595</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন নিশ্চিত করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन निश्चित करता है।</span>
+            <span class="lang-english">Arrogance ensures the downfall of man.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 596</span>
+            <span class="lang-bangla">ধৈর্য এবং অধ্যবসায় সাফল্যের চাবিকাঠি।</span>
+            <span class="lang-hindi">धैर्य और दृढ़ता सफलता की कुंजी है।</span>
+            <span class="lang-english">Patience and perseverance are the keys to success.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 597</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছেঁড়া উচিত নয়।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी नहीं तोड़ना चाहिए।</span>
+            <span class="lang-english">The bond of family should never be broken.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 598</span>
+            <span class="lang-bangla">সময় নষ্ট করা মানে জীবনকে নষ্ট করা।</span>
+            <span class="lang-hindi">समय को बर्बाद करना मतलब जीवन को बर्बाद करना।</span>
+            <span class="lang-english">Wasting time means wasting life.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 599</span>
+            <span class="lang-bangla">নিজের বুদ্ধির উপর বিশ্বাস রাখো।</span>
+            <span class="lang-hindi">अपनी बुद्धि पर विश्वास रखो।</span>
+            <span class="lang-english">Trust your own intellect.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 600</span>
+            <span class="lang-bangla">ত্যাগ মহত্ত্বের জন্ম দেয়, ভোগ নয়।</span>
+            <span class="lang-hindi">त्याग महानता को जन्म देता है, भोग नहीं।</span>
+            <span class="lang-english">Renunciation gives birth to greatness, not indulgence.</span>
+            <span class="reference">(Mahabharata, Udyoga Parva 81.10)</span>
+        </div>
+
+    </div>
+
+    <div class="fixed-nav">
+        <a href="mahabharata_wisdom_set_5.html" class="nav-button">Collection 5 (Previous)</a>
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+        <a href="mahabharata_wisdom_set_6.html" class="nav-button" active>Collection 6</a>
+        <a href="mahabharata_wisdom_set_7.html" class="nav-button">Collection 7 (Next) →</a>
+    </div>
+</body>
+</html>

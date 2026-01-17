@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedas - Part 1</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vedas : The Knowledge</h1>
+            <p>Part 1</p>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 1</span>
+            <div class="lang-bangla">অগ্নিকে পুরোহিত, দেব, ঋত্বিক এবং রত্নধাতম বলে আহ্বান করি।</div>
+            <div class="lang-hindi">हम अग्नि को पुरोहित, देवता, ऋत्विक और रत्नों के दाता के रूप में आमंत्रित करते हैं।</div>
+            <div class="lang-english">I laud Agni, the divine priest, the minister of sacrifice, the possessor of wealth.</div>
+            <span class="reference">(Rigveda 1.1.1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 2</span>
+            <div class="lang-bangla">সকল দিক থেকে শুভ চিন্তাধারা আমাদের দিকে আসুক।</div>
+            <div class="lang-hindi">सभी दिशाओं से शुभ विचार हमारे पास आएं।</div>
+            <div class="lang-english">Let noble thoughts come to us from all sides.</div>
+            <span class="reference">(Rigveda 1.89.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 3</span>
+            <div class="lang-bangla">সত্যই পরম ধর্ম।</div>
+            <div class="lang-hindi">सत्य ही परम धर्म है।</div>
+            <div class="lang-english">Truth is the highest dharma.</div>
+            <span class="reference">(Yajurveda 7.33 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 4</span>
+            <div class="lang-bangla">একমাত্র সত্যই বিরাজমান; জ্ঞানী ব্যক্তিরা তাকে বিভিন্ন নামে ডাকেন।</div>
+            <div class="lang-hindi">केवल एक ही सत्य है; बुद्धिमान लोग उसे विभिन्न नामों से पुकारते हैं।</div>
+            <div class="lang-english">Truth is One; the wise call it by various names.</div>
+            <span class="reference">(Rigveda 1.164.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 5</span>
+            <div class="lang-bangla">আমাদের সম্মিলিত হও, এক মন এবং এক জ্ঞান থাকুক।</div>
+            <div class="lang-hindi">हम एकजुट हों, हमारा एक मन और एक ज्ञान हो।</div>
+            <div class="lang-english">Be united, let your minds be harmonious, let your knowledge be one.</div>
+            <span class="reference">(Rigveda 10.191.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 6</span>
+            <div class="lang-bangla">ঈশ্বরের সেই শ্রেষ্ঠ জ্যোতিকে আমরা ধ্যান করি, যিনি আমাদের বুদ্ধিকে প্রেরণা জোগান।</div>
+            <div class="lang-hindi">हम ईश्वर के उस श्रेष्ठ प्रकाश का ध्यान करते हैं, जो हमारी बुद्धि को प्रेरित करता है।</div>
+            <div class="lang-english">We meditate upon that excellent lustre of the Divine Sun, who may stimulate our intelligence.</div>
+            <span class="reference">(Rigveda 3.62.10 - Gayatri Mantra)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 7</span>
+            <div class="lang-bangla">শক্তি ও সাহস আমাদের দেহ ও মনে আসুক।</div>
+            <div class="lang-hindi">शक्ति और साहस हमारे शरीर और मन में आएं।</div>
+            <div class="lang-english">May strength and courage come into our body and mind.</div>
+            <span class="reference">(Yajurveda 19.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 8</span>
+            <div class="lang-bangla">মিথ্যা থেকে আমাকে সত্যের দিকে নিয়ে যাও।</div>
+            <div class="lang-hindi">असत्य से मुझे सत्य की ओर ले चलो।</div>
+            <div class="lang-english">Lead me from the unreal to the real.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.3.28 - Veda derived prayer)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 9</span>
+            <div class="lang-bangla">কর্মই মানুষকে অমর করে।</div>
+            <div class="lang-hindi">कर्म ही मनुष्य को अमर बनाता है।</div>
+            <div class="lang-english">Action makes man immortal.</div>
+            <span class="reference">(Yajurveda 40.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 10</span>
+            <div class="lang-bangla">শান্তি! শান্তি! শান্তি!</div>
+            <div class="lang-hindi">शांति! शांति! शांति!</div>
+            <div class="lang-english">Peace! Peace! Peace!</div>
+            <span class="reference">(Yajurveda 36.17 - Shanti Path)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 11</span>
+            <div class="lang-bangla">মানুষের হৃদয় হল জ্ঞানের সমুদ্র।</div>
+            <div class="lang-hindi">मनुष्य का हृदय ज्ञान का सागर है।</div>
+            <div class="lang-english">The heart of man is an ocean of knowledge.</div>
+            <span class="reference">(Atharvaveda 10.7.35 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 12</span>
+            <div class="lang-bangla">দাতা হও, কটুভাষী হয়ো না।</div>
+            <div class="lang-hindi">दाता बनो, कटुभाषी मत बनो।</div>
+            <div class="lang-english">Be generous, be not a reviler.</div>
+            <span class="reference">(Rigveda 10.117.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 13</span>
+            <div class="lang-bangla">জ্ঞানীরাই জগৎকে সৃষ্টি করেন।</div>
+            <div class="lang-hindi">ज्ञानी ही संसार का निर्माण करते हैं।</div>
+            <div class="lang-english">The wise construct the world.</div>
+            <span class="reference">(Rigveda 10.130.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 14</span>
+            <div class="lang-bangla">আলোই সকল দুঃখের নিবারক।</div>
+            <div class="lang-hindi">प्रकाश ही सभी दुखों का निवारण करने वाला है।</div>
+            <div class="lang-english">Light is the remover of all miseries.</div>
+            <span class="reference">(Rigveda 1.90.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 15</span>
+            <div class="lang-bangla">সময়ই সবকিছুর নিয়ন্ত্রক।</div>
+            <div class="lang-hindi">समय ही हर चीज़ का नियंत्रक है।</div>
+            <div class="lang-english">Time is the controller of everything.</div>
+            <span class="reference">(Atharvaveda 19.53.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 16</span>
+            <div class="lang-bangla">এই বিশ্ব এক ঐশী শক্তি দ্বারা পরিচালিত।</div>
+            <div class="lang-hindi">यह विश्व एक दिव्य शक्ति द्वारा संचालित है।</div>
+            <div class="lang-english">This universe is governed by one divine power.</div>
+            <span class="reference">(Rigveda 10.129.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 17</span>
+            <div class="lang-bangla">আলোকিত হও, কারণ তুমি অমৃতের সন্তান।</div>
+            <div class="lang-hindi">जागृत होओ, क्योंकि तुम अमरता के पुत्र हो।</div>
+            <div class="lang-english">Be enlightened, for you are children of immortality.</div>
+            <span class="reference">(Shvetashvatara Upanishad 2.5 - Veda derived thought)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 18</span>
+            <div class="lang-bangla">আমাদের জিহ্বায় মধুর বাক্য থাকুক।</div>
+            <div class="lang-hindi">हमारी जीभ पर मधुर शब्द हों।</div>
+            <div class="lang-english">Let there be honeyed speech on our tongue.</div>
+            <span class="reference">(Atharvaveda 1.34.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 19</span>
+            <div class="lang-bangla">ক্ষমা, দয়া ও ধৈর্য ধারণ করো।</div>
+            <div class="lang-hindi">क्षमा, दया और धैर्य धारण करो।</div>
+            <div class="lang-english">Hold fast to forgiveness, compassion, and patience.</div>
+            <span class="reference">(Yajurveda 25.14 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 20</span>
+            <div class="lang-bangla">জ্ঞানের আলোই শ্রেষ্ঠ সম্পদ।</div>
+            <div class="lang-hindi">ज्ञान का प्रकाश ही श्रेष्ठ धन है।</div>
+            <div class="lang-english">The light of knowledge is the supreme wealth.</div>
+            <span class="reference">(Rigveda 1.92.5 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 21</span>
+            <div class="lang-bangla">আলো থেকে আমাকে আরও আলোর দিকে নিয়ে যাও।</div>
+            <div class="lang-hindi">प्रकाश से मुझे और अधिक प्रकाश की ओर ले चलो।</div>
+            <div class="lang-english">Lead me from light to greater light.</div>
+            <span class="reference">(Yajurveda 40.16 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 22</span>
+            <div class="lang-bangla">আমরা যেন শত শরৎকাল (বছর) জীবিত থাকি।</div>
+            <div class="lang-hindi">हम सौ शरद ऋतु (वर्षों) तक जीवित रहें।</div>
+            <div class="lang-english">May we live a hundred autumns (years).</div>
+            <span class="reference">(Yajurveda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 23</span>
+            <div class="lang-bangla">পৃথিবী ও আকাশ যেন আমাদের রক্ষা করেন।</div>
+            <div class="lang-hindi">पृथ्वी और आकाश हमारी रक्षा करें।</div>
+            <div class="lang-english">May Earth and Sky protect us.</div>
+            <span class="reference">(Rigveda 1.89.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 24</span>
+            <div class="lang-bangla">আকাশের মতো বিস্তৃত মন ধারণ করো।</div>
+            <div class="lang-hindi">आकाश की तरह विशाल मन धारण करो।</div>
+            <div class="lang-english">Possess a mind as vast as the sky.</div>
+            <span class="reference">(Yajurveda 3.32 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 25</span>
+            <div class="lang-bangla">অন্ন এবং জীবন একে অপরের সাথে সম্পর্কিত।</div>
+            <div class="lang-hindi">अन्न और जीवन एक दूसरे से संबंधित हैं।</div>
+            <div class="lang-english">Food and life are related to each other.</div>
+            <span class="reference">(Atharvaveda 3.26.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 26</span>
+            <div class="lang-bangla">আমাদের শরীর যেন শক্তিতে পূর্ণ হয়।</div>
+            <div class="lang-hindi">हमारा शरीर शक्ति से भरा रहे।</div>
+            <div class="lang-english">May our body be full of strength.</div>
+            <span class="reference">(Yajurveda 19.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 27</span>
+            <div class="lang-bangla">অজ্ঞানতা থেকে মুক্তিই পরম সুখ।</div>
+            <div class="lang-hindi">अज्ञानता से मुक्ति ही परम सुख है।</div>
+            <div class="lang-english">Freedom from ignorance is the supreme happiness.</div>
+            <span class="reference">(Rigveda 10.53.6 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 28</span>
+            <div class="lang-bangla">ঈশ্বর হলেন সৃষ্টির একমাত্র কারণ।</div>
+            <div class="lang-hindi">ईश्वर ही सृष्टि का एकमात्र कारण है।</div>
+            <div class="lang-english">God is the only cause of creation.</div>
+            <span class="reference">(Rigveda 10.121.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 29</span>
+            <div class="lang-bangla">আত্মা অমর এবং অব্যয়।</div>
+            <div class="lang-hindi">आत्मा अमर और अविनाशी है।</div>
+            <div class="lang-english">The Self is immortal and imperishable.</div>
+            <span class="reference">(Yajurveda 40.3 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 30</span>
+            <div class="lang-bangla">আমাদের পথ যেন শুভ ও সুন্দর হয়।</div>
+            <div class="lang-hindi">हमारा मार्ग शुभ और सुंदर हो।</div>
+            <div class="lang-english">May our path be auspicious and beautiful.</div>
+            <span class="reference">(Rigveda 1.90.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 31</span>
+            <div class="lang-bangla">প্রতিটি কাজ মনোযোগ সহকারে করো।</div>
+            <div class="lang-hindi">हर काम को ध्यान से करो।</div>
+            <div class="lang-english">Perform every work with attention.</div>
+            <span class="reference">(Yajurveda 40.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 32</span>
+            <div class="lang-bangla">সকলের সাথে মিলেমিশে কাজ করো।</div>
+            <div class="lang-hindi">सबके साथ मिलकर काम करो।</div>
+            <div class="lang-english">Work harmoniously with everyone.</div>
+            <span class="reference">(Atharvaveda 3.30.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 33</span>
+            <div class="lang-bangla">সুখ ও দুঃখ জীবনের অংশ।</div>
+            <div class="lang-hindi">सुख और दुख जीवन के अंश हैं।</div>
+            <div class="lang-english">Happiness and sorrow are parts of life.</div>
+            <span class="reference">(Rigveda 1.104.9 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 34</span>
+            <div class="lang-bangla">জ্ঞান অর্জনই জীবনের মূল লক্ষ্য।</div>
+            <div class="lang-hindi">ज्ञान प्राप्त करना ही जीवन का मुख्य लक्ष्य है।</div>
+            <div class="lang-english">Attaining knowledge is the main goal of life.</div>
+            <span class="reference">(Rigveda 1.164.46 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 35</span>
+            <div class="lang-bangla">পৃথিবী আমাদের মাতা এবং আমরা পৃথিবীর সন্তান।</div>
+            <div class="lang-hindi">पृथ्वी हमारी माता है और हम पृथ्वी की संतान हैं।</div>
+            <div class="lang-english">Earth is our Mother, and we are children of the Earth.</div>
+            <span class="reference">(Atharvaveda 12.1.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 36</span>
+            <div class="lang-bangla">আমাদের চোখে যেন আমরা শত শরৎকাল দেখি।</div>
+            <div class="lang-hindi">हम अपनी आँखों से सौ शरद ऋतु देखें।</div>
+            <div class="lang-english">May we see with our eyes a hundred autumns.</div>
+            <span class="reference">(Yajurveda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 37</span>
+            <div class="lang-bangla">নিজের কর্তব্য পালন করাই পরম তপস্যা।</div>
+            <div class="lang-hindi">अपने कर्तव्य का पालन करना ही परम तपस्या है।</div>
+            <div class="lang-english">Performing one's duty is the highest penance.</div>
+            <span class="reference">(Yajurveda 40.2 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 38</span>
+            <div class="lang-bangla">দানশীল হও, অভাবী মানুষকে সাহায্য করো।</div>
+            <div class="lang-hindi">दानशील बनो, जरूरतमंदों की मदद करो।</div>
+            <div class="lang-english">Be charitable, help the needy.</div>
+            <span class="reference">(Rigveda 10.117.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 39</span>
+            <div class="lang-bangla">মনকে নিয়ন্ত্রণ করাই সর্বশ্রেষ্ঠ বিদ্যা।</div>
+            <div class="lang-hindi">मन को नियंत्रित करना ही सर्वश्रेष्ठ विद्या है।</div>
+            <div class="lang-english">Controlling the mind is the supreme knowledge.</div>
+            <span class="reference">(Yajurveda 34.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 40</span>
+            <div class="lang-bangla">আমাদের সম্মিলিতভাবে উন্নত হতে দাও।</div>
+            <div class="lang-hindi">हमें मिलकर प्रगति करने दो।</div>
+            <div class="lang-english">Let us progress together.</div>
+            <span class="reference">(Rigveda 10.191.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 41</span>
+            <div class="lang-bangla">জ্ঞানই শক্তি, জ্ঞানই আলো।</div>
+            <div class="lang-hindi">ज्ञान ही शक्ति है, ज्ञान ही प्रकाश है।</div>
+            <div class="lang-english">Knowledge is power, knowledge is light.</div>
+            <span class="reference">(Rigveda 1.124.6 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 42</span>
+            <div class="lang-bangla">আমাদের জীবন যেন পূর্ণতায় ভরপুর থাকে।</div>
+            <div class="lang-hindi">हमारा जीवन पूर्णता से भरा रहे।</div>
+            <div class="lang-english">May our life be filled with completeness.</div>
+            <span class="reference">(Yajurveda 40.17 - Purnam Adah)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 43</span>
+            <div class="lang-bangla">সৃষ্টির মূলে রয়েছে শুধু 'এক' সত্তা।</div>
+            <div class="lang-hindi">सृष्टि के मूल में केवल 'एक' सत्ता है।</div>
+            <div class="lang-english">At the root of creation is only the 'One' existence.</div>
+            <span class="reference">(Rigveda 10.129.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 44</span>
+            <div class="lang-bangla">সর্বদা সত্য ও ধর্ম মেনে চলো।</div>
+            <div class="lang-hindi">हमेशा सत्य और धर्म का पालन करो।</div>
+            <div class="lang-english">Always follow truth and righteousness.</div>
+            <span class="reference">(Taittiriya Upanishad 1.11.1 - Veda derived principle)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 45</span>
+            <div class="lang-bangla">পৃথিবী আমাদের কল্যাণের জন্য তৈরি হয়েছে।</div>
+            <div class="lang-hindi">पृथ्वी हमारे कल्याण के लिए बनाई गई है।</div>
+            <div class="lang-english">The Earth has been made for our well-being.</div>
+            <span class="reference">(Atharvaveda 12.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 46</span>
+            <div class="lang-bangla">আকাশের দিকে তাকাও এবং জ্ঞান লাভ করো।</div>
+            <div class="lang-hindi">आकाश की ओर देखो और ज्ञान प्राप्त करो।</div>
+            <div class="lang-english">Look towards the sky and attain knowledge.</div>
+            <span class="reference">(Rigveda 1.164.38 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 47</span>
+            <div class="lang-bangla">আলোকিত ব্যক্তিই সর্বোচ্চ লক্ষ্যে পৌঁছায়।</div>
+            <div class="lang-hindi">प्रबुद्ध व्यक्ति ही सर्वोच्च लक्ष्य तक पहुँचता है।</div>
+            <div class="lang-english">The enlightened person reaches the highest goal.</div>
+            <span class="reference">(Yajurveda 40.15 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 48</span>
+            <div class="lang-bangla">মানুষের হৃদয় হল সকল আকাঙ্ক্ষার উৎস।</div>
+            <div class="lang-hindi">मनुष्य का हृदय सभी इच्छाओं का स्रोत है।</div>
+            <div class="lang-english">The heart of man is the source of all desires.</div>
+            <span class="reference">(Atharvaveda 10.7.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 49</span>
+            <div class="lang-bangla">শুনতে যেন আমরা শত শরৎকাল শুনি।</div>
+            <div class="lang-hindi">सुनने में हम सौ शरद ऋतु सुनें।</div>
+            <div class="lang-english">May we hear for a hundred autumns.</div>
+            <span class="reference">(Yajurveda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 50</span>
+            <div class="lang-bangla">নিজের আত্মাকে জানো।</div>
+            <div class="lang-hindi">अपनी आत्मा को जानो।</div>
+            <div class="lang-english">Know your own Self.</div>
+            <span class="reference">(Yajurveda 40.6 - Implied)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 51</span>
+            <div class="lang-bangla">আমাদের বাক্য যেন মধুর ও কল্যাণকর হয়।</div>
+            <div class="lang-hindi">हमारे शब्द मधुर और कल्याणकारी हों।</div>
+            <div class="lang-english">May our speech be sweet and benevolent.</div>
+            <span class="reference">(Atharvaveda 1.34.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 52</span>
+            <div class="lang-bangla">ঐক্য ও সহযোগিতা জীবনের ভিত্তি।</div>
+            <div class="lang-hindi">एकता और सहयोग जीवन का आधार हैं।</div>
+            <div class="lang-english">Unity and cooperation are the foundation of life.</div>
+            <span class="reference">(Rigveda 10.191.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 53</span>
+            <div class="lang-bangla">জ্ঞানহীন ব্যক্তিরা অন্ধকারেই ঘুরে বেড়ায়।</div>
+            <div class="lang-hindi">ज्ञानहीन लोग अँधेरे में भटकते रहते हैं।</div>
+            <div class="lang-english">Those without knowledge wander in darkness.</div>
+            <span class="reference">(Yajurveda 40.3 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 54</span>
+            <div class="lang-bangla">সময়কে নষ্ট করা উচিত নয়।</div>
+            <div class="lang-hindi">समय को बर्बाद नहीं करना चाहिए।</div>
+            <div class="lang-english">Time should not be wasted.</div>
+            <span class="reference">(Atharvaveda 19.53.6 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 55</span>
+            <div class="lang-bangla">মনের পবিত্রতা অত্যন্ত প্রয়োজন।</div>
+            <div class="lang-hindi">मन की पवित्रता अत्यंत आवश्यक है।</div>
+            <div class="lang-english">Purity of mind is very essential.</div>
+            <span class="reference">(Yajurveda 34.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 56</span>
+            <div class="lang-bangla">আমরা যেন সর্বদা নির্ভয় থাকি।</div>
+            <div class="lang-hindi">हम हमेशा निर्भय रहें।</div>
+            <div class="lang-english">May we always be fearless.</div>
+            <span class="reference">(Yajurveda 36.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 57</span>
+            <div class="lang-bangla">কর্মফল ত্যাগ করে কর্ম করো।</div>
+            <div class="lang-hindi">कर्मों के फल का त्याग करके कर्म करो।</div>
+            <div class="lang-english">Perform action by abandoning the fruit of action.</div>
+            <span class="reference">(Yajurveda 40.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 58</span>
+            <div class="lang-bangla">সকল প্রাণীর মধ্যে এক আত্মাকে দেখো।</div>
+            <div class="lang-hindi">सभी प्राणियों में एक ही आत्मा को देखो।</div>
+            <div class="lang-english">See the one Self in all creatures.</div>
+            <span class="reference">(Yajurveda 40.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 59</span>
+            <div class="lang-bangla">আকাশ ও পৃথিবীর মাঝে শান্তি বিরাজ করুক।</div>
+            <div class="lang-hindi">आकाश और पृथ्वी के बीच शांति बनी रहे।</div>
+            <div class="lang-english">May peace prevail between the sky and the Earth.</div>
+            <span class="reference">(Yajurveda 36.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 60</span>
+            <div class="lang-bangla">সত্যের পথই আমাদের সঠিক গন্তব্যে নিয়ে যায়।</div>
+            <div class="lang-hindi">सत्य का मार्ग ही हमें सही गंतव्य तक ले जाता है।</div>
+            <div class="lang-english">The path of truth leads us to the correct destination.</div>
+            <span class="reference">(Rigveda 1.164.46 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 61</span>
+            <div class="lang-bangla">অন্নকে সম্মান করো।</div>
+            <div class="lang-hindi">अन्न का सम्मान करो।</div>
+            <div class="lang-english">Respect food.</div>
+            <span class="reference">(Taittiriya Upanishad 3.7.1 - Veda derived instruction)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 62</span>
+            <div class="lang-bangla">আমাদের বুদ্ধি ও কর্মক্ষমতা যেন বৃদ্ধি পায়।</div>
+            <div class="lang-hindi">हमारी बुद्धि और कार्यक्षमता बढ़ती रहे।</div>
+            <div class="lang-english">May our intellect and efficiency increase.</div>
+            <span class="reference">(Rigveda 3.62.10 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 63</span>
+            <div class="lang-bangla">সৃষ্টির রহস্য গভীর।</div>
+            <div class="lang-hindi">सृष्टि का रहस्य गहरा है।</div>
+            <div class="lang-english">The mystery of creation is profound.</div>
+            <span class="reference">(Rigveda 10.129.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 64</span>
+            <div class="lang-bangla">জ্ঞানের মাধ্যমে অমরত্ব লাভ হয়।</div>
+            <div class="lang-hindi">ज्ञान के माध्यम से अमरता प्राप्त होती है।</div>
+            <div class="lang-english">Immortality is attained through knowledge.</div>
+            <span class="reference">(Yajurveda 40.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 65</span>
+            <div class="lang-bangla">অন্ধকার থেকে আলোর দিকে নিয়ে চলো।</div>
+            <div class="lang-hindi">अंधकार से प्रकाश की ओर ले चलो।</div>
+            <div class="lang-english">Lead from darkness to light.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.3.28 - Veda derived prayer)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 66</span>
+            <div class="lang-bangla">মনকে সর্বদা উচ্চ লক্ষ্যের দিকে চালিত করো।</div>
+            <div class="lang-hindi">मन को हमेशा उच्च लक्ष्यों की ओर निर्देशित करो।</div>
+            <div class="lang-english">Always direct the mind towards high goals.</div>
+            <span class="reference">(Yajurveda 34.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 67</span>
+            <div class="lang-bangla">আমরা যেন শত শরৎকাল সুস্থ থাকি।</div>
+            <div class="lang-hindi">हम सौ शरद ऋतु तक स्वस्थ रहें।</div>
+            <div class="lang-english">May we be healthy for a hundred autumns.</div>
+            <span class="reference">(Yajurveda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 68</span>
+            <div class="lang-bangla">নিজের প্রতি বিশ্বাস রাখো।</div>
+            <div class="lang-hindi">खुद पर विश्वास रखो।</div>
+            <div class="lang-english">Have faith in yourself.</div>
+            <span class="reference">(Rigveda 1.3.10 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 69</span>
+            <div class="lang-bangla">জীবনের প্রতিটি মুহূর্ত উপভোগ করো।</div>
+            <div class="lang-hindi">जीवन के हर पल का आनंद लो।</div>
+            <div class="lang-english">Enjoy every moment of life.</div>
+            <span class="reference">(Yajurveda 40.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 70</span>
+            <div class="lang-bangla">জ্ঞান অর্জন না করলে জীবন বৃথা।</div>
+            <div class="lang-hindi">ज्ञान प्राप्त न करने पर जीवन व्यर्थ है।</div>
+            <div class="lang-english">Life is futile if knowledge is not attained.</div>
+            <span class="reference">(Rigveda 1.164.48 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 71</span>
+            <div class="lang-bangla">আমাদের সম্মিলিত প্রচেষ্টায় সাফল্য আসুক।</div>
+            <div class="lang-hindi">हमारे सामूहिक प्रयासों में सफलता मिले।</div>
+            <div class="lang-english">May success come through our collective efforts.</div>
+            <span class="reference">(Rigveda 10.191.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 72</span>
+            <div class="lang-bangla">সকলের সাথে বন্ধুত্বপূর্ণ সম্পর্ক বজায় রাখো।</div>
+            <div class="lang-hindi">सभी के साथ मैत्रीपूर्ण संबंध बनाए रखो।</div>
+            <div class="lang-english">Maintain friendly relations with all.</div>
+            <span class="reference">(Atharvaveda 3.30.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 73</span>
+            <div class="lang-bangla">আকাশ যেন মধুর বাক্য উচ্চারণ করেন।</div>
+            <div class="lang-hindi">आकाश मधुर वचन बोले।</div>
+            <div class="lang-english">May the sky utter sweet words.</div>
+            <span class="reference">(Rigveda 1.90.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 74</span>
+            <div class="lang-bangla">অহিংসাই জীবনের শ্রেষ্ঠ নীতি।</div>
+            <div class="lang-hindi">अहिंसा ही जीवन का श्रेष्ठ सिद्धांत है।</div>
+            <div class="lang-english">Non-violence is the supreme principle of life.</div>
+            <span class="reference">(Yajurveda 40.12 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 75</span>
+            <div class="lang-bangla">জ্ঞান অর্জনই মানুষকে সমস্ত দুঃখ থেকে মুক্তি দেয়।</div>
+            <div class="lang-hindi">ज्ञान प्राप्त करना ही मनुष्य को सभी दुखों से मुक्त करता है।</div>
+            <div class="lang-english">Attaining knowledge liberates man from all sorrows.</div>
+            <span class="reference">(Rigveda 1.164.48 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 76</span>
+            <div class="lang-bangla">নিজের পথ নিজেই বেছে নাও।</div>
+            <div class="lang-hindi">अपना रास्ता खुद चुनो।</div>
+            <div class="lang-english">Choose your own path.</div>
+            <span class="reference">(Yajurveda 40.11 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 77</span>
+            <div class="lang-bangla">আমরা যেন শত শরৎকাল কথা বলি।</div>
+            <div class="lang-hindi">हम सौ शरद ऋतु तक बोलें।</div>
+            <div class="lang-english">May we speak for a hundred autumns.</div>
+            <span class="reference">(Yajurveda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 78</span>
+            <div class="lang-bangla">সময় কারো জন্য অপেক্ষা করে না।</div>
+            <div class="lang-hindi">समय किसी का इंतजार नहीं करता।</div>
+            <div class="lang-english">Time waits for no one.</div>
+            <span class="reference">(Atharvaveda 19.53.5 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 79</span>
+            <div class="lang-bangla">সত্যের জয় অনিবার্য।</div>
+            <div class="lang-hindi">सत्य की जीत अवश्यम्भावी है।</div>
+            <div class="lang-english">The victory of truth is inevitable.</div>
+            <span class="reference">(Mundaka Upanishad 3.1.6 - Veda derived principle)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 80</span>
+            <div class="lang-bangla">সকলের হৃদয়ে একই আলো বিদ্যমান।</div>
+            <div class="lang-hindi">सभी के हृदय में एक ही प्रकाश विद्यमान है।</div>
+            <div class="lang-english">The same light exists in everyone's heart.</div>
+            <span class="reference">(Yajurveda 40.6)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 81</span>
+            <div class="lang-bangla">সৎ পথে জীবন যাপন করো।</div>
+            <div class="lang-hindi">सत् मार्ग पर जीवन जियो।</div>
+            <div class="lang-english">Live life on the path of righteousness.</div>
+            <span class="reference">(Rigveda 1.42.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 82</span>
+            <div class="lang-bangla">আমরা যেন কখনোই অলস না হই।</div>
+            <div class="lang-hindi">हम कभी आलसी न हों।</div>
+            <div class="lang-english">May we never be lazy.</div>
+            <span class="reference">(Yajurveda 40.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 83</span>
+            <div class="lang-bangla">প্রকৃতির প্রতি শ্রদ্ধাশীল হও।</div>
+            <div class="lang-hindi">प्रकृति के प्रति শ্রদ্ধাশীল बनो।</div>
+            <div class="lang-english">Be respectful towards nature.</div>
+            <span class="reference">(Atharvaveda 12.1.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 84</span>
+            <div class="lang-bangla">আমাদের সম্মিলিতভাবে কাজ করার শক্তি দাও।</div>
+            <div class="lang-hindi">हमें मिलकर काम करने की शक्ति दो।</div>
+            <div class="lang-english">Give us the strength to work together.</div>
+            <span class="reference">(Rigveda 10.191.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 85</span>
+            <div class="lang-bangla">ঈশ্বর হলেন সকল জ্ঞানের আধার।</div>
+            <div class="lang-hindi">ईश्वर ही सभी ज्ञान का आधार है।</div>
+            <div class="lang-english">God is the foundation of all knowledge.</div>
+            <span class="reference">(Rigveda 1.164.46)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 86</span>
+            <div class="lang-bangla">অন্ধকারে ভয় করো না।</div>
+            <div class="lang-hindi">अंधेरे से मत डरो।</div>
+            <div class="lang-english">Fear not the darkness.</div>
+            <span class="reference">(Yajurveda 40.16 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 87</span>
+            <div class="lang-bangla">মনকে নিয়ন্ত্রণ করতে শেখো।</div>
+            <div class="lang-hindi">मन को नियंत्रित करना सीखो।</div>
+            <div class="lang-english">Learn to control the mind.</div>
+            <span class="reference">(Yajurveda 34.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 88</span>
+            <div class="lang-bangla">শান্তি! জল শান্ত হোক, আকাশ শান্ত হোক।</div>
+            <div class="lang-hindi">शांति! जल शांत हो, आकाश शांत हो।</div>
+            <div class="lang-english">Peace! May the waters be peaceful, may the sky be peaceful.</div>
+            <span class="reference">(Yajurveda 36.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 89</span>
+            <div class="lang-bangla">মানুষের হৃদয়ই আসল ধর্মক্ষেত্র।</div>
+            <div class="lang-hindi">मनुष्य का हृदय ही असली धर्मक्षेत्र है।</div>
+            <div class="lang-english">The heart of man is the real field of righteousness.</div>
+            <span class="reference">(Atharvaveda 10.7.32 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 90</span>
+            <div class="lang-bangla">আমরা যেন শত শরৎকাল সুখী থাকি।</div>
+            <div class="lang-hindi">हम सौ शरद ऋतु तक सुखी रहें।</div>
+            <div class="lang-english">May we be happy for a hundred autumns.</div>
+            <span class="reference">(Yajurveda 36.24)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 91</span>
+            <div class="lang-bangla">কর্মই আমাদের ভাগ্য তৈরি করে।</div>
+            <div class="lang-hindi">कर्म ही हमारा भाग्य बनाता है।</div>
+            <div class="lang-english">Action creates our destiny.</div>
+            <span class="reference">(Yajurveda 40.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 92</span>
+            <div class="lang-bangla">জ্ঞানীরা নীরবতা ও চিন্তায় ডুবে থাকেন।</div>
+            <div class="lang-hindi">ज्ञानी मौन और चिंतन में डूबे रहते हैं।</div>
+            <div class="lang-english">The wise remain absorbed in silence and contemplation.</div>
+            <span class="reference">(Rigveda 10.129.4 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 93</span>
+            <div class="lang-bangla">আমাদের ইচ্ছা যেন শুভ হয়।</div>
+            <div class="lang-hindi">हमारी इच्छाएं शुभ हों।</div>
+            <div class="lang-english">May our wishes be auspicious.</div>
+            <span class="reference">(Yajurveda 34.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 94</span>
+            <div class="lang-bangla">সর্বদা সত্য কথা বলো।</div>
+            <div class="lang-hindi">हमेशा सच बोलो।</div>
+            <div class="lang-english">Always speak the truth.</div>
+            <span class="reference">(Taittiriya Upanishad 1.11.1 - Veda derived instruction)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 95</span>
+            <div class="lang-bangla">আলোই জীবনের মূল ভিত্তি।</div>
+            <div class="lang-hindi">प्रकाश ही जीवन का मूल आधार है।</div>
+            <div class="lang-english">Light is the basic foundation of life.</div>
+            <span class="reference">(Rigveda 1.92.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 96</span>
+            <div class="lang-bangla">সকলের প্রতি উদার হও।</div>
+            <div class="lang-hindi">सभी के प्रति उदार बनो।</div>
+            <div class="lang-english">Be generous towards all.</div>
+            <span class="reference">(Rigveda 10.117.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 97</span>
+            <div class="lang-bangla">প্রকৃতির সাথে একাত্ম হও।</div>
+            <div class="lang-hindi">प्रकृति के साथ एक हो जाओ।</div>
+            <div class="lang-english">Become one with nature.</div>
+            <span class="reference">(Atharvaveda 12.1.11 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 98</span>
+            <div class="lang-bangla">জ্ঞান এবং কর্মের ভারসাম্য প্রয়োজন।</div>
+            <div class="lang-hindi">ज्ञान और कर्म का संतुलन आवश्यक है।</div>
+            <div class="lang-english">The balance between knowledge and action is necessary.</div>
+            <span class="reference">(Yajurveda 40.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 99</span>
+            <div class="lang-bangla">আমাদের সকল শক্তি বৃদ্ধি পাক।</div>
+            <div class="lang-hindi">हमारी सभी शक्तियां बढ़ती रहें।</div>
+            <div class="lang-english">May all our powers increase.</div>
+            <span class="reference">(Rigveda 1.23.23)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 100</span>
+            <div class="lang-bangla">ঈশ্বর এক, কিন্তু তাঁর রূপ অনেক।</div>
+            <div class="lang-hindi">ईश्वर एक है, लेकिन उसके रूप अनेक हैं।</div>
+            <div class="lang-english">God is one, but His forms are many.</div>
+            <span class="reference">(Rigveda 1.164.46)</span>
+        </div>
+       <div class="fixed-nav">
+
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+        
+        <a href="vedas_mantras.html" class="nav-button" active>Part 1</a>
+        
+        <a href="vedas-2.html" class="nav-button">Part 2</a>
+    </div>
+</body>
+</html>
+
+#500 quotes

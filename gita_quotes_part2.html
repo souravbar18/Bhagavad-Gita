@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita Teachings - Part 2</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bhagavad Gita : The Knowledge</h1>
+            <p>Part 2</p>
+        </div>
+        <div class="quote-box">
+        <span class="quote-number">Quote 101</span>
+        <div class="lang-hindi">तमेव शरणं गच्छ सर्वभावेन भारत। तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम्।</div>
+        <div class="lang-bangla">হে ভারত, সর্বতোভাবে তারই শরণাপন্ন হও। তাঁর কৃপায় তুমি পরম শান্তি এবং শাশ্বত ধাম লাভ করবে।</div>
+        <div class="lang-english">Surrender unto Him completely, O Bharata. By His grace you will attain transcendental peace and the supreme and eternal abode. (BG 18.62)</div>
+    </div>
+    <div class="section-heading">कर्मयोग, त्याग और समता (কর্মযোগ, ত্যাগ ও সমতা / Karma, Renunciation, and Equality)</div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 102</span>
+        <div class="lang-hindi">तस्मादसक्तः सततं कार्यं कर्म समाचर। असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः।</div>
+        <div class="lang-bangla">অতএব, তুমি সর্বদা আসক্তিহীন হয়ে কর্তব্য কর্ম করো। কারণ আসক্তিহীনভাবে কর্ম করলে পুরুষ পরমকে প্রাপ্ত হন।</div>
+        <div class="lang-english">Therefore, without being attached to the fruits of activities, one should act as a matter of duty; for by working without attachment, one attains the Supreme. (BG 3.19)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 103</span>
+        <div class="lang-hindi">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।</div>
+        <div class="lang-bangla">তোমার কেবল কর্মেই অধিকার, কর্মফলে কখনোই নয়। কর্মফলের কারণ হয়ো না, আর কর্ম না করার প্রতিও যেন তোমার আসক্তি না থাকে।</div>
+        <div class="lang-english">You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not performing your duty. (BG 2.47)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 104</span>
+        <div class="lang-hindi">योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः। सर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते।</div>
+        <div class="lang-bangla">যোগযুক্ত, বিশুদ্ধচিত্ত, আত্মসংযমী ও জিতেন্দ্রিয় ব্যক্তি, যিনি সমস্ত প্রাণীর আত্মাতে আত্মাকে দর্শন করেন, তিনি কর্ম করেও লিপ্ত হন না।</div>
+        <div class="lang-english">One who works in devotion, who is a pure soul and master of his senses, is dear to everyone, and everyone is dear to him. Though always working, he is never entangled. (BG 5.7)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 105</span>
+        <div class="lang-hindi">यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते। सर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते।</div>
+        <div class="lang-bangla">যখন কেউ ইন্দ্রিয়ের বিষয়সমূহে বা কর্মসমূহে আসক্ত হন না এবং সমস্ত সংকল্প ত্যাগ করেন, তখনই তাঁকে যোগারূঢ় বলা হয়।</div>
+        <div class="lang-english">A person is said to be elevated in yoga when, having renounced all material desires, he neither acts for sense gratification nor engages in fruitive activities. (BG 6.4)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 106</span>
+        <div class="lang-hindi">काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः। सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः।</div>
+        <div class="lang-bangla">কাম্য কর্মের ত্যাগকে বিদ্বান ব্যক্তিগণ সন্ন্যাস বলেন, আর বিচক্ষণ ব্যক্তিরা সমস্ত কর্মফল ত্যাগকেই ত্যাগ বলেন।</div>
+        <div class="lang-english">The giving up of activities that are based on material desire is called the renunciation (Sannyasa) by the wise. And giving up the results of all activities is what the great learned men call abandonment (Tyaga). (BG 18.2)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 107</span>
+        <div class="lang-hindi">कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन। सङ्गं त्यक्त्वा फलं चैव स त्यागः सात्त्विको मतः।</div>
+        <div class="lang-bangla">হে অর্জুন, ‘অবশ্য কর্তব্য’ এই মনে করে যে নিয়মিত কর্ম আসক্তি ও ফল ত্যাগ করে করা হয়, সেই ত্যাগকে সাত্ত্বিক ত্যাগ বলে মনে করা হয়।</div>
+        <div class="lang-english">O Arjuna, when prescribed duty is performed simply because it ought to be done, giving up all attachment to the results, that renunciation is considered to be in the mode of goodness (Sattvika). (BG 18.9)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 108</span>
+        <div class="lang-hindi">श्रेयान् स्वधर्मो विगुणः परधर्मात् स्वनुष्ठितात्।</div>
+        <div class="lang-bangla">নিজে ত্রুটিপূর্ণভাবে অনুষ্ঠিত হলেও নিজের ধর্ম (স্বধর্ম) ভালোভাবে অনুষ্ঠিত পরের ধর্ম অপেক্ষা শ্রেষ্ঠ।</div>
+        <div class="lang-english">It is better to engage in one's own occupation, even though one may perform it imperfectly, than to accept another's occupation and perform it perfectly. (BG 18.47)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 109</span>
+        <div class="lang-hindi">यद्यहङ्कारमाश्रित्य न योत्स्य इति मन्यसे। मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति।</div>
+        <div class="lang-bangla">যদি তুমি অহংকারের বশে মনে করো যে 'যুদ্ধ করব না', তবে তোমার এই সংকল্প মিথ্যা; কারণ প্রকৃতি তোমাকে যুদ্ধে প্রবৃত্ত করবেই।</div>
+        <div class="lang-english">If you do not fight after taking shelter of your false ego, your determination will be useless. By your nature, you will have to engage. (BG 18.59)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 110</span>
+        <div class="lang-hindi">स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा। कर्तुं नेच्छसि यन्मोहात् करिष्यस्यवशोऽपि तत्।</div>
+        <div class="lang-bangla">হে কৌন্তেয়, মোহবশত তুমি যা করতে চাইছ না, তোমার স্বভাবজাত কর্ম দ্বারা বদ্ধ হয়ে তুমি তা করতে বাধ্য হবে।</div>
+        <div class="lang-english">Under illusion, you are now refusing to act according to My direction. But compelled by your own nature, O son of Kuntī, you will act all the same. (BG 18.60)</div>
+    </div>
+
+    <div class="section-heading">দৈব ও আসুরিক সম্পদ (दैवी और आसुरी संपदा / Divine and Demoniac Nature)</div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 111</span>
+        <div class="lang-hindi">अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः। दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्।</div>
+        <div class="lang-bangla">অভয়, সত্ত্বের শুদ্ধি, জ্ঞানযোগে অবস্থিতি, দান, দম (সংযম), যজ্ঞ, স্বাধ্যায় (শাস্ত্র পাঠ), তপস্যা এবং সরলতা। (দৈবী সম্পদ)</div>
+        <div class="lang-english">Fearlessness, purification of one's existence, cultivation of spiritual knowledge, charity, self-control, performance of sacrifice, study of the Vedas, austerity, and simplicity. (Divine Assets) (BG 16.1)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 112</span>
+        <div class="lang-hindi">तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता। भवन्ति सम्पदं दैवीमभिजातस्य भारत।</div>
+        <div class="lang-bangla">তেজ, ক্ষমা, ধৈর্য, পবিত্রতা, অ-দ্রোহ এবং অভিমানশূন্যতা - এই গুণগুলি দৈবী সম্পদ নিয়ে জন্মগ্রহণকারী পুরুষের মধ্যে বিদ্যমান থাকে।</div>
+        <div class="lang-english">Vigor, forgiveness, fortitude, cleanliness, and freedom from envy and from the passion for honor—these transcendent qualities belong to those endowed with the divine nature, O son of Bharata. (BG 16.3)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 113</span>
+        <div class="lang-hindi">दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च। अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्।</div>
+        <div class="lang-bangla">দম্ভ, দর্প, অভিমান, ক্রোধ, কাঠিন্য এবং অজ্ঞানতা - হে পার্থ, এইগুলি আসুরিক সম্পদ নিয়ে জন্মগ্রহণকারীর লক্ষণ।</div>
+        <div class="lang-english">Pride, arrogance, conceit, anger, harshness and ignorance—these qualities belong to those of a demoniac nature, O son of Pṛthā. (BG 16.4)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 114</span>
+        <div class="lang-hindi">आशापाशशतैर्बद्धाः कामक्रोधपरायणाः। ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान्।</div>
+        <div class="lang-bangla">শত শত আশার বন্ধনে আবদ্ধ হয়ে, কাম ও ক্রোধে মগ্ন হয়ে, তারা অন্যায়ভাবে অর্থ সংগ্রহ করতে চায় কেবল ইন্দ্রিয়সুখের জন্য।</div>
+        <div class="lang-english">Bound by hundreds and thousands of desires, absorbed in lust and anger, they secure money by illegal means for sense gratification. (BG 16.12)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 115</span>
+        <div class="lang-hindi">अनेकचित्तविभ्रान्ता मोहजालसमावृताः। प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ।</div>
+        <div class="lang-bangla">নানাবিধ চিন্তায় বিভ্রান্ত, মোহের জালে আবৃত, এবং কাম্য ভোগে আসক্ত হয়ে তারা অপবিত্র নরকে পতিত হয়।</div>
+        <div class="lang-english">Perplexed by various anxieties and entangled in a network of illusion, they become too strongly attached to sense enjoyment and fall down into hell. (BG 16.16)</div>
+    </div>
+
+    <div class="section-heading">ত্রিগুণ ও মুক্তি (त्रिगुण और मुक्ति / The Three Modes and Liberation)</div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 116</span>
+        <div class="lang-hindi">तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम्। सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ।</div>
+        <div class="lang-bangla">হে নিষ্পাপ, সেই সত্ত্বগুণ নির্মল হওয়ার কারণে প্রকাশক ও রোগমুক্ত। এটি সুখ ও জ্ঞানের আসক্তির দ্বারা জীবকে আবদ্ধ করে।</div>
+        <div class="lang-english">O sinless one, the mode of goodness (Sattva), being purer than the others, is illuminating and free from all sinful reactions. It binds one by a sense of happiness and knowledge. (BG 14.6)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 117</span>
+        <div class="lang-hindi">रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम्। तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्।</div>
+        <div class="lang-bangla">হে কৌন্তেয়, তুমি রজোগুণকে অনুরাগস্বরূপ জানো, যা তৃষ্ণা ও আসক্তি থেকে উৎপন্ন। এটি কর্মের আসক্তির দ্বারা দেহীকে আবদ্ধ করে।</div>
+        <div class="lang-english">The mode of passion (Rajas) is characterized by intense desires and attachment, arising from unlimited desires and longings; it binds the embodied soul, O son of Kuntī, to fruitive action. (BG 14.7)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 118</span>
+        <div class="lang-hindi">तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्। प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत।</div>
+        <div class="lang-bangla">হে ভারত, তুমি তমোগুণকে অজ্ঞানতা থেকে উৎপন্ন এবং সকল দেহীকে মোহিতকারী বলে জানো। এটি প্রমাদ (বিভ্রম), আলস্য এবং নিদ্রা দ্বারা জীবকে আবদ্ধ করে।</div>
+        <div class="lang-english">O son of Bharata, know the mode of darkness (Tamas) to be born of ignorance, and it is the delusion of all embodied living entities. The result of this mode is madness, indolence and sleep, which bind the conditioned soul. (BG 14.8)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 119</span>
+        <div class="lang-hindi">प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव। न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति।</div>
+        <div class="lang-bangla">হে পাণ্ডব, যিনি সত্ত্বগুণ (প্রকাশ), রজোগুণ (প্রবৃত্তি) ও তমোগুণ (মোহ) বর্তমান থাকলে দ্বেষ করেন না বা নিবৃত্ত হলে কামনা করেন না। (গুণাতীতের লক্ষণ)</div>
+        <div class="lang-english">O son of Pāṇḍu, he who does not hate illumination, attachment, and delusion when they are present, nor longs for them when they disappear. (BG 14.22)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 120</span>
+        <div class="lang-hindi">मां च योऽव्यभिचारेण भक्तियोगेन सेवते। स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते।</div>
+        <div class="lang-bangla">যিনি অব্যভিচারী ভক্তিযোগ দ্বারা আমাকে সেবা করেন, তিনি এই ত্রিগুণকে অতিক্রম করে ব্রহ্ম-প্রাপ্তির যোগ্য হন।</div>
+        <div class="lang-english">One who engages in full devotional service, unfailing in all circumstances, at once transcends the modes of material nature and thus comes to the level of Brahman. (BG 14.26)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 121</span>
+        <div class="lang-hindi">कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते। पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।</div>
+        <div class="lang-bangla">কার্য ও কারণের কর্তৃত্বে প্রকৃতিকে কারণ বলা হয়; পুরুষকে সুখ-দুঃখ ভোগের ক্ষেত্রে কারণ বলা হয়।</div>
+        <div class="lang-english">Nature is said to be the cause of all material activities and effects, while the living entity (Puruṣa) is the cause of experiencing the various joys and sorrows. (BG 13.20)</div>
+    </div>
+
+    <div class="section-heading">জ্ঞানের পথে আরও কিছু উক্তি (More Quotes on the Path of Knowledge)</div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 122</span>
+        <div class="lang-hindi">मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये। यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः।</div>
+        <div class="lang-bangla">হাজার হাজার মানুষের মধ্যে হয়তো কেউ সিদ্ধির জন্য চেষ্টা করে, আর সেই যত্নশীল সিদ্ধদের মধ্যেও হয়তো কেউ একজন আমাকে যথার্থরূপে জানতে পারে।</div>
+        <div class="lang-english">Out of many thousands among men, one may endeavor for perfection, and of those who have achieved perfection, hardly one knows Me in truth. (BG 7.3)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 123</span>
+        <div class="lang-hindi">न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः। माययापहृतज्ञाना आसुरं भावमाश्रिताः।</div>
+        <div class="lang-bangla">দুষ্কৃতিকারী মূঢ় নরাধমেরা আমার শরণাপন্ন হয় না, যারা মায়া দ্বারা জ্ঞান হারিয়েছে এবং যারা আসুরিক ভাব আশ্রয় করেছে।</div>
+        <div class="lang-english">Those miscreants who are grossly foolish, who are the lowest among mankind, whose knowledge is stolen by illusion, and who partake of the atheistic nature of demons do not surrender unto Me. (BG 7.15)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 124</span>
+        <div class="lang-hindi">ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते। अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते।</div>
+        <div class="lang-bangla">যা জ্ঞেয়, সেই বিষয়ে আমি এখন বলব, যা জানলে মানুষ অমৃত লাভ করে। সেই অনাদি ও পরম ব্রহ্মকে সৎ বা অসৎ কোনোটিই বলা যায় না।</div>
+        <div class="lang-english">I shall now explain the knowable, knowing which you will taste the eternal. It is beginningless, and subordinate to Me. It lies beyond both the temporary world of matter and the eternal individual soul. (BG 13.13)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 125</span>
+        <div class="lang-hindi">न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा।</div>
+        <div class="lang-bangla">এই সংসারের প্রকৃত রূপ এখানে পাওয়া যায় না, এর আদি নেই, অন্ত নেই এবং প্রতিষ্ঠা নেই।</div>
+        <div class="lang-english">The real form of this tree cannot be perceived in this world. No one can understand where it ends, where it begins, or where its foundation is. (BG 15.3)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 126</span>
+        <div class="lang-hindi">न तद्भासयते सूर्यो न शशाङ्को न पावकः। यद्गत्वा न निवर्तन्ते तद्धाम परमं मम।</div>
+        <div class="lang-bangla">যে ধামকে সূর্য, চন্দ্র বা আগুন আলোকিত করতে পারে না, যে ধামে গেলে আর ফিরে আসতে হয় না, সেটাই আমার পরম ধাম।</div>
+        <div class="lang-english">That supreme abode of Mine is not illumined by the sun or moon, nor by fire or electricity. Those who reach it never return to this material world. (BG 15.6)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 127</span>
+        <div class="lang-hindi">ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना। करणं कर्म कर्तेति त्रिविधः कर्मसंग्रहः।</div>
+        <div class="lang-bangla">জ্ঞান, জ্ঞেয় ও পরিজ্ঞাতা – এই তিনটি কর্মের প্রেরণা দেয়। করণ, কর্ম ও কর্তা – এই তিনটি কর্মের সংগ্রহ।</div>
+        <div class="lang-english">Knowledge, the object of knowledge, and the knower are the three factors that motivate action; the senses, the action, and the doer are the three constituents of action. (BG 18.18)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 128</span>
+        <div class="lang-hindi">श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः। ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति।</div>
+        <div class="lang-bangla">শ্রদ্ধাবান ও জিতেন্দ্রিয় ব্যক্তি জ্ঞান লাভ করেন। জ্ঞান লাভ করে তিনি অবিলম্বে পরম শান্তি লাভ করেন।</div>
+        <div class="lang-english">A faithful man who is dedicated to transcendental knowledge and who subdues his senses is eligible to achieve such knowledge, and having achieved it, he quickly attains the supreme spiritual peace. (BG 4.39)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 129</span>
+        <div class="lang-hindi">विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्।</div>
+        <div class="lang-bangla">আমি আমার এক অংশ দ্বারা এই সম্পূর্ণ জগৎকে ধারণ করে অবস্থান করছি।</div>
+        <div class="lang-english">I maintain this entire universe by a single fragment of Myself. (BG 10.42)</div>
+    </div>
+
+    <div class="section-heading">মোক্ষ এবং শরণাগতি (मोक्ष और शरणागति / Liberation and Surrender)</div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 130</span>
+        <div class="lang-hindi">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज। अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः।</div>
+        <div class="lang-bangla">সমস্ত প্রকার ধর্ম (কর্তব্য) পরিত্যাগ করে কেবল আমার শরণাপন্ন হও। আমি তোমাকে সমস্ত পাপ থেকে মুক্ত করব, ভয় করো না।</div>
+        <div class="lang-english">Abandon all varieties of dharma and just surrender unto Me. I shall deliver you from all sinful reactions; do not fear. (BG 18.66)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 131</span>
+        <div class="lang-hindi">अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्। यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः।</div>
+        <div class="lang-bangla">অন্তিমকালে যিনি কেবল আমাকে স্মরণ করে দেহত্যাগ করেন, তিনি আমার ভাব প্রাপ্ত হন, এতে কোনো সন্দেহ নেই।</div>
+        <div class="lang-english">And whoever, at the time of death, quits his body, remembering Me alone, at once attains My nature. Of this there is no doubt. (BG 8.5)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 132</span>
+        <div class="lang-hindi">मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः। स्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्।</div>
+        <div class="lang-bangla">হে পার্থ, পাপযোনি হলেও যারা আমার শরণাপন্ন হয়, স্ত্রী, বৈশ্য ও শূদ্র—তারাও পরম গতি লাভ করে।</div>
+        <div class="lang-english">O son of Pṛthā, those who take shelter in Me, though they be of lower birth—women, vaiśyas, as well as śūdras—can approach the supreme destination. (BG 9.32)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 133</span>
+        <div class="lang-hindi">मय्येव मन आधत्स्व मयि बुद्धिं निवेशय। निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः।</div>
+        <div class="lang-bangla">আমায় মন নিবেশ করো, আমায় বুদ্ধি অর্পণ করো। এরপর তুমি আমাতেই বাস করবে, এতে কোনো সন্দেহ নেই।</div>
+        <div class="lang-english">Just fix your mind upon Me, the Supreme Personality of Godhead, and engage all your intelligence in Me. Thus you will live in Me always, without a doubt. (BG 12.8)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 134</span>
+        <div class="lang-hindi">अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः। सर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः।</div>
+        <div class="lang-bangla">যিনি আকাঙ্ক্ষাহীন, পবিত্র, দক্ষ, উদাসীন, যিনি কোনো ব্যথা অনুভব করেন না এবং যিনি সমস্ত ফলদায়ী কর্ম পরিত্যাগ করেছেন, সেই ভক্ত আমার প্রিয়।</div>
+        <div class="lang-english">A devotee who is indifferent, pure, expert, without care for the results of his works, and free from all painful endeavor, and who renounces all endeavors for result, is very dear to Me. (BG 12.16)</div>
+    </div>
+
+    <div class="section-heading">অতিরিক্ত অনুপ্রেরণামূলক উক্তি (Additional Inspirational Sayings)</div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 135</span>
+        <div class="lang-hindi">उद्धरेदात्मनात्मानं नात्मानमवसादयेत्। आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः।</div>
+        <div class="lang-bangla">মানুষ তার নিজের দ্বারাই নিজেকে উদ্ধার করবে, নিজেকে অধঃপতিত করবে না। আত্মাই আত্মার বন্ধু, আর আত্মাই আত্মার শত্রু।</div>
+        <div class="lang-english">A man must elevate himself by his own mind, not degrade himself. The mind is the friend of the conditioned soul, and the mind is also his enemy. (BG 6.5)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 136</span>
+        <div class="lang-hindi">बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः। अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्।</div>
+        <div class="lang-bangla">যার দ্বারা আত্মা আত্মাকে জয় করেছে, তার আত্মা আত্মার বন্ধু। কিন্তু যে আত্মাকে জয় করতে পারেনি, তার আত্মা শত্রুর মতোই কাজ করে।</div>
+        <div class="lang-english">For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his mind will remain the greatest enemy. (BG 6.6)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 137</span>
+        <div class="lang-hindi">तेषामेवानुकम्पार्थमहमज्ञानजं तमः। नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता।</div>
+        <div class="lang-bangla">কেবল তাদের প্রতি করুণা করার জন্য আমি তাদের হৃদয়ে অবস্থিত হয়ে জ্ঞানরূপ উজ্জ্বল দীপ দ্বারা অজ্ঞানতা থেকে উদ্ভূত অন্ধকার দূর করি।</div>
+        <div class="lang-english">To show them special mercy, I dwell in their hearts, destroying with the shining lamp of knowledge the darkness born of ignorance. (BG 10.11)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 138</span>
+        <div class="lang-hindi">यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।</div>
+        <div class="lang-bangla">যখনই ধর্মের পতন হয়, হে ভারত।</div>
+        <div class="lang-english">Whenever and wherever there is a decline in religious practice, O descendant of Bharata. (BG 4.7)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 139</span>
+        <div class="lang-hindi">परित्राणाय साधूनां विनाशाय च दुष्कृताम्।</div>
+        <div class="lang-bangla">সাধুদের রক্ষা করার জন্য এবং দুষ্কৃতিকারীদের বিনাশ করার জন্য।</div>
+        <div class="lang-english">To deliver the pious and to annihilate the miscreants. (BG 4.8)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 140</span>
+        <div class="lang-hindi">यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः। तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम।</div>
+        <div class="lang-bangla">যেখানে যোগেশ্বর কৃষ্ণ এবং যেখানে ধনুর্বিদ পার্থ (অর্জুন) আছেন, সেখানেই শ্রী (ঐশ্বর্য), বিজয়, নিশ্চিত নীতি এবং অবিচল মতি থাকে - ইহাই আমার ধারণা।</div>
+        <div class="lang-english">Wherever there is Kṛṣṇa, the master of all mystics, and wherever there is Arjuna, the supreme archer, there will also certainly be opulence, victory, extraordinary power, and morality. That is my opinion. (BG 18.78)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 141</span>
+        <div class="lang-hindi">न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम्। जोषयेत्सर्वकर्माणि विद्वान्युक्तः समाचरन्।</div>
+        <div class="lang-bangla">জ্ঞানী ব্যক্তিরা কর্মে আসক্ত অজ্ঞানীদের বুদ্ধিভেদ করবেন না। বরং যুক্ত হয়ে সমস্ত কর্ম যথাযথভাবে করে তাদের উৎসাহিত করবেন।</div>
+        <div class="lang-english">A wise person should not disturb the minds of the ignorant, who are attached to fruitive activities. Rather, by working in the spirit of devotion, they should engage them in all sorts of activities. (BG 3.26)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 142</span>
+        <div class="lang-hindi">इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया। विमृश्यैतदशेषेण यथेच्छसि तथा कुरु।</div>
+        <div class="lang-bangla">এইরূপে আমি তোমাকে গুহ্য অপেক্ষাও গুহ্যতর জ্ঞান বললাম। তুমি এই সমস্ত সম্পূর্ণরূপে বিবেচনা করে যা ইচ্ছা তাই করো।</div>
+        <div class="lang-english">Thus I have explained to you knowledge still more confidential. Deliberate on this fully, and then do what you wish to do. (BG 18.63)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 143</span>
+        <div class="lang-hindi">सर्वगुह्यतमं भूयः श्रृणु मे परमं वचः। इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम्।</div>
+        <div class="lang-bangla">সকল গুহ্যের চেয়েও গুহ্য আমার পরম বাক্য পুনরায় শ্রবণ করো। তুমি আমার অত্যন্ত প্রিয়, তাই তোমার হিতের জন্য আমি তোমাকে বলছি।</div>
+        <div class="lang-english">Hear again My supreme word, the most confidential of all. Because you are My very dear friend, I am speaking this ultimate instruction for your benefit. (BG 18.64)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 144</span>
+        <div class="lang-hindi">मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः। निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव।</div>
+        <div class="lang-bangla">যে আমার জন্য কর্ম করে, আমাকেই পরম বলে মনে করে, আমার ভক্ত, আসক্তিহীন এবং সকল প্রাণীর প্রতি শত্রুতাহীন, সে আমাকেই প্রাপ্ত হয়, হে পাণ্ডব।</div>
+        <div class="lang-english">One who engages in My pure devotional service, is free from the contaminations of fruitive activities and mental speculation, works for Me, makes Me the supreme goal, and is friendly to every living entity—he certainly comes to Me. (BG 11.55)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 145</span>
+        <div class="lang-hindi">ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते। सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते।</div>
+        <div class="lang-bangla">বিষয়ের ধ্যান করতে থাকলে তাতে আসক্তি জন্মায়। আসক্তি থেকে কামনা এবং কামনা থেকে ক্রোধের জন্ম হয়।</div>
+        <div class="lang-english">While contemplating the objects of the senses, a person develops attachment for them, and from such attachment lust develops, and from lust anger arises. (BG 2.62)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 146</span>
+        <div class="lang-hindi">क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः। स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।</div>
+        <div class="lang-bangla">ক্রোধ থেকে মোহ উৎপন্ন হয়, মোহ থেকে স্মৃতির বিভ্রম ঘটে। স্মৃতিভ্রষ্ট হলে বুদ্ধিনাশ হয় এবং বুদ্ধিনাশ হলে মানুষ ধ্বংস হয়।</div>
+        <div class="lang-english">From anger comes complete delusion, and from delusion bewilderment of memory. When memory is bewildered, intelligence is lost, and when intelligence is lost one falls down again. (BG 2.63)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 147</span>
+        <div class="lang-hindi">भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्। सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।</div>
+        <div class="lang-bangla">যজ্ঞ ও তপস্যার ভোক্তা, সমস্ত লোকের মহেশ্বর এবং সকল প্রাণীর সুহৃদ হিসেবে আমাকে জানলে শান্তি লাভ করে।</div>
+        <div class="lang-english">The sages, knowing Me as the ultimate purpose of all sacrifices and austerities, the Supreme Lord of all planets and demigods, and the benefactor and well-wisher of all living entities, attain peace from the pangs of material miseries. (BG 5.29)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 148</span>
+        <div class="lang-hindi">समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः। ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्।</div>
+        <div class="lang-bangla">আমি সকল প্রাণীর প্রতি সমভাবাপন্ন, আমার কেউ দ্বেষ্য বা প্রিয় নেই। কিন্তু যারা ভক্তি সহকারে আমাকে ভজনা করে, তারা আমাতে থাকে এবং আমিও তাদের মধ্যে থাকি।</div>
+        <div class="lang-english">I am equally disposed to all living entities; I am neither hateful nor favorable to anyone. But those who render transcendental service unto Me are My friends, and they are in Me, and I am also a friend to them. (BG 9.29)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 149</span>
+        <div class="lang-hindi">श्रेयान् स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्। स्वधर्मे निधनं श्रेयः परधर्मो भयावहः।</div>
+        <div class="lang-bangla">নিজে ত্রুটিপূর্ণভাবে অনুষ্ঠিত হলেও নিজের ধর্ম (স্বধর্ম) ভালোভাবে অনুষ্ঠিত পরের ধর্ম অপেক্ষা শ্রেষ্ঠ। স্বধর্মে মরণও শ্রেয়, কারণ পরের ধর্ম ভয়াবহ।</div>
+        <div class="lang-english">It is far better to discharge one’s prescribed duties, even though faultily, than another’s duties perfectly. Destruction in the course of performing one’s own duty is better than engaging in another’s duties, for to follow another’s path is dangerous. (BG 3.35)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 150</span>
+        <div class="lang-hindi">चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः। बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव।</div>
+        <div class="lang-bangla">মন দ্বারা সমস্ত কর্ম আমাতে অর্পণ করে, আমাকেই পরম লক্ষ্য স্থির করে, তুমি বুদ্ধিযোগ আশ্রয়পূর্বক সর্বদা আমাতে চিত্ত নিবেশ করো।</div>
+        <div class="lang-english">In all activities just depend upon Me and work always under My protection. In such devotional service, be fully conscious of Me. (BG 18.57)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 151</span>
+        <div class="lang-hindi">समः शत्रौ च मित्रे च तथा मानापमानयोः। शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः।</div>
+        <div class="lang-bangla">যিনি শত্রু ও মিত্রের প্রতি সমভাবাপন্ন, যিনি মান-অপমানে, শীত-উষ্ণ ও সুখ-দুঃখে সমান এবং আসক্তিহীন।</div>
+        <div class="lang-english">One who is equal to friends and enemies, who is equipoised in honor and dishonor, heat and cold, happiness and distress, and who is always free from contaminating association. (BG 12.18)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 152</span>
+        <div class="lang-hindi">मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु। मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः।</div>
+        <div class="lang-bangla">আমায় মন দাও, আমার ভক্ত হও, আমার পূজা করো, আমাকে প্রণাম করো। এইভাবে আত্মাকে আমাতে যুক্ত করলে তুমি অবশ্যই আমাকে লাভ করবে।</div>
+        <div class="lang-english">Engage your mind always in thinking of Me, become My devotee, offer worship to Me and bow down before Me. By perfectly engaging yourself in Me, you will certainly come to Me. (BG 9.34)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 153</span>
+        <div class="lang-hindi">उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः। परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः।</div>
+        <div class="lang-bangla">এই দেহে অবস্থিত পরম পুরুষ উপদ্রষ্টা, অনুমন্তা, ভর্তা, ভোক্তা, মহেশ্বর এবং পরমাত্মা নামে অভিহিত হন।</div>
+        <div class="lang-english">Yet in this body there is another, a transcendental enjoyer, who is the Lord, the supreme proprietor, and who exists as the overseer and sanctioner. (BG 13.22)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 154</span>
+        <div class="lang-hindi">अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्। स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते।</div>
+        <div class="lang-bangla">যে বাক্য উদ্বেগ সৃষ্টি করে না, যা সত্য, প্রিয় এবং হিতকর, এবং স্বাধ্যায় (শাস্ত্র পাঠ)-এর অনুশীলন, তাকে বাচনিক তপস্যা বলা হয়।</div>
+        <div class="lang-english">Austerity of speech consists of speaking words that are truthful, pleasing, beneficial, and not agitating to others, and also of regularly reciting Vedic literature. (BG 17.15)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 155</span>
+        <div class="lang-hindi">दातव्यमिति यद्दानं दीयतेऽनुपकारिणे। देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम्।</div>
+        <div class="lang-bangla">দান করা উচিত—এই মনে করে যে দান প্রত্যুপকারহীন ব্যক্তিকে উপযুক্ত দেশ, কাল ও পাত্রে দেওয়া হয়, সেই দানকে সাত্ত্বিক দান বলা হয়।</div>
+        <div class="lang-english">That gift which is given out of duty, at the proper time and place, and to a worthy person, without expectation of return, is considered to be in the mode of goodness (Sattvika). (BG 17.20)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 156</span>
+        <div class="lang-hindi">मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये।</div>
+        <div class="lang-bangla">হাজার হাজার মানুষের মধ্যে হয়তো কেউ সিদ্ধির জন্য চেষ্টা করে।</div>
+        <div class="lang-english">Out of many thousands among men, one may endeavor for perfection. (BG 7.3 - Repetition for emphasis)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 157</span>
+        <div class="lang-hindi">अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः। शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते।</div>
+        <div class="lang-bangla">হে কৌন্তেয়, অনাদি ও নির্গুণ হওয়ার কারণে এই অব্যয় পরমাত্মা দেহে থেকেও কিছু করেন না এবং লিপ্ত হন না।</div>
+        <div class="lang-english">Those with the vision of eternity can see that the imperishable soul is transcendental, eternal, and beyond the modes of nature. Despite contact with the material body, O Arjuna, the soul neither acts nor is entangled. (BG 13.31)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 158</span>
+        <div class="lang-hindi">पिताहमस्य जगतो माता धाता পিতামहः। वेद्यं पवित्रमोङ्कार ऋक्साम यजुरेव च।</div>
+        <div class="lang-bangla">আমিই এই জগতের পিতা, মাতা, ধাতা এবং পিতামহ। আমিই জ্ঞেয়, পবিত্রকারী ও ওঙ্কার এবং ঋক্, সাম ও যজুঃ বেদ।</div>
+        <div class="lang-english">I am the father of this universe, the mother, the support, and the grandfather. I am the object of knowledge, the purifier, and the syllable oṁ. I am also the Ṛg, Sāma, and Yajur Vedas. (BG 9.17)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 159</span>
+        <div class="lang-hindi">यो मामजमनादिं च वेत्ति लोकमहेश्वरम्। असम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते।</div>
+        <div class="lang-bangla">যিনি আমাকে জন্মরহিত, অনাদি ও সমস্ত লোকের মহেশ্বর বলে জানেন, সেই মোহমুক্ত মানুষ সমস্ত পাপ থেকে মুক্ত হন।</div>
+        <div class="lang-english">He who knows Me as the unborn, as the beginningless, as the Supreme Lord of all the worlds—he, undeluded among men, is freed from all sins. (BG 10.3)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 160</span>
+        <div class="lang-hindi">यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते। हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते।</div>
+        <div class="lang-bangla">যার অহংকারী ভাব নেই এবং যার বুদ্ধি লিপ্ত হয় না, সে এই সমস্ত লোককে হত্যা করেও হত্যা করে না বা তাতে বদ্ধ হয় না।</div>
+        <div class="lang-english">One who is not motivated by false ego, whose intelligence is not entangled, although he kills men in this world, he does not kill, nor is he bound by his actions. (BG 18.17)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 161</span>
+        <div class="lang-hindi">सीदन्ति मम गात्राणि मुखं च परिशुष्यति। वेपथुश्च शरीरे मे रोमहर्षश्च जायते।</div>
+        <div class="lang-bangla">আমার অঙ্গ-প্রত্যঙ্গগুলি অবসন্ন হচ্ছে এবং মুখ শুকিয়ে যাচ্ছে; আমার শরীরে কম্পন হচ্ছে এবং রোমাঞ্চ হচ্ছে। (অর্জুনের বিষাদ)</div>
+        <div class="lang-english">My limbs are trembling, my mouth is dry, my whole body is shivering, and my hair is standing on end. (Arjuna's distress) (BG 1.28)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 162</span>
+        <div class="lang-hindi">कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः। यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।</div>
+        <div class="lang-bangla">কৃপণতা জনিত দুর্বলতার কারণে আমি ধর্ম বিষয়ে মোহাচ্ছন্ন হয়ে তোমাকে জিজ্ঞাসা করছি। যা আমার জন্য নিশ্চিতভাবে শ্রেয়, তা আমাকে বলো। আমি তোমার শিষ্য, তোমার শরণাগত আমাকে শিক্ষা দাও।</div>
+        <div class="lang-english">Now I am confused about my duty and have lost all composure because of miserly weakness. In this condition I am asking You to tell me clearly what is best for me. Now I am Your disciple, and a soul surrendered unto You. Please instruct me. (BG 2.7)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 163</span>
+        <div class="lang-hindi">अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे। गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।</div>
+        <div class="lang-bangla">তুমি যাদের জন্য শোক করো না, তাদের জন্য শোক করছো এবং পণ্ডিতের মতো কথা বলছো। যারা পণ্ডিত, তারা মৃত বা জীবিত কারও জন্যই শোক করেন না।</div>
+        <div class="lang-english">While speaking learned words, you are mourning for what is not worthy of grief. Those who are wise lament neither for the living nor for the dead. (BG 2.11)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 164</span>
+        <div class="lang-hindi">वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही।</div>
+        <div class="lang-bangla">মানুষ যেমন পুরনো বস্ত্র ত্যাগ করে নতুন বস্ত্র পরিধান করে, তেমনই আত্মা পুরনো দেহ ত্যাগ করে নতুন দেহে প্রবেশ করে।</div>
+        <div class="lang-english">As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones. (BG 2.22)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 165</span>
+        <div class="lang-hindi">देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा। तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति।</div>
+        <div class="lang-bangla">দেহে যেমন শৈশব, যৌবন ও বার্ধক্য আসে, তেমনই আত্মার অন্য দেহ প্রাপ্তি ঘটে। ধীর ব্যক্তি এতে মোহগ্রস্ত হন না।</div>
+        <div class="lang-english">As the embodied soul continually passes, in this body, from boyhood to youth to old age, the soul similarly passes into another body at death. A sober person is not bewildered by such a change. (BG 2.13)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 166</span>
+        <div class="lang-hindi">न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्। कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।</div>
+        <div class="lang-bangla">কেউই কোনো সময়ে এক মুহূর্তের জন্যও কর্ম না করে থাকতে পারে না; কারণ সকলেই প্রকৃতিজাত গুণসমূহের দ্বারা পরাধীন হয়ে কর্ম করতে বাধ্য হয়।</div>
+        <div class="lang-english">All men are forced to act helplessly according to the impulses born of the modes of material nature; therefore no one can refrain from doing something, not even for a moment. (BG 3.5)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 167</span>
+        <div class="lang-hindi">न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा। इति मां योऽभिजानाति कर्मभिर्न स बध्यते।</div>
+        <div class="lang-bangla">কর্ম আমাকে লিপ্ত করে না এবং কর্মফলে আমার কোনো স্পৃহা নেই। যে আমাকে এইভাবে জানে, সেও কর্মের দ্বারা বদ্ধ হয় না।</div>
+        <div class="lang-english">There is no work that affects Me, nor do I aspire for the fruits of action. One who understands this truth about Me also does not become entangled in the fruitive reactions of work. (BG 4.14)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 168</span>
+        <div class="lang-hindi">तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया। उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।</div>
+        <div class="lang-bangla">প্রণিপাতের (শ্রদ্ধাভরে প্রণাম), প্রশ্ন ও সেবার মাধ্যমে সেই জ্ঞান লাভ করো। তত্ত্বদর্শী জ্ঞানী ব্যক্তিরা তোমাকে সেই জ্ঞান উপদেশ করবেন।</div>
+        <div class="lang-english">Just try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him. The self-realized souls can impart knowledge unto you because they have seen the truth. (BG 4.34)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 169</span>
+        <div class="lang-hindi">ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः। लिप्यते न स पापेन पद्मपत्रमिवाम्भसा।</div>
+        <div class="lang-bangla">যে ব্যক্তি ব্রহ্মে সমস্ত কর্ম অর্পণ করে এবং আসক্তি ত্যাগ করে কর্ম করে, সে জলের দ্বারা পদ্মপত্রের মতো পাপ দ্বারা লিপ্ত হয় না।</div>
+        <div class="lang-english">One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is untouched by sinful action, just as a lotus leaf is untouched by water. (BG 5.10)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 170</span>
+        <div class="lang-hindi">प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्। উপৈতি শান্তরজসং ব্রহ্মভূতমकल्मषम्।</div>
+        <div class="lang-bangla">এই প্রশান্তচিত্ত যোগী, যার রজোগুণ শান্ত হয়েছে, যিনি ব্রহ্মে স্থিত এবং নিষ্পাপ, তিনি উত্তম সুখ লাভ করেন।</div>
+        <div class="lang-english">The yogī whose mind is fixed on Me verily attains the highest perfection of transcendental happiness. He is beyond the mode of passion, realizes his spiritual identity, and is freed from all sinful reactions. (BG 6.27)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 171</span>
+        <div class="lang-hindi">भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च। अहंकार इतीयं मे भिन्ना प्रकृतिरष्टधा।</div>
+        <div class="lang-bangla">ভূমি, জল, অগ্নি, বায়ু, আকাশ, মন, বুদ্ধি এবং অহংকার — এই আট প্রকারে আমার প্রকৃতি বিভক্ত।</div>
+        <div class="lang-english">Earth, water, fire, air, ether, mind, intelligence and false ego—all together these eight constitute My separated material energies. (BG 7.4)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 172</span>
+        <div class="lang-hindi">बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते। वासुदेवः सर्वमिति स महात्मा सुदुर्लभः।</div>
+        <div class="lang-bangla">বহু জন্মের পরে জ্ঞানবান ব্যক্তি আমার শরণাপন্ন হন। 'বাসুদেবই সব' - এমন মহাত্মা অত্যন্ত দুর্লভ।</div>
+        <div class="lang-english">After many births and deaths, he who is actually in knowledge surrenders unto Me, knowing Me to be the cause of all causes and all that is. Such a great soul is very rare. (BG 7.19)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 173</span>
+        <div class="lang-hindi">तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च। मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयः।</div>
+        <div class="lang-bangla">অতএব, তুমি সর্বদা আমাকে স্মরণ করো এবং যুদ্ধও করো। আমাতে অর্পিত মন ও বুদ্ধি দ্বারা তুমি অবশ্যই আমাকে প্রাপ্ত হবে।</div>
+        <div class="lang-english">Therefore, Arjuna, you should always think of Me in the form of Kṛṣṇa and at the same time carry out your prescribed duty of fighting. With your mind and intelligence fixed on Me, you will attain Me without fail. (BG 8.7)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 174</span>
+        <div class="lang-hindi">अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम्। परं भावमजानन्तो मम भूतमहेश्वरम्।</div>
+        <div class="lang-bangla">মূঢ়েরা আমাকে অবজ্ঞা করে, যখন আমি মানুষের রূপ ধারণ করি। তারা আমার পরম ভাব জানে না, যে আমিই সমস্ত প্রাণীর মহেশ্বর।</div>
+        <div class="lang-english">Fools deride Me when I descend in the human form. They do not know My transcendental nature as the Supreme Lord of all that be. (BG 9.11)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 175</span>
+        <div class="lang-hindi">महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः। भजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्।</div>
+        <div class="lang-bangla">হে পার্থ, কিন্তু মহাত্মারা দৈবী প্রকৃতি আশ্রয় করে, আমাকে সমস্ত সৃষ্টির আদি ও অব্যয় জেনে অনন্যচিত্তে ভজনা করেন।</div>
+        <div class="lang-english">O son of Pṛthā, those who are not deluded, the great souls, are under the protection of the divine nature. They are fully engaged in devotional service because they know Me to be the Supreme Personality of Godhead, original and inexhaustible. (BG 9.13)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 176</span>
+        <div class="lang-hindi">सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन। अध्यात्मविद्या विद्यानां वादः प्रवदतामहम्।</div>
+        <div class="lang-bangla">হে অর্জুন, আমিই সৃষ্টির আদি, অন্ত এবং মধ্য। বিদ্যাসমূহের মধ্যে আমি অধ্যাত্মবিদ্যা, এবং বাদানুবাদকারীদের মধ্যে আমিই তর্ক।</div>
+        <div class="lang-english">Of all creations I am the beginning and the end and also the middle, O Arjuna. Of all sciences I am the spiritual science of the Self, and among logicians I am the conclusive truth. (BG 10.32)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 177</span>
+        <div class="lang-hindi">तस्मात्त्वमुत्तिष्ठ यशो लभस्व जित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्।</div>
+        <div class="lang-bangla">অতএব তুমি ওঠো, যশ লাভ করো, শত্রুদের জয় করে সমৃদ্ধ রাজ্য ভোগ করো।</div>
+        <div class="lang-english">Therefore, get up and prepare to fight. Conquer your enemies and enjoy a flourishing kingdom. (BG 11.33)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 178</span>
+        <div class="lang-hindi">क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्। अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते।</div>
+        <div class="lang-bangla">অব্যক্তে আসক্তচিত্তদের কষ্ট অধিক হয়। কারণ সাকার দেহে থাকা ব্যক্তিদের জন্য অব্যক্ত গতি কষ্টকরভাবে লাভ করা যায়।</div>
+        <div class="lang-english">For those whose minds are attached to the unmanifested, impersonal feature of the Absolute, advancement is very troublesome. To make progress in that discipline is always difficult for those who are embodied. (BG 12.5)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 179</span>
+        <div class="lang-hindi">समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्। न हिनस्त्यात्मनात्मानं ततो याति परां गतिम्।</div>
+        <div class="lang-bangla">যিনি সর্বত্র সমভাবে অবস্থিত ঈশ্বরকে দর্শন করেন, তিনি আত্মাকে দ্বারা আত্মাকে পীড়িত করেন না, সেই কারণে তিনি পরম গতি লাভ করেন।</div>
+        <div class="lang-english">One who sees the Supersoul accompanying the individual soul in all bodies, and who understands that neither the soul nor the Supersoul is ever destroyed, actually sees. (BG 13.29)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 180</span>
+        <div class="lang-hindi">इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः। सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च।</div>
+        <div class="lang-bangla">এই জ্ঞান আশ্রয় করে যারা আমার প্রকৃতির সদৃশ হয়, তারা সৃষ্টি কালেও জন্মগ্রহণ করেন না এবং প্রলয়ের সময়ও ব্যথিত হন না।</div>
+        <div class="lang-english">By becoming fixed in this knowledge, one can attain to the transcendental nature like My own. Thus established, one is not born at the time of creation nor disturbed at the time of dissolution. (BG 14.2)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 181</span>
+        <div class="lang-hindi">निर्मानमोहा जितसङ्गदोषा अध्यात्मनित्या विनिवृत्तकामाः। द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्गच्छन्त्यमूढाः पदमव्ययं तत्।</div>
+        <div class="lang-bangla">যাদের মান ও মোহ নেই, যারা আসক্তিজনিত দোষ জয় করেছেন, যারা আধ্যাত্মজ্ঞানে নিত্য স্থিত, যাদের কামনা নিবৃত্ত হয়েছে, এবং যারা সুখ-দুঃখ নামক দ্বন্দ্ব থেকে মুক্ত, সেই মোহমুক্ত ব্যক্তিরা সেই অব্যয় পদ লাভ করেন।</div>
+        <div class="lang-english">Those who are free from false prestige, illusion and false association, who understand the eternal, who are done with material lust, who are freed from the dualities of happiness and distress, and who know how to surrender unto the Supreme Person attain to that eternal kingdom. (BG 15.5)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 182</span>
+        <div class="lang-hindi">त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः। कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्।</div>
+        <div class="lang-bangla">কাম, ক্রোধ এবং লোভ—আত্মার বিনাশের জন্য এই তিনটি নরকের দ্বার। অতএব এই তিনটিকে ত্যাগ করা উচিত।</div>
+        <div class="lang-english">There are three gates leading to this hell—lust, anger and greed. Every sane man should give these up, for they lead to the degradation of the soul. (BG 16.21)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 183</span>
+        <div class="lang-hindi">श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः। अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते।</div>
+        <div class="lang-bangla">যে তপস্যা ফলাকাঙ্ক্ষী ব্যক্তিরা পরম শ্রদ্ধা সহকারে করে, সেই ত্রিবিধ তপস্যাকে সাত্ত্বিক বলা হয়।</div>
+        <div class="lang-english">This threefold austerity, performed with transcendental faith by men not expecting material benefits but only for the sake of the Supreme, is called austerity in goodness (Sattvika). (BG 17.17)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 184</span>
+        <div class="lang-hindi">ब्राह्मणक्षत्रियविशां शूद्राणां च परन्तप। कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः।</div>
+        <div class="lang-bangla">হে পরন্তপ, ব্রাহ্মণ, ক্ষত্রিয়, বৈশ্য ও শূদ্র—এই সকল মানুষের কর্ম স্বভাবজাত গুণ অনুসারে বিভক্ত হয়েছে।</div>
+        <div class="lang-english">Brāhmaṇas, kṣatriyas, vaiśyas, and śūdras are distinguished by the qualities born of their own natures in accordance with the material modes, O chastiser of the enemy. (BG 18.41)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 185</span>
+        <div class="lang-hindi">स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः।</div>
+        <div class="lang-bangla">নিজ নিজ কর্মে রত মানুষ সিদ্ধি লাভ করে।</div>
+        <div class="lang-english">By executing his prescribed duties, every man can attain perfection. (BG 18.45)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 186</span>
+        <div class="lang-hindi">वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः। मुनीनामप्यहं व्यासः कवीनामुशना कविः।</div>
+        <div class="lang-bangla">বৃষ্ণিদের মধ্যে আমি বাসুদেব (কৃষ্ণ), পাণ্ডবদের মধ্যে আমি ধনঞ্জয় (অর্জুন)। মুনিদের মধ্যে আমি ব্যাস এবং কবিদের মধ্যে আমি শুক্রাচার্য।</div>
+        <div class="lang-english">Of the descendants of Vṛṣṇi I am Vāsudeva (Kṛṣṇa), and of the Pāṇḍavas I am Arjuna. Of the sages I am Vyāsa, and among great thinkers I am Uśanā. (BG 10.37)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 187</span>
+        <div class="lang-hindi">अहमात्मा गुडाकेश सर्वभूताशयस्थितः।</div>
+        <div class="lang-bangla">হে গুড়াকেশ (অর্জুন), আমি সমস্ত প্রাণীর হৃদয়ে অবস্থিত আত্মা।</div>
+        <div class="lang-english">I am the Supersoul, O Arjuna, seated in the hearts of all living entities. (BG 10.20)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 188</span>
+        <div class="lang-hindi">अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते। इति मत्वा भजन्ते मां बुधा भावसमन्विताः।</div>
+        <div class="lang-bangla">আমিই সবকিছুর উৎস, সবকিছু আমা থেকেই প্রবর্তিত হয়। এই জেনে জ্ঞানী ব্যক্তিরা ভাবযুক্ত হয়ে আমাকে ভজনা করেন।</div>
+        <div class="lang-english">I am the source of all spiritual and material worlds. Everything emanates from Me. The wise who perfectly know this engage in My devotional service and worship Me with all their hearts. (BG 10.8)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 189</span>
+        <div class="lang-hindi">अध्येष्यते च य इमं धर्म्यं संवादमावयोः। ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः।</div>
+        <div class="lang-bangla">যে আমাদের এই ধর্মময় কথোপকথন অধ্যয়ন করবে, আমি মনে করি সে জ্ঞানযজ্ঞের দ্বারা আমার পূজা করবে।</div>
+        <div class="lang-english">And I declare that he who studies this sacred conversation of ours worships Me through his intelligence. (BG 18.70)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 190</span>
+        <div class="lang-hindi">तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः। विस्मयो मे महान् राजन्हृष्यामि च पुनः पुनः।</div>
+        <div class="lang-bangla">হে রাজা, আমি বারবার হরির সেই অত্যন্ত অদ্ভুত রূপ স্মরণ করে মহৎ বিস্ময় অনুভব করি এবং বারবার আনন্দিত হই।</div>
+        <div class="lang-english">O King, as I repeatedly recall that wondrous form of Lord Hari, I am struck with great wonder, and I rejoice again and again. (BG 18.77)</div>
+    </div>
+    
+    <div class="quote-box">
+        <span class="quote-number">Quote 191</span>
+        <div class="lang-hindi">इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते। एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः।</div>
+        <div class="lang-bangla">হে কৌন্তেয়, এই শরীরকে ক্ষেত্র বলা হয়। যারা একে জানে, তারা একে ক্ষেত্রজ্ঞ বলে।</div>
+        <div class="lang-english">O son of Kuntī, this body is called the field, and one who knows this body is called the knower of the field. (BG 13.1)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 192</span>
+        <div class="lang-hindi">क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत। क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम।</div>
+        <div class="lang-bangla">হে ভারত, তুমি সকল ক্ষেত্রে আমাকে ক্ষেত্রজ্ঞ বলে জানো। ক্ষেত্র ও ক্ষেত্রজ্ঞের জ্ঞানই প্রকৃত জ্ঞান, ইহাই আমার অভিমত।</div>
+        <div class="lang-english">O scion of Bharata, you should understand that I am also the knower in all bodies. Knowing the body and its owner is called knowledge. That is My opinion. (BG 13.2)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 193</span>
+        <div class="lang-hindi">सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च। वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्।</div>
+        <div class="lang-bangla">আমি সকলের হৃদয়ে প্রবিষ্ট। আমা থেকেই স্মৃতি, জ্ঞান ও বিস্মৃতি আসে। সমস্ত বেদ দ্বারা আমিই জ্ঞেয়; আমিই বেদান্তকর্তা এবং বেদজ্ঞ।</div>
+        <div class="lang-english">I am seated in everyone’s heart, and from Me come remembrance, knowledge and forgetfulness. By all the Vedas, I am to be known; indeed, I am the compiler of Vedānta, and I am the knower of the Vedas. (BG 15.15)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 194</span>
+        <div class="lang-hindi">ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति। समः सर्वेषु भूतेषु मद्भक्तिं लभते पराम्।</div>
+        <div class="lang-bangla">যিনি ব্রহ্মে স্থিত হয়ে প্রসন্নচিত্ত হন, তিনি শোক করেন না, কামনাও করেন না। তিনি সকল প্রাণীর প্রতি সমভাবাপন্ন হয়ে আমার পরা ভক্তি লাভ করেন।</div>
+        <div class="lang-english">One who is thus transcendental situated at once realizes the Supreme Brahman and becomes fully joyful. He never laments or desires to have anything. He is equally disposed toward every living entity. In that state he attains pure devotional service unto Me. (BG 18.54)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 195</span>
+        <div class="lang-hindi">मच्चित्तः सर्वदुर्गाणि मत्प्रसादात् तरिष्यसि। अथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्क्ष्यसि।</div>
+        <div class="lang-bangla">আমাতে চিত্ত নিবেশ করলে আমার কৃপায় তুমি সমস্ত বিপদ অতিক্রম করবে। আর যদি অহংকারবশত আমার কথা না শোনো, তবে বিনাশ হবে।</div>
+        <div class="lang-english">If you become conscious of Me, you will conquer all the obstacles of conditioned life by My grace. But if you do not work in such consciousness, through false ego, you will not hear Me and will be lost. (BG 18.58)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 196</span>
+        <div class="lang-hindi">तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येन केनचित्। अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः।</div>
+        <div class="lang-bangla">যিনি নিন্দা ও স্তুতিতে সমান, যিনি মৌনী, যা কিছু লাভ হয় তাতেই সন্তুষ্ট, যাঁর কোনো নির্দিষ্ট বাসস্থান নেই এবং যাঁর বুদ্ধি স্থির, সেই ভক্তিমান পুরুষ আমার প্রিয়।</div>
+        <div class="lang-english">One who is equal to faultfinding and praise, who is silent, satisfied with anything, who does not care for any residence, and who is fixed in knowledge is very dear to Me. (BG 12.19)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 197</span>
+        <div class="lang-hindi">न तदस्ति विना यत्स्यान्मया भूतं चराचरम्।</div>
+        <div class="lang-bangla">আমার বিনাশ ছাড়া এমন কোনো চর বা অচর (সচল বা নিশ্চল) প্রাণী নেই যা থাকতে পারে।</div>
+        <div class="lang-english">There is no being, moving or nonmoving, that can exist without Me. (BG 10.39)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 198</span>
+        <div class="lang-hindi">वीतरागभयक्रोधा मन्मया मामुपाश्रिताः। बहवो ज्ञानतपसा पूता मद्भावमागताः।</div>
+        <div class="lang-bangla">রাগ, ভয় ও ক্রোধ থেকে মুক্ত, আমাতে মগ্ন এবং আমাকে আশ্রয় করে বহু মানুষ জ্ঞানরূপ তপস্যা দ্বারা পবিত্র হয়ে আমার ভাব লাভ করেছে।</div>
+        <div class="lang-english">Being freed from attachment, fear and anger, being fully absorbed in Me and taking refuge in Me, many, many persons in the past became purified by knowledge of Me—and thus they all attained transcendental love for Me. (BG 4.10)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 199</span>
+        <div class="lang-hindi">योगिनामपि सर्वेषां मद्गतेनान्तरात्मना। श्रद्धावान्भजते यो मां स मे युक्ततमो मतः।</div>
+        <div class="lang-bangla">সকল যোগীদের মধ্যে, যিনি শ্রদ্ধাবান হয়ে আমাতে লীন অন্তঃকরণ সহকারে আমাকে ভজনা করেন, তিনিই আমার মতে শ্রেষ্ঠ যোগী।</div>
+        <div class="lang-english">And of all yogīs, the one with great faith who always abides in Me, thinks of Me within himself, and renders transcendental loving service to Me—he is the most intimately united with Me in yoga and is the highest of all. (BG 6.47)</div>
+    </div>
+
+    <div class="quote-box">
+        <span class="quote-number">Quote 200</span>
+        <div class="lang-hindi">योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय। सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।</div>
+        <div class="lang-bangla">হে ধনঞ্জয়, আসক্তি ত্যাগ করে এবং সিদ্ধি-অসিদ্ধিতে সমভাবাপন্ন হয়ে যোগে স্থিত হয়ে কর্ম করো। এই সমত্বকেই যোগ বলা হয়।</div>
+        <div class="lang-english">Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga. (BG 2.48)</div>
+    </div>
+    </div>
+     <div class="fixed-nav">
+        <a href="gita_quotes_part1.html" class="nav-button">Part 1</a>
+
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+        
+        <a href="gita_quotes_part2.html" class="nav-button" active>Part 2</a>
+
+        <a href="gita_quotes_part3.html" class="nav-button">Part 3</a>
+    </div>
+</body>
+</html>

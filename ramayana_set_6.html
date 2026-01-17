@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramayana - part 6</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>6. Ramayana Teachings on Ideal Living - Collection 6 (501-600)</h1>
+            <p>The Path of Dharma, Courage, and Righteousness</p>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 501</span>
+            <span class="lang-bangla">সত্যের পথে চলাই জীবনের শ্রেষ্ঠ ধর্ম, কখনও তা ত্যাগ করো না।</span>
+            <span class="lang-hindi">सत्य के मार्ग पर चलना ही जीवन का सर्वश्रेष्ठ धर्म है, उसे कभी मत छोड़ो।</span>
+            <span class="lang-english">Walking the path of truth is the best Dharma of life, never abandon it.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 502</span>
+            <span class="lang-bangla">বিনয়ই মানুষের শ্রেষ্ঠ গুণ, তা তোমাকে সকলের প্রিয় করে তুলবে।</span>
+            <span class="lang-hindi">विनम्रता मनुष्य का सर्वश्रेष्ठ गुण है, वह तुम्हें सबका प्रिय बनाएगी।</span>
+            <span class="lang-english">Humility is the best virtue of man, it will make you dear to all.</span>
+            <span class="reference">(Balakanda 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 503</span>
+            <span class="lang-bangla">ত্যাগের দ্বারা জীবনের সকল উদ্দেশ্য পূর্ণ হয়, আসক্তি ত্যাগ করো।</span>
+            <span class="lang-hindi">त्याग से जीवन के सभी उद्देश्य पूरे होते हैं, आसक्ति छोड़ दो।</span>
+            <span class="lang-english">All the purposes of life are fulfilled through renunciation, abandon attachment.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 504</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে বিষাক্ত করে, তাকে জয় করাই ধর্ম।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को विषैला बनाता है, उसे जीतना ही धर्म है।</span>
+            <span class="lang-english">Greed poisons the human heart, conquering it is Dharma.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 505</span>
+            <span class="lang-bangla">সময়কে মূল্য দাও, কারণ হারানো সময় আর ফিরে আসে না।</span>
+            <span class="lang-hindi">समय को महत्व दो, क्योंकि खोया हुआ समय वापस नहीं आता।</span>
+            <span class="lang-english">Value time, because lost time never returns.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 506</span>
+            <span class="lang-bangla">ক্রোধ মানুষের সকল শক্তি নষ্ট করে, শান্ত থাকাই পথ।</span>
+            <span class="lang-hindi">क्रोध मनुष्य की सभी शक्ति नष्ट कर देता है, शांत रहना ही मार्ग है।</span>
+            <span class="lang-english">Anger destroys all the strength of man, being calm is the way.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 507</span>
+            <span class="lang-bangla">পিতার প্রতিজ্ঞা রক্ষা করাই পুত্রের শ্রেষ্ঠ ধর্ম।</span>
+            <span class="lang-hindi">पिता की प्रतिज्ञा पूरी करना ही पुत्र का सर्वश्रेष्ठ धर्म है।</span>
+            <span class="lang-english">Fulfilling the father's promise is the best Dharma of the son.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 508</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর সকল অর্জনের সাথী এবং তার সাহস।</span>
+            <span class="lang-hindi">पत्नी पति के सभी लाभों की साथी और उसका साहस है।</span>
+            <span class="lang-english">A wife is a companion in all the achievements of her husband and his courage.</span>
+            <span class="reference">(Aranya Kanda 10.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 509</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তি সর্বদা সুখী হয় এবং শান্তি পায়।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति हमेशा सुखी रहता है और शांति पाता है।</span>
+            <span class="lang-english">A forgiving person is always happy and finds peace.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 510</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন অনিবার্য করে তোলে, বিনয়ী হও।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन अनिवार्य कर देता है, विनम्र बनो।</span>
+            <span class="lang-english">Arrogance makes man's downfall inevitable, be humble.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 511</span>
+            <span class="lang-bangla">ধৈর্য হলো মানুষের ভিতরের শক্তি, যা তাকে সংকটকালে রক্ষা করে।</span>
+            <span class="lang-hindi">धैर्य मनुष्य के अंदर की शक्ति है, जो उसे संकट काल में बचाती है।</span>
+            <span class="lang-english">Patience is the inner strength of man, which protects him in times of crisis.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 512</span>
+            <span class="lang-bangla">পরিবারের প্রতি ভালোবাসা জীবনের ভিত্তি ও অটুট বন্ধন।</span>
+            <span class="lang-hindi">परिवार के प्रति प्रेम जीवन का आधार और अटूट बंधन है।</span>
+            <span class="lang-english">Love for the family is the foundation and unbreakable bond of life.</span>
+            <span class="reference">(Ayodhya Kanda 11.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 513</span>
+            <span class="lang-bangla">নিজের কর্তব্য পালনে কখনও পিছপা হয়ো না, এটাই জীবনের ধর্ম।</span>
+            <span class="lang-hindi">अपने कर्तव्य निभाने में कभी पीछे मत हटो, यही जीवन का धर्म है।</span>
+            <span class="lang-english">Never back down from fulfilling your duty, this is the Dharma of life.</span>
+            <span class="reference">(Ayodhya Kanda 109.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 514</span>
+            <span class="lang-bangla">সৎ লোকের সঙ্গ সর্বদা মঙ্গলজনক, অসৎ সঙ্গ বর্জন করো।</span>
+            <span class="lang-hindi">सज्जन लोगों का साथ हमेशा मंगलकारी होता है, बुरी संगत छोड़ दो।</span>
+            <span class="lang-english">The company of noble people is always auspicious, abandon bad company.</span>
+            <span class="reference">(Aranya Kanda 10.39)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 515</span>
+            <span class="lang-bangla">শাসকের কর্তব্য হলো ন্যায় প্রতিষ্ঠা করা এবং প্রজার প্রতি সহানুভূতিশীল থাকা।</span>
+            <span class="lang-hindi">शासक का कर्तव्य न्याय स्थापित करना और प्रजा के प्रति सहानुभूति रखना है।</span>
+            <span class="lang-english">The ruler's duty is to establish justice and be empathetic towards the subjects.</span>
+            <span class="reference">(Ayodhya Kanda 1.75)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 516</span>
+            <span class="lang-bangla">মিথ্যা কখনও স্থায়ী হয় না, সত্যই জয়ী হয়।</span>
+            <span class="lang-hindi">झूठ कभी स्थायी नहीं होता, सत्य ही विजयी होता है।</span>
+            <span class="lang-english">Falsehood is never permanent, truth alone triumphs.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 517</span>
+            <span class="lang-bangla">লোভ সকল নষ্টের কারণ, এটিকে বর্জন করা উচিত।</span>
+            <span class="lang-hindi">लालच सभी विनाश का कारण है, इसे त्याग देना चाहिए।</span>
+            <span class="lang-english">Greed is the cause of all destruction, it should be abandoned.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 518</span>
+            <span class="lang-bangla">ত্যাগ ছাড়া মহৎ হওয়া যায় না, ত্যাগের পথেই শান্তি।</span>
+            <span class="lang-hindi">त्याग के बिना महान नहीं बना जा सकता, त्याग के मार्ग में ही शांति है।</span>
+            <span class="lang-english">One cannot become great without renunciation, peace is on the path of renunciation.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 519</span>
+            <span class="lang-bangla">ক্রোধ মানুষের দৃষ্টিকে অন্ধ করে, নিজের উপর নিয়ন্ত্রণ রাখো।</span>
+            <span class="lang-hindi">क्रोध मनुष्य की दृष्टि को अंधा कर देता है, स्वयं पर नियंत्रण रखो।</span>
+            <span class="lang-english">Anger blinds man's vision, keep control over yourself.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 520</span>
+            <span class="lang-bangla">সময়কে সঠিক কাজে লাগানোই জ্ঞানের পরিচয়।</span>
+            <span class="lang-hindi">समय को सही काम में लगाना ही ज्ञान का परिचय है।</span>
+            <span class="lang-english">Utilizing time for the right work is the introduction to knowledge.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 521</span>
+            <span class="lang-bangla">বিনয়ই সকল গুণের উৎস, এটি সর্বদা বজায় রাখো।</span>
+            <span class="lang-hindi">विनम्रता ही सभी गुणों का स्रोत है, इसे हमेशा बनाए रखो।</span>
+            <span class="lang-english">Humility is the source of all virtues, always maintain it.</span>
+            <span class="reference">(Balakanda 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 522</span>
+            <span class="lang-bangla">পিতার আজ্ঞা পালনই জীবনের শ্রেষ্ঠ পূজা।</span>
+            <span class="lang-hindi">पिता की आज्ञा का पालन करना ही जीवन की सर्वश्रेष्ठ पूजा है।</span>
+            <span class="lang-english">Obeying the father's command is the best worship of life.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 523</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে, এটি মানুষের পতন ডেকে আনে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है, यह मनुष्य का पतन लाता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge, it brings about man's downfall.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 524</span>
+            <span class="lang-bangla">ধৈর্য হলো মনের স্থিরতা, যা সাফল্যের দিকে নিয়ে যায়।</span>
+            <span class="lang-hindi">धैर्य मन की स्थिरता है, जो सफलता की ओर ले जाती है।</span>
+            <span class="lang-english">Patience is the stability of the mind, which leads to success.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 525</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তিই সমাজে শান্তি আনে।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति ही समाज में शांति लाता है।</span>
+            <span class="lang-english">A forgiving person brings peace to society.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 526</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছেঁড়া উচিত নয়, এটিই শক্তির উৎস।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी नहीं तोड़ना चाहिए, यही शक्ति का स्रोत है।</span>
+            <span class="lang-english">The bond of family should never be broken, it is the source of strength.</span>
+            <span class="reference">(Ayodhya Kanda 11.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 527</span>
+            <span class="lang-bangla">কর্তব্য পালনে আলস্য করো না, তাতেই জীবন সফল হয়।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में आलस्य मत करो, उसी से जीवन सफल होता है।</span>
+            <span class="lang-english">Do not be lazy in fulfilling your duty, life succeeds through it.</span>
+            <span class="reference">(Ayodhya Kanda 109.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 528</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর অর্ধাঙ্গিনী এবং তার সকল কার্যের সাথী।</span>
+            <span class="lang-hindi">पत्नी पति की अर्धांगिनी और उसके सभी कार्यों में साथी होती है।</span>
+            <span class="lang-english">A wife is the better half of her husband and companion in all his actions.</span>
+            <span class="reference">(Aranya Kanda 10.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 529</span>
+            <span class="lang-bangla">লোভ মানুষের বুদ্ধি নষ্ট করে, তাই লোভ ত্যাগ করা উচিত।</span>
+            <span class="lang-hindi">लालच मनुष्य की बुद्धि नष्ट करता है, इसलिए लालच छोड़ देना चाहिए।</span>
+            <span class="lang-english">Greed destroys human intelligence, so greed should be abandoned.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 530</span>
+            <span class="lang-bangla">ত্যাগ মানুষের মনকে পবিত্র করে, যা তাকে মুক্তি দেয়।</span>
+            <span class="lang-hindi">त्याग मनुष्य के मन को पवित्र करता है, जो उसे मुक्ति देता है।</span>
+            <span class="lang-english">Renunciation purifies the mind of man, which gives him freedom.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 531</span>
+            <span class="lang-bangla">শাসকের ধর্ম হলো প্রজার সুখ নিশ্চিত করা।</span>
+            <span class="lang-hindi">शासक का धर्म प्रजा के सुख को सुनिश्चित करना है।</span>
+            <span class="lang-english">The ruler's Dharma is to ensure the happiness of the subjects.</span>
+            <span class="reference">(Ayodhya Kanda 1.75)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 532</span>
+            <span class="lang-bangla">ক্রোধের আগুন সবকিছু পুড়িয়ে দেয়, শান্তি বজায় রাখো।</span>
+            <span class="lang-hindi">क्रोध की आग सब कुछ जला देती है, शांति बनाए रखो।</span>
+            <span class="lang-english">The fire of anger burns everything, maintain peace.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 533</span>
+            <span class="lang-bangla">সৎ পথে থাকলে কেউ তোমার ক্ষতি করতে পারবে না।</span>
+            <span class="lang-hindi">सच्चे मार्ग पर रहने पर कोई तुम्हारा नुकसान नहीं कर सकता।</span>
+            <span class="lang-english">If you remain on the true path, no one can harm you.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 534</span>
+            <span class="lang-bangla">সময়কে পূজা করা মানে জীবনকে পূজা করা।</span>
+            <span class="lang-hindi">समय की पूजा करना मतलब जीवन की पूजा करना।</span>
+            <span class="lang-english">Worshiping time means worshiping life.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 535</span>
+            <span class="lang-bangla">পিতার প্রতিজ্ঞা রক্ষা করাই শ্রেষ্ঠ ধার্মিকতা।</span>
+            <span class="lang-hindi">पिता की प्रतिज्ञा को पूरा करना ही सर्वश्रेष्ठ धार्मिकता है।</span>
+            <span class="lang-english">Fulfilling the father's promise is the greatest righteousness.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 536</span>
+            <span class="lang-bangla">অহংকার মানুষের ধ্বংসের পথ, তা বর্জন করো।</span>
+            <span class="lang-hindi">अहंकार मनुष्य के विनाश का मार्ग है, उसे त्याग दो।</span>
+            <span class="lang-english">Arrogance is the path to human destruction, abandon it.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 537</span>
+            <span class="lang-bangla">ধৈর্য হলো মানুষের ভিতরের শক্তি।</span>
+            <span class="lang-hindi">धैर्य मनुष्य के अंदर की शक्ति है।</span>
+            <span class="lang-english">Patience is the inner strength of man.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 538</span>
+            <span class="lang-bangla">ক্ষমা করা দুর্বলতা নয়, এটি আত্মিক শক্তি।</span>
+            <span class="lang-hindi">क्षमा करना कमजोरी नहीं, यह आत्मिक शक्ति है।</span>
+            <span class="lang-english">Forgiveness is not weakness, it is spiritual strength.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 539</span>
+            <span class="lang-bangla">বিনয়ই সকল গুণের উৎস, তা তোমাকে মহত্ত্ব দান করে।</span>
+            <span class="lang-hindi">विनम्रता ही सभी गुणों का स्रोत है, वह तुम्हें महानता देती है।</span>
+            <span class="lang-english">Humility is the source of all virtues, it gives you greatness.</span>
+            <span class="reference">(Balakanda 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 540</span>
+            <span class="lang-bangla">পরিবারের সদস্যরা একে অপরের অবলম্বন এবং সাহস।</span>
+            <span class="lang-hindi">परिवार के सदस्य एक-दूसरे का सहारा और साहस हैं।</span>
+            <span class="lang-english">Family members are each other's support and courage.</span>
+            <span class="reference">(Ayodhya Kanda 11.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 541</span>
+            <span class="lang-bangla">কর্তব্যই জীবনের আসল রথ, তাকে দৃঢ়ভাবে চালাও।</span>
+            <span class="lang-hindi">कर्तव्य ही जीवन का असली रथ है, उसे मजबूती से चलाओ।</span>
+            <span class="lang-english">Duty is the real chariot of life, drive it firmly.</span>
+            <span class="reference">(Ayodhya Kanda 109.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 542</span>
+            <span class="lang-bangla">অসৎ সঙ্গ ত্যাগ করাই জ্ঞানের লক্ষণ।</span>
+            <span class="lang-hindi">बुरे लोगों का साथ छोड़ना ही ज्ञान का लक्षण है।</span>
+            <span class="lang-english">Abandoning bad company is a sign of knowledge.</span>
+            <span class="reference">(Aranya Kanda 10.39)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 543</span>
+            <span class="lang-bangla">শাসকের উচিত প্রজার প্রতি সর্বদা সহানুভূতিশীল হওয়া।</span>
+            <span class="lang-hindi">शासक को प्रजा के प्रति हमेशा सहानुभूति रखनी चाहिए।</span>
+            <span class="lang-english">The ruler should always be empathetic towards his subjects.</span>
+            <span class="reference">(Ayodhya Kanda 1.75)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 544</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে দুর্বল করে, তাকে জয় করো।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को कमजोर करता है, उसे जीतो।</span>
+            <span class="lang-english">Greed weakens the human heart, conquer it.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 545</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে দেবত্ব দান করে, যা তাকে অমর করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को देवत्व प्रदान करता है, जो उसे अमर करता है।</span>
+            <span class="lang-english">Renunciation bestows divinity upon man, which makes him immortal.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 546</span>
+            <span class="lang-bangla">ক্রোধ মানুষকে ধ্বংসের পথে নিয়ে যায়, তাই শান্তি অবলম্বন করো।</span>
+            <span class="lang-hindi">क्रोध मनुष्य को विनाश के मार्ग पर ले जाता है, इसलिए शांति अपनाओ।</span>
+            <span class="lang-english">Anger leads man to the path of destruction, so adopt peace.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 547</span>
+            <span class="lang-bangla">সত্যকে কখনও হার মানানো যায় না, তার জয় অনিবার্য।</span>
+            <span class="lang-hindi">सत्य को कभी हराया नहीं जा सकता, उसकी जीत अनिवार्य है।</span>
+            <span class="lang-english">Truth can never be defeated, its victory is inevitable.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 548</span>
+            <span class="lang-bangla">সময়কে সঠিক কাজে লাগাও, তবেই জীবন সফল হবে।</span>
+            <span class="lang-hindi">समय को सही काम में लगाओ, तभी जीवन सफल होगा।</span>
+            <span class="lang-english">Apply time to the right work, only then will life be successful.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 549</span>
+            <span class="lang-bangla">পিতার কথা পালনই জীবনের শ্রেষ্ঠ আশীর্বাদ।</span>
+            <span class="lang-hindi">पिता की बात मानना ही जीवन का सर्वश्रेष्ठ आशीर्वाद है।</span>
+            <span class="lang-english">Obeying the father's word is the best blessing of life.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 550</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর সকল দুঃখ-কষ্টের সাথী।</span>
+            <span class="lang-hindi">पत्नी पति के सभी दुखों-कष्टों की साथी होती है।</span>
+            <span class="lang-english">A wife is a companion in all the sorrows and sufferings of her husband.</span>
+            <span class="reference">(Aranya Kanda 10.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 551</span>
+            <span class="lang-bangla">ধৈর্য এবং অধ্যবসায় সাফল্যের চাবিকাঠি।</span>
+            <span class="lang-hindi">धैर्य और दृढ़ता सफलता की कुंजी है।</span>
+            <span class="lang-english">Patience and perseverance are the keys to success.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 552</span>
+            <span class="lang-bangla">অহংকার বর্জন করে বিনয়ী হও।</span>
+            <span class="lang-hindi">अहंकार छोड़कर विनम्र बनो।</span>
+            <span class="lang-english">Abandon arrogance and be humble.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 553</span>
+            <span class="lang-bangla">ক্ষমা হলো মনের সর্বোচ্চ সম্পদ।</span>
+            <span class="lang-hindi">क्षमा मन की सर्वोच्च संपत्ति है।</span>
+            <span class="lang-english">Forgiveness is the supreme wealth of the mind.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 554</span>
+            <span class="lang-bangla">বিনয়ী ব্যক্তির কখনও পতন হয় না।</span>
+            <span class="lang-hindi">विनम्र व्यक्ति का कभी पतन नहीं होता।</span>
+            <span class="lang-english">A humble person never faces downfall.</span>
+            <span class="reference">(Balakanda 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 555</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছিন্ন করো না।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी मत तोड़ो।</span>
+            <span class="lang-english">Never break the bond of family.</span>
+            <span class="reference">(Ayodhya Kanda 11.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 556</span>
+            <span class="lang-bangla">কর্তব্য পালনে নীরব থাকাই শ্রেষ্ঠ দান।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में चुप रहना ही सर्वश्रेष्ठ दान है।</span>
+            <span class="lang-english">Remaining silent while fulfilling duty is the best gift.</span>
+            <span class="reference">(Ayodhya Kanda 109.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 557</span>
+            <span class="lang-bangla">লোভ সকল নষ্টের কারণ, এটিকে জয় করো।</span>
+            <span class="lang-hindi">लालच सभी विनाश का कारण है, इसे जीतो।</span>
+            <span class="lang-english">Greed is the cause of all destruction, conquer it.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 558</span>
+            <span class="lang-bangla">ত্যাগ মানুষের মনকে মুক্তি দেয়।</span>
+            <span class="lang-hindi">त्याग मनुष्य के मन को मुक्ति देता है।</span>
+            <span class="lang-english">Renunciation gives freedom to the mind of man.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 559</span>
+            <span class="lang-bangla">শাসকের উচিত প্রজার চোখে সর্বদা আদর্শ থাকা।</span>
+            <span class="lang-hindi">शासक को प्रजा की नजर में हमेशा आदर्श रहना चाहिए।</span>
+            <span class="lang-english">The ruler should always remain an ideal in the eyes of the subjects.</span>
+            <span class="reference">(Ayodhya Kanda 1.75)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 560</span>
+            <span class="lang-bangla">ক্রোধের চেয়ে শান্তি শ্রেয়।</span>
+            <span class="lang-hindi">क्रोध से शांति बेहतर है।</span>
+            <span class="lang-english">Peace is better than anger.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 561</span>
+            <span class="lang-bangla">পিতার কথা পালনই জীবনের শ্রেষ্ঠ পূজা।</span>
+            <span class="lang-hindi">पिता की बात मानना ही जीवन की सर्वश्रेष्ठ पूजा है।</span>
+            <span class="lang-english">Obeying the father's word is the best worship of life.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 562</span>
+            <span class="lang-bangla">সত্যই পরম ধর্ম।</span>
+            <span class="lang-hindi">सत्य ही परम धर्म है।</span>
+            <span class="lang-english">Truth is the supreme Dharma.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 563</span>
+            <span class="lang-bangla">সময়কে গুরুত্ব দাও, সময়ই ভাগ্য তৈরি করে।</span>
+            <span class="lang-hindi">समय को महत्व दो, समय ही भाग्य बनाता है।</span>
+            <span class="lang-english">Give importance to time, time creates destiny.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 564</span>
+            <span class="lang-bangla">অসৎ সঙ্গ ত্যাগ করাই বুদ্ধিমানের কাজ।</span>
+            <span class="lang-hindi">बुरे लोगों का साथ छोड़ना बुद्धिमानी है।</span>
+            <span class="lang-english">Abandoning bad company is wisdom.</span>
+            <span class="reference">(Aranya Kanda 10.39)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 565</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর শক্তি এবং সাহস।</span>
+            <span class="lang-hindi">पत्नी पति की शक्ति और साहस है।</span>
+            <span class="lang-english">A wife is the strength and courage of her husband.</span>
+            <span class="reference">(Aranya Kanda 10.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 566</span>
+            <span class="lang-bangla">অহংকার জ্ঞানকে নষ্ট করে।</span>
+            <span class="lang-hindi">अहंकार ज्ञान को नष्ट कर देता है।</span>
+            <span class="lang-english">Arrogance destroys knowledge.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 567</span>
+            <span class="lang-bangla">ধৈর্য হলো মানুষের ভিতরের আগুন।</span>
+            <span class="lang-hindi">धैर्य मनुष्य के अंदर की आग है।</span>
+            <span class="lang-english">Patience is the inner fire of man.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 568</span>
+            <span class="lang-bangla">ক্ষমাশীল ব্যক্তিই প্রকৃত ধার্মিক।</span>
+            <span class="lang-hindi">क्षमाशील व्यक्ति ही सच्चा धार्मिक है।</span>
+            <span class="lang-english">A forgiving person is truly righteous.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 569</span>
+            <span class="lang-bangla">বিনয় মানুষকে মহৎ করে তোলে।</span>
+            <span class="lang-hindi">विनम्रता मनुष्य को महान बनाती है।</span>
+            <span class="lang-english">Humility makes man great.</span>
+            <span class="reference">(Balakanda 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 570</span>
+            <span class="lang-bangla">পরিবারের প্রতি অনুরাগ জীবনের ভিত্তি।</span>
+            <span class="lang-hindi">परिवार के प्रति प्रेम जीवन का आधार है।</span>
+            <span class="lang-english">Affection for the family is the foundation of life.</span>
+            <span class="reference">(Ayodhya Kanda 11.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 571</span>
+            <span class="lang-bangla">কর্তব্য পালনে কোনো বাধা মানব না।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में कोई बाधा नहीं मानेंगे।</span>
+            <span class="lang-english">I will not accept any obstacle in fulfilling my duty.</span>
+            <span class="reference">(Ayodhya Kanda 109.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 572</span>
+            <span class="lang-bangla">লোভ মানুষের পতনের সবচেয়ে বড় কারণ।</span>
+            <span class="lang-hindi">लालच मनुष्य के पतन का सबसे बड़ा कारण है।</span>
+            <span class="lang-english">Greed is the biggest reason for the downfall of man.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 573</span>
+            <span class="lang-bangla">ত্যাগই জীবনের সবচেয়ে বড় ধর্ম।</span>
+            <span class="lang-hindi">त्याग ही जीवन का सबसे बड़ा धर्म है।</span>
+            <span class="lang-english">Renunciation is the greatest Dharma of life.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 574</span>
+            <span class="lang-bangla">শাসকের ধর্ম হলো ন্যায় বিচার করা।</span>
+            <span class="lang-hindi">शासक का धर्म न्याय करना है।</span>
+            <span class="lang-english">The Dharma of a ruler is to administer justice.</span>
+            <span class="reference">(Ayodhya Kanda 1.75)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 575</span>
+            <span class="lang-bangla">ক্রোধ মানুষের দৃষ্টিকে অন্ধ করে।</span>
+            <span class="lang-hindi">क्रोध मनुष्य की दृष्टि को अंधा कर देता है।</span>
+            <span class="lang-english">Anger blinds man's vision.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 576</span>
+            <span class="lang-bangla">পিতার প্রতিজ্ঞা রক্ষা করাই সন্তানের প্রধান ধর্ম।</span>
+            <span class="lang-hindi">पिता की प्रतिज्ञा पूरी करना ही संतान का मुख्य धर्म है।</span>
+            <span class="lang-english">Fulfilling the father's promise is the principal Dharma of the child.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 577</span>
+            <span class="lang-bangla">সত্যের পথে চলাই জীবনের শ্রেষ্ঠ পথ।</span>
+            <span class="lang-hindi">सत्य के मार्ग पर चलना ही जीवन का सर्वश्रेष्ठ मार्ग है।</span>
+            <span class="lang-english">Walking the path of truth is the best way of life.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 578</span>
+            <span class="lang-bangla">সময়কে নষ্ট করা মানে সুযোগ নষ্ট করা।</span>
+            <span class="lang-hindi">समय को बर्बाद करना मतलब अवसर को बर्बाद करना।</span>
+            <span class="lang-english">Wasting time means wasting opportunity.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 579</span>
+            <span class="lang-bangla">সৎ লোকের সঙ্গ সর্বদা মঙ্গলজনক।</span>
+            <span class="lang-hindi">सज्जन लोगों का साथ हमेशा मंगलकारी होता है।</span>
+            <span class="lang-english">The company of noble people is always auspicious.</span>
+            <span class="reference">(Aranya Kanda 10.39)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 580</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর সকল দুঃখের সাথী।</span>
+            <span class="lang-hindi">पत्नी पति के सभी दुखों की साथी होती है।</span>
+            <span class="lang-english">A wife is a companion in all the sorrows of her husband.</span>
+            <span class="reference">(Aranya Kanda 10.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 581</span>
+            <span class="lang-bangla">ধৈর্য হলো মানুষের সবচেয়ে বড় সম্পদ।</span>
+            <span class="lang-hindi">धैर्य मनुष्य की सबसे बड़ी संपत्ति है।</span>
+            <span class="lang-english">Patience is the greatest wealth of man.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 582</span>
+            <span class="lang-bangla">অহংকার মানুষকে ক্ষুদ্র করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य को छोटा बनाता है।</span>
+            <span class="lang-english">Arrogance makes a man small.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 583</span>
+            <span class="lang-bangla">ক্ষমা মানুষের মনকে শান্তি দেয়।</span>
+            <span class="lang-hindi">क्षमा मनुष्य के मन को शांति देती है।</span>
+            <span class="lang-english">Forgiveness gives peace to the mind of man.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 584</span>
+            <span class="lang-bangla">বিনয়ী ব্যক্তির কাছে স্বয়ং ঈশ্বরও নত হন।</span>
+            <span class="lang-hindi">विनम्र व्यक्ति के सामने स्वयं ईश्वर भी झुकते हैं।</span>
+            <span class="lang-english">Even God bows down before a humble person.</span>
+            <span class="reference">(Balakanda 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 585</span>
+            <span class="lang-bangla">পরিবারের বন্ধন কখনও ছেঁড়া উচিত নয়।</span>
+            <span class="lang-hindi">परिवार के बंधन को कभी नहीं तोड़ना चाहिए।</span>
+            <span class="lang-english">The bond of family should never be broken.</span>
+            <span class="reference">(Ayodhya Kanda 11.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 586</span>
+            <span class="lang-bangla">কর্তব্য পালনেই জীবনের শ্রেষ্ঠ সফলতা।</span>
+            <span class="lang-hindi">कर्तव्य निभाने में ही जीवन की सर्वश्रेष्ठ सफलता है।</span>
+            <span class="lang-english">The best success in life is in fulfilling duty.</span>
+            <span class="reference">(Ayodhya Kanda 109.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 587</span>
+            <span class="lang-bangla">লোভী ব্যক্তি কখনই সুখী হতে পারে না।</span>
+            <span class="lang-hindi">लालची व्यक्ति कभी सुखी नहीं हो सकता।</span>
+            <span class="lang-english">A greedy person can never be happy.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 588</span>
+            <span class="lang-bangla">ত্যাগই মানুষের সর্বোচ্চ ধর্ম।</span>
+            <span class="lang-hindi">त्याग ही मनुष्य का सर्वोच्च धर्म है।</span>
+            <span class="lang-english">Renunciation is the supreme Dharma of man.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 589</span>
+            <span class="lang-bangla">শাসকের উচিত সর্বদা প্রজার মতামতকে গুরুত্ব দেওয়া।</span>
+            <span class="lang-hindi">शासक को हमेशा प्रजा की राय को महत्व देना चाहिए।</span>
+            <span class="lang-english">The ruler should always give importance to the opinion of the subjects.</span>
+            <span class="reference">(Ayodhya Kanda 1.75)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 590</span>
+            <span class="lang-bangla">ক্রোধ মানুষের সকল শুভ কর্ম নষ্ট করে।</span>
+            <span class="lang-hindi">क्रोध मनुष्य के सभी शुभ कर्मों को नष्ट कर देता है।</span>
+            <span class="lang-english">Anger destroys all the good deeds of man.</span>
+            <span class="reference">(Yuddha Kanda 16.36)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 591</span>
+            <span class="lang-bangla">পিতার কথা পালনই জীবনের শ্রেষ্ঠ পূজা।</span>
+            <span class="lang-hindi">पिता की बात मानना ही जीवन की सर्वश्रेष्ठ पूजा है।</span>
+            <span class="lang-english">Obeying the father's word is the best worship of life.</span>
+            <span class="reference">(Ayodhya Kanda 21.41)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 592</span>
+            <span class="lang-bangla">সত্যের পথে চলাই জীবনের শ্রেষ্ঠ ব্রত।</span>
+            <span class="lang-hindi">सत्य के मार्ग पर चलना ही जीवन का सर्वश्रेष्ठ व्रत है।</span>
+            <span class="lang-english">Walking the path of truth is the best vow of life.</span>
+            <span class="reference">(Ayodhya Kanda 109.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 593</span>
+            <span class="lang-bangla">সময়কে সঠিক কাজে লাগানোই বুদ্ধিমত্তা।</span>
+            <span class="lang-hindi">समय को सही काम में लगाना ही बुद्धिमत्ता है।</span>
+            <span class="lang-english">Utilizing time for the right work is intelligence.</span>
+            <span class="reference">(Kishkindha Kanda 30.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 594</span>
+            <span class="lang-bangla">অসৎ সঙ্গ কখনও মঙ্গলজনক নয়।</span>
+            <span class="lang-hindi">बुरी संगत कभी मंगलकारी नहीं होती।</span>
+            <span class="lang-english">Bad company is never auspicious.</span>
+            <span class="reference">(Aranya Kanda 10.39)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 595</span>
+            <span class="lang-bangla">স্ত্রী হলো স্বামীর জীবনের আলোকবর্তিকা।</span>
+            <span class="lang-hindi">पत्नी पति के जीवन की प्रकाश स्तम्भ है।</span>
+            <span class="lang-english">A wife is the lighthouse of her husband's life.</span>
+            <span class="reference">(Aranya Kanda 10.25)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 596</span>
+            <span class="lang-bangla">ধৈর্য ছাড়া কোনো মহৎ কাজ সফল হয় না।</span>
+            <span class="lang-hindi">धैर्य के बिना कोई महान कार्य सफल नहीं होता।</span>
+            <span class="lang-english">No great work succeeds without patience.</span>
+            <span class="reference">(Sundara Kanda 13.63)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 597</span>
+            <span class="lang-bangla">অহংকার মানুষের পতন নিশ্চিত করে।</span>
+            <span class="lang-hindi">अहंकार मनुष्य का पतन निश्चित करता है।</span>
+            <span class="lang-english">Arrogance ensures the downfall of man.</span>
+            <span class="reference">(Sundara Kanda 51.38)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 598</span>
+            <span class="lang-bangla">ক্ষমা হলো মানুষের শ্রেষ্ঠ গুণ।</span>
+            <span class="lang-hindi">क्षमा मनुष्य का सर्वश्रेष्ठ गुण है।</span>
+            <span class="lang-english">Forgiveness is the best virtue of man.</span>
+            <span class="reference">(Yuddha Kanda 104.19)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 599</span>
+            <span class="lang-bangla">ত্যাগ মানুষকে অমর করে।</span>
+            <span class="lang-hindi">त्याग मनुष्य को अमर करता है।</span>
+            <span class="lang-english">Renunciation makes man immortal.</span>
+            <span class="reference">(Ayodhya Kanda 32.26)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 600</span>
+            <span class="lang-bangla">লোভ মানুষের হৃদয়কে দুর্বল করে।</span>
+            <span class="lang-hindi">लालच मनुष्य के हृदय को कमजोर करता है।</span>
+            <span class="lang-english">Greed weakens the human heart.</span>
+            <span class="reference">(Ayodhya Kanda 37.7)</span>
+        </div>
+
+    </div>
+
+    <div class="fixed-nav">
+        <a href="ramayana_set_5.html" class="nav-button">Collection 5 (Previous)</a>
+        <a href="ramayana_set_6.html" class="nav-button" active>Collection 6</a>
+        <a href="gita-quotes.html" class="nav-button">Index</a>
+        <a href="ramayana_set_7.html" class="nav-button">Collection 7 (Next) →</a>
+    </div>
+</body>
+</html>

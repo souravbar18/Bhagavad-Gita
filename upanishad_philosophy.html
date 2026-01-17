@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upanishad - Part 1</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            padding-bottom: 120px; /* increased for fixed nav */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .quote-box {
+            border: 2px solid #5fa6d8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-number {
+            display: block;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px dotted #e74c3c;
+            padding-bottom: 5px;
+        }
+
+        .lang-bangla {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-style: italic;
+            color: #2980b9;
+        }
+
+        .lang-hindi {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #16a085;
+        }
+
+        .lang-english {
+            display: block;
+            font-size: 1.0em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #dcdcdc;
+        }
+
+        .reference {
+            display: block;
+            font-size: 0.9em;
+            color: #8e44ad;
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* --- Fixed Navigation Bar Styles --- */
+        .fixed-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px; 
+            margin: 0 8px; 
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .nav-button.active {
+            background-color: #1e8449;
+            border: 2px solid white;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .nav-button {
+                font-size: 12px;
+                padding: 10px 6px;
+                margin: 0 3px;
+                flex-grow: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .quote-number {
+                font-size: 1.1em;
+            }
+
+            .lang-bangla,
+            .lang-hindi,
+            .lang-english {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .quote-box {
+                padding: 12px;
+            }
+        }
+
+        /* Prevent last quote from being hidden behind nav */
+        .quote-box:last-child {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Upanishad Philosophy - Part 1</h1>
+            
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 001</span>
+            <div class="lang-bangla">সেই আত্মা (Self) কেবল তপস্যা ও সঠিক জ্ঞানের মাধ্যমেই লাভ করা যায়।</div>
+            <div class="lang-hindi">वह आत्मा केवल तपस्या और सही ज्ञान के माध्यम से प्राप्त होती है।</div>
+            <div class="lang-english">That Self is gained only by austerity and right knowledge.</div>
+            <span class="reference">(Mundaka Upanishad 3.1.5)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 002</span>
+            <div class="lang-bangla">সত্যের দ্বারাই জীবনের উন্নতি হয়, মিথ্যার দ্বারা নয়।</div>
+            <div class="lang-hindi">सत्य से ही जीवन का उत्थान होता है, झूठ से नहीं।</div>
+            <div class="lang-english">By Truth alone does life prosper, not by falsehood.</div>
+            <span class="reference">(Mundaka Upanishad 3.1.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 003</span>
+            <div class="lang-bangla">পূর্ণ থেকে পূর্ণ গ্রহণ করলেও পূর্ণ অবশিষ্ট থাকে।</div>
+            <div class="lang-hindi">पूर्ण से पूर्ण लेने पर भी पूर्ण ही शेष रहता है।</div>
+            <div class="lang-english">Even if Purna (Completeness) is taken from Purna, Purna still remains.</div>
+            <span class="reference">(Isha Upanishad - Shanti Mantra)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 004</span>
+            <div class="lang-bangla">তুমি নিজেই সেই ব্রহ্ম (তৎ ত্বম অসি)।</div>
+            <div class="lang-hindi">तुम स्वयं ही वह ब्रह्म हो (तत् त्वम् असि)।</div>
+            <div class="lang-english">Thou art That (Tat Tvam Asi).</div>
+            <span class="reference">(Chandogya Upanishad 6.8.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 005</span>
+            <div class="lang-bangla">অজ্ঞানতা থেকে আমাকে জ্ঞানের দিকে নিয়ে যাও।</div>
+            <div class="lang-hindi">मुझे अज्ञानता से ज्ञान की ओर ले चलो।</div>
+            <div class="lang-english">Lead me from ignorance to knowledge.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.3.28)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 006</span>
+            <div class="lang-bangla">ব্রহ্মই সকল দুঃখের বাইরে।</div>
+            <div class="lang-hindi">ब्रह्म सभी दुखों से परे है।</div>
+            <div class="lang-english">Brahman is beyond all sorrow.</div>
+            <span class="reference">(Chandogya Upanishad 8.1.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 007</span>
+            <div class="lang-bangla">ঈশ্বর সকলের হৃদয়ে বিরাজমান।</div>
+            <div class="lang-hindi">ईश्वर सभी के हृदय में वास करते हैं।</div>
+            <div class="lang-english">The Lord resides in the heart of all.</div>
+            <span class="reference">(Katha Upanishad 2.3.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 008</span>
+            <div class="lang-bangla">আমিই ব্রহ্ম (অহং ব্রহ্মাস্মি)।</div>
+            <div class="lang-hindi">मैं ही ब्रह्म हूँ (अहम् ब्रह्मास्मि)।</div>
+            <div class="lang-english">I am Brahman (Aham Brahmasmi).</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.4.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 009</span>
+            <div class="lang-bangla">ওঁ (Aum) হলো ব্রহ্মের শ্রেষ্ঠ অবলম্বন।</div>
+            <div class="lang-hindi">ॐ (Aum) ब्रह्म का श्रेष्ठ सहारा है।</div>
+            <div class="lang-english">Aum is the best support of Brahman.</div>
+            <span class="reference">(Katha Upanishad 1.2.17)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 010</span>
+            <div class="lang-bangla">অন্নকে নিন্দা করবে না। এটি একটি ব্রত।</div>
+            <div class="lang-hindi">अन्न की निंदा न करें। यह एक व्रत है।</div>
+            <div class="lang-english">Do not slight food. It is a vow.</div>
+            <span class="reference">(Taittiriya Upanishad 3.9.1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 011</span>
+            <div class="lang-bangla">সত্য বলো। ধর্ম পালন করো।</div>
+            <div class="lang-hindi">सत्य बोलो। धर्म का पालन करो।</div>
+            <div class="lang-english">Speak the truth. Practice Dharma.</div>
+            <span class="reference">(Taittiriya Upanishad 1.11.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 012</span>
+            <div class="lang-bangla">ব্রহ্ম মনের অতীত।</div>
+            <div class="lang-hindi">ब्रह्म मन से परे है।</div>
+            <div class="lang-english">Brahman is beyond the mind.</div>
+            <span class="reference">(Kena Upanishad 1.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 013</span>
+            <div class="lang-bangla">জ্ঞান দ্বারা অমৃতত্ব লাভ করা যায়।</div>
+            <div class="lang-hindi">ज्ञान द्वारा अमरता प्राप्त होती है।</div>
+            <div class="lang-english">Immortality is gained through knowledge.</div>
+            <span class="reference">(Kena Upanishad 2.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 014</span>
+            <div class="lang-bangla">যিনি জানেন, তিনিই অমর হন।</div>
+            <div class="lang-hindi">जो जानता है, वही अमर होता है।</div>
+            <div class="lang-english">He who knows Him becomes immortal.</div>
+            <span class="reference">(Katha Upanishad 2.3.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 015</span>
+            <div class="lang-bangla">মৃত্যু থেকে আমাকে অমরত্বের দিকে নিয়ে যাও।</div>
+            <div class="lang-hindi">मुझे मृत्यु से अमरता की ओर ले चलो।</div>
+            <div class="lang-english">Lead me from death to immortality.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.3.28)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 016</span>
+            <div class="lang-bangla">আমাদের রক্ষা করো, একসাথে আমাদের শক্তি বাড়াও।</div>
+            <div class="lang-hindi">हमारी रक्षा करो, एक साथ हमारी शक्ति बढ़ाओ।</div>
+            <div class="lang-english">May He protect us, may He nourish us together.</div>
+            <span class="reference">(Katha Upanishad - Shanti Mantra)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 017</span>
+            <div class="lang-bangla">সমস্ত জীবই ব্রহ্ম থেকে উদ্ভূত।</div>
+            <div class="lang-hindi">सभी जीव ब्रह्म से ही उत्पन्न हुए हैं।</div>
+            <div class="lang-english">All beings have emerged from Brahman.</div>
+            <span class="reference">(Taittiriya Upanishad 3.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 018</span>
+            <div class="lang-bangla">সর্বত্র সেই একই ব্রহ্মকে দেখো।</div>
+            <div class="lang-hindi">हर जगह उसी एक ब्रह्म को देखो।</div>
+            <div class="lang-english">See the same Brahman everywhere.</div>
+            <span class="reference">(Isha Upanishad 6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 019</span>
+            <div class="lang-bangla">মনকে শান্ত ও স্থির করো।</div>
+            <div class="lang-hindi">मन को शांत और स्थिर करो।</div>
+            <div class="lang-english">Make the mind calm and steady.</div>
+            <span class="reference">(Katha Upanishad 2.3.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 020</span>
+            <div class="lang-bangla">যা মহৎ, তাই ব্রহ্ম।</div>
+            <div class="lang-hindi">जो महान है, वही ब्रह्म है।</div>
+            <div class="lang-english">That which is great is Brahman.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 4.4.20 - Implied)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 021</span>
+            <div class="lang-bangla">অন্ধকার থেকে আমাকে আলোর দিকে নিয়ে যাও।</div>
+            <div class="lang-hindi">मुझे अंधकार से प्रकाश की ओर ले चलो।</div>
+            <div class="lang-english">Lead me from darkness to light.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.3.28)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 022</span>
+            <div class="lang-bangla">আকাশই সব কিছুর জন্ম এবং লয়ের স্থান।</div>
+            <div class="lang-hindi">आकाश ही हर चीज़ के जन्म और विलय का स्थान है।</div>
+            <div class="lang-english">Akasha (Space) is the origin and dissolution of everything.</div>
+            <span class="reference">(Chandogya Upanishad 1.9.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 023</span>
+            <div class="lang-bangla">ব্রহ্মকে কেবল মন দিয়েই লাভ করা যায়।</div>
+            <div class="lang-hindi">ब्रह्म को केवल मन से ही प्राप्त किया जा सकता है।</div>
+            <div class="lang-english">Brahman is to be obtained by the mind alone.</div>
+            <span class="reference">(Katha Upanishad 2.1.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 024</span>
+            <div class="lang-bangla">কর্ম করে যাও এবং মুক্তির আকাঙ্ক্ষা করো।</div>
+            <div class="lang-hindi">कर्म करते रहो और मुक्ति की आकांक्षा करो।</div>
+            <div class="lang-english">Keep doing actions and desire for liberation.</div>
+            <span class="reference">(Isha Upanishad 2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 025</span>
+            <div class="lang-bangla">নিষ্ক্রিয়তা নয়, কর্মই জীবন।</div>
+            <div class="lang-hindi">निष्क्रियता नहीं, कर्म ही जीवन है।</div>
+            <div class="lang-english">Not inaction, but action is life.</div>
+            <span class="reference">(Isha Upanishad 2 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 026</span>
+            <div class="lang-bangla">যার কাছে সবকিছুই আত্মা, তার আর কোনো মোহ থাকতে পারে না।</div>
+            <div class="lang-hindi">जिसके लिए सब कुछ आत्मा ही है, उसे और कोई मोह नहीं हो सकता।</div>
+            <div class="lang-english">For whom everything has become the Self, what delusion or sorrow can there be?</div>
+            <span class="reference">(Isha Upanishad 7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 027</span>
+            <div class="lang-bangla">সে (ব্রহ্ম) নড়ে না, তবুও বাতাসের চেয়েও দ্রুতগামী।</div>
+            <div class="lang-hindi">वह (ब्रह्म) हिलता नहीं, फिर भी हवा से भी तेज़ है।</div>
+            <div class="lang-english">It moves not, yet is faster than the mind.</div>
+            <span class="reference">(Isha Upanishad 4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 028</span>
+            <div class="lang-bangla">অবিদ্যার চেয়েও খারাপ হলো তার ভেতরে বাস করা।</div>
+            <div class="lang-hindi">अविद्या से भी बुरा है उसके भीतर वास करना।</div>
+            <div class="lang-english">Worse than ignorance is dwelling within it.</div>
+            <span class="reference">(Isha Upanishad 9 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 029</span>
+            <div class="lang-bangla">বিদ্যা (জ্ঞান) ও অবিদ্যা (অজ্ঞান) উভয়কেই জানো।</div>
+            <div class="lang-hindi">विद्या (ज्ञान) और अविद्या (अज्ञान) दोनों को जानो।</div>
+            <div class="lang-english">Know both Vidya (knowledge) and Avidya (ignorance).</div>
+            <span class="reference">(Isha Upanishad 11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 030</span>
+            <div class="lang-bangla">ব্রহ্ম অদৃশ্য, ধরাছোঁয়ার বাইরে।</div>
+            <div class="lang-hindi">ब्रह्म अदृश्य है, पकड़ से परे है।</div>
+            <div class="lang-english">Brahman is invisible, ungraspable.</div>
+            <span class="reference">(Mundaka Upanishad 1.1.6)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 031</span>
+            <div class="lang-bangla">ওঁ হলো ধনুক, আত্মা হলো তীর, এবং ব্রহ্ম হলো লক্ষ্য।</div>
+            <div class="lang-hindi">ॐ धनुष है, आत्मा तीर है, और ब्रह्म लक्ष्य है।</div>
+            <div class="lang-english">Aum is the bow, the Self is the arrow, and Brahman is the target.</div>
+            <span class="reference">(Mundaka Upanishad 2.2.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 032</span>
+            <div class="lang-bangla">সত্যের পথই দেবযান (দেবতাদের পথ)।</div>
+            <div class="lang-hindi">सत्य का मार्ग ही देवयान (देवताओं का मार्ग) है।</div>
+            <div class="lang-english">The path of Truth is the way of the Gods (Devayana).</div>
+            <span class="reference">(Mundaka Upanishad 3.1.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 033</span>
+            <div class="lang-bangla">যিনি জ্ঞানী, তিনি সকল বন্ধন থেকে মুক্ত।</div>
+            <div class="lang-hindi">जो ज्ञानी है, वह सभी बंधनों से मुक्त है।</div>
+            <div class="lang-english">The wise one is liberated from all bondages.</div>
+            <span class="reference">(Mundaka Upanishad 3.2.9)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 034</span>
+            <div class="lang-bangla">ব্রহ্মই জীবন ও মনের উৎস।</div>
+            <div class="lang-hindi">ब्रह्म ही जीवन और मन का स्रोत है।</div>
+            <div class="lang-english">Brahman is the source of life and mind.</div>
+            <span class="reference">(Prashna Upanishad 6.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 035</span>
+            <div class="lang-bangla">সমস্ত প্রাণ এক সত্তা (ব্রহ্ম) থেকে জন্মগ্রহণ করে।</div>
+            <div class="lang-hindi">सभी प्राण एक सत्ता (ब्रह्म) से उत्पन्न होते हैं।</div>
+            <div class="lang-english">All life forces are born from one being (Brahman).</div>
+            <span class="reference">(Prashna Upanishad 3.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 036</span>
+            <div class="lang-bangla">আনন্দ (Bliss) হলো ব্রহ্ম।</div>
+            <div class="lang-hindi">आनंद ही ब्रह्म है।</div>
+            <div class="lang-english">Bliss is Brahman.</div>
+            <span class="reference">(Taittiriya Upanishad 3.6.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 037</span>
+            <div class="lang-bangla">অহংবোধ পরিহার করো।</div>
+            <div class="lang-hindi">अहंकार से बचें।</div>
+            <div class="lang-english">Avoid the sense of 'I'.</div>
+            <span class="reference">(Taittiriya Upanishad 2.8.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 038</span>
+            <div class="lang-bangla">তিনি (ব্রহ্ম) আনন্দ থেকে সবকিছু সৃষ্টি করেছেন।</div>
+            <div class="lang-hindi">उन्होंने (ब्रह्म ने) आनंद से सब कुछ बनाया है।</div>
+            <div class="lang-english">He (Brahman) created all things from bliss.</div>
+            <span class="reference">(Taittiriya Upanishad 2.7.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 039</span>
+            <div class="lang-bangla">জ্ঞান ছাড়া মুক্তি নেই।</div>
+            <div class="lang-hindi">ज्ञान के बिना मोक्ष नहीं है।</div>
+            <div class="lang-english">There is no salvation without knowledge.</div>
+            <span class="reference">(Shvetashvatara Upanishad 3.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 040</span>
+            <div class="lang-bangla">সেই এক ঈশ্বরই সবকিছু পরিচালনা করেন।</div>
+            <div class="lang-hindi">वह एक ईश्वर ही सब कुछ संचालित करता है।</div>
+            <div class="lang-english">That one God rules over all things.</div>
+            <span class="reference">(Shvetashvatara Upanishad 3.1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 041</span>
+            <div class="lang-bangla">তিনিই আলো, সকল আলোর ঊর্ধ্বে।</div>
+            <div class="lang-hindi">वही प्रकाश है, सभी रोशनी से ऊपर।</div>
+            <div class="lang-english">He is the light, above all lights.</div>
+            <span class="reference">(Shvetashvatara Upanishad 6.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 042</span>
+            <div class="lang-bangla">ব্রহ্মকে হৃদয়ের গহ্বরে লুকানো অবস্থায় পাওয়া যায়।</div>
+            <div class="lang-hindi">ब्रह्म हृदय की गुफा में छिपा हुआ पाया जाता है।</div>
+            <div class="lang-english">Brahman is found hidden in the cave of the heart.</div>
+            <span class="reference">(Katha Upanishad 1.2.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 043</span>
+            <div class="lang-bangla">আত্মাই হলো মহৎ। এর চেয়ে বড় আর কিছু নেই।</div>
+            <div class="lang-hindi">आत्मा ही महान है। इससे बड़ा और कुछ नहीं है।</div>
+            <div class="lang-english">The Self is the Great One. There is nothing higher than it.</div>
+            <span class="reference">(Katha Upanishad 1.3.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 044</span>
+            <div class="lang-bangla">যা নিত্য, তা-ই শ্রেয়; যা অনিত্য, তা প্রেয়।</div>
+            <div class="lang-hindi">जो नित्य है, वही श्रेय (श्रेष्ठ) है; जो अनित्य है, वह प्रेय (प्रिय) है।</div>
+            <div class="lang-english">The good (Shreya) is one thing; the pleasant (Preya) is another.</div>
+            <span class="reference">(Katha Upanishad 1.2.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 045</span>
+            <div class="lang-bangla">সবকিছুর মূলে এক অদ্বিতীয় সত্তা।</div>
+            <div class="lang-hindi">सभी चीज़ों की जड़ में एक अद्वितीय सत्ता है।</div>
+            <div class="lang-english">At the root of everything is the one non-dual existence.</div>
+            <span class="reference">(Chandogya Upanishad 6.2.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 046</span>
+            <div class="lang-bangla">মনই ব্রহ্ম (মনো ব্রহ্ম)।</div>
+            <div class="lang-hindi">मन ही ब्रह्म है (मनो ब्रह्म)।</div>
+            <div class="lang-english">Mind is Brahman.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 4.1.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 047</span>
+            <div class="lang-bangla">ব্রহ্মের কাছে পৌঁছানোই হলো জীবনের চরম লক্ষ্য।</div>
+            <div class="lang-hindi">ब्रह्म तक पहुँचना ही जीवन का अंतिम लक्ष्य है।</div>
+            <div class="lang-english">To reach Brahman is the ultimate goal of life.</div>
+            <span class="reference">(Mundaka Upanishad 2.2.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 048</span>
+            <div class="lang-bangla">যে কর্ম করে, সে-ই ফল লাভ করে।</div>
+            <div class="lang-hindi">जो कर्म करता है, वही फल प्राप्त करता है।</div>
+            <div class="lang-english">He who acts obtains the fruit (of action).</div>
+            <span class="reference">(Brihadaranyaka Upanishad 4.4.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 049</span>
+            <div class="lang-bangla">আত্মা অমর, জন্ম-মৃত্যুর ঊর্ধ্বে।</div>
+            <div class="lang-hindi">आत्मा अमर है, जन्म और मृत्यु से परे है।</div>
+            <div class="lang-english">The Self is immortal, beyond birth and death.</div>
+            <span class="reference">(Katha Upanishad 1.2.18)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 050</span>
+            <div class="lang-bangla">জ্ঞানীরা শান্তি ও আনন্দ লাভ করেন।</div>
+            <div class="lang-hindi">ज्ञानी लोग शांति और आनंद प्राप्त करते हैं।</div>
+            <div class="lang-english">The wise attain peace and bliss.</div>
+            <span class="reference">(Mundaka Upanishad 3.2.5)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 051</span>
+            <div class="lang-bangla">নিজের দায়িত্ব পালন করে জীবনধারণের ইচ্ছা করো।</div>
+            <div class="lang-hindi">अपना कर्तव्य निभाते हुए जीवन जीने की इच्छा करो।</div>
+            <div class="lang-english">Wishing to live a hundred years, one should perform actions.</div>
+            <span class="reference">(Isha Upanishad 2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 052</span>
+            <div class="lang-bangla">সকল প্রাণের প্রাণস্বরূপ ব্রহ্মই।</div>
+            <div class="lang-hindi">सभी प्राणियों का प्राणस्वरूप ब्रह्म ही है।</div>
+            <div class="lang-english">Brahman is the life of all lives.</div>
+            <span class="reference">(Kena Upanishad 1.2)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 053</span>
+            <div class="lang-bangla">যা কিছু চলছে, তা সবই ঈশ্বর দ্বারা আবৃত।</div>
+            <div class="lang-hindi">जो कुछ भी चल रहा है, वह सब ईश्वर से ढका हुआ है।</div>
+            <div class="lang-english">All that is moving in the universe is covered by the Lord (Isha).</div>
+            <span class="reference">(Isha Upanishad 1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 054</span>
+            <div class="lang-bangla">সেই আত্মা অতি সূক্ষ্ম এবং সকলের হৃদয়ে প্রবেশ করেছে।</div>
+            <div class="lang-hindi">वह आत्मा अत्यंत सूक्ष्म है और सभी के हृदय में प्रवेश कर चुकी है।</div>
+            <div class="lang-english">That Self is subtle and has entered into the heart of all.</div>
+            <span class="reference">(Katha Upanishad 2.2.12)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 055</span>
+            <div class="lang-bangla">যা শোনা যায়নি, যা ভাবা যায়নি, তা-ই হলো ব্রহ্ম।</div>
+            <div class="lang-hindi">जो सुना नहीं गया, जो सोचा नहीं गया, वही ब्रह्म है।</div>
+            <div class="lang-english">That which is unheard, unthought, that is Brahman.</div>
+            <span class="reference">(Kena Upanishad 1.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 056</span>
+            <div class="lang-bangla">অন্নই প্রাণ এবং প্রাণই অন্ন।</div>
+            <div class="lang-hindi">अन्न ही प्राण है और प्राण ही अन्न है।</div>
+            <div class="lang-english">Food is Prana (life-force) and Prana is food.</div>
+            <span class="reference">(Taittiriya Upanishad 2.2.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 057</span>
+            <div class="lang-bangla">মনকে সংহত করে যোগ অভ্যাস করো।</div>
+            <div class="lang-hindi">मन को एकाग्र करके योग का अभ्यास करो।</div>
+            <div class="lang-english">Unite the mind and practice Yoga.</div>
+            <span class="reference">(Katha Upanishad 2.3.11)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 058</span>
+            <div class="lang-bangla">অসৎ থেকে আমাকে সতের দিকে নিয়ে যাও।</div>
+            <div class="lang-hindi">मुझे असत्य से सत्य की ओर ले चलो।</div>
+            <div class="lang-english">Lead me from the unreal to the real.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 1.3.28)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 059</span>
+            <div class="lang-bangla">মৃত্যুর ভয় থেকে মুক্তি পাওয়াই অমরত্ব।</div>
+            <div class="lang-hindi">मृत्यु के भय से मुक्ति पाना ही अमरता है।</div>
+            <div class="lang-english">Liberation from the fear of death is immortality.</div>
+            <span class="reference">(Taittiriya Upanishad 2.4.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 060</span>
+            <div class="lang-bangla">কর্মের ফল ত্যাগ করো।</div>
+            <div class="lang-hindi">कर्मों के फल का त्याग करो।</div>
+            <div class="lang-english">Renounce the fruits of action.</div>
+            <span class="reference">(Isha Upanishad 1)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 061</span>
+            <div class="lang-bangla">সত্যের মুখ সোনার ঢাকনা দিয়ে ঢাকা।</div>
+            <div class="lang-hindi">सत्य का मुख सोने के आवरण से ढका हुआ है।</div>
+            <div class="lang-english">The face of Truth is covered by a golden vessel.</div>
+            <span class="reference">(Isha Upanishad 15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 062</span>
+            <div class="lang-bangla">যিনি আমাকে জানেন, তিনি সবকিছুই জানেন।</div>
+            <div class="lang-hindi">जो मुझे जानता है, वह सब कुछ जानता है।</div>
+            <div class="lang-english">He who knows me, knows everything.</div>
+            <span class="reference">(Mundaka Upanishad 1.1.3 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 063</span>
+            <div class="lang-bangla">আত্মা রথী, শরীর রথ, বুদ্ধি সারথি।</div>
+            <div class="lang-hindi">आत्मा रथी है, शरीर रथ है, बुद्धि सारथी है।</div>
+            <div class="lang-english">The Self is the rider, the body is the chariot, the intellect is the charioteer.</div>
+            <span class="reference">(Katha Upanishad 1.3.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 064</span>
+            <div class="lang-bangla">যা দিয়ে বাক্য প্রকাশিত হয় না, তা-ই ব্রহ্ম।</div>
+            <div class="lang-hindi">जिससे वाणी व्यक्त नहीं होती, वही ब्रह्म है।</div>
+            <div class="lang-english">That which is not expressed by speech, that is Brahman.</div>
+            <span class="reference">(Kena Upanishad 1.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 065</span>
+            <div class="lang-bangla">প্রকৃত আনন্দ বাইরে নেই, আত্মায় নিহিত।</div>
+            <div class="lang-hindi">सच्चा आनंद बाहर नहीं, आत्मा में निहित है।</div>
+            <div class="lang-english">True joy is not outside, it is inherent in the Self.</div>
+            <span class="reference">(Chandogya Upanishad 7.23.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 066</span>
+            <div class="lang-bangla">এই আত্মা প্রজ্ঞাময়, অমৃতময়, এবং পবিত্র।</div>
+            <div class="lang-hindi">यह आत्मा प्रज्ञामय, अमृतमय और पवित्र है।</div>
+            <div class="lang-english">This Self is consisting of consciousness, immortal, and holy.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 4.4.22)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 067</span>
+            <div class="lang-bangla">ত্যাগ দ্বারাই অমরত্ব লাভ হয়।</div>
+            <div class="lang-hindi">त्याग से ही अमरता प्राप्त होती है।</div>
+            <div class="lang-english">Immortality is attained through renunciation.</div>
+            <span class="reference">(Mahanarayana Upanishad 10.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 068</span>
+            <div class="lang-bangla">জ্ঞান অর্জন না করলে মানুষের জীবন বৃথা।</div>
+            <div class="lang-hindi">ज्ञान अर्जित न करने पर मनुष्य का जीवन व्यर्थ है।</div>
+            <div class="lang-english">If knowledge is not gained, human life is futile.</div>
+            <span class="reference">(Kena Upanishad 2.5)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 069</span>
+            <div class="lang-bangla">ওঁ শব্দই ব্রহ্ম।</div>
+            <div class="lang-hindi">ॐ शब्द ही ब्रह्म है।</div>
+            <div class="lang-english">The sound 'Aum' is Brahman.</div>
+            <span class="reference">(Mandukya Upanishad 1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 070</span>
+            <div class="lang-bangla">ব্রহ্ম সকল দিকের ঊর্ধ্বে এবং নিচে।</div>
+            <div class="lang-hindi">ब्रह्म सभी दिशाओं से ऊपर और नीचे है।</div>
+            <div class="lang-english">Brahman is above and below all directions.</div>
+            <span class="reference">(Mundaka Upanishad 2.2.11)</span>
+        </div>
+        
+        <div class="quote-box">
+            <span class="quote-number">Quote 071</span>
+            <div class="lang-bangla">যিনি শান্ত, সংযমী এবং স্থিতিশীল, তিনি আত্মাকে জানেন।</div>
+            <div class="lang-hindi">जो शांत, संयमी और स्थिर है, वह आत्मा को जानता है।</div>
+            <div class="lang-english">The person who is calm, restrained, and steady knows the Self.</div>
+            <span class="reference">(Katha Upanishad 2.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 072</span>
+            <div class="lang-bangla">অন্ন হলো ব্রহ্মের প্রথম রূপ।</div>
+            <div class="lang-hindi">अन्न ब्रह्म का पहला रूप है।</div>
+            <div class="lang-english">Food is the first form of Brahman.</div>
+            <span class="reference">(Taittiriya Upanishad 2.2.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 073</span>
+            <div class="lang-bangla">জ্ঞান হলো মানুষের তৃতীয় চোখ।</div>
+            <div class="lang-hindi">ज्ञान मनुष्य की तीसरी आँख है।</div>
+            <div class="lang-english">Knowledge is the third eye of man.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 4.4.21 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 074</span>
+            <div class="lang-bangla">সবকিছুই ব্রহ্ম থেকে এসেছে এবং ব্রহ্মেই ফিরে যায়।</div>
+            <div class="lang-hindi">सब कुछ ब्रह्म से आया है और ब्रह्म में ही लौट जाता है।</div>
+            <div class="lang-english">Everything has emerged from Brahman and returns to Brahman.</div>
+            <span class="reference">(Chandogya Upanishad 3.14.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 075</span>
+            <div class="lang-bangla">যিনি ব্রহ্মকে জানেন, তিনি নির্ভয় হন।</div>
+            <div class="lang-hindi">जो ब्रह्म को जानता है, वह निर्भय हो जाता है।</div>
+            <div class="lang-english">He who knows Brahman becomes fearless.</div>
+            <span class="reference">(Taittiriya Upanishad 2.4.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 076</span>
+            <div class="lang-bangla">মনকে নিয়ন্ত্রণ করাই মুক্তির পথ।</div>
+            <div class="lang-hindi">मन को नियंत्रित करना ही मुक्ति का मार्ग है।</div>
+            <div class="lang-english">Controlling the mind is the path to liberation.</div>
+            <span class="reference">(Maitri Upanishad 6.34)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 077</span>
+            <div class="lang-bangla">ক্ষমা হলো সর্বশ্রেষ্ঠ গুণ।</div>
+            <div class="lang-hindi">क्षमा सबसे बड़ा गुण है।</div>
+            <div class="lang-english">Forgiveness is the supreme virtue.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 5.1.1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 078</span>
+            <div class="lang-bangla">কর্মের ফল কখনোই ত্যাগ করা উচিত নয়।</div>
+            <div class="lang-hindi">कर्मों का फल कभी नहीं छोड़ना चाहिए।</div>
+            <div class="lang-english">The result of action should never be renounced.</div>
+            <span class="reference">(Isha Upanishad 2 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 079</span>
+            <div class="lang-bangla">ব্রহ্ম হলো জ্ঞান, আনন্দ এবং অনন্ত।</div>
+            <div class="lang-hindi">ब्रह्म ज्ञान, आनंद और अनंत है।</div>
+            <div class="lang-english">Brahman is consciousness, bliss, and infinite.</div>
+            <span class="reference">(Taittiriya Upanishad 2.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 080</span>
+            <div class="lang-bangla">নিজে জেগে ওঠো, শিক্ষা নাও, এবং জ্ঞানীদের কাছে যাও।</div>
+            <div class="lang-hindi">स्वयं जागो, सीखो, और ज्ञानियों के पास जाओ।</div>
+            <div class="lang-english">Arise, awake, and approach the excellent ones to learn.</div>
+            <span class="reference">(Katha Upanishad 1.3.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 081</span>
+            <div class="lang-bangla">যে সর্বদা ব্রহ্মকে হৃদয়ে অনুভব করে, সে অমর হয়।</div>
+            <div class="lang-hindi">जो हमेशा ब्रह्म को हृदय में महसूस करता है, वह अमर हो जाता है।</div>
+            <div class="lang-english">He who always realizes Brahman in the heart becomes immortal.</div>
+            <span class="reference">(Katha Upanishad 2.3.15)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 082</span>
+            <div class="lang-bangla">বাক্য (কথা) থেকে মন বড়, মন থেকে সংকল্প বড়।</div>
+            <div class="lang-hindi">वाणी (बोलना) से मन बड़ा है, मन से संकल्प बड़ा है।</div>
+            <div class="lang-english">Mind is greater than speech, resolution is greater than mind.</div>
+            <span class="reference">(Chandogya Upanishad 7.3.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 083</span>
+            <div class="lang-bangla">আচরণের চেয়ে শ্রেষ্ঠ কিছু নেই।</div>
+            <div class="lang-hindi">आचरण से श्रेष्ठ कुछ भी नहीं है।</div>
+            <div class="lang-english">There is nothing superior to conduct.</div>
+            <span class="reference">(Taittiriya Upanishad 1.11.2 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 084</span>
+            <div class="lang-bangla">এই আত্মা অতি ক্ষুদ্র থেকেও ক্ষুদ্রতর।</div>
+            <div class="lang-hindi">यह आत्मा अत्यंत सूक्ष्म से भी सूक्ष्मतर है।</div>
+            <div class="lang-english">This Self is smaller than the smallest.</div>
+            <span class="reference">(Katha Upanishad 1.2.20)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 085</span>
+            <div class="lang-bangla">ব্রহ্মই সকল বেদান্তের উদ্দেশ্য।</div>
+            <div class="lang-hindi">ब्रह्म ही सभी वेदान्तों का उद्देश्य है।</div>
+            <div class="lang-english">Brahman is the goal of all Vedanta.</div>
+            <span class="reference">(Mundaka Upanishad 3.2.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 086</span>
+            <div class="lang-bangla">তিনি (ঈশ্বর) বিশ্বের স্রষ্টা ও পালনকর্তা।</div>
+            <div class="lang-hindi">वह (ईश्वर) विश्व का निर्माता और पालक है।</div>
+            <div class="lang-english">He (God) is the creator and preserver of the universe.</div>
+            <span class="reference">(Shvetashvatara Upanishad 4.10)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 087</span>
+            <div class="lang-bangla">যা দিয়ে চোখ দেখতে পায় না, তা-ই ব্রহ্ম।</div>
+            <div class="lang-hindi">जिससे आँख नहीं देख पाती, वही ब्रह्म है।</div>
+            <div class="lang-english">That which is not seen by the eye, that is Brahman.</div>
+            <span class="reference">(Kena Upanishad 1.6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 088</span>
+            <div class="lang-bangla">জ্ঞান অর্জন করো, তবেই দুঃখ দূর হবে।</div>
+            <div class="lang-hindi">ज्ञान प्राप्त करो, तभी दुख दूर होगा।</div>
+            <div class="lang-english">Acquire knowledge, then sorrow will vanish.</div>
+            <span class="reference">(Chandogya Upanishad 7.1.3)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 089</span>
+            <div class="lang-bangla">জ্ঞানীরা আত্মাকে সর্বত্র বিরাজমান দেখেন।</div>
+            <div class="lang-hindi">ज्ञानी आत्मा को सर्वव्यापी देखते हैं।</div>
+            <div class="lang-english">The wise see the Self pervading everywhere.</div>
+            <span class="reference">(Isha Upanishad 6)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 090</span>
+            <div class="lang-bangla">জীবন ও মন একে অপরের ওপর নির্ভরশীল।</div>
+            <div class="lang-hindi">जीवन और मन एक दूसरे पर निर्भर हैं।</div>
+            <div class="lang-english">Life and mind are dependent on each other.</div>
+            <span class="reference">(Prashna Upanishad 3.4)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 091</span>
+            <div class="lang-bangla">কর্মফল ত্যাগ করে কর্ম করে যাও।</div>
+            <div class="lang-hindi">कर्मफल का त्याग करके कर्म करते रहो।</div>
+            <div class="lang-english">Renounce the fruits of action and keep working.</div>
+            <span class="reference">(Isha Upanishad 1 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 092</span>
+            <div class="lang-bangla">আত্মাই জীবনের আনন্দ।</div>
+            <div class="lang-hindi">आत्मा ही जीवन का आनंद है।</div>
+            <div class="lang-english">The Self is the joy of life.</div>
+            <span class="reference">(Taittiriya Upanishad 2.9.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 093</span>
+            <div class="lang-bangla">যিনি সবকিছুর উৎস, তিনিই ব্রহ্ম।</div>
+            <div class="lang-hindi">जो हर चीज़ का स्रोत है, वही ब्रह्म है।</div>
+            <div class="lang-english">He who is the source of all things, He is Brahman.</div>
+            <span class="reference">(Mundaka Upanishad 1.1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 094</span>
+            <div class="lang-bangla">শান্তি ও সত্যের পথে চলো।</div>
+            <div class="lang-hindi">शांति और सत्य के मार्ग पर चलो।</div>
+            <div class="lang-english">Walk the path of peace and truth.</div>
+            <span class="reference">(Brihadaranyaka Upanishad 5.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 095</span>
+            <div class="lang-bangla">মনকে বাইরের বস্তুতে বিক্ষিপ্ত করো না।</div>
+            <div class="lang-hindi">मन को बाहरी वस्तुओं में विचलित न करो।</div>
+            <div class="lang-english">Do not let the mind be distracted by external objects.</div>
+            <span class="reference">(Katha Upanishad 2.1.1)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 096</span>
+            <div class="lang-bangla">জ্ঞানীরা ধ্যান দ্বারা ব্রহ্মকে হৃদয়ে দেখেন।</div>
+            <div class="lang-hindi">ज्ञानी ध्यान द्वारा ब्रह्म को हृदय में देखते हैं।</div>
+            <div class="lang-english">The wise see Brahman in the heart through meditation.</div>
+            <span class="reference">(Shvetashvatara Upanishad 1.14)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 097</span>
+            <div class="lang-bangla">যা দিয়ে শোনা যায়, তা ব্রহ্ম নয়।</div>
+            <div class="lang-hindi">जिससे सुना जाता है, वह ब्रह्म नहीं है।</div>
+            <div class="lang-english">That by which hearing is done, that is not Brahman.</div>
+            <span class="reference">(Kena Upanishad 1.7)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 098</span>
+            <div class="lang-bangla">কর্মের বন্ধন কেটে যায়, যখন আত্মজ্ঞান হয়।</div>
+            <div class="lang-hindi">कर्मों का बंधन कट जाता है, जब आत्मज्ञान होता है।</div>
+            <div class="lang-english">The bondage of actions is cut when Self-knowledge is attained.</div>
+            <span class="reference">(Mundaka Upanishad 2.2.8)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 099</span>
+            <div class="lang-bangla">মন হলো মানুষের একমাত্র বন্ধু ও শত্রু।</div>
+            <div class="lang-hindi">मनुष्य का एकमात्र मित्र और शत्रु मन ही है।</div>
+            <div class="lang-english">The mind alone is man's only friend and enemy.</div>
+            <span class="reference">(Maitri Upanishad 6.34 - Implied)</span>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-number">Quote 100</span>
+            <div class="lang-bangla">প্রকৃত বিদ্যা (জ্ঞান) হলো ব্রহ্মবিদ্যা।</div>
+            <div class="lang-hindi">वास्तविक विद्या (ज्ञान) ब्रह्मविद्या है।</div>
+            <div class="lang-english">The real knowledge (Vidya) is the knowledge of Brahman.</div>
+            <span class="reference">(Mundaka Upanishad 1.1.4)</span>
+        </div>
+        <div class="fixed-nav">  
+            <a href="gita-quotes.html" class="nav-button">Index</a>
+            <a href="upanishad_philosophy.html" class="nav-button" active>Part 1</a>
+            <a  href="upanisadh-2.html" class="nav-button">Part 2</a>
+        </div>
+    </div>
+</body>
+</html>
+
+#500 quotes

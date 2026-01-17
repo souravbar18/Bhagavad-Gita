@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhagavad Gita Temple</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* -------------------- BASE SAFETY -------------------- */
+body{
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ------------------------------------------- */
+/* Mobile Optimization using Media Queries */
+/* ------------------------------------------- */
+
+@media (max-width: 768px) {
+    .shlok-container {
+        padding: 0 15px;
+    }
+    .chapter-header h1 {
+        font-size: 28px;
+    }
+    .chapter-header h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .chapter-header {
+        padding: 20px 10px;
+    }
+    .chapter-header h1 {
+        font-size: 24px;
+    }
+    .chapter-header h2 {
+        font-size: 18px;
+    }
+
+    .shlok-box {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .shlok-title {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .shlok-sanskrit {
+        font-size: 1.2em;
+        line-height: 2.0;
+    }
+
+    .shlok-translation-formatted {
+        font-size: 1.1em;
+        line-height: 1.7;
+        padding: 10px 15px;
+    }
+
+    .section-heading {
+        font-size: 1.6em;
+        margin: 30px 0 15px 0;
+    }
+
+    .commentary-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+    }
+
+    .nav-buttons a {
+        max-width: 100%;
+        flex: none;
+    }
+}
+
+/* ------------------------------------------- */
+/* NAVIGATION (Single Source – No Conflict) */
+/* ------------------------------------------- */
+.nav-buttons{
+    max-width: 750px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;   /* IMPORTANT */
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.nav-buttons a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #5a3300;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;              /* IMPORTANT */
+}
+
+
+/* Hover only for real mouse devices */
+@media (hover: hover){
+    .nav-buttons a:hover{
+        background-color: #7a4500;
+    }
+}
+
+/* ------------------------------------------- */
+/* FOOTER AREA */
+/* ------------------------------------------- */
+.footer-area{
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    line-height: 1;
+}
+
+.diya-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.diya-container .diya{
+    font-size: 2em;
+    color: #ffcc66;
+    margin: 0 10px;
+}
+
+/* ------------------------------------------- */
+/* EXTRA SAFETY FOR VERY SMALL PHONES */
+/* ------------------------------------------- */
+@media (max-width: 360px){
+    .chapter-header h1{ font-size: 22px; }
+    .chapter-header h2{ font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+
+<div class="petal p1">🌸</div>
+<div class="petal p2">🌸</div>
+<div class="petal p3">🌸</div>
+<div class="petal p4">🌸</div>
+
+<header class="temple-header">
+    <div class="chakra"></div>
+    
+    <div class="header-text">
+        <h1 class="main-title">श्रीमद्भगवद्गीता</h1>
+        <p class="sub-title">Sanskrit • Bangla • English</p>
+        
+    </div>
+</header>
+
+<section class="divine-top">
+    <div class="halo"></div>
+    <div class="om">ॐ</div>
+
+    <div class="maha-mantra">
+        हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे<br>
+        हरे राम हरे राम राम राम हरे हरे
+    </div>
+</section>
+
+<div class="nav-buttons">
+    <a href="gita-sanskrit.html" class="home-link">Bhagavad Gita : Sanskrit</a>
+    <a href="gita-bangla.html" class="home-link">Bhagavad Gita : Bangla</a>
+    <a href="gita-english.html" class="home-link">Bhagavad Gita : English</a>
+    <a href="gita-quotes.html" class="home-link"> Life Quotes : Hindi & Bangla & English</a>
+</div>
+
+
+<div class="footer-area">
+    
+    <p style="font-family: Arial, sans-serif; font-size: 1.0em; color: #b22929; margin-bottom: 25px; line-height: 1.5; font-weight: 500;">
+       <marquee direction=left><b>If there is any error in any shloka, please contact us on the WhatsApp number given below. We will try to correct the mistake. Thank you.</b></marquee> 
+    </p>
+
+    <div class="diya-container">
+        <div class="diya">🪔</div>
+        <div class="diya">🪔</div>
+        <div class="diya">🪔</div>
+    </div>
+    
+    <div class="social-links">
+        <a href="https://wa.me/8801921079333?text=I%20found%20an%20error%20in%20a%20shloka.%20 "
+         target="_blank" 
+         title="contact to WhatsApp"
+         style="background-color: #25D366;">
+         W
+        </a>
+        <a href="https://www.facebook.com/Bhagavadgita012" target=_blank 
+           title="Contact to Facebook"
+           style="background-color: #1877F2;">
+            FB
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<div class="music-player">
+    <audio id="bgMusic" src="harekrishna.mp3"></audio>
+    
+</div>
+<div style="text-align: center; margin-top: 50px; padding: 20px; background: #fff3e0; border-radius: 10px;">
+    <p style="color: #e4762a; font-weight: bold;">Thank You! "By the grace of the Supreme Lord, this website is now complete."</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Multilingual Quotes Index | উদ্ধৃতি সূচীপত্র | उद्धरण सूचकांक</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Tinos:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<style>
+        /* --- GLOBAL & BASE STYLES (Dark Mode - Nebula Blue) --- */
+        body {
+            /* Deep Nebula Blue/Black background */
+            background-color: #12182b; 
+            font-family: 'Hind Siliguri', 'Tinos', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #f0f4f8; /* Off-White for high contrast */
+            padding-top: 80px; 
+            padding-bottom: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            /* Slightly lighter dark background for the container */
+            background: #1a233a; 
+            padding: 40px;
+            border-radius: 10px;
+            /* Soft, glowing shadow */
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4); 
+            border: 1px solid #283754;
+        }
+        
+        /* --- HEADER STYLES --- */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 0 0 15px 0;
+            /* Bright accent line */
+            border-bottom: 3px solid #fbbc05; 
+        }
+        .page-header h1 {
+            color: #ffffff; /* Pure white header */
+            font-size: 2.5em;
+            margin: 0 0 5px 0;
+            font-weight: 700;
+        }
+        .page-header p {
+            color: #aeb4c4; /* Light grey subtext */
+            margin: 0;
+            font-size: 1.0em;
+        }
+
+        /* --- INDEX LIST STYLES (Elevated Dark Cards) --- */
+        .index-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-item {
+            margin-bottom: 25px;
+            /* Card background, slightly lighter than container */
+            background-color: #1a233a; 
+            border-radius: 8px;
+            border-left: 5px solid; /* Color accent */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden; 
+        }
+        .list-item:hover {
+            transform: translateY(-5px); 
+            /* Subtle glow effect on hover */
+            box-shadow: 0 10px 25px rgba(251, 188, 5, 0.4); 
+        }
+        
+        .index-link {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Custom Colors for Left Accent (Bright colors against dark) */
+        .index-list li:nth-child(1) { border-left-color: #f44336; /* Bright Red */ }
+        .index-list li:nth-child(2) { border-left-color: #ff9800; /* Bright Orange */ }
+        .index-list li:nth-child(3) { border-left-color: #4caf50; /* Bright Green */ }
+        .index-list li:nth-child(4) { border-left-color: #2196f3; /* Bright Blue */ }
+        .index-list li:nth-child(5) { border-left-color: #9c27b0; /* Bright Purple */ }
+        .index-list li:nth-child(6) { border-left-color: #00bcd4; /* Bright Cyan */ }
+        .index-list li:nth-child(7) { border-left-color: #ffc107; /* Bright Amber */ }
+
+        /* TITLE STYLES - Added more bottom margin */
+        .lang-title-bn {
+            display: block; /* Ensure it behaves as a block element */
+            font-size: 1.6em;
+            font-weight: 700; 
+            color: #ffffff; 
+            margin-bottom: 12px; /* Increased margin */
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #3a4768;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        .lang-title-hi {
+            display: block; /* Ensure it behaves as a block element */
+            font-size: 1.2em;
+            color: #aeb4c4; 
+            margin-bottom: 8px; /* Added margin */
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+        .lang-title-en {
+            display: block; /* Ensure it behaves as a block element */
+            font-size: 1.0em;
+            color: #c0c5d0;
+            margin-bottom: 5px;
+            font-family: 'Tinos', serif;
+        }
+
+        /* DESCRIPTION STYLES - Structured breaks within the description */
+        .item-description-multi {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #7c8397;
+            padding-top: 10px;
+            border-top: 1px solid #283754;
+            line-height: 1.6;
+        }
+        /* Style for individual description line (to force break) */
+        .description-line {
+            display: block; /* Forces a line break */
+            margin-bottom: 5px; /* Space between description lines */
+        }
+
+        /* --- FIXED TOP-RIGHT NAVIGATION (Home Button) --- */
+        .top-fixed-nav {
+            position: fixed;
+            top: 20px; 
+            right: 20px; 
+            z-index: 1100;
+        }
+        .home-button {
+            background-color: #fbbc05; 
+            color: #12182b; 
+            border: none;
+            padding: 12px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(251, 188, 5, 0.4);
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: 700;
+        }
+        .home-button:hover {
+            background-color: #eabf02;
+            transform: scale(1.05);
+        }
+
+        /* --- MOBILE ADJUSTMENTS --- */
+        @media (max-width: 600px) {
+            body {
+                padding-top: 70px;
+            }
+            .container {
+                margin: 15px auto;
+                padding: 15px;
+                border-radius: 8px;
+            }
+            .page-header h1 {
+                font-size: 1.8em;
+            }
+            .list-item {
+                margin-bottom: 15px;
+            }
+            .index-link {
+                padding: 15px;
+            }
+            .lang-title-bn {
+                font-size: 1.3em;
+            }
+            .top-fixed-nav {
+                top: 10px;
+                right: 10px;
+            }
+            .home-button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="top-fixed-nav">
+        <a href="index.html" class="home-button">🏠 Home</a>
+    </div>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>উদ্ধৃতি সূচীপত্র | Quotes Index | उद्धरण सूचकांक</h1>
+            <p>আপনার সমস্ত আধ্যাত্মিক কন্টেন্টের প্রবেশদ্বার। | Gateway to all your spiritual content. | आपकी सभी आध्यात्मिक सामग्री का प्रवेश द्वार।</p>
+            <p>About 4000-4500 Quotes</p>
+        </header>
+
+        <ul class="index-list">
+            
+            <li class="list-item">
+                <a href="gita_quotes_part1.html" class="index-link">
+                    <span class="lang-title-bn">১. শ্রীমদ্ভগবদ্গীতার উক্তি</span>
+                    <span class="lang-title-hi">१. श्रीमद्भगवद्गीता के उद्धरण</span>
+                    <span class="lang-title-en">1. Bhagavad Gita Quotes</span>
+                    
+                    <div class="item-description-multi">
+                        <span class="description-line">কর্ম, ভক্তি ও জ্ঞানের উপর প্রধান উদ্ধৃতি।</span>
+                        <span class="description-line">कर्म, भक्ति और ज्ञान पर मुख्य उद्धरण।</span>
+                        <span class="description-line">Main quotes on Karma, Bhakti, and Jnana.</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="list-item">
+                <a href="upanishad_philosophy.html" class="index-link">
+                    <span class="lang-title-bn">২. উপনিষদের দার্শনিক উক্তি</span>
+                    <span class="lang-title-hi">२. उपनिषदों के दार्शनिक उद्धरण</span>
+                    <span class="lang-title-en">2. Upanishad Philosophical Quotes</span>
+
+                    <div class="item-description-multi">
+                        <span class="description-line">ব্রহ্ম, আত্মা ও সর্বোচ্চ সত্য সম্পর্কে গভীর জ্ঞান।</span>
+                        <span class="description-line">ब्रह्म, आत्मा और सर्वोच्च सत्य पर गहन ज्ञान।</span>
+                        <span class="description-line">Deep knowledge on Brahman, Atman, and the Ultimate Truth.</span>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="list-item">
+                <a href="vedas_mantras.html" class="index-link">
+                    <span class="lang-title-bn">৩. বেদ থেকে মৌলিক মন্ত্র ও উক্তি</span>
+                    <span class="lang-title-hi">३. वेदों से मौलिक मंत्र और उद्धरण</span>
+                    <span class="lang-title-en">3. Fundamental Mantras & Quotes from the Vedas</span>
+
+                    <div class="item-description-multi">
+                        <span class="description-line">সৃষ্টি, বিশ্বজনীনতা ও প্রার্থনার উপর প্রাচীন শিক্ষা।</span>
+                        <span class="description-line">सृष्टि, सार्वभौमिकता और प्रार्थना पर प्राचीन शिक्षा।</span>
+                        <span class="description-line">Ancient teachings on Creation, Universality, and Prayer.</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="list-item">
+                <a href="mahabharata_neeti.html" class="index-link">
+                    <span class="lang-title-bn">৪. মহাভারতের নীতি ও ব্যবহারিক জ্ঞান</span>
+                    <span class="lang-title-hi">४. महाभारत के नीति और व्यवहारिक ज्ञान</span>
+                    <span class="lang-title-en">4. Mahabharata Ethics and Practical Wisdom</span>
+
+                    <div class="item-description-multi">
+                        <span class="description-line">ন্যায়, ধর্ম ও জীবনের জটিলতা নিয়ে উক্তি (শান্তিপর্ব সহ)।</span>
+                        <span class="description-line">न्याय, धर्म और जीवन की जटिलताओं पर उद्धरण (शांतिपर्व सहित)।</span>
+                        <span class="description-line">Quotes on Justice, Dharma, and life's complexities (incl. Shanti Parva).</span>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="list-item">
+                <a href="ramayana_quotes.html" class="index-link">
+                    <span class="lang-title-bn">৫. রামায়ণের আদর্শ জীবন শিক্ষা</span>
+                    <span class="lang-title-hi">५. रामायण से आदर्श जीवन की शिक्षा</span>
+                    <span class="lang-title-en">5. Ramayana Teachings on Ideal Living</span>
+
+                    <div class="item-description-multi">
+                        <span class="description-line">আদর্শ, ত্যাগ ও সম্পর্কের উপর উক্তি।</span>
+                        <span class="description-line">आदर्श, त्याग और रिश्तों पर उद्धरण।</span>
+                        <span class="description-line">Quotes on Ideals, Sacrifice, and Relationships.</span>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="list-item">
+                <a href="other_puranas_smriti.html" class="index-link">
+                    <span class="lang-title-bn">6. অন্যান্য পুরাণ ও স্মৃতিশাস্ত্র</span>
+                    <span class="lang-title-hi">6. अन्य पुराण और स्मृतिशास्त्र</span>
+                    <span class="lang-title-en">6. Other Puranas and Smriti Texts</span>
+
+                    <div class="item-description-multi">
+                        <span class="description-line">দৈনন্দিন ধর্ম ও আচার-সংক্রান্ত ব্যবহারিক নীতি।</span>
+                        <span class="description-line">दैनिक धर्म और आचार-संबंधी व्यावहारिक सिद्धांत।</span>
+                        <span class="description-line">Practical ethics concerning daily duty and rituals.</span>
+                    </div>
+                </a>
+            </li>
+        
+            <li class="list-item">
+                <a href="hitopadesha_panchatantra.html" class="index-link">
+                    <span class="lang-title-bn">7. হিতোপদেশ ও পঞ্চতন্ত্র (নীতিশাস্ত্র)</span>
+                    <span class="lang-title-hi">7. हितोपदेश ও पञ्चतन्त्रम् (नीतिशास्त्रम्)</span>
+                    <span class="lang-title-en">7. Hitopadesha & Panchatantra (Moral Stories)</span>
+
+                    <div class="item-description-multi">
+                        <span class="description-line">জ্ঞান, বন্ধুত্ব ও জীবনের কৌশল সম্পর্কিত ছোট উক্তি।</span>
+                        <span class="description-line">ज्ञान, मित्रता और जीवन की रणनीतियों पर लघु उद्धरण।</span>
+                        <span class="description-line">Short quotes on wisdom, friendship, and life strategies.</span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+        
+    </div>
+
+</body>
+</html>
