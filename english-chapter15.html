@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 15: Purushottama Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 15: Puruṣottama Yoga (The Yoga of the Supreme Person) - Verses 15.1 to 15.20</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter14.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter16.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.1 (The Aśvattha Tree of Saṁsāra) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्।<br>
+            छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    ūrdhvamūlamadhaḥśākhaṃ aśvatthaṃ prāhuravyayam |<br>
+    chandāṃsi yasya parṇāni yastaṃ veda sa vedavit || 15.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: They speak of the imperishable (Avyayam) Aśvattha (Peepal) tree,<br>
+            whose roots are upwards (Ūrdhva-mūlam) and whose branches are downwards (Adhaḥ-śākham).<br>
+            Its leaves are the Vedic hymns (Chandāṁsi yasya parṇāni); he who knows this tree is a knower of the Vedas (Sa Vedavit).
+        </div>
+        <a class="commentary-btn" href="english-15-1.html">View Commentary</a>
+        
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.2 (Branches and Roots of the Tree) ॥</div>
+        <p class="shlok-sanskrit">
+            अधश्चोर्ध्वं प्रसृतास्तस्य शाखा गुणप्रवृद्धा विषयप्रवालाः।<br>
+            अधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके।।
+        </p><div class="shlok-translation-formatted"> 
+    adhaścordhvaṃ prasṛtāstasya śākhā guṇapravṛddhā viṣayapravālāḥ |<br>
+    adhaśca mūlānyanusantatāni karmānubandhīni manuṣyaloke || 15.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Its branches (Śākhāḥ), nourished by the Guṇas (Guṇa-pravṛddhā), extend downwards and upwards (Adhaś cordhvaṁ prasṛtās),<br>
+            with the objects of the senses as their shoots (Viṣaya-pravālāḥ).<br>
+            The minor roots (Mūlāny Anusantatāni) are spread downwards, binding one to actions (Karmānubandhīni) in the world of humans.
+        </div>
+        <a class="commentary-btn" href="english-15-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 15.3 - 15.4 (The Axe of Detachment) ॥</div>
+        <p class="shlok-sanskrit">
+            न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा।<br>
+            अश्वत्थमेनं सुविरूढमूलमसङ्गशस्त्रेण दृढेन छित्त्वा।। (15.3)<br>
+            ततः पदं तत्परिमार्गितव्यं यस्मिन्गता न निवर्तन्ति भूयः।<br>
+            तमेव चाद्यं पुरुषं प्रपद्ये यतः प्रवृत्तिः प्रसृता पुराणी।। (15.4)
+        </p><div class="shlok-translation-formatted"> 
+    na rūpamasyeha tathopalabhyate nānto na cādirna ca sampratiṣṭhā |<br>
+    aśvatthamenaṃ suvirūḍhamūlam asaṅgaśastreṇa dṛḍhena chittvā || 15.3 ||<br><br>
+    tataḥ padaṃ tatparimārgitavyaṃ yasmin gatā na nivartanti bhūyaḥ |<br>
+    tameva cādyaṃ puruṣaṃ prapadye yataḥ pravṛttiḥ prasṛtā purāṇī || 15.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Its true form (Rūpam asya) is not perceived here, nor its end, nor its beginning, nor its foundation (Na Cādir Na ca Sampratiṣṭhā). (15.3)<br>
+            Having cut down this deeply rooted Aśvattha tree (Aśvattham Enaṁ Suvirūḍha-mūlam) with the strong axe of non-attachment (Asaṅga-śastreṇa Dṛḍhena Chittalvā), (15.3)<br>
+            Then that Supreme Goal (Padaṁ Tat) should be sought, reaching which one does not return again (Na Nivartanti Bhūyaḥ). (15.4)<br>
+            One should surrender to that Primal Person (Taṁ eva cādyaṁ Puruṣaṁ Prapadye), from whom this ancient stream of activity has flowed forth. (15.4)
+        </div>
+        <a class="commentary-btn" href="english-15-3-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.5 (Characteristics of the Liberated) ॥</div>
+        <p class="shlok-sanskrit">
+            निर्मानमोहा जितसङ्गदोषा अध्यात्मनित्या विनिवृत्तकामाः।<br>
+            द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्गच्छन्त्यमूढाः पदमव्ययं तत्।।
+        </p><div class="shlok-translation-formatted"> 
+    nirmānamohā jitasaṅgadoṣā adhyātmanityā vinivṛttakāmāḥ |<br>
+    dvandvairvimuktāḥ sukhaduḥkhasañjñair gacchanty amūḍhāḥ padamavyayaṃ tat || 15.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Free from pride and delusion (Nirmāna-mohā), having conquered the defect of attachment (Jita-saṅga-doṣā),<br>
+            constantly dwelling on the Supreme Self (Adhyātma-nityā), and having completely controlled desires (Vinivṛtta-kāmāḥ);<br>
+            freed from the dualities known as pleasure and pain (Dvandaiv Vimuktāḥ Sukha-duḥkha-saṁjñair)—those undeluded ones attain that imperishable goal (Padam Avyayaṁ Tat).
+        </div>
+        <a class="commentary-btn" href="english-15-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.6 (Krishna's Supreme Abode) ॥</div>
+        <p class="shlok-sanskrit">
+            न तद् भासयते सूर्यो न शशाङ्को न पावकः।<br>
+            यद्गत्वा न निवर्तन्ते तद्धाम परमं मम।।
+        </p><div class="shlok-translation-formatted"> 
+    na tadbhāsayate sūryo na śaśāṅko na pāvakaḥ |<br>
+    yadgatvā na nivartante taddhāma paramaṃ mama || 15.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Neither the sun, nor the moon (Na Śaśāṅko), nor fire (Na Pāvakaḥ) illuminates that (Na Tad Bhāsayate).<br>
+            That is My supreme abode (Tad Dhāma Paramaṁ Mama), reaching which they never return (Yad Gatvā Na Nivartante).
+        </div>
+        <a class="commentary-btn" href="english-15-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.7 (The Jīva is a Part of Krishna) ॥</div>
+        <p class="shlok-sanskrit">
+            ममैवांशो जीवलोके जीवभूतः सनातनः।<br>
+            मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति।।
+        </p><div class="shlok-translation-formatted"> 
+    mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ |<br>
+    manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati || 15.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            A fragment of My own eternal Self (Mamaiva Aṁśo Jīva-bhūtaḥ Sanātanaḥ), having become a living soul in the world of living beings (Jīva-loke),<br>
+            draws (Karṣati) the six senses, including the mind (Manaḥ-ṣaṣṭhānīndriyāṇi), which are situated in Prakṛti (Prakṛti-sthāni).
+        </div>
+        <a class="commentary-btn" href="english-15-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.8 (Transmigration of the Soul) ॥</div>
+        <p class="shlok-sanskrit">
+            शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः।<br>
+            गृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्।।
+        </p><div class="shlok-translation-formatted"> 
+    śarīraṃ yadavāpnoti yaccāpyutkrāmatīśvaraḥ |<br>
+    gṛhītvaitāni saṃyāti vāyurgandhānivāśayāt || 15.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When the master (Īśvaraḥ) obtains a new body (Śarīraṁ Yad Avāpnoti) and when he leaves it (Yac cāpy Utkrāmati),<br>
+            he takes these senses (Gṛhītvaitāni) and goes (Saṁyāti), just as the wind carries scents from their source (Vāyur Gandhān Ivāśayāt).
+        </div>
+        <a class="commentary-btn" href="english-15-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.9 (The Soul's Enjoyment) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च।<br>
+            अधिष्ठाय मनश्चायं विषयानुपसेवते।।
+        </p><div class="shlok-translation-formatted"> 
+    śrotraṃ cakṣuḥ sparśanaṃ ca rasanaṃ ghrāṇameva ca |<br>
+    adhiṣṭhāya manaścāyaṃ viṣayānupasevate || 15.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Presiding over the ear, the eye, the sense of touch (Śrotraṁ Cakṣuḥ Sparśanaṁ ca), the sense of taste, and the sense of smell (Rasanaṁ Ghrāṇam eva ca),<br>
+            as well as the mind (Adhiṣṭhāya Manaś cāyaṁ), he experiences the objects of the senses (Viṣayān Upasevate).
+        </div>
+        <a class="commentary-btn" href="english-15-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.10 (The Illusion of the Soul's Movement) ॥</div>
+        <p class="shlok-sanskrit">
+            उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्।<br>
+            विमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः।।
+        </p><div class="shlok-translation-formatted"> 
+    utkrāmantaṃ sthitaṃ vāpi bhuñjānaṃ vā guṇānvitam |<br>
+    vimūḍhā nānupaśyanti paśyanti jñānacakṣuṣaḥ || 15.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The deluded (Vimūḍhā) do not perceive (Na Anupaśyanti) the soul when it departs, or stays, or enjoys, or is conjoined with the qualities (Guṇānvitam).<br>
+            But those with the eye of knowledge (Jñāna-cakṣuṣaḥ) perceive it.
+        </div>
+        <a class="commentary-btn" href="english-15-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.11 (The Power of Effort) ॥</div>
+        <p class="shlok-sanskrit">
+            यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम्।<br>
+            यतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः।।
+        </p><div class="shlok-translation-formatted"> 
+    yatanto yoginaścainaṃ paśyantyātmanyavasthitam |<br>
+    yatanto’pyakṛtātmāno nainaṃ paśyantyacetasaḥ || 15.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Striving Yogis (Yatanto Yoginaś cainaṁ) perceive this Self abiding within their own self (Ātmany Avasthitam).<br>
+            But the unintelligent (Acetasaḥ), whose self is not purified (Akṛtātmāno), do not perceive it, even though striving (Yatanto api).
+        </div>
+        <a class="commentary-btn" href="english-15-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.12 (Krishna as the Source of All Light) ॥</div>
+        <p class="shlok-sanskrit">
+            यदादित्यगतं तेजो जगद् भासयतेऽखिलम्।<br>
+            यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yadādityagataṃ tejo jagadbhāsayate’khilam |<br>
+    yaccandramasi yaccāgnau tattejo viddhi māmakam || 15.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The splendor (Tejo) residing in the sun which illuminates the whole world (Jagad Bhāsayate Akhilam),<br>
+            that which is in the moon and that which is in fire (Yac candramasi yac cāgnau)—know that splendor to be Mine (Tat Tejo Viddhi Māmakaṁ).
+        </div>
+        <a class="commentary-btn" href="english-15-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.13 (Krishna as the Sustainer) ॥</div>
+        <p class="shlok-sanskrit">
+            गामाविश्य च भूतानि धारयाम्यहमोजसा।<br>
+            पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः।।
+        </p><div class="shlok-translation-formatted"> 
+    gāmāviśya ca bhūtāni dhārayāmyahamojasā |<br>
+    puṣṇāmi cauṣadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ || 15.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Entering the earth (Gām āviśya), I sustain all beings (Bhūtāni Dhārayāmy Aham) by My energy (Ojasā).<br>
+            And becoming the watery moon (Somo Bhūtvā Rasātmakaḥ), I nourish all the herbs and vegetation (Puṣṇāmi Cauṣadhīḥ Sarvāḥ).
+        </div>
+        <a class="commentary-btn" href="english-15-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.14 (Krishna as the Digestive Fire) ॥</div>
+        <p class="shlok-sanskrit">
+            अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः।<br>
+            प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्।।
+        </p><div class="shlok-translation-formatted"> 
+    ahaṃ vaiśvānaro bhūtvā prāṇināṃ dehamāśritaḥ |<br>
+    prāṇāpānasamāyuktaḥ pacāmyannaṃ caturvidham || 15.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Becoming the digestive fire (Ahaṁ Vaiśvānaro Bhūtvā), I take shelter in the body of living beings (Prāṇināṁ Deham Āśritaḥ).<br>
+            United with the outgoing and incoming breaths (Prāṇāpāna-samāyuktaḥ), I digest the four kinds of food (Pacāmy Annaṁ Caturvidham).
+        </div>
+        <a class="commentary-btn" href="english-15-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.15 (Krishna as the Inner Self) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च।<br>
+            वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtirjñānamapohanaṃ ca |<br>
+    vedaiśca sarvairahameva vedyo vedāntakṛdvedavideva cāham || 15.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am seated in the hearts of all (Sarvasya cāhaṁ Hṛdi Sanniviṣṭo); from Me come memory, knowledge, and their removal (Mattaḥ Smṛtir Jñānam Apohanaṁ ca).<br>
+            By all the Vedas, I alone am to be known (Vedaiś ca Sarvair Aham eva Vedyo); I am indeed the author of the Vedānta, and the knower of the Vedas (Vedānta-kṛd Veda-vid eva cāham).
+        </div>
+        <a class="commentary-btn" href="english-15-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.16 (Kṣara and Akṣara Puruṣa) ॥</div>
+        <p class="shlok-sanskrit">
+            द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च।<br>
+            क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    dvāvimau puruṣau loke kṣaraścākṣara eva ca |<br>
+    kṣaraḥ sarvāṇi bhūtāni kūṭastho’kṣara ucyate || 15.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There are two types of beings (Dvāvimau Puruṣau) in this world: the perishable (Kṣaraś ca) and the imperishable (Akṣara eva ca).<br>
+            The perishable includes all beings (Kṣaraḥ Sarvāṇi Bhūtāni); the immutable (Kūṭastho) is called the imperishable (Akṣara Ucyate).
+        </div>
+        <a class="commentary-btn" href="english-15-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.17 (The Puruṣottama - Supreme Person) ॥</div>
+        <p class="shlok-sanskrit">
+            उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः।<br>
+            यो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः।।
+        </p><div class="shlok-translation-formatted"> 
+    uttamaḥ puruṣastvanyaḥ paramātmetyudāhṛtaḥ |<br>
+    yo lokatrayamāviśya bibhartyavyaya īśvaraḥ || 15.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But there is another, the Supreme Person (Uttamaḥ Puruṣas Tv Anyaḥ), who is called the Supreme Self (Paramātmā ity Udāhṛtaḥ),<br>
+            the imperishable Lord (Avyaya Īśvaraḥ) who, entering the three worlds (Yo Loka-trayam Āviśya), sustains them (Bibharty).
+        </div>
+        <a class="commentary-btn" href="english-15-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.18 (Definition of Puruṣottama) ॥</div>
+        <p class="shlok-sanskrit">
+            यस्मात् क्षरमतीतोऽहमक्षरादपि चोत्तमः।<br>
+            अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः।।
+        </p>
+        <div class="shlok-translation-formatted">
+            Since I transcend the perishable (Yasmāt Kṣaram Atīto Aham), and am even superior to the imperishable (Akṣarād Api ca Uttamaḥ),<br>
+            therefore, I am celebrated in the world and in the Vedas as the Supreme Person (Prathitaḥ Puruṣottamaḥ).
+        </div>
+        <a class="commentary-btn" href="english-15-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.19 (The Knower of Puruṣottama) ॥</div>
+        <p class="shlok-sanskrit">
+            यो मामेवमसम्मूढो जानाति पुरुषोत्तमम्।<br>
+            स सर्वविद्भजति मां सर्वभावेन भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    yo māmevamasaṃmūḍho jānāti puruṣottamam |<br>
+    sa sarvavidbhajati māṃ sarvabhāvena bhārata || 15.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who, free from delusion (Asammūḍho), knows Me as this Supreme Person (Yo Mām Evam Puruṣottamam),<br>
+            is the knower of everything (Sa Sarva-vit), and worships Me (Bhajati Māṁ) with his whole being (Sarva-bhāvena), O Bhārata.
+        </div>
+        <a class="commentary-btn" href="english-15-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 15.20 (Conclusion of the Chapter) ॥</div>
+        <p class="shlok-sanskrit">
+            इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ।<br>
+            एतद् बुद्ध्वा बुद्धिमान्स्यात् कृतकृत्यश्च भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    iti guhyatamaṃ śāstramidamuktaṃ mayānagha |<br>
+    etadbuddhvā buddhimānsyātkṛtakṛtyaśca bhārata || 15.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Thus, this most confidential part of the teaching (Iti Guhyatamaṁ Śāstram Idaṁ) has been declared by Me, O sinless one.<br>
+            Understanding this, one becomes intelligent (Buddhimān Syāt) and his duties are fulfilled (Kṛta-kṛtyaś ca), O Bhārata.
+        </div>
+        <a class="commentary-btn" href="english-15-20.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे पुरुषोत्तमयोगो नाम पञ्चदशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the fifteenth chapter, entitled Puruṣottama Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter14.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter16.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

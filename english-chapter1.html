@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 1: Arjuna Viṣāda Yoga (The Yoga of Arjuna's Distress)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 1: Arjuna Viṣāda Yoga (The Yoga of Arjuna's Distress) - Verses 1.1 to 1.47</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter2.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.1 ॥</div>
+        <p class="shlok-sanskrit">
+            धृतराष्ट्र उवाच।<br>
+            धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।<br>
+            मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+         dhṛtarāṣṭra uvāca |<br>
+         dharmakṣetre kurukṣetre samavetā yuyutsavaḥ |<br>
+         māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya || 1.1 ||
+        </div>
+        <div class="shlok-translation-formatted">
+            Dhritarashtra said: On the field of Dharma at Kurukshetra,<br>
+            assembled eager for battle, what did my sons and the sons of Pandu do, O Sanjaya?
+        </div>
+        <a class="commentary-btn" href="english-1-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.2 ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।<br>
+            आचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā |<br>
+    ācāryamupasaṅgamya rājā vacanamabravīt || 1.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sanjaya said: King Duryodhana, seeing the army of the Pandavas<br>
+            arrayed for battle, approached his teacher (Drona) and spoke these words.
+        </div>
+        <a class="commentary-btn" href="english-1-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.3 ॥</div>
+        <p class="shlok-sanskrit">
+            पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।<br>
+            व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm |<br>
+    vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā || 1.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O teacher, behold this mighty army of the sons of Pandu,<br>
+            marshaled by the son of Drupada, your intelligent disciple.
+        </div>
+        <a class="commentary-btn" href="english-1-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.4 ॥</div>
+        <p class="shlok-sanskrit">
+            अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।<br>
+            युयुधानो विराटश्च द्रुपदश्च महारथः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    atra śūrā maheṣvāsā bhīmārjunasamā yudhi |<br>
+    yuyudhāno virāṭaśca drupadaśca mahārathaḥ || 1.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Here are heroes, great archers, equal to Bhima and Arjuna in battle:<br>
+            Yuyudhana, Virata, and the great charioteer Drupada.
+        </div>
+        <a class="commentary-btn" href="english-1-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.5 ॥</div>
+        <p class="shlok-sanskrit">
+            धृष्टकेतुश्चेकितःनः काशिराजश्च वीर्यवान्।<br>
+            पुरुजित्कुन्तिभोजश्च शैव्यश्च नरपुङ्गवः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān |<br>
+    purujitkuntibhojaśca śaibyaśca narapuṅgavaḥ || 1.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Dhrishtaketu, Chekitana, and the powerful king of Kashi,<br>
+            Purujit and Kuntibhoja, and Shaibya, the best among men.
+        </div>
+        <a class="commentary-btn" href="english-1-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.6 ॥</div>
+        <p class="shlok-sanskrit">
+            युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।<br>
+            सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yudhāmanyuśca vikrānta uttamaujāśca vīryavān |<br>
+    saubhadro draupadeyāśca sarva eva mahārathāḥ || 1.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The valiant Yudhamanyu, the powerful Uttamaujas,<br>
+            Abhimanyu (son of Subhadra), and the sons of Draupadi—all are great charioteers.
+        </div>
+        <a class="commentary-btn" href="english-1-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.7 ॥</div>
+        <p class="shlok-sanskrit">
+            अस्माकं तु विशिष्टा ये तान् निबोध द्विजोत्तम।<br>
+            नायका मम सैन्यस्य सञ्ज्ञार्थं तान् ब्रवीमि ते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama |<br>
+    nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te || 1.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know also, O best of the twice-born (Drona), the distinguished ones among ourselves,<br>
+            the leaders of my army, whom I name for your information.
+        </div>
+        <a class="commentary-btn" href="english-1-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.8 ॥</div>
+        <p class="shlok-sanskrit">
+            भवान् भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।<br>
+            अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ |<br>
+    aśvatthāmā vikarṇaśca saumadattistathaiva ca || 1.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Yourself, Bhishma, Karna, and Kripa, victorious in battle,<br>
+            Ashvatthama, Vikarna, and also the son of Somadatta (Bhurishrava).
+        </div>
+        <a class="commentary-btn" href="english-1-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.9 ॥</div>
+        <p class="shlok-sanskrit">
+            अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।<br>
+            नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ |<br>
+    nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ || 1.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And many other heroes, who have risked their lives for my sake,<br>
+            are here; they are all equipped with various weapons and are skilled in warfare.
+        </div>
+        <a class="commentary-btn" href="english-1-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.10 ॥</div>
+        <p class="shlok-sanskrit">
+            अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।<br>
+            पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam |<br>
+    paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam || 1.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Our army, protected by Bhishma, is immeasurable (unlimited);<br>
+            but the army of those Pandavas, protected by Bhima, is measurable (limited).
+        </div>
+        <a class="commentary-btn" href="english-1-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.11 ॥</div>
+        <p class="shlok-sanskrit">
+            अयनेषु च सर्वेषु यथाभागमवस्थिताः।<br>
+            भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ |<br>
+    bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi || 1.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, all of you, maintaining your respective positions on all fronts,<br>
+            must protect Bhishma alone.
+        </div>
+        <a class="commentary-btn" href="english-1-11.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.12 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्य सञ्जनयन् हर्षं कुरुवृद्धः पितामहः।<br>
+            सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tasya sañjanayan harṣaṃ kuruvṛddhaḥ pitāmahaḥ |<br>
+    siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān || 1.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Then, the valiant oldest patriarch of the Kurus, Bhishma,<br>
+            roaring like a lion, loudly blew his conch shell to encourage Duryodhana.
+        </div>
+        <a class="commentary-btn" href="english-1-12.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.13 ॥</div>
+        <p class="shlok-sanskrit">
+            ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः।<br>
+            सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ |<br>
+    sahasaivābhyahanyanta sa śabdustumulo’bhavat || 1.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Then conch shells, kettledrums, tabors, drums, and cow-horns suddenly blared forth;<br>
+            the sound was tumultuous.
+        </div>
+        <a class="commentary-btn" href="english-1-13.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.14 ॥</div>
+        <p class="shlok-sanskrit">
+            ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थिते।<br>
+            माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tataḥ śvetairhayairyukte mahati syandane sthitau |<br>
+    mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ || 1.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Thereafter, Lord Krishna and Arjuna, stationed in a magnificent chariot<br>
+            drawn by white horses, blew their celestial conch shells.
+        </div>
+        <a class="commentary-btn" href="english-1-14.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.15 ॥</div>
+        <p class="shlok-sanskrit">
+            पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः।<br>
+            पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ |<br>
+    pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ || 1.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Hrishikesha (Krishna) blew His conch shell Panchajanya, and Dhananjaya (Arjuna) blew Devadatta,<br>
+            and Bhima, the doer of terrible deeds, blew the great conch Paundra.
+        </div>
+        <a class="commentary-btn" href="english-1-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.16 ॥</div>
+        <p class="shlok-sanskrit">
+            अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।<br>
+            नकुलः सहदेवश्च सुघोषमणिपुष्पकौ।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ |<br>
+    dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ || 1.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            King Yudhishthira, the son of Kunti, blew Anantavijaya;<br>
+            Nakula and Sahadeva blew Sughosha and Manipushpaka.
+        </div>
+        <a class="commentary-btn" href="english-1-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.17 ॥</div>
+        <p class="shlok-sanskrit">
+            काश्यश्च परमेष्वासः शिखण्डी च महारथः।<br>
+            धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ |<br>
+    dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ || 1.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The King of Kashi, the superb archer, Shikhandi, the great charioteer,<br>
+            Dhrishtadyumna, Virata, and Satyaki, the unconquered.
+        </div>
+        <a class="commentary-btn" href="english-1-17.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.18 ॥</div>
+        <p class="shlok-sanskrit">
+            द्रुपदो द्रौपदेयाश्च सर्वशः पृथ्वीपते।<br>
+            सौभद्रश्च महाबाहुः शङ्खान् दध्मुः पृथक्पृथक्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    drupado draupadeyāśca sarvaśaḥ pṛthivīpate |<br>
+    saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthak pṛthak || 1.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Drupada, the sons of Draupadi, O Lord of the Earth, and the mighty-armed son of Subhadra,<br>
+            all blew their conch shells separately.
+        </div>
+        <a class="commentary-btn" href="english-1-18.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.19 ॥</div>
+        <p class="shlok-sanskrit">
+            स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।<br>
+            नभश्च पृथ्वीं चैव तुमुलो व्यनुनादयन्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat |<br>
+    nabhaśca pṛthivīṃ caiva tumulo’bhyanunādayan || 1.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That tremendous sound, resounding throughout heaven and earth,<br>
+            rent the hearts of Dhritarashtra’s sons.
+        </div>
+        <a class="commentary-btn" href="english-1-19.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.20 ॥</div>
+        <p class="shlok-sanskrit">
+            अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः।<br>
+            प्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः।।<br>
+            
+        </p>
+        <div class="shlok-translation-formatted"> 
+    atha vyavasthitāndṛṣṭvā dhārtarāṣṭrāṇ kapi-dhvajaḥ |<br>
+    pravṛtte śastra-sampāte dhanur-udyamya pāṇḍavaḥ || 1.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Then, O Lord of the Earth, seeing the sons of Dhritarashtra arrayed, and the discharge of weapons about to begin,<br>
+            the Pandava (Arjuna), whose banner bore the emblem of a monkey, raised his bow<br>
+            and spoke this word to Hrishikesha (Krishna).
+        </div>
+        <a class="commentary-btn" href="english-1-20.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.21 ॥</div>
+        <p class="shlok-sanskrit">
+            हृषीकेशं तदा वाक्यमिदमाह महीपते।।<br>
+            अर्जुन उवाच।<br>
+            सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    hṛṣīkeśaṃ tadā vākyamidamāha mahīpate |<br>
+    arjuna uvāca |<br>
+    senayorubhayormadhye rathaṃ sthāpaya me’cyuta || 1.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Achyuta (Krishna), please station my chariot<br>
+            between the two armies.
+        </div>
+        <a class="commentary-btn" href="english-1-21.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.22 ॥</div>
+        <p class="shlok-sanskrit">
+            यावदेतान् निरीक्षेऽहं योद्धुकामानवस्थितान्।<br>
+            कैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yāvadetānnirīkṣe’haṃ yoddhukāmānavasthitān |<br>
+    kairmayā saha yoddhavyamasmin raṇasamudyame || 1.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            So that I may look at these who are standing here, eager to fight,<br>
+            and know with whom I must fight in this effort of war.
+        </div>
+        <a class="commentary-btn" href="english-1-22.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.23 ॥</div>
+        <p class="shlok-sanskrit">
+            योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।<br>
+            धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धप्रियचिकीर्षवः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yotsyamānānavekṣe’haṃ ya ete’tra samāgatāḥ |<br>
+    dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ || 1.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I wish to see those who have assembled here to fight,<br>
+            intending to please the evil-minded son of Dhritarashtra (Duryodhana).
+        </div>
+        <a class="commentary-btn" href="english-1-23.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.24 ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            एवमुक्तो हृषीकेशो गुडाकेशेन भारत।<br>
+            सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    evamukto hṛṣīkeśo guḍākeśena bhārata |<br>
+    senayorubhayormadhye sthāpayitvā rathottamam || 1.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sanjaya said: Thus addressed by Gudakesha (Arjuna), O Bharata (Dhritarashtra),<br>
+            Hrishikesha (Krishna) stationed the best of chariots between the two armies.
+        </div>
+        <a class="commentary-btn" href="english-1-24.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.25 ॥</div>
+        <p class="shlok-sanskrit">
+            भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।<br>
+            उवाच पार्थ पश्यैतान् समवेतान् कुरुनिति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām |<br>
+    uvāca pārtha paśyaitān samāvetān kurūniti || 1.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In the presence of Bhishma, Drona, and all the rulers of the world,<br>
+            He said, O Partha (Arjuna), behold these Kurus assembled here.
+        </div>
+        <a class="commentary-btn" href="english-1-25.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.26 ॥</div>
+        <p class="shlok-sanskrit">
+            तत्रापश्यत्स्थितान् पार्थः पितॄनथ पितामहान्।<br>
+            आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tatrāpaśyatsthitān pārthaḥ pitṝnatha pitāmahān |<br>
+    ācāryānmātulānbhṛātṝn putrānpautrānsakhīṃstathā || 1.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There Partha (Arjuna) saw standing fathers, grandfathers, teachers,<br>
+            maternal uncles, brothers, sons, grandsons, and companions.
+        </div>
+        <a class="commentary-btn" href="english-1-26.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.27 ॥</div>
+        <p class="shlok-sanskrit">
+            श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।<br>
+            तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śvaśurānsuhṛdaścaiva senayorubhayorapi |<br>
+    tānsamīkṣya sa kaunteyaḥ sarvānbhandhūnavasthitān || 1.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He saw fathers-in-law and friends also in both armies.<br>
+            Seeing all those kinsmen thus positioned, the son of Kunti (Arjuna)...
+        </div>
+        <a class="commentary-btn" href="english-1-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.28 ॥</div>
+        <p class="shlok-sanskrit">
+            कृपया परयाविष्टो विषीदन्निदमब्रवीत्।<br>
+            अर्जुन उवाच।।<br>
+            दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kṛpayā parayāviṣṭo viṣīdannidambravīt |<br>
+    arjuna uvāca |<br>
+    dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam || 1.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            ...was overwhelmed by extreme pity and spoke this in sorrow. Arjuna said:<br>
+            O Krishna, seeing these kinsmen present here and eager to fight...
+        </div>
+        <a class="commentary-btn" href="english-1-28.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.29 ॥</div>
+        <p class="shlok-sanskrit">
+            सीदन्ति मम गात्राणि मुखं च परिशुष्यति।<br>
+            वेपथुश्च शरीरे मे रोमहर्षश्च जायते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati |<br>
+    vepathuśca śarīre me romaharṣaśca jāyate || 1.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            ...my limbs fail, and my mouth is parching.<br>
+            My body is trembling, and my hair is standing on end.
+        </div>
+        <a class="commentary-btn" href="english-1-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.30 ॥</div>
+        <p class="shlok-sanskrit">
+            गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।<br>
+            न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate |<br>
+    na ca śaknomya-vasthātuṃ bhramatīva ca me manaḥ || 1.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Gandiva bow is slipping from my hand, and my skin burns all over.<br>
+            I am unable to stand steady, and my mind is reeling.
+        </div>
+        <a class="commentary-btn" href="english-1-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.31 ॥</div>
+        <p class="shlok-sanskrit">
+            निमित्तानि च पश्यामि विपरीतानि केशव।<br>
+            न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    nimittāni ca paśyāmi viparītāni keśava |<br>
+    na ca śreyo’nupaśyāmi hatvā svajanamāhave || 1.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Keshava, I see unfavorable omens,<br>
+            and I do not see any good in killing my own kinsmen in battle.
+        </div>
+        <a class="commentary-btn" href="english-1-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.32 ॥</div>
+        <p class="shlok-sanskrit">
+            न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।<br>
+            किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca |<br>
+    kiṃ no rājyena govinda kiṃ bhogairjīvitena vā || 1.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I do not desire victory, O Krishna, nor a kingdom, nor pleasures.<br>
+            O Govinda, what use is a kingdom to us, or enjoyment, or even life?
+        </div>
+        <a class="commentary-btn" href="english-1-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.33 ॥</div>
+        <p class="shlok-sanskrit">
+            येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।<br>
+            त इमेऽवस्थिता युद्धे प्राणान् त्यक्त्वा धनानि च।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca |<br>
+    ta ime’vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca || 1.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those for whose sake we desire a kingdom, enjoyments, and pleasures<br>
+            are standing here in battle, having given up their lives and wealth.
+        </div>
+        <a class="commentary-btn" href="english-1-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.34 ॥</div>
+        <p class="shlok-sanskrit">
+            आचार्याः पितरः पुत्रास्तथैव च पितामहाः।<br>
+            मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ |<br>
+    mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā || 1.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Teachers, fathers, sons, as well as grandfathers,<br>
+            maternal uncles, fathers-in-law, grandsons, brothers-in-law, and other relatives...
+        </div>
+        <a class="commentary-btn" href="english-1-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.35 ॥</div>
+        <p class="shlok-sanskrit">
+            एतान् न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।<br>
+            अपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    etānna hantumiucchāmi ghnato’pi madhusūdana |<br>
+    api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte || 1.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            ...I do not wish to kill them, even if they kill me, O Madhusudana (Krishna),<br>
+            not even for the sovereignty of the three worlds—what then for the sake of this earth?
+        </div>
+        <a class="commentary-btn" href="english-1-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.36 ॥</div>
+        <p class="shlok-sanskrit">
+            निहत्य धार्तराष्ट्रान् नः का प्रीतिः स्याज्जनार्दन।<br>
+            पापमेवाश्रयेदस्मान् हत्वैतानाततायिनः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana |<br>
+    pāpamevāśrayedasmān hatvaitānatatāyinaḥ || 1.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            What pleasure can be ours, O Janardana (Krishna), by killing the sons of Dhritarashtra?<br>
+            Sin alone will accrue to us if we kill these aggressors.
+        </div>
+        <a class="commentary-btn" href="english-1-36.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.37 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान् स्वबान्धवान्।<br>
+            स्वजनं हि कथं हत्वा सुखिनः स्याम माधव।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrān svabāndhavān |<br>
+    svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava || 1.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, we should not kill the sons of Dhritarashtra, our kinsmen.<br>
+            O Madhava (Krishna), how can we be happy by slaying our own people?
+        </div>
+        <a class="commentary-btn" href="english-1-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.38 ॥</div>
+        <p class="shlok-sanskrit">
+            यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।<br>
+            कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yadyapyete na paśyanti lobhopahatacetasaḥ |<br>
+    kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam || 1.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Although these (Kauravas), whose minds are overcome by greed, see no fault in the destruction of the family<br>
+            and no sin in treachery to friends...
+        </div>
+        <a class="commentary-btn" href="english-1-38.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.39 ॥</div>
+        <p class="shlok-sanskrit">
+            कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।<br>
+            कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum |<br>
+    kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana || 1.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            ...why should we not understand how to turn away from this sin, O Janardana (Krishna),<br>
+            when we clearly see the fault in the destruction of the family?
+        </div>
+        <a class="commentary-btn" href="english-1-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.40 ॥</div>
+        <p class="shlok-sanskrit">
+            कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।<br>
+            धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ |<br>
+    dharme naṣṭe kulaṃ kṛtsnamadharmo’bhibhavatyuta || 1.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In the destruction of the family, the eternal family traditions perish;<br>
+            when tradition perishes, impiety (Adharma) overtakes the whole family.
+        </div>
+        <a class="commentary-btn" href="english-1-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.41 ॥</div>
+        <p class="shlok-sanskrit">
+            अधर्माभिभवात् कृष्ण प्रदुष्यन्ति कुलस्त्रियः।<br>
+            स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ |<br>
+    strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ || 1.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When impiety prevails, O Krishna, the women of the family become corrupted;<br>
+            and when women are corrupted, O Varshneya (Krishna), there arises intermingling of castes (Varna-sankara).
+        </div>
+        <a class="commentary-btn" href="english-1-41.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.42 ॥</div>
+        <p class="shlok-sanskrit">
+            सङ्करो नरकायैव कुलघ्नानां कुलस्य च।<br>
+            पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    saṅkaro narakāyaiva kulaghnānāṃ kulasya ca |<br>
+    patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ || 1.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This intermingling leads the destroyers of the family and the family itself to hell.<br>
+            Their forefathers fall (from heaven), deprived of the offerings of rice-balls and water.
+        </div>
+        <a class="commentary-btn" href="english-1-42.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.43 ॥</div>
+        <p class="shlok-sanskrit">
+            दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।<br>
+            उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ |<br>
+    utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ || 1.43 ||
+</div>
+        <div class="shlok-translation-formatted">
+            By these faults of the destroyers of the family, which cause the intermixture of castes,<br>
+            the eternal caste-duties and family traditions are eradicated.
+        </div>
+        <a class="commentary-btn" href="english-1-43.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.44 ॥</div>
+        <p class="shlok-sanskrit">
+            उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।<br>
+            नरके नियतं वासो भवतीत्यनुशुश्रुम।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana |<br>
+    narake’niyataṃ vāso bhavatītyanuśuśruma || 1.44 ||
+</div>
+        <div class="shlok-translation-formatted">
+            We have heard, O Janardana (Krishna), that for men whose family traditions are destroyed,<br>
+            there is an inevitable dwelling in hell.
+        </div>
+        <a class="commentary-btn" href="english-1-44.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.45 ॥</div>
+        <p class="shlok-sanskrit">
+            अहो बत महत्पापं कर्तुं व्यवसिता वयम्।<br>
+            यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    aho bata mahatpāpaṃ kartuṃ vyavasitā vayam |<br>
+    yadrājyasukhalobhena hantuṃ svajanamudyatāḥ || 1.45 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Alas, we are intent on committing a great sin,<br>
+            for out of greed for the pleasure of a kingdom, we are prepared to kill our own kinsmen.
+        </div>
+        <a class="commentary-btn" href="english-1-45.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.46 ॥</div>
+        <p class="shlok-sanskrit">
+            यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।<br>
+            धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yadi mām-apratīkāram-aśastraṃ śastrapāṇayaḥ |<br>
+    dhārtarāṣṭrā raṇe hanyustanne kṣemataraṃ bhavet || 1.46 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If the sons of Dhritarashtra, armed with weapons, were to slay me,<br>
+            unresisting and unarmed, in the battle, that would be better for me.
+        </div>
+        <a class="commentary-btn" href="english-1-46.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 1.47 ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            एवमुक्त्वाऽर्जुनः सङ्ख्ये रथोपस्थ उपाविशत्।<br>
+            विसृज्य सशरं चापं शोकसंविग्नमानसः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    evamuktvārjunaḥ saṅkhye rathopastha upāviśat |<br>
+    visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ || 1.47 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sanjaya said: Having spoken thus on the battlefield, Arjuna sank down on the seat of the chariot,<br>
+            casting away his bow and arrows, his mind overwhelmed with sorrow.
+        </div>
+        <a class="commentary-btn" href="english-1-47.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे अर्जुनविषादयोगो नाम प्रथमोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upanishads of the glorious Bhagavad-Gita, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Sri Krishna and Arjuna, ends the first chapter, entitled Arjuna Vishada Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter2.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

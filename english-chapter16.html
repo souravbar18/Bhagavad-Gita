@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 16: Daivasura Sampad Vibhaga Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 16: Daivāsura Sampad Vibhāga Yoga (Division of Divine and Demonic Natures) - Verses 16.1 to 16.24</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter15.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter17.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 16.1 - 16.3 (The Divine Qualities - Daivī Sampad) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः।<br>
+            दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्।। (16.1)<br>
+            अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम्।<br>
+            दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्।। (16.2)<br>
+            तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता।<br>
+            भवन्ति सम्पदं दैवीमभिजातस्य भारत।। (16.3)
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    abhayaṃ sattvasaṃśuddhirjñānayogavyavasthitiḥ |<br>
+    dānaṃ damaśca yajñaśca svādhyāyastapa ārjavam || 16.1 ||<br><br>
+    ahiṃsā satyamakrodhastyāgaḥ śāntirapaiśunam |<br>
+    dayā bhūteṣvaloluptvaṃ mārdavaṃ hrīracāpalam || 16.2 ||<br><br>
+    tejaḥ kṣamā dhṛtiḥ śaucamadroho nātimānitā |<br>
+    bhavanti sampadaṃ daivīmabhijātasya bhārata || 16.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Fearlessness (Abhayaṁ), purity of existence (Sattva-saṁśuddhir), steadfastness in knowledge and Yoga (Jñāna-yoga-vyavasthitiḥ);<br>
+            Charity (Dānaṁ), self-control (Damaś ca), sacrifice (Yajñaś ca), study of the scriptures (Svādhyāyas), austerity (Tapa), and uprightness (Ārjavam); (16.1)<br>
+            Non-violence (Ahiṁsā), truthfulness (Satyam), freedom from anger (Akrodhas), renunciation (Tyāgaḥ), tranquility (Śāntir), aversion to fault-finding (Apaiśunam); (16.2)<br>
+            Compassion for all beings (Dayā Bhūteṣv), freedom from greed (Aloluptvaṁ), gentleness (Mārdavaṁ), modesty (Hrīr), and steadiness (Acāpalam); (16.2)<br>
+            Vigor (Tejaḥ), forgiveness (Kṣamā), fortitude (Dhṛtiḥ), cleanliness (Śaucam), absence of malice (Adroho), and absence of pride (Nāti-mānitā);<br>
+            These, O Bhārata, are the qualities of one born to the divine nature (Daivīm Abhijātasya). (16.3)
+        </div>
+        <a class="commentary-btn" href="english-16-1-3.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.4 (The Demonic Qualities - Āsurī Sampad) ॥</div>
+        <p class="shlok-sanskrit">
+            दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च।<br>
+            अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्।।
+        </p><div class="shlok-translation-formatted"> 
+    dambho darpo’bhimānaśca krodhaḥ pāruṣyameva ca |<br>
+    ajñānaṃ cābhijātasya pārtha sampadamāsurīm || 16.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Hypocrisy (Dambho), arrogance (Darpo), excessive pride (Abhimānaś ca), anger (Krodhaḥ), harshness (Pāruṣyam eva ca),<br>
+            and ignorance (Ajñānaṁ ca)—these, O son of Pṛthā (Arjuna), belong to one born to the demonic nature (Sampaṁ Āsurīm).
+        </div>
+        <a class="commentary-btn" href="english-16-4.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.5 (The Destiny of the Two Natures) ॥</div>
+        <p class="shlok-sanskrit">
+            दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता।<br>
+            मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव।।
+        </p><div class="shlok-translation-formatted"> 
+    daivī sampadvimokṣāya nibandhāyāsurī matā |<br>
+    mā śucaḥ sampadaṃ daivīmabhijāto’si pāṇḍava || 16.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The divine nature (Daivī Sampad) is deemed to lead to liberation (Vimokṣāya); the demonic (Āsurī), to bondage (Nibandhāya).<br>
+            Grieve not, O Pāṇḍava, for you are born with the divine nature (Sampadaṁ Daivīm Abhijāto asi).
+        </div>
+        <a class="commentary-btn" href="english-16-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.6 (The Two Types of Beings) ॥</div>
+        <p class="shlok-sanskrit">
+            द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च।<br>
+            दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु।।
+        </p><div class="shlok-translation-formatted"> 
+    dvau bhūtasargau loke’smin daiva āsura eva ca |<br>
+    daivo vistaraśa ukta āsuraṃ pārtha me śṛṇu || 16.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There are two types of created beings (Dvau Bhūta-sargau) in this world: the divine (Daivo) and the demonic (Āsura eva ca).<br>
+            The divine has been described at length; now hear from Me of the demonic, O son of Pṛthā (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-16-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.7 (Demonic Actions) ॥</div>
+        <p class="shlok-sanskrit">
+            प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः।<br>
+            न शौचं नापि चाचारो न सत्यं तेषु विद्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    pravṛttiṃ ca nivṛttiṃ ca janā na vidurāsurāḥ |<br>
+    na śaucaṃ nāpi cācāro na satyaṃ teṣu vidyate || 16.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Demonic people (Janā Na Viduḥ Āsurāḥ) know neither what should be done (Pravṛttiṁ ca) nor what should be abstained from (Nivṛttiṁ ca).<br>
+            Neither cleanliness (Na Śaucaṁ), nor right conduct (Na cācāro), nor truth (Na Satyaṁ) is found in them.
+        </div>
+        <a class="commentary-btn" href="english-16-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.8 (Demonic Beliefs about the World) ॥</div>
+        <p class="shlok-sanskrit">
+            असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम्।<br>
+            अपरस्परसम्भूतं किमन्‍यत्कामहैतुकम्।।
+        </p><div class="shlok-translation-formatted"> 
+    asatyamapratiṣṭhaṃ te jagadāhuranīśvaram |<br>
+    aparasparasambhūtaṃ kimanyatkāmahaitukam || 16.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            They say that the world (Jagat Āhur) is unreal (Asatyam), without a basis (Apratiṣṭham), and without a God (Anīśvaram).<br>
+            They say it is born of mutual union (Aparaspara-sambhūtaṁ), caused by desire (Kāma-haitukam) and nothing else.
+        </div>
+        <a class="commentary-btn" href="english-16-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.9 (The Result of False Views) ॥</div>
+        <p class="shlok-sanskrit">
+            एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः।<br>
+            प्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः।।
+        </p><div class="shlok-translation-formatted"> 
+    etāṃ dṛṣṭimavaṣṭabhya naṣṭātmāno’lpabuddhayaḥ |<br>
+    prabhavantyu-grakarmāṇaḥ kṣayāya jagato’hitāḥ || 16.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Holding fast to this view (Etāṁ Dṛṣṭim Avaṣṭabhya), these ruined souls (Naṣṭātmāno), of meager intelligence (Alpa-buddhayaḥ),<br>
+            engage in fierce and destructive actions (Prabhavanty Ugra-karmāṇaḥ), acting as enemies for the destruction of the world (Kṣayāya Jagato Ahitāḥ).
+        </div>
+        <a class="commentary-btn" href="english-16-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.10 (Demonic Desire and Hope) ॥</div>
+        <p class="shlok-sanskrit">
+            काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः।<br>
+            मोहाद् गृहीत्वाऽसद्ग्राहान् प्रवर्तन्तेऽशुचिव्रताः।।
+        </p><div class="shlok-translation-formatted"> 
+    kāmamāśritya duṣpūraṃ dambhamānamadānvitāḥ |<br>
+    mohādgṛhītvāsadgrāhānpravartante’śucivratāḥ || 16.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Giving themselves up to insatiable desire (Kāmam Āśritya Duṣpūraṁ), filled with hypocrisy, pride, and arrogance (Dambha-māna-madānvitāḥ),<br>
+            grasping false concepts through delusion (Mohād Gṛhītvā Asad-grāhān), they work with impure resolve (Pravartante Aśuci-vratāḥ).
+        </div>
+        <a class="commentary-btn" href="english-16-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 16.11 - 16.12 (Demonic Worry and Attachment) ॥</div>
+        <p class="shlok-sanskrit">
+            चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः।<br>
+            कामोपभोगपरमा एतावदिति निश्चिताः।। (16.11)<br>
+            आशापाशशतैर्बद्धाः कामक्रोधपरायणाः।<br>
+            ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान्।। (16.12)
+        </p><div class="shlok-translation-formatted"> 
+    cintāmaparimeyāṃ ca pralayāntāmupāśritāḥ |<br>
+    kāmopabhogaparamā etāvatiti niścitāḥ || 16.11 ||<br><br>
+    āśāpāśaśatairbaddhāḥ kāmakrodhaparāyaṇāḥ |<br>
+    īhante kāmabhogārthamanyāyenārthasañcayān || 16.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Holding to immeasurable anxieties (Cintām Aparimeyāṁ ca) that end only with death (Pralayāntām Upāśritāḥ),<br>
+            regarding gratification of desires as their highest aim (Kāmopabhoga-paramāḥ), and convinced that 'this is all'; (16.11)<br>
+            Bound by hundreds of ties of hope (Āśā-pāśa-śatair Baddhāḥ), completely given to lust and anger (Kāma-krodha-parāyaṇāḥ),<br>
+            they strive to accumulate wealth (Īhante Artha-sañcayān) unjustly (Anyāyena) for the gratification of their desires. (16.12)
+        </div>
+        <a class="commentary-btn" href="english-16-11-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 16.13 - 16.15 (Demonic Self-Assertion) ॥</div>
+        <p class="shlok-sanskrit">
+            इदमद्य मया लब्धमिदं प्राप्स्ये मनोरथम्।<br>
+            इदमस्तीदमपि मे भविष्यति पुनर्धनम्।। (16.13)<br>
+            असौ मया हतः शत्रुर्हनिष्ये चापरानपि।<br>
+            ईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी।। (16.14)<br>
+            आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया।<br>
+            यक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः।। (16.15)
+        </p><div class="shlok-translation-formatted"> 
+    idamadyamayā labdhamimaṃ prāpsyate manoratham |<br>
+    idamastīdamapi me bhaviṣyati punardhanam || 16.13 ||<br><br>
+    asau mayā hataḥ śatrurhaniṣye cāparānapi |<br>
+    īśvaro’hamahaṃ bhogī siddho’haṃ balavānsukhī || 16.14 ||<br><br>
+    āḍhyo’bhijanavānasmi kō’nyōsti sadṛśō mayā |<br>
+    yakṣye dāsyāmi modiṣya ityajñānavimohitāḥ || 16.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            'This much has been gained by me today (Idam Adya Mayā Labdham), this wish I shall realize (Idaṁ Prāpsye Manoraṁ);<br>
+            this wealth is mine, and this too will be mine again in the future (Idam Astīdam Api Me Bhaviṣyati Punaḥ Dhanaṁ).' (16.13)<br>
+            'That enemy has been slain by me (Asau Mayā Hataḥ Śatrur), and I shall slay others as well (Haniṣye cāparān api).<br>
+            I am the lord (Īśvaro Aham); I am the enjoyer (Ahaṁ Bhogī); I am perfect, mighty, and happy (Siddho Ahaṁ Balavān Sukhī).' (16.14)<br>
+            'I am wealthy and high-born (Āḍhyo Abhijanavān asmi); who else is equal to me (Ko Anyo Asti Sadṛśo Mayā)?<br>
+            I shall perform sacrifices (Yakṣye); I shall give charity (Dāsyāmi); I shall rejoice (Modiṣye).' Thus deluded by ignorance (Iti Ajñāna-vimohitāḥ). (16.15)
+        </div>
+        <a class="commentary-btn" href="english-16-13-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.16 (The Path of the Demonic) ॥</div>
+        <p class="shlok-sanskrit">
+            अनेकचित्तविभ्रान्ता मोहजालसमावृताः।<br>
+            प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ।।
+        </p><div class="shlok-translation-formatted"> 
+    anekacittavibhrāntā mohajālasamāvṛtāḥ |<br>
+    prasaktāḥ kāmabhogeṣu patanti narake’śucau || 16.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Perplexed by numerous thoughts (Aneka-citta-vibhrāntā), enveloped by the web of delusion (Moha-jāla-samāvṛtāḥ),<br>
+            addicted to the gratification of desires (Prasaktāḥ Kāma-bhogeṣu), they fall into foul hell (Patanti Narake Aśucau).
+        </div>
+        <a class="commentary-btn" href="english-16-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.17 (Demonic Worship) ॥</div>
+        <p class="shlok-sanskrit">
+            आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः।<br>
+            यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम्।।
+        </p><div class="shlok-translation-formatted"> 
+    ātmasambhāvitāḥ stabdhā dambhamānamadānvitāḥ |<br>
+    yajante nāmayajñaiste dambhenāvidhipūrvakam || 16.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Self-conceited (Ātma-sambhāvitāḥ), obstinate (Stabdhā), filled with the intoxication of wealth and pride (Dhana-māna-madānvitāḥ),<br>
+            they perform sacrifices only in name (Yajante Nāma-yajñais Te), with hypocrisy (Dambhenā) and without following scriptural rules (Avidhi-pūrvakam).
+        </div>
+        <a class="commentary-btn" href="english-16-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.18 (Demonic Ego) ॥</div>
+        <p class="shlok-sanskrit">
+            अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः।<br>
+            मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः।।
+        </p><div class="shlok-translation-formatted"> 
+    ahaṅkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ ca saṃśritāḥ |<br>
+    māmatmaparadeheṣu pradviṣanto’bhyasūyakāḥ || 16.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Possessing egoism, might, arrogance, desire, and anger (Ahaṅkāraṁ Balaṁ Darpaṁ Kāmaṁ Krodhaṁ ca Saṁśritāḥ),<br>
+            these malicious ones (Abhyasūyakāḥ) hate Me (Pradviṣanto) present in their own bodies and in the bodies of others (Mām Ātma-para-deheṣu).
+        </div>
+        <a class="commentary-btn" href="english-16-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.19 (Demonic Destiny) ॥</div>
+        <p class="shlok-sanskrit">
+            तानहं द्विषतः क्रूरान् संसारेषु नराधमान्।<br>
+            क्षिपाम्यजस्रमशुभानासुरीष्वेव योनिषु।।
+        </p><div class="shlok-translation-formatted"> 
+    tāmahaṃ dviṣataḥ krūrānsaṃsāreṣu narādhamān |<br>
+    kṣipāmyajasramaśubhānāsurīṣveva yoniṣu || 16.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            These malicious, cruel, and lowest of men (Tān Ahaṁ Dviṣataḥ Krūrān Nara-adhamān), I repeatedly cast (Kṣipāmy Ajasram),<br>
+            in the cycle of rebirth (Saṁsāreṣu) and into demonic wombs (Āsurīṣv Eva Yoniṣu).
+        </div>
+        <a class="commentary-btn" href="english-16-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.20 (Degradation of the Demonic) ॥</div>
+        <p class="shlok-sanskrit">
+            आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि।<br>
+            मामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    āsurīṃ yonimāpannā mūḍhā janmani janmani |<br>
+    māmaprāpyaiva kaunteya tato yāntyadhamāṃ gatim || 16.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having attained demonic wombs (Āsurīṁ Yonim Āpannā), O son of Kuntī (Arjuna), these deluded ones (Mūḍhāḥ), birth after birth (Janmani Janmani),<br>
+            do not attain Me (Mām Aprāpyaiva) and thus proceed to a still lower state (Tato Yānty Adhamāṁ Gatiṁ).
+        </div>
+        <a class="commentary-btn" href="english-16-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.21 (The Three Gates of Hell) ॥</div>
+        <p class="shlok-sanskrit">
+            त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः।<br>
+            कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्।।
+        </p><div class="shlok-translation-formatted"> 
+    trividhaṃ narakasyedaṃ dvāraṃ nāśanamātmanaḥ |<br>
+    kāmaḥ krodhastathā lobhas tasmādetattrayaṃ tyajet || 16.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Threefold is this gate of hell (Trividhaṁ Narakasya Idaṁ Dvāraṁ), destructive of the Self (Nāśanam Ātmanaḥ):<br>
+            Lust (Kāmaḥ), Anger (Krodhas Tathā), and Greed (Lobhas). Therefore, one should abandon these three (Tasmād Etat Trayaṁ Tyajet).
+        </div>
+        <a class="commentary-btn" href="english-16-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.22 (The Path to the Supreme Goal) ॥</div>
+        <p class="shlok-sanskrit">
+            एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः।<br>
+            आचरत्यात्मनः श्रेयस्ततो याति परां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    etairvimuktaḥ kaunteya tamodvāraistribhirnaraḥ |<br>
+    ācaratyātmanaḥ śreyas tato yāti parāṃ gatim || 16.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            A man liberated from these three gates of darkness (Etaiḥ Vimuktaḥ Kuntīya Tamo-dvārais Tribhir Naraḥ)<br>
+            performs what is beneficial for his soul (Ācaraty Ātmanaḥ Śreyas), and thus attains the supreme goal (Tato Yāti Parāṁ Gatiṁ).
+        </div>
+        <a class="commentary-btn" href="english-16-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.23 (Violation of Scripture) ॥</div>
+        <p class="shlok-sanskrit">
+            यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः।<br>
+            न स सिद्धिमवाप्नोति न सुखं न परां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yaḥ śāstravidhimutsṛjya vartate kāmakārataḥ |<br>
+    na sa siddhimavāpnoti na sukhaṃ na parāṃ gatim || 16.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who, casting aside the ordinances of the scriptures (Yaḥ Śāstra-vidhim Utsṛjya), acts under the impulse of desire (Vartate Kāma-kārataḥ),<br>
+            neither attains perfection (Na Sa Siddhim Avāpnoti), nor happiness (Na Sukhaṁ), nor the supreme goal (Na Parāṁ Gatiṁ).
+        </div>
+        <a class="commentary-btn" href="english-16-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 16.24 (Scripture as Authority) ॥</div>
+        <p class="shlok-sanskrit">
+            तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ।<br>
+            ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि।।
+        </p><div class="shlok-translation-formatted"> 
+    tasmācchāstraṃ pramāṇaṃ te kāryākāryavyavasthitau |<br>
+    jñātvā śātravidhānoktaṃ karma kartumihārhasi || 16.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, let the scripture be your authority (Tasmāc Chāstraṁ Pramāṇaṁ Te) in determining what ought to be done and what ought not to be done (Kāryākārya-vyavasthitau).<br>
+            Knowing the injunctions declared in the scriptures (Jñātvā Śāstra-vidhānoktaṁ), you should perform your action here (Karma Kartum Ihārhasi).
+        </div>
+        <a class="commentary-btn" href="english-16-24.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे दैवासुरसम्पद्विभागयोगो नाम षोडशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the sixteenth chapter, entitled Daivāsura Sampad Vibhāga Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter15.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter17.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

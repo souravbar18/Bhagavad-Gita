@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 7: Jñāna Vijñāna Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 7: Jñāna Vijñāna Yoga (The Yoga of Knowledge and Realization) - Verses 7.1 to 7.30</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter6.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter8.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.1 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            मय्यासक्तमनाः पार्थ योगं युञ्जन् मदाश्रयः।<br>
+            असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    mayyāsaktamanāḥ pārtha yogaṃ yuñjanmadāśrayaḥ |<br>
+    asaṃśayaṃ samagraṃ māṃ yathā jñāsyasi tacchṛṇu || 7.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: O Pārtha (Arjuna), hear how, with your mind attached to Me,<br>
+            practicing Yoga, and taking refuge in Me, you shall know Me completely, without any doubt.
+        </div>
+        <a class="commentary-btn" href="english-7-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.2 ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः।<br>
+            यज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    jñānaṃ te’haṃ savijñānamidaṃ vakṣyāmyaśeṣataḥ |<br>
+    yajjñātvā neha bhūyo’nyajjñātavyamavaśiṣyate || 7.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I shall declare to you in full this knowledge (Jñāna) together with realization (Vijñāna),<br>
+            by knowing which nothing else remains to be known in this world.
+        </div>
+        <a class="commentary-btn" href="english-7-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.3 ॥</div>
+        <p class="shlok-sanskrit">
+            मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये।<br>
+            यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः।।
+        </p><div class="shlok-translation-formatted"> 
+    manuṣyāṇāṃ sahasreṣu kaścidyatati siddhaye |<br>
+    yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ || 7.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among thousands of men, hardly one strives for perfection.<br>
+            And among those successful strivers, hardly one knows Me in truth.
+        </div>
+        <a class="commentary-btn" href="english-7-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.4 ॥</div>
+        <p class="shlok-sanskrit">
+            भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च।<br>
+            अहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा।।
+        </p><div class="shlok-translation-formatted"> 
+    bhūmirāpo’nalo vāyuḥ khaṃ mano buddhireva ca |<br>
+    ahaṅkāra itīyaṃ me bhinnā prakṛtidaṣṭadhā || 7.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Earth, water, fire, air, ether, mind, intellect, and egoism—<br>
+            thus is My Prakriti (Nature) divided eightfold.
+        </div>
+        <a class="commentary-btn" href="english-7-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.5 ॥</div>
+        <p class="shlok-sanskrit">
+            अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम्।<br>
+            जीवभूतां महाबाहो ययेदं धार्यते जगत्।।
+        </p><div class="shlok-translation-formatted"> 
+    apareyamitastvanyāṃ prakṛtiṃ viddhi me parām |<br>
+    jīvabhūtāṃ mahābāho yayedaṃ dhāryate jagat || 7.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This (eightfold nature) is My lower (Apara) Nature. But know, O mighty-armed (Arjuna),<br>
+            My other (Parā) Nature, the vital life-element, by which this universe is sustained.
+        </div>
+        <a class="commentary-btn" href="english-7-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.6 ॥</div>
+        <p class="shlok-sanskrit">
+            एतद्योनीनि भूतानि सर्वाणीत्युपधारय।<br>
+            अहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा।।
+        </p><div class="shlok-translation-formatted"> 
+    etadyonīni bhūtāni sarvāṇītyupadhāraya |<br>
+    ahaṃ kṛtsnasya jagataḥ prabhavaḥ pralayastathā || 7.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Understand that all beings have their origin in these two Natures (Parā and Aparā).<br>
+            I am the source and the dissolution of the entire universe.
+        </div>
+        <a class="commentary-btn" href="english-7-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.7 ॥</div>
+        <p class="shlok-sanskrit">
+            मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय।<br>
+            मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव।।
+        </p><div class="shlok-translation-formatted"> 
+    mattaḥ parataraṃ nānyatkiñcidasti dhanañjaya |<br>
+    mayi sarvamidaṃ protaṃ sūtre maṇigaṇā iva || 7.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There is nothing whatsoever higher than Me, O Dhananjaya (Arjuna).<br>
+            All this is strung on Me, like rows of pearls on a thread.
+        </div>
+        <a class="commentary-btn" href="english-7-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.8 ॥</div>
+        <p class="shlok-sanskrit">
+            रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः।<br>
+            प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु।।
+        </p><div class="shlok-translation-formatted"> 
+    raso’hamapsu kaunteya prabhāsmi śaśisūryayoḥ |<br>
+    praṇavaḥ sarvavedeṣu śabdaḥ khe pauruṣaṃ nṛṣu || 7.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the taste in water, O son of Kunti (Arjuna), and the radiance in the sun and moon.<br>
+            I am the sacred syllable Om in all the Vedas, the sound in ether, and the manhood in men.
+        </div>
+        <a class="commentary-btn" href="english-7-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.9 ॥</div>
+        <p class="shlok-sanskrit">
+            पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ।<br>
+            जीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु।।
+        </p><div class="shlok-translation-formatted"> 
+    puṇyo gandhaḥ pṛthivyāṃ ca tejaścāsmi vibhāvasau |<br>
+    jīvanaṃ sarvabhūteṣu tapaścāsmi tapasviṣu || 7.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the pure fragrance in earth and the brilliance in fire.<br>
+            I am the life in all beings, and I am the austerity in ascetics.
+        </div>
+        <a class="commentary-btn" href="english-7-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.10 ॥</div>
+        <p class="shlok-sanskrit">
+            बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम्।<br>
+            बुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    bījaṃ māṃ sarvabhūtānāṃ viddhi pārtha sanātanam |<br>
+    buddhirmatimatāmasmi tejastejasvināmaham || 7.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know Me, O Pārtha, to be the eternal seed of all beings.<br>
+            I am the intellect of the intelligent and the prowess of the powerful.
+        </div>
+        <a class="commentary-btn" href="english-7-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.11 ॥</div>
+        <p class="shlok-sanskrit">
+            बलं बलवतां चाहं कामरागविवर्जितम्।<br>
+            धर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ।।
+        </p><div class="shlok-translation-formatted"> 
+    balaṃ balavatāṃ cāhaṃ kāmarāgavivarjitam |<br>
+    dharmāviruddho bhūteṣu kāmo’smi bharatarṣabha || 7.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the strength of the strong, devoid of passion and attachment.<br>
+            I am the desire (Kāma) in beings which is not contrary to Dharma (righteousness), O best of the Bharatas.
+        </div>
+        <a class="commentary-btn" href="english-7-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.12 ॥</div>
+        <p class="shlok-sanskrit">
+            ये चैव सात्त्विका भावा राजसास्तामसाश्च ये।<br>
+            मत्त एवेति तान्विद्धि न त्वहं तेषु ते मयि।।
+        </p><div class="shlok-translation-formatted"> 
+    ye caiva sāttvikā bhāvā rājasāstāmasāśca ye |<br>
+    matta eveti tānviddhi na tvahaṃ teṣu te mayi || 7.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know that all states of being—Sāttvic (goodness), Rājasic (passion), and Tāmasic (ignorance)—<br>
+            proceed from Me alone. I am not in them, but they are in Me.
+        </div>
+        <a class="commentary-btn" href="english-7-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.13 ॥</div>
+        <p class="shlok-sanskrit">
+            त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत्।<br>
+            मोहितं नाभिजानाति मामेभ्यः परमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    tribhirguṇamayairbhāvaircbhirebhiḥ sarvamidaṃ jagat |<br>
+    mohitaṃ nābhijānāti māmebhyaḥ paramavyayam || 7.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Deluded by these three states (Gunas) of Nature, this whole world<br>
+            does not know Me, who is superior to them and imperishable.
+        </div>
+        <a class="commentary-btn" href="english-7-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.14 ॥</div>
+        <p class="shlok-sanskrit">
+            दैवी ह्येषा गुणमयी मम माया दुरत्यया।<br>
+            मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते।।
+        </p><div class="shlok-translation-formatted"> 
+    daivī hyeṣā guṇamayī mama māyā duratyayā |<br>
+    māmeva ye prapadyante māyāmetāṃ taranti te || 7.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Verily, this divine illusion (Māyā) of Mine, made up of the Gunas, is difficult to overcome.<br>
+            But those who surrender to Me alone cross beyond this Māyā.
+        </div>
+        <a class="commentary-btn" href="english-7-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.15 ॥</div>
+        <p class="shlok-sanskrit">
+            न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः।<br>
+            माययापहृतज्ञाना आसुरं भावमाश्रिताः।।
+        </p><div class="shlok-translation-formatted"> 
+    na māṃ duṣkṛtino mūḍhāḥ prapadyante narādhamāḥ |<br>
+    māyayāpahṛtajñānā āsuraṃ bhāvamāśritāḥ || 7.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The evil-doers, the deluded, the lowest among men, do not surrender to Me.<br>
+            Their knowledge is carried away by illusion (Māyā); they adopt the nature of demons (Āsuric).
+        </div>
+        <a class="commentary-btn" href="english-7-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.16 ॥</div>
+        <p class="shlok-sanskrit">
+            चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन।<br>
+            आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ।।
+        </p><div class="shlok-translation-formatted"> 
+    caturvidhā bhajante māṃ janāḥ sukṛtino’rjuna |<br>
+    ārto jijñāsurarthārthī jñānī ca bharatarṣabha || 7.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Four kinds of virtuous people worship Me, O Arjuna:<br>
+            the distressed, the seeker of knowledge, the seeker of wealth, and the wise one, O best of the Bharatas.
+        </div>
+        <a class="commentary-btn" href="english-7-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.17 ॥</div>
+        <p class="shlok-sanskrit">
+            तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते।<br>
+            प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः।।
+        </p><div class="shlok-translation-formatted"> 
+    teṣāṃ jñānī nityayukta ekabhaktirviśiṣyate |<br>
+    priyo hi jñānino’tyarthamahaṃ sa ca mama priyaḥ || 7.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among them, the wise one, ever united (in Yoga) and devoted to the One, excels.<br>
+            For I am exceedingly dear to the wise one, and he is dear to Me.
+        </div>
+        <a class="commentary-btn" href="english-7-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.18 ॥</div>
+        <p class="shlok-sanskrit">
+            उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम्।<br>
+            आस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    udārāḥ sarva evaite jñānī tvātmaiva me matam |<br>
+    āsthitaḥ sa hi yuktātmā māmevānuttamāṃ gatim || 7.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            All these are indeed noble, but the wise one is verily My own Self—that is My opinion.<br>
+            For, with a mind steadfast, he is established in Me alone as the highest goal.
+        </div>
+        <a class="commentary-btn" href="english-7-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.19 ॥</div>
+        <p class="shlok-sanskrit">
+            बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते।<br>
+            वासुदेवः सर्वमिति स महात्मा सुदुर्लभः।।
+        </p><div class="shlok-translation-formatted"> 
+    bahūnāṃ janmanāmate jñānavānmāṃ prapadyate |<br>
+    vāsudevaḥ sarvamiti sa mahātmā sudurlabhaḥ || 7.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            At the end of many births, the wise man surrenders to Me,<br>
+            (thinking) 'Vāsudeva is everything.' Such a great soul is very rare.
+        </div>
+        <a class="commentary-btn" href="english-7-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.20 ॥</div>
+        <p class="shlok-sanskrit">
+            कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः।<br>
+            तं तं नियममास्थाय प्रकृत्या नियताः स्वया।।
+        </p><div class="shlok-translation-formatted"> 
+    kāmaistastaistahṛtajñānāḥ prapadyante’nyadevatāḥ |<br>
+    taṃ taṃ niyamamāsthāya prakṛtyā niyatāḥ svayā || 7.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those whose knowledge has been carried away by various desires<br>
+            resort to other deities, following specific rituals, constrained by their own nature.
+        </div>
+        <a class="commentary-btn" href="english-7-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.21 ॥</div>
+        <p class="shlok-sanskrit">
+            यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति।<br>
+            तस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yo yo yāṃ yāṃ tanuṃ bhaktaḥ śraddhayārcitumicchati |<br>
+    tasya tasyācalāṃ śraddhāṃ tāmeva vidadhāmyaham || 7.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whichever form (of deity) any devotee desires to worship with faith,<br>
+            I make the faith of that devotee steady in that very form.
+        </div>
+        <a class="commentary-btn" href="english-7-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.22 ॥</div>
+        <p class="shlok-sanskrit">
+            स तया श्रद्धया युक्तस्तस्याराधनमीहते।<br>
+            लभते च ततः कामान्मयैव विहितान्हि तान्।।
+        </p><div class="shlok-translation-formatted"> 
+    sa tayā śraddhayā yuktas tasyārādhanamīhate |<br>
+    labhate ca tataḥ kāmān mayaiva vihitān hi tān || 7.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Endowed with that faith, he strives to worship that deity,<br>
+            and obtains from him the desired objects, which are ordained by Me alone.
+        </div>
+        <a class="commentary-btn" href="english-7-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.23 ॥</div>
+        <p class="shlok-sanskrit">
+            अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम्।<br>
+            देवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि।।
+        </p><div class="shlok-translation-formatted"> 
+    antavat tu phalaṃ teṣāṃ tad bhavatyalpamedhasām |<br>
+    devān devayajo yānti madbhaktā yānti māmapi || 7.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But the fruit gained by those men of small intellect is perishable.<br>
+            Worshippers of the demigods go to the demigods, but My devotees come to Me alone.
+        </div>
+        <a class="commentary-btn" href="english-7-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.24 ॥</div>
+        <p class="shlok-sanskrit">
+            अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः।<br>
+            परं भावमजानन्तो ममाव्ययमनुत्तमम्।।
+        </p><div class="shlok-translation-formatted"> 
+    avyaktaṃ vyaktimāpannaṃ manyante māmbuddhayaḥ |<br>
+    paraṃ bhāvamajānanto mamāvyayamanuttamam || 7.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The unintelligent think of Me, the unmanifest, as having manifold manifestation,<br>
+            not knowing My higher, imperishable, and supreme nature.
+        </div>
+        <a class="commentary-btn" href="english-7-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.25 ॥</div>
+        <p class="shlok-sanskrit">
+            नाहं प्रकाशः सर्वस्य योगमायासमावृतः।<br>
+            मूढोऽयं नाभिजानाति लोको मामजमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    nāhaṃ prakāśaḥ sarvasya yogamāyāsamāvṛtaḥ |<br>
+    mūḍho’yaṃ nābhijānāti loko māmajamavyayam || 7.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am not visible to everyone, being veiled by My creative illusion (Yoga-Māyā).<br>
+            This deluded world does not know Me, the unborn and imperishable.
+        </div>
+        <a class="commentary-btn" href="english-7-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.26 ॥</div>
+        <p class="shlok-sanskrit">
+            वेदाहं समतीतानि वर्तमानानि चार्जुन।<br>
+            भविष्याणि च भूतानि मां तु वेद न कश्चन।।
+        </p><div class="shlok-translation-formatted"> 
+    vedāhaṃ samatītāni vartamānāni cārjuna |<br>
+    bhaviṣyāṇi ca bhūtāni māṃ tu veda na kaścana || 7.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I know the past, the present, and the future beings, O Arjuna,<br>
+            but no one knows Me.
+        </div>
+        <a class="commentary-btn" href="english-7-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.27 ॥</div>
+        <p class="shlok-sanskrit">
+            इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत।<br>
+            सर्वभूतानि सम्मोहं सर्गे यान्ति परन्तप।।
+        </p><div class="shlok-translation-formatted"> 
+    icchādveṣasamutthena dvandvamohena bhārata |<br>
+    sarvabhūtāni sammohaṃ sarge yānti parantapa || 7.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            By the delusion of duality, arising from desire and hatred, O Bharata (Arjuna),<br>
+            all beings in the world are born into confusion, O scorcher of foes.
+        </div>
+        <a class="commentary-btn" href="english-7-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.28 ॥</div>
+        <p class="shlok-sanskrit">
+            येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम्।<br>
+            ते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः।।
+        </p><div class="shlok-translation-formatted"> 
+    yeṣāṃ tvantagataṃ pāpaṃ janānāṃ puṇyakarmaṇām |<br>
+    te dvandvamohanirmuktā bhajante māṃ dṛḍhavratāḥ || 7.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But those men of virtuous deeds whose sin has come to an end,<br>
+            are freed from the delusion of dualities and worship Me with firm resolve.
+        </div>
+        <a class="commentary-btn" href="english-7-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.29 ॥</div>
+        <p class="shlok-sanskrit">
+            जरामरणमोक्षाय मामाश्रित्य यतन्ति ये।<br>
+            ते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम्।।
+        </p><div class="shlok-translation-formatted"> 
+    jarāmaraṇamokṣāya māmāśritya yatanti ye |<br>
+    te brahma tadviduḥ kṛtsnamadhyātmaṃ karma cākhilam || 7.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those who strive for liberation from old age and death by taking refuge in Me,<br>
+            know Brahman, the complete spiritual knowledge (Adhyātma), and all about action (Karma).
+        </div>
+        <a class="commentary-btn" href="english-7-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 7.30 ॥</div>
+        <p class="shlok-sanskrit">
+            साधिभूताधिदैवं मां साधियज्ञं च ये विदुः।<br>
+            प्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः।।
+        </p><div class="shlok-translation-formatted"> 
+    sadhibhūtādhidaivaṃ māṃ sādhiyajñaṃ ca ye viduḥ |<br>
+    prayāṇakāle’pi ca māṃ te viduryuktacetasaḥ || 7.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those who know Me with reference to the material manifestation (Adhibhūta),<br>
+            the celestial deities (Adhidaiva), and the sacrifice (Adhiyajña),<br>
+            they, with concentrated minds, know Me even at the time of death.
+        </div>
+        <a class="commentary-btn" href="english-7-30.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे ज्ञानविज्ञानयोगो नाम सप्तमोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the seventh chapter, entitled Jñāna Vijñāna Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter6.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter8.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 9: Rāja Vidyā Rāja Guhya Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 9: Rāja Vidyā Rāja Guhya Yoga (The Yoga of the Sovereign Knowledge) - Verses 9.1 to 9.34</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter8.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter10.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.1 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            इदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे।<br>
+            ज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    idaṃ tu te guhyatamaṃ pravakṣyāmyana sūyave |<br>
+    jñānaṃ vijñānasahitaṃ yajjñātvā mokṣyase’śubhāt || 9.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: To you, who are free from malice, I shall declare this most profound secret,<br>
+            knowledge (Jñāna) combined with realization (Vijñāna), by knowing which you shall be freed from evil.
+        </div>
+        <a class="commentary-btn" href="english-9-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.2 ॥</div>
+        <p class="shlok-sanskrit">
+            राजविद्या राजगुह्यं पवित्रमिदमुत्तमम्।<br>
+            प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    rājavidyā rājaguhyaṃ pavitramidamuttamam |<br>
+    pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartumavyayam || 9.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This is the sovereign science, the sovereign secret, the supreme sanctifier.<br>
+            It is directly realized, righteous, very pleasant to perform, and imperishable.
+        </div>
+        <a class="commentary-btn" href="english-9-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.3 ॥</div>
+        <p class="shlok-sanskrit">
+            अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप।<br>
+            अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि।।
+        </p><div class="shlok-translation-formatted"> 
+    aśraddadhānāḥ puruṣā dharmasyāsya parantapa |<br>
+    aprāpya māṃ nivartante mṛtyusaṃsāravartmani || 9.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The men who are without faith in this Dharma (path of righteousness), O scorcher of foes (Arjuna),<br>
+            failing to attain Me, return to the path of the cycle of death and rebirth.
+        </div>
+        <a class="commentary-btn" href="english-9-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.4 ॥</div>
+        <p class="shlok-sanskrit">
+            मया ततमिदं सर्वं जगदव्यक्तमूर्तिना।<br>
+            मत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः।।
+        </p><div class="shlok-translation-formatted"> 
+    mayā tatamidaṃ sarvaṃ jagadavyaktamūrtinā |<br>
+    matsthāni sarvabhūtāni na cāhaṃ teṣvavasthitaḥ || 9.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This entire universe is pervaded by Me in My unmanifested form.<br>
+            All beings abide in Me, but I do not abide in them.
+        </div>
+        <a class="commentary-btn" href="english-9-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.5 ॥</div>
+        <p class="shlok-sanskrit">
+            न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम्।<br>
+            भूतभृन्न च भूतस्थो ममात्मा भूतभावनः।।
+        </p><div class="shlok-translation-formatted"> 
+    na ca matsthāni bhūtāni paśya me yogamaiśvaram |<br>
+    bhūtabhṛnna ca bhūtastho mamātmā bhūtabhāvanaḥ || 9.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Nor do beings actually dwell in Me; behold My divine Yoga (mystic power)!<br>
+            I am the supporter of all beings and yet I am not in them, for My Self is the creator of beings.
+        </div>
+        <a class="commentary-btn" href="english-9-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.6 ॥</div>
+        <p class="shlok-sanskrit">
+            यथाकाशस्थितो नित्यं वायुः सर्वत्रगो महान्।<br>
+            तथा सर्वाणि भूतानि मत्स्थानीत्युपधारय।।
+        </p><div class="shlok-translation-formatted"> 
+    yathākāśasthito nityaṃ vāyuḥ sarvatrago mahān |<br>
+    tathā sarvāṇi bhūtāni matsthānītyupadhāraya || 9.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            As the mighty wind, moving everywhere, rests always in the space (Ākāśa),<br>
+            similarly, understand that all beings rest in Me.
+        </div>
+        <a class="commentary-btn" href="english-9-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.7 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम्।<br>
+            कल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvabhūtāni kaunteya prakṛtiṃ yānti māmikām |<br>
+    kalpakṣaye punastāni kalpādau visṛjāmyaham || 9.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            All beings, O son of Kunti, enter My Nature (Prakṛti) at the end of the Kalpa (cycle).<br>
+            At the beginning of the next Kalpa, I again send them forth.
+        </div>
+        <a class="commentary-btn" href="english-9-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.8 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः।<br>
+            भूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्।।
+        </p><div class="shlok-translation-formatted"> 
+    prakṛtiṃ svāmavaṣṭabhya visṛjāmi punaḥ punaḥ |<br>
+    bhūtagrāmamimaṃ kṛtsnamavaśaṃ prakṛtervaśāt || 9.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            By controlling My own Nature, I again and again send forth<br>
+            this entire multitude of beings, helpless and subject to the power of Prakṛti (Nature).
+        </div>
+        <a class="commentary-btn" href="english-9-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.9 ॥</div>
+        <p class="shlok-sanskrit">
+            न च मां तानि कर्माणि निबध्नन्ति धनञ्जय।<br>
+            उदासीनवदासीनमसक्तं तेषु कर्मसु।।
+        </p><div class="shlok-translation-formatted"> 
+    na ca māṃ tāni karmāṇi nibadhnanti dhanañjaya |<br>
+    udāsīnavadāsīnamasaktaṃ teṣu karmasu || 9.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            These actions do not bind Me, O Dhananjaya (Arjuna),<br>
+            as I remain detached, sitting as if indifferent to those actions.
+        </div>
+        <a class="commentary-btn" href="english-9-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.10 ॥</div>
+        <p class="shlok-sanskrit">
+            मयाध्यक्षेण प्रकृतिः सूयते सचराचरम्।<br>
+            हेतुनानेन कौन्तेय जगद् विपरिवर्तते।।
+        </p><div class="shlok-translation-formatted"> 
+    mayādhyakṣeṇa prakṛtiḥ sūyate sacarācaram |<br>
+    hetunānena kaunteya jagadviparivartate || 9.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Under My supervision, Nature gives birth to all that moves and does not move.<br>
+            Due to this cause, O son of Kunti (Arjuna), the universe revolves.
+        </div>
+        <a class="commentary-btn" href="english-9-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.11 ॥</div>
+        <p class="shlok-sanskrit">
+            अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम्।<br>
+            परं भावमजानन्तो मम भूतमहेश्वरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    avajānanti māṃ mūḍhā mānuṣīṃ tanumāśritam |<br>
+    paraṃ bhāvamajānanto mama bhūtamaheśvaram || 9.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Fools disregard Me when I assume a human form,<br>
+            not knowing My higher nature as the great Lord of all beings.
+        </div>
+        <a class="commentary-btn" href="english-9-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.12 ॥</div>
+        <p class="shlok-sanskrit">
+            मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः।<br>
+            राक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः।।
+        </p><div class="shlok-translation-formatted"> 
+    moghāśā moghakarmāṇo moghajñānā vicetasaḥ |<br>
+    rākṣasīmāsurīṃ caiva prakṛtiṃ mohinīṃ śritāḥ || 9.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those bewildered (by Māyā) are of vain hope, vain actions, and vain knowledge,<br>
+            having taken recourse to the deceitful, demoniac, and devilish nature.
+        </div>
+        <a class="commentary-btn" href="english-9-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.13 ॥</div>
+        <p class="shlok-sanskrit">
+            महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः।<br>
+            भजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    mahātmānastu māṃ pārtha daivīṃ prakṛtimāśritāḥ |<br>
+    bhajantyananyamanaso jñātvā bhūtādimavyayam || 9.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But the Mahātmās (great souls), O Pārtha, who partake of the divine Nature,<br>
+            worship Me with an undeviating mind, knowing Me to be the inexhaustible source of all beings.
+        </div>
+        <a class="commentary-btn" href="english-9-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.14 ॥</div>
+        <p class="shlok-sanskrit">
+            सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः।<br>
+            नमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते।।
+        </p><div class="shlok-translation-formatted"> 
+    satataṃ kīrtayanto māṃ yatantaśca dṛḍhavratāḥ |<br>
+    namasyantaśca māṃ bhaktyā nityayuktā upāsate || 9.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Always glorifying Me, striving with firm resolve,<br>
+            bowing down to Me with devotion, they worship Me, ever united.
+        </div>
+        <a class="commentary-btn" href="english-9-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.15 ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञानयज्ञेन चाप्ये के यजन्तो मामुपासते।<br>
+            एकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्।।
+        </p><div class="shlok-translation-formatted"> 
+    jñānayajñena cāpyanye yajanto māmupāsate |<br>
+    ekatvena pṛthaktvena bahudhā viśvatomukham || 9.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Others, sacrificing with the sacrifice of knowledge (Jñāna Yajña), worship Me<br>
+            as the One, as the distinct, and in manifold ways as the Omnipresent.
+        </div>
+        <a class="commentary-btn" href="english-9-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.16 ॥</div>
+        <p class="shlok-sanskrit">
+            अहं क्रतुरहं यज्ञः स्वधाहमहमौषधम्।<br>
+            मन्त्रोऽहमहमेवाज्यमहमग्निरहं हुतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    ahaṃ kraturahaṃ yajñaḥ svadhāhamahamoṣadham |<br>
+    mantro’hamahamevājyamahamagnirahṃ hutam || 9.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the ritual (Kratu), I am the sacrifice (Yajña), I am the offering to the ancestors (Svadha), I am the herb (Auṣadham).<br>
+            I am the Mantra, I Myself am the melted butter (Ājya), I am the fire, and I am the offering.
+        </div>
+        <a class="commentary-btn" href="english-9-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.17 ॥</div>
+        <p class="shlok-sanskrit">
+            पिताहमस्य जगतो माता धाता पितामहः।<br>
+            वेद्यं पवित्रमोङ्कार ऋक्साम यजुरेव च।।
+        </p><div class="shlok-translation-formatted"> 
+    pitāhamasya jagato mātā dhātā pitāmahaḥ |<br>
+    vedyaṃ pavitramoṃkāra ṛksāma yajureva ca || 9.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the father of this world, the mother, the sustainer, and the grandfather.<br>
+            I am the object of knowledge, the purifier, the syllable Om, and also the Ṛk, Sāma, and Yajus (Vedas).
+        </div>
+        <a class="commentary-btn" href="english-9-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.18 ॥</div>
+        <p class="shlok-sanskrit">
+            गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्।<br>
+            प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    gatirbhartā prabhuḥ sākṣī nivāsaḥ śaraṇaṃ suhṛt |<br>
+    prabhavaḥ pralayaḥ sthānaṃ nidhānaṃ bījamavyayam || 9.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the goal, the supporter, the Lord, the witness, the abode, the refuge, the friend.<br>
+            I am the origin, the dissolution, the foundation, the treasure-house, and the imperishable seed.
+        </div>
+        <a class="commentary-btn" href="english-9-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.19 ॥</div>
+        <p class="shlok-sanskrit">
+            तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च।<br>
+            अमृतं चैव मृत्युश्च सदसच्चाहमर्जुन।।
+        </p><div class="shlok-translation-formatted"> 
+    tapāmyahamahaṃ varṣaṃ nigṛhṇāmyutsṛjāmi ca |<br>
+    amṛtaṃ caiva mṛtyuśca sadasaccāhamarjuna || 9.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I give heat; I withhold and send forth the rain.<br>
+            I am immortality and also death, and I am existence (Sat) and non-existence (Asat), O Arjuna.
+        </div>
+        <a class="commentary-btn" href="english-9-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.20 ॥</div>
+        <p class="shlok-sanskrit">
+            त्रैविद्या मां सोमपाः पूतपापा <br>
+            यज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते।<br>
+            ते पुण्यमासाद्य सुरेन्द्रलोकम् <br>
+            अश्नन्ति दिव्यान् दिवि देवभोगान्।।
+        </p><div class="shlok-translation-formatted"> 
+    traividyā māṃ somapāḥ pūtapāpā yajñairiṣṭvā svargatiṃ prārthayante |<br>
+    te puṇyamāsādya surendralokamaśnanti divyāndivi devabhogān || 9.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The knowers of the three Vedas, who drink the Soma juice and are purified of sin,<br>
+            worship Me with sacrifices and pray for the path to heaven.<br>
+            Having reached the righteous world of Indra (heaven), they enjoy the celestial pleasures of the Gods in heaven.
+        </div>
+        <a class="commentary-btn" href="english-9-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.21 ॥</div>
+        <p class="shlok-sanskrit">
+            ते तं भुक्त्वा स्वर्गलोकं विशालम् <br>
+            क्षीणे पुण्ये मर्त्यलोकं विशन्ति।<br>
+            एवं त्रयीधर्ममनुप्रपन्ना <br>
+            गतागतं कामकामा लभन्ते।।
+        </p><div class="shlok-translation-formatted"> 
+    te taṃ bhuktvā svargalokaṃ viśālaṃ kṣīṇe puṇye martyalokaṃ viśanti |<br>
+    evaṃ trayīdharmamanuprapannā gatāgataṃ kāmakāmā labhante || 9.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having enjoyed that vast world of heaven, they return to the mortal world upon the exhaustion of their merit.<br>
+            Thus, following the Dharma of the three Vedas, those desirous of enjoyment attain only going and coming (rebirth).
+        </div>
+        <a class="commentary-btn" href="english-9-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.22 ॥</div>
+        <p class="shlok-sanskrit">
+            अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।<br>
+            तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    ananyāścintayanto māṃ ye janāḥ paryupāsate |<br>
+    teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmyaham || 9.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But those persons who worship Me alone, meditating on Me with unswerving mind—<br>
+            for those who are ever devoted, I carry the burden of their gain (Yoga) and security (Kshema).
+        </div>
+        <a class="commentary-btn" href="english-9-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.23 ॥</div>
+        <p class="shlok-sanskrit">
+            येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयान्विताः।<br>
+            तेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्।।
+        </p><div class="shlok-translation-formatted"> 
+    ye’pyanyadevatābhaktā yajante śraddhayānvitāḥ |<br>
+    te’pi māmeva kaunteya yajantyavidhipūrvakam || 9.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Even those devotees who, with faith, worship other deities,<br>
+            they too worship Me alone, O son of Kunti, though not according to the proper rules (avidhi-pūrvakam).
+        </div>
+        <a class="commentary-btn" href="english-9-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.24 ॥</div>
+        <p class="shlok-sanskrit">
+            अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च।<br>
+            न तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते।।
+        </p><div class="shlok-translation-formatted"> 
+    ahaṃ hi sarvayajñānāṃ bhoktā ca prabhureva ca |<br>
+    na tu māmAbhijānanti tattvenātaścyavanti te || 9.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For I am the enjoyer (Bhoktā) and the Lord (Prabhu) of all sacrifices.<br>
+            But they do not know Me in reality (Tattva), and hence they fall (return to rebirth).
+        </div>
+        <a class="commentary-btn" href="english-9-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.25 ॥</div>
+        <p class="shlok-sanskrit">
+            यान्ति देवव्रता देवान् पितॄन्यान्ति पितृव्रताः।<br>
+            भूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yānti devavratā devānpitṝnyānti pitṛvratāḥ |<br>
+    bhūtāni yānti bhūtejyā yānti madyājino’pi mām || 9.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Worshippers of the demigods go to the demigods; worshippers of the ancestors go to the ancestors.<br>
+            Worshippers of spirits (Bhūtas) go to the spirits; but those who worship Me come to Me alone.
+        </div>
+        <a class="commentary-btn" href="english-9-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.26 ॥</div>
+        <p class="shlok-sanskrit">
+            पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।<br>
+            तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः।।
+        </p><div class="shlok-translation-formatted"> 
+    patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati |<br>
+    tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ || 9.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whoever offers Me with devotion a leaf, a flower, a fruit, or water—<br>
+            that, offered with devotion by the pure-minded, I accept.
+        </div>
+        <a class="commentary-btn" href="english-9-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.27 ॥</div>
+        <p class="shlok-sanskrit">
+            यत्करोषि यदश्नासि यज्जुहोषि ददासि यत्।<br>
+            यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yatkaroṣi yadaśnāsi yajjuhoṣi dadāsi yat |<br>
+    yattapasyasi kaunteya tatkuruṣva madarpaṇam || 9.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever you do, whatever you eat, whatever you offer as oblations, whatever you give away,<br>
+            and whatever austerity you perform, O son of Kunti, do that as an offering to Me.
+        </div>
+        <a class="commentary-btn" href="english-9-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.28 ॥</div>
+        <p class="shlok-sanskrit">
+            शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः।<br>
+            सन्न्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि।।
+        </p><div class="shlok-translation-formatted"> 
+    śubhāśubhaphalairevaṃ mokṣyase karmabandhanaiḥ |<br>
+    sannyāsayogayuktātmā vimukto māmupaiṣyasi || 9.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Thus you will be freed from the bondage of actions which yield good and bad results.<br>
+            United with the Self through the Yoga of renunciation, liberated, you shall come to Me.
+        </div>
+        <a class="commentary-btn" href="english-9-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.29 ॥</div>
+        <p class="shlok-sanskrit">
+            समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः।<br>
+            ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    samo’haṃ sarvabhūteṣu na me dveṣyo’sti na priyaḥ |<br>
+    ye bhajanti tu māṃ bhaktyā mayi te teṣu cāpyaham || 9.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the same to all beings; there is none hateful nor dear to Me.<br>
+            But those who worship Me with devotion, they are in Me, and I am also in them.
+        </div>
+        <a class="commentary-btn" href="english-9-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.30 ॥</div>
+        <p class="shlok-sanskrit">
+            अपि चेत्सुदुराचारो भजते मामनन्यभाक्।<br>
+            साधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः।।
+        </p><div class="shlok-translation-formatted"> 
+    api cet sudurācāro bhajate māmananyabhāk |<br>
+    sādhureva sa mantavyaḥ samyagvyavasito hi saḥ || 9.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Even if a person of very bad conduct worships Me with unswerving devotion to none else,<br>
+            he must be regarded as righteous, for he has rightly resolved.
+        </div>
+        <a class="commentary-btn" href="english-9-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.31 ॥</div>
+        <p class="shlok-sanskrit">
+            क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति।<br>
+            कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    kṣipraṃ bhavati dharmātmā śaśvacchāntiṃ nigacchati |<br>
+    kaunteya pratijānīhi na me bhaktaḥ praṇaśyati || 9.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He quickly becomes righteous and attains eternal peace.<br>
+            O son of Kunti, declare boldly that My devotee never perishes.
+        </div>
+        <a class="commentary-btn" href="english-9-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.32 ॥</div>
+        <p class="shlok-sanskrit">
+            मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः।<br>
+            स्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    māṃ hi pārtha vyapāśritya ye’pi syuḥ pāpayonayaḥ |<br>
+    striyo vaiśyāstathā śūdrāste’pi yānti parāṃ gatim || 9.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Pārtha, taking refuge in Me, even those who are of lower birth—<br>
+            women, Vaiśyas (merchants), and Śūdras (laborers)—also attain the supreme goal.
+        </div>
+        <a class="commentary-btn" href="english-9-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.33 ॥</div>
+        <p class="shlok-sanskrit">
+            किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा।<br>
+            अनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्।।
+        </p><div class="shlok-translation-formatted"> 
+    kiṃ punarbrāhmaṇāḥ puṇyā bhaktā rājarṣayastathā |<br>
+    anityamasukhaṃ lokamimaṃ prāpya bhajasva mām || 9.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            How much more then the pure Brāhmaṇas and devoted royal sages (Rājarṣis)!<br>
+            Having obtained this transient and unhappy world, worship Me.
+        </div>
+        <a class="commentary-btn" href="english-9-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 9.34 ॥</div>
+        <p class="shlok-sanskrit">
+            मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।<br>
+            मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः।।
+        </p><div class="shlok-translation-formatted"> 
+    manmanā bhava madbhakto madyājī māṃ namaskuru |<br>
+    māmevaiṣyasi yuktvaivamātmānaṃ matparāyaṇaḥ || 9.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Fix your mind on Me, be devoted to Me, worship Me, and offer homage to Me.<br>
+            Thus uniting your self with Me, and having Me as your supreme goal, you shall surely come to Me.
+        </div>
+        <a class="commentary-btn" href="english-9-34.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे राजविद्याराजगुह्ययोगो नाम नवमोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the ninth chapter, entitled Rāja Vidyā Rāja Guhya Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter8.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter10.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

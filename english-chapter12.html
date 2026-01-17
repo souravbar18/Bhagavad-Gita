@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 12: Bhakti Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 12: Bhakti Yoga (The Yoga of Devotion) - Verses 12.1 to 12.20</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter11.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter13.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.1 (Arjuna's Question) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            एवं सततयुक्ता ये भक्तास्त्वां पर्युपासते।<br>
+            ये चाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    evaṃ satatayuktā ye bhaktāstvāṃ paryupāsate |<br>
+    ye cāpyakṣaramavyaktaṃ teṣāṃ ke yogavittamāḥ || 12.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: Those devotees who are constantly well-integrated (Satata-yuktāḥ) and worship You with form (Paryupāsate),<br>
+            and those who worship the imperishable (Akṣaram), unmanifest (Avyaktam)—<br>
+            of these two, who are considered the best knowers of Yoga (Yogavittamāḥ)?
+        </div>
+        <a class="commentary-btn" href="english-12-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.2 (Krishna's Answer) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते।<br>
+            श्रद्धया परयोपेतास्ते मे युक्ततमा मताः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    mayyāveśya mano ye māṃ nityayuktā upāsate |<br>
+    śraddhayā parayopetāste me yuktatamā matāḥ || 12.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Those who fix their mind on Me (Mayy āveśya mano), and worship Me,<br>
+            ever integrated (Nitya-yuktā) and endowed with supreme faith (Śraddhayā parayopetā),<br>
+            they are considered by Me to be the most perfectly integrated (Yuktatamāḥ).
+        </div>
+        <a class="commentary-btn" href="english-12-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 12.3 - 12.4 (Worship of the Unmanifest) ॥</div>
+        <p class="shlok-sanskrit">
+            ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते।<br>
+            सर्वत्रगमचिन्त्यं च कूटस्थमचलं ध्रुवम्।। (12.3)<br>
+            सन्नियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः।<br>
+            ते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः।। (12.4)
+        </p><div class="shlok-translation-formatted"> 
+    ye tvakṣaramanirdeśyamavyaktaṃ paryupāsate |<br>
+    sarvatragamacintyaṃ ca kūṭasthamacalaṃ dhruvam || 12.3 ||<br><br>
+    sanniyamyendriyagrāmaṃ sarvatra samabuddhayaḥ |<br>
+    te prāpnuvanti māmeva sarvabhūtahite ratāḥ || 12.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But those who worship the imperishable (Akṣaram), the indefinable (Anirdeśyam), the unmanifest (Avyaktam), (12.3)<br>
+            the omnipresent (Sarvatra-gam), the unthinkable (Acintyaṁ), the unwavering (Kūṭa-sthaṁ), the immovable (Acalam), the eternal (Dhruvam); (12.3)<br>
+            restraining all the senses (Sanniyamya Indriya-grāmaṁ), being equally balanced everywhere (Sarvatra sama-buddhayaḥ),<br>
+            and devoted to the welfare of all beings (Sarva-bhūta-hite ratāḥ)—they also attain Me alone. (12.4)
+        </div>
+        <a class="commentary-btn" href="english-12-3-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.5 (Difficulty of the Unmanifest Path) ॥</div>
+        <p class="shlok-sanskrit">
+            क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्।<br>
+            अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    kleśo’dhikatarasteṣāmavyaktāsaktacetasām |<br>
+    avyaktā hi gatirduḥkhaṃ dehavadbhiravāpyate || 12.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Greater is the difficulty (Kleśo Adhikataraḥ) for those whose minds are attached to the Unmanifest (Avyaktāsakta-cetasām).<br>
+            The path to the Unmanifest is achieved with difficulty by embodied beings (Deha-vadbhir avāpyate).
+        </div>
+        <a class="commentary-btn" href="english-12-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 12.6 - 12.7 (Superiority of Bhakti) ॥</div>
+        <p class="shlok-sanskrit">
+            ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः।<br>
+            अनन्येनैव योगेन मां ध्यायन्त उपासते।। (12.6)<br>
+            तेषामहं समुद्धर्ता मृत्युसंसारसागरात्।<br>
+            भवामि न चिरात् पार्थ मय्यावेशितचेतसाम्।। (12.7)
+        </p><div class="shlok-translation-formatted"> 
+    ye tu sarvāṇi karmāṇi mayi sannyasya matparāḥ |<br>
+    ananyenaiva yogena māṃ dhyāyanta upāsate || 12.6 ||<br><br>
+    teṣāmahaṃ samuddhartā mṛtyusaṃsārasāgarāt |<br>
+    bhavāmi nacirātpārtha mayyāveśitacetasām || 12.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But those who dedicate all actions to Me (Mayi Saṁnyasya), regarding Me as the Supreme Goal (Mat-parāḥ), (12.6)<br>
+            worshipping Me, and meditating on Me with unswerving Yoga (Ananyenaiva Yogena), (12.6)<br>
+            for them, whose minds are fixed on Me (Mayy āveśita-cetasām),<br>
+            I quickly become the deliverer from the ocean of mortal existence (Mṛtyu-saṁsāra-sāgarāt), O Pārtha. (12.7)
+        </div>
+        <a class="commentary-btn" href="english-12-6-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.8 (The Highest Practice) ॥</div>
+        <p class="shlok-sanskrit">
+            मय्येव मन आधत्स्व मयि बुद्धिं निवेशय।<br>
+            निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः।।
+        </p><div class="shlok-translation-formatted"> 
+    mayyeva mana ādhatsva mayi buddhiṃ niveśaya |<br>
+    nivasiṣyasi mayyeva ata ūrdhvaṃ na saṃśayaḥ || 12.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Fix your mind (Mana Ādhatsva) on Me alone; place your intellect (Buddhiṁ Niveśaya) in Me.<br>
+            Thereafter, you shall dwell in Me alone; there is no doubt about this.
+        </div>
+        <a class="commentary-btn" href="english-12-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.9 (The Practice of Abhyāsa Yoga) ॥</div>
+        <p class="shlok-sanskrit">
+            अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम्।<br>
+            अभ्यासयोगेन ततो मामिच्छातुं धनञ्जय।।
+        </p><div class="shlok-translation-formatted"> 
+    atha cittaṃ samādhātuṃ na śaknoṣi mayi sthiram |<br>
+    abhyāsayogena tato māmicchāptuṃ dhanañjaya || 12.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If, however, you are unable to fix your mind steadily on Me,<br>
+            then seek to attain Me, O Dhanañjaya, by the Yoga of repeated practice (Abhyāsa Yogena).
+        </div>
+        <a class="commentary-btn" href="english-12-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.10 (The Practice of Karma Yoga) ॥</div>
+        <p class="shlok-sanskrit">
+            अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव।<br>
+            मदर्थमपि कर्माणि कुर्वन् सिद्धिमवाप्स्यसि।।
+        </p><div class="shlok-translation-formatted"> 
+    abhyāse’pyasamartho’si matkarmaparamo bhava |<br>
+    madarthamapi karmāṇi kurvansiddhimavāpsyasi || 12.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If you are also unable to perform repeated practice, then be intent on doing actions for Me (Mat-karma-paramo bhava).<br>
+            By performing actions for My sake (Mad-artham api Karmāṇi), you will attain perfection (Siddhim avāpsyasi).
+        </div>
+        <a class="commentary-btn" href="english-12-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.11 (The Practice of Tyāga) ॥</div>
+        <p class="shlok-sanskrit">
+            अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः।<br>
+            सर्वकर्मफलत्यागं ततः कुरु यतात्मवान्।।
+        </p><div class="shlok-translation-formatted"> 
+    athaitadapyaśakto’si kartuṃ madyogamaśritaḥ |<br>
+    sarvakarmaphalatyāgaṃ tataḥ kuru yatātmavān || 12.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If you are unable even to do this, then, taking refuge in My Yoga (Mat-yogam Āśritaḥ),<br>
+            renounce the fruit of all actions (Sarva-karma-phala-tyāgaṁ), being self-controlled.
+        </div>
+        <a class="commentary-btn" href="english-12-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.12 (Hierarchy of Practice) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रेयो हि ज्ञानमभ्यासाज् ज्ञानाद् ध्यानं विशिष्यते।<br>
+            ध्यानात् कर्मफलत्यागस् त्यागाच्छान्तिरनन्तरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śreyo hi jñānamabhyāsājjñānāddhyānaṃ viśiṣyate |<br>
+    dhyānātkarmaphalatyāgastyāgācchāntiranantaram || 12.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowledge (Jñānam) is indeed better than mechanical practice (Abhyāsāt);<br>
+            Meditation (Dhyānaṁ) is superior to knowledge;<br>
+            Renunciation of the fruit of action (Karma-phala-tyāgaḥ) is superior to meditation;<br>
+            From renunciation, peace (Śāntiḥ) immediately follows.
+        </div>
+        <a class="commentary-btn" href="english-12-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 12.13 - 12.14 (Attributes of the Dear Devotee) ॥</div>
+        <p class="shlok-sanskrit">
+            अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च।<br>
+            निर्ममो निरहङ्कारः समदुःखसुखः क्षमी।। (12.13)<br>
+            सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः।<br>
+            मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः।। (12.14)
+        </p><div class="shlok-translation-formatted"> 
+    adveṣṭā sarvabhūtānāṃ maitraḥ karuṇa eva ca |<br>
+    nirmamo nirahaṅkāraḥ samaduḥkhasukhaḥ kṣamī || 12.13 ||<br><br>
+    santuṣṭaḥ satataṃ yogī yatātmā dṛḍhaniścayaḥ |<br>
+    mayyarpitamanobuddhiryo madbhaktaḥ sa me priyaḥ || 12.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who hates no creature (Advēṣṭā sarva-bhūtānāṁ), who is friendly (Maitraḥ) and compassionate (Karuṇaḥ) to all,<br>
+            free from the feeling of 'mine' (Nirmamaḥ) and from egoism (Nirahaṅkāraḥ), balanced in pain and pleasure (Sama-duḥkha-sukhaḥ), and forgiving (Kṣamī); (12.13)<br>
+            ever content (Santuṣṭaḥ), a steady Yogi (Yatātmā), of firm conviction (Dṛḍha-niścayaḥ),<br>
+            with mind and intellect dedicated to Me (Mayy Arpita-mano-buddhir)—that devotee of Mine (Mad-bhaktaḥ) is dear to Me (Sa me priyaḥ). (12.14)
+        </div>
+        <a class="commentary-btn" href="english-12-13-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.15 ॥</div>
+        <p class="shlok-sanskrit">
+            यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।<br>
+            हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः।।
+        </p><div class="shlok-translation-formatted"> 
+    yasmānnodvijate loko lokānnodvijate ca yaḥ |<br>
+    harṣāmarṣabhayodvegairmuktō yaḥ sa ca me priyaḥ || 12.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He by whom the world is not agitated (Yasmān nodvijate lokaḥ), and who is not agitated by the world (Lokān nodvijate ca yaḥ);<br>
+            who is free from joy, intolerance, fear, and anxiety (Harṣāmarṣa-bhayodvegair mukto yaḥ)—he also is dear to Me.
+        </div>
+        <a class="commentary-btn" href="english-12-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.16 ॥</div>
+        <p class="shlok-sanskrit">
+            अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः।<br>
+            सर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः।।
+        </p><div class="shlok-translation-formatted"> 
+    anapekṣaḥ śucirdakṣa udāsīno gatavyathaḥ |<br>
+    sarvārambhaparityāgī yo madbhaktaḥ sa me priyaḥ || 12.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who is unconcerned (Anapekṣaḥ), pure (Śuciḥ), expert (Dakṣa), neutral (Udāsīnaḥ), free from distress (Gata-vyathaḥ),<br>
+            and who renounces all undertakings (Sarvārambha-parityāgī)—that devotee of Mine is dear to Me.
+        </div>
+        <a class="commentary-btn" href="english-12-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.17 ॥</div>
+        <p class="shlok-sanskrit">
+            यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति।<br>
+            शुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः।।
+        </p><div class="shlok-translation-formatted"> 
+    yo na hṛṣyati na dveṣṭi na śocati na kāṅkṣati |<br>
+    śubhāśubhaparityāgī bhaktimānyaḥ sa me priyaḥ || 12.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who neither rejoices (Na hṛṣyati) nor hates (Na dveṣṭi), neither grieves (Na śocati) nor desires (Na kāṅkṣati),<br>
+            and who renounces both good and bad (Śubhāśubha-parityāgī)—that devotee, full of devotion, is dear to Me.
+        </div>
+        <a class="commentary-btn" href="english-12-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 12.18 - 12.19 (Balance and Detachment) ॥</div>
+        <p class="shlok-sanskrit">
+            समः शत्रौ च मित्रे च तथा मानापमानयोः।<br>
+            शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः।। (12.18)<br>
+            तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येन केनचित्।<br>
+            अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः।। (12.19)
+        </p><div class="shlok-translation-formatted"> 
+    samaḥ śatrau ca mitre ca tathā mānāpamānayoḥ |<br>
+    śītoṣṇasukhaduḥkheṣu samaḥ saṅgavivarjitaḥ || 12.18 ||<br><br>
+    tulyanindāstutirmaunī santuṣṭo yena kenacit |<br>
+    aniketaḥ sthiramatirbhaktimānme priyo naraḥ || 12.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who is the same to foe and friend (Samaḥ śatrau ca mitre ca), and likewise in honor and dishonor (Mānāpamānayoḥ),<br>
+            the same in cold and heat, pleasure and pain (Śītoṣṇa-sukha-duḥkheṣu), and free from attachment (Saṅga-vivarjitaḥ); (12.18)<br>
+            to whom censure and praise are equal (Tulya-nindā-stutir), who is silent (Maunī), content with anything whatsoever (Santuṣṭo yena kenacit),<br>
+            without a fixed dwelling (Aniketaḥ), of steady mind (Sthira-matir)—that person, full of devotion, is dear to Me. (12.19)
+        </div>
+        <a class="commentary-btn" href="english-12-18-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 12.20 (Conclusion of Bhakti Yoga) ॥</div>
+        <p class="shlok-sanskrit">
+            ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते।<br>
+            श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः।।
+        </p><div class="shlok-translation-formatted"> 
+    ye tu dharmyāmṛtamidaṃ yathoktaṃ paryupāsate |<br>
+    śraddadhānā matparamā bhaktāstetīva me priyāḥ || 12.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But those who follow this immortal Dharma (Dharmyāmṛtam idaṁ) as declared,<br>
+            endowed with faith, regarding Me as the supreme goal (Mat-paramā), those devotees are exceedingly dear to Me (Atīva me priyāḥ).
+        </div>
+        <a class="commentary-btn" href="english-12-20.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे भक्तियोगो नाम द्वादशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the twelfth chapter, entitled Bhakti Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter11.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter13.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

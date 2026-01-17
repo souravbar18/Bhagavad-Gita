@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 8: Akshara Brahma Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 8: Akshara Brahma Yoga (The Yoga of the Imperishable Brahman) - Verses 8.1 to 8.28</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter7.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter9.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 8.1 - 8.2 (Arjuna's Questions) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            किं तद् ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम।<br>
+            अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते।। (8.1)<br>
+            अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।<br>
+            प्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः।। (8.2)
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    kiṃ tadbrahma kimadhyātmaṃ kiṃ karma puruṣottama |<br>
+    adhibhūtaṃ ca kiṃ proktamad hidaivaṃ kimucyate || 8.1 ||<br><br>
+    adhiyajñaḥ kathaṃ ko’tra dehe’smin madhusūdana |<br>
+    prayāṇakāle ca kathaṃ jñeyo’si niyatātmabhiḥ || 8.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Supreme Person, what is that Brahman? What is Adhyātma (Self-knowledge)? And what is Karma (Action)?<br>
+            What is declared to be Adhibhūta (the material manifestation)? And what is Adhidaiva (the celestial deities)? (8.1)<br>
+            O Madhusūdana, who is Adhiyajña (the Lord of Sacrifice) and how does He dwell in this body?<br>
+            And how are You to be known by the self-controlled at the time of death? (8.2)
+        </div>
+        <a class="commentary-btn" href="english-8-1-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.3 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते।<br>
+            भूतभावोद्भवकरो विसर्गः कर्मसञ्ज्ञितः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    akṣaraṃ brahma paramaṃ svabhāvo’dhyātmamucyate |<br>
+    bhūtabhāvodbhavakaro visargaḥ karmasañjñitaḥ || 8.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: The supreme, imperishable (Akshara) is Brahman.<br>
+            Its own nature is called Adhyātma (the Self).<br>
+            The creative action (Visarga) which causes the origin of all beings is called Karma.
+        </div>
+        <a class="commentary-btn" href="english-8-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.4 ॥</div>
+        <p class="shlok-sanskrit">
+            अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।<br>
+            अधियज्ञोऽहमेवात्र देहे देहभृतां वर।।
+        </p><div class="shlok-translation-formatted"> 
+    adhibhūtaṃ kṣaro bhāvaḥ puruṣaścādhidaivatam |<br>
+    adhiyajño’ham evātra dehe dehabhṛtāṃ vara || 8.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Adhibhūta (material manifestation) is the perishable nature.<br>
+            Purusha (the universal soul) is Adhidaivata (the celestial deities).<br>
+            And I alone am Adhiyajña (the Lord of Sacrifice) here in the body, O best of the embodied ones.
+        </div>
+        <a class="commentary-btn" href="english-8-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.5 ॥</div>
+        <p class="shlok-sanskrit">
+            अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।<br>
+            यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः।।
+        </p><div class="shlok-translation-formatted"> 
+    antakāle ca māmeva smaran muktvā kalevaram |<br>
+    yaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ || 8.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And he who, at the time of death, leaves the body remembering Me alone,<br>
+            goes to My nature (state of being). There is no doubt about this.
+        </div>
+        <a class="commentary-btn" href="english-8-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.6 ॥</div>
+        <p class="shlok-sanskrit">
+            यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।<br>
+            तं तमेवैति कौन्तेय सदा तद्भावभावितः।।
+        </p><div class="shlok-translation-formatted"> 
+    yaṃ yaṃ vāpi smaran bhāvaṃ tyajatyante kalevaram |<br>
+    taṃ tamevaiti kaunteya sadā tadbhāvabhāvitaḥ || 8.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever state of being a man remembers when he leaves his body at the end,<br>
+            O son of Kunti (Arjuna), that very state he attains, being constantly absorbed in that thought.
+        </div>
+        <a class="commentary-btn" href="english-8-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.7 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।<br>
+            मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयः।।
+        </p><div class="shlok-translation-formatted"> 
+    tasmātsarveṣu kāleṣu māmanusmara yudhya ca |<br>
+    mayyarpitamanobuddhirmāmevaiṣyasyasaṃśayaḥ || 8.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, at all times remember Me and fight (your battle).<br>
+            With mind and intellect dedicated to Me, you shall doubtless come to Me alone.
+        </div>
+        <a class="commentary-btn" href="english-8-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.8 ॥</div>
+        <p class="shlok-sanskrit">
+            अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।<br>
+            परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्।।
+        </p><div class="shlok-translation-formatted"> 
+    abhyāsayogayuktena cetasā nānyagāminā |<br>
+    paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan || 8.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Pārtha, with the mind engaged in the Yoga of constant practice,<br>
+            not straying to anything else, one attains the Supreme Divine Person, by meditating constantly.
+        </div>
+        <a class="commentary-btn" href="english-8-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.9 ॥</div>
+        <p class="shlok-sanskrit">
+            कविं पुराणमनुशासितार- <br>
+            मणोरणीयांसमनुस्मरेद्यः।<br>
+            सर्वस्य धातारमचिन्त्यरूपम् <br>
+            आदित्यवर्णं तमसः परस्तात्।।
+        </p><div class="shlok-translation-formatted"> 
+    kaviṃ purāṇamanuśāsitāram aṇoraṇīyāṃsamanusmaredyaḥ |<br>
+    sarvasya dhātāramacintyarūpam ādityavarṇaṃ tamasaḥ parastāt || 8.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who meditates on the Omniscient (Kavi), the Ancient, the Ruler, the smaller than the smallest;<br>
+            the sustainer of everything, of inconceivable form,<br>
+            luminous like the sun, and beyond darkness.
+        </div>
+        <a class="commentary-btn" href="english-8-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.10 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रयाणकाले मनसाचलेन <br>
+            भक्त्या युक्तो योगबलेन चैव।<br>
+            भ्रुवोर्मध्ये प्राणमावेश्य सम्यक् <br>
+            स तं परं पुरुषमुपैति दिव्यम्।।
+        </p><div class="shlok-translation-formatted"> 
+    prayāṇakāle manasācalena bhaktyā yukto yogabalena caiva |<br>
+    bhruvormadhye prāṇamāveśya samyak sa taṃ paraṃ puruṣamupaiti divyam || 8.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            At the time of departure, with a steadfast mind, endowed with devotion and the power of Yoga,<br>
+            by properly fixing the breath (Prāṇa) between the eyebrows,<br>
+            he attains that Supreme Divine Person.
+        </div>
+        <a class="commentary-btn" href="english-8-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.11 ॥</div>
+        <p class="shlok-sanskrit">
+            यदक्षरं वेदविदो वदन्ति <br>
+            विशन्ति यद्यतयो वीतरागाः।<br>
+            यदिच्छन्तो ब्रह्मचर्यं चरन्ति <br>
+            तत्ते पदं सङ्ग्रहेण प्रवक्ष्ये।।
+        </p><div class="shlok-translation-formatted"> 
+    yadakṣaraṃ vedavido vadanti viśanti yadyatayo vītarāgāḥ |<br>
+    yadicchanto brahmacaryaṃ caranti tatte padaṃ saṅgraheṇa pravakṣye || 8.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That which the knowers of the Vedas call the Imperishable (Akshara),<br>
+            that which ascetics free from passion enter,<br>
+            and desiring which, they practice celibacy—that state I shall briefly explain to you.
+        </div>
+        <a class="commentary-btn" href="english-8-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.12 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।<br>
+            मूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvadvārāṇi saṃyamya mano hṛdi nirudhya ca |<br>
+    mūrdhnyādhāyātmanaḥ prāṇamāsthito yogadhāraṇām || 8.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Controlling all the sense gates, confining the mind within the heart,<br>
+            and fixing one’s life-breath (Prāṇa) in the head, established in the concentration of Yoga,
+        </div>
+        <a class="commentary-btn" href="english-8-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.13 ॥</div>
+        <p class="shlok-sanskrit">
+            ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।<br>
+            यः प्रयाति त्यजन्देहं स याति परमां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    oṃ ityekākṣaraṃ brahma vyāharanmāmanusmaran |<br>
+    yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim || 8.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Uttering the single syllable Om—the eternal Brahman—<br>
+            and remembering Me, he who departs, leaving the body, attains the supreme destination.
+        </div>
+        <a class="commentary-btn" href="english-8-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.14 ॥</div>
+        <p class="shlok-sanskrit">
+            अनन्यचेताः सततं यो मां स्मरति नित्यशः।<br>
+            तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः।।
+        </p><div class="shlok-translation-formatted"> 
+    ananyacetāḥ satataṃ yo māṃ smarati nityaśaḥ |<br>
+    tasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ || 8.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Pārtha, for that Yogi who constantly remembers Me, whose mind is not diverted to anything else,<br>
+            I am easily attained, because he is ever devoted.
+        </div>
+        <a class="commentary-btn" href="english-8-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.15 ॥</div>
+        <p class="shlok-sanskrit">
+            मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।<br>
+            नाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः।।
+        </p><div class="shlok-translation-formatted"> 
+    māmupetya punarjanma duḥkhālayamaśāśvatam |<br>
+    nāpnuvanti mahātmānaḥ saṃsiddhiṃ paramāṃ gatāḥ || 8.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having attained Me, the great souls (Mahātmās) who have reached the highest perfection,<br>
+            do not undergo rebirth, which is the abode of sorrow and is non-eternal.
+        </div>
+        <a class="commentary-btn" href="english-8-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.16 ॥</div>
+        <p class="shlok-sanskrit">
+            आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।<br>
+            मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    ābrahmabhuvanāllokāḥ punarāvartino’rjuna |<br>
+    māmupetya tu kaunteya punarjanma na vidyate || 8.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            All worlds, including the world of Brahmā (Brahmaloka), are subject to return, O Arjuna.<br>
+            But having attained Me, O son of Kunti, there is no rebirth.
+        </div>
+        <a class="commentary-btn" href="english-8-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.17 ॥</div>
+        <p class="shlok-sanskrit">
+            सहस्रयुगपर्यन्तमहर्यद् ब्रह्मणो विदुः।<br>
+            रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः।।
+        </p><div class="shlok-translation-formatted"> 
+    sahasrayugaparyantamaharyadbrahmaṇo viduḥ |<br>
+    rātriṃ yugasahasrāntāṃ te’horātravido janāḥ || 8.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those who know that a Day of Brahmā lasts for a thousand Yugas (ages),<br>
+            and that the Night ends after a thousand Yugas—they are the knowers of day and night.
+        </div>
+        <a class="commentary-btn" href="english-8-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.18 ॥</div>
+        <p class="shlok-sanskrit">
+            अव्यक्ताद् व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।<br>
+            रात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसञ्ज्ञके।।
+        </p><div class="shlok-translation-formatted"> 
+    avyaktādvyaktayaḥ sarvāḥ prabhavantyaharāgame |<br>
+    rātryāgame pralīyante tatraivāvyaktasañjñake || 8.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            At the approach of day, all manifestations proceed from the unmanifest (Avyakta).<br>
+            At the approach of night, they dissolve into that same unmanifest called Avyakta.
+        </div>
+        <a class="commentary-btn" href="english-8-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.19 ॥</div>
+        <p class="shlok-sanskrit">
+            भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।<br>
+            रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे।।
+        </p><div class="shlok-translation-formatted"> 
+    bhūtagrāmaḥ sa evāyaṃ bhūtvā bhūtvā pralīyate |<br>
+    rātryāgame’vaśaḥ pārtha prabhavatyaharāgame || 8.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This multitude of beings, being born again and again, dissolves at the approach of night,<br>
+            O Pārtha, and comes forth again at the approach of day, by the force of Nature.
+        </div>
+        <a class="commentary-btn" href="english-8-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.20 ॥</div>
+        <p class="shlok-sanskrit">
+            परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।<br>
+            यः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    parastasmāttu bhāvo’nyo’vyakto’vyaktātsanātanaḥ |<br>
+    yaḥ sa sarveṣu bhūteṣu naśyatsu na vinaśyati || 8.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But beyond this unmanifest (Avyakta), there is yet another unmanifested, eternal Existence (Bhāva),<br>
+            which does not perish when all beings perish.
+        </div>
+        <a class="commentary-btn" href="english-8-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.21 ॥</div>
+        <p class="shlok-sanskrit">
+            अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।<br>
+            यं प्राप्य न निवर्तन्ते तद्धाम परमं मम।।
+        </p><div class="shlok-translation-formatted"> 
+    avyakto’kṣara ityuktastamāhuḥ paramāṃ gatim |<br>
+    yaṃ prāpya na nivartante taddhāma paramaṃ mama || 8.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This unmanifest is called the Imperishable (Akshara). They call it the supreme goal.<br>
+            Having attained which, they do not return—that is My supreme abode.
+        </div>
+        <a class="commentary-btn" href="english-8-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.22 ॥</div>
+        <p class="shlok-sanskrit">
+            पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।<br>
+            यस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्।।
+        </p><div class="shlok-translation-formatted"> 
+    puruṣaḥ sa paraḥ pārtha bhaktyā labhyastvananyayā |<br>
+    yasyāntaḥsthāni bhūtāni yena sarvamidaṃ tatam || 8.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That Supreme Person, O Pārtha, is attained by unswerving devotion (Bhakti),<br>
+            in whom all beings reside, and by whom all this is pervaded.
+        </div>
+        <a class="commentary-btn" href="english-8-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.23 ॥</div>
+        <p class="shlok-sanskrit">
+            यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।<br>
+            प्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ।।
+        </p><div class="shlok-translation-formatted"> 
+    yatra kāle tvanāvṛttim āvṛttiṃ caiva yoginaḥ |<br>
+    prayātā yānti taṃ kālaṃ vakṣyāmi bharatarṣabha || 8.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Now, O best of the Bharatas (Arjuna), I shall declare to you the times (paths)<br>
+            by which Yogis departing attain non-return or return.
+        </div>
+        <a class="commentary-btn" href="english-8-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.24 ॥</div>
+        <p class="shlok-sanskrit">
+            अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।<br>
+            तत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः।।
+        </p><div class="shlok-translation-formatted"> 
+    agnirjyotirahah śuklaḥ ṣaṇmāsā uttarāyaṇam |<br>
+    tatra prayātā gacchanti brahma brahmavido janāḥ || 8.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Fire, light, day, the bright fortnight, the six months of the northern passage (Uttarayana)—<br>
+            departing by this path, the knowers of Brahman go to Brahman.
+        </div>
+        <a class="commentary-btn" href="english-8-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.25 ॥</div>
+        <p class="shlok-sanskrit">
+            धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।<br>
+            तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते।।
+        </p><div class="shlok-translation-formatted"> 
+    dhūmo rātristathā kṛṣṇaḥ ṣaṇmāsā dakṣiṇāyanam |<br>
+    tatra cāndramasaṃ jyotiryogī prāpya nivartate || 8.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Smoke, night, the dark fortnight, the six months of the southern passage (Dakshinayana)—<br>
+            the Yogi departing by this, attains the lunar light (heavenly pleasure) and returns.
+        </div>
+        <a class="commentary-btn" href="english-8-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.26 ॥</div>
+        <p class="shlok-sanskrit">
+            शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।<br>
+            एकया यात्यनावृत्तिमन्ययावर्तते पुनः।।
+        </p><div class="shlok-translation-formatted"> 
+    śuklakṛṣṇe gatī hyete jagataḥ śāśvate mate |<br>
+    ekayā yātyanāvṛttim anyayāvartate punaḥ || 8.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            These two paths, the bright (Śukla) and the dark (Kṛṣṇa), are considered the eternal paths of the world.<br>
+            By one, one attains non-return; by the other, one returns again.
+        </div>
+        <a class="commentary-btn" href="english-8-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.27 ॥</div>
+        <p class="shlok-sanskrit">
+            नैते सृती पार्थ जानन् योगी मुह्यति कश्चन।<br>
+            तस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन।।
+        </p><div class="shlok-translation-formatted"> 
+    naite sṛtī pārtha jānan yogī muhyati kaścana |<br>
+    tasmātsarveṣu kāleṣu yogayukto bhavārjuna || 8.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowing these two paths, O Pārtha, no Yogi is deluded.<br>
+            Therefore, at all times, be steadfast in Yoga, O Arjuna.
+        </div>
+        <a class="commentary-btn" href="english-8-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 8.28 ॥</div>
+        <p class="shlok-sanskrit">
+            वेदेषु यज्ञेषु तपःसु चैव <br>
+            दानेषु यत्पुण्यफलं प्रदिष्टम्।<br>
+            अत्येति तत्सर्वमिदं विदित्वा <br>
+            योगी परं स्थानमुपैति चाद्यम्।।
+        </p><div class="shlok-translation-formatted"> 
+    vedeṣu yajñeṣu tapaḥsu caiva dāneṣu yatpuṇyaphalaṃ pradiṣṭam |<br>
+    atyeti tatsarvamidaṃ viditvā yogī paraṃ sthānamupaiti cādyam || 8.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Yogi, knowing all this, transcends the rewards declared for the study of the Vedas,<br>
+            for sacrifices, for austerities, and for gifts; and he attains the Supreme, Primeval Abode.
+        </div>
+        <a class="commentary-btn" href="english-8-28.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादेऽक्षरब्रह्मयोगो नामाष्टमोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the eighth chapter, entitled Akshara Brahma Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter7.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter9.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

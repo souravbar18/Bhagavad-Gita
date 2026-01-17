@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 18 : Mokṣa-sannyāsa Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* General Styling */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container and Box Style */
+        .shlok-container {
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d4a762;
+            padding-bottom: 8px;
+            text-align: center; 
+        }
+
+        /* Sanskrit and Translation Styles */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.4em;
+            line-height: 2.2; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        .shlok-translation-formatted {
+            margin-top: 25px;
+            padding: 15px 20px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.2em;
+            line-height: 1.9;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Commentary Button Style */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.0em;
+            transition: background 0.3s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+        
+        /* Footer for continuation */
+        .continuation-footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #5a3300;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 18: Mokṣa-sannyāsa Yoga (Liberation through Renunciation) - Verses 18.1 - 18.78</h2>
+</header>
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter17.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.1 (The Question on Sannyāsa and Tyāga) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            सन्न्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम्।<br>
+            त्यागस्य च हृषीकेश पृथक्केशिनिषूदन।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    sannyāsasya mahābāho tattvamicchāmi veditum |<br>
+    tyāgasya ca hṛṣīkeśa pṛthakkeśiniṣūdana || 18.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O mighty-armed, Hṛṣīkeśa, Slayer of Keśi, I wish to know the truth (Tattvam) of Sannyāsa (renunciation of actions)<br>
+            and also the truth of Tyāga (abandonment of the fruits of actions), separately.
+        </div>
+        <a class="commentary-btn" href="english-18-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.2 (Krishna Defines Sannyāsa and Tyāga) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            काम्यानां कर्मणां न्यासं सन्न्यासं कवयो विदुः।<br>
+            सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    kāmyānāṃ karmaṇāṃ nyāsaṃ sannyāsaṃ kavayo viduḥ |<br>
+    sarvakarmaphalatyāgaṃ prāhustyāgaṃ vicakṣaṇāḥ || 18.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: The Sages know Sannyāsa to be the relinquishing of desire-prompted actions (Kāmya actions).<br>
+            The wise declare Tyāga (abandonment) to be the renunciation of the fruits of all actions.
+        </div>
+        <a class="commentary-btn" href="english-18-2.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.3 (Different Views on Action) ॥</div>
+        <p class="shlok-sanskrit">
+            त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिणः।<br>
+            यज्ञदानतपःकर्म न त्याज्यमिति चापरे।।
+        </p><div class="shlok-translation-formatted"> 
+    tyājyaṃ doṣavadityeke karma prāhurmanīṣiṇaḥ |<br>
+    yajñadānatapaḥkarma na tyājyamiti cāpare || 18.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Some learned men (Manīṣiṇaḥ) declare that all action should be abandoned as faulty (Tyājyaṁ Doṣavad),<br>
+            while others say that acts of sacrifice, charity, and austerity (Yajña-dāna-tapaḥ-karma) should not be relinquished.
+        </div>
+        <a class="commentary-btn" href="english-18-3.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.4 (The Three Kinds of Tyāga) ॥</div>
+        <p class="shlok-sanskrit">
+            निश्चयं शृणु मे तत्र त्यागे भरतसत्तम।<br>
+            त्यागो हि पुरुषव्याघ्र त्रिविधः सम्प्रकीर्तितः।।
+        </p><div class="shlok-translation-formatted"> 
+    niścayaṃ śṛṇu me tatra tyāge bharatasattama |<br>
+    tyāgo hi puruṣavyāghra trividhaḥ samprakīrtitaḥ || 18.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O best of the Bhāratas, hear My certain verdict (Niścayaṁ Śṛṇu Me) on this matter of abandonment (Tyāge).<br>
+            O tiger among men, abandonment is indeed declared to be of three kinds (Trividhaḥ Samprakīrtitaḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-4.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.5 (The Necessity of Obligatory Action) ॥</div>
+        <p class="shlok-sanskrit">
+            यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत्।<br>
+            यज्ञो दानं तपश्चैव पावनानि मनीषिणाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yajñadānatapaḥkarma na tyājyaṃ kāryameva tat |<br>
+    yajño dānaṃ tapaścaiva pāvanāni manīṣiṇām || 18.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The acts of sacrifice, charity, and austerity must not be abandoned; they must indeed be performed (Kāryam Eva Tat).<br>
+            Sacrifice, charity, and austerity are purifiers (Pāvanāni) for the wise (Manīṣiṇām).
+        </div>
+        <a class="commentary-btn" href="english-18-5.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.6 (The Essence of Renunciation) ॥</div>
+        <p class="shlok-sanskrit">
+            एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च।<br>
+            कर्तव्यानीति मे पार्थ निश्चितं मतमुत्तमम्।।
+        </p><div class="shlok-translation-formatted"> 
+    etānyapi tu karmāṇi saṅgaṃ tyaktvā phalāni ca |<br>
+    kartavyānīti me pārtha niścitaṃ matamuttamam || 18.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But even these actions must be performed by relinquishing attachment and their fruits (Saṅgaṁ Tyaktvā Phalāni ca), O Pārtha.<br>
+            This is My certain and supreme conclusion (Niścitaṁ Matam Uttamam) that they should be done (Kartavyānīti).
+        </div>
+        <a class="commentary-btn" href="english-18-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.7 (Tāmasika Renunciation) ॥</div>
+        <p class="shlok-sanskrit">
+            नियतस्य तु संन्यासः कर्मणो नोपपद्यते।<br>
+            मोहात्तस्य परित्यागस्तामसः परिकीर्तितः।।
+        </p><div class="shlok-translation-formatted"> 
+    niyatasya tu sannyāsaḥ karmaṇo nopapadyate |<br>
+    mohāt tasya parityāgas tāmasaḥ parikīrtitaḥ || 18.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The renunciation of obligatory action (Niyatasya Karmaṇo) is not proper (No Upapadyate).<br>
+            Its abandonment through delusion (Mohāt Tasya Parityāgas) is declared to be Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-7.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.8 (Rājasika Renunciation) ॥</div>
+        <p class="shlok-sanskrit">
+            दुःखमित्येव यत्कर्म कायक्लेशभयात्त्यजेत्।<br>
+            स कृत्वा राजसं त्यागं नैव त्यागफलं लभेत्।।
+        </p><div class="shlok-translation-formatted"> 
+    duḥkhamityeva yat karma kāyakleśabhayāt tyajet |<br>
+    sa kṛtvā rājasaṃ tyāgaṃ naiva tyāgaphalaṃ labhet || 18.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who abandons action merely because it is troublesome (Duḥkham Ity eva) or through fear of bodily trouble (Kāya-kleśa-bhayāt Tyajet),<br>
+            performs a Rājasika Tyāga and does not obtain the result of true abandonment.
+        </div>
+        <a class="commentary-btn" href="english-18-8.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.9 (Sāttvika Renunciation) ॥</div>
+        <p class="shlok-sanskrit">
+            कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन।<br>
+            सङ्गं त्यक्त्वा फलं चैव स त्यागः सात्त्विको मतः।।
+        </p><div class="shlok-translation-formatted"> 
+    kāryamityeva yat karma niyataṃ kriyate’rjuna |<br>
+    saṅgaṃ tyaktvā phalaṃ caiva sa tyāgaḥ sāttviko mataḥ || 18.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That obligatory action which is performed as a duty (Kāryam Ity eva) by Arjuna, abandoning attachment and fruit (Saṅgaṁ Tyaktvā Phalaṁ Caiva),<br>
+            that abandonment (Tyāgaḥ) is considered Sāttvika.
+        </div>
+        <a class="commentary-btn" href="english-18-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.10 (The Sāttvika Abandoner) ॥</div>
+        <p class="shlok-sanskrit">
+            न द्वेष्ट्यकुशलं कर्म कुशले नानुषज्जते।<br>
+            त्यागी सत्त्वसमाविष्टो मेधावी छिन्नसंशयः।।
+        </p><div class="shlok-translation-formatted"> 
+    na dveṣṭyakuśalaṃ karma kuśale nānuṣajjate |<br>
+    tyāgī sattvasamāviṣṭo medhāvī chinnasaṃśayaḥ || 18.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The enlightened abandoner (Tyāgī) who is endowed with Sattva (Sattva-samāviṣṭo), wise (Medhāvī), and whose doubts are dispelled (Chinna-saṁśayaḥ),<br>
+            does not hate disagreeable work (Na Dveṣṭy Akuśalaṁ Karma) nor is attached to agreeable work (Kuśale Nānuṣajjate).
+        </div>
+        <a class="commentary-btn" href="english-18-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.11 (The True Meaning of Abandonment) ॥</div>
+        <p class="shlok-sanskrit">
+            न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः।<br>
+            यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते।।
+        </p><div class="shlok-translation-formatted"> 
+    na hi dehabhṛtā śakyaṃ tyaktuṃ karmāṇyaśeṣataḥ |<br>
+    yastu karmaphalatyāgī sa tyāgītyabhidhīyate || 18.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Indeed, it is not possible for an embodied being (Deha-bhṛtā) to abandon actions completely (Tyaktuṁ Karmāṇy A-śeṣataḥ).<br>
+            But he who renounces the fruits of action (Yaḥ tu Karma-phala-tyāgī)—he is called an abandoner (Tyāgī).
+        </div>
+        <a class="commentary-btn" href="english-18-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.12 (The Fruit of Action) ॥</div>
+        <p class="shlok-sanskrit">
+            अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मणः फलम्।<br>
+            भवत्यत्यागिनां प्रेत्य न तु संन्यासिनां क्वचित्।।
+        </p><div class="shlok-translation-formatted"> 
+    aniṣṭamiṣṭaṃ miśraṃ ca trividhaṃ karmaṇaḥ phalam |<br>
+    bhavatyatyāgināṃ pretya na tu sannyāsināṃ kvacit || 18.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The threefold fruit of action—undesirable, desirable, and mixed (Aniṣṭam Iṣṭaṁ Miśraṁ ca)—accrues after death to those who are not abandoners (Atyāgināṁ Pretya),<br>
+            but never to those who are true renouncers (Na Tu Sannyāsināṁ Kvacit).
+        </div>
+        <a class="commentary-btn" href="english-18-12.html">View Commentary</a>
+    </div>
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.13 (The Fivefold Cause) ॥</div>
+        <p class="shlok-sanskrit">
+            पञ्चैतानि महाबाहो कारणानि निबोध मे।<br>
+            साङ्ख्ये कृतान्ते प्रोक्तानि सिद्धये सर्वकर्मणाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    pañcaitāni mahābāho kāraṇāni nibodha me |<br>
+    sāṅkhye kṛtānte proktāni siddhaye sarvakarmaṇām || 18.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O mighty-armed, learn from Me these five causes (Pañcaitāni Kāraṇāni), which are declared in the Sāṅkhya philosophy (Kṛtānte Proktāni),<br>
+            for the accomplishment of all actions (Siddhaye Sarva-karmaṇām).
+        </div>
+        <a class="commentary-btn" href="english-18-13.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.14 (List of the Factors) ॥</div>
+        <p class="shlok-sanskrit">
+            अधिष्ठानं तथा कर्ता करणं च पृथग्विधम्।<br>
+            विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम्।।
+        </p><div class="shlok-translation-formatted"> 
+    adhiṣṭhānaṃ tathā kartā karaṇaṃ ca pṛthagvidham |<br>
+    vividhāśca pṛthakceṣṭā daivaṃ caivātra pañcamam || 18.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The seat of action (Adhiṣṭhānaṁ - the body), the agent (Kartā - the ego), the various instruments (Karaṇaṁ ca Pṛthag-vidham - senses),<br>
+            the many different kinds of efforts (Vividhāś ca Pṛthak Ceṣṭā), and destiny (Daivaṁ caivātra Pañcamam)—the fifth.
+        </div>
+        <a class="commentary-btn" href="english-18-14.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.15 (Action is a Combination of the Five) ॥</div>
+        <p class="shlok-sanskrit">
+            शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः।<br>
+            न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः।।
+        </p><div class="shlok-translation-formatted"> 
+    śarīravāṅmanobhiryat karma prārabhate naraḥ |<br>
+    nyāyyaṃ vā viparītaṃ vā pañcaitē tasya hetavaḥ || 18.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever action a man undertakes (Yat Karma Prārabhate Naraḥ) by his body, speech, or mind (Śarīra-vāṅ-manobhir),<br>
+            whether right or wrong (Nyāyyaṁ Vā Viprītaṁ Vā)—these five (Pañcaite) are its causes (Hetavaḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-15.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.16 (The Delusion of Sole Doership) ॥</div>
+        <p class="shlok-sanskrit">
+            तत्रैवं सति कर्तारमात्मानं केवलं तु यः।<br>
+            पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः।।
+        </p><div class="shlok-translation-formatted"> 
+    tatraivaṃ sati kartāram ātmānaṃ kevalaṃ tu yaḥ |<br>
+    paśyatyakṛtabuddhitvān na sa paśyati durmatiḥ || 18.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That man who, on account of his unrefined intellect (Akṛta-buddhitvān), sees the self (Ātmānaṁ) as the sole doer (Kartāram Kevalaṁ tu Yaḥ),<br>
+            is of perverted understanding (Durmatiḥ) and does not see reality (Na Sa Paśyati).
+        </div>
+        <a class="commentary-btn" href="english-18-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.17 (The Enlightened Agent) ॥</div>
+        <p class="shlok-sanskrit">
+            यस्य नाहङ्कृतो भावो बुद्धिर्यस्य न लिप्यते।<br>
+            हत्वाऽपि स इमाँल्लोकान्न हन्ति न निबध्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yasya nāhaṅkṛto bhāvo buddhiryasya na lipyate |<br>
+    hatvāpi sa imāṃllokān na hanti na nibadhyate || 18.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He whose understanding is free from the sense of egoism (Yasya Nāhaṅkṛto Bhāvo), whose intellect is not bound (Buddhir Yasya Na Lipyate),<br>
+            even though he slays these people (Hatvā api Sa Imān Lokān), he does not slay (Na Hanti), nor is he bound (Na Nibadhyate).
+        </div>
+        <a class="commentary-btn" href="english-18-17.html">View Commentary</a>
+    </div>
+
+    <div class="section-heading">
+        <span style="font-size: 1.2em;">(Threefold Classification)</span>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.18 (The Three Impellers and Components) ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना।<br>
+            करणं कर्म कर्तेति त्रिविधः कर्मसङ्ग्रहः।।
+        </p><div class="shlok-translation-formatted"> 
+    jñānaṃ jñeyaṃ parijñātā trividhā karmacodanā |<br>
+    karaṇaṃ karma karteti trividhaḥ karmasaṅgrahaḥ || 18.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowledge (Jñānaṁ), the object of knowledge (Jñeyaṁ), and the knower (Parijñātā)—these are the three impellers to action (Trividhā Karma-codanā).<br>
+            The instrument (Karaṇaṁ), the action (Karma), and the doer (Kartā)—these are the three components of action (Trividhaḥ Karma-saṅgrahaḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.19 (The Gunas Divide Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः।<br>
+            प्रोच्यते गुणसङ्ख्याने यथावच्छृणु तान्यपि।।
+        </p><div class="shlok-translation-formatted"> 
+    jñānaṃ karma ca kartā ca guṇabhedataḥ phalaśo’pi ca |<br>
+    procyate guṇasaṅkhyāne yathāvacchṛṇu tānyapi || 18.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowledge, action, and the doer (Jñānaṁ Karma ca Kartā ca) are declared to be threefold (Tridhaiva) due to the distinction of the Guṇas (Guṇa-bhedataḥ).<br>
+            Hear about them also, according to their divisions in the philosophy of the Guṇas (Guṇa-saṅkhyāne Yathāvat Śṛṇu Tāny api).
+        </div>
+        <a class="commentary-btn" href="english-18-19.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.20 (Sāttvika Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वभूतेषु येनैकं भावमव्ययमीक्षते।<br>
+            अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvabhūteṣu yenaikaṃ bhāvamavyayamīkṣate |<br>
+    avibhaktaṃ vibhakteṣu tajjñānaṃ viddhi sāttvikam || 18.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That knowledge (Jñānaṁ) by which one sees a single, indestructible essence (Ekaṁ Bhāvam Avyayam Īkṣate) in all beings (Sarva-bhūteṣu),<br>
+            undivided (Avibhaktaṁ) in all divided existences (Vibhakteṣu)—know that to be Sāttvika.
+        </div>
+        <a class="commentary-btn" href="english-18-20.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.21 (Rājasika Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            पृथक्त्वेन तु यज्ज्ञानं नानाभावान् पृथग्विधान्।<br>
+            वेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम्।।
+        </p><div class="shlok-translation-formatted"> 
+    pṛthaktvena tu yajjñānaṃ nānābhāvānpṛthagvidhān |<br>
+    vetti sarveṣu bhūteṣu tajjñānaṃ viddhi rājasam || 18.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But that knowledge (Yaj Jñānaṁ) which sees in all beings (Sarveṣu Bhūteṣu) different kinds of entities (Nānā-bhāvān Pṛthag-vidhān) as distinct from one another (Pṛthaktvena Tu),<br>
+            know that knowledge (Taj Jñānaṁ) to be Rājasika.
+        </div>
+        <a class="commentary-btn" href="english-18-21.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.22 (Tāmasika Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            यत्तु कृत्स्नवदेकस्मिन् कार्ये सक्तमहैतुकम्।<br>
+            अतत्त्वार्थवदल्पं च तत्तामसमुदाहृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yattu kṛtsnavadekasmin kārye saktamahaitukam |<br>
+    atattvārthavadalpaṃ ca tattāmasamudāhṛtam || 18.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But that knowledge which is attached to one single effect (Kārye Saktam) as if it were the whole (Kṛtsnavad Ekasmin), without reason (Ahaitukam),<br>
+            not based on truth (Atattvārtha-vat), and trivial (Alpaṁ ca)—that is declared to be Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-22.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.23 (Sāttvika Action) ॥</div>
+        <p class="shlok-sanskrit">
+            नियतं सङ्गरहितमरागद्वेषतः कृतम्।<br>
+            अफलप्रेप्सुना कर्म यत्तत्सात्त्विकमुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    niyataṃ saṅgarahitam arāgadveṣataḥ kṛtam |<br>
+    aphalaprepsunā karma yattat sāttvikam ucyate || 18.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            An obligatory action (Niyataṁ) which is performed without attachment (Saṅga-rahitam), without love or hatred (Arāga-dveṣataḥ Kṛtam),<br>
+            by one who does not desire the fruit (A-phala-prepsunā), that action is declared to be Sāttvika (Yat Tat Sāttvikam Ucyate).
+        </div>
+        <a class="commentary-btn" href="english-18-23.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.24 (Rājasika Action) ॥</div>
+        <p class="shlok-sanskrit">
+            यत्तू कामेप्सुना कर्म साहंकारेण वा पुनः।<br>
+            क्रियते बहुलायासं तद्राजसमुदाहृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yattu kāmepsunā karma sāhaṅkāreṇa vā punaḥ |<br>
+    kriyate bahulāyāsaṃ tadrājasamudāhṛtam || 18.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But that action which is performed by one desiring the fruits (Kāme-psunā), or again with egoism (Sāhaṅkāreṇa Vā Punaḥ),<br>
+            and involves great effort (Kriyate Bahulāyāsaṁ)—that is declared to be Rājasika (Tad Rājasam Udāhṛtam).
+        </div>
+        <a class="commentary-btn" href="english-18-24.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.25 (Tāmasika Action) ॥</div>
+        <p class="shlok-sanskrit">
+            अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम्।<br>
+            मोहादारभ्यते कर्म यत्तत्तामसमुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    anubandhaṃ kṣayaṃ hiṃsām anapekṣya ca pauruṣam |<br>
+    mohādārabhyate karma yattat tāmasam ucyate || 18.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That action which is undertaken through delusion (Mohād Ārabhyate Karma), disregarding the consequences (Anubandhaṁ), loss or injury (Kṣayaṁ Hiṁsām),<br>
+            as well as one's own capability (Anapekṣya ca Pauruṣam)—that is called Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-25.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.26 (Sāttvika Doer) ॥</div>
+        <p class="shlok-sanskrit">
+            मुक्तसङ्गोऽनहंवादी धृत्यत्साहसमन्वितः।<br>
+            सिद्ध्यसिद्ध्योर्निर्विकारः कर्ता सात्त्विक उच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    muktasaṅgo’nahamvādī dhṛtyutsāhasamanvitaḥ |<br>
+    siddhyasiddhyornirvikāraḥ kartā sāttvika ucyate || 18.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The doer who is free from attachment (Mukta-saṅgo), non-egoistic (Anahaṁvādī), endowed with firmness and zeal (Dhṛty-utsāha-samanvitaḥ),<br>
+            and remains unaffected by success or failure (Siddhy-asiddhyor Nirvikāraḥ)—that doer is called Sāttvika.
+        </div>
+        <a class="commentary-btn" href="english-18-26.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.27 (Rājasika Doer) ॥</div>
+        <p class="shlok-sanskrit">
+            रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचिः।<br>
+            हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः।।
+        </p><div class="shlok-translation-formatted"> 
+    rāgī karmaphalaprepsur lubdho hiṃsātmako’śuciḥ |<br>
+    harṣaśokānvitaḥ kartā rājasaḥ parikīrtitaḥ || 18.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The doer who is passionate (Rāgī), desiring the fruits of actions (Karma-phala-prepsur), greedy (Lubdho), harmful (Hiṁsātmako), impure (A-śuciḥ),<br>
+            and moved by joy and sorrow (Harṣa-śokānvitaḥ)—that doer is declared to be Rājasika.
+        </div>
+        <a class="commentary-btn" href="english-18-27.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.28 (Tāmasika Doer) ॥</div>
+        <p class="shlok-sanskrit">
+            अयुक्तः प्राकृतः स्तब्धः शठो नैष्कृतिकोऽलसः।<br>
+            विषादी दीर्घसूत्री च कर्ता तामस उच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    ayuktaḥ prākṛtaḥ stabdhaḥ śaṭho naiṣkṛtiko’lasaḥ |<br>
+    viṣādī dīrghasūtrī ca kartā tāmasa ucyate || 18.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The doer who is uncontrolled (Ayuktaḥ), vulgar (Prākṛtaḥ), obstinate (Stabdhaḥ), deceitful (Śaṭho), malicious (Naiṣkṛtiko), lazy (Alasaḥ),<br>
+            despondent (Viṣādī), and procrastinating (Dīrgha-sūtrī ca)—that doer is called Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-28.html">View Commentary</a>
+    </div>
+  <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.29 (The Threefold Intellect and Firmness) ॥</div>
+        <p class="shlok-sanskrit">
+            बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं शृणु।<br>
+            प्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय।।
+        </p><div class="shlok-translation-formatted"> 
+    buddherbhedaṃ dhṛteścaiva guṇatastrividhaṃ śṛṇu |<br>
+    procyamānam aśeṣeṇa pṛthaktvena dhanañjaya || 18.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O conqueror of wealth (Dhanañjaya), hear Me now fully and separately describe (Aśeṣeṇa Pṛthaktvena) the threefold distinction of intellect (Buddher Bhedaṁ)<br>
+            and firmness (Dhṛteś Caiva) according to the Guṇas (Guṇataḥ Trividhaṁ Śṛṇu).
+        </div>
+        <a class="commentary-btn" href="english-18-29.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.30 (Sāttvika Intellect) ॥</div>
+        <p class="shlok-sanskrit">
+            प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये।<br>
+            बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी।।
+        </p><div class="shlok-translation-formatted"> 
+    pravṛttiṃ ca nivṛttiṃ ca kāryākārye bhayābhaye |<br>
+    bandhaṃ mokṣaṃ ca yā vetti buddhiḥ sā pārtha sāttvikī || 18.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That intellect (Yā Vetti Buddhiḥ) which knows the path of action and the path of renunciation (Pravṛttiṁ ca Nivṛttiṁ ca), duty and non-duty (Kāryā-kārye),<br>
+            fear and fearlessness (Bhayā-bhaye), and bondage and liberation (Bandhaṁ Mokṣaṁ ca)—O Pārtha, that is Sāttvika.
+        </div>
+        <a class="commentary-btn" href="english-18-30.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.31 (Rājasika Intellect) ॥</div>
+        <p class="shlok-sanskrit">
+            यया धर्ममधर्मं च कार्यं चाकार्यमेव च।<br>
+            अयथावत्प्रजानाति बुद्धिः सा पार्थ राजसी।।
+        </p><div class="shlok-translation-formatted"> 
+    yayā dharmamadharmaṃ ca kāryaṃ cākāryameva ca |<br>
+    ayathāvatprajānāti buddhiḥ sā pārtha rājasī || 18.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That intellect (Buddhiḥ Sā Pārtha) by which one knows righteousness and unrighteousness (Yathā Dharmam Adharmaṁ ca) and duty and non-duty (Kāryaṁ Cākāryam Eva ca),<br>
+            but wrongly (A-yathāvat Prajānāti)—that is Rājasika.
+        </div>
+        <a class="commentary-btn" href="english-18-31.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.32 (Tāmasika Intellect) ॥</div>
+        <p class="shlok-sanskrit">
+            अधर्मं धर्ममिति या मन्यते तमसावृता।<br>
+            सर्वार्थान् विपरीतश्च बुद्धिः सा पार्थ तामसी।।
+        </p><div class="shlok-translation-formatted"> 
+    adharmaṃ dharmamiti yā manyate tamasāvṛtā |<br>
+    sarvārthānviparītāṃśca buddhiḥ sā pārtha tāmasī || 18.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That intellect (Buddhiḥ Sā Pārtha) which, enveloped in darkness (Tamasāvṛtā), regards unrighteousness as righteousness (Adharmaṁ Dharmam Iti Yā Manyate),<br>
+            and perceives all things in a perverted way (Sarvārthān Vipārītaś ca)—that is Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-32.html">View Commentary</a>
+    </div>
+
+    <div class="section-heading">
+        <span style="font-size: 1.2em;">(Firmness/Dhṛti - 18.33-35)</span>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.33 (Sāttvika Firmness) ॥</div>
+        <p class="shlok-sanskrit">
+            धृत्या यया धारयते मनःप्राणेन्द्रियक्रियाः।<br>
+            योगेनाव्यभिचारिण्या धृतिः सा पार्थ सात्त्विकी।।
+        </p><div class="shlok-translation-formatted"> 
+    dhṛtyā yayā dhārayate manaḥprāṇendriyakriyāḥ |<br>
+    yogēnāvyabhicāriṇyā dhṛtiḥ sā pārtha sāttvikī || 18.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That unwavering firmness (Dhṛtyā Yayā Dhārayate) by which one controls the activities of the mind, life-breath, and senses (Manaḥ-prāṇendriya-kriyāḥ),<br>
+            through unwavering Yoga (Yogenāvyabhicāriṇyā)—O Pārtha, that firmness (Dhṛtiḥ Sā) is Sāttvika.
+        </div>
+        <a class="commentary-btn" href="english-18-33.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.34 (Rājasika Firmness) ॥</div>
+        <p class="shlok-sanskrit">
+            यया तु धर्मकामार्थान् धृत्या धारयतेऽर्जुन।<br>
+            प्रसङ्गेन फलाकाङ्क्षी धृतिः सा पार्थ राजसी।।
+        </p><div class="shlok-translation-formatted"> 
+    yayā tu dharmakāmārthān dhṛtyā dhārayate’rjuna |<br>
+    prasaṅgena phalākāṅkṣī dhṛtiḥ sā pārtha rājasī || 18.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But that firmness (Dhṛtyā Yayā) by which one holds on to duty (Dharma), desire (Kāma), and wealth (Artha), O Arjuna (Arjuna),<br>
+            with attachment and desire for fruits (Prasaṅgena Phalākāṅkṣī)—O Pārtha, that firmness (Dhṛtiḥ Sā) is Rājasika.
+        </div>
+        <a class="commentary-btn" href="english-18-34.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.35 (Tāmasika Firmness) ॥</div>
+        <p class="shlok-sanskrit">
+            यया स्वप्नं भयं शोकं विषादं मदमेव च।<br>
+            न विमुञ्चति दुर्मेधा धृतिः सा तामसी मता।।
+        </p><div class="shlok-translation-formatted"> 
+    yayā svapnaṃ bhayaṃ śokaṃ viṣādaṃ madameva ca |<br>
+    na vimuñcati durmedhā dhṛtiḥ sā pārtha tāmasī || 18.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That firmness (Dhṛtiḥ Sā) by which the dull-witted man (Durmedhā) does not give up sleep, fear, grief, despondency, and arrogance (Yā Svapnaṁ Bhayaṁ Śokaṁ Viṣādaṁ Madam Eva ca Na Vimuñcati),<br>
+            —that is considered Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-35.html">View Commentary</a>
+    </div>
+
+    <div class="section-heading">
+        <span style="font-size: 1.2em;">(Happiness - 18.36-40)</span>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.36 (The Three Kinds of Happiness) ॥</div>
+        <p class="shlok-sanskrit">
+            सुखं त्विदानीं त्रिविधं शृणु मे भरतर्षभ।<br>
+            अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    sukhaṃ tvidānīṃ trividhaṃ śṛṇu me bharatarṣabha |<br>
+    abhyāsādramate yatra duḥkhāntaṃ ca nigacchati || 18.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Now hear from Me, O best of the Bhāratas, the three kinds of happiness (Sukhaṁ tv Idānīṁ Trividhaṁ Śṛṇu Me).<br>
+            That in which one finds pleasure after prolonged practice (Abhyāsād Ramate Yatra) and reaches the end of sorrow (Duḥkhāntaṁ ca Nigacchati).
+        </div>
+        <a class="commentary-btn" href="english-18-36.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.37 (Sāttvika Happiness: Nectar in the End) ॥</div>
+        <p class="shlok-sanskrit">
+            यत्तदग्रे विषमिव परिणामेऽमृतोपमम्।<br>
+            तत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yattadagre viṣamiva pariṇāme’mṛtopamam |<br>
+    tatsukhaṃ sāttvikaṃ proktam ātmabuddhiprasādajam || 18.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That which is like poison at first (Yat Tad Agre Viṣam Iva), but like nectar in the end (Pariṇāme Amṛtopamam),<br>
+            that happiness is declared to be Sāttvika (Sāttvikaṁ Proktam), born of the clarity of the purified intellect (Ātma-buddhi-prasāda-jam).
+        </div>
+        <a class="commentary-btn" href="english-18-37.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.38 (Rājasika Happiness: Poison in the End) ॥</div>
+        <p class="shlok-sanskrit">
+            विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम्।<br>
+            परिणामे विषमिव तत्सुखं राजसं स्मृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    viṣayendriyasaṃyogād yattadagre’mṛtopamam |<br>
+    pariṇāme viṣamiva tatsukhaṃ rājasaṃ smṛtam || 18.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That happiness which arises from the contact of the senses with their objects (Viṣayendriya-saṁyogād), which is like nectar at first (Yat Tad Agre Amṛtopamam),<br>
+            but like poison in the end (Pariṇāme Viṣam Iva)—that is considered Rājasika happiness.
+        </div>
+        <a class="commentary-btn" href="english-18-38.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.39 (Tāmasika Happiness) ॥</div>
+        <p class="shlok-sanskrit">
+            यदग्रे चानुबन्धे च सुखं मोहनमात्मनः।<br>
+            निद्रालस्यप्रमादोत्थं तत्तामसमुदाहृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yadagre cānubandhe ca sukhaṃ mohanamātmanaḥ |<br>
+    nidrālasyapramādotthaṃ tattāmasamudāhṛtam || 18.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That happiness which deludes the soul (Sukhaṁ Mohanam Ātmanaḥ) both at the beginning and the end (Yad Agre cānubandhe ca),<br>
+            arising from sleep, laziness, and illusion (Nidrālasya-pramādottthaṁ)—that is declared to be Tāmasika.
+        </div>
+        <a class="commentary-btn" href="english-18-39.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.40 (Universality of the Guṇas) ॥</div>
+        <p class="shlok-sanskrit">
+            न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुनः।<br>
+            सत्त्वं प्रकृतिजैर्मुक्तं यदेभिः स्यात्त्रिभिर्गुणैः।।
+        </p><div class="shlok-translation-formatted"> 
+    na tadasti pṛthivyāṃ vā divi deveṣu vā punaḥ |<br>
+    sattvaṃ prakṛtijairmuktaṃ yadebhissyāttribhirguṇaiḥ || 18.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There is no entity (Na Tad Asti) on earth (Pṛthivyāṁ Vā) or even among the gods in heaven (Divi Deveṣu Vā Punaḥ),<br>
+            which is free from these three qualities (Muktaṁ Yad Ebhiḥ Syāt Tribhir Guṇaiḥ) born of material nature (Prakṛti-jaiḥ Sattvaṁ).
+        </div>
+        <a class="commentary-btn" href="english-18-40.html">View Commentary</a>
+    </div>
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.41 (Distribution of Duties) ॥</div>
+        <p class="shlok-sanskrit">
+            ब्राह्मणक्षत्रियविशां शूद्राणां च परन्तप।<br>
+            कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः।।
+        </p><div class="shlok-translation-formatted"> 
+    brāhmaṇakṣatriyaviśāṃ śūdrāṇāṃ ca parantapa |<br>
+    karmāṇi pravibhaktāni svabhāvaprabhavairguṇaiḥ || 18.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The duties of Brāhmaṇas, Kṣatriyas, Vaiśyas, and Śūdras, O scorcher of foes (Arjuna),<br>
+            are distributed (Pravibhaktāni) according to the qualities (Guṇaiḥ) born of their own nature (Svabhāva-prabhavair).
+        </div>
+        <a class="commentary-btn" href="english-18-41.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.42 (The Duties of a Brāhmaṇa) ॥</div>
+        <p class="shlok-sanskrit">
+            शमो दमस्तपः शौचं क्षान्तिरार्जवमेव च।<br>
+            ज्ञानं विज्ञानमास्तिक्यं ब्रह्मकर्म स्वभावजम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śamo damastapaḥ śaucaṃ kṣāntirārjavameva ca |<br>
+    jñānaṃ vijñānamāstikyaṃ brahmakarma svabhāvajam || 18.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Tranquility (Śamaḥ), self-control (Damaḥ), austerity (Tapaḥ), purity (Śaucaṁ), forgiveness (Kṣāntir), and also uprightness (Ārjavam),<br>
+            knowledge (Jñānaṁ), realization (Vijñānam), and faith (Āstikyaṁ)—these are the duties of a Brāhmaṇa, born of his nature.
+        </div>
+        <a class="commentary-btn" href="english-18-42.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.43 (The Duties of a Kṣatriya) ॥</div>
+        <p class="shlok-sanskrit">
+            शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम्।<br>
+            दानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śauryaṃ tejo dhṛtirdākṣyaṃ yuddhe cāpyapalayanam |<br>
+    dānamīśvarabhāvaśca kṣātraṃ karma svabhāvajam || 18.43 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Heroism (Śauryaṁ), vigor (Tejo), firmness (Dhṛtir), dexterity (Dākṣyaṁ), not fleeing in battle (Yuddhe Cāpyapalāyanam),<br>
+            generosity (Dānaṁ), and a lordly disposition (Īśvara-bhāvaś ca)—these are the duties of a Kṣatriya, born of his nature.
+        </div>
+        <a class="commentary-btn" href="english-18-43.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.44 (The Duties of Vaiśya and Śūdra) ॥</div>
+        <p class="shlok-sanskrit">
+            कृषिगौरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम्।<br>
+            परिचर्यात्मकं कर्म शूद्रस्यापि स्वभावजम्।।
+        </p><div class="shlok-translation-formatted"> 
+    kṛṣigaurakṣyavāṇijyaṃ vaiśyakarma svabhāvajam |<br>
+    paricaryātmakaṃ karma śūdrasyāpi svabhāvajam || 18.44 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Agriculture, cow protection, and trade (Kṛṣi-gau-rakṣya-vāṇijyaṁ)—these are the duties of a Vaiśya, born of his nature.<br>
+            Action consisting of service (Paricaryātmakaṁ Karma) is the duty of a Śūdra, born of his nature.
+        </div>
+        <a class="commentary-btn" href="english-18-44.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.45 (Attaining Perfection) ॥</div>
+        <p class="shlok-sanskrit">
+            स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः।<br>
+            स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु।।
+        </p><div class="shlok-translation-formatted"> 
+    sve sve karmaṇyabhirataḥ saṃsiddhiṃ labhate naraḥ |<br>
+    svakarma-nirataḥ siddhiṃ yathā vindati tacchṛṇu || 18.45 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Engaged in his own duty (Sve Sve Karmaṇy Abhirataḥ), a man attains perfection (Saṁsiddhiṁ Labhate Naraḥ).<br>
+            Hear how he who is devoted to his own duty (Sva-karma-nirataḥ) attains perfection (Siddhiṁ Yathā Vindati Tat Śṛṇu).
+        </div>
+        <a class="commentary-btn" href="english-18-45.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.46 (Worshipping the Source) ॥</div>
+        <p class="shlok-sanskrit">
+            यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम्।<br>
+            स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः।।
+        </p><div class="shlok-translation-formatted"> 
+    yataḥ pravṛttirbhūtānāṃ yena sarvamidaṃ tatam |<br>
+    svakarmaṇā tamabhyarcya siddhiṃ vindati mānavaḥ || 18.46 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Worshipping with his own action (Sva-karmaṇā Tam Abhyarcya) the One from whom all beings have originated (Yataḥ Pravṛttir Bhūtānāṁ),<br>
+            and by whom all this is pervaded (Yena Sarvam Idaṁ Tatam), a man attains perfection (Siddhiṁ Vindati Mānavaḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-46.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.47 (Superiority of Sva-Dharma) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।<br>
+            स्वभाव नियतं कर्म कुर्वन्नाप्नोति किल्बिषम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śreyān svadharmo viguṇaḥ paradharmātsvanuṣṭhitāt |<br>
+    svabhāvaniyataṃ karma kurvannāpnoti kilbiṣam || 18.47 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One's own duty (Sva-dharmo), though defective (Viguṇaḥ), is better (Śreyān) than the duty of another (Para-dharmāt) well-performed (Svanuṣṭhitāt).<br>
+            By performing the duty ordained by his nature (Svabhāva Niyataṁ Karma), a man incurs no sin (Kurvan Nāpnoti Kilbiṣam).
+        </div>
+        <a class="commentary-btn" href="english-18-47.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.48 (Do not Abandon Natural Duty) ॥</div>
+        <p class="shlok-sanskrit">
+            सहजं कर्म कौन्तेय सदोषमपि न त्यजेत्।<br>
+            सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः।।
+        </p><div class="shlok-translation-formatted"> 
+    sahajaṃ karma kaunteya sadoṣamapi na tyajet |<br>
+    sarvārambhā hi doṣeṇa dhūmenāgnirivāvṛtāḥ || 18.48 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One should not abandon the duty born of his nature (Sahajaṁ Karma), O son of Kuntī (Arjuna), even if it is faulty (Sadoṣam Api Na Tyajet).<br>
+            For all undertakings are enveloped by fault (Sarvārambhā Hi Doṣeṇa) just as fire is enveloped by smoke (Dhūmenāgnir Ivāvṛtāḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-48.html">View Commentary</a>
+    </div>
+
+
+    <div class="section-heading">
+        <span style="font-size: 1.2em;">(Moksha via Jñana and Bhakti - 18.49-55)</span>
+    </div>
+
+    <div class="shlok-box" bhakti-highlight>
+        <div class="shlok-title">॥ Verse 18.49 (The Perfection of Freedom from Action) ॥</div>
+        <p class="shlok-sanskrit">
+            असक्तबुद्धिः सर्वत्र जितात्मा विगतस्पृहः।<br>
+            नैष्कर्म्यसिद्धिं परमां संन्यासेनाधिगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    asaktabuddhiḥ sarvatra jitātmā vigataspṛhaḥ |<br>
+    naiṣkarmyasiddhiṃ paramāṃ sannyāsenādhigacchati || 18.49 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He whose intellect is unattached everywhere (Asakta-buddhiḥ Sarvatra), who has conquered his self, and is free from desire (Jitātmā Vigata-spṛhaḥ),<br>
+            attains the supreme perfection of freedom from action (Naiṣkarmya-siddhiṁ Paramāṁ) through renunciation (Sannyāsenādhigacchati).
+        </div>
+        <a class="commentary-btn" href="english-18-49.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" bhakti-highlight>
+        <div class="shlok-title">॥ Verse 18.50 (The State of Supreme Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            सिद्धिं प्राप्तो यथा ब्रह्म तथाप्नोति निबोध मे।<br>
+            समासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा।।
+        </p><div class="shlok-translation-formatted"> 
+    siddhiṃ prāpto yathā brahma tathāpnoti nibodha me |<br>
+    samāsenaiva kaunteya niṣṭhā jñānasya yā parā || 18.50 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Learn from Me, O son of Kuntī, how one who has attained perfection (Siddhiṁ Prāpto Yathā) also attains Brahman (Brahma Tathā Āpnoti)—hear it briefly (Samāsenai va),<br>
+            which is the supreme state of knowledge (Niṣṭhā Jñānasya Yā Parā).
+        </div>
+        <a class="commentary-btn" href="english-18-50.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" bhakti-highlight>
+        <div class="shlok-title">॥ Verses 18.51-53 (Qualities of Brahman Realization) ॥</div>
+        <p class="shlok-sanskrit">
+            बुद्ध्या विशुद्धया युक्तो धृत्याऽऽत्मानं नियम्य च।<br>
+            शब्दादीन्विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च।। (18.51)<br>
+            विविक्तसेवी लघ्वाशी यतवाक्कायमानसः।<br>
+            ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः।। (18.52)<br>
+            अहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम्।<br>
+            विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते।। (18.53)
+        </p><div class="shlok-translation-formatted"> 
+    buddhyā viśuddhayā yukto dhṛtyātmānaṃ niyamya ca |<br>
+    śabdādīn viṣayāṃstyaktvā rāgadveṣau vyudasya ca || 18.51 ||<br><br>
+    viviktasevī laghvāśī yatavākkāyamānasaḥ |<br>
+    dhyānayogaparo nityaṃ vairāgyaṃ samupāśritaḥ || 18.52 ||<br><br>
+    ahaṅkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ parigraham |<br>
+    virmucya nirmamaḥ śānto brahmabhūyāya kalpate || 18.53 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Endowed with a purified intellect, controlling the self by firmness, renouncing sound and other sense objects, and giving up attachment and hatred (18.51).<br>
+            Resorting to solitude, eating lightly, controlling speech, body, and mind, constantly engaged in meditation, taking refuge in dispassion (18.52).<br>
+            Having given up egoism, violence, arrogance, desire, anger, and covetousness—free from possessiveness and peaceful, he is fit for union with Brahman (18.53).
+        </div>
+        <a class="commentary-btn" href="english-18-51-53.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" bhakti-highlight>
+        <div class="shlok-title">॥ Verse 18.54 (The Attainment of Supreme Devotion) ॥</div>
+        <p class="shlok-sanskrit">
+            ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति।<br>
+            समः सर्वेषु भूतेषु मद्‌भक्तिं लभते पराम्।।
+        </p><div class="shlok-translation-formatted"> 
+    brahmabhūtaḥ prasannātmā na śocati na kāṅkṣati |<br>
+    samaḥ sarveṣu bhūteṣu madbhaktiṃ labhate parām || 18.54 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having become Brahman (Brahma-bhūtaḥ), serene in mind (Prasannātmā), he neither grieves nor desires (Na Śocati Na Kāṅkṣati).<br>
+            He is the same to all beings (Samaḥ Sarveṣu Bhūteṣu) and attains supreme devotion to Me (Mad-bhaktiṁ Labhate Parām).
+        </div>
+        <a class="commentary-btn" href="english-18-54.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" bhakti-highlight>
+        <div class="shlok-title">॥ Verse 18.55 (Entry into the Supreme Abode) ॥</div>
+        <p class="shlok-sanskrit">
+            भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः।<br>
+            ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    bhaktyā māmabhijānāti yāvānyaścāsmi tattvataḥ |<br>
+    tato māṃ tattvato jñātvā viśate tadanantaram || 18.55 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Through devotion (Bhaktyā), he truly knows Me (Mām Abhijānāti), who and what I am in essence (Yāvān Yaś cāsmi Tattvataḥ).<br>
+            Then, having known Me in truth (Tato Māṁ Tattvato Jñātvā), he enters into Me immediately after (Viśate Tad-anantaram).
+        </div>
+        <a class="commentary-btn" href="english-18-55.html">View Commentary</a>
+    </div>
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.56 (Perfection through My Grace) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वकर्माण्यपि सदा कुर्वाणो  मद्व्यपाश्रयः।<br>
+            मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvakarmāṇyapi sadā kurvāṇo madvyapāśrayaḥ |<br>
+    matprasādādavāpnoti śāśvataṃ padamavyayam || 18.56 ||
+</div>
+        <div class="shlok-translation-formatted">
+            A devotee performing all duties always (Sarva-karmāṇy api Sadā Kurvāṇo) under My protection (Mad-vyapāśrayaḥ),<br>
+            by My grace (Mat-prasādād) attains the eternal, indestructible abode (Śāśvataṁ Padam Avyayam).
+        </div>
+        <a class="commentary-btn" href="english-18-56.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.57 (Dedication of Actions) ॥</div>
+        <p class="shlok-sanskrit">
+            चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः।<br>
+            बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव।।
+        </p><div class="shlok-translation-formatted"> 
+    cetasā sarvakarmāṇi mayi sannyasya matparaḥ |<br>
+    buddhiyogamupāśritya maccittaḥ satataṃ bhava || 18.57 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Mentally dedicate all actions to Me (Cetasā Sarva-karmāṇi Mayi Sannyasya), regard Me as the supreme goal (Matparaḥ),<br>
+            and taking recourse to the Yoga of Intellect (Buddhi-yogam Upāśritya), keep your mind ever fixed on Me (Mac-cittaḥ Satataṁ Bhava).
+        </div>
+        <a class="commentary-btn" href="english-18-57.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.58 (Crossing Obstacles) ॥</div>
+        <p class="shlok-sanskrit">
+            मच्चित्तः सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि।<br>
+            अथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्क्ष्यसि।।
+        </p><div class="shlok-translation-formatted"> 
+    maccittaḥ sarvadurgāṇi matprasādāttariṣyasi |<br>
+    atha cettvammahaṅkārānna śroṣyasi vinaṅkṣyasi || 18.58 ||
+</div>
+        <div class="shlok-translation-formatted">
+            By fixing your mind on Me, you shall cross over all obstacles (Sarva-durgāṇi Mat-prasādāt Tariṣyasi) by My grace.<br>
+            But if, due to egoism (Atha Cet Tvam Ahaṅkārān), you do not listen (Na Śroṣyasi), you shall perish (Vinakṣyasi).
+        </div>
+        <a class="commentary-btn" href="english-18-58.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.59 (Compulsion of Nature) ॥</div>
+        <p class="shlok-sanskrit">
+            यदहङ्कारमाश्रित्य न योत्स्य इति मन्यसे।<br>
+            मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    yadahaṅkāramāśritya na yotsya iti manyase |<br>
+    mithyaiṣa vyavasāyaste prakṛtistvāṃ niyokṣyati || 18.59 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If, taking refuge in egoism (Yad Ahaṅkāram Āśritya), you think, I will not fight (Na Yotsya Iti Manyase),<br>
+            this resolve of yours is vain (Mithyāiṣa Vyavasāyas Te); your own nature (Prakṛtis Tvāṁ) will compel you (Niyokṣyati).
+        </div>
+        <a class="commentary-btn" href="english-18-59.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.60 (Bound by Your Own Action) ॥</div>
+        <p class="shlok-sanskrit">
+            स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा।<br>
+            कर्तुं नेच्छसि यन्मोहात् करिष्यस्यवशोऽपि तत्।।
+        </p><div class="shlok-translation-formatted"> 
+    svabhāvajena kaunteya nibaddhaḥ svena karmaṇā |<br>
+    kartuṃ necchasi yanmoḥāt kariṣyasyavaśo’pi tat || 18.60 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O son of Kuntī, bound by your own inherent action (Svabhāva-jena... Nibaddhaḥ Svena Karmaṇā),<br>
+            that which you do not wish to do through delusion (Yan Mohāt), you shall do that (Kariṣyasy Avaśo pi Tat) helplessly.
+        </div>
+        <a class="commentary-btn" href="english-18-60.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.61 (The Lord Resides in the Heart) ॥</div>
+        <p class="shlok-sanskrit">
+            ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति।<br>
+            भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया।।
+        </p><div class="shlok-translation-formatted"> 
+    īśvaraḥ sarvabhūtānāṃ hṛddeśe’rjuna tiṣṭhati |<br>
+    bhrāmayansarvabhūtāni yantrārūḍhāni māyayā || 18.61 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Lord (Īśvaraḥ) dwells in the heart of all beings (Sarva-bhūtānāṁ Hṛd-deśe), O Arjuna,<br>
+            causing them to revolve by His illusion (Bhrāmayan Sarva-bhūtāni Māyayā), as if mounted on a machine (Yantrārūḍhāni).
+        </div>
+        <a class="commentary-btn" href="english-18-61.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" final-conclusion>
+        <div class="shlok-title">॥ Verse 18.62 (Seek Absolute Refuge in Him) ॥</div>
+        <p class="shlok-sanskrit">
+            तमेव शरणं गच्छ सर्वभावेन भारत।<br>
+            तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    tameva śaraṇaṃ gaccha sarvabhāvena bhārata |<br>
+    tatprasādātparāṃ śāntiṃ sthānaṃ prāpsyasi śāśvatam || 18.62 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Seek refuge in Him alone (Tam Eva Śaraṇaṁ Gaccha) with all your heart (Sarva-bhāvena), O Bhārata.<br>
+            By His grace (Tat-prasādāt), you shall attain supreme peace and the eternal abode (Parāṁ Śāntiṁ Sthānaṁ Prāpsyasi Śāśvatam).
+        </div>
+        <a class="commentary-btn" href="english-18-62.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.63 (Reflect and Act) ॥</div>
+        <p class="shlok-sanskrit">
+            इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया।<br>
+            विमृश्यैतदशेषेण यथेच्छसि तथा कुरु।।
+        </p><div class="shlok-translation-formatted"> 
+    iti te jñānamākhyātaṃ guhyādguhyataraṃ mayā |<br>
+    vimaṛśyaitadaśeṣeṇa yathecchasi tathā kuru || 18.63 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Thus, the most confidential knowledge (Jñānam Ākhyātaṁ Guhyād Guhyataraṁ) has been declared to you by Me.<br>
+            Reflect on this fully (Vimṛśyaitad Aśeṣeṇa), and then act as you wish (Yathecchasi Tathā Kuru).
+        </div>
+        <a class="commentary-btn" href="english-18-63.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" final-conclusion>
+        <div class="shlok-title">॥ Verse 18.64 (The Supreme Secret) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वगुह्यतमं भूयः शृणु मे परमं वचः।<br>
+            इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvaguhyatamaṃ bhūyaḥ śṛṇu me paramaṃ vacaḥ |<br>
+    iṣṭo’si me dṛḍhamiti tato vakṣyāmi te hitam || 18.64 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Hear again My supreme word (Bhūyaḥ Śṛṇu Me Paramaṁ Vacaḥ), the most secret of all secrets (Sarva-guhyatamaṁ).<br>
+            Because you are very dear to Me (Iṣṭo si Me Dṛḍham Iti), therefore I speak for your welfare (Tato Vakṣyāmi Te Hitam).
+        </div>
+        <a class="commentary-btn" href="english-18-64.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" final-conclusion>
+        <div class="shlok-title">॥ Verse 18.65 (The Supreme Command) ॥</div>
+        <p class="shlok-sanskrit">
+            मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।<br>
+            मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे।।
+        </p><div class="shlok-translation-formatted"> 
+    manmanā bhava madbhakto madyājī māṃ namaskuru |<br>
+    māmevaiṣyasi satyaṃ te pratijāne priyo’si me || 18.65 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Fix your mind on Me (Man-manā Bhava), be devoted to Me (Mad-bhakto), worship Me (Mad-yājī), and offer homage to Me (Māṁ Namas-kuru).<br>
+            You will come to Me alone (Mām Evaiṣyasi); I promise you this truly, for you are dear to Me (Satyaṁ Te Pratijāne Priyo si Me).
+        </div>
+        <a class="commentary-btn" href="english-18-65.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" final-conclusion style="background: #ffe0b2;"> 
+        <div class="shlok-title" style="font-size: 1.8em; color: #b71c1c;">॥ Verse 18.66 (The Charama Shloka: Ultimate Surrender) ॥</div>
+        <p class="shlok-sanskrit" style="font-size: 1.6em; color: #b71c1c; font-weight: bold;">
+            सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।<br>
+            अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja |<br>
+    ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ || 18.66 ||
+</div>
+        <div class="shlok-translation-formatted" style="background-color: #fff8e1; border: 2px solid #b71c1c; font-weight: bold; font-style: italic; color: #b71c1c;">
+            Abandoning all duties (Sarva-dharmān Parityajya), take refuge in Me alone (Mām Ekaṁ Śaraṇaṁ Vraja).<br>
+            I will free you from all sins (Ahaṁ Tvā Sarva-pāpebhyo Mokṣayiṣyāmi); do not grieve (Mā Śucaḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-66.html" style="background: #b71c1c;">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.67 (The Confidentiality Warning) ॥</div>
+        <p class="shlok-sanskrit">
+            इदं ते नातपस्काय नाभक्ताय कदाचन।<br>
+            न चाशुश्रूषवे वाच्यं न च मां योऽभ्यसूयति।।
+        </p><div class="shlok-translation-formatted"> 
+    idaṃ te nātapaskāya nābhaktāya kadācana |<br>
+    na cāśuśrūṣave vācyaṃ na ca māṃ yo’bhyasūyati || 18.67 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This (knowledge) should never be spoken by you (Idaṁ Te Na Vācyam) to one who is not ascetic (Nātapaskāya), or not devoted (Nābhaktāya),<br>
+            nor to one who does not desire to hear (Na Cāśuśrūṣave), nor to one who maligns Me (Na ca Māṁ Yo 'bhyasūyati).
+        </div>
+        <a class="commentary-btn" href="english-18-67.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.68 (The Highest Service) ॥</div>
+        <p class="shlok-sanskrit">
+            य इमं परमं गुह्यं मद्भक्तेष्वभिधास्यति।<br>
+            भक्तिं मयि परां कृत्वा मामेवैष्यत्यसंशयः।।
+        </p><div class="shlok-translation-formatted"> 
+    ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati |<br>
+    bhaktiṃ mayi parāṃ kṛtvā māmevaiṣyatyasaṃśayaḥ || 18.68 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who, having shown supreme devotion to Me (Bhaktiṁ Mayi Parāṁ Kṛtvā), teaches this supreme secret (Ya Imaṁ Paramaṁ Guhyaṁ Mad-bhakteṣv Abhidhāsyati)<br>
+            among My devotees, shall undoubtedly come to Me (Mām Evaiṣyaty Asaṁśayaḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-68.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.69 (The Dearest Devotee) ॥</div>
+        <p class="shlok-sanskrit">
+            न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तमः।<br>
+            भविता न च मे तस्मादन्यः प्रियतरो भुवि।।
+        </p><div class="shlok-translation-formatted"> 
+    na ca tasmānmanuṣyeṣu kaścinme priyakṛttamaḥ |<br>
+    bhavitā na ca me tasmādanyaḥ priyataro bhuvi || 18.69 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There is no one among men who does a dearer service to Me than he (Na Ca Tasmān Manuṣyeṣu Kaścin Me Priya-kṛttamaḥ),<br>
+            nor shall there be anyone else on earth dearer to Me than he (Bhavitā Na Ca Me Tasmād Anyaḥ Priyataro Bhuvi).
+        </div>
+        <a class="commentary-btn" href="english-18-69.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.70 (Reward for Studying the Gita) ॥</div>
+        <p class="shlok-sanskrit">
+            अध्येष्यते च य इमं धर्म्यं संवादमावयोः।<br>
+            ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः।।
+        </p><div class="shlok-translation-formatted"> 
+    adhyeṣyate ca ya imaṃ dharmyaṃ saṃvādamāvayoḥ |<br>
+    jñānayajñena tenāham iṣṭaḥ syāmiti me matiḥ || 18.70 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And he who studies this sacred dialogue of ours (Adhyeṣyate ca Ya Imaṁ Dharmyaṁ Saṁvādam Āvayoḥ),<br>
+            by him, I shall be worshipped through the sacrifice of knowledge (Jñāna-yajñena Tenāham Iṣṭaḥ Syām Iti Me Matiḥ)—that is My conviction.
+        </div>
+        <a class="commentary-btn" href="english-18-70.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.71 (Reward for Hearing the Gita) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रद्धावाननसूयश्च शृणुयादपि यो नरः।<br>
+            सोऽपि मुक्तः शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śraddhāvānanasūyaśca śṛṇuyādapi yo naraḥ |<br>
+    so’pi muktaḥ śubhāṃllokānprāpnuyātpuṇyakarmaṇām || 18.71 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And the man who hears it with faith and without envy (Śraddhāvān Anasūyaś ca Śṛṇuyād Api Yo Naraḥ),<br>
+            he too, being liberated, attains the auspicious worlds of the virtuous (So pi Muktaḥ Śubhāṁl Lokān Prāpnuyāt Puṇya-karmaṇām).
+        </div>
+        <a class="commentary-btn" href="english-18-71.html">View Commentary</a>
+    </div>
+
+    <div class="section-heading">
+        <span style="font-size: 1.2em;">(Sañjaya's Conclusion - 18.72-78)</span>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.72 (Krishna’s Final Question) ॥</div>
+        <p class="shlok-sanskrit">
+            कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा।<br>
+            कच्चिदज्ञानसम्मोहः प्रनष्टस्ते धनञ्जय।।
+        </p><div class="shlok-translation-formatted"> 
+    kaccidētacchrutaṃ pārtha tvayaikāgreṇa cetasā |<br>
+    kaccidajñānasammohaḥ pranaṣṭaste dhanañjaya || 18.72 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Pārtha, have you heard this (Kaccid Etac Chrutam Pārtha) with a concentrated mind (Tvayaikāgreṇa Cetasā)?<br>
+            O Dhanañjaya, has your delusion born of ignorance been destroyed (Kaccid Ajñāna-sammohaḥ Pranaṣṭas Te)?
+        </div>
+        <a class="commentary-btn" href="english-18-72.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" final-conclusion>
+        <div class="shlok-title">॥ Verse 18.73 (Arjuna is Undeluded) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाऽच्युत।<br>
+            स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    naṣṭo mohaḥ smṛtirlabdhā tvatprasādānmayācyuta |<br>
+    sthito’smi gatasaṃśayaḥ kariṣye vacanaṃ tava || 18.73 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: My delusion is destroyed (Naṣṭo Mohaḥ), and I have regained memory (Smṛtir Labdhā) through Your grace (Tvat-prasādān) O Acyuta (Krishna).<br>
+            I am firm (Sthito smi), free from doubt (Gata-sandehaḥ), and I shall do Your bidding (Kariṣye Vacanaṁ Tava).
+        </div>
+        <a class="commentary-btn" href="english-18-73.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.74 (Sañjaya’s Recitation) ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            इत्यहं वासुदेवस्य पार्थस्य च महात्मनः।<br>
+            संवादमिममश्रौषमद्भुतं रोमहर्षणम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    ityahaṃ vāsudevasya pārthasya ca mahātmanaḥ |<br>
+    saṃvādamima-maśrauṣa-madbhutaṃ romaharṣaṇam || 18.74 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sañjaya said: Thus, I have heard (Ity Ahaṁ... Aśrauṣam) this wonderful and hair-raising dialogue (Saṁvādam Imam Adbhutaṁ Roma-harṣaṇam)<br>
+            between Vāsudeva (Krishna) and the great-souled Pārtha (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-18-74.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.75 (Hearing Directly from Krishna) ॥</div>
+        <p class="shlok-sanskrit">
+            व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम्।<br>
+            योगं योगेश्वरात्कृष्णात्साक्षात्कथयतः स्वयम्।।
+        </p><div class="shlok-translation-formatted"> 
+    vyāsaprasādācchrutavānetad guhyamahaṃ param |<br>
+    yogaṃ yogeśvarātkṛṣṇātsākṣātkathayataḥ svayam || 18.75 ||
+</div>
+        <div class="shlok-translation-formatted">
+            By the grace of Vyāsa (Vyāsa-prasādāc), I heard this supreme secret Yoga (Etad Guhyam Ahaṁ Param),<br>
+            spoken directly by Kṛṣṇa Himself, the Master of Yoga (Yogaṁ Yogeśvarāt Kṛṣṇāt Sākṣāt Kathayataḥ Svayam).
+        </div>
+        <a class="commentary-btn" href="english-18-75.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.76 (Remembrance of the Conversation) ॥</div>
+        <p class="shlok-sanskrit">
+            राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम्।<br>
+            केशवार्जुनयोः पुण्यं हृष्यामि च मुहुर्मुहुः।।
+        </p><div class="shlok-translation-formatted"> 
+    rājan saṃsmṛtya saṃsmṛtya saṃvādamimam adbhutam |<br>
+    keśavārjunayoḥ puṇyaṃ hṛṣyāmi ca muhurmuhuḥ || 18.76 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O King, remembering again and again this wonderful and holy dialogue (Saṁvādām Imam Adbhutam) between Keśava and Arjuna,<br>
+            I rejoice again and again (Hṛṣyāmi ca Muhur Muhuḥ).
+        </div>
+        <a class="commentary-btn" href="english-18-76.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 18.77 (Remembrance of the Universal Form) ॥</div>
+        <p class="shlok-sanskrit">
+            तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः।<br>
+            विस्मयो मे महान्राजन्हृष्यामि च पुन: पुन:।।
+        </p><div class="shlok-translation-formatted"> 
+    tacca saṃsmṛtya saṃsmṛtya rūpamatyadbhutaṃ hareḥ |<br>
+    vismayo me mahānrājan hṛṣyāmi ca punaḥ punaḥ || 18.77 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And remembering again and again that extremely wonderful form of Hari (Rūpam Atyadbhutaṁ Hareḥ),<br>
+            My astonishment is great (Vismayo Me Mahān Rājann), O King, and I rejoice again and again.
+        </div>
+        <a class="commentary-btn" href="english-18-77.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box" final-conclusion style="background: #a33200; color: white;">
+        <div class="shlok-title" style="font-size: 1.8em; color: #ffcc66; border-bottom: 2px solid #ffcc66;">॥ Verse 18.78 (Conclusion/Phalaśruti) ॥</div>
+        <p class="shlok-sanskrit" style="font-size: 1.6em; color: #fff8e1; font-weight: bold;">
+            यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः।<br>
+            तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम।।
+        </p><div class="shlok-translation-formatted"> 
+    yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanurdharaḥ |<br>
+    tatra śrīrvijayo bhūtir-dhruvā nītirmatirmama || 18.78 ||
+</div>
+        <div class="shlok-translation-formatted" style="background-color: #5a3300; border: 2px solid #ffcc66; font-weight: bold; font-style: normal; color: #fff8e1;">
+            Where there is Kṛṣṇa, the Master of all Yoga (Yatra Yogeśvaraḥ Kṛṣṇo), and where there is Pārtha, the archer (Yatra Pārtho Dhanur-dharaḥ),<br>
+            there surely will be opulence (Śrīr), victory (Vijayo), exceptional power (Bhūtir), and unwavering morality (Dhruvā Nītir)—that is My conviction (Matir Mama).
+        </div>
+        <a class="commentary-btn" href="english-18-78.html" style="background: #ffcc66; color: #1a0f00;">View Commentary</a>
+    </div>
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे मोक्षसंन्यासयोगो नाम अष्टादशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the eighteenth chapter, entitled Mokṣa-sannyāsa Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter17.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    </div>
+
+</body>
+</html>

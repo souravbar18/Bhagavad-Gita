@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 4: Jñāna Karma Sannyāsa Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 4: Jñāna Karma Sannyāsa Yoga (The Yoga of Knowledge, Action, and Renunciation) - Verses 4.1 to 4.42</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter3.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter5.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.1 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            इमं विवस्वते योगं प्रोक्तवानहमव्ययम्।<br>
+            विवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    imaṃ vivasvate yogaṃ proktavānahamavyayam |<br>
+    vivasvān manave prāha manurikṣvākave’bravīt || 4.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: I declared this imperishable Yoga to Vivasvan (Sun-god);<br>
+            Vivasvan told it to Manu (his son), and Manu communicated it to Ikshvaku (his son).
+        </div>
+        <a class="commentary-btn" href="english-4-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.2 ॥</div>
+        <p class="shlok-sanskrit">
+            एवं परम्पराप्राप्तमिमं राजर्षयो विदुः।<br>
+            स कालेनेह महता योगो नष्टः परन्तप।।
+        </p><div class="shlok-translation-formatted"> 
+    evaṃ paramparāprāptamimaṃ rājarṣayo viduḥ |<br>
+    sa kāleneha mahatā yogo naṣṭaḥ parantapa || 4.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Handed down thus in succession, the royal sages knew this (Yoga).<br>
+            But this Yoga, O scorcher of foes (Arjuna), was lost in the world over a long period of time.
+        </div>
+        <a class="commentary-btn" href="english-4-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.3 ॥</div>
+        <p class="shlok-sanskrit">
+            स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः।<br>
+            भक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sa evāyaṃ mayā te’dya yogaḥ proktaḥ purātanaḥ |<br>
+    bhakto’si me sakhā ceti rahasyaṃ hyetaduttamam || 4.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That same ancient Yoga has been declared to you by Me today,<br>
+            because you are My devotee and friend. This is indeed the supreme secret.
+        </div>
+        <a class="commentary-btn" href="english-4-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.4 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            अपरं भवतो जन्म परं जन्म विवस्वतः।<br>
+            कथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    aparaṃ bhavato janma paraṃ janma vivasvataḥ |<br>
+    kathametadvijānīyāṃ tvamādau proktavāniti || 4.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: Your birth is recent, and the birth of Vivasvan was ancient.<br>
+            How am I to understand this, that You taught this in the beginning?
+        </div>
+        <a class="commentary-btn" href="english-4-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.5 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            बहूनि मे व्यतीतानि जन्मानि तव चार्जुन।<br>
+            तान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    bahūni me vyatītāni janmāni tava cārjuna |<br>
+    tānyahaṃ veda sarvāṇi na tvaṃ vettha parantapa || 4.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Many births have passed for Me and for you, O Arjuna.<br>
+            I know them all, but you do not know them, O scorcher of foes!
+        </div>
+        <a class="commentary-btn" href="english-4-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.6 ॥</div>
+        <p class="shlok-sanskrit">
+            अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन्।<br>
+            प्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया।।
+        </p><div class="shlok-translation-formatted"> 
+    ajo’pi sannavyayātmā bhūtānāmīśvaro’pi san |<br>
+    prakṛtiṃ svāmadhiṣṭhāya sambhavāmyātmamāyayā || 4.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Though I am unborn, of imperishable nature, and the Lord of all beings,<br>
+            yet, controlling My own Nature (Prakriti), I take birth through My own Yoga-Māyā (divine power).
+        </div>
+        <a class="commentary-btn" href="english-4-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.7 ॥</div>
+        <p class="shlok-sanskrit">
+            यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।<br>
+            अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yadā yadā hi dharmasya glānirbhavati bhārata |<br>
+    abhyutthānamadharmasya tadātmānaṃ sṛjāmyaham || 4.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whenever there is a decline of righteousness (Dharma), O Bharata (Arjuna),<br>
+            and a rise of unrighteousness (Adharma), then I manifest Myself.
+        </div>
+        <a class="commentary-btn" href="english-4-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.8 ॥</div>
+        <p class="shlok-sanskrit">
+            परित्राणाय साधूनां विनाशाय च दुष्कृताम्।<br>
+            धर्मसंस्थापनार्थाय सम्भवामि युगे युगे।।
+        </p><div class="shlok-translation-formatted"> 
+    paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām |<br>
+    dharmasaṃsthāpanārthāya sambhavāmi yuge yuge || 4.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For the protection of the good, for the destruction of the wicked,<br>
+            and for the establishment of righteousness, I am born in every age.
+        </div>
+        <a class="commentary-btn" href="english-4-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.9 ॥</div>
+        <p class="shlok-sanskrit">
+            जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः।<br>
+            त्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन।।
+        </p><div class="shlok-translation-formatted"> 
+    janma karma ca me divyamevaṃ yo vetti tattvataḥ |<br>
+    tyaktvā dehaṃ punarjanma naiti māmeti so’rjuna || 4.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who thus knows, in truth, My divine birth and action,<br>
+            having abandoned the body, is not born again; he comes to Me, O Arjuna.
+        </div>
+        <a class="commentary-btn" href="english-4-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.10 ॥</div>
+        <p class="shlok-sanskrit">
+            वीतरागभयक्रोधा मन्मया मामुपाश्रिताः।<br>
+            बहवो ज्ञानतपसा पूता मद्भावमागताः।।
+        </p><div class="shlok-translation-formatted"> 
+    vītarāgabhayakrodhā manmayā māmupāśritāḥ |<br>
+    bahavo jñānatapasā pūtā madbhāvamāgatāḥ || 4.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Freed from attachment, fear, and anger, fully absorbed in Me, taking refuge in Me,<br>
+            many have become purified by the austerity of knowledge and have attained My nature.
+        </div>
+        <a class="commentary-btn" href="english-4-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.11 ॥</div>
+        <p class="shlok-sanskrit">
+            ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम्।<br>
+            मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।
+        </p><div class="shlok-translation-formatted"> 
+    ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham |<br>
+    mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ || 4.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In whatever way people surrender to Me, I reciprocate accordingly.<br>
+            All men follow My path, O Partha (Arjuna), in every way.
+        </div>
+        <a class="commentary-btn" href="english-4-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.12 ॥</div>
+        <p class="shlok-sanskrit">
+            काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः।<br>
+            क्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा।।
+        </p><div class="shlok-translation-formatted"> 
+    kāṅkṣantaḥ karmaṇāṃ siddhiṃ yajanta iha devatāḥ |<br>
+    kṣipraṃ hi mānuṣe loke siddhirbhavati karmajā || 4.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those who desire success in actions worship the demigods here;<br>
+            for quickly, in this human world, success is born of action.
+        </div>
+        <a class="commentary-btn" href="english-4-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.13 ॥</div>
+        <p class="shlok-sanskrit">
+            चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः।<br>
+            तस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    cāturvarṇyaṃ mayā sṛṣṭaṃ guṇakarmavibhāgaśaḥ |<br>
+    tasya kartāramapi māṃ viddhyakartāramavyayam || 4.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The fourfold social order (Varna) was created by Me according to the division of qualities (Gunas) and actions (Karma).<br>
+            Though I am the originator of this, know Me to be the non-doer and the imperishable.
+        </div>
+        <a class="commentary-btn" href="english-4-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.14 ॥</div>
+        <p class="shlok-sanskrit">
+            न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा।<br>
+            इति यो मामभिजानाति कर्मभिर्न स बध्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    na māṃ karmāṇi limpanti na me karmaphale spṛhā |<br>
+    iti māṃ yo’bhijānāti karmabhirna sa baddyate || 4.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Actions do not cling to Me, nor do I have desire for the fruits of action.<br>
+            He who knows Me thus is also not bound by actions.
+        </div>
+        <a class="commentary-btn" href="english-4-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.15 ॥</div>
+        <p class="shlok-sanskrit">
+            एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः।<br>
+            कुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    evaṃ jñātvā kṛtaṃ karma pūrvairapi mumukṣubhiḥ |<br>
+    kuru karmaiva tasmāttvaṃ pūrvaiḥ pūrvataraṃ kṛtam || 4.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowing this, actions were performed by the ancient seekers of liberation.<br>
+            Therefore, you too perform action, as it was performed by the ancients in earlier times.
+        </div>
+        <a class="commentary-btn" href="english-4-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.16 ॥</div>
+        <p class="shlok-sanskrit">
+            किं कर्म किमक्रमेति कवयोऽप्यत्र मोहिताः।<br>
+            तत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।
+        </p><div class="shlok-translation-formatted"> 
+    kiṃ karma kimakarmeti kavayo’pyatra mohitāḥ |<br>
+    tatte karma pravakṣyāmi yajjñātvā mokṣyase’śubhāt || 4.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Even the wise are confused about what is action and what is inaction.<br>
+            I shall explain to you that action (the nature of right action), by knowing which you shall be liberated from evil.
+        </div>
+        <a class="commentary-btn" href="english-4-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.17 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः।<br>
+            अकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः।।
+        </p><div class="shlok-translation-formatted"> 
+    karmaṇo hyapi boddhavyaṃ boddhavyaṃ ca vikarmaṇāḥ |<br>
+    akarmaṇaśca boddhavyaṃ gahanā karmaṇo gatiḥ || 4.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One must understand the nature of action (Karma), also the nature of forbidden action (Vikarma),<br>
+            and the nature of inaction (Akarma). The path of action is deep and complex.
+        </div>
+        <a class="commentary-btn" href="english-4-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.18 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः।<br>
+            स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्।।
+        </p><div class="shlok-translation-formatted"> 
+    karmaṇyakarma yaḥ paśyed akarmaṇi ca karma yaḥ |<br>
+    sa buddhimān manuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt || 4.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who sees action in inaction and inaction in action,<br>
+            he is intelligent among men, he is a Yogi, and he has performed all actions.
+        </div>
+        <a class="commentary-btn" href="english-4-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.19 ॥</div>
+        <p class="shlok-sanskrit">
+            यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः।<br>
+            ज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः।।
+        </p><div class="shlok-translation-formatted"> 
+    yasya sarve samārambhāḥ kāmasaṅkalpavarjitāḥ |<br>
+    jñānāgnidagdhakarmāṇaṃ tamāhuḥ paṇḍitaṃ budhāḥ || 4.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He whose undertakings are all free from desire for enjoyment and selfish motives,<br>
+            whose actions are burnt up by the fire of knowledge, him the wise call a sage.
+        </div>
+        <a class="commentary-btn" href="english-4-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.20 ॥</div>
+        <p class="shlok-sanskrit">
+            त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः।<br>
+            कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः।।
+        </p><div class="shlok-translation-formatted"> 
+    tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ |<br>
+    karmaṇyabhipravṛtto’pi naiva kiñcit karoti saḥ || 4.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having given up attachment to the fruits of action, ever content, dependent on nothing,<br>
+            even though engaged in action, he verily does nothing.
+        </div>
+        <a class="commentary-btn" href="english-4-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.21 ॥</div>
+        <p class="shlok-sanskrit">
+            निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः।<br>
+            शारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्।।
+        </p><div class="shlok-translation-formatted"> 
+    nirāśīryatachittātmā tyaktasarvaparigrahaḥ |<br>
+    śārīraṃ kevalaṃ karma kurvannāpnoti kilbiṣam || 4.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Free from desire, with mind and intellect subdued, giving up all sense of possession,<br>
+            performing action merely with the body, he incurs no sin.
+        </div>
+        <a class="commentary-btn" href="english-4-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.22 ॥</div>
+        <p class="shlok-sanskrit">
+            यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः।<br>
+            समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yadṛcchālābhasantuṣṭo dvandvātīto vimatsaraḥ |<br>
+    samaḥ siddhāvasiddhau ca kṛtvāpi na nibadhyate || 4.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Content with what comes unsought, free from dualities, devoid of envy,<br>
+            equitable in success and failure, even though acting, he is not bound.
+        </div>
+        <a class="commentary-btn" href="english-4-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.23 ॥</div>
+        <p class="shlok-sanskrit">
+            गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः।<br>
+            यज्ञायाचरतः कर्म समग्रं प्रविलीयते।।
+        </p><div class="shlok-translation-formatted"> 
+    gatasaṅgasya muktasya jñānāvasthitacetasaḥ |<br>
+    yajñāyācarataḥ karma samagraṃ pravilīyate || 4.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For the person who is free from attachment, liberated, whose mind is established in knowledge,<br>
+            all action performed as a sacrifice (Yajña) completely dissolves.
+        </div>
+        <a class="commentary-btn" href="english-4-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.24 ॥</div>
+        <p class="shlok-sanskrit">
+            ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम्।<br>
+            ब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना।।
+        </p><div class="shlok-translation-formatted"> 
+    brahmārpaṇaṃ brahma havirbrahmāgnau brahmaṇā hutam |<br>
+    brahmaiva tena gantavyaṃ brahmakarmasamādhinā || 4.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Brahman is the offering, Brahman is the clarified butter (Havis), offered by Brahman into the fire of Brahman.<br>
+            Brahman alone is to be reached by him who is absorbed in the action of Brahman.
+        </div>
+        <a class="commentary-btn" href="english-4-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.25 ॥</div>
+        <p class="shlok-sanskrit">
+            दैवमेवापरे यज्ञं योगिनः पर्युपासते।<br>
+            ब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति।।
+        </p><div class="shlok-translation-formatted"> 
+    daivamevāpare yajñaṃ yoginaḥ paryupāsate |<br>
+    brahmāgnāvapare yajñaṃ yajñenaivopajuhvati || 4.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Some Yogis worship the celestial deities (Deva) as a sacrifice,<br>
+            while others offer the self as a sacrifice into the fire of Brahman.
+        </div>
+        <a class="commentary-btn" href="english-4-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.26 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति।<br>
+            शब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति।।
+        </p><div class="shlok-translation-formatted"> 
+    śrotrādīnīndriyāṇyanye saṃyamāgniṣu juhvati |<br>
+    śabdādīnviṣayānanya indriyāgniṣu juhvati || 4.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Some offer the senses like the ear into the fires of restraint (Samyama);<br>
+            others offer the sense-objects like sound into the fires of the senses.
+        </div>
+        <a class="commentary-btn" href="english-4-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.27 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे।<br>
+            आत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvāṇīndriyakarmāṇi prāṇakarmāṇi cāpare |<br>
+    ātmasaṃyamayogagnau juhvati jñānadīpite || 4.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And others offer all the functions of the senses and the functions of the vital force (Prana-Karma)<br>
+            into the fire of the Yoga of self-control, kindled by knowledge.
+        </div>
+        <a class="commentary-btn" href="english-4-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.28 ॥</div>
+        <p class="shlok-sanskrit">
+            द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे।<br>
+            स्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः।।
+        </p><div class="shlok-translation-formatted"> 
+    dravyayajñāstapoyajñā yogayajñāstathāpare |<br>
+    svādhyāyajñānayajñāśca yatayaḥ saṃśitavratāḥ || 4.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Some offer wealth as sacrifice, some offer austerity (Tapas) as sacrifice, and others offer Yoga as sacrifice.<br>
+            Still others, ascetics with rigid vows, offer study of scriptures and knowledge as sacrifice.
+        </div>
+        <a class="commentary-btn" href="english-4-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.29 ॥</div>
+        <p class="shlok-sanskrit">
+            अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे।<br>
+            प्राणापानगती रुद्ध्वा प्राणायामपरायणाः।।
+        </p><div class="shlok-translation-formatted"> 
+    apāne juhvati prāṇaṃ prāṇe’pānaṃ tathāpare |<br>
+    prāṇāpānagatī ruddhvā prāṇāyāmaparāyaṇāḥ || 4.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Others offer the outgoing breath (Prana) into the incoming breath (Apana), and the incoming breath into the outgoing breath.<br>
+            Engaged in Prāṇāyāma (breath control), they restrain the movements of Prana and Apana.
+        </div>
+        <a class="commentary-btn" href="english-4-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.30 ॥</div>
+        <p class="shlok-sanskrit">
+            अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति।<br>
+            सर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः।।
+        </p><div class="shlok-translation-formatted"> 
+    apare niyatāhārāḥ prāṇān prāṇeṣu juhvati |<br>
+    sarve’pyete yajñavido yajñakṣapitakalbiṣāḥ || 4.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Still others, restricting food, offer the vital forces into the vital forces.<br>
+            All these are knowers of sacrifice, and by sacrifice their sins are destroyed.
+        </div>
+        <a class="commentary-btn" href="english-4-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.31 ॥</div>
+        <p class="shlok-sanskrit">
+            यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम्।<br>
+            नायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम।।
+        </p><div class="shlok-translation-formatted"> 
+    yajñaśiṣṭāmṛtabhujo yānti brahma sanātanam |<br>
+    nāyaṃ loko’styayajñasya kuto’nyaḥ kurusattama || 4.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those who partake of the nectar of the remnants of sacrifice attain the eternal Brahman.<br>
+            This world is not for the non-performer of sacrifice, how then the other world, O best of the Kurus (Arjuna)?
+        </div>
+        <a class="commentary-btn" href="english-4-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.32 ॥</div>
+        <p class="shlok-sanskrit">
+            एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे।<br>
+            कर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे।।
+        </p><div class="shlok-translation-formatted"> 
+    evaṃ bahuvidhā yajñā vitatā brahmaṇo mukhe |<br>
+    karmajān viddhi tān sarvān evaṃ jñātvā mokṣyase || 4.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Various forms of sacrifice are thus spread out in the mouth of Brahman (the Vedas).<br>
+            Know them all to be born of action; knowing this, you shall be liberated.
+        </div>
+        <a class="commentary-btn" href="english-4-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.33 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप।<br>
+            सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    śreyān dravyamayād yajñāj jñānayajñaḥ parantapa |<br>
+    sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate || 4.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The sacrifice of knowledge (Jñāna Yajña) is superior to the sacrifice of material things, O scorcher of foes (Arjuna).<br>
+            All actions, without exception, culminate in knowledge, O Partha.
+        </div>
+        <a class="commentary-btn" href="english-4-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.34 ॥</div>
+        <p class="shlok-sanskrit">
+            तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया।<br>
+            उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।।
+        </p><div class="shlok-translation-formatted"> 
+    tadviddhi praṇipātena paripraśnena sevayā |<br>
+    upadekṣyanti te jñānaṃ jñāninas tattvadarśinaḥ || 4.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know that (knowledge) by humble prostration, by questioning, and by service.<br>
+            The wise ones who have realized the truth will impart knowledge to you.
+        </div>
+        <a class="commentary-btn" href="english-4-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.35 ॥</div>
+        <p class="shlok-sanskrit">
+            यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव।<br>
+            येन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि।।
+        </p><div class="shlok-translation-formatted"> 
+    yajjñātvā na punarmoham evaṃ yāsyasi pāṇḍava |<br>
+    yena bhūtānyaśeṣāṇi drakṣyasyātmanyatho mayi || 4.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having known that (knowledge), O son of Pandu (Arjuna), you shall not again fall into delusion;<br>
+            by which you will see all beings, without exception, in the Self, and then in Me.
+        </div>
+        <a class="commentary-btn" href="english-4-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.36 ॥</div>
+        <p class="shlok-sanskrit">
+            अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः।<br>
+            सर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि।।
+        </p><div class="shlok-translation-formatted"> 
+    api cedasi pāpebhyaḥ sarvebhyaḥ pāpakṛttamaḥ |<br>
+    sarvaṃ jñānaplavenaiva vṛjinaṃ santariṣyasi || 4.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Even if you are the most sinful of all sinners,<br>
+            you shall cross over all wickedness by the raft of knowledge alone.
+        </div>
+        <a class="commentary-btn" href="english-4-36.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.37 ॥</div>
+        <p class="shlok-sanskrit">
+            यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन।<br>
+            ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा।।
+        </p><div class="shlok-translation-formatted"> 
+    yathaidhāṃsi samiddho’gnir bhasmasāt kurute’rjuna |<br>
+    jñānāgniḥ sarvakarmāṇi bhasmasāt kurute tathā || 4.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            As a blazing fire reduces wood to ashes, O Arjuna,<br>
+            so does the fire of knowledge reduce all actions to ashes.
+        </div>
+        <a class="commentary-btn" href="english-4-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.38 ॥</div>
+        <p class="shlok-sanskrit">
+            न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।<br>
+            तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति।।
+        </p><div class="shlok-translation-formatted"> 
+    na hi jñānena sadṛśaṃ pavitramiha vidyate |<br>
+    tatsvayaṃ yogasamsiddhaḥ kālenātmani vindati || 4.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Indeed, there is nothing in this world as purifying as knowledge.<br>
+            He who is perfected in Yoga finds it in the Self in due course of time.
+        </div>
+        <a class="commentary-btn" href="english-4-38.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.39 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः।<br>
+            ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    śraddhāvāḻ labhate jñānaṃ tatparaḥ saṃyatendriyaḥ |<br>
+    jñānaṃ labdhvā parāṃ śāntim acireṇādhigacchati || 4.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The man who has faith, who is dedicated, and who has controlled his senses, obtains knowledge.<br>
+            Having obtained knowledge, he quickly attains supreme peace.
+        </div>
+        <a class="commentary-btn" href="english-4-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.40 ॥</div>
+        <p class="shlok-sanskrit">
+            अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति।<br>
+            नायं लोकोऽस्ति न परो न सुखं संशयात्मनः।।
+        </p><div class="shlok-translation-formatted"> 
+    ajñaścāśraddadhānaśca saṃśayātmā vinaśyati |<br>
+    nāyaṃ loko’sti na paro na sukhaṃ saṃśayātmanaḥ || 4.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The ignorant, the faithless, and the doubting soul perishes.<br>
+            For the doubting soul, there is neither this world nor the next, nor happiness.
+        </div>
+        <a class="commentary-btn" href="english-4-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.41 ॥</div>
+        <p class="shlok-sanskrit">
+            योगसन्न्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम्।<br>
+            आत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय।।
+        </p><div class="shlok-translation-formatted"> 
+    yogasannyastakarmāṇaṃ jñānasañchinnasaṃśayam |<br>
+    ātmavantaṃ na karmāṇi nibadhnanti dhanañjaya || 4.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Actions do not bind the self-possessed person, O Dhananjaya (Arjuna),<br>
+            whose actions are renounced by Yoga, and whose doubts are destroyed by knowledge.
+        </div>
+        <a class="commentary-btn" href="english-4-41.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 4.42 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानसिनात्मनः।<br>
+            छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    tasmādajñānasambhūtaṃ hṛtsthaṃ jñānāsinātmanaḥ |<br>
+    chittvainaṃ saṃśayaṃ yogam ātiṣṭhottiṣṭha bhārata || 4.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, having cut with the sword of knowledge this doubt in your heart, born of ignorance,<br>
+            stand up, O Bharata (Arjuna), and take refuge in Yoga (the performance of action without attachment).
+        </div>
+        <a class="commentary-btn" href="english-4-42.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे ज्ञानकर्मसन्न्यासयोगो नाम चतुर्थोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the fourth chapter, entitled Jñāna Karma Sannyāsa Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter3.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter5.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

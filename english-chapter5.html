@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 5: Karma Sannyāsa Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 5: Karma Sannyāsa Yoga (The Yoga of Renunciation of Action) - Verses 5.1 to 5.29</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter4.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter6.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.1 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            सन्न्यासं कर्मणां कृष्ण पुनर्योगं च शंससि।<br>
+            यच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम्।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    sannyāsaṃ karmaṇāṃ kṛṣṇa punaryogaṃ ca śaṃsasi |<br>
+    yacchreya etayorekaṃ tanme brūhi suniścitam || 5.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Krishna, You praise the renunciation of actions (Sannyāsa),<br>
+            and again, Yoga (action without attachment). Tell me definitively which one of these two is superior.
+        </div>
+        <a class="commentary-btn" href="english-5-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.2 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            सन्न्यासः कर्मयोगश्च निःश्रेयसकरावुभौ।<br>
+            तयोस्तु कर्मसन्न्यासात्कर्मयोगो विशिष्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    sannyāsaḥ karmayogaśca niḥśreyasakarāvubhau |<br>
+    tayostu karmasannyāsāt karmayogo viśiṣyate || 5.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Renunciation (Sannyāsa) and the Yoga of Action (Karma Yoga)<br>
+            both lead to the highest good. But of the two, the Yoga of Action is superior to the renunciation of action.
+        </div>
+        <a class="commentary-btn" href="english-5-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.3 ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञेयः स नित्यसन्न्यासी यो न द्वेष्टि न काङ्क्षति।<br>
+            निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    jñeyaḥ sa nityasannyāsī yo na dveṣṭi na kāṅkṣati |<br>
+    nirdvandvo hi mahābāho sukhaṃ bandhāt pramucyate || 5.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He should be known as a perpetual renunciant who neither hates nor desires.<br>
+            For, free from the dualities, O mighty-armed (Arjuna), he is easily liberated from bondage.
+        </div>
+        <a class="commentary-btn" href="english-5-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.4 ॥</div>
+        <p class="shlok-sanskrit">
+            साङ्ख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः।<br>
+            एकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sāṅkhyayogau pṛthagbālāḥ pravadanti na paṇḍitāḥ |<br>
+    ekamapyāsthitaḥ samyagubhayorvindate phalam || 5.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Children (the ignorant) speak of Sāṅkhya (renunciation/knowledge) and Yoga (action) as different, but not the wise.<br>
+            He who is properly established in even one of them obtains the fruit of both.
+        </div>
+        <a class="commentary-btn" href="english-5-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.5 ॥</div>
+        <p class="shlok-sanskrit">
+            यत्साङ्ख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते।<br>
+            एकं साङ्ख्यं च योगं च यः पश्यति स पश्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    yat sāṅkhyaiḥ prāpyate sthānaṃ tadyogairapi gamyate |<br>
+    ekaṃ sāṅkhyaṃ ca yogaṃ ca yaḥ paśyati sa paśyati || 5.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That state which is reached by the Sāṅkhyas is also attained by the Yogis.<br>
+            He who sees Sāṅkhya and Yoga as one, he truly sees.
+        </div>
+        <a class="commentary-btn" href="english-5-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.6 ॥</div>
+        <p class="shlok-sanskrit">
+            सन्न्यासस्तु महाबाहो दुःखमाप्तुमयोगतः।<br>
+            योगयुक्तो मुनिर्ब्रह्म न चिरेणाधिगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    sannyāsastu mahābāho duḥkhamāptumayogataḥ |<br>
+    yogayukto munirbrahma nacireṇādhigacchati || 5.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But renunciation (Sannyāsa) is difficult to attain without Yoga (Karma Yoga), O mighty-armed (Arjuna).<br>
+            A sage endowed with Yoga quickly attains Brahman.
+        </div>
+        <a class="commentary-btn" href="english-5-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.7 ॥</div>
+        <p class="shlok-sanskrit">
+            योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।<br>
+            सर्वभूतात्मभूतात्मा কুর্বন্নपि न लिप्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yogayukto viśuddhātmā vijitātmā jitendriyaḥ |<br>
+    sarvabhūtātmabhūtātmā kurvannapi na lipyate || 5.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who is devoted to Karma Yoga, whose soul is purified, who has conquered the mind and senses,<br>
+            whose Self is the Self of all beings—he is not tainted, even while acting.
+        </div>
+        <a class="commentary-btn" href="english-5-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.8 ॥</div>
+        <p class="shlok-sanskrit">
+            नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित्।<br>
+            पश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन्।।
+        </p><div class="shlok-translation-formatted"> 
+    naiva kiñcit karomīti yukto manyeta tattvavit |<br>
+    paśyañ śṛṇvan spṛśañ jighrann aśnan gacchan svapan śvasan || 5.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The knower of truth, being integrated (with the Self), should think, I am not doing anything at all,<br>
+            even while seeing, hearing, touching, smelling, eating, moving, sleeping, or breathing.
+        </div>
+        <a class="commentary-btn" href="english-5-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.9 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि।<br>
+            इन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्।।
+        </p><div class="shlok-translation-formatted"> 
+    pralapan visṛjan gṛhṇann unmiṣan nimiṣann api |<br>
+    indriyāṇīndriyārtheṣu vartanta iti dhārayan || 5.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            While speaking, letting go, grasping, opening the eyes, or closing the eyes,<br>
+            he holds the conviction that it is the senses that are operating upon their objects.
+        </div>
+        <a class="commentary-btn" href="english-5-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.10 ॥</div>
+        <p class="shlok-sanskrit">
+            ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः।<br>
+            लिप्यते न स पापेन पद्मपत्रमिवाम्भसा।।
+        </p><div class="shlok-translation-formatted"> 
+    brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ |<br>
+    lipyate na sa pāpena padmapatramivāmbhasā || 5.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who performs actions, dedicating them to Brahman and abandoning attachment,<br>
+            is not tainted by sin, just as a lotus leaf remains untouched by water.
+        </div>
+        <a class="commentary-btn" href="english-5-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.11 ॥</div>
+        <p class="shlok-sanskrit">
+            कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि।<br>
+            योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वात्मशुद्धये।।
+        </p><div class="shlok-translation-formatted"> 
+    kāyena manasā buddhyā kevalairindriyairapi |<br>
+    yoginaḥ karma kurvanti saṅgaṃ tyaktvātmaśuddhaye || 5.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Yogis perform actions merely with the body, mind, intellect, or even the senses,<br>
+            giving up attachment, for the purification of the Self.
+        </div>
+        <a class="commentary-btn" href="english-5-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.12 ॥</div>
+        <p class="shlok-sanskrit">
+            युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्।<br>
+            अयुक्तः कामकारेण फले सक्तो निबध्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yuktaḥ karmaphalaṃ tyaktvā śāntimāpnoti naiṣṭhikīm |<br>
+    ayuktaḥ kāmakāreṇa phale sakto nibadhyate || 5.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The integrated person (Yogi), having renounced the fruit of action, attains abiding peace.<br>
+            The non-integrated person, attached to the fruit by the impulse of desire, is bound.
+        </div>
+        <a class="commentary-btn" href="english-5-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.13 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वकर्माणि मनसा सन्न्यस्यास्ते सुखं वशी।<br>
+            नवद्वारे पुरे देही नैव कुर्वन्न कारयन्।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvakarmāṇi manasā sannyasyāste sukhaṃ vaśī |<br>
+    navadvāre pure dehī naiva kurvanna kārayan || 5.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The embodied soul, having mentally renounced all actions, rests happily in the city of nine gates (the body),<br>
+            neither acting nor causing action to be done.
+        </div>
+        <a class="commentary-btn" href="english-5-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.14 ॥</div>
+        <p class="shlok-sanskrit">
+            न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः।<br>
+            न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते।।
+        </p><div class="shlok-translation-formatted"> 
+    na kartṛtvaṃ na karmāṇi lokasya sṛjati prabhuḥ |<br>
+    na karmaphalasaṃyogaṃ svabhāvastu pravartate || 5.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Lord (the embodied soul) does not create agency (doership) or actions for the world,<br>
+            nor does He create the connection with the fruits of action. It is nature (Prakriti) that operates.
+        </div>
+        <a class="commentary-btn" href="english-5-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.15 ॥</div>
+        <p class="shlok-sanskrit">
+            नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः।<br>
+            अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः।।
+        </p><div class="shlok-translation-formatted"> 
+    nādatte kasyacit pāpaṃ na caiva sukṛtaṃ vibhuḥ |<br>
+    ajñānenāvṛtaṃ jñānaṃ tena muhyanti jantavaḥ || 5.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The All-pervading Lord does not accept the sin or even the merit of anyone.<br>
+            Knowledge is enveloped by ignorance; thereby creatures are deluded.
+        </div>
+        <a class="commentary-btn" href="english-5-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.16 ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः।<br>
+            तेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्।।
+        </p><div class="shlok-translation-formatted"> 
+    jñānena tu tadajñānaṃ yeṣāṃ nāśitamātmanaḥ |<br>
+    teṣāmādityavajjñānaṃ prakāśayati tatparam || 5.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But for those whose ignorance is destroyed by knowledge of the Self,<br>
+            their knowledge, like the sun, reveals the Supreme (Reality).
+        </div>
+        <a class="commentary-btn" href="english-5-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.17 ॥</div>
+        <p class="shlok-sanskrit">
+            तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः।<br>
+            गच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः।।
+        </p><div class="shlok-translation-formatted"> 
+    tadbuddhaya-stadātmāna-stanniṣṭhā-statparāyaṇāḥ |<br>
+    gacchantyapunarāvṛttiṃ jñānanirdhūtakalmaṣāḥ || 5.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those whose intellect is centered in That, whose Self is That, who are established in That, and who have That as the supreme goal,<br>
+            their sins being dispelled by knowledge, they reach the state from which there is no return.
+        </div>
+        <a class="commentary-btn" href="english-5-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.18 ॥</div>
+        <p class="shlok-sanskrit">
+            विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि।<br>
+            शुनि चैव श्वपाके च पण्डिताः समदर्शिनः।।
+        </p><div class="shlok-translation-formatted"> 
+    vidyāvinayasampanne brāhmaṇe gavi hastini |<br>
+    śuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ || 5.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The wise, equipped with knowledge and humility, look with equal eye<br>
+            on a Brāhmaṇa endowed with learning and humility, a cow, an elephant, a dog, and a dog-eater.
+        </div>
+        <a class="commentary-btn" href="english-5-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.19 ॥</div>
+        <p class="shlok-sanskrit">
+            इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः।<br>
+            निर्दोषं हि समं ब्रह्म तस्माद् ब्रह्मणि ते स्थिताः।।
+        </p><div class="shlok-translation-formatted"> 
+    ihaiva tairjitaḥ sargo yeṣāṃ sāmye sthitaṃ manaḥ |<br>
+    nirdoṣaṃ hi samaṃ brahma tasmādbrahmaṇi te sthitāḥ || 5.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Even here (in this world) is rebirth conquered by those whose mind is established in equality.<br>
+            Since Brahman is flawless and the same in all, therefore they are established in Brahman.
+        </div>
+        <a class="commentary-btn" href="english-5-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.20 ॥</div>
+        <p class="shlok-sanskrit">
+            न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्।<br>
+            स्थिरबुद्धिरसम्मूढो ब्रह्मविद् ब्रह्मणि स्थितः।।
+        </p><div class="shlok-translation-formatted"> 
+    na prahṛṣyetpriyaṃ prāpya nodvijetprāpya cāpriyam |<br>
+    sthirabuddhirasammūḍho brahmavidbrahmaṇi sthitaḥ || 5.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One should not rejoice on obtaining what is pleasant, nor grieve on obtaining what is unpleasant.<br>
+            The person with steady intellect, undeluded, knowing Brahman, is established in Brahman.
+        </div>
+        <a class="commentary-btn" href="english-5-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.21 ॥</div>
+        <p class="shlok-sanskrit">
+            बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्।<br>
+            स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते।।
+        </p><div class="shlok-translation-formatted"> 
+    bāhyasparśeṣvasaktātmā vindatyātmani yatsukham |<br>
+    sa brahmayogayuktātmā sukhamakṣayamaśnute || 5.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He whose mind is unattached to external contacts (sense objects) finds happiness in the Self (within).<br>
+            Such a soul, devoted to the Yoga of Brahman, enjoys everlasting happiness.
+        </div>
+        <a class="commentary-btn" href="english-5-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.22 ॥</div>
+        <p class="shlok-sanskrit">
+            ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।<br>
+            आद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः।।
+        </p><div class="shlok-translation-formatted"> 
+    ye hi saṃsparśajā bhogā duḥkhayonaya eva te |<br>
+    ādyantavantaḥ kaunteya na teṣu ramate budhaḥ || 5.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The enjoyments born of sense contacts are indeed sources of misery.<br>
+            They have a beginning and an end, O son of Kunti (Arjuna); the wise man does not delight in them.
+        </div>
+        <a class="commentary-btn" href="english-5-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.23 ॥</div>
+        <p class="shlok-sanskrit">
+            शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्।<br>
+            कामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः।।
+        </p><div class="shlok-translation-formatted"> 
+    śaknotīhaiva yaḥ soḍhuṃ prāk śarīravimokṣaṇāt |<br>
+    kāmakrodhodbhavaṃ vegaṃ sa yuktaḥ sa sukhī naraḥ || 5.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who is able to withstand the impulse of desire and anger here in this world,<br>
+            before he is released from the body, he is integrated (Yuktah), and he is a happy man.
+        </div>
+        <a class="commentary-btn" href="english-5-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.24 ॥</div>
+        <p class="shlok-sanskrit">
+            योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः।<br>
+            स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    yo’ntaḥsukho’ntarārāmastathāntarjyotireva yaḥ |<br>
+    sa yogī brahmanirvāṇaṃ brahmabhūto’dhigacchati || 5.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who is happy within, who rejoices within, and who is illuminated within (by the inner light),<br>
+            that Yogi, having become Brahman, attains the freedom of Brahman (Brahmanirvana).
+        </div>
+        <a class="commentary-btn" href="english-5-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.25 ॥</div>
+        <p class="shlok-sanskrit">
+            लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः।<br>
+            छिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः।।
+        </p><div class="shlok-translation-formatted"> 
+    labhante brahmanirvāṇamṛṣayaḥ kṣīṇakalmaṣāḥ |<br>
+    chinnadvaidhā yatātmānaḥ sarvabhūtahite ratāḥ || 5.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Sages (Rishis) whose sins are destroyed, whose doubts are resolved, whose minds are disciplined,<br>
+            and who are engaged in the welfare of all beings, attain the freedom of Brahman (Brahmanirvana).
+        </div>
+        <a class="commentary-btn" href="english-5-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.26 ॥</div>
+        <p class="shlok-sanskrit">
+            कामक्रोधवियुक्तानां यतीनां यतचेतसाम्।<br>
+            अभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    kāmakrodhaviyuktānāṃ yatīnāṃ yatacetasām |<br>
+    abhito brahmanirvāṇaṃ vartate viditātmanām || 5.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For the ascetics (Yatis) who are free from desire and anger, who have controlled their thoughts,<br>
+            and who have realized the Self, the freedom of Brahman is near at hand.
+        </div>
+        <a class="commentary-btn" href="english-5-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.27 ॥</div>
+        <p class="shlok-sanskrit">
+            स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः।<br>
+            प्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ।।
+        </p><div class="shlok-translation-formatted"> 
+    sparśān kṛtvā bāhyāṃścakṣuścaivāntare bhruvoḥ |<br>
+    prāṇāpānau samau kṛtvā nāsābhyantaracāriṇau || 5.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Shutting out external contacts and fixing the gaze between the eyebrows,<br>
+            equalizing the incoming and outgoing breaths moving within the nostrils,
+        </div>
+        <a class="commentary-btn" href="english-5-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.28 ॥</div>
+        <p class="shlok-sanskrit">
+            यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः।<br>
+            विगतेच्छाभयक्रोधो यः सदा मुक्त एव सः।।
+        </p><div class="shlok-translation-formatted"> 
+    yatendriyamanobuddhirmunirmokṣaparāyaṇaḥ |<br>
+    vigatecchābhayakrodho yaḥ sadā mukta eva saḥ || 5.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The sage, whose senses, mind, and intellect are controlled, who is devoted to liberation,<br>
+            and who is free from desire, fear, and anger—he is indeed eternally liberated.
+        </div>
+        <a class="commentary-btn" href="english-5-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 5.29 ॥</div>
+        <p class="shlok-sanskrit">
+            भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्।<br>
+            सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    bhoktāraṃ yajñatapasāṃ sarvalokamaheśvaram |<br>
+    suhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati || 5.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowing Me as the enjoyer of all sacrifices and austerities, the great Lord of all worlds,<br>
+            and the friend of all beings, one attains peace.
+        </div>
+        <a class="commentary-btn" href="english-5-29.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे कर्मसन्न्यासयोगो नाम पञ्चमोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the fifth chapter, entitled Karma Sannyāsa Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter4.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter6.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

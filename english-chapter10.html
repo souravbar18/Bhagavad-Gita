@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 10: Vibhūti Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 10: Vibhūti Yoga (The Yoga of Divine Glories) - Verses 10.1 to 10.42</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter9.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter11.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.1 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            भूय एव महाबाहो श्रृणु मे परमं वचः।<br>
+            यत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    bhūya eva mahābāho śṛṇu me paramaṃ vacaḥ |<br>
+    yatte’haṃ prīyamāṇāya vakṣyāmi hitakāmyayā || 10.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Again, O mighty-armed (Arjuna), hear My supreme word,<br>
+            which I shall speak to you, as you are greatly beloved, out of desire for your welfare.
+        </div>
+        <a class="commentary-btn" href="english-10-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.2 ॥</div>
+        <p class="shlok-sanskrit">
+            न मे विदुः सुरगणाः प्रभवं न महर्षयः।<br>
+            अहमादिर्हि देवानां महर्षीणां च सर्वशः।।
+        </p><div class="shlok-translation-formatted"> 
+    na me viduḥ suragaṇāḥ prabhavaṃ na maharṣayaḥ |<br>
+    ahamādirhi devānāṃ maharṣīṇāṃ ca sarvaśaḥ || 10.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Neither the hosts of gods nor the great sages know My origin or My majesty (Prabhava).<br>
+            For I am the source of the gods and the great sages in all respects.
+        </div>
+        <a class="commentary-btn" href="english-10-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.3 ॥</div>
+        <p class="shlok-sanskrit">
+            यो मामजमनादिं च वेत्ति लोकमहेश्वरम्।<br>
+            असम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yo māmajamanādiṃ ca vetti loka-maheśvaram |<br>
+    asammūḍhaḥ sa martyeṣu sarvapāpaiḥ pramucyate || 10.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who knows Me as unborn, without beginning, and the great Lord of the worlds,<br>
+            he, undeluded among mortals, is liberated from all sins.
+        </div>
+        <a class="commentary-btn" href="english-10-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 10.4 - 10.5 (Divine Attributes) ॥</div>
+        <p class="shlok-sanskrit">
+            बुद्धिर्ज्ञानमसंमोहः क्षमा सत्यं दमः शमः।<br>
+            सुखं दुःखं भवोऽभावो भयं चाभयमेव च।। (10.4)<br>
+            अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः।<br>
+            भवन्ति भावा भूतानां मत्त एव पृथग्विधाः।। (10.5)
+        </p><div class="shlok-translation-formatted"> 
+    buddhirjñānamasammohaḥ kṣamā satyaṃ damaḥ śamaḥ |<br>
+    sukhaṃ duḥkhaṃ bhavo’bhāvo bhayaṃ cābhayameva ca || 10.4 ||<br><br>
+    ahiṃsā samatā tuṣṭistapo dānaṃ yaśo’yaśaḥ |<br>
+    bhavanti bhāvā bhūtānāṃ matta eva pṛthagvidhāḥ || 10.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Intellect, knowledge, freedom from delusion, forgiveness, truth, self-control, calmness, (10.4)<br>
+            happiness, sorrow, existence, non-existence, fear, and also fearlessness—(10.4)<br>
+            non-violence, impartiality, contentment, austerity, charity, fame, and infamy—(10.5)<br>
+            these diverse dispositions of beings arise from Me alone. (10.5)
+        </div>
+        <a class="commentary-btn" href="english-10-4-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.6 ॥</div>
+        <p class="shlok-sanskrit">
+            महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा।<br>
+            मद्भावा मानसा जाता येषां लोक इमाः प्रजाः।।
+        </p><div class="shlok-translation-formatted"> 
+    maharṣayaḥ sapta pūrve catvāro manavastathā |<br>
+    madbhāvā mānasā jātā yeṣāṃ loka imāḥ prajāḥ || 10.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The seven great sages (Maharṣis) of old, and the four Manus (progenitors of mankind),<br>
+            were born of My mind (Mād-bhāvāḥ mānasāḥ), and from them came all the creatures in the world.
+        </div>
+        <a class="commentary-btn" href="english-10-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.7 ॥</div>
+        <p class="shlok-sanskrit">
+            एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः।<br>
+            सोऽविकम्पेन योगेन युज्यते नात्र संशयः।।
+        </p><div class="shlok-translation-formatted"> 
+    etāṃ vibhūtiṃ yogaṃ ca mama yo vetti tattvataḥ |<br>
+    so’vikampena yogena yujyate nātra saṃśayaḥ || 10.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who knows in truth this glory (Vibhūti) and power of Yoga (Yogam) of Mine,<br>
+            is united with Me by unswerving Yoga; there is no doubt about this.
+        </div>
+        <a class="commentary-btn" href="english-10-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.8 ॥</div>
+        <p class="shlok-sanskrit">
+            अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते।<br>
+            इति मत्वा भजन्ते मां बुधा भावसमन्विताः।।
+        </p><div class="shlok-translation-formatted"> 
+    ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate |<br>
+    iti matvā bhajante māṃ budhā bhāvasamanvitāḥ || 10.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the source of all; everything proceeds from Me.<br>
+            Knowing this, the wise, endowed with realization (Bhāva), worship Me.
+        </div>
+        <a class="commentary-btn" href="english-10-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.9 ॥</div>
+        <p class="shlok-sanskrit">
+            मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्।<br>
+            कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च।।
+        </p><div class="shlok-translation-formatted"> 
+    maccittā madgataprāṇā bodhayantaḥ parasparam |<br>
+    kathayantaśca māṃ nityaṃ tuṣyanti ca ramanti ca || 10.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            With their minds fixed on Me, their lives devoted to Me, enlightening one another,<br>
+            and always speaking of Me, they are content and rejoice.
+        </div>
+        <a class="commentary-btn" href="english-10-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.10 ॥</div>
+        <p class="shlok-sanskrit">
+            तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम्।<br>
+            ददामि बुद्धियोगं तं येन मामुपयान्ति ते।।
+        </p><div class="shlok-translation-formatted"> 
+    teṣāṃ satatayuktānāṃ bhajatāṃ prītipūrvakam |<br>
+    dadāmi buddhiyogaṃ taṃ yena māmupayānti te || 10.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            To those who are constantly united (with Me) and worship Me with love,<br>
+            I give the Yoga of the intellect (Buddhi Yoga) by which they come to Me.
+        </div>
+        <a class="commentary-btn" href="english-10-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.11 ॥</div>
+        <p class="shlok-sanskrit">
+            तेषामेवानुकम्पार्थमहमज्ञानजं तमः।<br>
+            नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता।।
+        </p><div class="shlok-translation-formatted"> 
+    teṣāmevānukampārthamahamajñānajaṃ tamaḥ |<br>
+    nāśayāmyātmabhāvastho jñānadīpena bhāsvatā || 10.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Out of compassion for them alone, I, dwelling in their heart (Ātmā-bhāvasthaḥ),<br>
+            destroy the darkness born of ignorance by the shining lamp of knowledge.
+        </div>
+        <a class="commentary-btn" href="english-10-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 10.12 - 10.13 (Arjuna's Response) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            परं ब्रह्म परं धाम पवित्रं परमं भवान्।<br>
+            पुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम्।। (10.12)<br>
+            आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा।<br>
+            असितो देवलो व्यासः स्वयं चैव ब्रवीषि मे।। (10.13)
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    paraṃ brahma paraṃ dhāma pavitraṃ paramaṃ bhavān |<br>
+    puruṣaṃ śāśvataṃ divyamādidevamajaṃ vibhum || 10.12 ||<br><br>
+    āhustvāmṛṣayaḥ sarve devarṣirnāradastathā |<br>
+    asito devalo vyāsaḥ svayaṃ caiva bravīṣi me || 10.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: You are the Supreme Brahman, the Supreme Abode, the Supreme Purifier—(10.12)<br>
+            the eternal, divine Person, the primeval God (Ādi-deva), the unborn (Aja), the omnipresent (Vibhu). (10.12)<br>
+            All the sages declare You thus, as does the divine sage Nārada, and Asita, Devala, and Vyāsa.<br>
+            And now You Yourself are saying it to me. (10.13)
+        </div>
+        <a class="commentary-btn" href="english-10-12-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.14 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वमेतदृतं मन्ये यन्मां वदसि केशव।<br>
+            न हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvametadṛtaṃ manye yanmāṃ vadasi keśava |<br>
+    na hi te bhagavanvyaktiṃ vidurdevā na dānavāḥ || 10.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Keśava (Krishna), I believe all this to be true that You say to me.<br>
+            Indeed, O Blessed Lord (Bhagavan), neither the gods nor the demons know Your manifestation.
+        </div>
+        <a class="commentary-btn" href="english-10-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.15 ॥</div>
+        <p class="shlok-sanskrit">
+            स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम।<br>
+            भूतभावन भूतेश देवदेव जगत्पते।।
+        </p><div class="shlok-translation-formatted"> 
+    svayamevātmanātmānaṃ vettha tvaṃ puruṣottama |<br>
+    bhūtabhāvana bhūteśa devadeva jagatpate || 10.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Verily, You alone know Yourself by Yourself, O Supreme Person (Puruṣottama),<br>
+            O source of all beings, O Lord of beings, O God of gods, O Ruler of the world!
+        </div>
+        <a class="commentary-btn" href="english-10-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.16 ॥</div>
+        <p class="shlok-sanskrit">
+            वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः।<br>
+            याभिर्विभूतिभीर्लोकानिमांस्त्वं व्याप्य तिष्ठसि।।
+        </p><div class="shlok-translation-formatted"> 
+    vaktumarhasyaśeṣeṇa divyā hyātmavibhūtayaḥ |<br>
+    yābhirvibhūtib hirlokānimāṃstvaṃ vyāpya tiṣṭhasi || 10.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You should fully tell me of Your divine glories (Vibhūtis),<br>
+            by which glories You pervade and abide in these worlds.
+        </div>
+        <a class="commentary-btn" href="english-10-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.17 ॥</div>
+        <p class="shlok-sanskrit">
+            कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन्।<br>
+            केषु केषु च भावेषु चिन्त्योऽसि भगवन्मया।।
+        </p><div class="shlok-translation-formatted"> 
+    kathaṃ vidyāmahaṃ yogiṃstvāṃ sadā paricintayan |<br>
+    keṣu keṣu ca bhāveṣu cintyo’si bhagavanmayā || 10.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            How shall I know You, O Yogi, by meditating on You always?<br>
+            In what different aspects should You be thought of by me, O Blessed Lord (Bhagavan)?
+        </div>
+        <a class="commentary-btn" href="english-10-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.18 ॥</div>
+        <p class="shlok-sanskrit">
+            विस्तरेणात्मनो योगं विभूतिं च जनार्दन।<br>
+            भूयः कथय तृप्तिर्हि श्रृण्वतो नास्ति मेऽमृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    vistareṇātmano yogaṃ vibhūtiṃ ca janārdana |<br>
+    bhūyaḥ kathaya tṛptirhi śṛṇvato nāsti me’mṛtam || 10.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Tell me again in detail of Your Yoga and Your glory, O Janārdana (Krishna).<br>
+            For I am not satiated by hearing Your nectar-like words.
+        </div>
+        <a class="commentary-btn" href="english-10-18.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.19 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            हन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः।<br>
+            प्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    hanta te kathayiṣyāmi divyā hyātmavibhūtayaḥ |<br>
+    prādhānyataḥ kuruśreṣṭha nāstyanto vistarasya me || 10.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Well, I will declare to you My divine glories,<br>
+            the chief ones only, O best of the Kurus (Arjuna), for there is no end to My expanse.
+        </div>
+        <a class="commentary-btn" href="english-10-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.20 ॥</div>
+        <p class="shlok-sanskrit">
+            अहमात्मा गुडाकेश सर्वभूताशयस्थितः।<br>
+            अहमादिश्च मध्यं च भूतानामन्त एव च।।
+        </p><div class="shlok-translation-formatted"> 
+    ahamātmā guḍākeśa sarvabhūtāśayasthitaḥ |<br>
+    ahamādiśca madhyaṃ ca bhūtānāmant eva ca || 10.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the Self (Ātmā) dwelling in the hearts of all beings, O Guḍākeśa (Arjuna).<br>
+            I am the beginning, the middle, and also the end of all beings.
+        </div>
+        <a class="commentary-btn" href="english-10-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.21 ॥</div>
+        <p class="shlok-sanskrit">
+            आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान्।<br>
+            मरीचिर्मरुतामस्मि नक्षत्राणामहं शशी।।
+        </p><div class="shlok-translation-formatted"> 
+    ādityānāmahaṃ viṣṇurjyotiṣāṃ raviramśumān |<br>
+    marīcirmarutāmasmi nakṣatrāṇāmahaṃ śaśī || 10.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the twelve Ādityas (solar deities), I am Viṣṇu. Among luminaries, I am the radiant Sun.<br>
+            I am Marīci among the Maruts (wind gods), and among the stars, I am the Moon.
+        </div>
+        <a class="commentary-btn" href="english-10-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.22 ॥</div>
+        <p class="shlok-sanskrit">
+            वेदानां सामवेदोऽस्मि देवानामस्मि वासवः।<br>
+            इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना।।
+        </p><div class="shlok-translation-formatted"> 
+    vedānāṃ sāmavedo’smi devānāmasmi vāsavaḥ |<br>
+    indriyāṇāṃ manaścāsmi bhūtānāmasmi cetanā || 10.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the Vedas, I am the Sāma Veda. Among the gods, I am Vāsava (Indra).<br>
+            Among the senses, I am the mind (Manas), and in living beings, I am consciousness (Cetanā).
+        </div>
+        <a class="commentary-btn" href="english-10-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.23 ॥</div>
+        <p class="shlok-sanskrit">
+            रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम्।<br>
+            वसूनां पावकश्चास्मि मेरुः शिखरिणामहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    rudrāṇāṃ śaṅkaraścāsmi vitteśo yakṣarakṣasām |<br>
+    vasūnāṃ pāvakaścāsmi meruḥ śikhariṇāmaham || 10.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the eleven Rudras, I am Śaṅkara (Shiva). Among Yakṣas and Rākṣasas (demons), I am the Lord of wealth (Kubera).<br>
+            Among the eight Vasus, I am Pāvaka (fire), and among mountains, I am Meru.
+        </div>
+        <a class="commentary-btn" href="english-10-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.24 ॥</div>
+        <p class="shlok-sanskrit">
+            पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम्।<br>
+            सेनानीनामहं स्कन्दः सरसामस्मि सागरः।।
+        </p><div class="shlok-translation-formatted"> 
+    purodhasāṃ ca mukhyaṃ māṃ viddhi pārtha bṛhaspatim |<br>
+    senānīnāmahaṃ skandaḥ sarasāmasmi sāgaraḥ || 10.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the chief priests, know Me to be Bṛhaspati, O Pārtha.<br>
+            Among commanders, I am Skanda (Kārtikeya), and among reservoirs of water, I am the Ocean.
+        </div>
+        <a class="commentary-btn" href="english-10-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.25 ॥</div>
+        <p class="shlok-sanskrit">
+            महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम्।<br>
+            यज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः।।
+        </p><div class="shlok-translation-formatted"> 
+    maharṣīṇāṃ bhṛgurahaṃ girāmasmyekamakṣaram |<br>
+    yajñānāṃ japayajño’smi sthāvarāṇāṃ himālayaḥ || 10.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the great sages, I am Bhṛgu. Among words, I am the single syllable Om (Akṣara).<br>
+            Among sacrifices, I am the sacrifice of silent repetition (Japa Yajña), and among things immovable, I am the Himālaya.
+        </div>
+        <a class="commentary-btn" href="english-10-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.26 ॥</div>
+        <p class="shlok-sanskrit">
+            अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः।<br>
+            गन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः।।
+        </p><div class="shlok-translation-formatted"> 
+    aśvatthaḥ sarvavṛkṣāṇāṃ devarṣīṇāṃ ca nāradaḥ |<br>
+    gandharvāṇāṃ citrarathaḥ siddhānāṃ kapilo muniḥ || 10.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among all trees, I am the Aśvattha (Peepal) tree. Among divine sages (Devarṣis), I am Nārada.<br>
+            Among the Gandharvas (celestial musicians), I am Citraratha, and among the perfected ones (Siddhas), I am the sage Kapila.
+        </div>
+        <a class="commentary-btn" href="english-10-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.27 ॥</div>
+        <p class="shlok-sanskrit">
+            उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम्।<br>
+            ऐरावतं गजेन्द्राणां नराणां च नराधिपम्।।
+        </p><div class="shlok-translation-formatted"> 
+    uccaiḥśravasamāśvānāṃ viddhi mām amṛtodbhavam |<br>
+    airāvataṃ gajendrāṇāṃ narāṇāṃ ca narādhipam || 10.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know Me to be Uccaiḥśravas among horses, born of the nectar (Amṛta).<br>
+            Among lordly elephants, I am Airāvata, and among men, the king.
+        </div>
+        <a class="commentary-btn" href="english-10-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.28 ॥</div>
+        <p class="shlok-sanskrit">
+            आयुधानामहं वज्रं धेनूनामस्मि कामधुक्।<br>
+            प्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः।।
+        </p><div class="shlok-translation-formatted"> 
+    āyudhānāmahaṃ vajraṃ dhenūnāmasmi kāmadhuk |<br>
+    prajanaścāsmi kandarpaḥ sarpāṇāmasmi vāsukiḥ || 10.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among weapons, I am the thunderbolt (Vajra). Among cows, I am the wish-fulfilling Kāmadhuk.<br>
+            I am Kandarpa (Kāmadeva/Eros) for generating offspring, and among serpents, I am Vāsuki.
+        </div>
+        <a class="commentary-btn" href="english-10-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.29 ॥</div>
+        <p class="shlok-sanskrit">
+            अनन्तश्चास्मि नागानां वरुणो यादसामहम्।<br>
+            पितॄणामर्यमा चास्मि यमः संयमतामहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    anantaścāsmi nāgānāṃ varuṇo yādasāmaham |<br>
+    pitṝṇāmaryamā cāsmi yamaḥ saṃyamatāmaham || 10.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the Nāgas (snake deities), I am Ananta. Among water-deities, I am Varuṇa.<br>
+            Among the ancestors (Pitṛs), I am Aryamā, and among those who regulate, I am Yama.
+        </div>
+        <a class="commentary-btn" href="english-10-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.30 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम्।<br>
+            मृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    prahlādaścāsmi daityānāṃ kālaḥ kalayatāmaham |<br>
+    mṛgāṇāṃ ca mṛgendro’haṃ vainateyaśca pakṣiṇām || 10.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the Daityas (demons), I am Prahlāda. Among reckoners (of time), I am Time (Kāla).<br>
+            Among beasts, I am the king of beasts (Lion), and among birds, I am Vainateya (Garuḍa).
+        </div>
+        <a class="commentary-btn" href="english-10-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.31 ॥</div>
+        <p class="shlok-sanskrit">
+            पवनः पवतामस्मि रामः शस्त्रभृतामहम्।<br>
+            झषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी।।
+        </p><div class="shlok-translation-formatted"> 
+    pavanaḥ pavatāmasmi rāmaḥ śastrab hṛtāmaham |<br>
+    jhaṣāṇāṃ makaraścāsmi srotasāmasmi jāhnavī || 10.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among purifiers (or winds), I am the Wind (Pavana). Among wielders of weapons, I am Rāma.<br>
+            Among fishes, I am the Shark (Makara), and among rivers, I am the Jāhnavī (Ganges).
+        </div>
+        <a class="commentary-btn" href="english-10-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.32 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन।<br>
+            अध्यात्मविद्या विद्यानां वादः प्रवदतामहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sargāṇāmādirantaśca madhyaṃ caivāhamarjuna |<br>
+    adhyātmavidyā vidyānāṃ vādaḥ pravadatāmaham || 10.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among creations, I am the beginning, the end, and also the middle, O Arjuna.<br>
+            Among sciences, I am the spiritual science of the Self (Adhyātma Vidyā), and I am the reasoned debate (Vāda) among speakers.
+        </div>
+        <a class="commentary-btn" href="english-10-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.33 ॥</div>
+        <p class="shlok-sanskrit">
+            अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च।<br>
+             अहमेवाक्षय: कालो धाताहं विश्वतोमुख: ||
+        </p><div class="shlok-translation-formatted"> 
+    akṣarāṇāmakāro’smi dvandvaḥ sāmāsikasya ca |<br>
+    ahamevākṣayaḥ kālo dhātāhaṃ viśvatomukhaḥ || 10.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among letters, I am the letter 'A'. Among compound words, I am the Dvandva (copulative compound).<br>
+            I alone am the inexhaustible Time (Akṣaya Kāla), and I am the Creator (Dhātā) whose face is everywhere (Viśvato-mukhaḥ).
+        </div>
+        <a class="commentary-btn" href="english-10-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.34 ॥</div>
+        <p class="shlok-sanskrit">
+            मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम्।<br>
+            कीर्तिः श्रीर्वाक् च नारीणां स्मृतिर्मेधा धृतिः क्षमा।।
+        </p><div class="shlok-translation-formatted"> 
+    mṛtyuḥ sarvaharaścāhamudbhavaśca bhaviṣyatām |<br>
+    kīrtiḥ śrīrvākca nārīṇāṃ smṛtirmedhā dhṛtiḥ kṣamā || 10.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am all-devouring Death, and the origin of future beings.<br>
+            Among feminine qualities, I am fame (Kīrti), prosperity (Śrī), speech (Vāk), memory (Smṛti), intelligence (Medhā), firmness (Dhṛti), and forgiveness (Kṣamā).
+        </div>
+        <a class="commentary-btn" href="english-10-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.35 ॥</div>
+        <p class="shlok-sanskrit">
+            बृहत्साम तथा साम्नां गायत्री छन्दसामहम्।<br>
+            मासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः।।
+        </p><div class="shlok-translation-formatted"> 
+    bṛhatsāma tathā sāmnāṃ gāyatrī chandasāmaham |<br>
+    māsānāṃ mārgaśīrṣo’hamṛtūnāṃ kusumākaraḥ || 10.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among Sāma hymns, I am the Bṛhat Sāma. Among metres, I am the Gāyatrī.<br>
+            Among months, I am Mārgaśīrṣa (November-December), and among seasons, I am the season of flowers (Spring).
+        </div>
+        <a class="commentary-btn" href="english-10-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.36 ॥</div>
+        <p class="shlok-sanskrit">
+            द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम्।<br>
+            जयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    dyūtaṃ chalayatāmasmi tejastejasvināmaham |<br>
+    jayo’smi vyavasāyo’smi sattvaṃ sattvavatāmaham || 10.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am gambling among cheats, and the splendor of the splendid.<br>
+            I am victory (Jaya), I am determination (Vyavasāya), and I am the goodness (Sattva) of the good.
+        </div>
+        <a class="commentary-btn" href="english-10-36.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.37 ॥</div>
+        <p class="shlok-sanskrit">
+            वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः।<br>
+            मुनीनामप्यहं व्यासः कवीनामुशना कविः।।
+        </p><div class="shlok-translation-formatted"> 
+    vṛṣṇīnāṃ vāsudevo’smi pāṇḍavānāṃ dhanañjayaḥ |<br>
+    munīnāmapyahaṃ vyāsaḥ kavīnāmuśanā kaviḥ || 10.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among the Vṛṣṇis, I am Vāsudeva (Krishna), and among the Pāṇḍavas, I am Dhanañjaya (Arjuna).<br>
+            Among the sages, I am Vyāsa, and among the poets, I am Uśanā (Śukrācārya), the sage.
+        </div>
+        <a class="commentary-btn" href="english-10-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.38 ॥</div>
+        <p class="shlok-sanskrit">
+            दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम्।<br>
+            मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    daṇḍo damayatāmasmi nītirasmi jigīṣatām |<br>
+    maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatāmaham || 10.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I am the rod of punishment (Daṇḍa) among those who subjugate, and I am the ethical policy (Nīti) of those who seek victory.<br>
+            I am silence (Mauna) among secrets, and I am the knowledge (Jñāna) of the knowledgeable.
+        </div>
+        <a class="commentary-btn" href="english-10-38.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.39 ॥</div>
+        <p class="shlok-sanskrit">
+            यच्चापि सर्वभूतानां बीजं तदहमर्जुन।<br>
+            न तदस्ति विना यत्स्यान्मया भूतं चराचरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yaccāpi sarvabhūtānāṃ bījaṃ tadahamarjuna |<br>
+    na tadasti vinā yatsyānmaya bhūtaṃ carācaram || 10.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And whatever is the seed of all beings, that am I, O Arjuna.<br>
+            There is no being, whether moving or unmoving, that can exist without Me.
+        </div>
+        <a class="commentary-btn" href="english-10-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.40 ॥</div>
+        <p class="shlok-sanskrit">
+            नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप।<br>
+            एष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया।।
+        </p><div class="shlok-translation-formatted"> 
+    nānto’sti mama divyānāṃ vibhūtīnāṃ parantapa |<br>
+    eṣa tūddeśataḥ prokto vibhūtervistaro mayā || 10.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There is no end to My divine glories, O scorcher of foes (Arjuna).<br>
+            This description of My glory has been stated by Me only by way of illustration.
+        </div>
+        <a class="commentary-btn" href="english-10-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.41 ॥</div>
+        <p class="shlok-sanskrit">
+            यद्यद् विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा।<br>
+            तत्तदेवावगच्छ त्वं मम तेजोंशसम्भवम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yad yad vibhūtimat sattvaṃ śrīmadūrjitameva vā |<br>
+    tattadevāvagaccha tvaṃ mama tejo’ṃśasambhavam || 10.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever being is glorious, prosperous, or powerful,<br>
+            know that all such existence has sprung from but a spark of My splendor.
+        </div>
+        <a class="commentary-btn" href="english-10-41.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 10.42 ॥</div>
+        <p class="shlok-sanskrit">
+            अथवा बहुनैतेन किं ज्ञातेन तवार्जुन।<br>
+            विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्।।
+        </p><div class="shlok-translation-formatted"> 
+    atha vā bahunaitena kiṃ jñātena tavārjuna |<br>
+    viṣṭabhyāhamidaṃ kṛtsnamekāṃśena sthito jagat || 10.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But of what use is this detailed knowledge to you, O Arjuna?<br>
+            With a single fragment (Ekāṁśena) of Myself, I stand pervading and sustaining this entire universe.
+        </div>
+        <a class="commentary-btn" href="english-10-42.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे विभूतियोगो नाम दशमोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the tenth chapter, entitled Vibhūti Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter9.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter11.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

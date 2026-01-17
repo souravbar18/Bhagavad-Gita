@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 17: Shraddhatraya Vibhaga Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 17: Śraddhātraya Vibhāga Yoga (The Yoga of the Division of the Threefold Faith) - Verses 17.1 to 17.28</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter16.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter18.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.1 (The Question on Faith) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            ये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः।<br>
+            तेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    ye śāstravidhimutsṛjya yajante śraddhayānvitāḥ |<br>
+    teṣāṃ niṣṭhā tu kā kṛṣṇa sattvamāho rajastamaḥ || 17.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Kṛṣṇa, what is the status (Niṣṭhā tu kā) of those who, abandoning the ordinances of the scriptures (Ye Śāstra-vidhim Utsṛjya),<br>
+            yet worship with faith (Yajante Śraddhayānvitāḥ)? Is it Sattva, Rajas, or Tamas?
+        </div>
+        <a class="commentary-btn" href="english-17-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.2 (Threefold Faith) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            त्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा।<br>
+            सात्त्विकी राजसी चैव तामसी चेति तां शृणु।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    trividhā bhavati śraddhā dehināṃ sā svabhāvajā |<br>
+    sāttvikī rājasī caiva tāmasī ceti tāṃ śṛṇu || 17.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: The faith (Śraddhā) of the embodied (Dehināṁ) is of three kinds (Trividhā Bhavati), born of their nature (Sā Svabhāva-jā):<br>
+            Sāttvika (of goodness), Rājasī (of passion), and Tāmasī (of ignorance). Hear about them.
+        </div>
+        <a class="commentary-btn" href="english-17-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.3 (Nature of Faith) ॥</div>
+        <p class="shlok-sanskrit">
+            सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत।<br>
+            श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः।।
+        </p><div class="shlok-translation-formatted"> 
+    sattvānurūpā sarvasya śraddhā bhavati bhārata |<br>
+    śraddhāmayo’yaṃ puruṣo yo yacchraddhaḥ sa eva saḥ || 17.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The faith of every man (Sarvasya Śraddhā) conforms to his inner nature (Sattvānurūpā), O Bhārata.<br>
+            Man is made of his faith (Śraddhāmayo Ayaṁ Puruṣo); as his faith is (Yo Yac Chraddhaḥ), so indeed is he (Sa Eva Saḥ).
+        </div>
+        <a class="commentary-btn" href="english-17-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.4 (Worship based on Guṇas) ॥</div>
+        <p class="shlok-sanskrit">
+            यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः।<br>
+            प्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः।।
+        </p><div class="shlok-translation-formatted"> 
+    yajante sāttvikā devānyakṣarakṣāṃsi rājasāḥ |<br>
+    pretānbhūtagaṇāṃścānye yajante tāmasā janāḥ || 17.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sāttvika people worship the gods (Yajante Sāttvikā Devān); Rājasika people worship the Yakṣas and Rākṣasas (Yakṣa-rakṣāṁsi Rājasāḥ).<br>
+            The Tāmasika people (Tāmasā Janāḥ) worship ghosts and spirits (Pretān Bhūta-gaṇāṁś cānye).
+        </div>
+        <a class="commentary-btn" href="english-17-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 17.5 - 17.6 (The Arrogant Austerity) ॥</div>
+        <p class="shlok-sanskrit">
+            अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः।<br>
+            दम्भाहङ्कारसंयुक्ताः कामरागबलान्विताः।। (17.5)<br>
+            कर्षयन्तः शरीरस्थं भूतग्राममचेतसः।<br>
+            मां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान्।। (17.6)
+        </p><div class="shlok-translation-formatted"> 
+    aśāstravihitaṃ ghoraṃ tapyante ye tapo janāḥ |<br>
+    dambhāhaṅkārasaṃyuktāḥ kāmarāgabalānvitāḥ || 17.5 ||<br><br>
+    karṣayantaḥ śarīrasthaṃ bhūtagrāma-macetasaḥ |<br>
+    māṃ caivāntaḥśarīrasthaṃ tān viddhyāsuraniścayān || 17.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those men (Ye Tapo Janāḥ) who perform horrible austerity (Ghoraṁ Tapyante) not enjoined by the scriptures (Aśāstra-vihitaṁ),<br>
+            filled with hypocrisy and egoism (Dambhāhaṅkāra-saṁyuktāḥ), and driven by the force of lust and attachment (Kāma-rāga-balānvitāḥ); (17.5)<br>
+            The unintelligent (Acetasaḥ) who torture the elements (Karṣayantaḥ Bhūta-grāmam) residing in the body (Śarīra-sthaṁ),<br>
+            and also Me (Māṁ Caiva) residing within the body (Antaḥ-śarīra-sthaṁ)—know them to be of demonic resolve (Tān Viddhy Āsura-niścayān). (17.6)
+        </div>
+        <a class="commentary-btn" href="english-17-5-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.7 (The Threefold Food) ॥</div>
+        <p class="shlok-sanskrit">
+            आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः।<br>
+            यज्ञस्तपस्तथा दानं तेषां भेदमिमं शृणु।।
+        </p><div class="shlok-translation-formatted"> 
+    āhārastvapi sarvasya trividho bhavati priyaḥ |<br>
+    yajñastapastathā dānaṃ teṣāṃ bhedamimaṃ śṛṇu || 17.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The food (Āhāras) also which is dear to all (Api Sarvasya Priyas) is of three kinds (Trividho Bhavati).<br>
+            So too are sacrifice (Yajñas), austerity (Tapas Tathā), and charity (Dānaṁ). Hear now the distinction of these (Teṣāṁ Bhedam Imaṁ Śṛṇu).
+        </div>
+        <a class="commentary-btn" href="english-17-7.html">View Commentary</a>
+        
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.8 (Sāttvika Food) ॥</div>
+        <p class="shlok-sanskrit">
+            आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः।<br>
+            रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः।।
+        </p><div class="shlok-translation-formatted"> 
+    āyuḥsattvabalārogyasukhaprītivivardhanāḥ |<br>
+    rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvikapriyāḥ || 17.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Foods that increase life span, purity, strength, health, happiness, and cheerfulness (Āyuḥ-sattva-balārogya-sukha-prīti-vivardhanāḥ);<br>
+            Foods that are juicy, oily, substantial, and agreeable (Rasyāḥ Snigdhāḥ Sthirā Hṛdyā Āhārāḥ)—these are dear to the Sāttvika (Sāttvika-priyāḥ).
+        </div>
+        <a class="commentary-btn" href="english-17-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.9 (Rājasika Food) ॥</div>
+        <p class="shlok-sanskrit">
+            कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः।<br>
+            आहारा राजसस्येष्टा दुःखशोकामयप्रदाः।।
+        </p><div class="shlok-translation-formatted"> 
+    kaṭvamlalavaṇātyuṣṇatīkṣṇarūkṣavidāhinaḥ |<br>
+    āhārā rājasasyeṣṭā duḥkhaśokāmayapradāḥ || 17.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Foods that are bitter, sour, salty, excessively hot, pungent, dry, and burning (Kaṭv-amla-lavaṇāty-uṣṇa-tīkṣṇa-rūkṣa-vidāhinaḥ)—<br>
+            these foods are desired by the Rājasika (Āhārā Rājasasyeṣṭā); they are productive of pain, grief, and disease (Duḥkha-śokāmaya-pradāḥ).
+        </div>
+        <a class="commentary-btn" href="english-17-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.10 (Tāmasika Food) ॥</div>
+        <p class="shlok-sanskrit">
+            यातयामं गतरसं पूति पर्युषितं च यत्।<br>
+            उच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yātayāmaṃ gatarasaṃ pūti paryuṣitaṃ ca yat |<br>
+    ucchistamapi cāmedhyaṃ bhojanaṃ tāmasapriyam || 17.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That which is tasteless (Gata-rasaṁ), decomposed (Pūti), putrid (Yāta-yāmaṁ), kept overnight (Paryuṣitaṁ ca yat),<br>
+            residue of others' meal (Ucchiṣṭam api ca), and impure (Amadhyam)—such food is dear to the Tāmasika (Bhojanaṁ Tāmasa-priyam).
+        </div>
+        <a class="commentary-btn" href="english-17-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.11 (Sāttvika Sacrifice) ॥</div>
+        <p class="shlok-sanskrit">
+            अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते।<br>
+            यष्टव्यमेवेति मनः समाधाय स सात्त्विकः।।
+        </p><div class="shlok-translation-formatted"> 
+    aphalākāṅkṣibhiryajño vidhidṛṣṭo ya ijyate |<br>
+    yaṣṭavyameveti manaḥ samādhāya sa sāttvikaḥ || 17.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That sacrifice (Yajño) which is performed according to scriptural injunctions (Vidhi-dṛṣṭo) by those who expect no reward (Aphalākāṅkṣibhir),<br>
+            with the mind fixed (Manaḥ Samādhāya) on the thought that 'it must be performed' (Yaṣṭavyam Eveti)—that is Sāttvika (Sa Sāttvikaḥ).
+        </div>
+        <a class="commentary-btn" href="english-17-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.12 (Rājasika Sacrifice) ॥</div>
+        <p class="shlok-sanskrit">
+            अभिसन्धाय तु फलं दम्भार्थमपि चैव यत्।<br>
+            इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम्।।
+        </p><div class="shlok-translation-formatted"> 
+    abhisandhāya tu phalaṃ dambhārthamapi caiva yat |<br>
+    ijyate bharataśreṣṭha taṃ yajñaṃ viddhi rājasam || 17.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But that sacrifice (Taṁ Yajñaṁ Viddhi) which is performed with a view to reward (Abhisandhāya tu Phalaṁ),<br>
+            and for the sake of ostentation (Dambhārtham api caiva yat), O best of the Bhāratas (Arjuna)—know that sacrifice to be Rājasika (Rājasam).
+        </div>
+        <a class="commentary-btn" href="english-17-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.13 (Tāmasika Sacrifice) ॥</div>
+        <p class="shlok-sanskrit">
+            विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम्।<br>
+            श्रद्धाविरहितं यज्ञं तामसं परिचक्षते।।
+        </p><div class="shlok-translation-formatted"> 
+    vidhihīnamasṛṣṭānnaṃ mantrahīnamadakṣiṇam |<br>
+    śraddhāvirahitaṃ yajñaṃ tāmasaṃ paricakṣate || 17.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            A sacrifice (Yajñaṁ) that is without scriptural injunctions (Vidhi-hīnam), without distribution of food (Asṛṣṭānnaṁ),<br>
+            without Mantras (Mantra-hīnam), without gifts (Adakṣiṇam), and devoid of faith (Śraddhā-virahitaṁ)—is declared to be Tāmasika (Tāmasaṁ Paricakṣate).
+        </div>
+        <a class="commentary-btn" href="english-17-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.14 (Austerity of the Body) ॥</div>
+        <p class="shlok-sanskrit">
+            देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम्।<br>
+            ब्रह्मचर्यमहिंसा च शारीरं तप उच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    devadvijaguruprājñapūjanaṃ śaucamārjavam |<br>
+    brahmacaryamahiṃsā ca śārīraṃ tapa ucyate || 17.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Worship of the gods, the twice-born (brāhmaṇas), the preceptors, and the wise (Deva-dvija-guru-prājña-pūjanaṁ);<br>
+            Cleanliness (Śaucam), uprightness (Ārjavam), celibacy (Brahmacaryam), and non-violence (Ahiṁsā ca)—is called the austerity of the body (Śārīraṁ Tapa Ucyate).
+        </div>
+        <a class="commentary-btn" href="english-17-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.15 (Austerity of Speech) ॥</div>
+        <p class="shlok-sanskrit">
+            अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्।<br>
+            स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    anudvegakaraṃ vākyaṃ satyaṃ priyahitaṃ ca yat |<br>
+    svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate || 17.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Speech that causes no irritation (Anudvega-karaṁ Vākyaṁ), truthful, pleasant, and beneficial (Satyaṁ Priya-hitaṁ ca Yat),<br>
+            and the regular recitation of the Vedas (Svādhyāyābhyasanaṁ caiva)—is called the austerity of speech (Vāṅmayaṁ Tapa Ucyate).
+        </div>
+        <a class="commentary-btn" href="english-17-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.16 (Austerity of the Mind) ॥</div>
+        <p class="shlok-sanskrit">
+            मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः।<br>
+            भावसंशुद्धिरित्येतत्तपो मानसमुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    manaḥprasādaḥ saumyatvaṃ maunamātmavinigrahaḥ |<br>
+    bhāvasaṃśuddhirityetat tapo mānasamucyate || 17.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Serenity of mind (Manaḥ-prasādaḥ), kindness (Saumyatvaṁ), silence (Maunam), control of the self (Ātma-vinigrahaḥ),<br>
+            and purity of thoughts (Bhāva-saṁśuddhir)—this is called the austerity of the mind (Tapo Mānasam Ucyate).
+        </div>
+        <a class="commentary-btn" href="english-17-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.17 (Sāttvika Austerity) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः।<br>
+            अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते।।
+        </p><div class="shlok-translation-formatted"> 
+    śraddhayā parayā taptaṃ tapastattrividhaṃ naraiḥ |<br>
+    aphalākāṅkṣibhiryuktaiḥ sāttvikaṃ paricakṣate || 17.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This threefold austerity (Tapas Tat Trividhaṁ) performed by men (Naraiḥ) with supreme faith (Śraddhayā Parayā Taptam),<br>
+            without expectation of results (Aphalākāṅkṣibhir) and with self-control (Yuktaiḥ)—is declared to be Sāttvika (Sāttvikaṁ Paricakṣate).
+        </div>
+        <a class="commentary-btn" href="english-17-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.18 (Rājasika Austerity) ॥</div>
+        <p class="shlok-sanskrit">
+            सत्कारमानपूजार्थं तपो दम्भेन चैव यत्।<br>
+            क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम्।।
+        </p><div class="shlok-translation-formatted"> 
+    satkāramānapūjārthaṃ tapo dambhena caiva yat |<br>
+    kriyate tadiha proktaṃ rājasaṃ calamadhruvam || 17.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That austerity (Tapo) which is performed for the sake of obtaining respect, honor, and adoration (Satkāra-māna-pūjārthaṁ),<br>
+            and with hypocrisy (Dambhena caiva Yat), is here declared to be Rājasika (Rājasaṁ), unstable and transitory (Calam Adhruvam).
+        </div>
+        <a class="commentary-btn" href="english-17-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.19 (Tāmasika Austerity) ॥</div>
+        <p class="shlok-sanskrit">
+            मूढग्राहेणात्मनो यत्पीडया क्रियते तपः।<br>
+            परस्योत्सादनार्थं वा तत्तामसमुदाहृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    mūḍhagrāheṇātmano yat pīḍayā kriyate tapaḥ |<br>
+    parasyotsādanārthaṃ vā tattāmasamudāhṛtam || 17.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That austerity (Tapas) which is performed with foolish obstinacy (Mūḍha-grāheṇā), with self-torture (Ātmano Yat Pīḍayā Kriyate),<br>
+            or for the purpose of destroying others (Parasyotsādanārthaṁ Vā)—that is declared to be Tāmasika (Tat Tāmasam Udāhṛtam).
+        </div>
+        <a class="commentary-btn" href="english-17-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.20 (Sāttvika Charity) ॥</div>
+        <p class="shlok-sanskrit">
+            दातव्यमिति यद्दानं दीयतेऽनुपकारिणे।<br>
+            देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    dātavyamiti yaddānaṃ dīyate’nupakāriṇe |<br>
+    deśe kāle ca pātre ca taddānaṃ sāttvikaṃ smṛtam || 17.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That charity (Tad Dānaṁ) which is given (Dīyate) as a matter of duty (Dātavyam Iti), to one from whom no return is expected (Anupakāriṇe),<br>
+            in the proper place (Deśe), at the proper time (Kāle Ca), and to a worthy person (Pātre Ca)—is considered Sāttvika (Sāttvikaṁ Smṛtam).
+        </div>
+        <a class="commentary-btn" href="english-17-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.21 (Rājasika Charity) ॥</div>
+        <p class="shlok-sanskrit">
+            यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः।<br>
+            दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    yattu pratyupakārārthaṃ phalamuddhiśya vā punaḥ |<br>
+    dīyate ca parikliṣṭaṃ taddānaṃ rājasaṃ smṛtam || 17.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But that charity (Tad Dānaṁ) which is given (Dīyate ca) with the expectation of return (Yat tu Pratyupakārārthaṁ) or with a view to future reward (Phalam Uddiśya Vā Punaḥ),<br>
+            or reluctantly (Parikliṣṭaṁ)—that is considered Rājasika (Rājasaṁ Smṛtam).
+        </div>
+        <a class="commentary-btn" href="english-17-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.22 (Tāmasika Charity) ॥</div>
+        <p class="shlok-sanskrit">
+            अदेशकाले यद्दानमपात्रेभ्यश्च दीयते।<br>
+            असत्कृतमवज्ञातं तत्तामसमुदाहृतम्।।
+        </p><div class="shlok-translation-formatted"> 
+    adeśakāle yaddānamapātrebhyaśca dīyate |<br>
+    asatkṛtamajñātaṃ tattāmasamudāhṛtam || 17.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That charity (Tad Dānaṁ) which is given at an improper place or time (Adeśa-kāle Yad Dānam), to unworthy persons (Apātrebhyaś ca Dīyate),<br>
+            without respect (Asatkṛtam) or with contempt (Avajñātaṁ)—that is declared to be Tāmasika (Tat Tāmasam Udāhṛtam).
+        </div>
+        <a class="commentary-btn" href="english-17-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.23 (The Threefold Name of Brahman) ॥</div>
+        <p class="shlok-sanskrit">
+            ओ तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः।<br>
+            ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा।।
+        </p><div class="shlok-translation-formatted"> 
+    om tatsaditi nirdeśo brahmaṇas trividhaḥ smṛtaḥ |<br>
+    brāhmaṇāstena vedāśca yajñāśca vihitāḥ purā || 17.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            'Om, Tat, Sat'—this is considered the threefold designation (Trividhaḥ Smṛtaḥ) of Brahman (Brahmaṇo Nideśo).<br>
+            By that (Tena), Brāhmaṇas, the Vedas, and sacrifices (Yajñāś ca) were ordained in ancient times (Vihitāḥ Purā).
+        </div>
+        <a class="commentary-btn" href="english-17-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.24 (The use of 'Om') ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः।<br>
+            प्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम्।।
+        </p><div class="shlok-translation-formatted"> 
+    tasmādomityudāhṛtya yajñadānatapaḥkriyāḥ |<br>
+    pravartante vidhānoktāḥ satataṃ brahmavādinām || 17.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, having uttered 'Om' (Tasmād Om Ity Udāhṛtya), the acts of sacrifice, charity, and austerity (Yajña-dāna-tapaḥ-kriyāḥ)<br>
+            enjoined by the scriptures (Vidhānoktāḥ) for the knowers of Brahman (Brahma-vādinām) are always commenced (Pravartante Satataṁ).
+        </div>
+        <a class="commentary-btn" href="english-17-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.25 (The use of 'Tat') ॥</div>
+        <p class="shlok-sanskrit">
+            तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः।<br>
+            दानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षिभिः।।
+        </p><div class="shlok-translation-formatted"> 
+    tadityanabhisandhāya phalaṃ yajñatapaḥkriyāḥ |<br>
+    dānakriyāśca vividhāḥ kriyante mokṣakāṅkṣibhiḥ || 17.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Uttering 'Tat' (Tad Iti), without aiming at the fruits of actions (Anabhisandhāya Phalaṁ), the various acts of sacrifice, austerity (Yajña-tapaḥ-kriyāḥ),<br>
+            and acts of charity (Dāna-kriyāś ca Vividhāḥ) are performed by those desiring liberation (Kriyante Mokṣa-kāṅkṣibhiḥ).
+        </div>
+        <a class="commentary-btn" href="english-17-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 17.26 - 17.27 (The use of 'Sat') ॥</div>
+        <p class="shlok-sanskrit">
+            सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते।<br>
+            प्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते।। (17.26)<br>
+            यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते।<br>
+            कर्म चैव तदर्थीयं सदित्येवाभिधीयते।। (17.27)
+        </p><div class="shlok-translation-formatted"> 
+    sadbhāve sādhubhāve ca sadityetatprayujyate |<br>
+    praśaste karmaṇi tathā sacchabdaḥ pārtha yujyate || 17.26 ||<br><br>
+    yajñe tapasi dāne ca sthitiḥ saditi cocyate |<br>
+    karma caiva tadarthīyaṃ sadityevābhidhīyate || 17.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The word 'Sat' (Sad Iti Etat) is used in the sense of existence (Sad-bhāve) and goodness (Sādhu-bhāve ca).<br>
+            Likewise, O son of Pṛthā, the word 'Sat' (Sac chabdaḥ) is employed for an auspicious action (Praśaste Karmaṇi Tathā). (17.26)<br>
+            Steadfastness in sacrifice, austerity, and charity (Yajñe Tapasi Dāne ca Sthitiḥ) is also called 'Sat' (Sad Iti Coccyate).<br>
+            And action dedicated to the Supreme (Karma caiva Tad-arthīyaṁ) is verily designated as 'Sat' (Sad Ity Evābhidhīyate). (17.27)
+        </div>
+        <a class="commentary-btn" href="english-17-26-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 17.28 (Faithless Actions) ॥</div>
+        <p class="shlok-sanskrit">
+            अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत्।<br>
+            असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह।।
+        </p><div class="shlok-translation-formatted"> 
+    aśraddhayā hutaṃ dattaṃ tapastaptaṃ kṛtaṃ ca yat |<br>
+    asadityucyate pārtha na ca tatpretya no iha || 17.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever is offered in sacrifice, given in charity, or performed as austerity (Hutaṁ Dattaṁ Tapas Taptaṁ Kṛtaṁ ca Yat),<br>
+            and whatever action is done without faith (Aśraddhayā), O son of Pṛthā, is called 'Asat' (Asad Ity Ucyate);<br>
+            it is of no value after death (Na ca Tat Pretya) nor in this world (No Iha).
+        </div>
+        <a class="commentary-btn" href="english-17-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे श्रद्धात्रयविभागयोगो नाम सप्तदशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the seventeenth chapter, entitled Śraddhātraya Vibhāga Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter16.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter18.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

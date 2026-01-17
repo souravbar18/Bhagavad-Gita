@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 14: Gunatraya Vibhaga Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 14: Guṇatraya Vibhāga Yoga (The Yoga of the Division of the Three Guṇas) - Verses 14.1 to 14.27</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter13.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter15.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.1 (Introduction) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            परं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम्।<br>
+            यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    paraṃ bhūyaḥ pravakṣyāmi jñānānāṃ jñānamuttamam |<br>
+    yajjñātvā munayaḥ sarve parāṃ siddhimito gatāḥ || 14.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: I shall again declare that supreme knowledge (Jñānam Uttamam),<br>
+            the best of all knowledge, knowing which all the sages (Munayaḥ sarve)<br>
+            have gone from here to the highest perfection (Parāṁ Siddhim).
+        </div>
+        <a class="commentary-btn" href="english-14-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.2 (Result of this Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः।<br>
+            सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च।।
+        </p><div class="shlok-translation-formatted"> 
+    idaṃ jñānamupāśritya mama sādharmyamāgatāḥ |<br>
+    sarge’pi nopajāyante pralaye na vyathanti ca || 14.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Taking shelter of this knowledge (Idaṁ Jñānam Upāśritya), they attain My own nature (Mama Sādharmyam āgatāḥ).<br>
+            They are neither born at the time of creation (Sarge api nopa-jāyante) nor disturbed at the time of dissolution (Pralaye na vyathanti ca).
+        </div>
+        <a class="commentary-btn" href="english-14-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.3 (The Origin of Beings) ॥</div>
+        <p class="shlok-sanskrit">
+            मम योनिर्महद् ब्रह्म तस्मिन्गर्भं दधाम्यहम्।<br>
+            सम्भवः सर्वभूतानां ततो भवति भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    mama yonirmahadbrahma tasmin garbhaṃ dadhāmyaham |<br>
+    sambhavaḥ sarvabhūtānāṃ tato bhavati bhārata || 14.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            My womb is the Great Brahman (Mama Yonir Mahad Brahma); in that I place the seed (Garbhaṁ Dadhāmy Aham).<br>
+            From that, O Bhārata, the birth of all beings (Sambhavaḥ Sarva-bhūtānāṁ) takes place.
+        </div>
+        <a class="commentary-btn" href="english-14-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.4 (The Father and Mother) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः।<br>
+            तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvayonīṣu kaunteya mūrtayaḥ sambhavanti yāḥ |<br>
+    tāsāṃ brahma mahadyonirahaṃ bījapradaḥ pitā || 14.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever forms (Mūrtayaḥ) are produced in any womb (Sarva-yoniṣu), O son of Kuntī (Arjuna),<br>
+            the Great Brahman is their womb (Mahad Yonir), and I am the seed-giving Father (Ahaṁ Bīja-pradaḥ Pitā).
+        </div>
+        <a class="commentary-btn" href="english-14-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.5 (The Three Gunas) ॥</div>
+        <p class="shlok-sanskrit">
+            सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः।<br>
+            निबध्नन्ति महाबाहो देहे देहिनमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sattvaṃ rajastama iti guṇāḥ prakṛtisambhavāḥ |<br>
+    nibadhnanti mahābāho dehe dehinamavyayam || 14.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sattva (goodness), Rajas (passion), and Tamas (darkness)—these qualities (Guṇāḥ), born of Prakṛti (Nature) (Prakṛti-sambhavāḥ),<br>
+            bind the imperishable embodied soul (Dehinam Avyayam) within the body (Dehe), O mighty-armed (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-14-5.html">View Commentary</a>
+        
+
+[Image of the three Gunas - Sattva Rajas Tamas]
+
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.6 (Nature of Sattva) ॥</div>
+        <p class="shlok-sanskrit">
+            तत्र सत्त्वं निर्मलत्वात् प्रकाशकमनामयम्।<br>
+            सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ।।
+        </p><div class="shlok-translation-formatted"> 
+    tatra sattvaṃ nirmalatvāt prakāśakamanāmayam |<br>
+    sukhasaṅgena badhnāti jñānasaṅgena cānagha || 14.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Among these, Sattva (goodness), being stainless (Nirmalatvāt), is luminous (Prakāśakam) and healthy (Anāmayam).<br>
+            It binds (Badhnāti) by attachment to happiness (Sukha-saṅgena) and by attachment to knowledge (Jñāna-saṅgena), O sinless one.
+        </div>
+        <a class="commentary-btn" href="english-14-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.7 (Nature of Rajas) ॥</div>
+        <p class="shlok-sanskrit">
+            रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम्।<br>
+            तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्।।
+        </p><div class="shlok-translation-formatted"> 
+    rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam |<br>
+    tannibadhnāti kaunteya karmasaṅgena dehinam || 14.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know Rajas (passion) to be of the nature of attraction (Rāgātmakaṁ), arising from desire and attachment (Tṛṣṇā-saṅga-samudbhavam).<br>
+            That binds the embodied soul (Tan Nibadhnāti Dehinam), O son of Kuntī, by attachment to action (Karma-saṅgena).
+        </div>
+        <a class="commentary-btn" href="english-14-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.8 (Nature of Tamas) ॥</div>
+        <p class="shlok-sanskrit">
+            तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्।<br>
+            प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām |<br>
+    pramādālasyanidrābhistannibadhnāti bhārata || 14.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know Tamas (darkness) to be born of ignorance (Ajñāna-jaṁ viddhi), deluding all embodied beings (Mohanaṁ Sarva-dehinām).<br>
+            It binds (Tan Nibadhnāti), O Bhārata, by carelessness (Pramāda), laziness (Ālasya), and sleep (Nidrābhiḥ).
+        </div>
+        <a class="commentary-btn" href="english-14-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.9 (Summary of Binding) ॥</div>
+        <p class="shlok-sanskrit">
+            सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत।<br>
+            ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत।।
+        </p><div class="shlok-translation-formatted"> 
+    sattvaṃ sukhe sañjayati rajaḥ karmaṇi bhārata |<br>
+    jñānamāvṛtya tu tamaḥ pramāde sañjayatyuta || 14.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sattva attaches one to happiness (Sukhe Sañjayati); Rajas to action (Karmaṇi), O Bhārata.<br>
+            But Tamas, obscuring knowledge (Jñānam āvṛtya tu), attaches one to heedlessness (Pramāde Sañjayaty uta).
+        </div>
+        <a class="commentary-btn" href="english-14-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.10 (Rising and Submerging) ॥</div>
+        <p class="shlok-sanskrit">
+            रजस्तमश्चाभिभूय सत्त्वं भवति भारत।<br>
+            रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा।।
+        </p><div class="shlok-translation-formatted"> 
+    rajastamaścābhibhūya sattvaṃ bhavati bhārata |<br>
+    rajaḥ sattvaṃ tamaścaiva tamaḥ sattvaṃ rajastathā || 14.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sattva arises (Bhavati) by overcoming Rajas and Tamas, O Bhārata.<br>
+            Rajas (arises by overcoming) Sattva and Tamas, and Tamas (arises by overcoming) Sattva and Rajas.
+        </div>
+        <a class="commentary-btn" href="english-14-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.11 (Manifestation of Sattva) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वद्वारेषु देहेऽस्मिन् प्रकाश उपजायते।<br>
+            ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvadvāreṣu dehe’smin prakāśa upajāyate |<br>
+    jñānaṃ yadā tadā vidyādvivṛddhaṃ sattvamityuta || 14.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When the light of knowledge (Prakāśa) shines forth through all the gateways of the body (Sarva-dvāreṣu dehe asmin),<br>
+            then one should know that Sattva is predominant (Vivṛddhaṁ Sattvam).
+        </div>
+        <a class="commentary-btn" href="english-14-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.12 (Manifestation of Rajas) ॥</div>
+        <p class="shlok-sanskrit">
+            लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा।<br>
+            रजस्येतानि जायन्ते विवृद्धे भरतर्षभ।।
+        </p><div class="shlok-translation-formatted"> 
+    lobhaḥ pravṛttirārambhaḥ karmaṇāmaśamaḥ spṛhā |<br>
+    rajasyetāni jāyante vivṛddhe bharatarṣabha || 14.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Greed (Lobhaḥ), activity (Pravṛttiḥ), initiation of actions (Ārambhaḥ Karmaṇām), restlessness (Aśamaḥ), and longing (Spṛhā)—<br>
+            these are born when Rajas is predominant (Rājasi Etāni Jāyante Vivṛddhe), O best of the Bhāratas.
+        </div>
+        <a class="commentary-btn" href="english-14-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.13 (Manifestation of Tamas) ॥</div>
+        <p class="shlok-sanskrit">
+            अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च।<br>
+            तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन।।
+        </p><div class="shlok-translation-formatted"> 
+    aprakāśo’pravṛttiśca pramādo moha eva ca |<br>
+    tamasyetāni jāyante vivṛddhe kurunandana || 14.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Darkness (Aprakāśaḥ), inactivity (Apravṛttiś ca), heedlessness (Pramādaḥ), and delusion (Moha eva ca)—<br>
+            these are born when Tamas is predominant (Tamasy Etāni Jāyante Vivṛddhe), O delight of the Kurus.
+        </div>
+        <a class="commentary-btn" href="english-14-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.14 (Destiny by Sattva) ॥</div>
+        <p class="shlok-sanskrit">
+            यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत्।<br>
+            तदोत्तमविदां लोकानमलान् प्रतिपद्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yadā sattve pravṛddhe tu pralayaṃ yāti dehabhṛt |<br>
+    tadottamavidāṃ lokānamalānpratipadyate || 14.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When the embodied soul (Deha-bhṛt) meets death when Sattva is predominant (Sattve Pravṛddhe tu Pralayaṁ Yāti),<br>
+            then it attains the pure worlds (Amalān Pratipadyate) of those who know the Supreme.
+        </div>
+        <a class="commentary-btn" href="english-14-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.15 (Destiny by Rajas and Tamas) ॥</div>
+        <p class="shlok-sanskrit">
+            रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते।<br>
+            तथा प्रलीनस्तमसि मूढयोनिषु जायते।।
+        </p><div class="shlok-translation-formatted"> 
+    rajasi pralayaṃ gatvā karmasaṅgiṣu jāyate |<br>
+    tathā pralīnastamasi mūḍhayoniṣu jāyate || 14.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Attaining dissolution in Rajas (Rajasi Pralayaṁ Gatvā), one is born among those attached to action (Karma-saṅgiṣu Jāyate).<br>
+            Similarly, dying when Tamas is dominant (Tathā Pralīnas Tamasi), one is born in the wombs of the deluded (Mūḍha-yoniṣu Jāyate).
+        </div>
+        <a class="commentary-btn" href="english-14-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.16 (Fruits of Action based on Guṇas) ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम्।<br>
+            रजसस्तु फलं दुःखमज्ञानं तमसः फलम्।।
+        </p><div class="shlok-translation-formatted"> 
+    karmaṇaḥ sukṛtasyāhuḥ sāttvikaṃ nirmalaṃ phalam |<br>
+    rajasastu phalaṃ duḥkhamajñānaṃ tamasaḥ phalam || 14.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The fruit of good action (Sukṛtasya) is said to be Sāttvika (pure) and stainless (Nirmalaṁ Phalam).<br>
+            But the fruit of Rajas is pain (Duḥkham), and the fruit of Tamas is ignorance (Ajñānaṁ Tamasaḥ Phalam).
+        </div>
+        <a class="commentary-btn" href="english-14-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.17 (Consequences of the Gunas) ॥</div>
+        <p class="shlok-sanskrit">
+            सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च।<br>
+            प्रमादमोहौ तमसः भवतोज्ञानमेव च।।
+        </p><div class="shlok-translation-formatted"> 
+    sattvāt sañjāyate jñānaṃ rajaso lobha eva ca |<br>
+    pramādamohau tamaso bhavato’jñānameva ca || 14.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            From Sattva is born knowledge (Jñānaṁ); from Rajas, greed alone (Lobha eva ca).<br>
+            Heedlessness, delusion (Pramāda-mohau), and ignorance (Ajñānam eva ca) arise from Tamas.
+        </div>
+        <a class="commentary-btn" href="english-14-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.18 (The Path of the Gunas) ॥</div>
+        <p class="shlok-sanskrit">
+            ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः।<br>
+            जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः।।
+        </p><div class="shlok-translation-formatted"> 
+    ūrdhvaṃ gacchanti sattvasthā madhye tiṣṭhanti rājasāḥ |<br>
+    jaghanyaguṇavṛttisthā adho gacchanti tāmasāḥ || 14.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those established in Sattva (Sattvasthā) go upwards (Ūrdhvaṁ Gacchanti);<br>
+            those in Rajas stay in the middle (Madhye Tiṣṭhanti Rājasaḥ).<br>
+            Those dwelling in the nature of the lowest Guna (Jaghaṇya-guṇa-vṛttisthā), the Tāmasic, go downwards (Adho Gacchanti).
+        </div>
+        <a class="commentary-btn" href="english-14-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.19 (Knowing the Gunas as the Only Agents) ॥</div>
+        <p class="shlok-sanskrit">
+            नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति।<br>
+            गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    nānyaṃ guṇebhyaḥ kartāraṃ yadā draṣṭānupaśyati |<br>
+    guṇebhyaśca paraṃ vetti madbhāvaṃ so’dhigacchati || 14.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When the observer (Draṣṭā) perceives no agent other than the Guṇas (Na Anyam Guṇebhyaḥ Kartāraṁ Anupaśyati),<br>
+            and knows that which is beyond the Guṇas (Guṇebhyaś ca Paraṁ Vetti)—he attains My nature (Mad-bhāvaṁ So Adhigacchati).
+        </div>
+        <a class="commentary-btn" href="english-14-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.20 (Crossing the Gunas) ॥</div>
+        <p class="shlok-sanskrit">
+            गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान्।<br>
+            जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते।।
+        </p><div class="shlok-translation-formatted"> 
+    guṇānetānatītya trīndehī dehasamudbhavān |<br>
+    janmamṛtyujarāduḥkhairvimukto’mṛtamaśnute || 14.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The embodied soul, having overcome these three Guṇas (Guṇān Etān Atītya Trīn) that originate in the body (Deha-samudbhavān),<br>
+            is liberated from birth, death, old age, and pain (Janma-mṛtyu-jarā-duḥkhair Vimukto), and attains immortality (Amṛtam aśnute).
+        </div>
+        <a class="commentary-btn" href="english-14-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.21 (The Question on Guṇatīta) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            कैर्लिङ्गैस्त्रीन् गुणानेतानतीतो भवति प्रभो।<br>
+            किमाचारः कथं चैतांस्त्रीन् गुणानतिवर्तते।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    kairliṅgaistrīnguṇānetānatīto bhavati prabho |<br>
+    kimācāraḥ kathaṃ caitāṃstrīnguṇānativartate || 14.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: What are the marks (Kair Liṅgais) of one who has crossed beyond these three Guṇas (Trīn Guṇān Etān Atīto), O Lord?<br>
+            What is his conduct (Kim Ācāraḥ), and how does he transcend these three Guṇas (Kathaṁ ca Etān Trīn Guṇān Ativartate)?
+        </div>
+        <a class="commentary-btn" href="english-14-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 14.22 - 14.25 (Krishna's Answer: The Guṇatīta) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव।<br>
+            न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति।। (14.22)<br>
+            उदासीनवदासीनो गुणैर् यो न विचाल्यते।<br>
+            गुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते।। (14.23)<br>
+            समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः।<br>
+            तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः।। (14.24)<br>
+            मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः।<br>
+            सर्वारम्भपरित्यागी गुणातीतः स उच्यते।। (14.25)
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    prakāśaṃ ca pravṛttiṃ ca mohameva ca pāṇḍava |<br>
+    na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati || 14.22 ||<br><br>
+    udāsīnavadāsīno guṇairyo na vicālyate |<br>
+    guṇā vartanta ityeva yo’vatiṣṭhati neṅgate || 14.23 ||<br><br>
+    samaduḥkhasukhaḥ svasthaḥ samaloṣṭāśmakāñcanaḥ |<br>
+    tulyapriyāpriyo dhīrastulyanindātmasaṃstutiḥ || 14.24 ||<br><br>
+    mānāpamānayostulyastulyo mitrāripakṣayoḥ |<br>
+    sarvārambhaparityāgī guṇātītaḥ sa ucyate || 14.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: He, O Pāṇḍava, who neither hates the illumination (Prakāśaṁ), activity (Pravṛttiṁ), or delusion (Moham eva ca)<br>
+            when they are present, nor longs for them when they are absent (Na Nivṛttāni Kāṅkṣati); (14.22)<br>
+            Who sits like one unconcerned (Udāsīnavad Āsīno), and is not disturbed by the Guṇas (Guṇair Yo Na Vicālyate);<br>
+            who remains firm (Yo Avasthiti) and does not waver, knowing that 'the Guṇas are merely acting' (Guṇā Vartante iti eva); (14.23)<br>
+            He to whom pain and pleasure are the same (Sama-duḥkha-sukhaḥ), who is established in the Self (Sva-sthaḥ), to whom a clod, a stone, and gold are equal (Sama-loṣṭāśma-kāñcanaḥ);<br>
+            who is firm (Dhīras), the same to loved and unloved (Tulya-priyāpriyo), and the same in censure and praise (Tulya-nindātma-saṁstutiḥ); (14.24)<br>
+            The same in honor and dishonor (Mānāpamānayos Tulyas), the same to friend and foe (Tulyo Mitrāri-pakṣayoḥ),<br>
+            and who renounces all undertakings (Sarvārambha-parityāgī)—he is said to have transcended the Guṇas (Guṇātītaḥ Sa Ucyate). (14.25)
+        </div>
+        <a class="commentary-btn" href="english-14-22-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.26 (Method of Transcendence) ॥</div>
+        <p class="shlok-sanskrit">
+            मां च योऽव्यभिचारेण भक्तियोगेन सेवते।<br>
+            स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते।।
+        </p><div class="shlok-translation-formatted"> 
+    māṃ ca yo’vyabhicāreṇa bhaktiyogena sevate |<br>
+    sa guṇānetītyaitān brahmabhūyāya kalpate || 14.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And he who serves Me with unswerving Yoga of devotion (Māṁ ca Yo Avyabhicāreṇa Bhakti-yogena Sevate),<br>
+            he, transcending these Guṇas entirely (Sa Guṇān Samatītya Etān), is fitted for becoming Brahman (Brahma-bhūyāya kalpate).
+        </div>
+        <a class="commentary-btn" href="english-14-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 14.27 (Krishna as the Foundation) ॥</div>
+        <p class="shlok-sanskrit">
+            ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च।<br>
+            शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च।।
+        </p><div class="shlok-translation-formatted"> 
+    brahmaṇo hi pratiṣṭhāhamamṛtasyāvyayasya ca |<br>
+    śāśvatasya ca dharmasya sukhasyaikāntikasya ca || 14.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For I am the foundation (Pratiṣṭhā) of the impersonal Brahman (Brahmaṇo hi), of the immortal and the immutable (Amṛtasya Avyayasya ca),<br>
+            of everlasting Dharma (Śāśvatasya ca Dharmasya), and of absolute happiness (Sukhasya Aikāntikasya ca).
+        </div>
+        <a class="commentary-btn" href="english-14-27.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे गुणत्रयविभागयोगो नाम चतुर्दशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the fourteenth chapter, entitled Guṇatraya Vibhāga Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter13.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter15.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

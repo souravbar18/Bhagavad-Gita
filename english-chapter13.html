@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 13: Kshetra-kshetrajna Vibhaga Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 13: Kṣetra-kṣetrajña Vibhāga Yoga (Distinction of Field and Knower) - Verses 13.1 to 13.35</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter12.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter14.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.1 (Arjuna's Question - *Text slightly varies in ancient texts, this is the most common version*) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            प्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च।<br>
+            एतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव।।<br>
+            <br><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    prakṛtiṃ puruṣaṃ caiva kṣetraṃ kṣetrajñameva ca |<br>
+    etadveditumicchāmi jñānaṃ jñeyaṃ ca keśava || 13.1 ||
+</div>
+            *Note: Most major commentaries begin with Krishna's answer (13.2); the question verse is sometimes omitted or included after 13.2.*
+        </p>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Keśava (Krishna), I desire to know Prakṛti (Nature) and Puruṣa (Enjoyer),<br>
+            the Kṣetra (the Field) and the Kṣetrajña (the Knower of the Field),<br>
+            Jñāna (Knowledge), and Jñeya (the Object of Knowledge).
+        </div>
+        <a class="commentary-btn" href="english-13-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.2 (Krishna defines the terms) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते।<br>
+            एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    idaṃ śarīraṃ kaunteya kṣetramityabhidhīyate |<br>
+    etadyo vetti taṃ prāhuḥ kṣetrajña iti tadvidaḥ || 13.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: This body (Idaṁ Śarīraṁ), O son of Kuntī, is called the Field (Kṣetra).<br>
+            He who knows it, the learned call him the Knower of the Field (Kṣetrajña).
+        </div>
+        <a class="commentary-btn" href="english-13-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.3 (Krishna is the Supreme Knower) ॥</div>
+        <p class="shlok-sanskrit">
+            क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत।<br>
+            क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम।।
+        </p><div class="shlok-translation-formatted"> 
+    kṣetrajñaṃ cāpi māṃ viddhi sarvakṣetreṣu bhārata |<br>
+    kṣetrakṣetrajñayorjñānaṃ yattajjñānaṃ mataṃ mama || 13.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know Me (Māṁ viddhi) as the Knower of the Field (Kṣetrajñaṁ) in all fields (Sarva-kṣetreṣu), O Bhārata (Arjuna).<br>
+            The knowledge of the Field and the Knower of the Field—that is considered true knowledge by Me.
+        </div>
+        <a class="commentary-btn" href="english-13-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.4 (The Source of Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत्।<br>
+            स च यो यत्प्रभावश्च तत्समासेन मे शृणु।।
+        </p><div class="shlok-translation-formatted"> 
+    tatkṣetraṃ yacca yādṛkca yadvikāri yataśca yat |<br>
+    sa ca yo yatprabhāvaśca tatsamāsena me śṛṇu || 13.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            What the Field is, and what its nature is like (Yādṛk ca), what its transformations are (Yat-vikāri), whence it comes, and what it is;<br>
+            and who the Knower is, and what His power (Prabhāvaś ca) is—hear all that briefly from Me.
+        </div>
+        <a class="commentary-btn" href="english-13-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.5 (Praise of Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक्।<br>
+            ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः।।
+        </p><div class="shlok-translation-formatted"> 
+    ṛṣibhirbahudhā gītaṃ chandobhirvividhaiḥ pṛthak |<br>
+    brahmasūtrapadaiścaiva hetumadbhirviniścitaiḥ || 13.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            (The knowledge of Kṣetra and Kṣetrajña) has been sung by sages (Ṛṣibhir) in many ways,<br>
+            in various Vedic hymns (Chandobhir), separately,<br>
+            and especially in the aphoristic statements of the Brahma Sūtras (Brahma-sūtra-padaiś ca), which are rational and conclusive (Hetumadbhir viniścitaiḥ).
+        </div>
+        <a class="commentary-btn" href="english-13-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 13.6 - 13.7 (Description of the Field) ॥</div>
+        <p class="shlok-sanskrit">
+            महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च।<br>
+            इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः।। (13.6)<br>
+            इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतना धृतिः।<br>
+            एतत्क्षेत्रं समासेन सविकारमुदाहृतम्।। (13.7)
+        </p><div class="shlok-translation-formatted"> 
+    mahābhūtānyahaṅkāro buddhiravyaktameva ca |<br>
+    indriyāṇi daśaikaṃ ca pañca cendriyagocarāḥ || 13.6 ||<br><br>
+    icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaścetanā dhṛtiḥ |<br>
+    etatkṣetraṃ samāsena savikāramudāhṛtam || 13.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The great elements (Mahābhūtāni), egoism (Ahaṅkāraḥ), intellect (Buddhiḥ), and the unmanifest (Avyaktam) also; (13.6)<br>
+            the ten senses (Indriyāṇi daśa), and one (mind), and the five objects of the senses (Indriya-gocarāḥ); (13.6)<br>
+            Desire (Icchā), hatred (Dveṣaḥ), pleasure (Sukhaṁ), pain (Duḥkhaṁ), the aggregate (Saṅghātaś) [the body],<br>
+            intelligence (Cetanā), and fortitude (Dhṛtiḥ)—this is the Field, briefly described with its modifications (Sa-vikāram udāhṛtam). (13.7)
+        </div>
+        <a class="commentary-btn" href="english-13-6-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 13.8 - 13.12 (Qualities of Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।<br>
+            आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः।। (13.8)<br>
+            इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च।<br>
+            जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्।। (13.9)<br>
+            असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु।<br>
+            नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु।। (13.10)<br>
+            मयि चानन्ययोगेन भक्तिरव्यभिचारिणी।<br>
+            विविक्तदेशसेवित्वमरतिर्जनसंसदि।। (13.11)<br>
+            अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।<br>
+            एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा।। (13.12)
+        </p><div class="shlok-translation-formatted"> 
+    amānitvamadambhitvamahiṃsā kṣāntirārjavam |<br>
+    ācāryopāsanaṃ śaucaṃ sthairyamātmavinigrahaḥ || 13.8 ||<br><br>
+    indriyārtheṣu vairāgyamanahaṅkāra eva ca |<br>
+    janmamṛtyujarāvyādhiduḥkhadoṣānudarśanam || 13.9 ||<br><br>
+    asaktiranabhiṣvaṅgaḥ putradāragṛhādiṣu |<br>
+    nityaṃ ca samacittatvamiṣṭāniṣṭopapattiṣu || 13.10 ||<br><br>
+    mayi cānanyayogena bhaktiravyabhicāriṇī |<br>
+    viviktadeśasevitvamaratirjanasaṃsadi || 13.11 ||<br><br>
+    adhyātmajñānanityatvaṃ tattvajñānārthadarśanam |<br>
+    etajjñānamiti proktamajñānaṃ yadatonyathā || 13.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Humility (Amānitvam), unpretentiousness (Adambhitvam), non-violence (Ahiṁsā), forbearance (Kṣāntir), uprightness (Ārjavam); (13.8)<br>
+            service to the preceptor (Ācāryopāsanaṁ), purity (Śaucaṁ), steadfastness (Sthairyam), self-control (Ātma-vinigrahaḥ); (13.8)<br>
+            Detachment from the objects of the senses (Indriyārtheṣu vairāgyam), and absence of ego (Anahaṅkāra eva ca); (13.9)<br>
+            perception of the evil of birth, death, old age, sickness, and pain (Janma-mṛtyu-jarā-vyādhi-duḥkha-doṣānu-darśanam); (13.9)<br>
+            Non-attachment (Asaktiḥ) and non-identification with son, wife, home, and the like (Putra-dāra-gṛhādiṣu); (13.10)<br>
+            constant even-mindedness (Nityaṁ ca sama-cittatvam) in the occurrence of desirable and undesirable events (Iṣṭāniṣṭopapattiṣu); (13.10)<br>
+            Unwavering devotion (Bhaktir avyabhicāriṇī) to Me with unswerving Yoga (Ananya-yogena); (13.11)<br>
+            resorting to solitary places (Vivikta-deśa-sevitvam), and distaste for the company of people (Aratir jana-saṁsadi); (13.11)<br>
+            Steadfastness in knowledge of the Self (Adhyātma-jñāna-nityatvam), and perception of the goal of true knowledge (Tattva-jñānārtha-darśanam)—<br>
+            this is declared to be Knowledge (Jñānam iti proktam); anything contrary to this is ignorance (Ajñānam). (13.12)
+        </div>
+        <a class="commentary-btn" href="english-13-8-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.13 (The Object of Knowledge - Jñeya) ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञेयं यत्तत् प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते।<br>
+            अनादिमत् परं ब्रह्म न सत्तन्नासदुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    jñeyaṃ yat tat pravakṣyāmi yajjñātvāmṛtamaśnute |<br>
+    anādimatparaṃ brahma na sattannāsaducyate || 13.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I shall declare that which is the Object of Knowledge (Jñeyaṁ), knowing which one attains immortality (Amṛtam aśnute).<br>
+            It is the beginningless Supreme Brahman (Anādimat paraṁ Brahma); it is said to be neither being (Sat) nor non-being (Asat).
+        </div>
+        <a class="commentary-btn" href="english-13-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.14 (Omnipresence of Brahman) ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वतः पाणिपादं तत् सर्वतोऽक्षिशिरोमुखम्।<br>
+            सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvataḥ pāṇipādaṃ tat sarvato’kṣiśiromukham |<br>
+    sarvataḥ śrutimal-loke sarvamāvṛtya tiṣṭhati || 13.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            With hands and feet everywhere (Sarvataḥ Pāṇi-pādaṁ), with eyes, heads, and faces everywhere (Sarvato'kṣi-śiro-mukham),<br>
+            with ears everywhere in the world (Sarvataḥ Śrutimad), That exists pervading all (Sarvam āvṛtya tiṣṭhati).
+        </div>
+        <a class="commentary-btn" href="english-13-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.15 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।<br>
+            असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvendriyaguṇābhāsaṃ sarvendriyavivarjitam |<br>
+    asaktaṃ sarvabhṛccaiva nirguṇaṃ guṇabhoktṛ ca || 13.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Shining through the functions of all the senses (Sarvendriya-guṇābhāsaṁ), yet without any senses (Sarvendriya-vivarjitam);<br>
+            unattached (Asaktaṁ), yet sustaining all (Sarva-bhṛc caiva); without attributes (Nirguṇaṁ), yet enjoying the attributes (Guṇa-bhoktṛ ca).
+        </div>
+        <a class="commentary-btn" href="english-13-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.16 ॥</div>
+        <p class="shlok-sanskrit">
+            बहिरन्तश्च भूतानामचरं चरमेव च।<br>
+            सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्।।
+        </p><div class="shlok-translation-formatted"> 
+    bahirantaśca bhūtānāmacaraṃ carameva ca |<br>
+    sūkṣmatvāttadavijñeyaṃ dūrasthaṃ cāntike ca tat || 13.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            It is outside and inside of all beings (Bahir antaś ca bhūtānām), it is the unmoving and the moving (Acaram caram eva ca).<br>
+            Because of its subtlety (Sūkṣmatvāt), it is incomprehensible; it is far away and yet near (Dūrasthaṁ cāntike ca tat).
+        </div>
+        <a class="commentary-btn" href="english-13-16.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.17 ॥</div>
+        <p class="shlok-sanskrit">
+            अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।<br>
+            भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च।।
+        </p><div class="shlok-translation-formatted"> 
+    avibhaktaṃ ca bhūteṣu vibhaktamiva ca sthitam |<br>
+    bhūtabhartṛ ca tajjñeyaṃ grasiṣṇu prabhaviṣṇu ca || 13.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            It is undivided (Avibhaktaṁ) yet seems to be divided among beings (Vibhaktam iva ca sthitam).<br>
+            That which is to be known (Jñeyaṁ) is the sustainer of beings (Bhūta-bhartṛ ca), the absorber (Grasitṛu), and the creator (Prabhaviṣṇu) also.
+        </div>
+        <a class="commentary-btn" href="english-13-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.18 (The Goal of Knowledge) ॥</div>
+        <p class="shlok-sanskrit">
+            ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।<br>
+            ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्।।
+        </p><div class="shlok-translation-formatted"> 
+    jyotiṣāmapi tajjyotistamasaḥ paramucyate |<br>
+    jñānaṃ jñeyaṃ jñānagamyaṃ hṛdi sarvasya viṣṭhitam || 13.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            It is the Light of all lights (Jyotiṣām api taj jyotiḥ); it is said to be beyond darkness (Tamasaḥ Param).<br>
+            It is Knowledge, the Object of Knowledge, and the Goal of Knowledge (Jñānaṁ Jñeyaṁ Jñāna-gamyaṁ); it is seated in the hearts of all (Hṛdi sarvasya viṣṭhitam).
+        </div>
+        <a class="commentary-btn" href="english-13-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.19 (Conclusion of Kṣetra and Jñāna) ॥</div>
+        <p class="shlok-sanskrit">
+            इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।<br>
+            मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    iti kṣetraṃ tathā jñānaṃ jñeyaṃ coktaṃ samāsataḥ |<br>
+    madbhakta etadvijñāya madbhāvāyopapadyate || 13.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Thus the Field (Kṣetra), as well as Knowledge (Jñānaṁ), and the Object of Knowledge (Jñeyaṁ), have been briefly described.<br>
+            My devotee, knowing this, becomes qualified for My state (Mad-bhāvāyopapadyate).
+        </div>
+        <a class="commentary-btn" href="english-13-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.20 (Prakṛti and Puruṣa) ॥</div>
+        <p class="shlok-sanskrit">
+            प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि।<br>
+            विकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान्।।
+        </p><div class="shlok-translation-formatted"> 
+    prakṛtiṃ puruṣaṃ caiva viddhyanādī ubhāvapi |<br>
+    vikārāṃśca guṇāṃścaiva viddhi prakṛtisambhavān || 13.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know that Prakṛti (Nature) and Puruṣa (Consciousness) are both beginningless (Anādī ubhāv api).<br>
+            And know that the modifications (Vikārāṁś ca) and the qualities (Guṇāṁś ca) are born of Prakṛti.
+        </div>
+        <a class="commentary-btn" href="english-13-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.21 (Puruṣa as Enjoyer, Prakṛti as Cause) ॥</div>
+        <p class="shlok-sanskrit">
+            कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते।<br>
+            पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    kāryakāraṇakartṛtve hetuḥ prakṛtirucyate |<br>
+    puruṣaḥ sukhaduḥkhānāṃ bhoktṛtve heturucyate || 13.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In the production of the body and senses (Kārya-kāraṇa-kartṛtve), Prakṛti is said to be the cause (Hetuḥ).<br>
+            The Puruṣa (Consciousness) is said to be the cause (Hetuḥ) in the experience of pleasure and pain (Sukha-duḥkhānāṁ Bhoktṛtve).
+        </div>
+        <a class="commentary-btn" href="english-13-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.22 (The Reason for Saṁsāra) ॥</div>
+        <p class="shlok-sanskrit">
+            पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान् गुणान्।<br>
+            कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु।।
+        </p><div class="shlok-translation-formatted"> 
+    puruṣaḥ prakṛtistho hi bhuṅkte prakṛtijānguṇān |<br>
+    kāraṇaṃ guṇasaṅgo’sya sadasadyonijanmasu || 13.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Puruṣa (Soul), dwelling in Prakṛti (Prakṛti-stho hi), experiences the qualities born of Prakṛti (Prakṛti-jān Guṇān).<br>
+            Attachment to the qualities (Guṇa-saṅgo asya) is the cause of its births in good and evil wombs (Sad-asad-yoni-janmasu).
+        </div>
+        <a class="commentary-btn" href="english-13-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.23 (The Nature of the Supreme Puruṣa) ॥</div>
+        <p class="shlok-sanskrit">
+            उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः।<br>
+            परमात्मेति चाप्युक्तो देहेऽस्मिन् पुरुषः परः।।
+        </p><div class="shlok-translation-formatted"> 
+    upadraṣṭānumantā ca bhartā bhoktā maheśvaraḥ |<br>
+    paramātmeti cāpyukto dehe’sminpuruṣaḥ paraḥ || 13.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The supreme Puruṣa in this body is also called the Witness (Upadraṣṭā), the Approver (Anumantā),<br>
+            the Supporter (Bhartā), the Enjoyer (Bhoktā), the Great Lord (Maheśvaraḥ), and the Supreme Self (Paramātmā).
+        </div>
+        <a class="commentary-btn" href="english-13-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.24 (The Reward of Knowing Puruṣa and Prakṛti) ॥</div>
+        <p class="shlok-sanskrit">
+            य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह।<br>
+            सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते।।
+        </p><div class="shlok-translation-formatted"> 
+    ya evaṃ vetti puruṣaṃ prakṛtiṃ ca guṇaiḥ saha |<br>
+    sarvathā vartamāno’pi na sa bhūyo’bhijāyate || 13.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who thus knows the Puruṣa (Consciousness) and Prakṛti (Nature) with its qualities (Guṇaiḥ saha),<br>
+            though engaged in all types of activities (Sarvathā Vartamāno api), is not born again (Na sa bhūyo abhijāyate).
+        </div>
+        <a class="commentary-btn" href="english-13-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.25 (Paths to Self-realization) ॥</div>
+        <p class="shlok-sanskrit">
+            ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।<br>
+            अन्ये साङ्ख्येन योगेन कर्मयोगेन चापरे।।
+        </p><div class="shlok-translation-formatted"> 
+    dhyānenātmani paśyanti kecidātmānamātmanā |<br>
+    anye sāṅkhyena yogena karmayogena cāpare || 13.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Some perceive the Self (Ātmānaṁ) by the Self (Ātmanā) in the heart through meditation (Dhyānena);<br>
+            others by the Yoga of knowledge (Sāṅkhyena Yogena), and still others by the Yoga of action (Karma-yogena cāpare).
+        </div>
+        <a class="commentary-btn" href="english-13-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.26 (The Path for the Less-informed) ॥</div>
+        <p class="shlok-sanskrit">
+            अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते।<br>
+            तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः।।
+        </p><div class="shlok-translation-formatted"> 
+    anye tvevmajānantaḥ śrutvānyebhya upāsate |<br>
+    te’pi cātitarantyeva mṛtyuṃ śrutiparāyaṇāḥ || 13.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Others, however, not knowing (Evam ajānantaḥ) these paths, worship (Upāsate) by hearing from others (Śrutvā Anyebhyaḥ).<br>
+            They also certainly cross beyond death (A-titaranti eva mṛtyuṁ), being devoted to the teachings they have heard (Śruti-parāyaṇāḥ).
+        </div>
+        <a class="commentary-btn" href="english-13-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.27 (Unity of Kṣetra and Kṣetrajña) ॥</div>
+        <p class="shlok-sanskrit">
+            यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्।<br>
+            क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ।।
+        </p><div class="shlok-translation-formatted"> 
+    yāvatsañjāyate kiñcitsattvaṃ sthāvarajaṅgamam |<br>
+    kṣetrakṣetrajñasaṃyogāttadviddhi bharatarṣabha || 13.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever exists, whether moving or unmoving (Sattvam Sthāvara-jaṅgamam), know it to be born<br>
+            from the union (Saṁyogāt) of the Field (Kṣetra) and the Knower of the Field (Kṣetrajña), O best of the Bhāratas.
+        </div>
+        <a class="commentary-btn" href="english-13-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.28 (Seeing the Equal Lord) ॥</div>
+        <p class="shlok-sanskrit">
+            समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।<br>
+            विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    samaṃ sarveṣu bhūteṣu tiṣṭhantaṃ parameśvaram |<br>
+    vinaśyatsvavinaśyantaṃ yaḥ paśyati sa paśyati || 13.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who sees the Supreme Lord (Parameśvaram) existing equally in all beings (Samaṁ Sarveṣu Bhūteṣu),<br>
+            the imperishable (Avinaśyantaṁ) within the perishable (Vinaśyatsu)—he truly sees.
+        </div>
+        <a class="commentary-btn" href="english-13-28.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.29 ॥</div>
+        <p class="shlok-sanskrit">
+            समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।<br>
+            न हिनस्त्यात्मनात्मानं ततो याति परां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    samaṃ paśyan hi sarvatra samavasthitamīśvaram |<br>
+    na hinastyātmanātmānaṃ tato yāti parāṃ gatim || 13.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For when one sees the Lord (Īśvaram) abiding equally everywhere (Samaṁ Paśyan hi Sarvatra Samavasthitam),<br>
+            one does not injure the Self by the self (Na hinasty ātmanātmānaṁ); thus one attains the supreme goal (Parāṁ Gatiṁ).
+        </div>
+        <a class="commentary-btn" href="english-13-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.30 (The Cause of Action) ॥</div>
+        <p class="shlok-sanskrit">
+            प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।<br>
+            यः पश्यति तथात्मानमकर्तारं स पश्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ |<br>
+    yaḥ paśyati tathātmānamakartāraṃ sa paśyati || 13.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who sees that all actions (Karmāṇi Sarvaśaḥ) are performed by Prakṛti alone (Prakṛtyaiva ca Kriyamāṇāni),<br>
+            and that the Self (Ātmānaṁ) is inactive (Akartāraṁ)—he truly sees.
+        </div>
+        <a class="commentary-btn" href="english-13-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.31 (The Nature of the Self) ॥</div>
+        <p class="shlok-sanskrit">
+            यदा भूतपृथग्भावमेकस्थमनुपश्यति।<br>
+            तत एव च विस्तारं ब्रह्म सम्पद्यते तदा।।
+        </p><div class="shlok-translation-formatted"> 
+    yadā bhūtapṛthagbhāvam ekastham anupaśyati |<br>
+    tata eva ca vistāraṃ brahma sampadyate tadā || 13.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When one perceives the diversified existence of beings (Bhūta-pṛthag-bhāvam) rooted in one (Eka-stham anupaśyati),<br>
+            and its further expansion from that one source—then one attains Brahman (Brahma Sampadyate Tadā).
+        </div>
+        <a class="commentary-btn" href="english-13-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.32 (The Eternal Self is Actionless) ॥</div>
+        <p class="shlok-sanskrit">
+            अनादित्वान्निर्गुणत्वात् परमात्मायमव्ययः।<br>
+            शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते ।।
+        </p><div class="shlok-translation-formatted"> 
+    anāditvān nirguṇatvāt paramātmāyam avyayaḥ |<br>
+    śarīrastho’pi kaunteya na karoti na lipyate || 13.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Being without a beginning (Anāditvān) and without qualities (Nirguṇatvāt), this Supreme Self (Paramātmā Ayam) is imperishable (Avyayaḥ).<br>
+            Though dwelling in the body (Loke asmin Vartate api saḥ), it neither acts (Na karoti) nor is tainted (Na lipyate).
+        </div>
+        <a class="commentary-btn" href="english-13-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.33 (Analogy of the Sky) ॥</div>
+        <p class="shlok-sanskrit">
+            यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।<br>
+            सर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yathā sarvagataṃ saukṣmyād ākāśaṃ nopalipyate |<br>
+    sarvatrāvasthito dehe tathātmā nopalipyate || 13.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Just as the all-pervading Ākāśa (space) is not tainted (No-palipyate) because of its subtlety (Saukṣmyāt),<br>
+            so the Self (Ātmā), though situated everywhere in the body (Sarvatrāvasthito dehe), is not tainted.
+        </div>
+        <a class="commentary-btn" href="english-13-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.34 (Analogy of the Sun) ॥</div>
+        <p class="shlok-sanskrit">
+            यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।<br>
+            क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    yathā prakāśayatyekaḥ kṛtsnaṃ lokam imaṃ raviḥ |<br>
+    kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata || 13.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Just as the one Sun (Raviḥ) illuminates this entire world (Kṛtsnaṁ Lokam Imaṁ),<br>
+            so the Knower of the Field (Kṣetrī) illuminates the whole Field (Kṣetraṁ Kṛtsnaṁ), O Bhārata.
+        </div>
+        <a class="commentary-btn" href="english-13-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 13.35 (Conclusion and Final Goal) ॥</div>
+        <p class="shlok-sanskrit">
+            क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा।<br>
+            भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्।।
+        </p><div class="shlok-translation-formatted"> 
+    kṣetrakṣetrajñayor evam antaraṃ jñānacakṣuṣā |<br>
+    bhūtaprakṛtimokṣaṃ ca ye vidur yānti te param || 13.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those who perceive, with the eye of knowledge (Jñāna-cakṣuṣā), this distinction (Antaraṁ) between the Field and the Knower of the Field,<br>
+            and the liberation (Mokṣaṁ) from the material nature of beings (Bhūta-prakṛti)—they attain the Supreme (Yānti te Param).
+        </div>
+        <a class="commentary-btn" href="english-13-35.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे क्षेत्रक्षेत्रज्ञविभागयोगो नाम त्रयोदशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the thirteenth chapter, entitled Kṣetra-kṣetrajña Vibhāga Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter12.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter14.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

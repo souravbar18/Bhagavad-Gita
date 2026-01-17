@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 3: Karma Yoga (The Yoga of Action)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 3: Karma Yoga (The Yoga of Action) - Verses 3.1 to 3.43</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter2.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter4.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.1 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।<br>
+            तत्किं कर्मणि घोरे मां नियोजयसि केशव।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    jyāyasī cetkarmaṇaste matā buddhirjanārdana |<br>
+    tatkiṃ karmaṇi ghore māṃ niyojayasi keśava || 3.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Janardana (Krishna), if You consider that wisdom (Buddhi)<br>
+            is superior to action (Karma), why then do You engage me in this terrible action, O Keshava (Krishna)?
+        </div>
+        <a class="commentary-btn" href="english-3-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.2 ॥</div>
+        <p class="shlok-sanskrit">
+            व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे।<br>
+            तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    vyāmiśreṇeva vākyena buddhiṃ mohayasīva me |<br>
+    tadekaṃ vada niścitya yena śreyo’hamāpnuyām || 3.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            With seemingly ambiguous words, You confuse my understanding.<br>
+            Tell me definitely that one path by which I may attain the highest good.
+        </div>
+        <a class="commentary-btn" href="english-3-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.3 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            लोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ।<br>
+            ज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    loke’smin dvividhā niṣṭhā purā proktā mayānagha |<br>
+    jñānayogena sāṅkhyānāṃ karmayogena yoginām || 3.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: O sinless one (Arjuna), in this world, a two-fold path was previously declared by Me:<br>
+            the path of knowledge (Jñāna Yoga) for the Sāṅkhyas (men of contemplation) and the path of action (Karma Yoga) for the Yogis (men of action).
+        </div>
+        <a class="commentary-btn" href="english-3-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.4 ॥</div>
+        <p class="shlok-sanskrit">
+            न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते।<br>
+            न च सन्न्यसनादेव सिद्धिं समधिगच्छति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na karmaṇāmanārambhān naiṣkarmyaṃ puruṣo’śnute |<br>
+    na ca sannyasanādeva siddhiṃ samadhigacchati || 3.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            A man does not attain freedom from action (Naishkarmya) merely by abstaining from actions,<br>
+            nor does he attain perfection merely by renunciation (Sannyasa).
+        </div>
+        <a class="commentary-btn" href="english-3-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.5 ॥</div>
+        <p class="shlok-sanskrit">
+            न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।<br>
+            कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na hi kaścit kṣaṇamapi jātu tiṣṭhatyakarmakṛt |<br>
+    kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ || 3.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Indeed, no one can ever remain without performing action even for a moment;<br>
+            for everyone is involuntarily made to act by the qualities (Gunas) born of nature.
+        </div>
+        <a class="commentary-btn" href="english-3-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.6 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन्।<br>
+            इन्द्रियार्थान् विमूढात्मा मिथ्याचारः स उच्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    karmendriyāṇi saṃyamya ya āste manasā smaran |<br>
+    indriyārthān vimūḍhātmā mithyācāraḥ sa ucyate || 3.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who restrains the organs of action but dwells in his mind on the objects of the senses,<br>
+            that deluded person is called a hypocrite.
+        </div>
+        <a class="commentary-btn" href="english-3-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.7 ॥</div>
+        <p class="shlok-sanskrit">
+            यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन।<br>
+            कर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yastvindriyāṇi manasā niyamyārabhate’rjuna |<br>
+    karmendriyaiḥ karmayogamasaktaḥ sa viśiṣyate || 3.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But he who, controlling the senses by the mind, O Arjuna, engages the organs of action<br>
+            in Karma Yoga (selfless action), without attachment, is superior.
+        </div>
+        <a class="commentary-btn" href="english-3-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.8 ॥</div>
+        <p class="shlok-sanskrit">
+            नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।<br>
+            शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    niyataṃ kuru karma tvaṃ karma jyāyo hyakarmaṇas |<br>
+    śarīrayātrāpi ca te na prasiddhyedakarmaṇaḥ || 3.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Perform your obligatory duty, for action is superior to inaction.<br>
+            Even the maintenance of your body would not be possible without action.
+        </div>
+        <a class="commentary-btn" href="english-3-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.9 ॥</div>
+        <p class="shlok-sanskrit">
+            यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः।<br>
+            तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yajñārthāt karmaṇo’nyatra loko’yaṃ karmabandhanaḥ |<br>
+    tadarthaṃ karma kaunteya muktasaṅgaḥ samācara || 3.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The world is bound by action, except for action performed as a sacrifice (Yajña).<br>
+            Therefore, O son of Kunti (Arjuna), perform action for the sake of sacrifice, free from attachment.
+        </div>
+        <a class="commentary-btn" href="english-3-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.10 ॥</div>
+        <p class="shlok-sanskrit">
+            सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः।<br>
+            अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sahayajñāḥ prajāḥ sṛṣṭvā purovāca prajāpatiḥ |<br>
+    anena prasaviṣyadhvameṣa vo’stviṣṭakāmadhuk || 3.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In the beginning, Prajapati (the Lord of creation), created mankind along with sacrifice (Yajña),<br>
+            and said, By this shall you propagate; let this be the milch-cow of your desires.
+        </div>
+        <a class="commentary-btn" href="english-3-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.11 ॥</div>
+        <p class="shlok-sanskrit">
+            देवान्भावयतानेन ते देवा भावयन्तु वः।<br>
+            परस्परं भावयन्तः श्रेयः परमवाप्स्यथ।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    devānbhāvayatānena te devā bhāvayantu vaḥ |<br>
+    parasparaṃ bhāvayantaḥ śreyaḥ paramavāpsyatha || 3.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Nourish the gods with this (sacrifice), and may those gods nourish you.<br>
+            Thus nourishing one another, you shall attain the highest good.
+        </div>
+        <a class="commentary-btn" href="english-3-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.12 ॥</div>
+        <p class="shlok-sanskrit">
+            इष्टान्भोगान् हि वो देवा दास्यन्ते यज्ञभाविताः।<br>
+            तैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः।।
+        </p><div class="shlok-translation-formatted"> 
+    iṣṭānbhogān hi vo devā dāsyante yajñabhāvitāḥ |<br>
+    tairdattānapradāyaibhyo yo bhuṅkte stena eva saḥ || 3.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The gods, nourished by sacrifice, will grant you the desired enjoyments.<br>
+            He who enjoys the gifts given by them without offering them in return is certainly a thief.
+        </div>
+        <a class="commentary-btn" href="english-3-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.13 ॥</div>
+        <p class="shlok-sanskrit">
+            यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः।<br>
+            भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yajñaśiṣṭāśinaḥ santo mucyante sarvakilbiṣaiḥ |<br>
+    bhuñjate te tvaghaṃ pāpā ye pacantyātmakāraṇāt || 3.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The righteous who eat the remnants of sacrifice are freed from all sins.<br>
+            But those wicked ones who cook only for themselves eat only sin.
+        </div>
+        <a class="commentary-btn" href="english-3-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.14 ॥</div>
+        <p class="shlok-sanskrit">
+            अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः।<br>
+            यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    annādbhavanti bhūtāni parjanyādannasambhavaḥ |<br>
+    yajñādbhavati parjanyo yajñaḥ karmasamudbhavaḥ || 3.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            From food spring forth all beings; from rain is the production of food;<br>
+            rain proceeds from sacrifice; and sacrifice originates from action.
+        </div>
+        <a class="commentary-btn" href="english-3-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.15 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम्।<br>
+            तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    karma brahmodbhavaṃ viddhi brahmākṣarasamudbhavam |<br>
+    tasmātsarvagataṃ brahma nityaṃ yajñe pratiṣṭhitam || 3.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know that action (Karma) originates from the Veda (Brahma), and the Veda originates from the Imperishable (Akshara Brahman).<br>
+            Therefore, the all-pervading Brahman is eternally established in sacrifice (Yajña).
+        </div>
+        <a class="commentary-btn" href="english-3-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.16 ॥</div>
+        <p class="shlok-sanskrit">
+            एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः।<br>
+            अघायुरिन्द्रियारामो मोघं पार्थ स जीवति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    evaṃ pravartitaṃ cakraṃ nānuvartayatīha yaḥ |<br>
+    aghāyurindriyārāmo moghaṃ pārtha sa jīvati || 3.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who does not follow this cycle thus set in motion in this world, O Partha (Arjuna),<br>
+            he lives in vain, indulging in the senses and having a sinful life.
+        </div>
+        <a class="commentary-btn" href="english-3-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.17 ॥</div>
+        <p class="shlok-sanskrit">
+            यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः।<br>
+            आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yastvātmaratireva syādātmatṛptaśca mānavaḥ |<br>
+    ātmanyeva ca santuṣṭastasya kāryaṃ na vidyate || 3.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But the man who rejoices in the Self, who is satisfied in the Self, and who is content only in the Self,<br>
+            for him, there is no duty to perform.
+        </div>
+        <a class="commentary-btn" href="english-3-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.18 ॥</div>
+        <p class="shlok-sanskrit">
+            नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन।<br>
+            न चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    naiva tasya kṛtenārtho nākṛteneha kaścana |<br>
+    na cāsya sarvabhūteṣu kaścidarthavyapāśrayaḥ || 3.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He has no purpose to gain in this world by action done, nor by action not done.<br>
+            He does not depend on any being for any object.
+        </div>
+        <a class="commentary-btn" href="english-3-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.19 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मादसक्तः सततं कार्यं कर्म समाचर।<br>
+            असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tasmādasaktaḥ satataṃ kāryaṃ karma samācara |<br>
+    asakto hyācarankarma paramāpnoti pūruṣaḥ || 3.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, constantly perform your duty without attachment; for by performing action without attachment,<br>
+            man attains the Supreme.
+        </div>
+        <a class="commentary-btn" href="english-3-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.20 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मणैव हि संसिद्धिमास्थिता जनकादयः।<br>
+            लोकसङ्ग्रहमेवापि सम्पश्यन्कर्तुमर्हसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    karmaṇaiva hi saṃsiddhimāsthitā janakādayaḥ |<br>
+    lokasaṅgrahamevāpi sampaśyankartumarhasi || 3.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Indeed, Janaka and others attained perfection only by action.<br>
+            You should also act, with a view to maintaining the order of the world.
+        </div>
+        <a class="commentary-btn" href="english-3-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.21 ॥</div>
+        <p class="shlok-sanskrit">
+            यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।<br>
+            स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yad yad ācarati śreṣṭhas tat tad evetaro janaḥ |<br>
+    sa yat pramāṇaṃ kurute lokas tad anuvartate || 3.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever a great man does, that very thing other people also do.<br>
+            Whatever standard he sets, the world follows that.
+        </div>
+        <a class="commentary-btn" href="english-3-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.22 ॥</div>
+        <p class="shlok-sanskrit">
+            न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन।<br>
+            नानवाप्तमवाप्तव्यं वर्त एव च कर्मणि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na me pārthāsti kartavyaṃ triṣu lokeṣu kiñcana |<br>
+    nānavāptam avāptavyaṃ varta eva ca karmaṇi || 3.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Partha (Arjuna), there is no duty for Me to perform in all the three worlds,<br>
+            nor anything to be attained that is unattained; yet, I engage in action.
+        </div>
+        <a class="commentary-btn" href="english-3-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.23 ॥</div>
+        <p class="shlok-sanskrit">
+            यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः।<br>
+            मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yadi hy ahaṃ na varteyaṃ jātu karmaṇy atandritaḥ |<br>
+    mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ || 3.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For if I did not engage in action tirelessly,<br>
+            O Partha, men would follow My path in every way.
+        </div>
+        <a class="commentary-btn" href="english-3-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.24 ॥</div>
+        <p class="shlok-sanskrit">
+            उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम्।<br>
+            सङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    utsīdeyur ime lokā na kuryāṃ karma ced aham |<br>
+    saṅkarasya ca kartā syām upahanyām imāḥ prajāḥ || 3.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If I did not perform action, these worlds would perish;<br>
+            I would be the creator of chaos and would destroy these living beings.
+        </div>
+        <a class="commentary-btn" href="english-3-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.25 ॥</div>
+        <p class="shlok-sanskrit">
+            सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत।<br>
+            कुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसङ्ग्रहम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    saktāḥ karmaṇy avidvāṃso yathā kurvanti bhārata |<br>
+    kuryād vidvāṃs tathāsaktaś cikīrṣur lokasaṅgraham || 3.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Just as the ignorant perform actions with attachment, O Bharata (Arjuna),<br>
+            so should the wise act, without attachment, desiring to maintain the order of the world.
+        </div>
+        <a class="commentary-btn" href="english-3-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.26 ॥</div>
+        <p class="shlok-sanskrit">
+            न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम्।<br>
+            जोषयेत्सर्वकर्माणि विद्वान् युक्तः समाचरन्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na buddhibhedaṃ janayed ajñānāṃ karmasaṅginām |<br>
+    joṣayet sarvakarmāṇi vidvān yuktaḥ samācaran || 3.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The wise person should not unsettle the minds of the ignorant who are attached to action.<br>
+            He should perform all actions diligently, remaining steadfast (in Self-knowledge).
+        </div>
+        <a class="commentary-btn" href="english-3-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.27 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः।<br>
+            अहङ्कारविमूढात्मा कर्ताहमिति मन्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ |<br>
+    ahaṅkāravimūḍhātmā kartāham iti manyate || 3.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            All actions are performed in all cases by the qualities (Gunas) of nature.<br>
+            The person deluded by egoism thinks, I am the doer.
+        </div>
+        <a class="commentary-btn" href="english-3-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.28 ॥</div>
+        <p class="shlok-sanskrit">
+            तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः।<br>
+            गुणा गुणेषु वर्तन्त इति मत्वा न सज्जते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tattvavit tu mahābāho guṇakarmavibhāgayoḥ |<br>
+    guṇā guṇeṣu vartanta iti matvā na sajjate || 3.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But the one who knows the truth about the divisions of the qualities and actions, O mighty-armed (Arjuna),<br>
+            knowing that the senses interact with the sense objects, is not attached.
+        </div>
+        <a class="commentary-btn" href="english-3-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.29 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु।<br>
+            तानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    prakṛter guṇasammūḍhāḥ sajjante guṇakarmasu |<br>
+    tān akṛtsnavido mandān kṛtsnavin na vicālayet || 3.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those deluded by the qualities of nature become attached to the functions of the qualities.<br>
+            The knower of the whole should not disturb these ignorant ones with limited knowledge.
+        </div>
+        <a class="commentary-btn" href="english-3-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.30 ॥</div>
+        <p class="shlok-sanskrit">
+            मयि सर्वाणि कर्माणि सन्न्यस्याध्यात्मचेतसा।<br>
+            निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    mayi sarvāṇi karmāṇi sannyasyādhyātmacetasā |<br>
+    nirāśīr nirmamo bhūtvā yudhyasva vigatajvaraḥ || 3.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Surrendering all actions to Me, with your consciousness fixed on the Self,<br>
+            be free from hope, possessiveness, and mental fever, and fight.
+        </div>
+        <a class="commentary-btn" href="english-3-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.31 ॥</div>
+        <p class="shlok-sanskrit">
+            ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः।<br>
+            श्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ |<br>
+    śraddhāvanto’nasūyanto mucyante te’pi karmabhiḥ || 3.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Those men who always practice this teaching of Mine with faith and without finding fault,<br>
+            are also liberated from the bondage of actions.
+        </div>
+        <a class="commentary-btn" href="english-3-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.32 ॥</div>
+        <p class="shlok-sanskrit">
+            ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम्।<br>
+            सर्वज्ञानविमूढांस्तान् विद्धि नष्टानचेतसः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    ye tvetadabhyasūyanto nānutiṣṭhanti me matam |<br>
+    sarvajñānavimūḍhāṃstānviddhi naṣṭānacetasaḥ || 3.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But know that those senseless persons who, finding fault, do not practice this teaching of Mine,<br>
+            are deluded in all knowledge and are lost.
+        </div>
+        <a class="commentary-btn" href="english-3-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.33 ॥</div>
+        <p class="shlok-sanskrit">
+            सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि।<br>
+            प्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sadṛśaṃ ceṣṭate svasyāḥ prakṛterjñānavānapi |<br>
+    prakṛtiṃ yānti bhūtāni nigrahaḥ kiṃ kariṣyati || 3.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Even the wise man acts according to his own nature.<br>
+            All beings follow their nature. What can restraint do?
+        </div>
+        <a class="commentary-btn" href="english-3-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.34 ॥</div>
+        <p class="shlok-sanskrit">
+            इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ।<br>
+            तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥ ३.३४ ॥
+        </p>
+        <div class="shlok-translation-formatted"> 
+    indriyasyendriyasyārthe rāgadveṣau vyavasthitau |<br>
+    tayorna vaśamāgacchettau hyasya paripanthinau || 3.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Attachment and aversion for the objects of the senses reside in the senses.<br>
+            One should not come under the control of these two, for they are one's enemies.
+        </div>
+        <a class="commentary-btn" href="english-3-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.35 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रेयान् स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।<br>
+            स्वधर्मे निधनं श्रेयः परधर्मो भयावहः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śreyān svadharmo viguṇaḥ paradharmāt svanuṣṭhitāt |<br>
+    svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ || 3.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            It is better to perform one’s own duty (Svadharma), though imperfectly, than to perform another’s duty perfectly.<br>
+            Death in one's own duty is better; the duty of another is perilous.
+        </div>
+        <a class="commentary-btn" href="english-3-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.36 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            अथ केन प्रयुक्तोऽयं पापं चरति पूरुषः।<br>
+            अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    atha kena prayukto’yaṃ pāpaṃ carati pūruṣaḥ |<br>
+    anicchannapi vārṣṇeya balādiva niyojitaḥ || 3.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Varshneya (Krishna), what is it that prompts a person to commit sin,<br>
+            even unwillingly, as if driven by force?
+        </div>
+        <a class="commentary-btn" href="english-3-36.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.37 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            काम एष क्रोध एष रजोगुणसमुद्भवः।<br>
+            महाशनो महापाप्मा विद्ध्येनमिह वैरिणम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ |<br>
+    mahāśano mahāpāpmā viddhyenamiha vairiṇam || 3.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: It is desire, it is anger, born of the quality of passion (Rajas),<br>
+            all-devouring and all-sinful. Know this to be the enemy here.
+        </div>
+        <a class="commentary-btn" href="english-3-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.38 ॥</div>
+        <p class="shlok-sanskrit">
+            धूमेनाव्रियते वह्निर्यथादर्शो मलेन च।<br>
+            यथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    dhūmenāvriyate vahniryathādarśo malena ca |<br>
+    yatholbenāvṛto garbhastathā tenedamāvṛtam || 3.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            As fire is covered by smoke, as a mirror is covered by dust,<br>
+            and as an embryo is enveloped by the womb, so is this (knowledge) covered by that (desire/lust).
+        </div>
+        <a class="commentary-btn" href="english-3-38.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.39 ॥</div>
+        <p class="shlok-sanskrit">
+            आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा।<br>
+            कामरूपेण कौन्तेय दुष्पूरेणानलेन च।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    āvṛtaṃ jñānametena jñānino nityavairiṇā |<br>
+    kāmarūpeṇa kaunteya duṣpūreṇānalena ca || 3.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Knowledge is covered by this eternal enemy of the wise, O son of Kunti (Arjuna),<br>
+            in the form of desire, which is insatiable and burns like fire.
+        </div>
+        <a class="commentary-btn" href="english-3-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.40 ॥</div>
+        <p class="shlok-sanskrit">
+            इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते।<br>
+            एतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    indriyāṇi mano buddhirasyādhiṣṭhānamucyate |<br>
+    etairvimohayaty eṣa jñānāmāvṛtya dehinam || 3.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The senses, mind, and intellect are said to be its abode.<br>
+            Through these, it deludes the embodied soul by covering its knowledge.
+        </div>
+        <a class="commentary-btn" href="english-3-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.41 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ।<br>
+            पाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tasmāttvamindriyāṇyādau niyamya bharatarṣabha |<br>
+    pāpmānaṃ prajahi hyenaṃ jñānavijñānanāśanam || 3.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, O best of the Bharatas (Arjuna), first controlling the senses,<br>
+            kill this sinful destroyer of knowledge and realization.
+        </div>
+        <a class="commentary-btn" href="english-3-41.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.42 ॥</div>
+        <p class="shlok-sanskrit">
+            इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः।<br>
+            मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ |<br>
+    manasastu parā buddhiryo buddheḥ paratastu saḥ || 3.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            They say the senses are superior; superior to the senses is the mind.<br>
+            Superior to the mind is the intellect, and superior to the intellect is He (the Self).
+        </div>
+        <a class="commentary-btn" href="english-3-42.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 3.43 ॥</div>
+        <p class="shlok-sanskrit">
+            एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना।<br>
+            जहि शत्रुं महाबाहो कामरूपं दुरासदम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    evaṃ buddheḥ paraṃ buddhvā saṃstabhyātmānamātmanā |<br>
+    jahi śatruṃ mahābāho kāmarūpaṃ durāsadam || 3.43 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Thus knowing Him who is superior to the intellect, O mighty-armed (Arjuna),<br>
+            steady the self by the Self, and destroy the enemy in the form of desire, which is difficult to conquer.
+        </div>
+        <a class="commentary-btn" href="english-3-43.html">View Commentary</a>
+    </div>
+
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे कर्मयोगो नाम तृतीयोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the third chapter, entitled Karma Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter2.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter4.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

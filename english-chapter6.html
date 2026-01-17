@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 6: Dhyāna Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 6: Dhyāna Yoga (The Yoga of Meditation) - Verses 6.1 to 6.47</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter5.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter7.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.1 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            अनाश्रितः कर्मफलं कार्यं कर्म करोति यः।<br>
+            स सन्न्यासी च योगी च न निरग्निर्न चाक्रियः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    anāśritaḥ karmaphalaṃ kāryaṃ karma karoti yaḥ |<br>
+    sa sannyāsī ca yogī ca na niragnirna cākriyaḥ || 6.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: He who performs the prescribed duty without depending on the fruits of actions,<br>
+            is a Sannyasi (renunciant) and a Yogi, not he who does not light the sacred fire or one who does not act.
+        </div>
+        <a class="commentary-btn" href="english-6-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.2 ॥</div>
+        <p class="shlok-sanskrit">
+            यं सन्न्यासमिति प्राहुर्योगं तं विद्धि पाण्डव।<br>
+            न ह्यसन्न्यस्तसङ्कल्पो योगी भवति कश्चन।।
+        </p><div class="shlok-translation-formatted"> 
+    yaṃ sannyāsamiti prāhuryogaṃ taṃ viddhi pāṇḍava |<br>
+    na hyasannyastasaṅkalpo yogī bhavati kaścana || 6.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            What they call renunciation (Sannyāsa), know that to be Yoga (Karma Yoga), O son of Pandu (Arjuna).<br>
+            For no one becomes a Yogi who has not renounced the intention (for selfish results).
+        </div>
+        <a class="commentary-btn" href="english-6-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.3 ॥</div>
+        <p class="shlok-sanskrit">
+            आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते।<br>
+            योगारूढस्य तस्यैव शमः कारणमुच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    ārurukṣormuneryogaṃ karma kāraṇamucyate |<br>
+    yogārūḍhasya tasyaiva śamaḥ kāraṇamucyate || 6.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For a sage who wishes to ascend to Yoga (meditation), action is said to be the means.<br>
+            For the same person who has attained Yoga (perfection), tranquility is said to be the means.
+        </div>
+        <a class="commentary-btn" href="english-6-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.4 ॥</div>
+        <p class="shlok-sanskrit">
+            यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते।<br>
+            सर्वसङ्कल्पसन्न्यासी योगारूढस्तदोच्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yadā hi nendriyārtheṣu na karmasvanuṣajjate |<br>
+    sarvasaṅkalpasannyāsī yogārūḍhastadocyate || 6.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When a man is not attached to sense objects or to actions,<br>
+            having renounced all intentions (for fruits), then he is said to have ascended to Yoga.
+        </div>
+        <a class="commentary-btn" href="english-6-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.5 ॥</div>
+        <p class="shlok-sanskrit">
+            उद्धरेदात्मनात्मानं नात्मानमवसादयेत्।<br>
+            आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः।।
+        </p><div class="shlok-translation-formatted"> 
+    uddharedātmanātmānaṃ nātmānamavasādayet |<br>
+    ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ || 6.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One must elevate the self by the self, and not degrade the self.<br>
+            For the self alone is the friend of the self, and the self alone is the enemy of the self.
+        </div>
+        <a class="commentary-btn" href="english-6-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.6 ॥</div>
+        <p class="shlok-sanskrit">
+            बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः।<br>
+            अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्।।
+        </p><div class="shlok-translation-formatted"> 
+    bandhurātmātmanastasya yenātmaivātmanā jitaḥ |<br>
+    anātmanastu śatrutve vartetātmaiva śatruvat || 6.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The self is the friend of that person by whom the self has been conquered by the self.<br>
+            But for the uncontrolled self, the self acts as an enemy, like an external foe.
+        </div>
+        <a class="commentary-btn" href="english-6-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.7 ॥</div>
+        <p class="shlok-sanskrit">
+            जितात्मनः प्रशान्तस्य परमात्मा समाहितः।<br>
+            शीतोष्णसुखदुःखेषु तथा मानापमानयोः।।
+        </p><div class="shlok-translation-formatted"> 
+    jitātmanaḥ praśāntasya paramātmā samāhitaḥ |<br>
+    śītoṣṇasukhaduḥkheṣu tathā mānāpamānayoḥ || 6.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The supreme Self (Paramātmā) of one who has conquered the self and attained tranquility<br>
+            is completely stable in cold and heat, happiness and distress, as well as honor and dishonor.
+        </div>
+        <a class="commentary-btn" href="english-6-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.8 ॥</div>
+        <p class="shlok-sanskrit">
+            ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः।<br>
+            युक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः।।
+        </p><div class="shlok-translation-formatted"> 
+    jñānavijñānatṛptātmā kūṭastho vijitendriyaḥ |<br>
+    yukta ityucyate yogī loṣṭrāśmakāñcanaḥ || 6.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Yogi whose self is satisfied with knowledge and realization, who is unwavering and has conquered the senses,<br>
+            is said to be united (Yuktah). To him, a lump of earth, a stone, and gold are equal.
+        </div>
+        <a class="commentary-btn" href="english-6-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.9 ॥</div>
+        <p class="shlok-sanskrit">
+            सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु।<br>
+            साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    suhṛnmitrāryudāsīnamadhyasthadveṣyabandhuṣu |<br>
+    sādhuṣvapi ca pāpeṣu samabuddhirviśiṣyate || 6.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He excels who is of the same mind towards well-wishers, friends, foes, neutrals, arbiters, haters, and relatives,<br>
+            as well as to the virtuous and the sinful.
+        </div>
+        <a class="commentary-btn" href="english-6-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.10 ॥</div>
+        <p class="shlok-sanskrit">
+            योगी युञ्जीत सततमात्मानं रहसि स्थितः।<br>
+            एकाकी यतचित्तात्मा निराशीरपरिग्रहः।।
+        </p><div class="shlok-translation-formatted"> 
+    yogī yuñjīta satatamātmānaṃ rahasi sthitaḥ |<br>
+    ekākī yatacittātmā nirāśīraparigrahaḥ || 6.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Yogi should constantly focus his mind (on the Self), remaining in a solitary place,<br>
+            alone, with a controlled mind and body, free from desires, and without possessions.
+        </div>
+        <a class="commentary-btn" href="english-6-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.11 ॥</div>
+        <p class="shlok-sanskrit">
+            शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः।<br>
+            नात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śucau deśe pratiṣṭhāpya sthiramāsanamātmanaḥ |<br>
+    nātyucchritaṃ nātinīcaṃ cailājinakuśottaram || 6.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In a clean place, establishing a firm seat for himself, neither too high nor too low,<br>
+            covered with a cloth, deerskin, and Kuśa grass.
+        </div>
+        <a class="commentary-btn" href="english-6-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.12 ॥</div>
+        <p class="shlok-sanskrit">
+            तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः।<br>
+            उपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये।।
+        </p><div class="shlok-translation-formatted"> 
+    tatraikāgraṃ manaḥ kṛtvā yatacittendriyakriyaḥ |<br>
+    upaviśyāsane yuñjyādyogamātmaviśuddhaye || 6.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sitting there on the seat, making the mind one-pointed, with senses and activities controlled,<br>
+            he should practice Yoga for the purification of the Self.
+        </div>
+        <a class="commentary-btn" href="english-6-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.13 ॥</div>
+        <p class="shlok-sanskrit">
+            समं कायशिरोग्रीवं धारयन्नचलं स्थिरः।<br>
+            सम्प्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्।।
+        </p><div class="shlok-translation-formatted"> 
+    samaṃ kāyaśirogrīvaṃ dhārayannacalaṃ sthiraḥ |<br>
+    samprekṣya nāsikāgraṃ svaṃ diśaścānavalokayan || 6.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Holding the body, head, and neck erect and motionless, steady,<br>
+            gazing at the tip of his nose, and not looking around in any direction.
+        </div>
+        <a class="commentary-btn" href="english-6-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.14 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः।<br>
+            मनः संयम्य मच्चित्तो युक्त आसीत मत्परः।।
+        </p><div class="shlok-translation-formatted"> 
+    praśāntātmā vigatabhīrbramhacārivrate sthitaḥ |<br>
+    manaḥ saṃyamya maccitto yukto āsīta matparaḥ || 6.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            With a peaceful mind, free from fear, firm in the vow of celibacy (Brahmacharya),<br>
+            controlling the mind, fixing the thought on Me, he should sit, devoted to Me.
+        </div>
+        <a class="commentary-btn" href="english-6-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.15 ॥</div>
+        <p class="shlok-sanskrit">
+            युञ्जन्नेवं सदात्मानं योगी नियतमानसः।<br>
+            शान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    yuñjannevaṃ sadātmānaṃ yogī niyatamānasaḥ |<br>
+    śāntiṃ nirvāṇaparamāṃ madsansthāmadhigacchati || 6.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Constantly keeping the mind thus absorbed, the Yogi with a controlled mind<br>
+            attains peace, the supreme state of Nirvana (liberation), which abides in Me.
+        </div>
+        <a class="commentary-btn" href="english-6-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.16 ॥</div>
+        <p class="shlok-sanskrit">
+            नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः।<br>
+            न चाति स्वप्नशीलस्य जाग्रतो नैव चार्जुन।।
+        </p><div class="shlok-translation-formatted"> 
+    nātyaśnatastu yogo’sti na caikāntamanaśnataḥ |<br>
+    na cāti svapnaśīlasya jāgrato naiva cārjuna || 6.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Verily, Yoga is not for him who eats too much or who does not eat at all,<br>
+            nor for him who sleeps too much, nor for him who is awake constantly, O Arjuna.
+        </div>
+        <a class="commentary-btn" href="english-6-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.17 ॥</div>
+        <p class="shlok-sanskrit">
+            युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु।<br>
+            युक्तस्वप्नावबोधस्य योगो भवति দুঃখहा।।
+        </p><div class="shlok-translation-formatted"> 
+    yuktāhāravihārasya yuktaceṣṭasya karmasu |<br>
+    yuktasvapnāvabodhasya yogo bhavati duḥkhahā || 6.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Yoga becomes the destroyer of sorrow for him who is moderate in eating and recreation,<br>
+            moderate in exertion in activities, and moderate in sleep and waking.
+        </div>
+        <a class="commentary-btn" href="english-6-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.18 ॥</div>
+        <p class="shlok-sanskrit">
+            यदा विनियतं चित्तमात्मन्येवावतिष्ठते।<br>
+            निःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा।।
+        </p><div class="shlok-translation-formatted"> 
+    yadā viniyataṃ cittamātmanyevāvatiṣṭhate |<br>
+    niḥspṛhaḥ sarvakāmebhyo yukta ityucyate tadā || 6.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When the perfectly disciplined mind rests in the Self alone,<br>
+            free from desire for all enjoyments, then he is said to be united (in Yoga).
+        </div>
+        <a class="commentary-btn" href="english-6-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.19 ॥</div>
+        <p class="shlok-sanskrit">
+            यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता।<br>
+            योगिनो यतचित्तस्य युञ्जतो योगमात्मनः।।
+        </p><div class="shlok-translation-formatted"> 
+    yathā dīpo nivātastho neṅgate sopamā smṛtā |<br>
+    yogino yatacittasya yuñjato yogamātmanaḥ || 6.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            As a lamp in a windless place does not flicker—that is the simile used<br>
+            for a Yogi whose mind is controlled and who practices Yoga of the Self.
+        </div>
+        <a class="commentary-btn" href="english-6-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.20 ॥</div>
+        <p class="shlok-sanskrit">
+            यत्रोपरमते चित्तं निरुद्धं योगसेवया।<br>
+            यत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    yatroparamate cittaṃ niruddhaṃ yogasevayā |<br>
+    yatra caivātmanātmānaṃ paśyannātmani tuṣyati || 6.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When the mind, restrained by the practice of Yoga, attains quietude,<br>
+            and when, seeing the Self by the self, he is satisfied in the Self,
+        </div>
+        <a class="commentary-btn" href="english-6-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.21 ॥</div>
+        <p class="shlok-sanskrit">
+            सुखमात्यन्तिकं यत्तद् बुद्धिग्राह्यमतीन्द्रियम्।<br>
+            वेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः।।
+        </p><div class="shlok-translation-formatted"> 
+    sukhamātyantikaṃ yattadbuddhigrāhyamatīndriyam |<br>
+    vetti yatra na caivāyaṃ sthitaścalati tattvataḥ || 6.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When he experiences that ultimate happiness which is attained by the intellect and is beyond the senses,<br>
+            and established in which, he never departs from the truth.
+        </div>
+        <a class="commentary-btn" href="english-6-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.22 ॥</div>
+        <p class="shlok-sanskrit">
+            यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः।<br>
+            यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    yaṃ labdhvā cāparaṃ lābhaṃ manyate nādhikaṃ tataḥ |<br>
+    yasminsthito na duḥkhena guruṇāpi vicālyate || 6.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having obtained which, he considers no other gain greater than that,<br>
+            and established in which, he is not shaken even by the heaviest of miseries.
+        </div>
+        <a class="commentary-btn" href="english-6-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.23 ॥</div>
+        <p class="shlok-sanskrit">
+            तं विद्याद् दुःखसंयोगवियोगं योगसञ्ज्ञितम्।<br>
+            स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा।।
+        </p><div class="shlok-translation-formatted"> 
+    taṃ vidyād duḥkhasaṃyogaviyogaṃ yogasaṅjñitam |<br>
+    sa niścayena yoktavyo yogo’nirviṇṇacetasā || 6.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Let that be known as Yoga, the severance of connection with sorrow.<br>
+            This Yoga must be practiced with determination and an undaunted mind.
+        </div>
+        <a class="commentary-btn" href="english-6-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.24 ॥</div>
+        <p class="shlok-sanskrit">
+            सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः।<br>
+            मनसैव इन्द्रियग्रामं विनियम्य समन्ततः।।
+        </p><div class="shlok-translation-formatted"> 
+    saṅkalpaprabhavānkāmāṃstyaktvā sarvānaśeṣataḥ |<br>
+    manasaivendriyagrāmaṃ viniyamya samantataḥ || 6.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Completely abandoning all desires born of selfish intentions, without exception,<br>
+            and restraining the senses from all sides by the mind alone.
+        </div>
+        <a class="commentary-btn" href="english-6-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.25 ॥</div>
+        <p class="shlok-sanskrit">
+            शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया।<br>
+            आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्।।
+        </p><div class="shlok-translation-formatted"> 
+    śanaiḥ śanairuparamedbuddhyā dhṛtigṛhītayā |<br>
+    ātmasaṃsthaṃ manaḥ kṛtvā na kiñcidapi cintayet || 6.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Let him gradually achieve quietude by the intellect held firm by patience.<br>
+            Making the mind fixed in the Self, let him not think of anything else.
+        </div>
+        <a class="commentary-btn" href="english-6-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.26 ॥</div>
+        <p class="shlok-sanskrit">
+            यतो यतो निश्चरति मनश्चञ्चलमस्थिरम्।<br>
+            ततस्ततो नियम्यैतदात्मन्येव वशं नयेत्।।
+        </p><div class="shlok-translation-formatted"> 
+    yato yato niścarati manaścañcalamasthiram |<br>
+    tatastato niyamyaitadātmanyeva vaśaṃ nayet || 6.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whenever the wavering and unsteady mind wanders away,<br>
+            let him restrain it from those objects and bring it back under the control of the Self alone.
+        </div>
+        <a class="commentary-btn" href="english-6-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.27 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्।<br>
+            उपैति शान्तरजसं ब्रह्मभूतमकल्मषम्।।
+        </p><div class="shlok-translation-formatted"> 
+    praśāntamanasaṃ hyenaṃ yoginaṃ sukhamuttamam |<br>
+    upaiti śāntarajasaṃ brahmabhūtamakalmaṣam || 6.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Supreme happiness comes to the Yogi whose mind is peaceful, whose passions are subdued,<br>
+            who is sinless, and who has become one with Brahman.
+        </div>
+        <a class="commentary-btn" href="english-6-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.28 ॥</div>
+        <p class="shlok-sanskrit">
+            युञ्जन्नेवं सदात्मानं योगी विगतकल्मषः।<br>
+            सुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते।।
+        </p><div class="shlok-translation-formatted"> 
+    yuñjannevaṃ sadātmānaṃ yogī vigatakalmaṣaḥ |<br>
+    sukhena brahmasaṃsparśamatyantaṃ sukhamaśnute || 6.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Constantly keeping the self engaged in Yoga, the Yogi, freed from sin,<br>
+            easily enjoys the infinite happiness of contact with Brahman.
+        </div>
+        <a class="commentary-btn" href="english-6-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.29 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि।<br>
+            ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvabhūtasthamātmānaṃ sarvabhūtāni cātmani |<br>
+    īkṣate yogayuktātmā sarvatra samadarśanaḥ || 6.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He whose mind is united by Yoga sees the Self abiding in all beings,<br>
+            and all beings in the Self, seeing the same everywhere.
+        </div>
+        <a class="commentary-btn" href="english-6-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.30 ॥</div>
+        <p class="shlok-sanskrit">
+            यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति।<br>
+            तस्याहं न प्रणश्यामि स च मे न प्रणश्यति।।
+        </p><div class="shlok-translation-formatted"> 
+    yo māṃ paśyati sarvatra sarvaṃ ca mayi paśyati |<br>
+    tasyāhaṃ na praṇaśyāmi sa ca me na praṇaśyati || 6.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who sees Me everywhere, and sees everything in Me,<br>
+            I am not lost to him, nor is he lost to Me.
+        </div>
+        <a class="commentary-btn" href="english-6-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.31 ॥</div>
+        <p class="shlok-sanskrit">
+            सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः।<br>
+            सर्वथा वर्तमानोऽपि स योगी मयि वर्तते।।
+        </p><div class="shlok-translation-formatted"> 
+    sarvabhūtasthitaṃ yo māṃ bhajatyekatvamāsthitaḥ |<br>
+    sarvathā vartamāno’pi sa yogī mayi vartate || 6.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            That Yogi who, established in oneness, worships Me dwelling in all beings,<br>
+            lives in Me, whatever his mode of life.
+        </div>
+        <a class="commentary-btn" href="english-6-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.32 ॥</div>
+        <p class="shlok-sanskrit">
+            आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन।<br>
+            सुखं वा यदि वा दुःखं स योगी परमो मतः।।
+        </p><div class="shlok-translation-formatted"> 
+    ātmaupamyena sarvatra samaṃ paśyati yo’rjuna |<br>
+    sukhaṃ vā yadi vā duḥkhaṃ sa yogī paramo mataḥ || 6.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He is considered the supreme Yogi, O Arjuna, who sees equality everywhere,<br>
+            by comparison with his own self, whether in happiness or in misery.
+        </div>
+        <a class="commentary-btn" href="english-6-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.33 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            योऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन।<br>
+            एतस्याहं न पश्यामि चञ्चलत्वात्स्थितिं स्थिराम्।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    yo’yaṃ yogastvayā proktaḥ sāmyena madhusūdana |<br>
+    etasyāhaṃ na paśyāmi cañcalatvātsthitiṃ sthirām || 6.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Madhusūdana (Krishna), this Yoga of equanimity which You have declared,<br>
+            I do not see its steady continuance, due to the mind's restlessness.
+        </div>
+        <a class="commentary-btn" href="english-6-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.34 ॥</div>
+        <p class="shlok-sanskrit">
+            चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्।<br>
+            तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्।।
+        </p><div class="shlok-translation-formatted"> 
+    cañcalaṃ hi manaḥ kṛṣṇa pramāthi balavad dṛḍham |<br>
+    tasyāhaṃ nigrahaṃ manye vāyoriva suduṣkaram || 6.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For the mind is verily restless, O Krishna, turbulent, strong, and obstinate.<br>
+            I consider controlling it to be as difficult as controlling the wind.
+        </div>
+        <a class="commentary-btn" href="english-6-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.35 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            असंशयं महाबाहो मनो दुर्निग्रहं चलम्।<br>
+            अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    asaṃśayaṃ mahābāho mano durnigrahaṃ calam |<br>
+    abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate || 6.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Undoubtedly, O mighty-armed (Arjuna), the mind is restless and difficult to curb.<br>
+            But, O son of Kunti (Arjuna), it is brought under control by practice (Abhyāsa) and dispassion (Vairāgya).
+        </div>
+        <a class="commentary-btn" href="english-6-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.36 ॥</div>
+        <p class="shlok-sanskrit">
+            असंयतात्मना योगो दुष्प्राप इति मे मतिः।<br>
+            वश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः।।
+        </p><div class="shlok-translation-formatted"> 
+    asaṃyatātmanā yogo duṣprāpa iti me matiḥ |<br>
+    vaśyātmanā tu yatatā śakyo’vāptumupāyataḥ || 6.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Yoga is hard to attain for one who is uncontrolled—that is My opinion.<br>
+            But by one who is self-controlled and strives, it can be attained by proper means.
+        </div>
+        <a class="commentary-btn" href="english-6-36.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.37 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            अयतिः श्रद्धयोपेतो योगाच्चलितमानसः।<br>
+            अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    ayatiḥ śraddhayopeto yogāccalitamānasaḥ |<br>
+    aprāpya yogasaṃsiddhiṃ kāṃ gatiṃ kṛṣṇa gacchati || 6.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Krishna, what is the fate of the man who, though possessed of faith,<br>
+            is not striving and whose mind wanders away from Yoga, thus failing to attain perfection in Yoga?
+        </div>
+        <a class="commentary-btn" href="english-6-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.38 ॥</div>
+        <p class="shlok-sanskrit">
+            कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति।<br>
+            अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि।।
+        </p><div class="shlok-translation-formatted"> 
+    kaccinnobhayavibhraṣṭaśchinnābhramiva naśyati |<br>
+    apratiṣṭho mahābāho vimūḍho brahmaṇaḥ pathi || 6.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Does he not perish, having strayed from both (paths), like a scattered cloud,<br>
+            O mighty-armed (Arjuna), without foundation, deluded on the path to Brahman?
+        </div>
+        <a class="commentary-btn" href="english-6-38.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.39 ॥</div>
+        <p class="shlok-sanskrit">
+            एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः।<br>
+            त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते।।
+        </p><div class="shlok-translation-formatted"> 
+    etanme saṃśayaṃ kṛṣṇa chettumarhasyaśeṣataḥ |<br>
+    tvadanyaḥ saṃśayasyāsya chettā na hyupapadyate || 6.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You ought to completely remove this doubt of mine, O Krishna.<br>
+            For no one other than You can be the remover of this doubt.
+        </div>
+        <a class="commentary-btn" href="english-6-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.40 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते।<br>
+            न हि कल्याणकृत्कश्चिद् दुर्गतिं तात गच्छति।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    pārtha naiveha nāmutra vināśastasya vidyate |<br>
+    na hi kalyāṇakṛtkaścid durgatiṃ tāta gacchati || 6.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: O Pārtha (Arjuna), neither in this world nor in the next is there destruction for him.<br>
+            For no one who does good, O dear one, ever meets with an evil destiny.
+        </div>
+        <a class="commentary-btn" href="english-6-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.41 ॥</div>
+        <p class="shlok-sanskrit">
+            प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः।<br>
+            शुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते।।
+        </p><div class="shlok-translation-formatted"> 
+    prāpya puṇyakṛtāṃ lokānuṣitvā śāśvatīḥ samāḥ |<br>
+    śucīnāṃ śrīmatāṃ gehe yogabhraṣṭo’bhijāyate || 6.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having attained the worlds of the righteous and dwelt there for countless years,<br>
+            the one fallen from Yoga is born in the house of the pure and prosperous.
+        </div>
+        <a class="commentary-btn" href="english-6-41.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.42 ॥</div>
+        <p class="shlok-sanskrit">
+            अथवा योगिनामेव कुले भवति धीमताम्।<br>
+            एतद्धि दुर्लभतरं लोके जन्म यदीदृशम्।।
+        </p><div class="shlok-translation-formatted"> 
+    atha vā yogināmeva kule bhavati dhīmatām |<br>
+    etaddhi durlabhataraṃ loke janma yadīdṛśam || 6.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Or he may even be born in the family of Yogis who are endowed with wisdom.<br>
+            Indeed, such a birth is very difficult to obtain in this world.
+        </div>
+        <a class="commentary-btn" href="english-6-42.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.43 ॥</div>
+        <p class="shlok-sanskrit">
+            तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम्।<br>
+            यतते च ततो भूयः संसिद्धौ कुरुनन्दन।।
+        </p><div class="shlok-translation-formatted"> 
+    tatra taṃ buddhisamyogaṃ labhate paūrvadehikam |<br>
+    yatate ca tato bhūyaḥ saṃsiddhau kurunandana || 6.43 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There he regains the intellectual connection of his former body.<br>
+            And from there, he strives again more vigorously for perfection, O delight of the Kurus (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-6-43.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.44 ॥</div>
+        <p class="shlok-sanskrit">
+            पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः।<br>
+            जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते।।
+        </p><div class="shlok-translation-formatted"> 
+    pūrvābhyāsena tenaiva hriyate hyavaśo’pi saḥ |<br>
+    jijñāsurapi yogasya śabdabrahmativartate || 6.44 ||
+</div>
+        <div class="shlok-translation-formatted">
+            By that very previous practice, he is carried forward even against his will.<br>
+            Even a seeker of Yoga goes beyond the ritualistic injunctions of the Vedas (Śabda Brahman).
+        </div>
+        <a class="commentary-btn" href="english-6-44.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.45 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः।<br>
+            अनेकजन्मसंसिद्धस्ततो याति परां गतिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    prayatnādyatamānastu yogī saṃśuddhakilbiṣaḥ |<br>
+    anekajanmasamsiddhastato yāti parāṃ gatim || 6.45 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But the Yogi who strives earnestly, purified of sins,<br>
+            perfected through many births, attains the supreme goal.
+        </div>
+        <a class="commentary-btn" href="english-6-45.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.46 ॥</div>
+        <p class="shlok-sanskrit">
+            तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः।<br>
+            कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन।।
+        </p><div class="shlok-translation-formatted"> 
+    tapasvibhyo’dhiko yogī jñānibhyo’pi mato’dhikaḥ |<br>
+    karmibhyaścādhiko yogī tasmādyogī bhavārjuna || 6.46 ||
+</div>
+        <div class="shlok-translation-formatted">
+            A Yogi is superior to the ascetics, and he is considered superior even to the men of knowledge (Jñānis) or to men of action (Karmis).<br>
+            Therefore, be a Yogi, O Arjuna.
+        </div>
+        <a class="commentary-btn" href="english-6-46.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 6.47 ॥</div>
+        <p class="shlok-sanskrit">
+            योगिनामपि सर्वेषां मद्गतेनान्तरात्मना।<br>
+            श्रद्धावान्भजते यो मां स मे युक्ततमो मतः।।
+        </p><div class="shlok-translation-formatted"> 
+    yogināmapi sarveṣāṃ madgatenāntarātmanā |<br>
+    śraddhāvānbhajate yo māṃ sa me yuktatamo mataḥ || 6.47 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And among all Yogis, he who worships Me with faith, with his inner self merged in Me,<br>
+            is considered by Me to be the most perfectly united (Yuktamaḥ).
+        </div>
+        <a class="commentary-btn" href="english-6-47.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे ध्यानयोगो नाम षष्ठोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the sixth chapter, entitled Dhyāna Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter5.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter7.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 2: Sāṅkhya Yoga (The Yoga of Knowledge and Action)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devanagari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devanagari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 2: Sāṅkhya Yoga (The Yoga of Knowledge and Action) - Verses 2.1 to 2.72</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter1.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter3.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.1 ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम्।<br>
+            विषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    taṃ tathā kṛpayāviṣṭamaśrupūrṇākulekṣaṇam |<br>
+    viṣīdantamidaṃ vākyamuvāca madhusūdanaḥ || 2.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sanjaya said: To him (Arjuna) who was thus overwhelmed with pity, whose eyes were full of tears and distressed,<br>
+            and who was despondent, Madhusudana (Krishna) spoke these words.
+        </div>
+        <a class="commentary-btn" href="english-2-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.2 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।<br>
+            अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    kutastvā kaśmalamidaṃ viṣame samupasthitam |<br>
+    anāryajuṣṭamasvargyamakīrtikaramarjuna || 2.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: From where has this faint-heartedness, unbecoming of a noble person,<br>
+            come upon you at this crucial time? It is neither conducive to heaven nor to honor, O Arjuna.
+        </div>
+        <a class="commentary-btn" href="english-2-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.3 ॥</div>
+        <p class="shlok-sanskrit">
+            क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।<br>
+            क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    klaibyaṃ mā sma gamaḥ pārtha naitattvayyupapadyate |<br>
+    kṣudraṃ hṛdayadaurbalyaṃ tyaktvottiṣṭha parantapa || 2.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Yield not to impotence, O Partha (Arjuna). It is not worthy of you.<br>
+            Shake off this petty weakness of the heart and stand up, O Scorcher of Foes!
+        </div>
+        <a class="commentary-btn" href="english-2-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.4 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            कथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन।<br>
+            इषुभिः प्रतियोत्स्यामि পূजार्हावरिसूदन।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    kathaṃ bhīṣmamahaṃ saṅkhye droṇaṃ ca madhusūdana |<br>
+    iṣubhiḥ pratiyotsyāmi pūjārhāvarisūdana || 2.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Madhusudana (Krishna), how shall I, in battle, counteract with arrows<br>
+            Bhishma and Drona, who are worthy of worship, O Slayer of enemies?
+        </div>
+        <a class="commentary-btn" href="english-2-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.5 ॥</div>
+        <p class="shlok-sanskrit">
+            गुरूनहत्वा हि महानुभावान्<br>
+            श्रेयो भोक्तुं भैक्षमपीह लोके।<br>
+            हत्वार्थकामांस्तु गुरूनिहैव<br>
+            भुञ्जीय भोगान् रुधिरप्रदिग्धान्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    gurūnahatvā hi mahānubhāvān<br>
+    śreyo bhoktuṃ bhaikṣyamapīha loke |<br>
+    hatvārthakāmāṃstu gurūnihaiva<br>
+    bhuñjīya bhogān rudhirapradigdhān || 2.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            It would be better to live on alms in this world without slaying these venerable Gurus.<br>
+            But if I slay them, I shall only enjoy, even here, pleasures stained with blood.
+        </div>
+        <a class="commentary-btn" href="english-2-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.6 ॥</div>
+        <p class="shlok-sanskrit">
+            न चैतद्विद्मः कतरन्नो गरीयो<br>
+            यद्वा जयेम यदि वा नो जयेयुः।<br>
+            यानेव हत्वा न जिजीविषामः<br>
+            तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na caitadvidmaḥ kataran-no garīyo<br>
+    yad-vā jayema yadi vā no jayeyuḥ |<br>
+    yāneva hatvā na jijīviṣāmas<br>
+    te’vasthitāḥ pramukhe dhārtarāṣṭrāḥ || 2.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Nor do we know which is better: whether we should conquer them or they should conquer us.<br>
+            The sons of Dhritarashtra, whom having slain we should not wish to live, stand before us.
+        </div>
+        <a class="commentary-btn" href="english-2-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.7 ॥</div>
+        <p class="shlok-sanskrit">
+            कार्पण्यदोषोपहतस्वभावः<br>
+            पृच्छामि त्वां धर्मसम्मूढचेताः।<br>
+            यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे<br>
+            शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kārpaṇyadoṣopahatasvabhāvaḥ<br>
+    pṛcchāmi tvāṃ dharmasammūḍhacetāḥ |<br>
+    yacchreyaḥ syānniścitaṃ brūhi tanme<br>
+    śiṣyaste’haṃ śādhi māṃ tvāṃ prapannam || 2.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            With my nature overcome by the weakness of pity, and my mind confused about duty,<br>
+            I ask You: what is decidedly good? Tell me that. I am Your disciple; instruct me, who has surrendered to You.
+        </div>
+        <a class="commentary-btn" href="english-2-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.8 ॥</div>
+        <p class="shlok-sanskrit">
+            न हि प्रपश्यामि ममापनुद्याद्<br>
+            यच्छोकमुच्छोषणमिन्द्रियाणाम्।<br>
+            अवाप्य भूमावसपत्नमृद्धं<br>
+            राज्यं सुराणामपि चाधिपत्यम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na hi prapaśyāmi mamāpanudyād<br>
+    yacchokamucchūṣaṇamindriyāṇām |<br>
+    avāpya bhūmāvasapatnamṛddhaṃ<br>
+    rājyaṃ surāṇāmapi cādhipatyam || 2.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For I do not see what could remove this sorrow that is drying up my senses,<br>
+            even if I were to obtain an unrivaled, prosperous kingdom on earth, or even sovereignty over the gods.
+        </div>
+        <a class="commentary-btn" href="english-2-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.9 ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            एवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।<br>
+            न योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    evamuktvā hṛṣīkeśaṃ guḍākeśaḥ parantapa |<br>
+    na yotsya iti govindamuktvā tūṣṇīṃ babhūva ha || 2.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sanjaya said: Having spoken thus to Hrishikesha (Krishna), Gudakesha (Arjuna), the chastiser of foes,<br>
+            said to Govinda, I will not fight, and became silent.
+        </div>
+        <a class="commentary-btn" href="english-2-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.10 ॥</div>
+        <p class="shlok-sanskrit">
+            तमुवाच हृषीकेशः प्रहसन्निव भारत।<br>
+            सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tamuvāca hṛṣīkeśaḥ prahasanniva bhārata |<br>
+    senayorubhayormadhye viṣīdantamidaṃ vacaḥ || 2.10 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Bharata (Dhritarashtra), Hrishikesha (Krishna), as if smiling, spoke these words<br>
+            to the grief-stricken Arjuna between the two armies.
+        </div>
+        <a class="commentary-btn" href="english-2-10.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.11 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।<br>
+            गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    aśocyānanvaśocastvaṃ prajñāvādāṃśca bhāṣase |<br>
+    gatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ || 2.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: You grieve for those who should not be grieved for, yet speak words of wisdom.<br>
+            The wise mourn neither for the living nor for the dead.
+        </div>
+        <a class="commentary-btn" href="english-2-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.12 ॥</div>
+        <p class="shlok-sanskrit">
+            न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।<br>
+            न चैव न भविष्यामः सर्वे वयमतः परम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na tvevāhaṃ jātu nāsaṃ na tvaṃ neme janādhipāḥ |<br>
+    na caiva na bhaviṣyāmaḥ sarve vayamataḥ param || 2.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There was never a time when I did not exist, nor you, nor these kings; <br>
+            nor will there ever be a future time when all of us shall cease to be.
+        </div>
+        <a class="commentary-btn" href="english-2-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.13 ॥</div>
+        <p class="shlok-sanskrit">
+            देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।<br>
+            तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    dehino’smin yathā dehe kaumāraṃ yauvanaṃ jarā |<br>
+    tathā dehāntaraprāptir dhīrastatra na muhyati || 2.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Just as the embodied soul continuously passes through childhood, youth, and old age in this body,<br>
+            similarly, it passes into another body at death. The wise are not deluded by this.
+        </div>
+        <a class="commentary-btn" href="english-2-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.14 ॥</div>
+        <p class="shlok-sanskrit">
+            मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।<br>
+            आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ |<br>
+    āgamāpāyino’nityāstāṃstithikṣasva bhārata || 2.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O son of Kunti (Arjuna), the contact of the senses with their objects gives rise to feelings of heat and cold,<br>
+            pleasure and pain. They are transient, having a beginning and an end. Bear them patiently, O Bharata.
+        </div>
+        <a class="commentary-btn" href="english-2-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.15 ॥</div>
+        <p class="shlok-sanskrit">
+            यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।<br>
+            समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yaṃ hi na vyathayantyete puruṣaṃ puruṣarṣabha |<br>
+    samaduḥkhasukhaṃ dhīraṃ so’mṛtatvāya kalpate || 2.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Indeed, the person whom these (sensory contacts) do not disturb, O best among men (Arjuna),<br>
+            who is steady in pain and pleasure, such a resolute person is fit for immortality.
+        </div>
+        <a class="commentary-btn" href="english-2-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.16 ॥</div>
+        <p class="shlok-sanskrit">
+            नासतो विद्यते भावो नाभावो विद्यते सतः।<br>
+            उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    nāsato vidyate bhāvo nābhāvo vidyate sataḥ |<br>
+    ubhayorapi dṛṣṭo’ntastvanayostattvadarśibhiḥ || 2.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Of the non-existent (body), there is no permanence; of the existent (soul), there is no cessation.<br>
+            The truth about both has been seen by those who perceive the reality.
+        </div>
+        <a class="commentary-btn" href="english-2-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.17 ॥</div>
+        <p class="shlok-sanskrit">
+            अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।<br>
+            विनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    avināśi tu tadviddhi yena sarvamidaṃ tatam |<br>
+    vināśamavyayasyāsya na kaścit kartumarhati || 2.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Know that to be indestructible by which this whole universe is pervaded.<br>
+            No one can cause the destruction of that imperishable Being.
+        </div>
+        <a class="commentary-btn" href="english-2-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.18 ॥</div>
+        <p class="shlok-sanskrit">
+            अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।<br>
+            अनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    antavanta ime dehā nityasyoktāḥ śarīriṇaḥ |<br>
+    anāśino’prameyasya tasmād yudhyasva bhārata || 2.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            These bodies of the embodied, eternal, indestructible, and immeasurable soul are said to have an end.<br>
+            Therefore, fight, O Bharata (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-2-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.19 ॥</div>
+        <p class="shlok-sanskrit">
+            य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।<br>
+            उभौ तौ न विजानीतो नायं हन्ति न हन्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam |<br>
+    ubhau tau na vijānīto nāyaṃ hanti na hanyate || 2.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who thinks that the soul is the killer and he who thinks it is killed,<br>
+            both lack knowledge. The soul neither kills nor is killed.
+        </div>
+        <a class="commentary-btn" href="english-2-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.20 ॥</div>
+        <p class="shlok-sanskrit">
+            न जायते म्रियते वा कदाचिन्<br>
+            नायं भूत्वा भविता वा न भूयः।<br>
+            अजो नित्यः शाश्वतोऽयं पुराणो<br>
+            न हन्यते हन्यमाने शरीरे।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    na jāyate mriyate vā kadācin<br>
+    nāyaṃ bhūtvā bhavitā vā na bhūyaḥ |<br>
+    ajo nityaḥ śāśvato’yaṃ purāṇo<br>
+    na hanyate hanyamāne śarīre || 2.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The soul is never born nor does it ever die; nor having once existed does it ever cease to be.<br>
+            It is unborn, eternal, everlasting, and ancient; it is not killed when the body is killed.
+        </div>
+        <a class="commentary-btn" href="english-2-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.21 ॥</div>
+        <p class="shlok-sanskrit">
+            वेदाविनाशिनं नित्यं य एनमजमव्ययम्।<br>
+            कथं स पुरुषः पार्थ कं घातयति हन्ति कम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    vedāvināśinaṃ nityaṃ ya enamajamavyayam |<br>
+    kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam || 2.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Partha (Arjuna), how can that person who knows the soul to be indestructible, eternal,<br>
+            unborn, and immutable, kill anyone or cause anyone to kill?
+        </div>
+        <a class="commentary-btn" href="english-2-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.22 ॥</div>
+        <p class="shlok-sanskrit">
+            वासांसि जीर्णानि यथा विहाय<br>
+            नवानि गृह्णाति नरोऽपराणि।<br>
+            तथा शरीराणि विहाय जीर्णान्य्<br>
+            अन्यानि संयाति नवानि देही।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    vāsāṃsi jīrṇāni yathā vihāya<br>
+    navāni gṛhṇāti naro’parāṇi |<br>
+    tathā śarīrāṇi vihāya jīrṇāny<br>
+    anyāni saṃyāti navāni dehī || 2.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Just as a person casts off worn-out garments and puts on new ones,<br>
+            so too the embodied soul casts off old bodies and enters into others that are new.
+        </div>
+        <a class="commentary-btn" href="english-2-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.23 ॥</div>
+        <p class="shlok-sanskrit">
+            नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।<br>
+            न चैनं क्लेदयन्त्यापो न शोषयति मारुतः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ |<br>
+    na cainaṃ kledayantyāpo na śoṣayati mārutaḥ || 2.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Weapons cannot cut the soul, nor can fire burn it;<br>
+            water cannot wet it, nor can wind dry it.
+        </div>
+        <a class="commentary-btn" href="english-2-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.24 ॥</div>
+        <p class="shlok-sanskrit">
+            अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।<br>
+            नित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    acchedyo’yamadāhyo’yamakledyo’śoṣya eva ca |<br>
+    nityaḥ sarvagataḥ sthāṇuracalo’yaṃ sanātanaḥ || 2.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This soul is uncuttable, incombustible, incapable of being moistened, and undriable.<br>
+            It is eternal, all-pervading, stable, unmoving, and ancient.
+        </div>
+        <a class="commentary-btn" href="english-2-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.25 ॥</div>
+        <p class="shlok-sanskrit">
+            अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।<br>
+            तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    avyakto’yamacintyo’yamavikāryo’yamucyate |<br>
+    tasmādevaṃ viditvainaṃ nānuśocitumarhasi || 2.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The soul is said to be unmanifest, unthinkable, and unchangeable.<br>
+            Therefore, knowing it to be such, you should not grieve.
+        </div>
+        <a class="commentary-btn" href="english-2-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.26 ॥</div>
+        <p class="shlok-sanskrit">
+            अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।<br>
+            तथापि त्वं महाबाहो नैनं शोचितुमर्हसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    atha cainaṃ nityajātaṃ nityaṃ vā manyase hatam |<br>
+    tathāpi tvaṃ mahābāho nainaṃ śocitumarhasi || 2.26 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But even if you think of the soul as constantly born and constantly dying,<br>
+            even then, O mighty-armed (Arjuna), you should not grieve.
+        </div>
+        <a class="commentary-btn" href="english-2-26.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.27 ॥</div>
+        <p class="shlok-sanskrit">
+            जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।<br>
+            तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    jātasya hi dhruvo mṛtyurdhruvaṃ janma mṛtasya ca |<br>
+    tasmādaparihārye’rthe na tvaṃ śocitumarhasi || 2.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For death is certain for one who has been born, and rebirth is certain for one who has died.<br>
+            Therefore, you should not grieve over the unavoidable.
+        </div>
+        <a class="commentary-btn" href="english-2-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.28 ॥</div>
+        <p class="shlok-sanskrit">
+            अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।<br>
+            अव्यक्तनिधनान्येव तत्र का परिदेवना।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    avyaktādīni bhūtāni vyaktamadhyāni bhārata |<br>
+    avyaktanidhanānyeva tatra kā paridevanā || 2.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Beings are unmanifest in their beginning, O Bharata (Arjuna), manifest in their middle state,<br>
+            and unmanifest again in their end. What is the cause for lamentation there?
+        </div>
+        <a class="commentary-btn" href="english-2-28.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.29 ॥</div>
+        <p class="shlok-sanskrit">
+            आश्चर्यवत्पश्यति कश्चिदेनम्<br>
+            आश्चर्यवद्वदति तथैव चान्यः।<br>
+            आश्चर्यवच्चैनमन्यः श्रृणोति<br>
+            श्रुत्वाप्येनं वेद न चैव कश्चित्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    āścaryavatpaśyati kaścidenam<br>
+    āścaryavadvadati tathaiva cānyaḥ |<br>
+    āścaryavaccainamanyaḥ śṛṇoti<br>
+    śrutvāpyenaṃ veda na caiva kaścit || 2.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One sees the soul as a wonder, another speaks of it as a wonder,<br>
+            and yet another hears of it as a wonder; but even after hearing, no one truly knows it.
+        </div>
+        <a class="commentary-btn" href="english-2-29.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.30 ॥</div>
+        <p class="shlok-sanskrit">
+            देही नित्यमवध्योऽयं देहे सर्वस्य भारत।<br>
+            तस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    dehī nityamavadhyo’yaṃ dehe sarvasya bhārata |<br>
+    tasmātsarvāṇi bhūtāni na tvaṃ śocitumarhasi || 2.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The embodied soul, O Bharata, is eternal and can never be slain in the body of anyone.<br>
+            Therefore, you should not grieve for any living creature.
+        </div>
+        <a class="commentary-btn" href="english-2-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.31 ॥</div>
+        <p class="shlok-sanskrit">
+            स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।<br>
+            धर्म्याद्धि युद्धाच्छ्रेयोऽन्यत् क्षत्रियस्य न विद्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    svadharmamapi cāvekṣya na vikampitumarhasi |<br>
+    dharmyāddhi yuddhācchreyo’nyat kṣatriyasya na vidyate || 2.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Considering your own duty (Dharma) as a warrior, you should not waver,<br>
+            for there is nothing better for a Kshatriya than a righteous war.
+        </div>
+        <a class="commentary-btn" href="english-2-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.32 ॥</div>
+        <p class="shlok-sanskrit">
+            यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।<br>
+            सुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yadṛcchayā copapannaṃ svargadvāramapāvṛtam |<br>
+    sukhinaḥ kṣatriyāḥ pārtha labhante yuddhamīdṛśam || 2.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Happy are the Kshatriyas, O Partha (Arjuna), to whom such a battle comes,<br>
+            as an open gate to heaven, offered by chance.
+        </div>
+        <a class="commentary-btn" href="english-2-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.33 ॥</div>
+        <p class="shlok-sanskrit">
+            अथ चेत्त्वमिमं धर्म्यं सङ्ग्रामं न करिष्यसि।<br>
+            ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    atha cettvamimaṃ dharmyaṃ saṅgrāmaṃ na kariṣyasi |<br>
+    tataḥ svadharmaṃ kīrtiṃ ca hitvā pāpamavāpsyasi || 2.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Now, if you will not fight this righteous battle,<br>
+            then you will incur sin by abandoning your duty and reputation.
+        </div>
+        <a class="commentary-btn" href="english-2-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.34 ॥</div>
+        <p class="shlok-sanskrit">
+            अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।<br>
+            सम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    akīrtiṃ cāpi bhūtāni kathayiṣyanti te’vyayām |<br>
+    sambhāvitasya cākīrtirmaraṇādatiricyate || 2.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            People will forever recount your lasting dishonor;<br>
+            and for a man of honor, dishonor is worse than death.
+        </div>
+        <a class="commentary-btn" href="english-2-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.35 ॥</div>
+        <p class="shlok-sanskrit">
+            भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।<br>
+            येषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    bhayādraṇāduparataṃ maṃsyante tvāṃ mahārathāḥ |<br>
+    yeṣāṃ ca tvaṃ bahumato bhūtvā yāsyasi lāghavam || 2.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The great chariot warriors will think you retreated from the battle out of fear,<br>
+            and those to whom you were highly esteemed will now hold you in contempt.
+        </div>
+        <a class="commentary-btn" href="english-2-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.36 ॥</div>
+        <p class="shlok-sanskrit">
+            अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।<br>
+            निन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    avācyavādāṃśca bahūn vadiṣyanti tavāhitāḥ |<br>
+    nindantastava sāmarthyaṃ tato duḥkhataraṃ nu kim || 2.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Your enemies will speak many unutterable words, defaming your ability.<br>
+            What could be more painful than that?
+        </div>
+        <a class="commentary-btn" href="english-2-36.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.37 ॥</div>
+        <p class="shlok-sanskrit">
+            हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।<br>
+            तस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    hato vā prāpsyasi svargaṃ jitvā vā bhokṣyase mahīm |<br>
+    tasmāduttiṣṭha kaunteya yuddhāya kṛtaniścayaḥ || 2.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If killed, you will attain heaven; if victorious, you will enjoy the earth.<br>
+            Therefore, arise, O son of Kunti (Arjuna), resolved to fight.
+        </div>
+        <a class="commentary-btn" href="english-2-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.38 ॥</div>
+        <p class="shlok-sanskrit">
+            सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।<br>
+            ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    sukhaduḥkhe same kṛtvā lābhālābhau jayājayau |<br>
+    tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi || 2.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Holding pleasure and pain, gain and loss, victory and defeat as equal,<br>
+            engage in battle for the sake of battle. Thus, you will not incur sin.
+        </div>
+        <a class="commentary-btn" href="english-2-38.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.39 ॥</div>
+        <p class="shlok-sanskrit">
+            एषा तेऽभिहिता साङ्ख्ये बुद्धिर्योगे त्विमां श्रृणु।<br>
+            बुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    eṣā te’bhihitā sāṅkhye buddhiryoge tvimāṃ śṛṇu |<br>
+    buddhyā yukto yayā pārtha karmabandhaṃ prahāsyasi || 2.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This wisdom has been explained to you according to Samkhya (analytical knowledge).<br>
+            Now listen to the wisdom of Yoga (selfless action), by which, O Partha, you can free yourself from the bondage of actions.
+        </div>
+        <a class="commentary-btn" href="english-2-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.40 ॥</div>
+        <p class="shlok-sanskrit">
+            नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।<br>
+            स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    nehabhikramanāśo’sti pratyavāyo na vidyate |<br>
+    svalpamapyasya dharmasya trāyate mahato bhayāt || 2.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In this (Karma Yoga), there is no loss of effort nor is there any transgression.<br>
+            Even a little of this discipline protects one from the great fear (of repeated birth and death).
+        </div>
+        <a class="commentary-btn" href="english-2-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.41 ॥</div>
+        <p class="shlok-sanskrit">
+            व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।<br>
+            बहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    vyavasāyātmikā buddhirekeha kurunandana |<br>
+    bahuśākhā hyanantāśca buddhayo’vyavasāyinām || 2.41 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In this (path of Yoga), O joy of the Kurus (Arjuna), the intellect is resolute and single-pointed.<br>
+            The intellect of the irresolute is many-branched and endless.
+        </div>
+        <a class="commentary-btn" href="english-2-41.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.42 ॥</div>
+        <p class="shlok-sanskrit">
+            यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः।<br>
+            वेदवादरताः पार्थ नान्यदस्तीति वादिनः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yāmimāṃ puṣpitāṃ vācaṃ pravadantvavipaścitaḥ |<br>
+    vedavādaratāḥ pārtha nānyadastīti vādinaḥ || 2.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The unwise, O Partha, delighting in the flowery speech of the Vedas,<br>
+            who declare there is nothing else, proclaim this speech.
+        </div>
+        <a class="commentary-btn" href="english-2-42.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.43 ॥</div>
+        <p class="shlok-sanskrit">
+            कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।<br>
+            क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    kāmātmānaḥ svargaparā janmakarmaphalapradām |<br>
+    kriyāviśeṣabahulāṃ bhogaiśvaryagatiṃ prati || 2.43 ||
+</div>
+        <div class="shlok-translation-formatted">
+            They are full of desires, aiming at heaven, and their goal is to obtain rebirth, fruits of action,<br>
+            and many specific rites for the sake of enjoyment and power.
+        </div>
+        <a class="commentary-btn" href="english-2-43.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.44 ॥</div>
+        <p class="shlok-sanskrit">
+            भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।<br>
+            व्यवसायात्मिका बुद्धिः समाधौ न विधीयते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    bhogaiśvaryaprasaktānāṃ tayāpahṛtacetasām |<br>
+    vyavasāyātmikā buddhiḥ samādhau na vidhīyate || 2.44 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The resolute intellect is not formed in the minds of those attached to enjoyment and power,<br>
+            whose discernment is carried away by that (flowery speech).
+        </div>
+        <a class="commentary-btn" href="english-2-44.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.45 ॥</div>
+        <p class="shlok-sanskrit">
+            त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।<br>
+            निर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    traiguṇyaviṣayā vedā nistraiguṇyo bhavārjuna |<br>
+    nirdvandvo nityasattvastho niryogakṣema ātmavān || 2.45 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Vedas deal with the three modes of nature (Gunas). Be free from the three Gunas, O Arjuna.<br>
+            Be free from dualities, always established in Sattva, free from desire for acquisition and preservation, and be established in the self.
+        </div>
+        <a class="commentary-btn" href="english-2-45.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.46 ॥</div>
+        <p class="shlok-sanskrit">
+            यावानर्थ उदपाने सर्वतः सम्प्लुतोदके।<br>
+            तावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yāvānartha udapāne sarvataḥ samplutodake |<br>
+    tāvānsarveṣu vedeṣu brāhmaṇasya vijānataḥ || 2.46 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The purpose served by a reservoir when there is a flood everywhere is the same as the purpose of all the Vedas<br>
+            for the enlightened Brahmin.
+        </div>
+        <a class="commentary-btn" href="english-2-46.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.47 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>
+            मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    karmaṇyevādhikāraste mā phaleṣu kadācana |<br>
+    mā karmaphalaheturbhūrmā te saṅgo’stvakarmaṇi || 2.47 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You have a right to perform your prescribed duty, but you are not entitled to the fruits of action.<br>
+            Never consider yourself the cause of the results of your activities, nor be attached to inaction.
+        </div>
+        <a class="commentary-btn" href="english-2-47.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.48 ॥</div>
+        <p class="shlok-sanskrit">
+            योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।<br>
+            सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yoga-sthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya |<br>
+    siddhy-asiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate || 2.48 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Be steadfast in Yoga, O Dhananjaya (Arjuna), perform your duty, abandoning attachment to success and failure.<br>
+            Such equipoise (Samattva) is called Yoga.
+        </div>
+        <a class="commentary-btn" href="english-2-48.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.49 ॥</div>
+        <p class="shlok-sanskrit">
+            दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।<br>
+            बुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    dūreṇa hyavaraṃ karma buddhiyogāddhanañjaya |<br>
+    buddhau śaraṇamanviccha kṛpaṇāḥ phalahetavaḥ || 2.49 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Action performed with attachment is far inferior to action performed with the intellect of Yoga, O Dhananjaya.<br>
+            Seek refuge in the wisdom of selfless action. Miserable are those who seek after the fruits of their actions.
+        </div>
+        <a class="commentary-btn" href="english-2-49.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.50 ॥</div>
+        <p class="shlok-sanskrit">
+            बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।<br>
+            तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    buddhiyukto jahātīha ubhe sukṛtaduṣkṛte |<br>
+    tasmādyogāya yujyasva yogaḥ karmasu kauśalam || 2.50 ||
+</div>
+        <div class="shlok-translation-formatted">
+            One endowed with the wisdom of Yoga leaves behind both good and bad deeds in this life.<br>
+            Therefore, dedicate yourself to Yoga. Yoga is skillfulness in action.
+        </div>
+        <a class="commentary-btn" href="english-2-50.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.51 ॥</div>
+        <p class="shlok-sanskrit">
+            कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।<br>
+            जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    karmajaṃ buddhiyuktā hi phalaṃ tyaktvā manīṣiṇaḥ |<br>
+    janmabandhavinirmuktāḥ padaṃ gacchantyanāmayam || 2.51 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The wise, equipped with this wisdom of Yoga, give up the results of action,<br>
+            and being freed from the bondage of birth, they attain the state that is beyond all suffering.
+        </div>
+        <a class="commentary-btn" href="english-2-51.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.52 ॥</div>
+        <p class="shlok-sanskrit">
+        यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति ।<br>
+        तदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च ॥ २.५२ ॥
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yadā te mohakalilaṃ buddhirvyatitariṣyati |<br>
+    tadā gantāsi nirvedaṃ śrotavyasya śrutasya ca || 2.52 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When your intellect completely crosses the tangle of delusion,<br>
+            then you will become indifferent to all that has been heard and all that is yet to be heard.
+        </div>
+        <a class="commentary-btn" href="english-2-52.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.53 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।<br>
+            समाधावचला बुद्धिस्तदा योगमवाप्स्यसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrutivipratipannā te yadā sthāsyati niścalā |<br>
+    samādhāvachalā buddhistadā yogamavāpsyasi || 2.53 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When your intellect, distracted by the ritualistic texts, stands motionless and firm in Samadhi (trance of self-realization),<br>
+            then you will attain Yoga.
+        </div>
+        <a class="commentary-btn" href="english-2-53.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.54 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।<br>
+            स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    sthitaprajñasya kā bhāṣā samādhisthasya keśava |<br>
+    sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim || 2.54 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O Keshava (Krishna), what is the description of a man of steady wisdom (Sthitaprajna), who is absorbed in Samadhi?<br>
+            How does the man of steady wisdom speak, how does he sit, and how does he walk?
+        </div>
+        <a class="commentary-btn" href="english-2-54.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.55 ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान्।<br>
+            आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    prajahāti yadā kāmānsarvān pārtha manogatān |<br>
+    ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate || 2.55 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: When a man completely casts away all desires arising from the mind, O Partha (Arjuna),<br>
+            and is satisfied in the Self alone by the Self, then he is called a man of steady wisdom (Sthitaprajna).
+        </div>
+        <a class="commentary-btn" href="english-2-55.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.56 ॥</div>
+        <p class="shlok-sanskrit">
+            दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।<br>
+            वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ |<br>
+    vītarāgabhayakrodhaḥ sthitadhīrmunirucyate || 2.56 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He whose mind is undisturbed in sorrow and free from desire in pleasures,<br>
+            who is free from attachment, fear, and anger—that sage is called a man of steady intellect.
+        </div>
+        <a class="commentary-btn" href="english-2-56.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.57 ॥</div>
+        <p class="shlok-sanskrit">
+            यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।<br>
+            नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yaḥ sarvatrānabhisnehat-tattatprāpya śubhāśubham |<br>
+    nābhinandati na dveṣṭi tasya prajñā pratiṣṭhitā || 2.57 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who is unattached everywhere, and who neither rejoices at receiving good nor grieves at evil,<br>
+            his wisdom is established.
+        </div>
+        <a class="commentary-btn" href="english-2-57.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.58 ॥</div>
+        <p class="shlok-sanskrit">
+            यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।<br>
+            इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yadā saṃharate cāyaṃ kūrmo’ṅgānīva sarvaśaḥ |<br>
+    indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā || 2.58 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When, like a tortoise retracting its limbs completely, he withdraws his senses from the sense objects,<br>
+            then his wisdom is established.
+        </div>
+        <a class="commentary-btn" href="english-2-58.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.59 ॥</div>
+        <p class="shlok-sanskrit">
+            विषया विनिवर्तन्ते निराहारस्य देहिनः।<br>
+            रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    viṣayā vinivartante nirāhārasya dehinaḥ |<br>
+    rasavarjaṃ raso’pyasya paraṃ dṛṣṭvā nivartate || 2.59 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The sense objects turn away from the embodied soul who abstains from food, but the taste for them remains.<br>
+            Even the taste departs when the Supreme is realized.
+        </div>
+        <a class="commentary-btn" href="english-2-59.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.60 ॥</div>
+        <p class="shlok-sanskrit">
+            यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।<br>
+            इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yatato hyapi kaunteya puruṣasya vipaścitaḥ |<br>
+    indriyāṇi pramāthīni haranti prasabhaṃ manaḥ || 2.60 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The turbulent senses, O son of Kunti (Arjuna), violently carry away the mind<br>
+            even of a striving man of discrimination.
+        </div>
+        <a class="commentary-btn" href="english-2-60.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.61 ॥</div>
+        <p class="shlok-sanskrit">
+            तानि सर्वाणि संयम्य युक्त आसीत मत्परः।<br>
+            वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tāni sarvāṇi saṃyamya yukta āsīta matparaḥ |<br>
+    vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā || 2.61 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having restrained them all, one should sit focused on Me; having controlled his senses,<br>
+            his wisdom is established.
+        </div>
+        <a class="commentary-btn" href="english-2-61.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.62 ॥</div>
+        <p class="shlok-sanskrit">
+            ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।<br>
+            सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    dhyāyato viṣayān puṃsaḥ saṅgastesu-pajāyate |<br>
+    saṅgāt sañjāyate kāmaḥ kāmāt krodho’bhijāyate || 2.62 ||
+</div>
+        <div class="shlok-translation-formatted">
+            When a man dwells on the objects of the senses, attachment to them is produced.<br>
+            From attachment arises desire, and from desire arises anger.
+        </div>
+        <a class="commentary-btn" href="english-2-62.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.63 ॥</div>
+        <p class="shlok-sanskrit">
+            क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः।<br>
+            स्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    krodhād bhavati sammohaḥ sammohāt smṛtivibhramaḥ |<br>
+    smṛtibhraṃśād buddhInāśo buddhInāśāt praṇaśyati || 2.63 ||
+</div>
+        <div class="shlok-translation-formatted">
+            From anger comes delusion; from delusion, loss of memory;<br>
+            from loss of memory, the destruction of discriminative intellect; and from the destruction of intellect, he perishes.
+        </div>
+        <a class="commentary-btn" href="english-2-63.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.64 ॥</div>
+        <p class="shlok-sanskrit">
+            रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।<br>
+            आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    rāgadveṣaviyuktaistu viṣayānindriyaiścaran |<br>
+    ātmavaśyairvidheyātmā prasādamadhigacchati || 2.64 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But the self-controlled person, moving among the objects of sense with the senses under control,<br>
+            free from attraction and aversion, attains serenity.
+        </div>
+        <a class="commentary-btn" href="english-2-64.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.65 ॥</div>
+        <p class="shlok-sanskrit">
+            प्रसादे सर्वदुःखानां हानिरस्योपजायते।<br>
+            प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    prasāde sarvaduḥkhānāṃ hānirasyopajāyate |<br>
+    prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate || 2.65 ||
+</div>
+        <div class="shlok-translation-formatted">
+            In that serenity, all his sorrows come to an end;<br>
+            for the intellect of the serene person soon becomes steady.
+        </div>
+        <a class="commentary-btn" href="english-2-65.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.66 ॥</div>
+        <p class="shlok-sanskrit">
+            नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।<br>
+            न चाभावयतः शान्तिरशान्तस्य कुतः सुखम्।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    nāsti buddhirayuktasya na cāyuktasya bhāvanā |<br>
+    na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham || 2.66 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For the unsteady, there is no intellect, nor for the unsteadfast is there meditation.<br>
+            For the unmeditative, there is no peace, and for the peaceless, how can there be happiness?
+        </div>
+        <a class="commentary-btn" href="english-2-66.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.67 ॥</div>
+        <p class="shlok-sanskrit">
+            इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।<br>
+            तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    indriyāṇāṃ hi caratāṃ yanmano’nuvidhīyate |<br>
+    tadasya harati prajñāṃ vāyurnāvamivāmbhasi || 2.67 ||
+</div>
+        <div class="shlok-translation-formatted">
+            For the mind that follows the wandering senses carries away his wisdom,<br>
+            just as the wind carries away a boat on the water.
+        </div>
+        <a class="commentary-btn" href="english-2-67.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.68 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।<br>
+            इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    tasmādyasya mahābāho nigṛhītāni sarvaśaḥ |<br>
+    indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā || 2.68 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, O mighty-armed (Arjuna), he whose senses are completely restrained from the objects of sense perception,<br>
+            his wisdom is established.
+        </div>
+        <a class="commentary-btn" href="english-2-68.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.69 ॥</div>
+        <p class="shlok-sanskrit">
+            या निशा सर्वभूतानां तस्यां जागर्ति संयमी।<br>
+            यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    yā niśā sarvabhūtānāṃ tasyāṃ jāgarti saṃyamī |<br>
+    yasyāṃ jāgrati bhūtāni sā niśā paśyato muneḥ || 2.69 ||
+</div>
+        <div class="shlok-translation-formatted">
+            What is night for all beings is the time of waking for the self-controlled person;<br>
+            and what is the time of waking for all beings is night for the discerning sage.
+        </div>
+        <a class="commentary-btn" href="english-2-69.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.70 ॥</div>
+        <p class="shlok-sanskrit">
+            आपूर्यमाणमचलप्रतिष्ठं<br>
+            समुद्रमापः प्रविशन्ति यद्वत्।<br>
+            तद्वत्कामा यं प्रविशन्ति सर्वे<br>
+            स शान्तिमाप्नोति न कामकामी।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    āpūryamāṇamacalapratiṣṭhaṃ<br>
+    samudramāpaḥ praviśanti yadvat |<br>
+    tadvatkāmā yaṃ praviśanti sarve<br>
+    sa śāntimāpnoti na kāmakāmī || 2.70 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Just as the waters enter the ocean, which remains full and undisturbed,<br>
+            similarly, the person into whom all desires enter (without disturbing him) attains peace, not the one who craves objects of desire.
+        </div>
+        <a class="commentary-btn" href="english-2-70.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.71 ॥</div>
+        <p class="shlok-sanskrit">
+            विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।<br>
+            निर्ममो निरहङ्कारः स शान्तिमधिगच्छति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    vihāya kāmānyaḥ sarvān pumāṃścarati niḥspṛhaḥ |<br>
+    nirmamo nirahaṅkāraḥ sa śāntimadhigacchati || 2.71 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The person who abandons all desires and moves about free from longing,<br>
+            without the sense of 'mine' and without ego, attains peace.
+        </div>
+        <a class="commentary-btn" href="english-2-71.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 2.72 ॥</div>
+        <p class="shlok-sanskrit">
+            एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।<br>
+            स्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति।।
+        </p>
+        <div class="shlok-translation-formatted"> 
+    eṣā brāhmī sthitiḥ pārtha naināṃ prāpya vimuḥyati |<br>
+    sthitvāsyamantakāle’pi brahmanirvāṇamṛcchati || 2.72 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This is the Brahmi state, O Partha (Arjuna). Having attained this, one is never deluded.<br>
+            Being established in it even at the hour of death, one attains liberation in Brahman (Nirvana).
+        </div>
+        <a class="commentary-btn" href="english-2-72.html">View Commentary</a>
+    </div>
+
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे साङ्ख्ययोगो नाम द्वितीयोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the second chapter, entitled Sāṅkhya Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter1.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter3.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>

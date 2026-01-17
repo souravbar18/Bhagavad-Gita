@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Bhagavad Gita - Chapter 11: Viśvarūpa Darśana Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lohit+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+        /* Common Style for HTML Structure */
+        body {
+            font-family: 'Tinos', serif; 
+            background: #f7efe3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header Style */
+        .chapter-header {
+            background-color: #5a3300; 
+            color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid #d4a762;
+        }
+
+        .chapter-header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffcc66;
+        }
+        
+        .chapter-header h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff8e1;
+        }
+
+        /* Navigation Button Style */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #d4a762; 
+            color: #1a0f00; 
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #8c5b00;
+            color: white;
+        }
+
+        /* Shloka Container Style */
+        .shlok-container {
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .shlok-box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 6px solid #a33200; 
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .shlok-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #5a3300;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #d4a762;
+            padding-bottom: 5px;
+            text-align: center; 
+        }
+
+        /* Style for Sanskrit Shlokas (Devanagari) */
+        .shlok-sanskrit {
+            font-family: 'Lohit Devangari', sans-serif; 
+            font-size: 1.3em;
+            line-height: 2.0; 
+            color: #1a0f00;
+            white-space: pre-line; 
+            margin: 15px 0 25px 0;
+            font-weight: 500;
+        }
+        
+        /* Style for Line-formatted English Translation */
+        .shlok-translation-formatted {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #fff8e1;
+            border-radius: 6px;
+            border: 1px dashed #d4a762;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Tinos', serif;
+            font-style: italic;
+            /* To enforce line breaks like a shloka */
+            white-space: pre-line; 
+            text-align: center;
+        }
+
+        /* Style for Commentary Button */
+        .commentary-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #a33200; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .commentary-btn:hover {
+            background: #d4a762;
+            color: #1a0f00;
+        }
+
+        /* Colophon/Ending Style */
+        .colophon-sanskrit {
+             font-family: 'Lohit Devangari', sans-serif;
+             font-size: 1.2em;
+             line-height: 1.8;
+             color: #5a3300;
+             text-align: center;
+             margin-bottom: 15px;
+        }
+        .colophon-english {
+            font-family: 'Tinos', serif;
+            text-align: center; 
+            font-style: italic; 
+            font-size: 1.05em; 
+            color: #8c5b00;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="chapter-header">
+    <h1>॥ Śrīmad Bhagavad Gītā ॥</h1>
+    <h2>Chapter 11: Viśvarūpa Darśana Yoga (The Yoga of the Universal Form) - Verses 11.1 to 11.55</h2>
+</header>
+
+<div class="nav-buttons">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter10.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter12.html">Next Chapter »</a> 
+</div>
+
+<div class="shlok-container">
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.1 (Arjuna's Request) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            मदनुग्रहाय परमं गुह्यमध्यात्मसञ्ज्ञितम्।<br>
+            यत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    madanugrahāya paramaṃ guhyamadhyātmasañjñitam |<br>
+    yattvayoktaṃ vacastena moho’yaṃ vigato mama || 11.1 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: By the supreme, secret words concerning the Self (Adhyātma-saṁjñitam),<br>
+            which You have spoken out of compassion for me, this delusion of mine is gone.
+        </div>
+        <a class="commentary-btn" href="english-11-1.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.2 ॥</div>
+        <p class="shlok-sanskrit">
+            भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया।<br>
+            त्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    bhavāpyayau hi bhūtānāṃ śrutau vistaraśo mayā |<br>
+    tvattaḥ kamalapatrākṣa māhātmyamapi cāvyayam || 11.2 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Lotus-eyed (Krishna), I have heard in detail from You about the creation and dissolution of beings,<br>
+            and also Your inexhaustible glory (Māhātmya).
+        </div>
+        <a class="commentary-btn" href="english-11-2.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.3 (Arjuna's Desire) ॥</div>
+        <p class="shlok-sanskrit">
+            एवमेतद्यथात्थ त्वमात्मानं परमेश्वर।<br>
+            द्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम।।
+        </p><div class="shlok-translation-formatted"> 
+    evametadyathāttha tvaṃ ātmānaṃ parameśvara |<br>
+    draṣṭumicchāmi te rūpamaiśvaraṃ puruṣottama || 11.3 ||
+</div>
+        <div class="shlok-translation-formatted">
+            O Supreme Lord (Parameśvara), just as You have described Yourself,<br>
+            O Supreme Person (Puruṣottama), I wish to see Your divine (Aiśvaraṁ) form.
+        </div>
+        <a class="commentary-btn" href="english-11-3.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.4 ॥</div>
+        <p class="shlok-sanskrit">
+            मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो।<br>
+            योगेश्वर ततो मे त्वं दर्शयात्मानमव्ययम्।।
+        </p><div class="shlok-translation-formatted"> 
+    manyase yadi tacchakyaṃ mayā draṣṭumiti prabho |<br>
+    yogeśvara tato me tvaṃ darśayātmānamavyayam || 11.4 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If You think it is possible for me to see it, O Lord (Prabhu),<br>
+            then, O Lord of Yoga (Yogeśvara), show me Your imperishable Self (Ātman).
+        </div>
+        <a class="commentary-btn" href="english-11-4.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.5 (Krishna's Acceptance) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            पश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः।<br>
+            नानाविधानि दिव्यानि नानावर्णाकृतीनि च।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    paśya me pārtha rūpāṇi śataśo’tha sahasraśaḥ |<br>
+    nānāvidhāni divyāni nānāvarṇākṛtīni ca || 11.5 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: Behold, O Pārtha, My forms, hundreds and thousands of them,<br>
+            of various kinds, divine, and of diverse colors and shapes.
+        </div>
+        <a class="commentary-btn" href="english-11-5.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.6 ॥</div>
+        <p class="shlok-sanskrit">
+            पश्यादित्यान् वसून् रुद्रानश्विनौ मरुतस्तथा।<br>
+            बहून्यदृष्टपूर्वाणि पश्याश्चर्याणि भारत।।
+        </p><div class="shlok-translation-formatted"> 
+    paśyādityānvasūnrudrānaśvinau marutastathā |<br>
+    bahūnyadṛṣṭapūrvāṇi paśyāścaryāṇi bhārata || 11.6 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Behold the Ādityas, the Vasus, the Rudras, the Aśvins, and the Maruts.<br>
+            Behold many wonders never seen before, O Bhārata (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-11-6.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.7 ॥</div>
+        <p class="shlok-sanskrit">
+            इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम्।<br>
+            मम देहे गुडाकेश यच्चान्यद् द्रष्टुमिच्छसि।।
+        </p><div class="shlok-translation-formatted"> 
+    ihaikasthaṃ jagatkṛtsnaṃ paśyādya sacarācaram |<br>
+    mama dehe guḍākeśa yaccānyaddraṣṭumicchasi || 11.7 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Behold the entire universe, moving and unmoving, centralized in one place right now,<br>
+            in this body of Mine, O Guḍākeśa (Arjuna), and whatever else you wish to see.
+        </div>
+        <a class="commentary-btn" href="english-11-7.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.8 ॥</div>
+        <p class="shlok-sanskrit">
+            न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा।<br>
+            दिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    na tu māṃ śakyase draṣṭumane naiva svacakṣuṣā |<br>
+    divyaṃ dadāmi te cakṣuḥ paśya me yogamaiśvaram || 11.8 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But you cannot see Me with your own eyes (of flesh).<br>
+            I give you divine sight (Divya Chakṣuḥ); behold My supreme Yoga (mystic power)!
+        </div>
+        <a class="commentary-btn" href="english-11-8.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.9 (Sañjaya Speaks) ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            एवमुक्त्वा ततो राजन् महायोगेश्वरो हरिः।<br>
+            दर्शयामास पार्थाय परमं रूपमैश्वरम्।।
+        </p><div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    evamuktvā tato rājan mahāyogeśvaro hariḥ |<br>
+    darśayāmāsa pārthāya paramaṃ rūpamaiśvaram || 11.9 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sañjaya said: Having spoken thus, O King, Hari (Krishna), the great Lord of Yoga (Mahāyogeśvaro),<br>
+            then showed Pārtha (Arjuna) His supreme divine form.
+        </div>
+        <a class="commentary-btn" href="english-11-9.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 11.10 - 11.11 (Viśvarūpa's Appearance) ॥</div>
+        <p class="shlok-sanskrit">
+            अनेकवक्त्रनयनमनेकाद्भुतदर्शनम्।<br>
+            अनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्।। (11.10)<br>
+            दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम्।<br>
+            सर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्।। (11.11)
+        </p><div class="shlok-translation-formatted"> 
+    anekavaktra-nayanam anekādbhuta-darśanam |<br>
+    aneka-divyābharaṇaṃ divyānekodyatāyudham || 11.10 ||<br><br>
+    divya-mālyāmbaradharaṃ divya-gandhānulepanam |<br>
+    sarvāścarya-mayaṃ devam anantaṃ viśvato-mukham || 11.11 ||
+</div>
+        <div class="shlok-translation-formatted">
+            (It had) many mouths and eyes, many wondrous sights, (11.10)<br>
+            many divine ornaments, and many divine weapons uplifted. (11.10)<br>
+            It wore divine garlands and garments, and was anointed with divine scents.<br>
+            It was the all-wondrous God, boundless, with faces everywhere. (11.11)
+        </div>
+        <a class="commentary-btn" href="english-11-10-11.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.12 ॥</div>
+        <p class="shlok-sanskrit">
+            दिवि सूर्यसहस्रस्य भवेद् युगपदुत्थिता।<br>
+            यदि भाः सदृशी सा स्याद् भासस्तस्य महात्मनः।।
+        </p><div class="shlok-translation-formatted"> 
+    divi sūryasahasrasya bhavedyugapadutthitā |<br>
+    yadi bhāḥ sadṛśī sā syādbhāsastasya mahātmanaḥ || 11.12 ||
+</div>
+        <div class="shlok-translation-formatted">
+            If the splendor of a thousand suns were to burst forth simultaneously in the sky,<br>
+            that could be comparable to the light of that great Soul (Mahātman).
+        </div>
+        <a class="commentary-btn" href="english-11-12.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.13 ॥</div>
+        <p class="shlok-sanskrit">
+            तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा।<br>
+            अपश्यद् देवदेवस्य शरीरे पाण्डवस्तदा।।
+        </p><div class="shlok-translation-formatted"> 
+    tatraikasthaṃ jagatkṛtsnaṃ pravibha ktamanekadhā |<br>
+    apaśyaddevadevasya śarīre pāṇḍavastadā || 11.13 ||
+</div>
+        <div class="shlok-translation-formatted">
+            There, in the body of the God of gods, the son of Pāṇḍu (Arjuna) then saw<br>
+            the whole universe, divided into many divisions, centered in one place.
+        </div>
+        <a class="commentary-btn" href="english-11-13.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.14 (Arjuna's Reaction) ॥</div>
+        <p class="shlok-sanskrit">
+            ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः।<br>
+            प्रणम्य शिरसा देवं कृताञ्जलिरभाषत।।
+        </p><div class="shlok-translation-formatted"> 
+    tataḥ sa vismayāviṣṭo hṛṣṭaromā dhanañjayaḥ |<br>
+    praṇamya śirasā devaṃ kṛtāñjalirabhāṣata || 11.14 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Then Dhananjaya (Arjuna), filled with wonder, with his hair standing on end (Hṛṣṭa-romā),<br>
+            bowed his head to the God and spoke with joined palms.
+        </div>
+        <a class="commentary-btn" href="english-11-14.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.15 (Arjuna's Prayer Begins) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            पश्यामि देवांस्तव देव देहे <br>
+            सर्वांस्तथा भूतविशेषसङ्घान्।<br>
+            ब्रह्माणमीशं कमलासनस्थम् <br>
+            ऋषींश्च सर्वानुरगांश्च दिव्यान्।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    paśyāmi devāṃstava deva dehe sarvāṃstathā bhūtaviśeṣasaṅghān |<br>
+    brahmāṇamīśaṃ kamalāsthastha mṛṣīṃśca sarvānuragāṃśca divyān || 11.15 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: O God, I see all the gods in Your body,<br>
+            and hosts of diverse beings (Bhūta-viśeṣa-saṅghān),<br>
+            Brahmā, the Lord, seated on the lotus-seat,<br>
+            all the sages (Ṛṣis), and the divine serpents (Uragaṁs).
+        </div>
+        <a class="commentary-btn" href="english-11-15.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.16 ॥</div>
+        <p class="shlok-sanskrit">
+            अनेकबाहूदरवक्त्रनेत्रं <br>
+            पश्यामि त्वां सर्वतोऽनन्तरूपम्।<br>
+            नान्तं न मध्यं न पुनस्तवादिं <br>
+            पश्यामि विश्वेश्वर विश्वरूप।।
+        </p><div class="shlok-translation-formatted"> 
+    anekabāhūdaravaktranetraṃ paśyāmi tvāṃ sarvato’nantarūpam |<br>
+    nāntaṃ na madhyaṃ na punastavādiṃ paśyāmi viśveśvara viśvarūpa || 11.16 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I see You with many arms, stomachs, mouths, and eyes,<br>
+            of boundless forms everywhere (Sarvato'nanta-rūpam).<br>
+            I see neither Your end, nor Your middle, nor again Your beginning,<br>
+            O Lord of the Universe (Viśveśvara), O Universal Form (Viśvarūpa)!
+        </div>
+        <a class="commentary-btn" href="english-11-16.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.17 ॥</div>
+        <p class="shlok-sanskrit">
+            किरीटिनं गदिनं चक्रिणं च <br>
+            तेजोराशिं सर्वतो दीप्तिमन्तम्।<br>
+            पश्यामि त्वां दुर्निरीक्ष्यं समन्ताद् <br>
+            दीप्तानलार्कद्युतिमप्रमेयम्।।
+        </p><div class="shlok-translation-formatted"> 
+    kirīṭinaṃ gadinaṃ cakriṇaṃ ca tejorāśiṃ sarvato dīptimantam |<br>
+    paśyāmi tvāṃ durnirīkṣyaṃ samantād dīptānalārkadyutimaprameyam || 11.17 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I see You with the diadem (Kirīṭinam), the mace (Gadinam), and the discus (Cakriṇam),<br>
+            a mass of splendor, shining everywhere.<br>
+            I see You, hard to gaze at, brilliant all around,<br>
+            like blazing fire and sun, and immeasurable (Aprameyam).
+        </div>
+        <a class="commentary-btn" href="english-11-17.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.18 ॥</div>
+        <p class="shlok-sanskrit">
+            त्वमक्षरं परमं वेदितव्यं <br>
+            त्वमस्य विश्वस्य परं निधानम्।<br>
+            त्वमव्ययः शाश्वतधर्मगोप्ता <br>
+            सनातनस्त्वं पुरुषो मतो मे।।
+        </p><div class="shlok-translation-formatted"> 
+    tvamakṣaraṃ paramaṃ veditavyaṃ tvamasya viśvasya paraṃ nidhānam |<br>
+    tvamavyayaḥ śāśvatadharmagoptā sanātanastvaṃ puruṣo mato me || 11.18 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You are the Imperishable (Akṣaram), the Supreme to be known (Veditavyam).<br>
+            You are the ultimate resting place (Nidhānam) of this universe.<br>
+            You are the changeless guardian (Goptā) of the eternal Dharma.<br>
+            You are the primeval Person (Sanātanaḥ Puruṣo)—this is my belief.
+        </div>
+        <a class="commentary-btn" href="english-11-18.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.19 ॥</div>
+        <p class="shlok-sanskrit">
+            अनादिमध्यान्तमनन्तवीर्यम् <br>
+            अनन्तबाहुं शशिसूर्यनेत्रम्।<br>
+            पश्यामि त्वां दीप्तहुताशवक्त्रं <br>
+            स्वतेजसा विश्वमिदं तपन्तम्।।
+        </p><div class="shlok-translation-formatted"> 
+    anādimadhyāntamanantavīryam anantabāhuṃ śaśisūryanetram |<br>
+    paśyāmi tvāṃ dīptahutāśavaktraṃ svatejasā viśvamidaṃ tapantam || 11.19 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You are without beginning, middle, or end, possessing infinite power (Ananta-vīryam),<br>
+            with countless arms, with the sun and moon as Your eyes.<br>
+            I see You with mouths like blazing fire (Dīpta-hutāśa-vaktram),<br>
+            scorching this universe with Your own radiance.
+        </div>
+        <a class="commentary-btn" href="english-11-19.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.20 ॥</div>
+        <p class="shlok-sanskrit">
+            द्यावापृथिव्योरिदमन्तरं हि <br>
+            व्याप्तं त्वयैकेन दिशश्च सर्वाः।<br>
+            दृष्ट्वाद्भुतं रूपमुग्रं तवेदं <br>
+            लोकत्रयं प्रव्यथितं महात्मन्।।
+        </p><div class="shlok-translation-formatted"> 
+    dyāvāpṛthivyoridamantaraṃ hi vyāptaṃ tvayaikena diśaśca sarvāḥ |<br>
+    dṛṣṭvādbhutaṃ rūpamugraṃ tavedaṃ lokatrayaṃ pravyathitaṃ mahātman || 11.20 ||
+</div>
+        <div class="shlok-translation-formatted">
+            This space between heaven and earth, and all the quarters,<br>
+            are pervaded by You alone.<br>
+            Seeing this wondrous, terrible form of Yours,<br>
+            the three worlds are trembling, O Great Soul (Mahātman).
+        </div>
+        <a class="commentary-btn" href="english-11-20.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.21 ॥</div>
+        <p class="shlok-sanskrit">
+            अमी हि त्वा सुरसङ्घा विशन्ति <br>
+            केचिद् भीताः प्राञ्जलयो गृणन्ति।<br>
+            स्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः <br>
+            स्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः।।
+        </p><div class="shlok-translation-formatted"> 
+    amī hi tvāṃ surasaṅghā viśanti kecid bhītāḥ prāñjalayo gṛṇanti |<br>
+    svastītyuktvā maharṣisiddhasaṅghāḥ stuvanti tvāṃ stutibhiḥ puṣkalābhiḥ || 11.21 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Indeed, these hosts of gods enter into You; some, afraid, offer prayers with joined palms.<br>
+            The hosts of great sages and perfected ones (Siddhas), saying May there be peace (Svasti),<br>
+            praise You with abundant hymns of praise.
+        </div>
+        <a class="commentary-btn" href="english-11-21.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.22 ॥</div>
+        <p class="shlok-sanskrit">
+            रुद्रादित्या वसवो ये च साध्या <br>
+            विश्वेऽश्विनौ मरुतश्चोष्मपाश्च।<br>
+            गन्धर्वयक्षासुरसिद्धसङ्घा <br>
+            वीक्षन्ते त्वां विस्मिताश्चैव सर्वे।।
+        </p><div class="shlok-translation-formatted"> 
+    rudrādityā vasavo ye ca sādhyā viśve’śvinau marutaścoṣmapāśca |<br>
+    gandharvayakṣāsurasiddhasaṅghā vīkṣante tvāṃ vismitāścaiva sarve || 11.22 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Rudras, Ādityas, Vasus, Sādhyas, Viśvedevas, the two Aśvins, the Maruts, and the Pitṛs (Uṣmapāśca),<br>
+            and the hosts of Gandharvas, Yakṣas, Asuras, and Siddhas—<br>
+            all behold You and are completely amazed.
+        </div>
+        <a class="commentary-btn" href="english-11-22.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.23 ॥</div>
+        <p class="shlok-sanskrit">
+            रूपं महत्ते बहुवक्त्रनेत्रं <br>
+            महाबाहो बहुबाहूरुपादम्।<br>
+            बहूदरं बहुदंष्ट्राकरालं <br>
+            दृष्ट्वा लोकाः प्रव्यथितास्तथाहम्।।
+        </p><div class="shlok-translation-formatted"> 
+    rūpaṃ mahatte bahuvaktranetraṃ mahābāho bahubāhūrupādam |<br>
+    bahūdaraṃ bahudaṃṣṭrākarālaṃ dṛṣṭvā lokāḥ pravyathitāstathāham || 11.23 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Seeing Your great form with many mouths and eyes, O mighty-armed,<br>
+            with many arms, thighs, and feet (Bahu-bāhūru-pādam),<br>
+            with many bellies, and frightful with many dreadful tusks (Bahudaṁṣṭrā-karālam),<br>
+            the worlds are trembling, and so am I.
+        </div>
+        <a class="commentary-btn" href="english-11-23.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.24 ॥</div>
+        <p class="shlok-sanskrit">
+            नभःस्पृशं दीप्तमनेकवर्णं <br>
+            व्यात्ताननं दीप्तविशालनेत्रम्।<br>
+            दृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा <br>
+            धृतिं न विन्दामि शमं च विष्णो।।
+        </p><div class="shlok-translation-formatted"> 
+    nabhaḥspṛśaṃ dīptamanekavarṇaṃ vyāttānanaṃ dīptaviśālanetram |<br>
+    dṛṣṭvā hi tvāṃ pravyathitāntarātmā dhṛtiṃ na vindāmi śamaṃ ca viṣṇo || 11.24 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Touching the sky, shining, with many colors, with mouths wide open,<br>
+            and with large, shining eyes (Dīpta-viśāla-netram)—<br>
+            seeing You, O Viṣṇu, my inmost heart is distressed (Pravyathitāntarātmā);<br>
+            I find neither courage (Dhṛtiṁ) nor peace (Śamam).
+        </div>
+        <a class="commentary-btn" href="english-11-24.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.25 ॥</div>
+        <p class="shlok-sanskrit">
+            दंष्ट्राकरालानि च ते मुखानि <br>
+            दृष्ट्वैव कालानलसन्निभानि।<br>
+            दिशो न जाने न लभे च शर्म <br>
+            प्रसीद देवेश जगन्निवास।।
+        </p><div class="shlok-translation-formatted"> 
+    daṃṣṭrākarālāni ca te mukhāni dṛṣṭvaiva kālānalasannibhāni |<br>
+    diśo na jāne na labhe ca śarma prasīda deveśa jagannivāsa || 11.25 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Seeing Your mouths, frightful with tusks (Daṁṣṭrā-karālāni), resembling the fire of cosmic dissolution (Kālānala-sannibhāni),<br>
+            I lose sense of the directions, and I find no happiness (Śarma).<br>
+            Be gracious, O Lord of gods (Deveśa), O Abode of the Universe (Jagannivāsa).
+        </div>
+        <a class="commentary-btn" href="english-11-25.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 11.26 - 11.27 (The Fate of Warriors) ॥</div>
+        <p class="shlok-sanskrit">
+            अमी च त्वां धृतराष्ट्रस्य पुत्राः <br>
+            सर्वे सहैवावनिपालसङ्घैः।<br>
+            भीष्मो द्रोणः सूतपुत्रस्तथासौ <br>
+            सहास्मदीयैरपि योधमुख्यैः।। (11.26)<br>
+            वक्त्राणि ते त्वरमाणा विशन्ति <br>
+            दंष्ट्राकरालानि भयानकानि।<br>
+            केचिद् विलग्रा दशनान्तरेषु <br>
+            सन्दृश्यन्ते चूर्णितैरुत्तमाङ्गैः।। (11.27)
+        </p><div class="shlok-translation-formatted"> 
+    amī ca tvāṃ dhṛtarāṣṭrasya putrāḥ sarve sahaivāvanipālasaṅghaiḥ |<br>
+    bhīṣmo droṇaḥ sūtaputraistathāsau sahāsmadīyairapi yodhamukhyaiḥ || 11.26 ||<br><br>
+    vaktrāṇi te tvaramāṇā viśanti daṃṣṭrākarālāni bhayānakāni |<br>
+    kecidvilagnā daśanāntareṣu sandṛśyante cūrṇitairuttamāṅgaiḥ || 11.27 ||
+</div>
+        <div class="shlok-translation-formatted">
+            All these sons of Dhṛtarāṣṭra, along with hosts of kings, (11.26)<br>
+            Bhīṣma, Droṇa, and that son of Sūta (Karṇa), along with our own chief warriors, (11.26)<br>
+            are swiftly entering Your mouths, frightful with tusks and terrifying. (11.27)<br>
+            Some are seen stuck between the teeth, with their heads crushed to powder. (11.27)
+        </div>
+        <a class="commentary-btn" href="english-11-26-27.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.28 (Simile of Rivers) ॥</div>
+        <p class="shlok-sanskrit">
+            यथा नदीनां बहवोऽम्बुवेगाः <br>
+            समुद्रमेवाभिमुखा द्रवन्ति।<br>
+            तथा तवामी नरलोकवीरा <br>
+            विशन्ति वक्त्राण्यभिविज्वलन्ति।।
+        </p><div class="shlok-translation-formatted"> 
+    yathā nadīnāṃ bahavo’mbuvegāḥ samudramevābhimukhā dravanti |<br>
+    tathā tavāmī naralokavīrā viśanti vaktrāṇyabhivijvalanti || 11.28 ||
+</div>
+        <div class="shlok-translation-formatted">
+            As the many currents of rivers rush toward the sea alone,<br>
+            so these heroes of the human world enter Your blazing mouths.
+        </div>
+        <a class="commentary-btn" href="english-11-28.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.29 (Simile of Moths) ॥</div>
+        <p class="shlok-sanskrit">
+            यथा प्रदीप्तं ज्वलनं पतङ्गा <br>
+            विशन्ति नाशाय समृद्धवेगाः।<br>
+            तथैव नाशाय विशन्ति लोकास् <br>
+            तवापि वक्त्राणि समृद्धवेगाः।।
+        </p><div class="shlok-translation-formatted"> 
+    yathā pradīptaṃ jvalanaṃ pataṅgā viśanti nāśāya samṛddhavegāḥ |<br>
+    tathaiva nāśāya viśanti lokāstavāpi vaktrāṇi samṛddhavegāḥ || 11.29 ||
+</div>
+        <div class="shlok-translation-formatted">
+            As moths swiftly rush into a blazing fire for destruction,<br>
+            so do these worlds swiftly enter Your mouths for destruction.
+        </div>
+        <a class="commentary-btn" href="english-11-29.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.30 ॥</div>
+        <p class="shlok-sanskrit">
+            लेलिह्यसे ग्रसमानः समन्ताल् <br>
+            लोकान् समग्रान् वदनैर्ज्वलद्भिः।<br>
+            तेजोभिरापूर्य जगत्समग्रं <br>
+            भासस्तवोग्राः प्रतपन्ति विष्णो।।
+        </p><div class="shlok-translation-formatted"> 
+    lelihyase grasamānaḥ samantāllokānsamagrānvadanairjvaladbhiḥ |<br>
+    tejobhirāpūrya jagatsamagraṃ bhāsastavogrāḥ pratapanti viṣṇo || 11.30 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Swallowing all the worlds entirely with Your blazing mouths, You lick (Le-lihyase) them all around.<br>
+            Your fierce splendors fill the entire universe and scorch it, O Viṣṇu.
+        </div>
+        <a class="commentary-btn" href="english-11-30.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.31 (Arjuna's Question) ॥</div>
+        <p class="shlok-sanskrit">
+            आख्याहि मे को भवानुग्ररूपो <br>
+            नमोऽस्तु ते देववर प्रसीद।<br>
+            विज्ञातुमिच्छामि भवन्तमाद्यं <br>
+            न हि प्रजानामि तव प्रवृत्तिम्।।
+        </p><div class="shlok-translation-formatted"> 
+    ākhyāhi me ko bhavānugrarūpo namo’stu te devevara prasīda |<br>
+    vijñātumicchāmi bhavantamādyaṃ na hi prajānāmi tava pravṛttim || 11.31 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Tell me who You are, with this fierce form. Salutations to You, O chief of gods, be gracious.<br>
+            I wish to know You, the primeval one (Ādyaṁ), for I do not understand Your purpose (Pravṛttiṁ).
+        </div>
+        <a class="commentary-btn" href="english-11-31.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.32 (Krishna's Answer) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            कालोऽस्मि लोकक्षयकृत् प्रवृद्धो <br>
+            लोकान् समाहर्तुमिह प्रवृत्तः।<br>
+            ऋतेऽपि त्वां न भविष्यन्ति सर्वे <br>
+            येऽवस्थिताः प्रत्यनीकेषु योधाः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    kālo’smi lokakṣayakṛtpravṛddho lokānsamāhartumiha pravṛttaḥ |<br>
+    ṛte’pi tvāṃ na bhaviṣyanti sarve ye’vasthitāḥ pratyanīkeṣu yodhāḥ || 11.32 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: I am Time (Kālaḥ), the great destroyer of the worlds, mighty and now engaged in consuming the people.<br>
+            Even without you, none of the warriors standing arrayed in the opposing armies shall live.
+        </div>
+        <a class="commentary-btn" href="english-11-32.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.33 (Command to Fight) ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मात्त्वमुत्तिष्ठ यशो लभस्व <br>
+            जित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्।<br>
+            मयैवैते निहताः पूर्वमेव <br>
+            निमित्तमात्रं भव सव्यसाचिन्।।
+        </p><div class="shlok-translation-formatted"> 
+    tasmāttvamuttiṣṭha yaśo labhasva jitvā śatrūnbhuṅkṣva rājyaṃ samṛddham |<br>
+    mayaivaite nihatāḥ pūrvameva nimittamātraṃ bhava savyasācin || 11.33 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, arise! Obtain glory, conquer your enemies, and enjoy a prosperous kingdom.<br>
+            These have already been killed by Me (Nihatāḥ pūrvam eva); be merely an instrument, O Savyasācin (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-11-33.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.34 ॥</div>
+        <p class="shlok-sanskrit">
+            द्रोणं च भीष्मं च जयद्रथं च <br>
+            कर्णं तथान्यानपि योधवीरान्।<br>
+            मया हतांस्त्वं जहि मा व्यथिष्ठा <br>
+            युध्यस्व जेतासि रणे सपत्नान्।।
+        </p><div class="shlok-translation-formatted"> 
+    droṇaṃ ca bhīṣmaṃ ca jayadrathaṃ ca karṇaṃ tathānyānapi yodhavīrān |<br>
+    mayā hatāṃstvaṃ jahi mā vyathiṣṭhā yudhyasva jetāsi raṇe sapatnān || 11.34 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Droṇa, Bhīṣma, Jayadratha, Karṇa, and other brave warriors—<br>
+            slay those whom I have already slain. Do not be distressed; fight! You shall conquer your adversaries in battle.
+        </div>
+        <a class="commentary-btn" href="english-11-34.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.35 (Sañjaya Concludes) ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            एतच्छ्रुत्वा वचनं केशवस्य <br>
+            कृताञ्जलिर्वेपमानः किरीटी।<br>
+            नमस्कृत्वा भूय एवाह कृष्णं <br>
+            सगद्गदं भीतभीतः प्रणम्य।।
+        </p><div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    etacchrutvā vacanaṃ keśavasya kṛtāñjalirvepamānaḥ kirīṭī |<br>
+    namaskṛtvā bhūya evāha kṛṣṇaṃ sagadgadaṃ bhītabhītaḥ praṇamya || 11.35 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sañjaya said: Hearing these words of Keśava (Krishna), the crowned one (Arjuna/Kirīṭī), trembling, with joined palms,<br>
+            bowed again and spoke to Krishna, very much afraid and stammering (Sa-gadgadam).
+        </div>
+        <a class="commentary-btn" href="english-11-35.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.36 (Arjuna's Continued Prayer) ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            स्थाने हृषीकेश तव प्रकीर्त्या <br>
+            जगत् प्रहृष्यत्यनुरज्यते च।<br>
+            रक्षांसि भीतानि दिशो द्रवन्ति <br>
+            सर्वे नमस्यन्ति च सिद्धसङ्घाः।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    sthāne hṛṣīkeśa tava prakīrtyā jagatpra hṛṣyatyanurajyate ca |<br>
+    rakṣāṃsi bhītāni diśo dravanti sarve namasyanti ca siddhasaṅghāḥ || 11.36 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: It is right, O Hṛṣīkeśa (Krishna), that the world rejoices and becomes attached (Anurajyate) by Your glory (Prakīrtyā),<br>
+            Rākṣasas (demons), afraid, flee in all directions,<br>
+            and the hosts of perfected ones (Siddhas) bow down to You.
+        </div>
+        <a class="commentary-btn" href="english-11-36.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.37 ॥</div>
+        <p class="shlok-sanskrit">
+            कस्माच्च ते न नमेरन् महात्मन् <br>
+            गरीयसे ब्रह्मणोऽप्यादिकर्त्रे।<br>
+            अनन्त देवेश जगन्निवास <br>
+            त्वमक्षरं सदसत्तत्परं यत्।।
+        </p><div class="shlok-translation-formatted"> 
+    kasmācca te na nameran mahātman garīyase brahmaṇo’pyādikartre |<br>
+    ananta deveśa jagannivāsa tvamakṣaraṃ sadasattatparaṃ yat || 11.37 ||
+</div>
+        <div class="shlok-translation-formatted">
+            And why should they not bow down to You, O Great Soul (Mahātman),<br>
+            who are the greatest (Garīyase) and the original Creator (Ādikartre) of Brahmā?<br>
+            O Infinite (Ananta), O Lord of gods (Deveśa), O Abode of the Universe (Jagannivāsa),<br>
+            You are the imperishable (Akṣaram), the manifest and the unmanifest, and what is beyond that.
+        </div>
+        <a class="commentary-btn" href="english-11-37.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.38 ॥</div>
+        <p class="shlok-sanskrit">
+            त्वमादिदेवः पुरुषः पुराणस् <br>
+            त्वमस्य विश्वस्य परं निधानम्।<br>
+            वेत्तासि वेद्यं च परं च धाम <br>
+            त्वया ततं विश्वमनन्तरूप।।
+        </p><div class="shlok-translation-formatted"> 
+    tvamādidevaḥ puruṣaḥ purāṇastvamasya viśvasya paraṃ nidhānam |<br>
+    vettāsi vedyaṃ ca paraṃ ca dhāma tvayā tataṃ viśvamanantarūpa || 11.38 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You are the primeval God (Ādideva), the ancient Person (Puruṣaḥ Purāṇaḥ),<br>
+            You are the ultimate resting place (Nidhānam) of this universe.<br>
+            You are the knower, the knowable, and the supreme abode (Paramaṁ Dhāma).<br>
+            By You is this universe pervaded, O Form of Infinity (Ananta-rūpa).
+        </div>
+        <a class="commentary-btn" href="english-11-38.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.39 ॥</div>
+        <p class="shlok-sanskrit">
+            वायुर्यमोऽग्निर्वरुणः शशाङ्कः <br>
+            प्रजापतिस्त्वं प्रपितामहश्च।<br>
+            नमो नमस्तेऽस्तु सहस्रकृत्वः <br>
+            पुनश्च भूयोऽपि नमो नमस्ते।।
+        </p><div class="shlok-translation-formatted"> 
+    vāyuryamo’gnirvaruṇaḥ śaśāṅkaḥ prajāpatistvaṃ prapitāmahaśca |<br>
+    namo namaste’stu sahasrakṛtvaḥ punaśca bhūyo’pi namo namaste || 11.39 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You are Vāyu (wind), Yama (death), Agni (fire), Varuṇa (water god), and the Moon (Śaśāṅka),<br>
+            Prajāpati (creator), and the great-grandfather (Prapitāmahaśca).<br>
+            Salutations, salutations to You a thousand times,<br>
+            and again and again, salutations, salutations to You!
+        </div>
+        <a class="commentary-btn" href="english-11-39.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.40 ॥</div>
+        <p class="shlok-sanskrit">
+            नमः पुरस्तादथ पृष्ठतस्ते <br>
+            नमोऽस्तु ते सर्वत एव सर्व।<br>
+            अनन्तवीर्यामितविक्रमस्त्वं <br>
+            सर्वं समाप्नोषि ततोऽसि सर्वः।।
+        </p><div class="shlok-translation-formatted"> 
+    namaḥ purastādatha pṛṣṭhataste namo’stu te sarvata eva sarva |<br>
+    anantavīryāmitavikramastvaṃ sarvaṃ samāpnoṣi tato’si sarvaḥ || 11.40 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Salutations to You from the front, and also from behind.<br>
+            Salutations to You from all sides, O All (Sarva)!<br>
+            You are of infinite power and immeasurable prowess (Amita-vikramas),<br>
+            You pervade all; therefore You are All.
+        </div>
+        <a class="commentary-btn" href="english-11-40.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verses 11.41 - 11.42 (Plea for Forgiveness) ॥</div>
+        <p class="shlok-sanskrit">
+            सखेति मत्वा प्रसभं यदुक्तं <br>
+            हे कृष्ण हे यादव हे सखेति।<br>
+            अजानता महिमानं तवेदं <br>
+            मया प्रमादात् प्रणयेन वापि।। (11.41)<br>
+            यच्चावहासार्थमसत्कृतोऽसि <br>
+            विहारशय्यासनभोजनेषु।<br>
+            एकोऽथवाप्यच्युत तत्समक्षं <br>
+            तत्क्षामये त्वामहमप्रमेयम्।। (11.42)
+        </p><div class="shlok-translation-formatted"> 
+    sakheti matvā prasabhaṃ yaduktaṃ he kṛṣṇa he yādava he sakheti |<br>
+    ajānatā mahimānaṃ tavedaṃ mayā pramādātpraṇayena vāpi || 11.41 ||<br><br>
+    yaccāvahāsārthamatsat-kṛto’si vihāra-śayyāsana-bhojaneṣu |<br>
+    eko’thavāpyacyuta tat-samakṣaṃ tat-kṣāmaye tvāmahamaprameyam || 11.42 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Whatever I have rashly said regarding You as a friend, like, (11.41)<br>
+            “O Krishna,” “O Yādava,” “O friend (Sakhe),” without knowing Your majesty,<br>
+            through carelessness or perhaps through affection (Praṇayena), (11.41)<br>
+            And whatever disrespect has been shown to You for the sake of jest,<br>
+            while playing, resting, sitting, or eating, (11.42)<br>
+            whether alone, or in the presence of others, O Achyuta (Krishna),<br>
+            I beg forgiveness from You, the immeasurable One (Aprameyam). (11.42)
+        </div>
+        <a class="commentary-btn" href="english-11-41-42.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.43 ॥</div>
+        <p class="shlok-sanskrit">
+            पितासि लोकस्य चराचरस्य <br>
+            त्वमस्य पूज्यश्च गुरुर्गरीयान्।<br>
+            न त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो <br>
+            लोकत्रयेऽप्यप्रतिमप्रभाव।।
+        </p><div class="shlok-translation-formatted"> 
+    pitāsi lokasya carācarasya tvamasya pūjyaśca gururgarīyān |<br>
+    na tvatsamo’styabhyadhikaḥ kuto’nyo lokatraye’pyapratimaprabhāva || 11.43 ||
+</div>
+        <div class="shlok-translation-formatted">
+            You are the Father of the moving and unmoving world, and its most venerable (Garīyān) Teacher (Guru).<br>
+            There is none equal to You, much less superior, in the three worlds, O Being of matchless power (Apratima-prabhāva).
+        </div>
+        <a class="commentary-btn" href="english-11-43.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.44 ॥</div>
+        <p class="shlok-sanskrit">
+            तस्मात् प्रणम्य प्रणिधाय कायं <br>
+            प्रसादये त्वामहमीशमीड्यम्।<br>
+            पितेव पुत्रस्य सखेव सख्युः <br>
+            प्रियः प्रियायार्हसि देव सोढुम्।।
+        </p><div class="shlok-translation-formatted"> 
+    tasmātpraṇamya praṇidhāya kāyaṃ prasādaye tvāmahamīśamīḍyam |<br>
+    piteva putrasya sakheva sakhyuḥ priyaḥ priyāyārhasi deva soḍhum || 11.44 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Therefore, bowing down and prostrating my body, I seek Your grace, O Adorable Lord (Īśam īḍyam).<br>
+            As a father bears with a son, a friend with a friend,<br>
+            or a lover with his beloved, O God, You should bear with me.
+        </div>
+        <a class="commentary-btn" href="english-11-44.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.45 (Arjuna's Wish to Return to Original Form) ॥</div>
+        <p class="shlok-sanskrit">
+            अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा <br>
+            भयेन च प्रव्यथितं मनो मे।<br>
+            तदेव मे दर्शय देव रूपं <br>
+            प्रसीद देवेश जगन्निवास।।
+        </p><div class="shlok-translation-formatted"> 
+    adṛṣṭapūrvaṃ hṛṣito’smi dṛṣṭvā bhayena ca pravyathitaṃ mano me |<br>
+    tadeva me darśaya deva rūpaṃ prasīda deveśa jagannivāsa || 11.45 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Having seen what was never seen before, I am delighted, and yet my mind is agitated with fear.<br>
+            Show me that original form (Tad eva me darśaya deva rūpaṁ), O God.<br>
+            Be gracious, O Lord of gods (Deveśa), O Abode of the Universe (Jagannivāsa).
+        </div>
+        <a class="commentary-btn" href="english-11-45.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.46 ॥</div>
+        <p class="shlok-sanskrit">
+            किरीटिनं गदिनं चक्रहस्तम् <br>
+            इच्छामि त्वां द्रष्टुमहं तथैव।<br>
+            तेनैव रूपेण चतुर्भुजेन <br>
+            सहस्रबाहो भव विश्वमूर्ते।।
+        </p><div class="shlok-translation-formatted"> 
+    kirīṭinaṃ gadinaṃ cakrahastam icchāmi tvāṃ draṣṭumahaṃ tathaiva |<br>
+    tenaiva rūpeṇa caturbhujena sahasrabāho bhava viśvamūrte || 11.46 ||
+</div>
+        <div class="shlok-translation-formatted">
+            I wish to see You just as before, with the crown (Kirīṭinam), the mace (Gadinam), and the discus in hand (Cakra-hastam).<br>
+            O thousand-armed (Sahasra-bāho), O Universal Form (Viśva-mūrte), appear in that same four-armed form.
+        </div>
+        <a class="commentary-btn" href="english-11-46.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.47 (Krishna's Response) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            मया प्रसन्नेन तवार्जुनेदं <br>
+            रूपं परं दर्शितमात्मयोगात्।<br>
+            तेजोमयं विश्वमनन्तमाद्यं <br>
+            यन्मे त्वदन्येन न दृष्टपूर्वम्।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    mayā prasannena tavārjunedaṃ rūpaṃ paraṃ darśitamātmayogāt |<br>
+    tejomayaṃ viśvamanantamādyaṃ yanme tvadanyena na dṛṣṭapūrvam || 11.47 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: O Arjuna, being pleased with you, I have shown you, by My own Yoga power (Ātma-yogāt),<br>
+            this supreme, universal, limitless, original, effulgent form (Tejomayaṁ Viśvam),<br>
+            which has never been seen before by anyone other than you.
+        </div>
+        <a class="commentary-btn" href="english-11-47.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.48 ॥</div>
+        <p class="shlok-sanskrit">
+            न वेदयज्ञाध्ययनैर्न दानैर् <br>
+            न च क्रियाभिर्न तपोभिरुग्रैः।<br>
+            एवंरूपः शक्य अहं नृलोके <br>
+            द्रष्टुं त्वदन्येन कुरुप्रवीर।।
+        </p><div class="shlok-translation-formatted"> 
+    na vedayajñādhyayanairna dānair na ca kriyābhirna tapobhirugraiḥ |<br>
+    evaṃrūpaḥ śakya ahaṃ nṛloke draṣṭuṃ tvadanyena kurupravīra || 11.48 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Not by Vedas, nor by sacrifices, nor by study, nor by charity,<br>
+            nor by rituals, nor by severe austerities,<br>
+            can I, in this form, be seen in the world of men (Nṛloke), by anyone other than you, O great hero of the Kurus.
+        </div>
+        <a class="commentary-btn" href="english-11-48.html">View Commentary</a>
+    </div>
+
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.49 ॥</div>
+        <p class="shlok-sanskrit">
+            मा ते व्यथा मा च विमूढभावो <br>
+            दृष्ट्वा रूपं घोरमीदृङ्ममेदम्।<br>
+            व्यपेतभीः प्रीतमनाः पुनस्त्वं <br>
+            तदेव मे रूपमिदं प्रपश्य।।
+        </p><div class="shlok-translation-formatted"> 
+    mā te vyathā mā ca vimuḍhabhāvo dṛṣṭvā rūpaṃ ghoramīdṛṅmamedam |<br>
+    vyapetabhīḥ prītamanāḥ punastvaṃ tadeva me rūpamidaṃ prapaśya || 11.49 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Let there be no fear (Vyathā) or bewilderment (Vimūḍha-bhāvo) in you, having seen this dreadful form of Mine.<br>
+            Freed from fear, with a cheerful mind (Prītamanaḥ), behold again that previous form of Mine.
+        </div>
+        <a class="commentary-btn" href="english-11-49.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.50 (Sañjaya Concludes Description) ॥</div>
+        <p class="shlok-sanskrit">
+            सञ्जय उवाच।<br>
+            इत्यर्जुनं वासुदेवस्तथोक्त्वा <br>
+            स्वकं रूपं दर्शयामास भूयः।<br>
+            आश्वासयामास च भीतमेनं <br>
+            भूत्वा पुनः सौम्यवपुर्महात्मा।।
+        </p><div class="shlok-translation-formatted"> 
+    sañjaya uvāca |<br>
+    ityarjunaṃ vāsudevastathoktvā svakaṃ rūpaṃ darśayāmāsa bhūyaḥ |<br>
+    āśvāsayāmāsa ca bhītamenam bhūtvā punaḥ saumyavapurmahātmā || 11.50 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Sañjaya said: Thus Vāsudeva (Krishna), having spoken to Arjuna, showed His own form again.<br>
+            And the Great Soul (Mahātmā) consoled him, who was terrified, by again becoming the gentle form (Saumya-vapuḥ).
+        </div>
+        <a class="commentary-btn" href="english-11-50.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.51 ॥</div>
+        <p class="shlok-sanskrit">
+            अर्जुन उवाच।<br>
+            दृष्ट्वेदं मानुषं रूपं तव सौम्यं जनार्दन।<br>
+            इदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः।।
+        </p><div class="shlok-translation-formatted"> 
+    arjuna uvāca |<br>
+    dṛṣṭvedaṃ mānuṣaṃ rūpaṃ tava saumyaṃ janārdana |<br>
+    idānīmasmi saṃvṛttaḥ sacetāḥ prakṛtiṃ gataḥ || 11.51 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Arjuna said: Seeing this gentle human form of Yours, O Janārdana (Krishna),<br>
+            I am now composed (Sa-cetāḥ) and have returned to my normal state (Prakṛtiṁ gataḥ).
+        </div>
+        <a class="commentary-btn" href="english-11-51.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.52 (Krishna on the difficulty of the Vision) ॥</div>
+        <p class="shlok-sanskrit">
+            श्रीभगवानुवाच।<br>
+            सुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम।<br>
+            देवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्क्षिणः।।
+        </p><div class="shlok-translation-formatted"> 
+    śrī-bhagavānuvāca |<br>
+    sudurdarśamidaṃ rūpaṃ dṛṣṭavānasi yanmama |<br>
+    devā apyasya rūpasya nityaṃ darśanakāṅkṣiṇaḥ || 11.52 ||
+</div>
+        <div class="shlok-translation-formatted">
+            The Supreme Lord said: This form of Mine that you have seen is very difficult to see (Su-durdarśam).<br>
+            Even the gods are ever desirous of seeing this form.
+        </div>
+        <a class="commentary-btn" href="english-11-52.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.53 ॥</div>
+        <p class="shlok-sanskrit">
+            नाहं वेदैर्न तपसा न दानेन न चेज्यया।<br>
+            शक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा।।
+        </p><div class="shlok-translation-formatted"> 
+    nāhaṃ vedairna tapasā na dānena na cejyayā |<br>
+    śakya evaṃvidho draṣṭuṃ dṛṣṭavānasi māṃ yathā || 11.53 ||
+</div>
+        <div class="shlok-translation-formatted">
+            Not by Vedas, nor by austerity, nor by charity, nor by sacrifice (Ijyayā),<br>
+            can I be seen in this form, as you have seen Me.
+        </div>
+        <a class="commentary-btn" href="english-11-53.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.54 (The Path to Vision) ॥</div>
+        <p class="shlok-sanskrit">
+            भक्त्या त्वनन्यया शक्य <br>
+            अहमेवंविधोऽर्जुन।<br>
+            ज्ञातुं द्रष्टुं च तत्त्वेन <br>
+            प्रवेष्टुं च परन्तप।।
+        </p><div class="shlok-translation-formatted"> 
+    bhaktyā tvananyayā śakya aham evaṃvidho’rjuna |<br>
+    jñātuṃ draṣṭuṃ ca tattvena praveṣṭuṃ ca parantapa || 11.54 ||
+</div>
+        <div class="shlok-translation-formatted">
+            But by unswerving devotion (Bhaktyā tv ananyayā), O Arjuna,<br>
+            I can be known, truly seen (Draṣṭuṁ ca tattvena),<br>
+            and entered into (Praveṣṭuṁ ca) in this form, O scorcher of foes.
+        </div>
+        <a class="commentary-btn" href="english-11-54.html">View Commentary</a>
+    </div>
+    
+    <div class="shlok-box">
+        <div class="shlok-title">॥ Verse 11.55 (The Ultimate Instruction) ॥</div>
+        <p class="shlok-sanskrit">
+            मत्कर्मकृन्मत्परमो मद्भक्तः <br>
+            सङ्गवर्जितः।<br>
+            निर्वैरः सर्वभूतेषु <br>
+            यः स मामेति पाण्डव।।
+        </p><div class="shlok-translation-formatted"> 
+    matkarmakṛnmatparamo madbhaktaḥ saṅgavivarjitaḥ |<br>
+    nirvairaḥ sarvabhūteṣu yaḥ sa māmeti pāṇḍava || 11.55 ||
+</div>
+        <div class="shlok-translation-formatted">
+            He who does work for Me, who looks upon Me as the Supreme (Mat-paramo), who is devoted to Me (Mad-bhaktaḥ),<br>
+            who is free from attachment (Saṅga-varjitaḥ),<br>
+            and has no enmity toward any creature—<br>
+            he comes to Me, O son of Pāṇḍu (Arjuna).
+        </div>
+        <a class="commentary-btn" href="english-11-55.html">View Commentary</a>
+    </div>
+    
+
+    <div class="shlok-box">
+        <div class="colophon-sanskrit">॥ इति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे विश्वरूपदर्शनयोगो नामैकादशोऽध्यायः ॥</div>
+        <p class="colophon-english">
+            Thus, in the Upaniṣads of the glorious Bhagavad-Gītā, the science of the Eternal, the scripture of Yoga,<br>
+            the dialogue between Śrī Kṛṣṇa and Arjuna, ends the eleventh chapter, entitled Viśvarūpa Darśana Yoga.
+        </p>
+    </div>
+
+</div>
+
+<div class="nav-buttons" style="margin-top: 50px;">
+    <a class="nav-btn" href="gita-english.html">« Index</a> 
+    <a class="nav-btn" href="english-chapter10.html">« Prev Chapter</a>
+    <a class="nav-btn" href="index.html">🏡 Home</a>
+    <a class="nav-btn" href="english-chapter12.html">Next Chapter »</a> 
+</div>
+
+</body>
+</html>
