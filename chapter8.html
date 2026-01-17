@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang=sa>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Hind+Siliguri:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>भगवद्गीता — अष्टमोऽध्यायः (अक्षरब्रह्मयोगः)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* ------------------------------------------- */
+    /* Mobile Optimization using Media Queries (New Addition) */
+    /* ------------------------------------------- */
+
+    @media (max-width: 768px) {
+        /* General Adjustments for Tablets and large Phones */
+        .shlok-container {
+            padding: 0 15px; /* Added side padding for content */
+        }
+        
+        .chapter-header h1 {
+            font-size: 28px; 
+        }
+        
+        .chapter-header h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        /* Specific Adjustments for Smartphones */
+        .chapter-header {
+            padding: 20px 10px;
+        }
+
+        .chapter-header h1 {
+            font-size: 24px; /* Smaller header on mobile */
+        }
+        
+        .chapter-header h2 {
+            font-size: 18px;
+        }
+
+        /* Adjusting main content sizes */
+        .shlok-box {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .shlok-title {
+            font-size: 1.3em; /* Slightly smaller shloka title */
+            margin-bottom: 10px;
+        }
+
+        /* Making Sanskrit text slightly smaller for better fit */
+        .shlok-sanskrit {
+            font-size: 1.2em; 
+            line-height: 2.0;
+        }
+        
+        /* Making translation text slightly smaller */
+        .shlok-translation-formatted {
+            font-size: 1.1em;
+            line-height: 1.7;
+            padding: 10px 15px;
+        }
+
+        /* Section heading adjustment */
+        .section-heading {
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Ensuring buttons are easy to press */
+        .commentary-btn {
+            padding: 12px 25px; /* Larger tap area */
+            font-size: 1.0em;
+            display: block; /* Force button to take full width for easy tapping */
+            width: 80%; /* Takes most of the container width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Navigation buttons (for the final version) */
+        .nav-buttons {
+            display: flex;
+            flex-direction: column; /* Stacks the buttons vertically */
+            gap: 10px; /* Space between stacked buttons */
+            padding: 0 20px;
+        }
+
+        .nav-buttons .nav-btn {
+            width: 100%; /* Makes buttons full width */
+            text-align: center;
+        }
+    }
+    .shlok-sanskrit {
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.8;
+        padding: 10px 0;
+    }
+    /* New styles for navigation */
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        padding: 12px 25px;
+        background-color: #d4af37; 
+        color: #1a0f00; 
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        margin: 20px auto;
+    }
+    .home-btn-fixed {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffcc66;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #1a0f00;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        .home-btn-fixed {
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 1.2em;
+        }
+    }
+    .back-link-container {
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body class="temple-bg">
+
+
+
+<header class="chapter-header">
+    <h1>॥ भगवद्गीता — अष्टमोऽध्यायः ॥</h1>
+    <h2>अक्षरब्रह्मयोगः</h2>
+    <h6>
+    <a href="index.html" class="home-btn-fixed" title=সূচিপত্র>
+    🏠Home
+   </a>
+   </h6>
+</header>
+
+<div class="chapter-container">
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.1 ॥</div>
+    <p class="shlok-sanskrit">
+        अर्जुन उवाच —<br>
+        किं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम ।<br>
+        अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते ॥
+    </p>
+    <a class="bekkha-btn" href="8-1.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.2 ॥</div>
+    <p class="shlok-sanskrit">
+        अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन ।<br>
+        प्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः ॥
+    </p>
+    <a class="bekkha-btn" href="8-2.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.3 ॥</div>
+    <p class="shlok-sanskrit">
+        श्रीभगवानुवाच —<br>
+        अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते ।<br>
+        भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ॥
+    </p>
+    <a class="bekkha-btn" href="8-3.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.4 ॥</div>
+    <p class="shlok-sanskrit">
+        अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम् ।<br>
+        अधियज्ञोऽहमेवात्र देहे देहभृतां वर ॥
+    </p>
+    <a class="bekkha-btn" href="8-4.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.5 ॥</div>
+    <p class="shlok-sanskrit">
+        अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् ।<br>
+        यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥
+    </p>
+    <a class="bekkha-btn" href="8-5.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ শ্লোক 8.6 ॥</div>
+    <p class="shlok-sanskrit">
+        यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् ।<br>
+        तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥
+    </p>
+    <a class="bekkha-btn" href="8-6.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.7 ॥</div>
+    <p class="shlok-sanskrit">
+        तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च ।<br>
+        मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम् ॥
+    </p>
+    <a class="bekkha-btn" href="8-7.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.8 ॥</div>
+    <p class="shlok-sanskrit">
+        अभ्यासयोगयुक्तेन चेतसा नान्यगामिना ।<br>
+        परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥
+    </p>
+    <a class="bekkha-btn" href="8-8.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.9 ॥</div>
+    <p class="shlok-sanskrit">
+        कविं पुराणमनुशासितारम्<br>
+        अणोरणीयांसमनुस्मरेद्यः ।<br>
+        सर्वस्य धातारमचिन्त्यरूपम्<br>
+        आदित्यवर्णं तमसः परस्तात् ॥
+    </p>
+    <a class="bekkha-btn" href="8-9.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.10 ॥</div>
+    <p class="shlok-sanskrit">
+        प्रयाणकाले मनसाचलेन<br>
+        भक्त्या युक्तो योगबलेन चैव ।<br>
+        भ्रुवोर्मध्ये प्राणमावेश्य सम्यक्<br>
+        स तं परं पुरुषमुपैति दिव्यम् ॥
+    </p>
+    <a class="bekkha-btn" href="8-10.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.11 ॥</div>
+    <p class="shlok-sanskrit">
+        यदक्षरं वेदविदो वदन्ति<br>
+        विशन्ति यद्यतयो वीतरागाः ।<br>
+        यदिच्छन्तो ब्रह्मचर्यं चरन्ति<br>
+        तत्ते पदं सङ्ग्रहेण प्रवक्ष्ये ॥
+    </p>
+    <a class="bekkha-btn" href="8-11.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.12 ॥</div>
+    <p class="shlok-sanskrit">
+        सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च ।<br>
+        मूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम् ॥
+    </p>
+    <a class="bekkha-btn" href="8-12.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.13 ॥</div>
+    <p class="shlok-sanskrit">
+        ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् ।<br>
+        यः प्रयाति त्यजन्देहं स याति परमां गतिम् ॥
+    </p>
+    <a class="bekkha-btn" href="8-13.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.14 ॥</div>
+    <p class="shlok-sanskrit">
+        अनन्यचेताः सततं यो मां स्मरति नित्यशः ।<br>
+        तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ॥
+    </p>
+    <a class="bekkha-btn" href="8-14.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.15 ॥</div>
+    <p class="shlok-sanskrit">
+        मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम् ।<br>
+        नाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः ॥
+    </p>
+    <a class="bekkha-btn" href="8-15.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.16 ॥</div>
+    <p class="shlok-sanskrit">
+        आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन ।<br>
+        मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ॥
+    </p>
+    <a class="bekkha-btn" href="8-16.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.17 ॥</div>
+    <p class="shlok-sanskrit">
+        सहस्रयुगपर्यन्तमहर्यद् ब्रह्मणो विदुः ।<br>
+        रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः ॥
+    </p>
+    <a class="bekkha-btn" href="8-17.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.18 ॥</div>
+    <p class="shlok-sanskrit">
+        अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे ।<br>
+        रात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसञ्ज्ञके ॥
+    </p>
+    <a class="bekkha-btn" href="8-18.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.19 ॥</div>
+    <p class="shlok-sanskrit">
+        भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते ।<br>
+        रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे ॥
+    </p>
+    <a class="bekkha-btn" href="8-19.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.20 ॥</div>
+    <p class="shlok-sanskrit">
+        परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः ।<br>
+        यः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति ॥
+    </p>
+    <a class="bekkha-btn" href="8-20.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.21 ॥</div>
+    <p class="shlok-sanskrit">
+        अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् ।<br>
+        यं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥
+    </p>
+    <a class="bekkha-btn" href="8-21.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.22 ॥</div>
+    <p class="shlok-sanskrit">
+        पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया ।<br>
+        यस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम् ॥
+    </p>
+    <a class="bekkha-btn" href="8-22.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.23 ॥</div>
+    <p class="shlok-sanskrit">
+        यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः ।<br>
+        प्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ ॥
+    </p>
+    <a class="bekkha-btn" href="8-23.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.24 ॥</div>
+    <p class="shlok-sanskrit">
+        अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम् ।<br>
+        तत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः ॥
+    </p>
+    <a class="bekkha-btn" href="8-24.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.25 ॥</div>
+    <p class="shlok-sanskrit">
+        धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् ।<br>
+        तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते ॥
+    </p>
+    <a class="bekkha-btn" href="8-25.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.26 ॥</div>
+    <p class="shlok-sanskrit">
+        शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते ।<br>
+        एकया यात्यनावृत्तिमन्ययावर्तते पुनः ॥
+    </p>
+    <a class="bekkha-btn" href="8-26.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.27 ॥</div>
+    <p class="shlok-sanskrit">
+        नैते सृती पार्थ जानन्योगी मुह्यति कश्चन ।<br>
+        तस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन ॥
+    </p>
+    <a class="bekkha-btn" href="8-27.html">व्याख्या</a>
+</div>
+
+<div class="shlok-box">
+    <div class="shlok-title">॥ श्लोक 8.28 ॥</div>
+    <p class="shlok-sanskrit">
+        वेदेषु यज्ञेषु तपःसु चैव<br>
+        दानेषु यत्पुण्यफलं प्रदिष्टम् ।<br>
+        अत्येति तत्सर्वमिदं विदित्वा<br>
+        योगी परं स्थानमुपैति चाद्यम् ॥
+    </p>
+    <a class="bekkha-btn" href="8-28.html">व्याख्या</a>
+</div>
+
+</div> <div class="back-link-container">
+    <a href="gita-sanskrit.html" class="nav-btn">
+        <Back to Index>Back</Back>
+    </a>
+    <a href="chapter9.html" class="nav-btn">Chapter 9</a>
+</div>
+
+</body>
+</html>
