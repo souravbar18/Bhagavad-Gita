@@ -441,11 +441,18 @@ body {
     color: #ffecb2;
     transform: scale(1.03);
 }
-.gsc-completion-container .gsc-completion-title, 
-.gsc-completion-container b {
-  color: #000000 !important;
+/* গুগল সার্চ সাজেশনের টাইপ করা অংশ লাল করার জন্য */
+.gsc-completion-container .gsc-completion-title {
+    color: #FF0000 !important;
 }
+
+/* সাজেশনের বাকি অংশ কালো করার জন্য */
+.gsc-completion-container b {
+    color: #000000 !important;
+}
+
+/* ব্যাকগ্রাউন্ড সাদা করার জন্য */
 .gsc-completion-container {
-  background-color: #ffffff !important;
-  border: 1px solid #ccc !important;
+    background-color: #ffffff !important;
+    border: 1px solid #ddd !important;
 }
