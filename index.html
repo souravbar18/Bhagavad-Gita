@@ -173,18 +173,21 @@ body{
     .chapter-header h1{ font-size: 22px; }
     .chapter-header h2{ font-size: 16px; }
 }
-    /* গুগল সার্চের ভেতরের লাল রঙের জন্য চূড়ান্ত কোড */
+    /* ১. গুগলের ডিফল্ট হাইলাইট বা হলুদ রঙ পুরোপুরি রিমুভ করার জন্য */
+  .gs-title b, .gs-snippet b, .gsc-completion-container b {
+    color: black !important; /* সাজেশনের বাকি লেখা কালো */
+    background-color: transparent !important; /* হলুদ ব্যাকগ্রাউন্ড থাকলে মুছে যাবে */
+  }
+
+  /* ২. তুমি যতটুকু টাইপ করছো (যেমন: hello), সেটাকে লাল করার জন্য */
   .gsc-completion-container .gsc-completion-title {
-    color: red !important;
-    font-weight: bold !important;
+    color: #FF0000 !important; /* লাল রঙ */
+    background-color: transparent !important;
   }
-  /* সাজেশনের বাকি অংশ কালো করার জন্য */
-  .gsc-completion-container b {
-    color: black !important;
-  }
-  /* ব্যাকগ্রাউন্ড সাদা করার জন্য */
+
+  /* ৩. সাজেশনের পুরো বক্সটাকে সাদা রাখার জন্য */
   .gsc-completion-container {
-    background-color: white !important;
+    background-color: #ffffff !important;
     border: 1px solid #ccc !important;
   }
 </style>
