@@ -1,8 +1,8 @@
 # Shrimad Bhagavad Gita - Sanskrit, Bangla & English Translation
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/souravbar18/Bhagavad-Gita?style=for-the-badge&color=orange" alt="Language">
-  <img src="https://img.shields.io/github/directory-file-count/souravbar18/Bhagavad-Gita?style=for-the-badge&color=blue" alt="File Count">
-  <img src="https://img.shields.io/github/last-commit/souravbar18/Bhagavad-Gita?style=for-the-badge&color=green" alt="Last Commit">
+  <img src="https://img.shields.io/github/languages/top/souravbar18/Srimad-Bhagavad-Gita?style=for-the-badge&color=orange" alt="Language">
+  <img src="https://img.shields.io/github/directory-file-count/souravbar18/Srimad-Bhagavad-Gita?style=for-the-badge&color=blue" alt="File Count">
+  <img src="https://img.shields.io/github/last-commit/souravbar18/Srimad-Bhagavad-Gita?style=for-the-badge&color=green" alt="Last Commit">
 </p>
 
 ---
@@ -10,7 +10,7 @@
 ## 📖 Project Overview
 A large-scale digital preservation project hosting over **2,100+ structured HTML documents** and high-quality visual assets of the Srimad Bhagavad Gita.
 
-🔗 **[Live Website Link]( https://souravbar18.github.io/Srimad-Bhagavad-Gita/)**
+🔗 **[Live Website Link]( https://souravbar18.github.io/Srimad-Srimad-Bhagavad-Gita/)**
 
 ---
 
