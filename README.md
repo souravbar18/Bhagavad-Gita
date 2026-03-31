@@ -1,5 +1,4 @@
-# 🕉️ Srimad Bhagavad Gita Digital Archive
-
+# Shrimad Bhagavad Gita - Sanskrit, Bangla & English Translation
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/souravbar18/Bhagavad-Gita?style=for-the-badge&color=orange" alt="Language">
   <img src="https://img.shields.io/github/directory-file-count/souravbar18/Bhagavad-Gita?style=for-the-badge&color=blue" alt="File Count">
