@@ -10,7 +10,7 @@
 ## 📖 Project Overview
 A large-scale digital preservation project hosting over **2,100+ structured HTML documents** and high-quality visual assets of the Srimad Bhagavad Gita.
 
-🔗 **[Live Website Link]( https://souravbar18.github.io/Srimad-srimad-bhagavad-gita/)**
+🔗 **[Live Website Link]( https://souravbar18.github.io/srimad-bhagavad-gita/)**
 
 ---
 
